@@ -2521,7 +2521,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel text="OPEN SOURCE" position="460,123" size="353,28" font="Regular2; 22" transparent="1" zPosition="1" foregroundColor="XionFont2" />
     <eLabel text="https://github.com/openhdf" position="460,163" size="352,28" font="Regular2; 19" transparent="1" zPosition="1" foregroundColor="XionFont2" />
     <eLabel text="https://github.com/oe-alliance" position="460,203" size="354,28" font="Regular2; 19" transparent="1" zPosition="1" foregroundColor="XionFont2" />
-    <widget name="AboutScrollLabel" position="70,253" size="650,360" scrollbarMode="showOnDemand" font="Regular;20" foregroundColor="XionFont1" transparent="1" zPosition="1" />
+    <eLabel text="Designed by" position="890,460" size="355,40" font="Regular2; 24" transparent="1" zPosition="1" foregroundColor="XionFont2" valign="center" halign="center" />
+    <eLabel text="Kraven and örlgrey" position="890,510" size="355,40" font="Regular2; 24" transparent="1" zPosition="1" foregroundColor="XionFont2" halign="center" />
+    <widget name="AboutScrollLabel" position="70,253" size="650,400" scrollbarMode="showOnDemand" font="Regular;20" foregroundColor="XionFont1" transparent="1" zPosition="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- UpdatePluginMenu -->
