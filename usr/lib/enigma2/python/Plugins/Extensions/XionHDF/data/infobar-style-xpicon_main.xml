@@ -1,0 +1,5 @@
+
+<!-- /* InfoBar XPicon -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="0,0" size="1280,720" title="InfoBar">
+  <panel name="template_menu_ib4" />
+  

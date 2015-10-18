@@ -1,0 +1,6 @@
+  </screen>
+<!-- /* InfoBar ZPicon -->
+
+<!--/* SecondInfoBar ZPicon -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="1280,720" title="SecondInfoBar">
+

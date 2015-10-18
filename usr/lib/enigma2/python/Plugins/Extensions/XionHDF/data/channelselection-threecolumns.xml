@@ -1,0 +1,42 @@
+
+  <!-- /* ChannelSelection Three Columns -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
+  
+  <widget source="global.CurrentTime" render="Label" position="814,19" size="80,30" font="Regular2; 23" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
+  <convert type="XionHDFClockToText">Default</convert>
+</widget>
+  <widget backgroundColor="XionBackground" scrollbarMode="showNever" foregroundColorMarkedSelected="green" colorEventProgressbarBorder="XionLine" colorEventProgressbarBorderSelected="XionLine" colorServiceDescription="XionFont2" colorServiceDescriptionSelected="XionSelFont" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" name="list" position="18,76" serviceInfoFont="Regular;20" serviceItemHeight="28" serviceNameFont="Regular;20" serviceNumberFont="Regular;20" size="439,571" transparent="1" />
+  <widget source="ServiceEvent" render="Label" position="925,12" size="339,46" font="Regular2; 25" halign="center" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" noWrap="1">
+  <convert type="ServiceName">Name</convert>
+</widget>
+  <widget source="ServiceEvent" render="Label" position="488,76" size="408,24" font="Regular2; 20" halign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2">
+  <convert type="XionHDFEventName">Name</convert>
+</widget>
+  
+  <eLabel backgroundColor="XionLine" position="488,112" size="408,1" zPosition="1" />
+  <widget source="ServiceEvent" render="Progress" backgroundColor="XionBackground" foregroundColor="XionProgress" position="488,111" size="408,3" transparent="1" zPosition="2">
+  <convert type="XionHDFEventTime">Progress</convert>
+</widget>
+  <widget source="ServiceEvent" render="Label" position="488,124" size="408,235" font="Regular; 19" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1">
+    <convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
+  </widget>
+  <eLabel text="jetzt läuft:" position="488,19" size="180,30" font="Regular2; 23" halign="left" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" zPosition="2" />
+  <eLabel text="es folgt:" position="488,376" size="180,30" font="Regular2; 23" halign="left" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" zPosition="2" />
+  <widget source="ServiceEvent" render="XionHDFSingleEpgListNobile" position="925,77" size="339,566" font="Regular;17" foregroundColor="XionFont1" backgroundColor="XionBackground" noWrap="1" transparent="1" />
+  <widget source="ServiceEvent" render="Label" position="488,415" zPosition="1" size="408,25" font="Regular2; 20" halign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2">
+  <convert type="XionHDFServiceNameEventNobile">NextEvent</convert>
+</widget>
+  <widget source="ServiceEvent" render="Label" position="817,376" zPosition="1" size="80,30" font="Regular2; 23" halign="left" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2">
+  <convert type="XionHDFServiceNameEventNobile">StartTime</convert>
+</widget>
+  <widget source="ServiceEvent" render="Label" position="488,453" zPosition="1" size="408,188" font="Regular; 19" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont1">
+    <convert type="XionHDFServiceNameEventNobile">ExtendedDescription</convert>
+  </widget>
+<widget source="Service" render="Picon" position="674,13" size="70,42" transparent="0" zPosition="2" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+<panel name="template_menu_cs3_button" />
+</screen>
+  <!-- /* ChannelSelection Three Columns -->
+  
+  
