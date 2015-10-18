@@ -1,6 +1,6 @@
 #######################################################################
 #
-# XionHDF by Kraven
+# XionHDF by Team Kraven
 # 
 # Thankfully inspired by:
 # MyMetrix
