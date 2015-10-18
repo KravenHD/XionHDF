@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: KravenSD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-06 23:16+0200\n"
-"PO-Revision-Date: 2015-05-16 22:20+0100\n"
+"PO-Revision-Date: 2015-10-18 17:46+0100\n"
 "Last-Translator: örlgrey <ochzoetna@gmail.com>\n"
 "Language-Team: kraven & mike99\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.4\n"
+"X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: KravenSEYWeather.py:198 KravenSEYWeather.py:230
@@ -933,8 +933,8 @@ msgstr ""
 "Wollen Sie jetzt neu starten?"
 
 #: plugin.py:955 plugin.py:957
-msgid "Configuration tool for KravenSE"
-msgstr "Konfigurationstool für KravenSE"
+msgid "Configuration tool for XionHDF"
+msgstr "Konfigurationstool für XionHDF"
 
 msgid "clock with weekday"
 msgstr "Uhr mit Wochentag"
