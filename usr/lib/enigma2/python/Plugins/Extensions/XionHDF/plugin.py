@@ -352,7 +352,7 @@ class XionHDF(ConfigListScreen, Screen):
   <eLabel position="845,130" size="372,46" text="Version: 0.2" font="Regular; 30" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
   <ePixmap backgroundColor="#00000000" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/openhdf.png" position="847,202" size="368,207" zPosition="-9" />
   <widget name="helperimage" position="847,202" size="368,207" zPosition="1" backgroundColor="#00000000" />
-  <widget source="help" render="Label" position="847,450" size="368,196" font="Regular2;20" backgroundColor="#00000000" foregroundColor="#00ffffff" halign="center" valign="top" transparent="1" />
+  <widget source="help" render="Label" position="847,450" size="368,168" font="Regular2;20" backgroundColor="#00000000" foregroundColor="#00ffffff" halign="right" valign="top" transparent="1" />
   <eLabel backgroundColor="#00ffffff" position="0,64" size="1280,2" zPosition="2" />
   <eLabel backgroundColor="#00ffffff" position="0,656" size="1280,2" zPosition="2" />
 </screen>
@@ -382,7 +382,7 @@ class XionHDF(ConfigListScreen, Screen):
 	def mylist(self):
 		list = []
 		list.append(getConfigListEntry(_("______________________ System __________________________________"), config.plugins.XionHDF.System, _(" ")))
-		list.append(getConfigListEntry(_("Running Text"), config.plugins.XionHDF.RunningText, _(" ")))
+		list.append(getConfigListEntry(_("Running Text"), config.plugins.XionHDF.RunningText, _("Do you want to activate the running text for some parts of skin?")))
 		list.append(getConfigListEntry(_("Background Transparency"), config.plugins.XionHDF.BackgroundColorTrans, _(" ")))
 		list.append(getConfigListEntry(_("______________________ Weather __________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _(" ")))
