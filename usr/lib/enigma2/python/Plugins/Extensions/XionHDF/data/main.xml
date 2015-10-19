@@ -2688,7 +2688,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <screen name="Fantastic" position="0,0" size="1280,720" title="HDF Toolbox" backgroundColor="transparent">
   <widget name="menu" position="70,100" size="510,469" scrollbarMode="showOnDemand" transparent="1" />
   <ePixmap position="70,445" size="380,57" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDF-Toolbox/banner.png" zPosition="2" alphatest="on" />
-  <eLabel text="Toolbox Version - 13.11.2014" position="536,607" size="304,45" font="Regular2; 22" valign="center" halign="center" transparent="1" foregroundColor="XionFont2" />
+  <eLabel text="Toolbox Version - 06.10.2015" position="536,607" size="304,45" font="Regular2; 22" valign="center" halign="center" transparent="1" foregroundColor="XionFont2" />
   <panel name="template_menu_left" />
 </screen>
   <!-- LogManager -->
