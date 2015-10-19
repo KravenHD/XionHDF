@@ -1,0 +1,8 @@
+#!/bin/sh
+rm -rf /usr/share/enigma2/XionHDF
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/XionHDF
+rm -rf /usr/lib/enigma2/python/Components/Converter/XionHDF*
+rm -rf /usr/lib/enigma2/python/Components/Renderer/XionHDF*
+echo "                                                          "
+echo "              ...Skin successful removed.                 "
+echo "                                                          "

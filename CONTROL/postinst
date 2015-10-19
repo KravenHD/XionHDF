@@ -1,0 +1,6 @@
+#!/bin/sh
+cd /usr/share/enigma2/XionHDF/
+
+echo "                                                          "
+echo "             ...Skin successful installed.                "
+echo "                                                          "
