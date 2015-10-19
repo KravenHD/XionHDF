@@ -24,7 +24,7 @@ msgstr ""
 
 #: XionHDFYWeather.py:198 XionHDFYWeather.py:230
 msgid "N"
-msgstr ""
+msgstr "N"
 
 #: XionHDFYWeather.py:200
 msgid "N-NE"
@@ -56,51 +56,51 @@ msgstr "S-SO"
 
 #: XionHDFYWeather.py:214
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #: XionHDFYWeather.py:216
 msgid "S-SW"
-msgstr ""
+msgstr "S-SW"
 
 #: XionHDFYWeather.py:218
 msgid "SW"
-msgstr ""
+msgstr "SW"
 
 #: XionHDFYWeather.py:220
 msgid "W-SW"
-msgstr ""
+msgstr "W-SW"
 
 #: XionHDFYWeather.py:222
 msgid "W"
-msgstr ""
+msgstr "W"
 
 #: XionHDFYWeather.py:224
 msgid "W-NW"
-msgstr ""
+msgstr "W-NW"
 
 #: XionHDFYWeather.py:226
 msgid "NW"
-msgstr ""
+msgstr "NW"
 
 #: XionHDFYWeather.py:228
 msgid "N-NW"
-msgstr ""
+msgstr "N-NW"
+
+#: XionHDFYWeather.py:231
+msgid ", feels "
+msgstr ", gefühlt "
 
 #: XionHDFYWeather.py:232
 msgid "N/A"
-msgstr ""
-
-#: XionHDFYWeather.py:234
-msgid " km/h"
-msgstr ""
+msgstr "N/A"
 
 #: XionHDFYWeather.py:937
 msgid " from "
 msgstr " von "
 
-#: XionHDFYWeather.py:949
-msgid ", feels "
-msgstr ", gefühlt "
+#: XionHDFYWeather.py:234
+msgid " km/h"
+msgstr " km/h"
 
 #: XionHDFYWeather.py:251 XionHDFYWeather.py:271 XionHDFYWeather.py:291
 #: XionHDFYWeather.py:311 XionHDFYWeather.py:331
@@ -140,7 +140,7 @@ msgstr "SO"
 #: XionHDFYWeather.py:426 XionHDFYWeather.py:530 XionHDFYWeather.py:634
 #: XionHDFYWeather.py:738 XionHDFYWeather.py:842
 msgid "Tornado"
-msgstr ""
+msgstr "Tornado"
 
 #: XionHDFYWeather.py:428 XionHDFYWeather.py:532 XionHDFYWeather.py:636
 #: XionHDFYWeather.py:740 XionHDFYWeather.py:844
@@ -394,6 +394,11 @@ msgid ""
 " thundershowers"
 msgstr "Vereinzelt Gewitter"
 
+#: XionHDFYWeather.py:521 XionHDFYWeather.py:625 XionHDFYWeather.py:729
+#: XionHDFYWeather.py:833 XionHDFYWeather.py:941
+msgid "% humidity"
+msgstr "% Luftfeuchtigkeit"
+
 #: XionHDFYWeather.py:522 XionHDFYWeather.py:626 XionHDFYWeather.py:730
 #: XionHDFYWeather.py:834 XionHDFYWeather.py:938
 msgid ""
@@ -401,17 +406,13 @@ msgid ""
 " available"
 msgstr "Nicht verfügbar"
 
-#: XionHDFYWeather.py:941
-msgid "% humidity"
-msgstr "% Luftfeuchtigkeit"
-
 #: plugin.py:75
 msgid "openHDF"
-msgstr ""
+msgstr "openHDF"
 
 #: plugin.py:82 plugin.py:499
 msgid "Zero"
-msgstr ""
+msgstr "Zero"
 
 #: plugin.py:88
 msgid "with Border"
@@ -678,15 +679,15 @@ msgstr "Klein"
 
 #: plugin.py:588
 msgid "______________________ System __________________________________"
-msgstr ""
+msgstr "______________________ System __________________________________"
 
 #: plugin.py:589
 msgid "Image"
-msgstr ""
+msgstr "Image"
 
 #: plugin.py:590 plugin.py:616
 msgid "Style"
-msgstr ""
+msgstr "Style"
 
 #: plugin.py:591
 msgid "Font Style"
@@ -694,7 +695,7 @@ msgstr "Schriftart"
 
 #: plugin.py:592
 msgid "Button Style"
-msgstr ""
+msgstr "Button Style"
 
 #: plugin.py:593
 msgid "Running Text"
@@ -718,7 +719,7 @@ msgstr "Linie"
 
 #: plugin.py:600
 msgid "Infobar"
-msgstr ""
+msgstr "Infobar"
 
 #: plugin.py:602
 msgid "Background"
@@ -754,11 +755,11 @@ msgstr "Auswahlbalken Schriftfarbe"
 
 #: plugin.py:614
 msgid "Button Text"
-msgstr ""
+msgstr "Button Text"
 
 #: plugin.py:615
 msgid "______________________ Infobar __________________________________"
-msgstr ""
+msgstr "______________________ Infobar __________________________________"
 
 #: plugin.py:617
 msgid "Clock"
@@ -770,7 +771,7 @@ msgstr "Farbe Analoguhr"
 
 #: plugin.py:624
 msgid "______________________ General __________________________________"
-msgstr ""
+msgstr "______________________ General __________________________________"
 
 #: plugin.py:625
 msgid "ChannelSelection"
@@ -778,19 +779,19 @@ msgstr "Kanallistenauswahl"
 
 #: plugin.py:626
 msgid "EMC"
-msgstr ""
+msgstr "EMC"
 
 #: plugin.py:627
 msgid "ExtNumberZap"
-msgstr ""
+msgstr "ExtNumberZap"
 
 #: plugin.py:628
 msgid "Volume Style"
-msgstr ""
+msgstr "Volume Style"
 
 #: plugin.py:629
 msgid "CoolTVGuide"
-msgstr ""
+msgstr "CoolTVGuide"
 
 #: plugin.py:682
 msgid "Do you really want to reboot now?"
@@ -802,7 +803,7 @@ msgstr "GUI neu starten"
 
 #: plugin.py:686
 msgid "Information"
-msgstr ""
+msgstr "Information"
 
 #: plugin.py:834
 msgid "Error creating Skin!"
