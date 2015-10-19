@@ -8,7 +8,11 @@ msgstr ""
 "Project-Id-Version: KravenSD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-06 23:16+0200\n"
+<<<<<<< HEAD:usr/lib/enigma2/python/Plugins/Extensions/XionHDF/locale/de/LC_MESSAGES/XionHDF.po
 "PO-Revision-Date: 2015-10-19 16:07+0100\n"
+=======
+"PO-Revision-Date: 2015-10-18 17:46+0100\n"
+>>>>>>> c50140a566f016bb98aa14215bd30b10c31ac290:usr/lib/enigma2/python/Plugins/Extensions/XionHDF/locale/de/LC_MESSAGES/XionHDF.po
 "Last-Translator: örlgrey <ochzoetna@gmail.com>\n"
 "Language-Team: kraven & mike99\n"
 "Language: de\n"
