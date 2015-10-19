@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-06 23:16+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: pixbox <pixbox@live.de>\n"
+"Last-Translator: Koivo <koivo@hdfreaks.cc>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
@@ -83,7 +83,7 @@ msgstr "N-NW"
 
 #: XionHDFYWeather.py:231
 msgid ", feels "
-msgstr ", gef¸hlt "
+msgstr ", gef√ºhlt "
 
 #: XionHDFYWeather.py:232
 msgid "N/A"
@@ -270,7 +270,7 @@ msgstr "Rauchig"
 #: XionHDFYWeather.py:472 XionHDFYWeather.py:576 XionHDFYWeather.py:680
 #: XionHDFYWeather.py:784 XionHDFYWeather.py:888
 msgid "Blustery"
-msgstr "St¸rmisch"
+msgstr "St√ºrmisch"
 
 #: XionHDFYWeather.py:474 XionHDFYWeather.py:578 XionHDFYWeather.py:682
 #: XionHDFYWeather.py:786 XionHDFYWeather.py:890
@@ -294,7 +294,7 @@ msgstr "Wolkig"
 msgid ""
 "Mostly\n"
 " cloudy"
-msgstr "‹berwiegend bewˆlkt"
+msgstr "√úberwiegend bew√∂lkt"
 
 #: XionHDFYWeather.py:484 XionHDFYWeather.py:486 XionHDFYWeather.py:514
 #: XionHDFYWeather.py:588 XionHDFYWeather.py:590 XionHDFYWeather.py:618
@@ -304,7 +304,7 @@ msgstr "‹berwiegend bewˆlkt"
 msgid ""
 "Partly\n"
 " cloudy"
-msgstr "Teilweise bewˆlkt"
+msgstr "Teilweise bew√∂lkt"
 
 #: XionHDFYWeather.py:488 XionHDFYWeather.py:592 XionHDFYWeather.py:696
 #: XionHDFYWeather.py:800 XionHDFYWeather.py:904
@@ -399,7 +399,7 @@ msgstr "% Luftfeuchtigkeit"
 msgid ""
 "Not\n"
 " available"
-msgstr "Nicht verf¸gbar"
+msgstr "Nicht verf√ºgbar"
 
 #: plugin.py:75
 msgid "openHDF"
@@ -521,13 +521,13 @@ msgstr "dunkel Grau"
 #: plugin.py:262 plugin.py:293 plugin.py:324 plugin.py:356 plugin.py:387
 #: plugin.py:418 plugin.py:443
 msgid "green"
-msgstr "Gr¸n"
+msgstr "Gr√ºn"
 
 #: plugin.py:116 plugin.py:143 plugin.py:170 plugin.py:201 plugin.py:232
 #: plugin.py:263 plugin.py:294 plugin.py:325 plugin.py:357 plugin.py:388
 #: plugin.py:419
 msgid "green dark"
-msgstr "dunkel Gr¸n"
+msgstr "dunkel Gr√ºn"
 
 #: plugin.py:117 plugin.py:171 plugin.py:202 plugin.py:233 plugin.py:264
 #: plugin.py:295 plugin.py:326 plugin.py:358 plugin.py:389 plugin.py:420
@@ -602,7 +602,7 @@ msgstr "dunkel Violet"
 #: plugin.py:276 plugin.py:307 plugin.py:338 plugin.py:370 plugin.py:401
 #: plugin.py:432 plugin.py:449
 msgid "white"
-msgstr "Weiﬂ"
+msgstr "Wei√ü"
 
 #: plugin.py:339 plugin.py:471 plugin.py:492 plugin.py:512 plugin.py:525
 msgid "off"
@@ -650,11 +650,11 @@ msgstr "Kleines Cover"
 
 #: plugin.py:486
 msgid "big Cover"
-msgstr "Groﬂes Cover"
+msgstr "Gro√ües Cover"
 
 #: plugin.py:487
 msgid "very big Cover"
-msgstr "Sehr groﬂes Cover"
+msgstr "Sehr gro√ües Cover"
 
 #: plugin.py:491 plugin.py:526
 msgid "on"
@@ -669,7 +669,7 @@ msgstr "______________________ Wetter ___________________________________"
 
 #: plugin.py:513
 msgid "big"
-msgstr "Groﬂ"
+msgstr "Gro√ü"
 
 #: plugin.py:623
 msgid "small"
@@ -737,7 +737,7 @@ msgstr "Auswahlbalken Rahmen"
 
 #: plugin.py:610
 msgid "Progress-/Volumebar"
-msgstr "Fortschritts-/Lautst‰rkebalken"
+msgstr "Fortschritts-/Lautst√§rkebalken"
 
 #: plugin.py:611
 msgid "primary Font"
@@ -745,7 +745,7 @@ msgstr "Hauptschrift / Sendung Jetzt"
 
 #: plugin.py:612
 msgid "secondary Font"
-msgstr "Sekund‰re Schriftfarbe / Sendung Danach"
+msgstr "Sekund√§re Schriftfarbe / Sendung Danach"
 
 #: plugin.py:613
 msgid "Listselection Font"
@@ -813,19 +813,16 @@ msgid ""
 "Do you want to Restart the GUI now?"
 msgstr ""
 "Zum herunterladen der Dateien und schreiben des Skin,\n"
-"muss die Oberfl‰che neu gestartet werden.\n"
+"muss die Oberfl√§che neu gestartet werden.\n"
 "\n"
 "Wollen Sie jetzt neu starten?"
 
 #: plugin.py:955 plugin.py:957
 msgid "Configuration tool for XionHDF"
-msgstr "Konfigurationstool f¸r XionHDF"
+msgstr "Konfigurationstool f√ºr XionHDF"
 
 msgid "clock with weekday"
 msgstr "Uhr mit Wochentag"
 
-msgid ""
-msgstr "Hier steht der Text zu Running-Text"
-
-msgid ""
-msgstr "Hier steht der Text zur Wetter ID"
+msgid "Do you want to activate the running text for some parts of skin?"
+msgstr "Soll an einigen Stellen im Skin der laufende Text aktiviert werden?"
