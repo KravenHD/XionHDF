@@ -8,19 +8,14 @@ msgstr ""
 "Project-Id-Version: XionHDF\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-06 23:16+0200\n"
-<<<<<<< HEAD:usr/lib/enigma2/python/Plugins/Extensions/XionHDF/locale/de/LC_MESSAGES/XionHDF.po
-"PO-Revision-Date: 2015-10-19 16:07+0100\n"
-=======
-"PO-Revision-Date: 2015-10-18 17:46+0100\n"
->>>>>>> c50140a566f016bb98aa14215bd30b10c31ac290:usr/lib/enigma2/python/Plugins/Extensions/XionHDF/locale/de/LC_MESSAGES/XionHDF.po
-"Last-Translator: örlgrey <ochzoetna@gmail.com>\n"
-"Language-Team: kraven & Team\n"
-"Language: de\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Koivo <koivo@hdfreaks.cc>\n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+"X-Generator: Poedit 1.8.5\n"
 
 #: XionHDFYWeather.py:198 XionHDFYWeather.py:230
 msgid "N"
@@ -668,6 +663,9 @@ msgstr "An"
 #: plugin.py:507 plugin.py:622
 msgid "Weather"
 msgstr "Wetter"
+
+msgid "______________________ Weather __________________________________"
+msgstr "______________________ Wetter ___________________________________"
 
 #: plugin.py:513
 msgid "big"
