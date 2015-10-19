@@ -382,7 +382,7 @@ class XionHDF(ConfigListScreen, Screen):
 	def mylist(self):
 		list = []
 		list.append(getConfigListEntry(_("______________________ System __________________________________"), config.plugins.XionHDF.System, _(" ")))
-		list.append(getConfigListEntry(_("Running Text"), config.plugins.XionHDF.RunningText, _("Do you want to activate the running text for some parts of skin?")))
+		list.append(getConfigListEntry(_("Running Text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
 		list.append(getConfigListEntry(_("Background Transparency"), config.plugins.XionHDF.BackgroundColorTrans, _(" ")))
 		list.append(getConfigListEntry(_("______________________ Weather __________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _(" ")))
