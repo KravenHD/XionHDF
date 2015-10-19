@@ -9,10 +9,10 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-06 23:16+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Koivo <koivo@hdfreaks.cc>\n"
+"Last-Translator: pixbox <pixbox@live.de>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
 "X-Generator: Poedit 1.8.5\n"
@@ -294,7 +294,7 @@ msgstr "Wolkig"
 msgid ""
 "Mostly\n"
 " cloudy"
-msgstr "Überwiegend bewölkt"
+msgstr "Ãberwiegend bewölkt"
 
 #: XionHDFYWeather.py:484 XionHDFYWeather.py:486 XionHDFYWeather.py:514
 #: XionHDFYWeather.py:588 XionHDFYWeather.py:590 XionHDFYWeather.py:618
@@ -602,7 +602,7 @@ msgstr "dunkel Violet"
 #: plugin.py:276 plugin.py:307 plugin.py:338 plugin.py:370 plugin.py:401
 #: plugin.py:432 plugin.py:449
 msgid "white"
-msgstr "Weiß"
+msgstr "Weiß"
 
 #: plugin.py:339 plugin.py:471 plugin.py:492 plugin.py:512 plugin.py:525
 msgid "off"
