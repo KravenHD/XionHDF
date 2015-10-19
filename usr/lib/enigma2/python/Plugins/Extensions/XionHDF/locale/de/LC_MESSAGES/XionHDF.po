@@ -5,7 +5,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: KravenSD\n"
+"Project-Id-Version: XionHDF\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-06 23:16+0200\n"
 <<<<<<< HEAD:usr/lib/enigma2/python/Plugins/Extensions/XionHDF/locale/de/LC_MESSAGES/XionHDF.po
@@ -14,7 +14,7 @@ msgstr ""
 "PO-Revision-Date: 2015-10-18 17:46+0100\n"
 >>>>>>> c50140a566f016bb98aa14215bd30b10c31ac290:usr/lib/enigma2/python/Plugins/Extensions/XionHDF/locale/de/LC_MESSAGES/XionHDF.po
 "Last-Translator: örlgrey <ochzoetna@gmail.com>\n"
-"Language-Team: kraven & mike99\n"
+"Language-Team: kraven & Team\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -93,6 +93,14 @@ msgstr ""
 #: XionHDFYWeather.py:234
 msgid " km/h"
 msgstr ""
+
+#: XionHDFYWeather.py:937
+msgid " from "
+msgstr " von "
+
+#: XionHDFYWeather.py:949
+msgid ", feels "
+msgstr ", gefühlt "
 
 #: XionHDFYWeather.py:251 XionHDFYWeather.py:271 XionHDFYWeather.py:291
 #: XionHDFYWeather.py:311 XionHDFYWeather.py:331
@@ -392,6 +400,10 @@ msgid ""
 "Not\n"
 " available"
 msgstr "Nicht verfügbar"
+
+#: XionHDFYWeather.py:941
+msgid "% humidity"
+msgstr "% Luftfeuchtigkeit"
 
 #: plugin.py:75
 msgid "openHDF"
