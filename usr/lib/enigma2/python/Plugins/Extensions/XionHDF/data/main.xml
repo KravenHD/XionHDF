@@ -1342,9 +1342,9 @@
       <convert type="StringList" />
     </widget>
     <widget name="labactive" position="180,80" size="100,24" font="Regular;20" foregroundColor="XionFont1" valign="center" halign="center" backgroundColor="green" zPosition="2" />
-    <widget name="lab1" position="70,80" size="100,24" font="Regular;20" foregroundColor="XionFont1" valign="center" transparent="1" />
+    <widget name="lab1" position="70,80" size="100,24" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" valign="center" transparent="1" />
     <widget name="labrun" position="396,80" size="100,24" font="Regular;20" foregroundColor="XionFont1" valign="center" halign="center" backgroundColor="green" zPosition="2" />
-    <widget name="lab2" position="299,80" size="150,24" font="Regular;20" foregroundColor="XionFont1" valign="center" transparent="1" />
+    <widget name="lab2" position="299,80" size="150,24" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" valign="center" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
@@ -2688,7 +2688,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <screen name="Fantastic" position="0,0" size="1280,720" title="HDF Toolbox" backgroundColor="transparent">
   <widget name="menu" position="70,100" size="510,469" scrollbarMode="showOnDemand" transparent="1" />
   <ePixmap position="70,445" size="380,57" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDF-Toolbox/banner.png" zPosition="2" alphatest="on" />
-  <eLabel text="Toolbox Version - 06.10.2015" position="536,607" size="304,45" font="Regular2; 22" valign="center" halign="center" transparent="1" foregroundColor="XionFont2" />
   <panel name="template_menu_left" />
 </screen>
   <!-- LogManager -->
