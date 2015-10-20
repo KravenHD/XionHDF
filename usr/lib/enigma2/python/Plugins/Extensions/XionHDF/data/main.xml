@@ -2515,15 +2515,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <!-- AboutOE -->
   <screen name="AboutOE" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="lab1" render="Label" position="70,123" size="369,35" font="Regular;30" foregroundColor="XionFont1" transparent="1" zPosition="2" />
-    <widget source="lab2" render="Label" position="70,173" size="370,25" font="Regular;19" foregroundColor="XionFont1" transparent="1" zPosition="2" />
-    <widget source="lab3" render="Label" position="70,213" size="369,25" font="Regular;19" foregroundColor="XionFont1" transparent="1" zPosition="1" />
-    <eLabel text="OPEN SOURCE" position="460,123" size="353,28" font="Regular2; 22" transparent="1" zPosition="1" foregroundColor="XionFont2" />
-    <eLabel text="https://github.com/openhdf" position="460,163" size="352,28" font="Regular2; 19" transparent="1" zPosition="1" foregroundColor="XionFont2" />
-    <eLabel text="https://github.com/oe-alliance" position="460,203" size="354,28" font="Regular2; 19" transparent="1" zPosition="1" foregroundColor="XionFont2" />
-    <eLabel text="Designed by" position="890,460" size="355,40" font="Regular2; 24" transparent="1" zPosition="1" foregroundColor="XionFont2" valign="center" halign="center" />
-    <eLabel text="Kraven and örlgrey" position="890,510" size="355,40" font="Regular2; 24" transparent="1" zPosition="1" foregroundColor="XionFont2" halign="center" />
-    <widget name="AboutScrollLabel" position="70,253" size="650,400" scrollbarMode="showOnDemand" font="Regular;20" foregroundColor="XionFont1" transparent="1" zPosition="1" />
+    <widget source="lab1" render="Label" position="70,123" size="369,35" font="Regular;30" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" />
+    <widget source="lab2" render="Label" position="70,173" size="370,25" font="Regular;19" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" />
+    <widget source="lab3" render="Label" position="70,213" size="369,25" font="Regular;19" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+    <eLabel text="OPEN SOURCE" position="460,123" size="353,28" font="Regular2; 22" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
+    <eLabel text="https://github.com/openhdf" position="460,163" size="352,28" font="Regular2; 19" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
+    <eLabel text="https://github.com/oe-alliance" position="460,203" size="354,28" font="Regular2; 19" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
+    <eLabel text="Designed by" position="890,460" size="355,40" font="Regular2; 24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" valign="center" halign="center" />
+    <eLabel text="Kraven and örlgrey" position="890,510" size="355,40" font="Regular2; 24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="center" />
+    <widget name="AboutScrollLabel" position="70,253" size="650,400" scrollbarMode="showOnDemand" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- UpdatePluginMenu -->
@@ -2560,12 +2560,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 </screen>
   <!-- Devices -->
 <screen name="Devices" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-  <widget source="TunerHeader" render="Label" position="70,121" size="708,36" font="Regular;20" foregroundColor="XionFont1" transparent="1" zPosition="1" />
-  <widget source="nims" render="Label" position="70,162" size="708,108" font="Regular;18" foregroundColor="XionFont1" transparent="1" zPosition="1" enableWrapAround="0" />
-  <widget source="HDDHeader" render="Label" position="70,275" size="708,36" font="Regular;20" foregroundColor="XionFont1" transparent="1" zPosition="1" />
-  <widget source="hdd" render="Label" position="70,315" size="708,112" font="Regular;18" foregroundColor="XionFont1" transparent="1" zPosition="1" enableWrapAround="0" />
-  <widget source="MountsHeader" render="Label" position="70,431" size="708,36" font="Regular;20" foregroundColor="XionFont1" transparent="1" zPosition="1" />
-  <widget source="mounts" render="Label" position="70,471" size="708,143" font="Regular;18" foregroundColor="XionFont1" transparent="1" zPosition="1" enableWrapAround="0" />
+  <widget source="TunerHeader" render="Label" position="70,121" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+  <widget source="nims" render="Label" position="70,162" size="708,108" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
+  <widget source="HDDHeader" render="Label" position="70,275" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+  <widget source="hdd" render="Label" position="70,315" size="708,112" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
+  <widget source="MountsHeader" render="Label" position="70,431" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+  <widget source="mounts" render="Label" position="70,471" size="708,143" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
   <panel name="template_menu_left" />
 </screen>
   <!-- HotkeySetup -->
