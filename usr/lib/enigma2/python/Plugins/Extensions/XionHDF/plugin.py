@@ -534,9 +534,6 @@ class XionHDF(ConfigListScreen, Screen):
 		return self.getDataByKey(channelInfoFontSizes, key)
 
 	def save(self):
-		if fileExists("/tmp/XionHDFweather.xml"):
-			remove('/tmp/XionHDFweather.xml')
-
 		for x in self["config"].list:
 			if len(x) > 1:
 					x[1].save()
