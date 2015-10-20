@@ -15,809 +15,537 @@ msgstr ""
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.6\n"
 
-#: XionHDFYWeather.py:198 XionHDFYWeather.py:230
 msgid "N"
 msgstr "N"
 
-#: XionHDFYWeather.py:200
 msgid "N-NE"
 msgstr "N-NO"
 
-#: XionHDFYWeather.py:202
 msgid "NE"
 msgstr "NO"
 
-#: XionHDFYWeather.py:204
 msgid "E-NE"
 msgstr "O-NO"
 
-#: XionHDFYWeather.py:206
 msgid "E"
 msgstr "O"
 
-#: XionHDFYWeather.py:208
 msgid "E-SE"
 msgstr "O-SO"
 
-#: XionHDFYWeather.py:210
 msgid "SE"
 msgstr "SO"
 
-#: XionHDFYWeather.py:212
 msgid "S-SE"
 msgstr "S-SO"
 
-#: XionHDFYWeather.py:214
 msgid "S"
 msgstr "S"
 
-#: XionHDFYWeather.py:216
 msgid "S-SW"
 msgstr "S-SW"
 
-#: XionHDFYWeather.py:218
 msgid "SW"
 msgstr "SW"
 
-#: XionHDFYWeather.py:220
 msgid "W-SW"
 msgstr "W-SW"
 
-#: XionHDFYWeather.py:222
 msgid "W"
 msgstr "W"
 
-#: XionHDFYWeather.py:224
 msgid "W-NW"
 msgstr "W-NW"
 
-#: XionHDFYWeather.py:226
 msgid "NW"
 msgstr "NW"
 
-#: XionHDFYWeather.py:228
 msgid "N-NW"
 msgstr "N-NW"
 
-#: XionHDFYWeather.py:231
 msgid ", feels "
 msgstr ", gefühlt "
 
-#: XionHDFYWeather.py:232
 msgid "N/A"
 msgstr "N/A"
 
-#: XionHDFYWeather.py:937
 msgid " from "
 msgstr " von "
 
-#: XionHDFYWeather.py:234
 msgid " km/h"
 msgstr " km/h"
 
-#: XionHDFYWeather.py:251 XionHDFYWeather.py:271 XionHDFYWeather.py:291
-#: XionHDFYWeather.py:311 XionHDFYWeather.py:331
 msgid "Mon"
 msgstr "MO"
 
-#: XionHDFYWeather.py:253 XionHDFYWeather.py:273 XionHDFYWeather.py:293
-#: XionHDFYWeather.py:313 XionHDFYWeather.py:333
 msgid "Tue"
 msgstr "DI"
 
-#: XionHDFYWeather.py:255 XionHDFYWeather.py:275 XionHDFYWeather.py:295
-#: XionHDFYWeather.py:315 XionHDFYWeather.py:335
 msgid "Wed"
 msgstr "MI"
 
-#: XionHDFYWeather.py:257 XionHDFYWeather.py:277 XionHDFYWeather.py:297
-#: XionHDFYWeather.py:317 XionHDFYWeather.py:337
 msgid "Thu"
 msgstr "DO"
 
-#: XionHDFYWeather.py:259 XionHDFYWeather.py:279 XionHDFYWeather.py:299
-#: XionHDFYWeather.py:319 XionHDFYWeather.py:339
 msgid "Fri"
 msgstr "FR"
 
-#: XionHDFYWeather.py:261 XionHDFYWeather.py:281 XionHDFYWeather.py:301
-#: XionHDFYWeather.py:321 XionHDFYWeather.py:341
 msgid "Sat"
 msgstr "SA"
 
-#: XionHDFYWeather.py:263 XionHDFYWeather.py:283 XionHDFYWeather.py:303
-#: XionHDFYWeather.py:323 XionHDFYWeather.py:343
 msgid "Sun"
 msgstr "SO"
 
-#: XionHDFYWeather.py:426 XionHDFYWeather.py:530 XionHDFYWeather.py:634
-#: XionHDFYWeather.py:738 XionHDFYWeather.py:842
 msgid "Tornado"
 msgstr "Tornado"
 
-#: XionHDFYWeather.py:428 XionHDFYWeather.py:532 XionHDFYWeather.py:636
-#: XionHDFYWeather.py:740 XionHDFYWeather.py:844
 msgid ""
 "Tropical\n"
 " storm"
 msgstr "Tropischer Sturm"
 
-#: XionHDFYWeather.py:430 XionHDFYWeather.py:534 XionHDFYWeather.py:638
-#: XionHDFYWeather.py:742 XionHDFYWeather.py:846
 msgid "Hurricane"
 msgstr "Hurrikan"
 
-#: XionHDFYWeather.py:432 XionHDFYWeather.py:536 XionHDFYWeather.py:640
-#: XionHDFYWeather.py:744 XionHDFYWeather.py:848
 msgid ""
 "Severe\n"
 " thunderstorms"
 msgstr "Schwere Gewitter"
 
-#: XionHDFYWeather.py:434 XionHDFYWeather.py:538 XionHDFYWeather.py:642
-#: XionHDFYWeather.py:746 XionHDFYWeather.py:850
 msgid "Thunderstorms"
 msgstr "Gewitter"
 
-#: XionHDFYWeather.py:436 XionHDFYWeather.py:540 XionHDFYWeather.py:644
-#: XionHDFYWeather.py:748 XionHDFYWeather.py:852
 msgid ""
 "Mixed rain\n"
 " and snow"
 msgstr "Regen und Schnee"
 
-#: XionHDFYWeather.py:438 XionHDFYWeather.py:542 XionHDFYWeather.py:646
-#: XionHDFYWeather.py:750 XionHDFYWeather.py:854
 msgid ""
 "Mixed rain\n"
 " and sleet"
 msgstr "Regen und Schneeregen"
 
-#: XionHDFYWeather.py:440 XionHDFYWeather.py:544 XionHDFYWeather.py:648
-#: XionHDFYWeather.py:752 XionHDFYWeather.py:856
 msgid ""
 "Mixed snow\n"
 " and sleet"
 msgstr "Schnee und Graupel"
 
-#: XionHDFYWeather.py:442 XionHDFYWeather.py:546 XionHDFYWeather.py:650
-#: XionHDFYWeather.py:754 XionHDFYWeather.py:858
 msgid ""
 "Freezing\n"
 " drizzle"
 msgstr "Frierender Nieselregen"
 
-#: XionHDFYWeather.py:444 XionHDFYWeather.py:548 XionHDFYWeather.py:652
-#: XionHDFYWeather.py:756 XionHDFYWeather.py:860
 msgid "Drizzle"
 msgstr "Nieselregen"
 
-#: XionHDFYWeather.py:446 XionHDFYWeather.py:550 XionHDFYWeather.py:654
-#: XionHDFYWeather.py:758 XionHDFYWeather.py:862
 msgid ""
 "Freezing\n"
 " rain"
 msgstr "Eisregen"
 
-#: XionHDFYWeather.py:448 XionHDFYWeather.py:552 XionHDFYWeather.py:656
-#: XionHDFYWeather.py:760 XionHDFYWeather.py:864
 msgid "Showers"
 msgstr "Regen"
 
-#: XionHDFYWeather.py:450 XionHDFYWeather.py:554 XionHDFYWeather.py:658
-#: XionHDFYWeather.py:762 XionHDFYWeather.py:866
 msgid "Rain"
 msgstr "Regen"
 
-#: XionHDFYWeather.py:452 XionHDFYWeather.py:556 XionHDFYWeather.py:660
-#: XionHDFYWeather.py:764 XionHDFYWeather.py:868
 msgid ""
 "Snow\n"
 " flurries"
 msgstr "Schneetreiben"
 
-#: XionHDFYWeather.py:454 XionHDFYWeather.py:558 XionHDFYWeather.py:662
-#: XionHDFYWeather.py:766 XionHDFYWeather.py:870
 msgid ""
 "Light\n"
 " snow showers"
 msgstr "Leichte Schneeschauer"
 
-#: XionHDFYWeather.py:456 XionHDFYWeather.py:560 XionHDFYWeather.py:664
-#: XionHDFYWeather.py:768 XionHDFYWeather.py:872
 msgid ""
 "Blowing\n"
 " snow"
 msgstr "Schneetreiben"
 
-#: XionHDFYWeather.py:458 XionHDFYWeather.py:562 XionHDFYWeather.py:666
-#: XionHDFYWeather.py:770 XionHDFYWeather.py:874
 msgid "Snow"
 msgstr "Schnee"
 
-#: XionHDFYWeather.py:460 XionHDFYWeather.py:564 XionHDFYWeather.py:668
-#: XionHDFYWeather.py:772 XionHDFYWeather.py:876
 msgid "Hail"
 msgstr "Hagel"
 
-#: XionHDFYWeather.py:462 XionHDFYWeather.py:566 XionHDFYWeather.py:670
-#: XionHDFYWeather.py:774 XionHDFYWeather.py:878
 msgid "Sleet"
 msgstr "Schneeregen"
 
-#: XionHDFYWeather.py:464 XionHDFYWeather.py:568 XionHDFYWeather.py:672
-#: XionHDFYWeather.py:776 XionHDFYWeather.py:880
 msgid "Dust"
 msgstr "Staub"
 
-#: XionHDFYWeather.py:466 XionHDFYWeather.py:570 XionHDFYWeather.py:674
-#: XionHDFYWeather.py:778 XionHDFYWeather.py:882
 msgid "Foggy"
 msgstr "Nebelig"
 
-#: XionHDFYWeather.py:468 XionHDFYWeather.py:572 XionHDFYWeather.py:676
-#: XionHDFYWeather.py:780 XionHDFYWeather.py:884
 msgid "Haze"
 msgstr "Nebel"
 
-#: XionHDFYWeather.py:470 XionHDFYWeather.py:574 XionHDFYWeather.py:678
-#: XionHDFYWeather.py:782 XionHDFYWeather.py:886
 msgid "Smoky"
 msgstr "Rauchig"
 
-#: XionHDFYWeather.py:472 XionHDFYWeather.py:576 XionHDFYWeather.py:680
-#: XionHDFYWeather.py:784 XionHDFYWeather.py:888
 msgid "Blustery"
 msgstr "Stürmisch"
 
-#: XionHDFYWeather.py:474 XionHDFYWeather.py:578 XionHDFYWeather.py:682
-#: XionHDFYWeather.py:786 XionHDFYWeather.py:890
 msgid "Windy"
 msgstr "Windig"
 
-#: XionHDFYWeather.py:476 XionHDFYWeather.py:580 XionHDFYWeather.py:684
-#: XionHDFYWeather.py:788 XionHDFYWeather.py:892
 msgid "Cold"
 msgstr "Kalt"
 
-#: XionHDFYWeather.py:478 XionHDFYWeather.py:582 XionHDFYWeather.py:686
-#: XionHDFYWeather.py:790 XionHDFYWeather.py:894
 msgid "Cloudy"
 msgstr "Wolkig"
 
-#: XionHDFYWeather.py:480 XionHDFYWeather.py:482 XionHDFYWeather.py:584
-#: XionHDFYWeather.py:586 XionHDFYWeather.py:688 XionHDFYWeather.py:690
-#: XionHDFYWeather.py:792 XionHDFYWeather.py:794 XionHDFYWeather.py:896
-#: XionHDFYWeather.py:898
 msgid ""
 "Mostly\n"
 " cloudy"
 msgstr "Überwiegend bewölkt"
 
-#: XionHDFYWeather.py:484 XionHDFYWeather.py:486 XionHDFYWeather.py:514
-#: XionHDFYWeather.py:588 XionHDFYWeather.py:590 XionHDFYWeather.py:618
-#: XionHDFYWeather.py:692 XionHDFYWeather.py:694 XionHDFYWeather.py:722
-#: XionHDFYWeather.py:796 XionHDFYWeather.py:798 XionHDFYWeather.py:826
-#: XionHDFYWeather.py:900 XionHDFYWeather.py:902 XionHDFYWeather.py:930
 msgid ""
 "Partly\n"
 " cloudy"
 msgstr "Teilweise bewölkt"
 
-#: XionHDFYWeather.py:488 XionHDFYWeather.py:592 XionHDFYWeather.py:696
-#: XionHDFYWeather.py:800 XionHDFYWeather.py:904
 msgid "Clear"
 msgstr "Klar"
 
-#: XionHDFYWeather.py:490 XionHDFYWeather.py:594 XionHDFYWeather.py:698
-#: XionHDFYWeather.py:802 XionHDFYWeather.py:906
 msgid "Sunny"
 msgstr "Sonnig"
 
-#: XionHDFYWeather.py:492 XionHDFYWeather.py:494 XionHDFYWeather.py:596
-#: XionHDFYWeather.py:598 XionHDFYWeather.py:700 XionHDFYWeather.py:702
-#: XionHDFYWeather.py:804 XionHDFYWeather.py:806 XionHDFYWeather.py:908
-#: XionHDFYWeather.py:910
 msgid "Fair"
 msgstr "Heiter"
 
-#: XionHDFYWeather.py:496 XionHDFYWeather.py:600 XionHDFYWeather.py:704
-#: XionHDFYWeather.py:808 XionHDFYWeather.py:912
 msgid ""
 "Mixed rain\n"
 " and hail"
 msgstr "Regen und Hagel"
 
-#: XionHDFYWeather.py:498 XionHDFYWeather.py:602 XionHDFYWeather.py:706
-#: XionHDFYWeather.py:810 XionHDFYWeather.py:914
 msgid "Hot"
 msgstr "Heiss"
 
-#: XionHDFYWeather.py:500 XionHDFYWeather.py:604 XionHDFYWeather.py:708
-#: XionHDFYWeather.py:812 XionHDFYWeather.py:916
 msgid ""
 "Isolated\n"
 " thunderstorms"
 msgstr "Vereinzelte Gewitter"
 
-#: XionHDFYWeather.py:502 XionHDFYWeather.py:504 XionHDFYWeather.py:606
-#: XionHDFYWeather.py:608 XionHDFYWeather.py:710 XionHDFYWeather.py:712
-#: XionHDFYWeather.py:814 XionHDFYWeather.py:816 XionHDFYWeather.py:918
-#: XionHDFYWeather.py:920
 msgid ""
 "Scattered\n"
 " thunderstorms"
 msgstr "Vereinzelte Gewitter"
 
-#: XionHDFYWeather.py:506 XionHDFYWeather.py:610 XionHDFYWeather.py:714
-#: XionHDFYWeather.py:818 XionHDFYWeather.py:922
 msgid ""
 "Scattered\n"
 " showers"
 msgstr "Vereinzelte Regenschauer"
 
-#: XionHDFYWeather.py:508 XionHDFYWeather.py:512 XionHDFYWeather.py:612
-#: XionHDFYWeather.py:616 XionHDFYWeather.py:716 XionHDFYWeather.py:720
-#: XionHDFYWeather.py:820 XionHDFYWeather.py:824 XionHDFYWeather.py:924
-#: XionHDFYWeather.py:928
 msgid "Heavy snow"
 msgstr "Starker Schneefall"
 
-#: XionHDFYWeather.py:510 XionHDFYWeather.py:614 XionHDFYWeather.py:718
-#: XionHDFYWeather.py:822 XionHDFYWeather.py:926
 msgid ""
 "Scattered\n"
 " snow showers"
 msgstr "Vereinzelte Schneeschauer"
 
-#: XionHDFYWeather.py:516 XionHDFYWeather.py:620 XionHDFYWeather.py:724
-#: XionHDFYWeather.py:828 XionHDFYWeather.py:932
 msgid "Thundershowers"
 msgstr "Gewitter"
 
-#: XionHDFYWeather.py:518 XionHDFYWeather.py:622 XionHDFYWeather.py:726
-#: XionHDFYWeather.py:830 XionHDFYWeather.py:934
 msgid "Snow showers"
 msgstr "Schneeschauer"
 
-#: XionHDFYWeather.py:520 XionHDFYWeather.py:624 XionHDFYWeather.py:728
-#: XionHDFYWeather.py:832 XionHDFYWeather.py:936
 msgid ""
 "Isolated\n"
 " thundershowers"
 msgstr "Vereinzelt Gewitter"
 
-#: XionHDFYWeather.py:521 XionHDFYWeather.py:625 XionHDFYWeather.py:729
-#: XionHDFYWeather.py:833 XionHDFYWeather.py:941
 msgid "% humidity"
 msgstr "% Luftfeuchtigkeit"
 
-#: XionHDFYWeather.py:522 XionHDFYWeather.py:626 XionHDFYWeather.py:730
-#: XionHDFYWeather.py:834 XionHDFYWeather.py:938
 msgid ""
 "Not\n"
 " available"
 msgstr "Nicht verfügbar"
 
-#: plugin.py:75
 msgid "openHDF"
 msgstr "openHDF"
 
-#: plugin.py:82 plugin.py:499
 msgid "Zero"
 msgstr "Zero"
 
-#: plugin.py:88
 msgid "with Border"
 msgstr "mit Rahmen"
 
-#: plugin.py:89
 msgid "left"
 msgstr "Links"
 
-#: plugin.py:90
 msgid "right"
 msgstr "Rechts"
 
-#: plugin.py:91
 msgid "top"
 msgstr "Oben"
 
-#: plugin.py:92
 msgid "center"
 msgstr "Mittig"
 
-#: plugin.py:96
+msgid "lower"
+msgstr "15%"
+
 msgid "low"
-msgstr "Niedrig"
+msgstr "30%"
 
-#: plugin.py:97
+msgid "middle"
+msgstr "50%"
+
 msgid "medium"
-msgstr "Mittel"
+msgstr "70%"
 
-#: plugin.py:98
 msgid "high"
-msgstr "Hoch"
+msgstr "90%"
 
-#: plugin.py:102 plugin.py:133 plugin.py:156 plugin.py:187 plugin.py:218
-#: plugin.py:249 plugin.py:280 plugin.py:311 plugin.py:343 plugin.py:374
-#: plugin.py:405 plugin.py:436
 msgid "amber"
 msgstr "Amber"
 
-#: plugin.py:103 plugin.py:134 plugin.py:157 plugin.py:188 plugin.py:219
-#: plugin.py:250 plugin.py:281 plugin.py:312 plugin.py:344 plugin.py:375
-#: plugin.py:406
 msgid "amber dark"
 msgstr "dunkel Amber"
 
-#: plugin.py:104 plugin.py:135 plugin.py:158 plugin.py:189 plugin.py:220
-#: plugin.py:251 plugin.py:282 plugin.py:313 plugin.py:345 plugin.py:376
-#: plugin.py:407 plugin.py:437
 msgid "black"
 msgstr "Schwarz"
 
-#: plugin.py:105 plugin.py:136 plugin.py:159 plugin.py:190 plugin.py:221
-#: plugin.py:252 plugin.py:283 plugin.py:314 plugin.py:346 plugin.py:377
-#: plugin.py:408 plugin.py:438
 msgid "blue"
 msgstr "Blau"
 
-#: plugin.py:106 plugin.py:137 plugin.py:160 plugin.py:191 plugin.py:222
-#: plugin.py:253 plugin.py:284 plugin.py:315 plugin.py:347 plugin.py:378
-#: plugin.py:409
 msgid "blue dark"
 msgstr "dunkel Blau"
 
-#: plugin.py:107 plugin.py:138 plugin.py:161 plugin.py:192 plugin.py:223
-#: plugin.py:254 plugin.py:285 plugin.py:316 plugin.py:348 plugin.py:379
-#: plugin.py:410 plugin.py:439
 msgid "brown"
 msgstr "Braun"
 
-#: plugin.py:108 plugin.py:139 plugin.py:162 plugin.py:193 plugin.py:224
-#: plugin.py:255 plugin.py:286 plugin.py:317 plugin.py:349 plugin.py:380
-#: plugin.py:411
 msgid "brown dark"
 msgstr "dunkel Braun"
 
-#: plugin.py:109 plugin.py:163 plugin.py:194 plugin.py:225 plugin.py:256
-#: plugin.py:287 plugin.py:318 plugin.py:350 plugin.py:381 plugin.py:412
-#: plugin.py:440
 msgid "cobalt"
 msgstr "Cobalt"
 
-#: plugin.py:110 plugin.py:164 plugin.py:195 plugin.py:226 plugin.py:257
-#: plugin.py:288 plugin.py:319 plugin.py:351 plugin.py:382 plugin.py:413
 msgid "cobalt dark"
 msgstr "dunkel Cobalt"
 
-#: plugin.py:111 plugin.py:165 plugin.py:196 plugin.py:227 plugin.py:258
-#: plugin.py:289 plugin.py:320 plugin.py:352 plugin.py:383 plugin.py:414
-#: plugin.py:441
 msgid "cyan"
 msgstr "Cyan"
 
-#: plugin.py:112 plugin.py:166 plugin.py:197 plugin.py:228 plugin.py:259
-#: plugin.py:290 plugin.py:321 plugin.py:353 plugin.py:384 plugin.py:415
 msgid "cyan dark"
 msgstr "dunkel Cyan"
 
-#: plugin.py:113 plugin.py:140 plugin.py:167 plugin.py:198 plugin.py:229
-#: plugin.py:260 plugin.py:291 plugin.py:322 plugin.py:354 plugin.py:385
-#: plugin.py:416 plugin.py:442
 msgid "grey"
 msgstr "Grau"
 
-#: plugin.py:114 plugin.py:141 plugin.py:168 plugin.py:199 plugin.py:230
-#: plugin.py:261 plugin.py:292 plugin.py:323 plugin.py:355 plugin.py:386
-#: plugin.py:417
 msgid "grey dark"
 msgstr "dunkel Grau"
 
-#: plugin.py:115 plugin.py:142 plugin.py:169 plugin.py:200 plugin.py:231
-#: plugin.py:262 plugin.py:293 plugin.py:324 plugin.py:356 plugin.py:387
-#: plugin.py:418 plugin.py:443
 msgid "green"
 msgstr "Grün"
 
-#: plugin.py:116 plugin.py:143 plugin.py:170 plugin.py:201 plugin.py:232
-#: plugin.py:263 plugin.py:294 plugin.py:325 plugin.py:357 plugin.py:388
-#: plugin.py:419
 msgid "green dark"
 msgstr "dunkel Grün"
 
-#: plugin.py:117 plugin.py:171 plugin.py:202 plugin.py:233 plugin.py:264
-#: plugin.py:295 plugin.py:326 plugin.py:358 plugin.py:389 plugin.py:420
 msgid "olive"
 msgstr "Olive"
 
-#: plugin.py:118 plugin.py:172 plugin.py:203 plugin.py:234 plugin.py:265
-#: plugin.py:296 plugin.py:327 plugin.py:359 plugin.py:390 plugin.py:421
 msgid "olive dark"
 msgstr "dunkel Olive"
 
-#: plugin.py:119 plugin.py:144 plugin.py:173 plugin.py:204 plugin.py:235
-#: plugin.py:266 plugin.py:297 plugin.py:328 plugin.py:360 plugin.py:391
-#: plugin.py:422 plugin.py:444
 msgid "orange"
 msgstr "Orange"
 
-#: plugin.py:120 plugin.py:145 plugin.py:174 plugin.py:205 plugin.py:236
-#: plugin.py:267 plugin.py:298 plugin.py:329 plugin.py:361 plugin.py:392
-#: plugin.py:423
 msgid "orange dark"
 msgstr "dunkel Orange"
 
-#: plugin.py:121 plugin.py:146 plugin.py:175 plugin.py:206 plugin.py:237
-#: plugin.py:268 plugin.py:299 plugin.py:330 plugin.py:362 plugin.py:393
-#: plugin.py:424 plugin.py:445
 msgid "pink"
 msgstr "Pink"
 
-#: plugin.py:122 plugin.py:147 plugin.py:176 plugin.py:207 plugin.py:238
-#: plugin.py:269 plugin.py:300 plugin.py:331 plugin.py:363 plugin.py:394
-#: plugin.py:425
 msgid "pink dark"
 msgstr "dunkel Pink"
 
-#: plugin.py:123 plugin.py:148 plugin.py:177 plugin.py:208 plugin.py:239
-#: plugin.py:270 plugin.py:301 plugin.py:332 plugin.py:364 plugin.py:395
-#: plugin.py:426 plugin.py:446
 msgid "red"
 msgstr "Rot"
 
-#: plugin.py:124 plugin.py:149 plugin.py:178 plugin.py:209 plugin.py:240
-#: plugin.py:271 plugin.py:302 plugin.py:333 plugin.py:365 plugin.py:396
-#: plugin.py:427
 msgid "red dark"
 msgstr "dunkel Rot"
 
-#: plugin.py:125 plugin.py:179 plugin.py:210 plugin.py:241 plugin.py:272
-#: plugin.py:303 plugin.py:334 plugin.py:366 plugin.py:397 plugin.py:428
-#: plugin.py:447
 msgid "steel"
 msgstr "Stahl"
 
-#: plugin.py:126 plugin.py:180 plugin.py:211 plugin.py:242 plugin.py:273
-#: plugin.py:304 plugin.py:335 plugin.py:367 plugin.py:398 plugin.py:429
 msgid "steel dark"
 msgstr "dunkel Stahl"
 
-#: plugin.py:127 plugin.py:150 plugin.py:181 plugin.py:212 plugin.py:243
-#: plugin.py:274 plugin.py:305 plugin.py:336 plugin.py:368 plugin.py:399
-#: plugin.py:430 plugin.py:448
 msgid "violet"
 msgstr "Violet"
 
-#: plugin.py:128 plugin.py:151 plugin.py:182 plugin.py:213 plugin.py:244
-#: plugin.py:275 plugin.py:306 plugin.py:337 plugin.py:369 plugin.py:400
-#: plugin.py:431
 msgid "violet dark"
 msgstr "dunkel Violet"
 
-#: plugin.py:129 plugin.py:152 plugin.py:183 plugin.py:214 plugin.py:245
-#: plugin.py:276 plugin.py:307 plugin.py:338 plugin.py:370 plugin.py:401
-#: plugin.py:432 plugin.py:449
 msgid "white"
 msgstr "Weiß"
 
-#: plugin.py:339 plugin.py:471 plugin.py:492 plugin.py:512 plugin.py:525
 msgid "off"
 msgstr "Aus"
 
-#: plugin.py:454 plugin.py:463
 msgid "ZPicon"
 msgstr "Z-Picon"
 
-#: plugin.py:455 plugin.py:464
 msgid "XPicon"
 msgstr "X-Picon"
 
-#: plugin.py:461
 msgid "two Columns"
 msgstr "Zwei Spalten"
 
-#: plugin.py:462
 msgid "three Columns"
 msgstr "Drei Spalten"
 
-#: plugin.py:467 plugin.py:479
 msgid "MiniTV"
 msgstr "Mini TV"
 
-#: plugin.py:472
 msgid "ZPicons"
 msgstr "Z-Picon"
 
-#: plugin.py:473
 msgid "XPicons"
 msgstr "X-Picon"
 
-#: plugin.py:480
 msgid "Picon"
 msgstr "Picon"
 
-#: plugin.py:484
 msgid "no Cover"
 msgstr "Kein Cover"
 
-#: plugin.py:485
 msgid "small Cover"
 msgstr "Kleines Cover"
 
-#: plugin.py:486
 msgid "big Cover"
 msgstr "Großes Cover"
 
-#: plugin.py:487
 msgid "very big Cover"
 msgstr "Sehr großes Cover"
 
-#: plugin.py:491 plugin.py:526
 msgid "on"
 msgstr "An"
 
-#: plugin.py:507 plugin.py:622
 msgid "Weather"
 msgstr "Wetter"
 
 msgid "______________________ Weather __________________________________"
 msgstr "______________________ Wetter ___________________________________"
 
-#: plugin.py:513
 msgid "big"
 msgstr "Groß"
 
-#: plugin.py:623
 msgid "small"
 msgstr "Klein"
 
-#: plugin.py:588
 msgid "______________________ System __________________________________"
 msgstr "______________________ System __________________________________"
 
-#: plugin.py:589
 msgid "Image"
 msgstr "Image"
 
-#: plugin.py:590 plugin.py:616
 msgid "Style"
 msgstr "Style"
 
-#: plugin.py:591
 msgid "Font Style"
 msgstr "Schriftart"
 
-#: plugin.py:592
 msgid "Button Style"
 msgstr "Button Style"
 
-#: plugin.py:593
 msgid "Running Text"
 msgstr "Laufschrift - Running Text"
 
-#: plugin.py:594
 msgid "Background Transparency"
 msgstr "Hintergrund Transparenz"
 
-#: plugin.py:595
 msgid "Weather ID"
 msgstr "Wetter ID"
 
-#: plugin.py:596
 msgid "______________________ Colors __________________________________"
 msgstr "______________________ Farben __________________________________"
 
-#: plugin.py:597
 msgid "Line"
 msgstr "Linie"
 
-#: plugin.py:600
 msgid "Infobar"
 msgstr "Infobar"
 
-#: plugin.py:602
 msgid "Background"
 msgstr "Hintergrund"
 
-#: plugin.py:605
 msgid "Border"
 msgstr "Rahmen"
 
-#: plugin.py:608
 msgid "Listselection"
 msgstr "Auswahlbalken"
 
-#: plugin.py:609
 msgid "Listselection Border"
 msgstr "Auswahlbalken Rahmen"
 
-#: plugin.py:610
 msgid "Progress-/Volumebar"
 msgstr "Fortschritts-/Lautstärkebalken"
 
-#: plugin.py:611
 msgid "primary Font"
 msgstr "Hauptschrift / Sendung Jetzt"
 
-#: plugin.py:612
 msgid "secondary Font"
 msgstr "Sekundäre Schriftfarbe / Sendung Danach"
 
-#: plugin.py:613
 msgid "Listselection Font"
 msgstr "Auswahlbalken Schriftfarbe"
 
-#: plugin.py:614
 msgid "Button Text"
 msgstr "Button Text"
 
-#: plugin.py:615
 msgid "______________________ Infobar __________________________________"
 msgstr "______________________ Infobar __________________________________"
 
-#: plugin.py:617
 msgid "Clock"
 msgstr "Uhr"
 
-#: plugin.py:620
 msgid "Clock Analog Color"
 msgstr "Farbe Analoguhr"
 
-#: plugin.py:624
 msgid "______________________ General __________________________________"
 msgstr "______________________ General __________________________________"
 
-#: plugin.py:625
 msgid "ChannelSelection"
 msgstr "Kanallistenauswahl"
 
-#: plugin.py:626
 msgid "EMC"
 msgstr "EMC"
 
-#: plugin.py:627
 msgid "ExtNumberZap"
 msgstr "ExtNumberZap"
 
-#: plugin.py:628
 msgid "Volume Style"
 msgstr "Volume Style"
 
-#: plugin.py:629
 msgid "CoolTVGuide"
 msgstr "CoolTVGuide"
 
-#: plugin.py:682
 msgid "Do you really want to reboot now?"
 msgstr "Wollen Sie jetzt neu starten?"
 
-#: plugin.py:683 plugin.py:841
 msgid "Restart GUI"
 msgstr "GUI neu starten"
 
-#: plugin.py:686
 msgid "Information"
 msgstr "Information"
 
-#: plugin.py:834
 msgid "Error creating Skin!"
 msgstr "Fehler beim Erstellen des Skin!"
 
-#: plugin.py:840
 msgid ""
-"GUI needs a restart to download files and apply a new skin.\n"
+"GUI needs a restart to apply a new skin.\n"
 "Do you want to Restart the GUI now?"
-msgstr ""
-"Zum herunterladen der Dateien und schreiben des Skin,\n"
-"muss die Oberfläche neu gestartet werden.\n"
-"\n"
-"Wollen Sie jetzt neu starten?"
+msgstr "Enigma2 muss neu gestartet werden um die Änderungen zu übernehmen. Soll jetzt neu gestartet werden?"
 
-#: plugin.py:955 plugin.py:957
 msgid "Configuration tool for XionHDF"
 msgstr "Konfigurationstool für XionHDF"
 
@@ -825,7 +553,7 @@ msgid "clock with weekday"
 msgstr "Uhr mit Wochentag"
 
 msgid "Refresh interval (in minutes)"
-msgstr "Aktualisierungintervall (in Minuten)"
+msgstr "Aktualisierungsintervall (in Minuten)"
 
 msgid "This option activates the running text for some parts of skin."
 msgstr "Diese Option aktiviert den scrollenden Text an einigen Stellen im Skin."
