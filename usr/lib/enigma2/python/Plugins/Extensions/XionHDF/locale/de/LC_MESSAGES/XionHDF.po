@@ -824,5 +824,50 @@ msgstr "Konfigurationstool für XionHDF"
 msgid "clock with weekday"
 msgstr "Uhr mit Wochentag"
 
+msgid "Refresh interval (in minutes)"
+msgstr "Aktualisierungintervall (in Minuten)"
+
 msgid "This option activates the running text for some parts of skin."
-msgstr "Diese Option aktiviert den laufenenden Text an einigen Stellen im Skin."
+msgstr "Diese Option aktiviert den scrollenden Text an einigen Stellen im Skin."
+
+msgid "This option activate/deactive/change the background transparency of skin."
+msgstr "Diese Option aktiviert/deaktiviert/ändert die Hintergrundtransparenz im Skin."
+
+msgid "This option activate/deactive/change the weather on top inside the infobar."
+msgstr "Diese Option aktiviert/deaktiviert/ändert die Wetteranzeige in der oberen Hälfte der Infobar."
+
+msgid "Here you can insert your personal WeatherID. Please visit the website metrixweather.open-store.net to find your location."
+msgstr "Hier wird die persönliche WetterID eingetragen. Dafür bitte die Webseite metrixweather.open-store.net besuchen und die WetterID suchen."
+
+msgid "Here you can change how often the weather is refreshed in the background."
+msgstr "An dieser Stelle wird der Intervall der Wetteraktualisierung im Hintergrund eingestellt."
+
+msgid "Please select the color of lines inside the skin."
+msgstr "Bitte die Farbe der Linien innerhalb des Skins auswählen."
+
+msgid "Please select the color of listselection inside the skin."
+msgstr "Bitte die Farbe des Auswahlbalkens innerhalb des Skins auswählen."
+
+msgid "Please select the color of progress- and volumebar inside the skin."
+msgstr "Bitte die Farbe der Forschritts- und Lautstärkebalken innerhalb des Skins auswählen."
+
+msgid "Please select the color of primary font inside the skin."
+msgstr "Bitte die Farbe der ersten Schriftart innerhalb des Skins auswählen."
+
+msgid "Please select the color of secundary font inside the skin."
+msgstr "Bitte die Farbe der zweiten Schriftart innerhalb des Skins auswählen."
+
+msgid "Please select the color of listselection font inside the skin."
+msgstr "Bitte die Farbe der Schriftart des Auswahlbalkens innerhalb des Skins auswählen."
+
+msgid "Please select the color of button text inside the skin."
+msgstr "Bitte die Farbe des Textes auf den Buttons innerhalb des Skins auswählen."
+
+msgid "This option changes the size of picons within the infobar."
+msgstr "Diese Option ändert die Größe der Picons innerhalb der Infobar."
+
+msgid "This option changes the view of channellist."
+msgstr "Diese Option ändert die Ansicht der Kanalliste."
+
+msgid "This option changes the view of cover inside from EnhancedMovieCenter."
+msgstr "Diese Option ändert die Ansicht und Größe der Cover innerhalb vom EnhancedMovieCenter."
