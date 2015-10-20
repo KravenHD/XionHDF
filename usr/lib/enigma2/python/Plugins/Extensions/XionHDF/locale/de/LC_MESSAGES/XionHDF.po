@@ -825,4 +825,4 @@ msgid "clock with weekday"
 msgstr "Uhr mit Wochentag"
 
 msgid "This option activates the running text for some parts of skin."
-msgstr "Diese Option aktiviert den laufenende Text an einigen Stellen im Skin."
+msgstr "Diese Option aktiviert den laufenenden Text an einigen Stellen im Skin."
