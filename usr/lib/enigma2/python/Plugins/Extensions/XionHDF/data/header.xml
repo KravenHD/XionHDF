@@ -299,11 +299,11 @@
     </widget>
  <!-- Clock Standard */-->
 <ePixmap pixmap="XionHDF/ibar.png" position="0,543" size="1280,200" alphatest="blend" />
-<ePixmap pixmap="XionHDF/icons/icon_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
-    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/icons/icon_stableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+<ePixmap pixmap="XionHDF/buttons/ico_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_stable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="XionHDF/icons/icon_unstableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_unstable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
@@ -467,11 +467,11 @@
     <convert type="XionHDFEventName">ExtendedDescription</convert>
   </widget>
 <ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,200" alphatest="blend" zPosition="-9" />
-<ePixmap pixmap="XionHDF/icons/icon_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
-    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/icons/icon_stableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+<ePixmap pixmap="XionHDF/buttons/ico_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_stable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="XionHDF/icons/icon_unstableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_unstable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
@@ -534,11 +534,11 @@
     </widget>
  <!-- Clock Standard */-->
 <ePixmap pixmap="XionHDF/ibar.png" position="0,526" size="1280,200" alphatest="blend" />
-<ePixmap pixmap="XionHDF/icons/icon_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
-    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/icons/icon_stableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+<ePixmap pixmap="XionHDF/buttons/ico_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_stable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="XionHDF/icons/icon_unstableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_unstable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
@@ -707,11 +707,11 @@
  <!-- Clock Standard */-->
 <ePixmap pixmap="XionHDF/ibar.png" position="0,526" size="1280,200" alphatest="blend" zPosition="-9" />
 <ePixmap pixmap="XionHDF/ibaro.png" position="0,1" size="1280,200" alphatest="blend" zPosition="-9" />
-<ePixmap pixmap="XionHDF/icons/icon_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
-    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/icons/icon_stableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+<ePixmap pixmap="XionHDF/buttons/ico_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_stable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="XionHDF/icons/icon_unstableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_unstable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
