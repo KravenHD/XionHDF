@@ -341,63 +341,68 @@
   
   <!-- EMCMediaCenter -->
  <screen backgroundColor="transparent" flags="wfNoBorder" name="EMCMediaCenter" position="0,0" size="1280,720" title="InfoBar">
-  <widget source="global.CurrentTime" position="959,682" size="110,35" font="Regular; 20" render="Label" halign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
-    <convert type="XionHDFClockToText">Default</convert>
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular; 30" noWrap="1" position="210,620" render="Label" size="708,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular; 18" halign="left" position="676,683" render="Label" size="80,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
-    <convert type="ServicePosition">Length</convert>
-  </widget>
-  <eLabel backgroundColor="XionBackground" font="Regular; 18" halign="center" position="655,683" size="20,25" text="/" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
-  <widget backgroundColor="XionBackground" font="Regular; 18" halign="right" position="536,683" render="Label" shadowColor="XionBackground" shadowOffset="-1,-1" size="120,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
-    <convert type="ServicePosition">Position</convert>
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular; 20" halign="right" position="926,629" render="Label" size="100,35" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-    <convert type="ServicePosition">Remaining</convert>
-  </widget>
-  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="360,680" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
-    <convert type="ConditionalShowHide">Blink</convert>
-  </widget>
-  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_off.png" position="210,680" size="32,32" zPosition="1" />
-  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_on.png" position="210,680" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
-    <convert type="XionHDFServiceInfo">IsMultichannel</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_format_off.png" position="260,680" size="32,32" zPosition="1" />
-  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_format_on.png" position="260,680" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
-    <convert type="XionHDFServiceInfo">IsWidescreen</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_hd_off.png" position="310,680" size="32,32" zPosition="1" />
-  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_hd_on.png" position="310,680" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
-    <convert type="XionHDFServiceInfo">IsHD</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular; 18" halign="right" position="410,685" render="Label" size="55,25" source="session.CurrentService" transparent="1">
-    <convert type="XionHDFServiceInfo">VideoWidth</convert>
-  </widget>
-  <eLabel backgroundColor="XionBackground" font="Regular; 18" halign="center" position="465,685" size="15,25" text="x" transparent="1" />
-  <widget backgroundColor="XionBackground" font="Regular; 18" halign="left" position="480,685" render="Label" size="55,25" source="session.CurrentService" transparent="1">
-    <convert type="XionHDFServiceInfo">VideoHeight</convert>
-  </widget>
-  <widget position="210,666" render="PositionGauge" size="858,9" source="session.CurrentService" transparent="1">
-    <convert type="ServicePosition">Gauge</convert>
-  </widget>
-  <widget borderWidth="0" position="210,668" render="Progress" size="858,5" source="session.CurrentService" transparent="1" foregroundColor="XionProgress">
-    <convert type="ServicePosition">Position</convert>
-  </widget>
-  <eLabel backgroundColor="XionBackground" font="Regular; 20" halign="right" position="1017,629" size="50,35" text="min" transparent="1" valign="center" zPosition="1" />
-  <eLabel backgroundColor="XionFont1" foregroundColor="XionFont1"  position="210,670" size="858,1" zPosition="-1" />
-  <widget source="session.CurrentService" render="Label" position="823,677" size="90,35" font="Regular; 20" halign="right" valign="center" backgroundColor="XionBackground" transparent="1" zPosition="1" text="13:45" foregroundColor="XionFont1">
-    <convert type="XionHDFServiceEndTime">EndTime</convert>
-  </widget>
-  <eLabel backgroundColor="XionBackground" font="Regular; 20" halign="center" position="903,677" size="60,35" text="Uhr" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
-  <eLabel backgroundColor="XionBackground" font="Regular; 20" halign="left" position="771,677" size="120,35" text="läuft bis " transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
-  <widget name="Cover" position="1140,566" size="100,151" zPosition="1" alphatest="on" />
- <panel name="template_player" />
-</screen>
+    <widget source="global.CurrentTime" position="910,637" size="65,32" font="Regular; 20" render="Label" halign="right" zPosition="1" backgroundColor="black" foregroundColor="XionFont1" transparent="1">
+      <convert type="XionHDFClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular; 30" noWrap="1" position="210,620" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,steptime=90,wrap=0,always=0,repeat=2,oneshot=1" size="708,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular; 18" halign="left" position="624,683" render="Label" size="80,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular; 18" halign="center" position="604,683" size="20,25" text="/" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
+    <widget backgroundColor="black" font="Regular; 18" halign="right" position="530,683" render="Label" shadowColor="XionBackground" shadowOffset="-1,-1" size="74,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular; 20" halign="right" position="926,607" render="Label" size="100,35" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+      <convert type="ServicePosition">Remaining</convert>
+    </widget>
+    <widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="315,680" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_off.png" position="210,680" size="32,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_on.png" position="210,680" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
+      <convert type="XionHDFServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_format_off.png" position="245,680" size="32,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="XionHDF/buttons/ico_format_on.png" position="245,680" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
+      <convert type="XionHDFServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_hd_off.png" position="280,680" size="32,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="XionHDF/buttons/ico_hd_on.png" position="280,680" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
+      <convert type="XionHDFServiceInfo">IsHD</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Label" zPosition="3" position="363,683" size="145,25" font="Regular; 18" halign="center" backgroundColor="black" foregroundColor="XionFont1" transparent="1">
+  <convert type="XionHDFExtraInfo2">ResolutionString</convert>
+</widget>
+    <widget position="210,666" render="PositionGauge" size="858,9" source="session.CurrentService" zPosition="2" transparent="1">
+      <convert type="ServicePosition">Gauge</convert>
+    </widget>
+    <widget borderWidth="0" position="210,668" render="Progress" size="858,5" source="session.CurrentService" zPosition="1" transparent="1" foregroundColor="XionProgress" >
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular; 20" halign="right" position="1017,607" size="50,35" text="min" transparent="1" valign="center" zPosition="1" />
+    <eLabel backgroundColor="XionLine" foregroundColor="XionFont1" position="210,670" size="858,1" zPosition="-1" />
+    <widget source="session.CurrentService" render="Label" position="1002,633" size="65,35" font="Regular; 20" halign="right" valign="center" backgroundColor="black" transparent="1" zPosition="1" text="23:55" foregroundColor="XionFont1">
+      <convert type="XionHDFServiceEndTime">EndTime</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular; 20" halign="center" position="978,633" size="40,35" text="---&gt;" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
+    <widget name="Cover" position="1091,453" size="180,264" zPosition="1" alphatest="on" valign="bottom" halign="center" />
+<widget alphatest="blend" position="25,619" render="XionHDFXPicon" size="150,90" source="Service" transparent="1" zPosition="2">
+<convert type="ServiceName">Reference</convert>
+</widget>
+<widget backgroundColor="black" font="Regular; 19" halign="center" position="722,683" render="Label" size="224,25" source="session.CurrentService" text="Dolby Digital" transparent="1" valign="center" zPosition="3">
+  <convert type="XionHDFExtraInfo2">AudioCodec</convert>
+</widget>
+
+<widget backgroundColor="black" font="Regular; 19" halign="center" position="960,683" render="Label" size="107,25" source="session.CurrentService" transparent="1" valign="center" zPosition="3">
+  <convert type="XionHDFExtraInfo2">VideoCodec</convert>
+</widget>
+    <panel name="template_player" />
+  </screen>
   <!-- EnhancedMovieCenterMenu -->
   <screen name="EnhancedMovieCenterMenu" position="0,0" size="1280,720" title="EnhancedMovieCenterMenu" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="config" position="70,80" size="708,375" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" font="Regular; 20" />
@@ -849,86 +854,85 @@
   </screen>
   <!-- ********** MoviePlayer ********** -->
     <!-- MovieSelection -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="MovieSelection" position="0,0" size="1280,720" title="">
-    <widget name="waitingtext" position="0,0" size="0,0" />
-	<eLabel text="MovieSelection" position="70,12" size="708,46" font="Regular2;34" foregroundColor="XionFont2" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
-    <widget name="list" position="70,110" enableWrapAround="1" size="708,540" scrollbarMode="showNever" transparent="1" />
-    <widget backgroundColor="XionBackground" font="Regular;17" halign="right" name="freeDiskSpace" position="70,80" size="708,24" transparent="1" valign="center" />
-    <widget backgroundColor="XionBackground" font="Regular2;30" foregroundColor="XionFont2" position="888,78" render="Label" size="377,80" source="Service" transparent="1" zPosition="1">
-      <convert type="XionHDFEventName">Name</convert>
-    </widget>
-    <widget backgroundColor="XionBackground" font="Regular2;17" foregroundColor="XionFont2" halign="left" position="888,671" render="Label" size="70,24" source="Service" transparent="1" zPosition="1">
-      <convert type="ServiceTime">Duration</convert>
-      <convert type="XionHDFClockToText">AsLength</convert>
-    </widget>
-    <widget backgroundColor="XionBackground" font="Regular2;17" foregroundColor="XionFont2" halign="right" position="1165,671" render="Label" size="100, 24" source="Service" transparent="1" zPosition="1">
-      <convert type="MovieInfo">FileSize</convert>
-    </widget>
-    <widget backgroundColor="XionBackground" font="Regular;19" foregroundColor="XionFont1" position="888,168" render="Label" size="377,483" source="Service" transparent="1" valign="top">
-      <convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
-    </widget>
-    <panel name="template_emc" />
-    <panel name="template_colorkey_text" />
-  </screen>
-  <!-- MoviePlayer -->
- <screen backgroundColor="transparent" flags="wfNoBorder" name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar">
-  <widget source="global.CurrentTime" position="959,682" size="110,35" font="Regular; 20" render="Label" halign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="MovieSelection" position="0,0" size="1280,720" title="MovieSelection">
+  <widget name="waitingtext" position="0,0" size="0,0" />
+  <eLabel text="MovieSelection" position="70,12" size="708,46" font="Regular2;34" foregroundColor="XionFont2" halign="center" valign="center" backgroundColor="black" transparent="1" />
+  <widget name="list" position="70,110" enableWrapAround="1" size="708,345" scrollbarMode="showNever" backgroundColor="black" transparent="1" />
+  <widget backgroundColor="black" font="Regular;17" halign="right" name="freeDiskSpace" position="70,80" size="708,24" transparent="1" valign="center" />
+  <widget backgroundColor="black" font="Regular2;30" foregroundColor="XionFont2" position="888,78" render="Label" size="377,80" source="Service" transparent="1" zPosition="1" halign="center">
+    <convert type="XionHDFEventName">Name</convert>
+  </widget>
+  <widget backgroundColor="black" font="Regular2;17" foregroundColor="XionFont2" halign="left" position="888,671" render="Label" size="70,24" source="Service" transparent="1" zPosition="1">
+    <convert type="ServiceTime">Duration</convert>
+    <convert type="XionHDFClockToText">AsLength</convert>
+  </widget>
+  <widget backgroundColor="black" font="Regular2;17" foregroundColor="XionFont2" halign="right" position="1165,671" render="Label" size="100,24" source="Service" transparent="1" zPosition="1">
+    <convert type="MovieInfo">FileSize</convert>
+  </widget>
+  <widget backgroundColor="black" font="Regular;19" foregroundColor="XionFont1" position="70,464" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=2000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" size="708,180" source="Service" transparent="1" valign="top">
+    <convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
+  </widget>
+  <eLabel backgroundColor="XionLine" position="18,458" size="816,2" zPosition="2" />
+  <widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="black" transparent="1" valign="center" foregroundColor="XionFont1">
     <convert type="XionHDFClockToText">Default</convert>
   </widget>
-  <widget backgroundColor="XionBackground" font="Regular; 30" noWrap="1" position="210,620" render="Label" size="708,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular; 18" halign="left" position="676,683" render="Label" size="80,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
-    <convert type="ServicePosition">Length</convert>
-  </widget>
-  <eLabel backgroundColor="XionBackground" font="Regular; 18" halign="center" position="655,683" size="20,25" text="/" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
-  <widget backgroundColor="XionBackground" font="Regular; 18" halign="right" position="536,683" render="Label" shadowColor="XionBackground" shadowOffset="-1,-1" size="120,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
-    <convert type="ServicePosition">Position</convert>
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular; 20" halign="right" position="926,629" render="Label" size="100,35" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-    <convert type="ServicePosition">Remaining</convert>
-  </widget>
-  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="360,680" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
-    <convert type="ConditionalShowHide">Blink</convert>
-  </widget>
-  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_off.png" position="210,680" size="32,32" zPosition="1" />
-  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_on.png" position="210,680" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
-    <convert type="XionHDFServiceInfo">IsMultichannel</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_format_off.png" position="260,680" size="32,32" zPosition="1" />
-  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_format_on.png" position="260,680" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
-    <convert type="XionHDFServiceInfo">IsWidescreen</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_hd_off.png" position="310,680" size="32,32" zPosition="1" />
-  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_hd_on.png" position="310,680" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
-    <convert type="XionHDFServiceInfo">IsHD</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular; 18" halign="right" position="410,685" render="Label" size="55,25" source="session.CurrentService" transparent="1">
-    <convert type="XionHDFServiceInfo">VideoWidth</convert>
-  </widget>
-  <eLabel backgroundColor="XionBackground" font="Regular; 18" halign="center" position="465,685" size="15,25" text="x" transparent="1" />
-  <widget backgroundColor="XionBackground" font="Regular; 18" halign="left" position="480,685" render="Label" size="55,25" source="session.CurrentService" transparent="1">
-    <convert type="XionHDFServiceInfo">VideoHeight</convert>
-  </widget>
-  <widget position="210,666" render="PositionGauge" size="858,9" source="session.CurrentService" transparent="1">
-    <convert type="ServicePosition">Gauge</convert>
-  </widget>
-  <widget borderWidth="0" position="210,668" render="Progress" size="858,5" source="session.CurrentService" transparent="1" foregroundColor="XionProgress">
-    <convert type="ServicePosition">Position</convert>
-  </widget>
-  <eLabel backgroundColor="XionBackground" font="Regular; 20" halign="right" position="1017,629" size="50,35" text="min" transparent="1" valign="center" zPosition="1" />
-  <eLabel backgroundColor="XionFont1" foregroundColor="XionFont1"  position="210,670" size="858,1" zPosition="-1" />
-  <widget source="session.CurrentService" render="Label" position="823,677" size="90,35" font="Regular; 20" halign="right" valign="center" backgroundColor="XionBackground" transparent="1" zPosition="1" text="13:45" foregroundColor="XionFont1">
-    <convert type="XionHDFServiceEndTime">EndTime</convert>
-  </widget>
-  <eLabel backgroundColor="XionBackground" font="Regular; 20" halign="center" position="903,677" size="60,35" text="Uhr" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
-  <eLabel backgroundColor="XionBackground" font="Regular; 20" halign="left" position="771,677" size="120,35" text="läuft bis " transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
-  <widget name="Cover" position="1140,566" size="100,151" zPosition="1" alphatest="on" />
- <panel name="template_player" />
+  <widget source="Service" render="XionHDFCover" position="888,190" size="374,445" zPosition="4" backgroundColor="XionBackground" alphatest="on" transparent="1" />
+  <panel name="template_colorkey_text" />
+  <panel name="template_menu_left_right_button" />
 </screen>
+  <!-- MoviePlayer -->
+ <screen backgroundColor="transparent" flags="wfNoBorder" name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar">
+    <widget source="global.CurrentTime" position="910,681" size="65,32" font="Regular; 20" render="Label" halign="right" zPosition="1" backgroundColor="black" foregroundColor="XionFont1" transparent="1">
+      <convert type="XionHDFClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular; 30" noWrap="1" position="210,620" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,steptime=90,wrap=0,always=0,repeat=2,oneshot=1" size="708,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular; 18" halign="left" position="676,683" render="Label" size="80,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular; 18" halign="center" position="655,683" size="20,25" text="/" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
+    <widget backgroundColor="black" font="Regular; 18" halign="right" position="536,683" render="Label" shadowColor="XionBackground" shadowOffset="-1,-1" size="120,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget backgroundColor="black" font="Regular; 20" halign="right" position="926,629" render="Label" size="100,35" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+      <convert type="ServicePosition">Remaining</convert>
+    </widget>
+    <widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="360,680" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_off.png" position="210,680" size="32,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_on.png" position="210,680" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
+      <convert type="XionHDFServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_format_off.png" position="260,680" size="32,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="XionHDF/buttons/ico_format_on.png" position="260,680" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
+      <convert type="XionHDFServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_hd_off.png" position="310,680" size="32,32" zPosition="1" />
+    <widget alphatest="blend" pixmap="XionHDF/buttons/ico_hd_on.png" position="310,680" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
+      <convert type="XionHDFServiceInfo">IsHD</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Label" zPosition="3" position="404,685" size="127,22" font="Regular; 18" halign="center" backgroundColor="black" foregroundColor="XionFont1" transparent="1">
+  <convert type="XionHDFExtraInfo2">Resolution</convert>
+</widget>
+    <widget position="210,666" render="PositionGauge" size="858,9" source="session.CurrentService" zPosition="2" transparent="1">
+      <convert type="ServicePosition">Gauge</convert>
+    </widget>
+    <widget borderWidth="0" position="210,668" render="Progress" size="858,5" source="session.CurrentService" zPosition="1" transparent="1" foregroundColor="XionProgress">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular; 20" halign="right" position="1017,629" size="50,35" text="min" transparent="1" valign="center" zPosition="1" />
+    <eLabel backgroundColor="XionLine" foregroundColor="XionFont1" position="210,670" size="858,1" zPosition="-1" />
+    <widget source="session.CurrentService" render="Label" position="1002,677" size="65,35" font="Regular; 20" halign="right" valign="center" backgroundColor="black" transparent="1" zPosition="1" text="23:55" foregroundColor="XionFont1">
+      <convert type="XionHDFServiceEndTime">EndTime</convert>
+    </widget>
+    <eLabel backgroundColor="black" font="Regular; 20" halign="center" position="978,677" size="40,35" text="---&gt;" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
+<panel name="template_player" />
+  </screen>
   <!-- MovieEpgSetup -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="MovieEpgSetup" position="0,0" size="1280,720" title="MovieEpg Setup">
     <widget backgroundColor="XionBackground" enableWrapAround="1" name="config" position="70,80" size="700,400" transparent="1" />
