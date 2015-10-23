@@ -12,8 +12,6 @@
   <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 20" foregroundColor="XionFont1" render="Label" position="1180,68" size="50,26" source="session.CurrentService" zPosition="8" halign="center" valign="center" transparent="1">
     <convert type="XionHDFWeather">forecastTodayTempMin</convert>
   </widget>
-  <eLabel backgroundColor="XionLine" position="969,0" size="2,133" zPosition="2" />
-  <eLabel backgroundColor="XionLine" position="969,133" size="311,2" zPosition="2" />
   <eLabel backgroundColor="XionBackground" position="970,0" size="310,132" />
 <!-- Weather */-->
 
