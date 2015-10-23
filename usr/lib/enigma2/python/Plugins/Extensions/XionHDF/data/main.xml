@@ -337,7 +337,7 @@
       <convert type="XionHDFEventName">ExtendedDescription</convert>
     </widget>
     <widget name="timeline_text" position="25,273" size="1230,25" selectionDisabled="1" transparent="1" />
-    <widget name="list" position="25,304" size="1230,345" EntryBorderColor="white" EntryBackgroundColor="black" EntryBackgroundColorSelected="grey" scrollbarMode="showNever" transparent="1" />
+    <widget name="list" position="25,304" size="1230,345" EntryBorderColor="white" EntrybackgroundColor="XionBackground" EntryBackgroundColorSelected="grey" scrollbarMode="showNever" transparent="1" />
     <widget name="timeline_now" position="80,297" zPosition="2" size="13,355" pixmap="XionHDF/epg/timeline-now.png" alphatest="blend" />
     <widget source="session.VideoPicture" render="Pig" position="927,77" size="330,187" zPosition="3" backgroundColor="transparent" />
     <eLabel position="101,125" size="535,1" backgroundColor="XionLine" />
@@ -1754,7 +1754,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <!-- ********** Audio and Video  ********** -->
   <!-- VideoFinetune -->
-  <screen backgroundColor="black" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1280,720">
+  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1280,720">
     <widget position="6,6" render="Canvas" size="1280,720" source="Canvas" />
   </screen>
   <!-- UI3DSetupScreen -->
@@ -1764,19 +1764,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <panel name="template_colorkey_text_source" />
   </screen>
   <!-- UIPositionSetup -->
-  <screen backgroundColor="black" flags="wfNoBorder" name="UIPositionSetup" position="0,0" size="1280,720" title="Position Setup">
+  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="UIPositionSetup" position="0,0" size="1280,720" title="Position Setup">
     <ePixmap alphatest="blend" pixmap="XionHDF/test.png" position="0,0" size="1295,720" transparent="0" zPosition="-20" />
-    <widget backgroundColor="black" font="Arial; 40" position="307,177" render="Label" size="664,45" source="Title" transparent="0" halign="center" foregroundColor="XionFont1" />
+    <widget backgroundColor="XionBackground" font="Arial; 40" position="307,177" render="Label" size="664,45" source="Title" transparent="0" halign="center" foregroundColor="XionFont1" />
     <ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_red1.png" position="373,506" size="32,32" />
     <ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_green1.png" position="703,506" size="32,32" />
-    <widget font="Regular2;20" halign="left" position="411,510" render="Label" size="180,24" source="key_red" transparent="0" valign="center" zPosition="1" backgroundColor="black" />
-    <widget font="Regular2;20" halign="left" position="742,510" render="Label" size="180,24" source="key_green" transparent="0" valign="center" zPosition="1" backgroundColor="black" />
-    <widget name="config" position="308,285" size="664,208" transparent="0" zPosition="2" backgroundColor="black" foregroundColor="XionFont1" />
+    <widget font="Regular2;20" halign="left" position="411,510" render="Label" size="180,24" source="key_red" transparent="0" valign="center" zPosition="1" backgroundColor="XionBackground" />
+    <widget font="Regular2;20" halign="left" position="742,510" render="Label" size="180,24" source="key_green" transparent="0" valign="center" zPosition="1" backgroundColor="XionBackground" />
+    <widget name="config" position="308,285" size="664,208" transparent="0" zPosition="2" backgroundColor="XionBackground" foregroundColor="XionFont1" />
     <eLabel backgroundColor="red" position="0,0" size="20,20" foregroundColor="foreground" />
     <eLabel backgroundColor="red" position="1260,0" size="20,20" />
     <eLabel backgroundColor="red" position="1260,700" size="20,20" />
     <eLabel backgroundColor="red" position="0,700" size="20,20" />
-    <eLabel backgroundColor="black" font="Arial; 22" halign="center" position="307,233" size="664,36" text="Die roten Quadrate genau in den Ecken positionieren" foregroundColor="XionFont1" valign="top" />
+    <eLabel backgroundColor="XionBackground" font="Arial; 22" halign="center" position="307,233" size="664,36" text="Die roten Quadrate genau in den Ecken positionieren" foregroundColor="XionFont1" valign="top" />
   </screen>
   <!-- Volume_adjust -->
   <screen name="Volume_adjust" position="0,0" size="1280,720" title="Volume Adjust" flags="wfNoBorder" backgroundColor="transparent">

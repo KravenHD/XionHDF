@@ -14,7 +14,7 @@
   <widget font="Regular; 22" foregroundColor="XionFont1" position="891,255" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="362,295" source="ServiceEvent" valign="top" backgroundColor="XionBackground" transparent="1" zPosition="-8">
     <convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
   </widget>
-  <widget font="Regular2; 30" foregroundColor="XionFont2" position="891,53" halign="center" render="Label" size="362,40" source="ServiceEvent" backgroundColor="XionBackground" transparent="1" zPosition="-8" valign="left" noWrap="1">
+  <widget font="Regular2; 30" foregroundColor="XionFont2" position="891,53" halign="center" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="362,40" source="ServiceEvent" backgroundColor="XionBackground" transparent="1" zPosition="-8" valign="left" noWrap="1">
     <convert type="XionHDFEventName">Name</convert>
   </widget>
   <widget backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" position="891,680" render="Label" size="362,30" source="ServiceEvent" transparent="1" zPosition="5" noWrap="1">
