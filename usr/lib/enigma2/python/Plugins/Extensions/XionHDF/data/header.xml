@@ -199,8 +199,7 @@
     <eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
   </screen>
   <screen name="template_player">
-    <eLabel backgroundColor="XionBackground" position="200,610" size="880,117" transparent="0" zPosition="-9" />
-    <eLabel backgroundColor="XionLine" position="200,607" size="880,2" zPosition="2" />
+  <ePixmap pixmap="XionHDF/ibar.png" position="0,526" size="1280,200" alphatest="blend" zPosition="-3" />
   </screen>
   <screen name="template_menu_cs_button">
     <widget backgroundColor="black" font="Regular2; 34" foregroundColor="XionFont2" position="18,12" render="Label" size="815,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
