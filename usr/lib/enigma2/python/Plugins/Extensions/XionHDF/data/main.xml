@@ -403,7 +403,7 @@
     <panel name="template_menu_left" />
   </screen>
   <!-- menu_setup -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_setup" position="0,0" size="1280,720" title="Main menu" transparent="0">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_setup" position="0,0" size="1280,720" title="Main menu" >
     <widget enableWrapAround="1" position="70,80" render="Listbox" scrollbarMode="showNever" size="708,540" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (16, 10), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -415,7 +415,7 @@
     <panel name="template_menu_left" />
   </screen>
   <!-- menu_system -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_system" position="0,0" size="1280,720" title="Main menu" transparent="0">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_system" position="0,0" size="1280,720" title="Main menu" >
     <widget enableWrapAround="1" position="70,80" render="Listbox" scrollbarMode="showNever" size="708,540" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (16, 10), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -463,7 +463,7 @@
     <panel name="template_menu_left" />
   </screen>
   <!-- menu_timermenu -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_timermenu" position="0,0" size="1280,720" title="Main menu" transparent="0">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_timermenu" position="0,0" size="1280,720" title="Main menu" >
     <widget enableWrapAround="1" position="70,80" render="Listbox" scrollbarMode="showNever" size="708,540" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (16, 10), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -487,7 +487,7 @@
     <panel name="template_menu_left" />
   </screen>
   <!-- ChannelContextMenu -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelContextMenu" position="center,center" size="1280,720" title="Channellist menu" transparent="0">
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelContextMenu" position="center,center" size="1280,720" title="Channellist menu" >
     <widget enableWrapAround="1" itemHeight="35" name="menu" position="70,80" scrollbarMode="showNever" size="708,540" transparent="1" zPosition="3" />
     <panel name="template_menu_left" />
   </screen>
