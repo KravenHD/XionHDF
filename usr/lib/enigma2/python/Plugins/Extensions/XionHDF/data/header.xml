@@ -299,6 +299,13 @@
     </widget>
  <!-- Clock Standard */-->
 <ePixmap pixmap="XionHDF/ibar.png" position="0,543" size="1280,200" alphatest="blend" />
+<ePixmap pixmap="icons/icon_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
   </screen>
   <screen name="template_menu_sib4">
     <widget backgroundColor="black" font="Regular2; 22" halign="right" noWrap="1" position="260,605" render="Label" size="72,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
@@ -357,7 +364,6 @@
     </widget>
  <!-- Clock Standard */-->
 <ePixmap pixmap="XionHDF/ibar.png" position="0,543" size="1280,200" alphatest="blend" zPosition="-9" />
-
 <eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" zPosition="-9" />
 
  <widget source="session.CurrentService" render="Label" position="1107,40" size="89,22" backgroundColor="black" transparent="1" zPosition="3" foregroundColor="XionFont1" font="Regular; 19" valign="center" halign="left">
@@ -461,6 +467,13 @@
     <convert type="XionHDFEventName">ExtendedDescription</convert>
   </widget>
 <ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,200" alphatest="blend" zPosition="-9" />
+<ePixmap pixmap="icons/icon_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
   </screen>
   <screen name="template_menu_ib5">
     <widget backgroundColor="black" font="Regular2; 22" halign="right" noWrap="1" position="260,605" render="Label" size="72,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
@@ -521,6 +534,13 @@
     </widget>
  <!-- Clock Standard */-->
 <ePixmap pixmap="XionHDF/ibar.png" position="0,526" size="1280,200" alphatest="blend" />
+<ePixmap pixmap="icons/icon_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
   </screen>
   <screen name="template_menu_sib5">
     <widget backgroundColor="black" font="Regular2; 22" halign="right" noWrap="1" position="260,605" render="Label" size="72,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
@@ -687,6 +707,13 @@
  <!-- Clock Standard */-->
 <ePixmap pixmap="XionHDF/ibar.png" position="0,526" size="1280,200" alphatest="blend" zPosition="-9" />
 <ePixmap pixmap="XionHDF/ibaro.png" position="0,1" size="1280,200" alphatest="blend" zPosition="-9" />
+<ePixmap pixmap="icons/icon_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
   </screen>
   <screen name="template_menu_quick1">
     <ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="black" alphatest="blend" />
