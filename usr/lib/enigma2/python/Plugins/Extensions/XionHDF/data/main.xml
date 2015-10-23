@@ -2570,16 +2570,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 </screen>
   <!-- HotkeySetup -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="HotkeySetup" position="0,0" size="1280,720" title="Tasteneinstellungen">
-  <widget name="list" position="40,99" size="385,529" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="XionFont1" enableWrapAround="1" backgroundColor="XionBackground" zPosition="-8" />
-  <widget name="choosen" position="428,99" size="385,530" scrollbarMode="showOnDemand" font="Regular2; 22" itemHeight="28" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="-8" />
+  <widget name="list" position="40,99" size="477,529" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="XionFont1" enableWrapAround="1" backgroundColor="XionBackground" zPosition="-8" />
+  <widget name="choosen" position="522,99" size="385,530" scrollbarMode="showOnDemand" font="Regular2; 22" itemHeight="28" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="-8" />
   <widget name="description" position="935,228" size="302,250" font="Regular2; 16" foregroundColor="XionFont2" valign="center" halign="center" backgroundColor="XionBackground" zPosition="-8" />
   <panel name="template_menu_left_right_button" />
   <panel name="template_colorkey_text_source" />
 </screen>
   <!-- ButtonSetupSelect -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="ButtonSetupSelect" position="0,0" size="1280,720" title="Tasteneinstellungen">
-  <widget name="list" position="40,99" size="385,529" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="XionFont1" enableWrapAround="1" backgroundColor="XionBackground" zPosition="-8" />
-  <widget name="choosen" position="427,99" size="385,530" scrollbarMode="showOnDemand" font="Regular2; 22" itemHeight="28" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="-8" />
+  <widget name="list" position="40,99" size="477,529" scrollbarMode="showOnDemand" font="Regular;22" itemHeight="28" transparent="1" foregroundColor="XionFont1" enableWrapAround="1" backgroundColor="XionBackground" zPosition="-8" />
+  <widget name="choosen" position="522,99" size="385,530" scrollbarMode="showOnDemand" font="Regular2; 22" itemHeight="28" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="-8" />
   <widget name="description" position="935,228" size="302,250" font="Regular2; 16" foregroundColor="XionFont2" valign="center" halign="center" backgroundColor="XionBackground" zPosition="-8" />
   <panel name="template_menu_left_right_button" />
   <panel name="template_colorkey_text_source" />
