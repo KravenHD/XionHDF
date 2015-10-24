@@ -1,9 +1,9 @@
 Package: enigma2-plugin-skins-xionhdf
-Version: 0.4
+Version: 0.5
 Section: misc
 Priority: optional
 Architecture: all
 Depends:
-Maintainer: Kraven and Team
-Description: Skin for our HDF Images
+Maintainer: Team Kraven
+Description: Skin for HDF Images
 Source:
