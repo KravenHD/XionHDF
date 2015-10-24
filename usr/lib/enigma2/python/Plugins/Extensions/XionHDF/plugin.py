@@ -387,6 +387,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("______________________ System __________________________________"), config.plugins.XionHDF.System, _(" ")))
 		list.append(getConfigListEntry(_("Running Text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
 		list.append(getConfigListEntry(_("Background Transparency"), config.plugins.XionHDF.BackgroundColorTrans, _("This option activate/deactive/change the background transparency of skin.")))
+		list.append(getConfigListEntry(_("Refresh interval (in minutes)"), config.plugins.XionHDF.refreshInterval, _("Here you can change how often the weather is refreshed in the background.")))
 		list.append(getConfigListEntry(_("______________________ Weather __________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
 		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your personal WeatherID. Please visit the website metrixweather.open-store.net to find your location.")))
