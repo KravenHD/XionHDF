@@ -59,7 +59,7 @@ def translateBlock(block):
 
 config.plugins.XionHDF = ConfigSubsection()
 config.plugins.XionHDF.weather_city = ConfigNumber(default="638242")
-config.plugins.XionHDF.refreshInterval = ConfigNumber(default="30")
+config.plugins.XionHDF.refreshInterval = ConfigSelectionNumber(min = 10, max = 240, stepwidth = 10, default = 30, wraparound = True)
 				
 config.plugins.XionHDF.System = ConfigSelection(default="openhdf", choices = [
 				("openhdf", _(" "))
@@ -392,7 +392,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("______________________ Weather __________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
 		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your personal WeatherID. Please visit the website metrixweather.open-store.net to find your location.")))
-#		list.append(getConfigListEntry(_("Refresh interval (in minutes)"), config.plugins.XionHDF.refreshInterval, _("Here you can change how often the weather is refreshed in the background.")))
+		list.append(getConfigListEntry(_("Refresh interval (in minutes)"), config.plugins.XionHDF.refreshInterval, _("Here you can change how often the weather is refreshed in the background.")))
 		list.append(getConfigListEntry(_("______________________ Colors __________________________________"), ))
 		list.append(getConfigListEntry(_("Line"), config.plugins.XionHDF.Line, _("Please select the color of lines inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection"), config.plugins.XionHDF.SelectionBackground, _("Please select the color of listselection inside the skin.")))
@@ -403,7 +403,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Button Text"), config.plugins.XionHDF.ButtonText, _("Please select the color of button text inside the skin.")))
 		list.append(getConfigListEntry(_("______________________ Styles __________________________________"), ))
 		list.append(getConfigListEntry(_("Infobar"), config.plugins.XionHDF.InfobarStyle, _("This option changes the size of picons within the infobar.")))
-		list.append(getConfigListEntry(_("Fontsize Second Infobar"), config.plugins.XionHDF.SIBFontSize, _("This option changes the size of font within the secondinfobar.")))
+#		list.append(getConfigListEntry(_("Fontsize Second Infobar"), config.plugins.XionHDF.SIBFontSize, _("This option changes the size of font within the secondinfobar.")))
 		list.append(getConfigListEntry(_("ChannelSelection"), config.plugins.XionHDF.ChannelSelectionStyle, _("This option changes the view of channellist.")))
 		list.append(getConfigListEntry(_("EnhancedMovieCenter"), config.plugins.XionHDF.EMCStyle, _("This option changes the view of cover inside from EnhancedMovieCenter.")))
 		
