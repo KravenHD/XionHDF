@@ -21,7 +21,7 @@ from Screens.Console import Console
 from Screens.Standby import TryQuitMainloop
 from Components.ActionMap import ActionMap
 from Components.AVSwitch import AVSwitch
-from Components.config import config, configfile, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection, ConfigNumber, ConfigText, ConfigInteger
+from Components.config import config, configfile, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection, ConfigNumber, ConfigText, ConfigInteger, ConfigSelectionNumber
 from Components.ConfigList import ConfigListScreen
 from Components.Sources.StaticText import StaticText
 from Components.Label import Label
@@ -328,6 +328,8 @@ config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", cho
 				("weather-slim", _("slim")),
 				("weather-small", _("small"))
 				])
+
+config.plugins.XionHDF.SIBFontSize = ConfigSelectionNumber(min = 1, max = 40, stepwidth = 1, default = 18, wraparound = True)
 				
 #######################################################################
 
@@ -401,6 +403,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Button Text"), config.plugins.XionHDF.ButtonText, _("Please select the color of button text inside the skin.")))
 		list.append(getConfigListEntry(_("______________________ Styles __________________________________"), ))
 		list.append(getConfigListEntry(_("Infobar"), config.plugins.XionHDF.InfobarStyle, _("This option changes the size of picons within the infobar.")))
+		list.append(getConfigListEntry(_("Fontsize Second Infobar"), config.plugins.XionHDF.SIBFontSize, _("This option changes the size of font within the secondinfobar.")))
 		list.append(getConfigListEntry(_("ChannelSelection"), config.plugins.XionHDF.ChannelSelectionStyle, _("This option changes the view of channellist.")))
 		list.append(getConfigListEntry(_("EnhancedMovieCenter"), config.plugins.XionHDF.EMCStyle, _("This option changes the view of cover inside from EnhancedMovieCenter.")))
 		
@@ -562,6 +565,9 @@ class XionHDF(ConfigListScreen, Screen):
 
 			###Infobar_main
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.InfobarStyle.value + "_main.xml")
+
+			###SecondInfobar_main EPG fontsize
+			self.appendSkinFile(self.daten + config.plugins.XionHDF.SIBFontSize.value + "_main.xml")
 
 			###weather-style
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.WeatherStyle.value + ".xml")
