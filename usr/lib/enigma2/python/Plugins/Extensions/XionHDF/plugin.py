@@ -327,7 +327,7 @@ config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", cho
 				("weather-small", _("small"))
 				])
 
-config.plugins.XionHDF.SIBFontSize = ConfigSelectionNumber(min = 1, max = 40, stepwidth = 1, default = 18, wraparound = True)
+#config.plugins.XionHDF.SIBFontSize = ConfigSelectionNumber(min = 1, max = 40, stepwidth = 1, default = 18, wraparound = True)
 				
 #######################################################################
 
@@ -387,10 +387,10 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("______________________ System __________________________________"), config.plugins.XionHDF.System, _(" ")))
 		list.append(getConfigListEntry(_("Running Text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
 		list.append(getConfigListEntry(_("Background Transparency"), config.plugins.XionHDF.BackgroundColorTrans, _("This option activate/deactive/change the background transparency of skin.")))
-		list.append(getConfigListEntry(_("Refresh interval (in minutes)"), config.plugins.XionHDF.refreshInterval, _("Here you can change how often the weather is refreshed in the background.")))
 		list.append(getConfigListEntry(_("______________________ Weather __________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
 		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your personal WeatherID. Please visit the website metrixweather.open-store.net to find your location.")))
+		list.append(getConfigListEntry(_("Refresh interval (in minutes)"), config.plugins.XionHDF.refreshInterval, _("Here you can change how often the weather is refreshed in the background.")))
 		list.append(getConfigListEntry(_("______________________ Colors __________________________________"), ))
 		list.append(getConfigListEntry(_("Line"), config.plugins.XionHDF.Line, _("Please select the color of lines inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection"), config.plugins.XionHDF.SelectionBackground, _("Please select the color of listselection inside the skin.")))
@@ -563,8 +563,8 @@ class XionHDF(ConfigListScreen, Screen):
 			###Infobar_main
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.InfobarStyle.value + "_main.xml")
 
-			###SecondInfobar_main EPG fontsize
-			self.appendSkinFile(self.daten + config.plugins.XionHDF.SIBFontSize.value + "_main.xml")
+#			###SecondInfobar_main EPG fontsize
+#			self.appendSkinFile(self.daten + config.plugins.XionHDF.SIBFontSize.value + "_main.xml")
 
 			###weather-style
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.WeatherStyle.value + ".xml")
