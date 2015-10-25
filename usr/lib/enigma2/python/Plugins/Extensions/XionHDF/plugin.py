@@ -59,7 +59,7 @@ def translateBlock(block):
 
 config.plugins.XionHDF = ConfigSubsection()
 config.plugins.XionHDF.weather_city = ConfigNumber(default="638242")
-config.plugins.XionHDF.refreshInterval = ConfigSelectionNumber(min = 10, max = 240, stepwidth = 10, default = 30, wraparound = True)
+config.plugins.XionHDF.refreshInterval = ConfigNumber(default="60")
 				
 config.plugins.XionHDF.System = ConfigSelection(default="openhdf", choices = [
 				("openhdf", _(" "))
