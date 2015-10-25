@@ -391,11 +391,8 @@ msgstr "Weiß"
 msgid "off"
 msgstr "Aus"
 
-msgid "ZPicon"
-msgstr "Z-Picon"
-
-msgid "XPicon"
-msgstr "X-Picon"
+msgid "X-Picon"
+msgstr "Mit Picon"
 
 msgid "two Columns"
 msgstr "Zwei Spalten"
@@ -406,11 +403,17 @@ msgstr "Drei Spalten"
 msgid "MiniTV"
 msgstr "Mini TV"
 
-msgid "ZPicons"
-msgstr "Z-Picon"
+msgid "full"
+msgstr "Nur aktuelle Sendung"
 
-msgid "XPicons"
-msgstr "X-Picon"
+msgid "top/bottom"
+msgstr "Oben und Unten"
+
+msgid "left/right"
+msgstr "Links und Rechts"
+
+msgid "X-Picons"
+msgstr "Mit Picon"
 
 msgid "Picon"
 msgstr "Picon"
@@ -440,7 +443,7 @@ msgid "big"
 msgstr "Groß"
 
 msgid "slim"
-msgstr "Schlank"
+msgstr "Schmal"
 
 msgid "small"
 msgstr "Klein"
@@ -468,6 +471,9 @@ msgstr "Hintergrund Transparenz"
 
 msgid "Weather ID"
 msgstr "Wetter ID"
+
+msgid "Second Infobar"
+msgstr "SecondInfobar Auswahl"
 
 msgid "______________________ Colors __________________________________"
 msgstr "______________________ Farben __________________________________"
