@@ -1576,6 +1576,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget font="Regular2;22" backgroundColor="XionBackground" foregroundColor="XionFont2" halign="center" name="text" position="70,662" size="708,48" transparent="1" valign="center" zPosition="1" />
     <panel name="template_menu_left" />
   </screen>
+  <!--Extensionslist-->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="ExtensionsList" position="0,0" size="1280,720" title="Extensions">
+    <widget backgroundColor="XionBackground" enableWrapAround="1" name="list" position="70,80" size="708,550" transparent="1" />
+    <panel name="template_menu_left" />
+  </screen>
   <!-- ********** Channel Selection and Infobar ********** -->
   <!-- SlimChannelSelection -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SlimChannelSelection" position="-1,0" size="1280,720" title="Channel Selection">
