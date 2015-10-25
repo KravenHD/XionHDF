@@ -216,7 +216,21 @@
     <eLabel backgroundColor="XionLine" position="17,70" size="816,2" zPosition="2" />
     <eLabel backgroundColor="XionLine" position="17,650" size="816,2" zPosition="2" />
   </screen>
-  
+  <screen name="template_menu_cs2_button">
+  <widget backgroundColor="black" font="Regular2; 34" foregroundColor="XionFont2" position="18,12" render="Label" size="815,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
+  <ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="black" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="black" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="black" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="black" alphatest="blend" />
+  <widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="black" transparent="1" valign="center" foregroundColor="XionFont2">
+    <convert type="XionHDFClockToText">Default</convert>
+  </widget>
+  <eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
+  <eLabel backgroundColor="XionLine" position="853,555" size="400,2" zPosition="2" />
+  <eLabel backgroundColor="XionLine" position="853,676" size="400,2" zPosition="2" />
+  <eLabel backgroundColor="XionLine" position="17,70" size="816,2" zPosition="2" />
+  <eLabel backgroundColor="XionLine" position="17,650" size="816,2" zPosition="2" />
+</screen>
   <screen name="template_menu_cs3_button">
     <widget backgroundColor="XionBackground" font="Regular2; 25" foregroundColor="XionFont2" position="18,11" render="Label" size="439,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
     <ePixmap pixmap="XionHDF/buttons/key_red1.png" position="30,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
@@ -301,7 +315,167 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
-  <screen name="template_menu_sibx">
+<screen name="template_menu_sibx1">
+  <widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" noWrap="1" position="260,605" render="Label" size="72,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+    <convert type="XionHDFEventTime">StartTime</convert>
+    <convert type="XionHDFClockToText">Default</convert>
+  </widget>
+  <eLabel backgroundColor="XionBackground" font="Regular2; 22" halign="center" noWrap="1" position="332,605" size="16,36" text="-" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
+  <widget backgroundColor="XionBackground" font="Regular2; 22" halign="left" noWrap="1" position="348,605" render="Label" size="72,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+    <convert type="XionHDFEventTime">EndTime</convert>
+    <convert type="XionHDFClockToText">Default</convert>
+  </widget>
+  <widget font="Regular2; 30" halign="left" valign="center" noWrap="1" position="426,601" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Now" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1">
+    <convert type="XionHDFEventName">Name</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" foregroundColor="XionFont2" font="Regular; 22" halign="right" noWrap="1" position="260,660" render="Label" size="72,36" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+    <convert type="XionHDFEventTime">StartTime</convert>
+    <convert type="XionHDFClockToText">Default</convert>
+  </widget>
+  <eLabel backgroundColor="XionBackground" foregroundColor="XionFont2" font="Regular; 22" halign="center" noWrap="1" position="332,660" size="16,36" text="-" transparent="1" valign="center" zPosition="1" />
+  <widget backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont2" halign="left" noWrap="1" position="348,660" render="Label" size="72,36" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+    <convert type="XionHDFEventTime">EndTime</convert>
+    <convert type="XionHDFClockToText">Default</convert>
+  </widget>
+  <widget font="Regular; 30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
+    <convert type="XionHDFEventName">Name</convert>
+  </widget>
+  <widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <widget font="Regular2; 35" foregroundColor="XionFont1" halign="left" noWrap="1" position="27,518" render="Label" size="1020,60" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="blend" backgroundColor="XionBackground">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="950,605" render="Label" size="107,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+    <convert type="XionHDFEventTime">Remaining</convert>
+    <convert type="XionHDFRemainingToText">InMinutes</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont2" valign="center" halign="right" position="950,660" render="Label" size="107,35" source="session.Event_Next" transparent="1" zPosition="1">
+    <convert type="XionHDFEventTime">Duration</convert>
+    <convert type="XionHDFClockToText">InMinutes</convert>
+  </widget>
+  <eLabel backgroundColor="XionLine" position="277,647" size="780,2" zPosition="2" />
+  <widget position="277,645" render="Progress" size="780,6" source="session.Event_Now" transparent="1" zPosition="7" foregroundColor="XionProgress">
+    <convert type="XionHDFEventTime">Progress</convert>
+  </widget>
+  <!-- Clock Standard */-->
+  <widget source="global.CurrentTime" position="1090,597" size="148,44" font="Regular2; 38" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+    <convert type="XionHDFClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" position="1090,660" size="148,36" font="Regular; 22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
+    <convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <!-- Clock Standard */-->
+  <ePixmap pixmap="XionHDF/ibar.png" position="0,543" size="1280,200" alphatest="blend" zPosition="-9" />
+  <eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" zPosition="-9" />
+  <widget source="session.CurrentService" render="Label" position="1107,40" size="89,22" backgroundColor="XionBackground" transparent="1" zPosition="3" foregroundColor="XionFont1" font="Regular; 19" valign="center" halign="left">
+    <convert type="XionHDFExtraInfo">OrbitalPositionOrTunerSystem</convert>
+  </widget>
+  <widget source="session.FrontendStatus" render="Label" position="1166,40" size="70,21" font="Regular; 19" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" zPosition="3" halign="right" valign="center">
+    <convert type="FrontendInfo">SNR</convert>
+  </widget>
+  <eLabel text="x" position="82,40" size="15,22" zPosition="3" font="Regular; 19" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+  <widget source="session.CurrentService" render="Label" zPosition="3" position="97,40" size="62,22" font="Regular; 19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+    <convert type="XionHDFServiceInfo">VideoHeight</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="3" position="32,40" size="50,22" font="Regular; 19" halign="right" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+    <convert type="XionHDFServiceInfo">VideoWidth</convert>
+  </widget>
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/c_on.png" position="1015,35" zPosition="2" size="32,32" backgroundColor="XionBackground" alphatest="blend" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">4</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/b_on.png" position="975,35" zPosition="2" size="32,32" backgroundColor="XionBackground" alphatest="blend" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/a_on.png" position="935,35" zPosition="2" size="32,32" backgroundColor="XionBackground" alphatest="blend" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/d_on.png" position="1055,35" zPosition="2" size="32,32" backgroundColor="XionBackground" alphatest="blend" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">8</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="XionHDF/buttons/a_off.png" position="935,35" size="32,32" zPosition="1" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttons/b_off.png" position="975,35" size="32,32" zPosition="1" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttons/c_off.png" position="1015,35" size="32,32" zPosition="1" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttons/d_off.png" position="1055,35" size="32,32" zPosition="1" alphatest="blend" />
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_subtitle_off.png" position="705,35" size="32,32" zPosition="1" />
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_subtitle_on.png" position="705,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
+    <convert type="XionHDFServiceInfo">SubtitlesAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_format_on.png" position="211,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
+    <convert type="XionHDFServiceInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_format_off.png" position="210,35" size="32,32" zPosition="1" />
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_hd_on.png" position="170,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
+    <convert type="XionHDFServiceInfo">IsHD</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_hd_off.png" position="170,35" size="32,32" zPosition="1" />
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_on.png" position="250,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
+    <convert type="XionHDFServiceInfo">IsMultichannel</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_off.png" position="250,35" size="32,32" zPosition="1" />
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_sub_off.png" position="555,35" size="32,32" zPosition="1" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="XionHDF/buttons/ico_sub_on.png" position="555,35" size="32,32" zPosition="2" alphatest="blend">
+    <convert type="XionHDFServiceInfo">SubservicesAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_txt_off.png" position="605,35" size="32,32" zPosition="1" />
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_txt_on.png" position="606,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
+    <convert type="XionHDFServiceInfo">HasTelext</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_hbbtv_off.png" position="290,35" size="32,32" zPosition="1" />
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_hbbtv_on.png" position="291,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
+    <convert type="XionHDFServiceInfo">HasHBBTV</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_off.png" position="655,35" size="32,32" zPosition="1" />
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_on.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
+    <convert type="XionHDFServiceInfo">IsCrypted</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular2; 38" halign="center" noWrap="1" position="37,81" foregroundColor="XionFont1" render="Label" size="1203,42" source="session.Event_Now" transparent="1" zPosition="1" valign="bottom">
+    <convert type="XionHDFEventName">Name</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular2; 32" foregroundColor="XionFont1" halign="center" position="39,128" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1203,361" source="session.Event_Now" zPosition="1" transparent="1">
+    <convert type="XionHDFEventName">ExtendedDescription</convert>
+  </widget>
+  <widget source="session.CurrentService" position="37,7" size="601,22" font="Regular2; 19" render="Label" halign="center" valign="bottom" backgroundColor="XionBackground" transparent="1" zPosition="1">
+    <convert type="XionHDFECMLine">Short</convert>
+  </widget>
+  <eLabel text="SysTemp:" position="353,40" size="101,22" font="Regular2; 19" halign="left" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="2" />
+  <widget source="global.CurrentTime" render="XionHDFSYSTemp" position="447,40" size="60,22" font="Regular2;19" halign="left" valign="bottom" foregroundColor="XionFont1" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="3" />
+  <widget source="session.CurrentService" render="Label" position="745,40" size="182,22" font="Regular2; 19" halign="center" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="4">
+    <convert type="XionHDFCpuUsage">CPU: $0</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular2; 19" halign="center" position="645,7" render="Label" size="602,22" zPosition="7" source="session.CurrentService" transparent="1" valign="bottom">
+    <convert type="XionHDFExtraInfo">TransponderInfo</convert>
+  </widget>
+  <ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,200" alphatest="blend" zPosition="-9" />
+  <ePixmap pixmap="XionHDF/buttons/ico_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
+  <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_stable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_unstable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+</screen>
+  
+  <screen name="template_menu_sibx2">
     <widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" noWrap="1" position="260,605" render="Label" size="72,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
       <convert type="XionHDFEventTime">StartTime</convert>
       <convert type="XionHDFClockToText">Default</convert>
@@ -469,6 +643,172 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
+<screen name="template_menu_sibx3">
+  <widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" noWrap="1" position="260,605" render="Label" size="72,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+    <convert type="XionHDFEventTime">StartTime</convert>
+    <convert type="XionHDFClockToText">Default</convert>
+  </widget>
+  <eLabel backgroundColor="XionBackground" font="Regular2; 22" halign="center" noWrap="1" position="332,605" size="16,36" text="-" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
+  <widget backgroundColor="XionBackground" font="Regular2; 22" halign="left" noWrap="1" position="348,605" render="Label" size="72,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+    <convert type="XionHDFEventTime">EndTime</convert>
+    <convert type="XionHDFClockToText">Default</convert>
+  </widget>
+  <widget font="Regular2; 30" halign="left" valign="center" noWrap="1" position="426,601" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Now" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1">
+    <convert type="XionHDFEventName">Name</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" foregroundColor="XionFont2" font="Regular; 22" halign="right" noWrap="1" position="260,660" render="Label" size="72,36" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+    <convert type="XionHDFEventTime">StartTime</convert>
+    <convert type="XionHDFClockToText">Default</convert>
+  </widget>
+  <eLabel backgroundColor="XionBackground" foregroundColor="XionFont2" font="Regular; 22" halign="center" noWrap="1" position="332,660" size="16,36" text="-" transparent="1" valign="center" zPosition="1" />
+  <widget backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont2" halign="left" noWrap="1" position="348,660" render="Label" size="72,36" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
+    <convert type="XionHDFEventTime">EndTime</convert>
+    <convert type="XionHDFClockToText">Default</convert>
+  </widget>
+  <widget font="Regular; 30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
+    <convert type="XionHDFEventName">Name</convert>
+  </widget>
+  <widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <widget font="Regular2; 35" foregroundColor="XionFont1" halign="left" noWrap="1" position="27,518" render="Label" size="1020,60" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="blend" backgroundColor="XionBackground">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="950,605" render="Label" size="107,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+    <convert type="XionHDFEventTime">Remaining</convert>
+    <convert type="XionHDFRemainingToText">InMinutes</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont2" valign="center" halign="right" position="950,660" render="Label" size="107,35" source="session.Event_Next" transparent="1" zPosition="1">
+    <convert type="XionHDFEventTime">Duration</convert>
+    <convert type="XionHDFClockToText">InMinutes</convert>
+  </widget>
+  <eLabel backgroundColor="XionLine" position="277,647" size="780,2" zPosition="2" />
+  <widget position="277,645" render="Progress" size="780,6" source="session.Event_Now" transparent="1" zPosition="7" foregroundColor="XionProgress">
+    <convert type="XionHDFEventTime">Progress</convert>
+  </widget>
+  <!-- Clock Standard */-->
+  <widget source="global.CurrentTime" position="1090,597" size="148,44" font="Regular2; 38" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+    <convert type="XionHDFClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" position="1090,660" size="148,36" font="Regular; 22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
+    <convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <!-- Clock Standard */-->
+  <ePixmap pixmap="XionHDF/ibar.png" position="0,543" size="1280,200" alphatest="blend" zPosition="-9" />
+  <eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" zPosition="-9" />
+  <widget source="session.CurrentService" render="Label" position="1107,40" size="89,22" backgroundColor="XionBackground" transparent="1" zPosition="3" foregroundColor="XionFont1" font="Regular; 19" valign="center" halign="left">
+    <convert type="XionHDFExtraInfo">OrbitalPositionOrTunerSystem</convert>
+  </widget>
+  <widget source="session.FrontendStatus" render="Label" position="1166,40" size="70,21" font="Regular; 19" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" zPosition="3" halign="right" valign="center">
+    <convert type="FrontendInfo">SNR</convert>
+  </widget>
+  <eLabel text="x" position="82,40" size="15,22" zPosition="3" font="Regular; 19" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+  <widget source="session.CurrentService" render="Label" zPosition="3" position="97,40" size="62,22" font="Regular; 19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+    <convert type="XionHDFServiceInfo">VideoHeight</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="3" position="32,40" size="50,22" font="Regular; 19" halign="right" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+    <convert type="XionHDFServiceInfo">VideoWidth</convert>
+  </widget>
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/c_on.png" position="1015,35" zPosition="2" size="32,32" backgroundColor="XionBackground" alphatest="blend" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">4</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/b_on.png" position="975,35" zPosition="2" size="32,32" backgroundColor="XionBackground" alphatest="blend" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/a_on.png" position="935,35" zPosition="2" size="32,32" backgroundColor="XionBackground" alphatest="blend" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/d_on.png" position="1055,35" zPosition="2" size="32,32" backgroundColor="XionBackground" alphatest="blend" valign="center">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">8</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="XionHDF/buttons/a_off.png" position="935,35" size="32,32" zPosition="1" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttons/b_off.png" position="975,35" size="32,32" zPosition="1" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttons/c_off.png" position="1015,35" size="32,32" zPosition="1" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttons/d_off.png" position="1055,35" size="32,32" zPosition="1" alphatest="blend" />
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_subtitle_off.png" position="705,35" size="32,32" zPosition="1" />
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_subtitle_on.png" position="705,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
+    <convert type="XionHDFServiceInfo">SubtitlesAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_format_on.png" position="211,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
+    <convert type="XionHDFServiceInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_format_off.png" position="210,35" size="32,32" zPosition="1" />
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_hd_on.png" position="170,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
+    <convert type="XionHDFServiceInfo">IsHD</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_hd_off.png" position="170,35" size="32,32" zPosition="1" />
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_on.png" position="250,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="2">
+    <convert type="XionHDFServiceInfo">IsMultichannel</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_dolby_off.png" position="250,35" size="32,32" zPosition="1" />
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_sub_off.png" position="555,35" size="32,32" zPosition="1" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="XionHDF/buttons/ico_sub_on.png" position="555,35" size="32,32" zPosition="2" alphatest="blend">
+    <convert type="XionHDFServiceInfo">SubservicesAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_txt_off.png" position="605,35" size="32,32" zPosition="1" />
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_txt_on.png" position="606,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
+    <convert type="XionHDFServiceInfo">HasTelext</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_hbbtv_off.png" position="290,35" size="32,32" zPosition="1" />
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_hbbtv_on.png" position="291,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
+    <convert type="XionHDFServiceInfo">HasHBBTV</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_off.png" position="655,35" size="32,32" zPosition="1" />
+  <widget alphatest="blend" pixmap="XionHDF/buttons/ico_crypt_on.png" position="655,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
+    <convert type="XionHDFServiceInfo">IsCrypted</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular2; 30" halign="center" noWrap="1" position="37,81" foregroundColor="XionFont1" render="Label" size="595,38" source="session.Event_Now" transparent="1" zPosition="1" valign="bottom">
+    <convert type="XionHDFEventName">Name</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular2; 26" foregroundColor="XionFont1" halign="center" position="37,127" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="595,370" source="session.Event_Now" zPosition="1" transparent="1">
+    <convert type="XionHDFEventName">ExtendedDescription</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular; 30" noWrap="1" foregroundColor="XionFont2" halign="center" position="640,81" render="Label" size="600,38" source="session.Event_Next" transparent="1" zPosition="1" valign="bottom">
+    <convert type="XionHDFEventName">Name</convert>
+  </widget>
+  <widget source="session.CurrentService" position="37,7" size="601,22" font="Regular2; 19" render="Label" halign="center" valign="bottom" backgroundColor="XionBackground" transparent="1" zPosition="1">
+    <convert type="XionHDFECMLine">Short</convert>
+  </widget>
+  <eLabel text="SysTemp:" position="353,40" size="101,22" font="Regular2; 19" halign="left" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="2" />
+  <widget source="global.CurrentTime" render="XionHDFSYSTemp" position="447,40" size="60,22" font="Regular2;19" halign="left" valign="bottom" foregroundColor="XionFont1" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="3" />
+  <widget source="session.CurrentService" render="Label" position="745,40" size="182,22" font="Regular2; 19" halign="center" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="4">
+    <convert type="XionHDFCpuUsage">CPU: $0</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular2; 19" halign="center" position="645,7" render="Label" size="602,22" zPosition="7" source="session.CurrentService" transparent="1" valign="bottom">
+    <convert type="XionHDFExtraInfo">TransponderInfo</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular; 26" foregroundColor="XionFont2" halign="center" position="640,127" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="600,370" source="session.Event_Next" zPosition="1" transparent="1">
+    <convert type="XionHDFEventName">ExtendedDescription</convert>
+  </widget>
+  <ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,200" alphatest="blend" zPosition="-9" />
+  <ePixmap pixmap="XionHDF/buttons/ico_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
+  <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_stable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_unstable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+</screen>
+  
   <screen name="template_menu_quick1">
     <ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
     <ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
@@ -543,6 +883,18 @@
     <eLabel backgroundColor="XionLine" position="50,62" size="755,2" zPosition="2" />
     <eLabel backgroundColor="XionLine" position="50,656" size="755,2" zPosition="2" />
   </screen>
+    <screen name="template_emc4">
+  <eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
+  <widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="black" transparent="1" valign="center" foregroundColor="XionFont2">
+    <convert type="XionHDFClockToText">Default</convert>
+  </widget>
+  <ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="black" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="black" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="black" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="black" alphatest="blend" />
+  <eLabel backgroundColor="XionLine" position="0,62" size="1280,2" zPosition="2" />
+  <eLabel backgroundColor="XionLine" position="50,654" size="755,2" zPosition="2" />
+</screen> 
   <screen name="template_choicebox">
     <eLabel backgroundColor="XionLine" position="0,64" size="1280,2" zPosition="2" />
     <eLabel backgroundColor="XionLine" position="0,656" size="1280,2" zPosition="2" />
@@ -552,9 +904,6 @@
       <convert type="XionHDFClockToText">Default</convert>
     </widget>
   </screen>
-   
-
-
   <screen name="template_webradiofs_right">
     <widget source="global.CurrentTime" render="Label" position="274,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont1">
       <convert type="XionHDFClockToText">Default</convert>
