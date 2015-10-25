@@ -853,33 +853,6 @@
     <panel name="template_colorkey_text" />
   </screen>
   <!-- ********** MoviePlayer ********** -->
-    <!-- MovieSelection -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="MovieSelection" position="0,0" size="1280,720" title="MovieSelection">
-  <widget name="waitingtext" position="0,0" size="0,0" />
-  <eLabel text="MovieSelection" position="70,12" size="708,46" font="Regular2;34" foregroundColor="XionFont2" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget name="list" position="70,110" enableWrapAround="1" size="708,345" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
-  <widget backgroundColor="XionBackground" font="Regular;17" halign="right" name="freeDiskSpace" position="70,80" size="708,24" transparent="1" valign="center" />
-  <widget backgroundColor="XionBackground" font="Regular2;30" foregroundColor="XionFont2" position="888,78" render="Label" size="377,80" source="Service" transparent="1" zPosition="1" halign="center">
-    <convert type="XionHDFEventName">Name</convert>
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular2;17" foregroundColor="XionFont2" halign="left" position="888,671" render="Label" size="70,24" source="Service" transparent="1" zPosition="1">
-    <convert type="ServiceTime">Duration</convert>
-    <convert type="XionHDFClockToText">AsLength</convert>
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular2;17" foregroundColor="XionFont2" halign="right" position="1165,671" render="Label" size="100,24" source="Service" transparent="1" zPosition="1">
-    <convert type="MovieInfo">FileSize</convert>
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular;19" foregroundColor="XionFont1" position="70,464" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=2000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" size="708,180" source="Service" transparent="1" valign="top">
-    <convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
-  </widget>
-  <eLabel backgroundColor="XionLine" position="18,458" size="816,2" zPosition="2" />
-  <widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont1">
-    <convert type="XionHDFClockToText">Default</convert>
-  </widget>
-  <widget source="Service" render="XionHDFCover" position="888,190" size="374,445" zPosition="4" backgroundColor="XionBackground" alphatest="on" transparent="1" />
-  <panel name="template_colorkey_text" />
-  <panel name="template_menu_left_right_button" />
-</screen>
   <!-- MoviePlayer -->
  <screen backgroundColor="transparent" flags="wfNoBorder" name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar">
     <widget source="global.CurrentTime" position="910,681" size="65,32" font="Regular; 20" render="Label" halign="right" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">

@@ -305,6 +305,12 @@ config.plugins.XionHDF.EMCStyle = ConfigSelection(default="emc-nocover", choices
 				("emc-verybigcover", _("very big Cover"))
 				])
 				
+config.plugins.XionHDF.MovieStyle = ConfigSelection(default="movieselectionnocover", choices = [
+				("movieselectionnocover", _("no Cover")),
+				("movieselectionsmallcover", _("small Cover")),
+				("movieselectionbigcover", _("big Cover"))
+				])
+				
 config.plugins.XionHDF.InfobarStyle = ConfigSelection(default="infobar-style-xpicon", choices = [
 				("infobar-style-xpicon", _("X-Picon"))
 				])
@@ -403,6 +409,7 @@ class XionHDF(ConfigListScreen, Screen):
 #		list.append(getConfigListEntry(_("Fontsize Second Infobar"), config.plugins.XionHDF.SIBFontSize, _("This option changes the size of font within the secondinfobar.")))
 		list.append(getConfigListEntry(_("ChannelSelection"), config.plugins.XionHDF.ChannelSelectionStyle, _("This option changes the view of channellist.")))
 		list.append(getConfigListEntry(_("EnhancedMovieCenter"), config.plugins.XionHDF.EMCStyle, _("This option changes the view of cover inside from EnhancedMovieCenter.")))
+		list.append(getConfigListEntry(_("MovieSelection"), config.plugins.XionHDF.MovieStyle, _("This option changes the view of cover inside from MovieSelection.")))
 		
 		self["config"].list = list
 		self["config"].l.setList(list)
@@ -583,6 +590,9 @@ class XionHDF(ConfigListScreen, Screen):
 
 			###emc-style
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.EMCStyle.value + ".xml")
+
+			###movie-style
+			self.appendSkinFile(self.daten + config.plugins.XionHDF.MovieStyle.value + ".xml")
 
 
 			###skin-user
