@@ -565,7 +565,7 @@
   </screen>
 <!-- InfoBarTunerState -->
 <screen name="TunerState" title="Tuner State" flags="wfNoBorder" position="0,133" size="957,32" zPosition="5" padding="20" spacing="15" backgroundColor="transparent">
-	<widget name="Background" backgroundColor="XionBackground" borderWidth="2" borderColor="XionLine" position="0,0" size="957,32" zPosition="-1" transparent="1" />
+	<widget name="Background" backgroundColor="XionBackground" borderWidth="0" borderColor="XionLine" position="0,0" size="957,32" zPosition="-1" transparent="1" />
     <eLabel backgroundColor="XionBackground" position="0,0" size="957,32" zPosition="-2" />
 	<widget name="Type" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/record.png,/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/stream.png,/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/finished.png,/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/info.png" position="0,0" size="32,32" zPosition="1" backgroundColor="XionBackground" transparent="1" alphatest="on" />
 	<widget name="Progress" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/InfoBarTunerState/progress.png" position="0,0" size="80,10" zPosition="1" borderWidth="2" borderColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
