@@ -19,7 +19,7 @@
   <widget source="Service" render="Label" position="455,208" size="269,40" font="Regular; 22" halign="center" backgroundColor="XionBackground" transparent="1">
     <convert type="EMCMovieInfo">RecordServiceName</convert>
   </widget>
- <widget source="Service" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=2000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="888,69" size="379,626" font="Regular; 22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" halign="center" valign="top">
+ <widget source="Service" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="888,69" size="379,626" font="Regular; 22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" halign="center" valign="top">
     <convert type="XionHDFEventName">ExtendedDescription</convert>
   </widget>
   <widget source="Service" render="Label" position="455,173" size="269,30" font="Regular2; 21" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">

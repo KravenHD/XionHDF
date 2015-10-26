@@ -1,7 +1,7 @@
 <!-- /* EMC NoCover -->
 <screen name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">
   <eLabel text="Enhanced Movie Center" position="70,12" size="708,46" font="Regular2;34" foregroundColor="XionFont2" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget name="list" position="49,102" size="755,544" itemHeight="32" BackColorSel="XionSelection" CoolFont="Regular;23" CoolSelectFont="Regular;23" CoolDateFont="Regular;23" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="550" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="150" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="640" CoolBarHPos="10" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="XionFont1" UnwatchedColor="XionFont1" WatchingColor="green" FinishedColor="XionFont1" RecordingColor="red" foregroundColorSelected="XionSelFont" scrollbarMode="showNever" transparent="1" />
+  <widget name="list" position="49,102" size="755,542" itemHeight="30" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolProgressPos="50" CoolBarPos="35" CoolBarHPos="10" CoolBarSize="50,10" CoolBarSizeSa="50,10" CoolMoviePos="90" CoolMovieSize="500" CoolFolderSize="575" CoolDatePos="595" CoolDateWidth="105" CoolPiconPos="90" CoolPiconHPos="2" CoolPiconWidth="45" CoolPiconHeight="26" CoolMoviePiconPos="140" CoolMoviePiconSize="450" CoolTitleColor="1" CoolDateColor="1" CoolHighlightColor="0" DefaultColor="XionFont1" UnwatchedColor="XionFont1" WatchingColor="XionFont2" FinishedColor="green" RecordingColor="red" BackColor="XionBackground" BackColorSel="XionSelection" FrontColorSel="XionSelFont" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionFont1" scrollbarMode="showNever" transparent="1" />
   <widget source="Service" render="Label" position="49,70" size="541,28" font="Regular; 22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" valign="center" halign="left">
 	<convert type="XionHDFDiskSpace">path</convert>
   </widget>
@@ -18,7 +18,7 @@
   <widget source="Service" render="Label" position="888,155" size="379,40" font="Regular; 22" halign="center" backgroundColor="XionBackground" transparent="1">
     <convert type="EMCMovieInfo">RecordServiceName</convert>
   </widget>
-  <widget source="Service" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=15000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="888,212" size="379,430" font="Regular; 22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" halign="center" valign="top">
+  <widget source="Service" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="888,220" size="379,428" font="Regular; 22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" halign="center" valign="top">
     <convert type="XionHDFEventName">ExtendedDescription</convert>
   </widget>
   <widget source="Service" render="Label" position="888,118" size="379,30" font="Regular2; 21" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
