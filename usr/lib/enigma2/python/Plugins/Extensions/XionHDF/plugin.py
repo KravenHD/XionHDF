@@ -90,6 +90,8 @@ config.plugins.XionHDF.SelectionBackground = ConfigSelection(default="000050EF",
 				("003F3F3F", _("grey dark")),
 				("0070AD11", _("green")),
 				("00213305", _("green dark")),
+				("001DFF00", _("neon green")),
+				("00FFFF00", _("neon yellow")),
 				("006D8764", _("olive")),
 				("00313D2D", _("olive dark")),
 				("00C3461B", _("orange")),
@@ -122,6 +124,8 @@ config.plugins.XionHDF.Font1 = ConfigSelection(default="00ffffff", choices = [
 				("003F3F3F", _("grey dark")),
 				("0070AD11", _("green")),
 				("00213305", _("green dark")),
+				("001DFF00", _("neon green")),
+				("00FFFF00", _("neon yellow")),
 				("006D8764", _("olive")),
 				("00313D2D", _("olive dark")),
 				("00C3461B", _("orange")),
@@ -154,6 +158,8 @@ config.plugins.XionHDF.Font2 = ConfigSelection(default="00ffffff", choices = [
 				("003F3F3F", _("grey dark")),
 				("0070AD11", _("green")),
 				("00213305", _("green dark")),
+				("001DFF00", _("neon green")),
+				("00FFFF00", _("neon yellow")),
 				("006D8764", _("olive")),
 				("00313D2D", _("olive dark")),
 				("00C3461B", _("orange")),
@@ -186,6 +192,8 @@ config.plugins.XionHDF.SelectionFont = ConfigSelection(default="00ffffff", choic
 				("003F3F3F", _("grey dark")),
 				("0070AD11", _("green")),
 				("00213305", _("green dark")),
+				("001DFF00", _("neon green")),
+				("00FFFF00", _("neon yellow")),
 				("006D8764", _("olive")),
 				("00313D2D", _("olive dark")),
 				("00C3461B", _("orange")),
@@ -218,6 +226,8 @@ config.plugins.XionHDF.ButtonText = ConfigSelection(default="00ffffff", choices 
 				("003F3F3F", _("grey dark")),
 				("0070AD11", _("green")),
 				("00213305", _("green dark")),
+				("001DFF00", _("neon green")),
+				("00FFFF00", _("neon yellow")),
 				("006D8764", _("olive")),
 				("00313D2D", _("olive dark")),
 				("00C3461B", _("orange")),
@@ -250,6 +260,8 @@ config.plugins.XionHDF.Progress = ConfigSelection(default="00ffffff", choices = 
 				("003F3F3F", _("grey dark")),
 				("0070AD11", _("green")),
 				("00213305", _("green dark")),
+				("001DFF00", _("neon green")),
+				("00FFFF00", _("neon yellow")),
 				("006D8764", _("olive")),
 				("00313D2D", _("olive dark")),
 				("00C3461B", _("orange")),
@@ -282,6 +294,8 @@ config.plugins.XionHDF.Line = ConfigSelection(default="00ffffff", choices = [
 				("003F3F3F", _("grey dark")),
 				("0070AD11", _("green")),
 				("00213305", _("green dark")),
+				("001DFF00", _("neon green")),
+				("00FFFF00", _("neon yellow")),
 				("006D8764", _("olive")),
 				("00313D2D", _("olive dark")),
 				("00C3461B", _("orange")),
@@ -468,6 +482,10 @@ class XionHDF(ConfigListScreen, Screen):
 				path = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/green.jpg"
 			elif returnValue == "00213305":
 				path = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/green_dark.jpg"
+			elif returnValue == "001DFF00":
+				path = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/neon_green.jpg"
+			elif returnValue == "00FFFF00":
+				path = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/neon_yellow.jpg"        
 			elif returnValue == "006D8764":
 				path = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/olive.jpg"
 			elif returnValue == "00313D2D":

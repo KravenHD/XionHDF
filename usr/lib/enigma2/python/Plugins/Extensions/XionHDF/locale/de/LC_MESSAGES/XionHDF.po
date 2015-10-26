@@ -349,6 +349,12 @@ msgstr "Grün"
 msgid "green dark"
 msgstr "dunkel Grün"
 
+msgid "neon green"
+msgstr "Neongrün"
+
+msgid "neon yellow"
+msgstr "Neongelb"
+
 msgid "olive"
 msgstr "Olive"
 
