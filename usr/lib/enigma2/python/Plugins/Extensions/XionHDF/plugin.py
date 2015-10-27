@@ -74,7 +74,7 @@ config.plugins.XionHDF.BackgroundColorTrans = ConfigSelection(default="0a", choi
 				("8c", _("high"))
 				])
 				
-config.plugins.XionHDF.SelectionBackground = ConfigSelection(default="000050EF", choices = [
+config.plugins.XionHDF.SelectionBackground = ConfigSelection(default="00C3461B", choices = [
 				("00F0A30A", _("amber")),
 				("00B27708", _("amber dark")),
 				("001B1775", _("blue")),
@@ -244,7 +244,7 @@ config.plugins.XionHDF.ButtonText = ConfigSelection(default="00ffffff", choices 
 				("00ffffff", _("white"))
 				])
 				
-config.plugins.XionHDF.Progress = ConfigSelection(default="00ffffff", choices = [
+config.plugins.XionHDF.Progress = ConfigSelection(default="00C3461B", choices = [
 				("00F0A30A", _("amber")),
 				("00B27708", _("amber dark")),
 				("001B1775", _("blue")),
