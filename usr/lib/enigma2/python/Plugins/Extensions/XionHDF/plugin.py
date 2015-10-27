@@ -65,7 +65,7 @@ config.plugins.XionHDF.System = ConfigSelection(default="openhdf", choices = [
 				("openhdf", _(" "))
 				])
 				
-config.plugins.XionHDF.BackgroundColorTrans = ConfigSelection(default="0a", choices = [
+config.plugins.XionHDF.BackgroundColorTrans = ConfigSelection(default="1c", choices = [
 				("00", _("off")),
 				("1c", _("lower")),
 				("2d", _("low")),
