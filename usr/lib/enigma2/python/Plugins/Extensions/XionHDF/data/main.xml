@@ -2534,7 +2534,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <!-- UpdatePluginMenu -->
   <screen name="UpdatePluginMenu" flags="wfNoBorder" position="0,0" size="1280,720" title="Update Plugin Menu" backgroundColor="transparent">
     <widget name="hdfStatusPic" position="90,500" size="100,118" backgroundColor="XionBackground" transparent="1" alphatest="on" />
-    <widget source="menu" render="Listbox" position="44,134" size="370,298" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="44,134" size="370,298" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
 					{"template": [
 							MultiContentEntryText(pos = (2, 2), size = (370, 24), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
@@ -2544,7 +2544,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 					}
 				</convert>
     </widget>
-    <widget source="menu" render="Listbox" position="444,134" size="240,300" scrollbarMode="showNever" selectionDisabled="1">
+    <widget source="menu" render="Listbox" position="444,134" size="240,300" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
       <convert type="TemplatedMultiContent">
 					{"template": [
 							MultiContentEntryText(pos = (2, 2), size = (240, 300), flags = RT_HALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
