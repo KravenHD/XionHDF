@@ -14,6 +14,7 @@
     <color name="blue" value="#000064c7" />
     <color name="green" value="#00389416" />
     <color name="grey" value="#00f0e3d6" />
+  	<color name="foreground" value="#00ffffff" />
     <color name="XionBackground" value="#00000000" />
     <color name="XionButtonText" value="#00ffffff" />
     <color name="XionFont1" value="#00ffffff" />
