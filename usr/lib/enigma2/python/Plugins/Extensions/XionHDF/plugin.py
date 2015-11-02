@@ -414,14 +414,14 @@ class XionHDF(ConfigListScreen, Screen):
 
 	def mylist(self):
 		list = []
-		list.append(getConfigListEntry(_("______________________ System __________________________________"), config.plugins.XionHDF.System, _(" ")))
+		list.append(getConfigListEntry(_("_____________________________ System __________________________________"), config.plugins.XionHDF.System, _(" ")))
 		list.append(getConfigListEntry(_("Running Text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
 		list.append(getConfigListEntry(_("Background Transparency"), config.plugins.XionHDF.BackgroundColorTrans, _("This option activate/deactive/change the background transparency of skin.")))
-		list.append(getConfigListEntry(_("______________________ Weather __________________________________"), ))
+		list.append(getConfigListEntry(_("_____________________________ Weather _________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
 		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your personal WeatherID. Please visit the website metrixweather.open-store.net to find your location.")))
 #		list.append(getConfigListEntry(_("Refresh interval (in minutes)"), config.plugins.XionHDF.refreshInterval, _("Here you can change how often the weather is refreshed in the background.")))
-		list.append(getConfigListEntry(_("______________________ Colors __________________________________"), ))
+		list.append(getConfigListEntry(_("_____________________________ Colors __________________________________"), ))
 		list.append(getConfigListEntry(_("Line"), config.plugins.XionHDF.Line, _("Please select the color of lines inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection"), config.plugins.XionHDF.SelectionBackground, _("Please select the color of listselection inside the skin.")))
 		list.append(getConfigListEntry(_("Progress-/Volumebar"), config.plugins.XionHDF.Progress, _("Please select the color of progress- and volumebar inside the skin.")))
@@ -429,7 +429,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("secondary Font"), config.plugins.XionHDF.Font2, _("Please select the color of secundary font inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection Font"), config.plugins.XionHDF.SelectionFont, _("Please select the color of listselection font inside the skin.")))
 		list.append(getConfigListEntry(_("Button Text"), config.plugins.XionHDF.ButtonText, _("Please select the color of button text inside the skin.")))
-		list.append(getConfigListEntry(_("______________________ Styles __________________________________"), ))
+		list.append(getConfigListEntry(_("_____________________________ Styles __________________________________"), ))
 		list.append(getConfigListEntry(_("Second Infobar"), config.plugins.XionHDF.SIB, _("This option changes the view of second infobar.")))
 #		list.append(getConfigListEntry(_("Fontsize Second Infobar"), config.plugins.XionHDF.SIBFontSize, _("This option changes the size of font within the secondinfobar.")))
 		list.append(getConfigListEntry(_("ChannelSelection"), config.plugins.XionHDF.ChannelSelectionStyle, _("This option changes the view of channellist.")))
