@@ -46,14 +46,14 @@
     <panel name="template_menu_left" />
   </screen>
   <screen name="ZapHistoryBrowser" position="670,440" size="560,210" title="ZapHistoryBrowser" flags="wfNoBorder" backgroundColor="XionBackground" >
-	<ePixmap pixmap="XionHDF/buttons/red.png" position="5,8" size="140,40" transparent="1" alphatest="on" />
-	<ePixmap pixmap="XionHDF/buttons/green.png" position="150,8" size="140,40" transparent="1" alphatest="on" />
-	<ePixmap pixmap="XionHDF/buttons/yellow.png" position="270,8" size="140,40" transparent="1" alphatest="on" />
-	<ePixmap pixmap="XionHDF/buttons/blue.png" position="430,8" size="140,40" transparent="1" alphatest="on" />
-	<widget name="key_red" position="0,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
-	<widget name="key_green" position="140,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
-	<widget name="key_yellow" position="280,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
-	<widget name="key_blue" position="420,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="center" backgroundColor="#1f771f" transparent="1" />
+	<ePixmap pixmap="XionHDF/buttons/key_red.png" position="10,8" size="140,40" transparent="1" alphatest="on" />
+	<ePixmap pixmap="XionHDF/buttons/key_green.png" position="150,8" size="140,40" transparent="1" alphatest="on" />
+	<ePixmap pixmap="XionHDF/buttons/key_yellow.png" position="290,8" size="140,40" transparent="1" alphatest="on" />
+	<ePixmap pixmap="XionHDF/buttons/key_blue.png" position="430,8" size="140,40" transparent="1" alphatest="on" />
+	<widget name="key_red" position="40,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="#1f771f" transparent="1" />
+	<widget name="key_green" position="180,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="#1f771f" transparent="1" />
+	<widget name="key_yellow" position="320,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="#1f771f" transparent="1" />
+	<widget name="key_blue" position="460,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="#1f771f" transparent="1" />
 	<widget name="list" position="10,40" size="540,180" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="LanguageSelection" position="0,0" size="1280,720" title="Language selection">
