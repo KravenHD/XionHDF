@@ -50,10 +50,10 @@
 	<ePixmap pixmap="XionHDF/buttons/key_green.png" position="150,8" size="140,40" transparent="1" alphatest="on" />
 	<ePixmap pixmap="XionHDF/buttons/key_yellow.png" position="290,8" size="140,40" transparent="1" alphatest="on" />
 	<ePixmap pixmap="XionHDF/buttons/key_blue.png" position="430,8" size="140,40" transparent="1" alphatest="on" />
-	<widget name="key_red" position="40,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="#1f771f" transparent="1" />
-	<widget name="key_green" position="180,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="#1f771f" transparent="1" />
-	<widget name="key_yellow" position="320,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="#1f771f" transparent="1" />
-	<widget name="key_blue" position="460,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="#1f771f" transparent="1" />
+	<widget name="key_red" position="40,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
+	<widget name="key_green" position="180,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
+	<widget name="key_yellow" position="320,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
+	<widget name="key_blue" position="460,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
 	<widget name="list" position="10,40" size="540,180" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="LanguageSelection" position="0,0" size="1280,720" title="Language selection">
@@ -1773,6 +1773,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1280,720">
     <widget position="6,6" render="Canvas" size="1280,720" source="Canvas" />
   </screen>
+  <!-- 3D AutoSwitch -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="ThreeDSettings" position="0,0" size="1280,720" title="AutoSwitch 3D">
+    <widget name="config" position="70,80" size="708,540" transparent="1" zPosition="2" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_old" />
+  </screen>
   <!-- UI3DSetupScreen -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="UI3DSetupScreen" position="0,0" size="1280,720" title="UI 3D setup">
     <widget name="config" position="70,80" size="708,540" transparent="1" zPosition="2" />
@@ -1798,6 +1804,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <screen name="Volume_adjust" position="0,0" size="1280,720" title="Volume Adjust" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="ServiceList" position="70,80" size="708,450" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <widget source="press_menu" render="Label" position="70,585" zPosition="1" size="708,28" font="Regular2;22" foregroundColor="XionFont2" halign="left" valign="center" backgroundColor="XionBackground" transparent="1" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_source" />
+  </screen>
+  <!-- Automatic Volume Adjustment -->
+  <screen name="AutomaticVolumeAdjustmentConfigScreen" position="0,0" size="1280,720" title="Automatic Volume Adjust" flags="wfNoBorder" backgroundColor="transparent">
+    <widget name="config" position="70,80" size="708,450" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
