@@ -99,7 +99,7 @@
     <widget font="Regular; 20" halign="left" valign="center" source="key_red" position="64,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
     <widget font="Regular; 20" halign="left" valign="center" source="key_green" position="264,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
     <widget font="Regular; 20" halign="left" valign="center" source="key_yellow" position="464,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-    <widget font="Regular; 20" halign="left" valign="center" source="key_blue" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="white" transparent="1" zPosition="1" />
+    <widget font="Regular; 20" halign="left" valign="center" source="key_blue" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
   </screen>
   <screen name="template_colorkey_text_button">
     <widget font="Regular; 20" halign="left" valign="center" name="buttonred" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
@@ -107,6 +107,12 @@
     <widget font="Regular; 20" halign="left" valign="center" name="buttonyellow" position="464,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
     <widget font="Regular; 20" halign="left" valign="center" name="buttonblue" position="664,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
   </screen>
+  <screen name="template_colorkey_text_old">
+    <widget font="Regular; 20" halign="left" valign="center" source="red" position="64,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+    <widget font="Regular; 20" halign="left" valign="center" source="green" position="264,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+    <widget font="Regular; 20" halign="left" valign="center" source="yellow" position="464,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+    <widget font="Regular; 20" halign="left" valign="center" source="blue" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+  </screen>  
   <screen name="template_menu_left">
     <eLabel backgroundColor="XionLine" position="0,64" size="1280,2" zPosition="2" />
     <eLabel backgroundColor="XionLine" position="0,656" size="1280,2" zPosition="2" />
