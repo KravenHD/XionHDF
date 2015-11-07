@@ -1787,8 +1787,52 @@
   <eLabel backgroundColor="XionLine" position="274,209" size="420,1" />
   <eLabel backgroundColor="XionLine" position="274,196" size="1,14" />
   <eLabel backgroundColor="XionLine" position="274,35" size="1,14" />
-</screen>
+</screen> 
 <!-- NumberZapExt */-->
-
+  <!--/* TMDb - The Movie Database -->
+  <!-- TMDb -->
+  <screen name="tmdbScreen" position="0,0" size="1280,720" title="TMDb - The Movie Database" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="searchinfo" position="70,80" size="700,60" itemHeight="30" font="Regular; 26" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="list" position="70,140" size="700,500" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="cover" position="825,90" size="380,530" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+	<panel name="template_menu_full_button" />
+	<panel name="template_colorkey_text_source" />
+  </screen> 
+  <!-- TMDb Setup -->
+  <screen name="tmdbConfigScreen" position="0,0" size="1280,720" title="TMDb - The Movie Database" flags="wfNoBorder" backgroundColor="transparent">
+    <widget name="info" position="70,80" size="708,540" itemHeight="30" font="Regular; 26" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+    <widget name="config" position="70,120" size="708,540" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_source" />
+  </screen> 
+  <!-- TMDb Movie -->
+<screen name="tmdbScreenMovie" position="0,0" size="1280,720" title="TMDb - The Movie Database" flags="wfNoBorder" backgroundColor="transparent">
+  <widget name="searchinfo" position="70,80" size="560,60" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" font="Regular; 26" />
+  <widget name="fulldescription" position="70,130" size="560,490" font="Regular;24" backgroundColor="XionBackground" transparent="1" />
+  <widget name="cover" position="930,92" size="250,320" alphatest="blend" />
+  <ePixmap position="705,140" size="100,75" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/star.png" transparent="1" alphatest="blend" />
+  <widget name="rating" position="680,170" size="150,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" foregroundColor="black" halign="center" />
+  <widget name="votes_brackets" position="680,235" size="150,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" halign="center" />
+  <widget name="fsk" position="681,275" size="150,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" halign="center" />
+  <widget name="year_txt" position="650,320" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+  <widget name="year" position="780,320" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+  <widget name="country_txt" position="650,350" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+  <widget name="country" position="780,350" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+  <widget name="runtime_txt" position="650,380" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+  <widget name="runtime" position="780,380" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+  <widget name="votes_txt" position="650,410" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+  <widget name="votes" position="780,410" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+  <widget name="director_txt" position="650,440" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+  <widget name="director" position="780,440" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+  <widget name="author_txt" position="650,470" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+  <widget name="author" position="780,470" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+  <widget name="genre_txt" position="650,500" size="100,30" backgroundColor="XionBackground" font="Regular; 22" transparent="1" />
+  <widget name="genre" position="780,500" size="400,25" backgroundColor="XionBackground" zPosition="2" transparent="1" font="Regular;22" />
+  <widget name="studio_txt" position="650,530" size="100,30" backgroundColor="XionBackground" font="Regular; 22" transparent="1" />
+  <widget name="studio" position="780,530" size="400,25" backgroundColor="XionBackground" zPosition="2" transparent="1" font="Regular;22" />
+  <panel name="template_menu_full_button" />
+  <panel name="template_colorkey_text_source" />
+</screen>
+<!-- TMDb - The Movie Database */-->
 <!-- plugins -->
 
