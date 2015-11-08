@@ -1904,6 +1904,27 @@
 	<panel name="template_menu_full_button" />
 	<panel name="template_colorkey_text_source" />
   </screen>
+<!-- TMDb Movie EMC -->
+<screen name="MovieInfoTMDb" position="0,0" size="1280,720" title="Movie Information TMDb" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="movie_name" position="20,75" size="1191,42" zPosition="0" font="Regular2;24" valign="center" halign="center" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" />
+	<widget name="previewlist" position="290,132" size="600,500" itemHeight="%s" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" backgroundColor="XionBackground" transparent="1" />
+	<widget name="previewcover" position="20,132" size="254,345" alphatest="blend" zPosition="2" />
+	<widget name="contenttxt" position="290,132" size="920,420" font="Regular;24" foregroundColor="XionFont1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" backgroundColor="XionBackground" transparent="1" />
+	<widget name="runtime" position="20,572" size="200,25" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
+	<widget name="runtimetxt" position="150,572" size="230,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="genre" position="20,607" size="200,25" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
+	<widget name="genretxt" position="150,607" size="230,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="country" position="400,572" size="200,25" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
+	<widget name="countrytxt" position="620,572" size="230,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="release" position="400,607" size="200,25" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
+	<widget name="releasetxt" position="620,607" size="230,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="rating" position="870,572" size="200,25" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
+	<widget name="ratingtxt" position="1005,572" size="140,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="starsbg" position="870,610" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/starsbar_empty_10.png" zPosition="3" alphatest="blend" />
+	<widget name="stars" position="870,610" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/starsbar_filled_10.png" zPosition="4" transparent="1" />
+	<widget name="setup" position="64,662" size="148,48" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText"  transparent="1" zPosition="1" />
+	<widget name="save" position="264,662" size="148,48" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText"  transparent="1" zPosition="1" />
+	<panel name="template_menu_full_button" />
+</screen> 
 <!-- TMDb - The Movie Database */-->
 <!-- plugins -->
-
