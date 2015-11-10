@@ -332,7 +332,7 @@ config.plugins.XionHDF.InfobarStyle = ConfigSelection(default="infobar-style-xpi
 				])
 				
 config.plugins.XionHDF.SIB = ConfigSelection(default="infobar-style-xpicon_end1", choices = [
-				("infobar-style-xpicon_end1", _("Full")),
+				("infobar-style-xpicon_end1", _("Only current program")),
 				("infobar-style-xpicon_end2", _("Top/Bottom")),
 				("infobar-style-xpicon_end3", _("Left/Right"))
 				])

@@ -400,16 +400,16 @@ msgstr "Aus"
 msgid "X-Picon"
 msgstr "Mit Picon"
 
-msgid "Two Columns"
+msgid "Two columns"
 msgstr "Zwei Spalten"
 
-msgid "Three Columns"
+msgid "Three columns"
 msgstr "Drei Spalten"
 
 msgid "MiniTV"
 msgstr "Mini TV"
 
-msgid "Full"
+msgid "Only current program"
 msgstr "Nur aktuelle Sendung"
 
 msgid "Top/Bottom"
