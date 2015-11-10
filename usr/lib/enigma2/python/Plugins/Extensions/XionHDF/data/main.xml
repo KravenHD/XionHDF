@@ -2696,6 +2696,32 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <panel name="template_menu_left_button" />
   <panel name="template_colorkey_text_source" />
 </screen>
+<!-- HarddiskSelection -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="HarddiskSelection" position="0,0" size="1280,720" title="Select HDD">
+  <widget itemHeight="30" name="hddlist" position="70,80" size="708,540" transparent="1" />
+    <panel name="template_menu_left" />
+</screen>
+<!-- HarddiskSetup -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="HarddiskSetup" position="0,0" size="1280,720" title="Harddisk">
+  <widget font="Regular2;23" name="model" position="70,150" size="700,25" transparent="1" />
+  <widget font="Regular2;23" name="capacity" position="70,200" size="700,25" transparent="1" />
+  <widget font="Regular2;23" name="bus" position="70,250" size="700,25" transparent="1" />
+  <widget backgroundColor="XionBackground" halign="left" valign="center" font="Regular2;20" name="initializetext" position="64,662" size="148,48" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+<panel name="template_colorkey_text" />
+    <panel name="template_menu_left_button" />
+</screen>
+<!-- HarddiskWait -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="HarddiskWait" position="0,0" size="1280,720">
+  <widget name="wait" position="70,80" size="708,540" transparent="1" />
+    <panel name="template_menu_left" />
+</screen>
+<!-- DriverManagerFile -->
+<screen flags="wfNoBorder" name="DriverManagerFile" position="0,0" size="1280,720" title="Select file to execute" transparent="0" backgroundColor="transparent">
+  <widget backgroundColor="XionBackground" font="Regular2;23" name="driverfile" position="70,74" size="708,28" transparent="1" foregroundColor="XionFont2" />
+  <widget backgroundColor="XionBackground" itemHeight="30" name="filelist" position="70,107" size="708,540" transparent="1" zPosition="3" />
+<panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
   <!-- LED_GigaSetup -->
   <screen name="LED_GigaSetup" position="0,0" size="1280,720" title="LED Setup" backgroundColor="transparent">
   <widget name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
