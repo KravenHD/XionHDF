@@ -2614,7 +2614,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 </screen>
   <!-- HddSetup -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="HddSetup" position="0,0" size="1280,720" title="Hard Drive Setup">
-  <widget source="menu" position="70,80" size="708,540" scrollbarMode="showOnDemand" itemHeight="50" transparent="1">
+  <widget name="menu" position="70,80" size="708,540" scrollbarMode="showOnDemand" itemHeight="50" transparent="1">
+  </widget>
   <panel name="template_menu_left_button" />
   <panel name="template_colorkey_text_source" />
 </screen>
@@ -2654,7 +2655,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <panel name="template_colorkey_text_source" />
 </screen>
   <!-- HddInfo -->
-<screen backgroundColor="XionBackground" flags="wfNoBorder" name="HddInfo" position="0,0" size="1280,720" title="Hard Drive Info">
+<screen backgroundColor="transparent" flags="wfNoBorder" name="HddInfo" position="0,0" size="1280,720" title="Hard Drive Info">
   <widget name="config" position="95,107" size="585,30" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
   <widget font="Regular;20" halign="left" name="model" position="95,200" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
   <widget font="Regular;20" halign="left" name="serial" position="95,230" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
