@@ -351,6 +351,7 @@ config.plugins.XionHDF.RunningText = ConfigSelection(default="movetype=running",
 				
 config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", choices = [
 				("weather-off", _("off")),
+				("weather-info", _("infos in place of weather")),
 				("weather-big", _("big")),
 				("weather-slim", _("slim")),
 				("weather-small", _("small"))

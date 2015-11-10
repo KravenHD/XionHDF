@@ -439,6 +439,9 @@ msgstr "Sehr großes Cover"
 msgid "on"
 msgstr "An"
 
+msgid "infos in place of weather"
+msgstr "Info´s anstelle Wetter"
+
 msgid "Weather"
 msgstr "Wetter"
 
