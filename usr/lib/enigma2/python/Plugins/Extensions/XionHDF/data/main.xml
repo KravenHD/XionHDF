@@ -2614,18 +2614,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 </screen>
   <!-- HddSetup -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="HddSetup" position="0,0" size="1280,720" title="Hard Drive Setup">
-  <widget source="menu" render="Listbox" position="70,80" size="708,540" scrollbarMode="showOnDemand" itemHeight="50" transparent="1">
-    <convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos = (2, 0), size = (48, 48), png = 0),
-					MultiContentEntryText(pos = (65, 10), size = (330, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-					MultiContentEntryText(pos = (475, 10), size = (125, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
-					],
-					"fonts": [gFont("Regular", 20)],
-					"itemHeight": 50
-				}
-			</convert>
-  </widget>
+  <widget source="menu" position="70,80" size="708,540" scrollbarMode="showOnDemand" itemHeight="50" transparent="1">
   <panel name="template_menu_left_button" />
   <panel name="template_colorkey_text_source" />
 </screen>
@@ -2665,17 +2654,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <panel name="template_colorkey_text_source" />
 </screen>
   <!-- HddInfo -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="HddInfo" position="0,0" size="1280,720" title="Hard Drive Info">
-  <widget name="config" position="95,237" size="585,30" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="model" position="95,320" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="serial" position="95,350" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="firmware" position="95,380" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="cylinders" position="95,410" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="heads" position="95,440" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="sectors" position="95,470" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="readDisk" position="95,500" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="readCache" position="95,530" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="temp" position="95,560" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+<screen backgroundColor="XionBackground" flags="wfNoBorder" name="HddInfo" position="0,0" size="1280,720" title="Hard Drive Info">
+  <widget name="config" position="95,107" size="585,30" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="model" position="95,200" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="serial" position="95,230" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="firmware" position="95,260" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="cylinders" position="95,290" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="heads" position="95,320" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="sectors" position="95,350" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="readDisk" position="95,380" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="readCache" position="95,410" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="temp" position="95,440" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
   <panel name="template_menu_left_button" />
   <panel name="template_colorkey_text_source" />
 </screen>
