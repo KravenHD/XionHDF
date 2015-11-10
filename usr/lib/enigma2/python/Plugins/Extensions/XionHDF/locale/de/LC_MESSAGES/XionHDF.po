@@ -289,133 +289,133 @@ msgstr "Oben"
 msgid "center"
 msgstr "Mittig"
 
-msgid "lower"
+msgid "Lower"
 msgstr "15%"
 
-msgid "low"
+msgid "Low"
 msgstr "30%"
 
-msgid "middle"
+msgid "Middle"
 msgstr "50%"
 
-msgid "medium"
+msgid "Medium"
 msgstr "70%"
 
-msgid "high"
+msgid "High"
 msgstr "90%"
 
-msgid "amber"
-msgstr "Amber"
+msgid "Amber"
+msgstr "Bernstein"
 
-msgid "amber dark"
-msgstr "dunkel Amber"
+msgid "Amber dark"
+msgstr "Dunkel Bernstein"
 
-msgid "black"
+msgid "Black"
 msgstr "Schwarz"
 
-msgid "blue"
+msgid "Blue"
 msgstr "Blau"
 
-msgid "blue dark"
-msgstr "dunkel Blau"
+msgid "Blue dark"
+msgstr "Dunkel Blau"
 
-msgid "brown"
+msgid "Brown"
 msgstr "Braun"
 
-msgid "brown dark"
-msgstr "dunkel Braun"
+msgid "Brown dark"
+msgstr "Dunkel Braun"
 
-msgid "cobalt"
+msgid "Cobalt"
 msgstr "Cobalt"
 
-msgid "cobalt dark"
-msgstr "dunkel Cobalt"
+msgid "Cobalt dark"
+msgstr "Dunkel Cobalt"
 
-msgid "cyan"
+msgid "Cyan"
 msgstr "Cyan"
 
-msgid "cyan dark"
-msgstr "dunkel Cyan"
+msgid "Cyan dark"
+msgstr "Dunkel Cyan"
 
-msgid "grey"
+msgid "Grey"
 msgstr "Grau"
 
-msgid "grey dark"
-msgstr "dunkel Grau"
+msgid "Grey dark"
+msgstr "Dunkel Grau"
 
-msgid "green"
+msgid "Green"
 msgstr "Grün"
 
-msgid "green dark"
-msgstr "dunkel Grün"
+msgid "Green dark"
+msgstr "Dunkel Grün"
 
-msgid "neon green"
+msgid "Neon green"
 msgstr "Neongrün"
 
-msgid "neon yellow"
+msgid "Neon yellow"
 msgstr "Neongelb"
 
-msgid "olive"
+msgid "Olive"
 msgstr "Olive"
 
-msgid "olive dark"
-msgstr "dunkel Olive"
+msgid "Olive dark"
+msgstr "Dunkel Olive"
 
-msgid "orange"
+msgid "Orange"
 msgstr "Orange"
 
-msgid "orange dark"
-msgstr "dunkel Orange"
+msgid "Orange dark"
+msgstr "Dunkel Orange"
 
-msgid "pink"
+msgid "Pink"
 msgstr "Pink"
 
-msgid "pink dark"
-msgstr "dunkel Pink"
+msgid "Pink dark"
+msgstr "Dunkel Pink"
 
-msgid "red"
+msgid "Red"
 msgstr "Rot"
 
-msgid "red dark"
-msgstr "dunkel Rot"
+msgid "Red dark"
+msgstr "Dunkel Rot"
 
-msgid "steel"
+msgid "Steel"
 msgstr "Stahl"
 
-msgid "steel dark"
-msgstr "dunkel Stahl"
+msgid "Steel dark"
+msgstr "Dunkel Stahl"
 
-msgid "violet"
+msgid "Violet"
 msgstr "Violet"
 
-msgid "violet dark"
-msgstr "dunkel Violet"
+msgid "Violet dark"
+msgstr "Dunkel Violet"
 
-msgid "white"
+msgid "White"
 msgstr "Weiß"
 
-msgid "off"
+msgid "Off"
 msgstr "Aus"
 
 msgid "X-Picon"
 msgstr "Mit Picon"
 
-msgid "two Columns"
+msgid "Two Columns"
 msgstr "Zwei Spalten"
 
-msgid "three Columns"
+msgid "Three Columns"
 msgstr "Drei Spalten"
 
 msgid "MiniTV"
 msgstr "Mini TV"
 
-msgid "full"
+msgid "Full"
 msgstr "Nur aktuelle Sendung"
 
-msgid "top/bottom"
+msgid "Top/Bottom"
 msgstr "Oben und Unten"
 
-msgid "left/right"
+msgid "Left/Right"
 msgstr "Links und Rechts"
 
 msgid "X-Picons"
@@ -424,22 +424,22 @@ msgstr "Mit Picon"
 msgid "Picon"
 msgstr "Picon"
 
-msgid "no Cover"
+msgid "No cover"
 msgstr "Kein Cover"
 
-msgid "small Cover"
+msgid "Small cover"
 msgstr "Kleines Cover"
 
-msgid "big Cover"
+msgid "Big cover"
 msgstr "Großes Cover"
 
-msgid "very big Cover"
+msgid "Very big cover"
 msgstr "Sehr großes Cover"
 
-msgid "on"
+msgid "On"
 msgstr "An"
 
-msgid "infos in place of weather"
+msgid "Infos in place of weather"
 msgstr "Info´s anstelle Wetter"
 
 msgid "Weather"
@@ -448,13 +448,13 @@ msgstr "Wetter"
 msgid "_____________________________ Weather _________________________________"
 msgstr "_____________________________ Wetter __________________________________"
 
-msgid "big"
+msgid "Big"
 msgstr "Groß"
 
-msgid "slim"
+msgid "Slim"
 msgstr "Schmal"
 
-msgid "small"
+msgid "Small"
 msgstr "Klein"
 
 msgid "_____________________________ System __________________________________"
@@ -466,23 +466,23 @@ msgstr "Image"
 msgid "Style"
 msgstr "Style"
 
-msgid "Font Style"
+msgid "Font style"
 msgstr "Schriftart"
 
-msgid "Button Style"
+msgid "Button style"
 msgstr "Button Style"
 
-msgid "Running Text"
+msgid "Running text"
 msgstr "Laufschrift - Running Text"
 
-msgid "Background Transparency"
+msgid "Background transparency"
 msgstr "Hintergrund Transparenz"
 
 msgid "Weather ID"
 msgstr "Wetter ID"
 
 msgid "Second Infobar"
-msgstr "SecondInfobar Auswahl"
+msgstr "Zweite Infobar Auswahl"
 
 msgid "_____________________________ Colors __________________________________"
 msgstr "_____________________________ Farben __________________________________"
@@ -502,22 +502,22 @@ msgstr "Rahmen"
 msgid "Listselection"
 msgstr "Auswahlbalken"
 
-msgid "Listselection Border"
+msgid "Listselection border"
 msgstr "Auswahlbalken Rahmen"
 
 msgid "Progress-/Volumebar"
 msgstr "Fortschritts-/Lautstärkebalken"
 
-msgid "primary Font"
+msgid "Primary font"
 msgstr "Hauptschrift / Sendung Jetzt"
 
-msgid "secondary Font"
+msgid "Secondary font"
 msgstr "Sekundäre Schriftfarbe / Sendung Danach"
 
-msgid "Listselection Font"
+msgid "Listselection font"
 msgstr "Auswahlbalken Schriftfarbe"
 
-msgid "Button Text"
+msgid "Button text"
 msgstr "Button Text"
 
 msgid "_____________________________ Styles __________________________________"
@@ -526,7 +526,7 @@ msgstr "_____________________________ Styles __________________________________"
 msgid "Clock"
 msgstr "Uhr"
 
-msgid "Clock Analog Color"
+msgid "Clock analog color"
 msgstr "Farbe Analoguhr"
 
 msgid "__________________________ General ___________________________________"
@@ -541,7 +541,7 @@ msgstr "EMC"
 msgid "ExtNumberZap"
 msgstr "ExtNumberZap"
 
-msgid "Volume Style"
+msgid "Volume style"
 msgstr "Volume Style"
 
 msgid "CoolTVGuide"
