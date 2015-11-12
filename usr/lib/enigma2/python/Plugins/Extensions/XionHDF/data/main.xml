@@ -5,13 +5,12 @@
     <widget name="list" font="Regular;20" itemHeight="30" position="70,121" size="708,420" transparent="1" backgroundColor="XionBackground" />
     <panel name="template_menu_left" />
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="ChoiceBox" position="0,0" size="1280,720">
-    <eLabel backgroundColor="XionBackground" text="Auswahlfenster" font="Regular2;23" foregroundColor="XionFont2" position="70,12" size="708,46" halign="center" valign="center" zPosition="1" transparent="1" />
-	<widget backgroundColor="XionBackground" font="Regular2;20" foregroundColor="XionFont2" position="70,80" size="708,27" render="Label" source="Title" halign="left" valign="center" transparent="1" />
-	<widget backgroundColor="XionBackground" font="Regular2;20" foregroundColor="XionFont2" position="70,107" size="708,80" halign="left" valign="center" name="text" transparent="1" />
-	<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="list" position="70,193" size="708,450" transparent="1" />
-    <panel name="template_choicebox" />
-  </screen>
+<screen backgroundColor="transparent" flags="wfNoBorder" name="ChoiceBox" position="0,0" size="1280,720">
+  <eLabel backgroundColor="XionBackground" text="Auswahlfenster" font="Regular2;23" foregroundColor="XionFont2" position="70,12" size="708,46" halign="center" valign="center" zPosition="1" transparent="1" />
+  <widget backgroundColor="XionBackground" font="Regular2;20" foregroundColor="XionFont2" position="70,80" size="708,27" render="Label" source="Title" halign="left" valign="center" transparent="1" />
+  <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="list" position="70,123" size="708,515" transparent="1" />
+  <panel name="template_choicebox" />
+</screen>
   <screen name="ConsoleBox" position="0,0" size="1280,720" title="Console Box" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="text" font="Regular;20" itemHeight="30" position="70,120" size="708,420" transparent="1" backgroundColor="XionBackground" foregroundColor="XionFont1" />
     <panel name="template_menu_left" />
@@ -2523,7 +2522,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap position="6,7" size="64,64" zPosition="1" pixmap="XionHDF/buttons/volume.png" transparent="0" alphatest="blend" />
     <widget font="Regular;40" foregroundColor="XionFont1" backgroundColor="XionBackground" halign="center" valign="center" render="XionHDFVolumeText" source="global.CurrentTime" position="243,8" size="85,60" zPosition="20" transparent="1" />
     <eLabel position="72,38" size="170,1" backgroundColor="XionFont1" foregroundColor="XionFont1" />
-    <eLabel position="2,1" size="327,77" backgroundColor="XionBackground" zPosition="-2" transparent="0" />
+    <eLabel position="2,1" size="333,77" backgroundColor="XionBackground" zPosition="-2" transparent="0" />
   </screen>
   <!-- About -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="About" position="1,1" size="1280,720" title="About">
