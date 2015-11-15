@@ -14,6 +14,9 @@
     <convert type="ServiceTime">Duration</convert>
     <convert type="XionHDFClockToText">AsLength</convert>
   </widget>
+  <widget source="Service" render="Label" position="968,671" size="195,40" font="Regular2; 17" halign="center" backgroundColor="XionBackground" transparent="1">
+	<convert type="MovieInfo">RecordServiceName</convert>
+  </widget>  
   <widget backgroundColor="XionBackground" font="Regular2;17" foregroundColor="XionFont2" halign="right" position="1165,671" render="Label" size="100,24" source="Service" transparent="1" zPosition="1">
     <convert type="MovieInfo">FileSize</convert>
   </widget>
