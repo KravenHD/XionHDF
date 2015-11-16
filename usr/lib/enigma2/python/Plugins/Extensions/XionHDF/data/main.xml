@@ -230,6 +230,11 @@
     <panel name="template_menu_full_button" />
     <panel name="template_colorkey_text" />
   </screen>
+  <!-- EventViewMenu -->
+  <screen name="EventViewContextMenu" position="0,0" size="1280,720" title="Eventview Menu" flags="wfNoBorder" backgroundColor="transparent">
+    <widget name="menu" font="Regular;20" itemHeight="30" position="70,121" size="708,420" transparent="1" backgroundColor="XionBackground" />
+    <panel name="template_menu_left" />
+  </screen>	
   <!-- EventViewSimple -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EventViewSimple" position="0,0" size="1280,720" title="Eventview">
     <widget backgroundColor="XionBackground" scrollbarMode="showNever" font="Regular2; 26" name="epg_description" position="45,155" size="1190,443" transparent="1" />
