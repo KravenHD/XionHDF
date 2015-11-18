@@ -2773,7 +2773,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <!-- RestorePlugins -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="RestorePlugins" position="0,0" size="1280,720" title="Restore Plugins">
     <widget itemHeight="30" name="list" position="70,80" size="708,540" transparent="1" />
-    <widget source="menu" render="Listbox" position="40,80" size="740,394" scrollbarMode="showOnDemand" transparent="1" backgroundColorSelected="#688cbf" foregroundColorSelected="white">
+    <widget source="menu" render="Listbox" position="40,80" size="740,540" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryText(pos = (50, 3), size = (650, 23), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
