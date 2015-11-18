@@ -1802,10 +1802,10 @@
     </widget>
     <widget name="video" position="938,120" size="322,182" zPosition="5" backgroundColor="transparent" />
 	<!-- Channelzuordnung -->
-    <widget name="list" position="20,150" size="880,470" zPosition="5" backgroundColor="XionBackground" foregroundColor="XionSelFont" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
+    <widget name="list" position="20,150" size="880,470" zPosition="5" backgroundColor="XionBackground" foregroundColor="XionFont1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
 	<!-- Marker-/Planer-Listen -->
     <widget name="config" position="20,120" size="870,500" zPosition="5" backgroundColor="black" foregroundColor="XionFont1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
-    <widget name="menu_list" position="20,120" size="870,500" zPosition="5" backgroundColor="black" foregroundColor="XionFont1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
+    <widget name="menu_list" position="20,120" size="870,500" zPosition="5" backgroundColor="black" foregroundColor="XionFont1" foregroundColorSelected="XionSelFont" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
 	<!-- Log-Listen -->
     <widget name="log" position="20,120" size="1240,500" zPosition="5" backgroundColor="XionBackground" foregroundColor="XionFont1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
 	<!-- PopUp-Listen -->
