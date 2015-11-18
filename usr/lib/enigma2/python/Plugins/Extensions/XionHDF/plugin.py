@@ -421,7 +421,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Running text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
 		list.append(getConfigListEntry(_("Background transparency"), config.plugins.XionHDF.BackgroundColorTrans, _("This option activate/deactive/change the background transparency of skin.")))
 		list.append(getConfigListEntry(_("ChannelSelection"), config.plugins.XionHDF.ChannelSelectionStyle, _("This option changes the view of channellist.")))
-		list.append(getConfigListEntry(_("Infobar Channelname"), config.plugins.XionHDF.InfobarChannelname, _("This option activates the channelname within the infobar.")))
+		list.append(getConfigListEntry(_("Infobar channelname"), config.plugins.XionHDF.InfobarChannelname, _("This option activates the channelname within the infobar.")))
 		list.append(getConfigListEntry(_("Second Infobar"), config.plugins.XionHDF.SIB, _("This option changes the view of second infobar.")))
 		list.append(getConfigListEntry(_("EnhancedMovieCenter"), config.plugins.XionHDF.EMCStyle, _("This option changes the view of cover inside from EnhancedMovieCenter.")))
 		list.append(getConfigListEntry(_("MovieSelection"), config.plugins.XionHDF.MovieStyle, _("This option changes the view of cover inside from MovieSelection.")))
