@@ -343,6 +343,11 @@ config.plugins.XionHDF.ChannelSelectionStyle = ConfigSelection(default="channels
 				("channelselection-xpicon", _("X-Picon")),
 				("channelselection-minitv", _("MiniTV"))
 				])
+
+config.plugins.XionHDF.InfobarChannelname = ConfigSelection(default="channelname-on", choices = [
+				("channelname-on", _("On")),
+				("channelname-off", _("Off"))
+				])
 				
 config.plugins.XionHDF.RunningText = ConfigSelection(default="movetype=running", choices = [
 				("movetype=running", _("On")),
@@ -415,9 +420,14 @@ class XionHDF(ConfigListScreen, Screen):
 
 	def mylist(self):
 		list = []
-		list.append(getConfigListEntry(_("_____________________________ System __________________________________"), config.plugins.XionHDF.System, _(" ")))
+		list.append(getConfigListEntry(_("_____________________________ Styles __________________________________"), config.plugins.XionHDF.System, _(" ")))
 		list.append(getConfigListEntry(_("Running text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
 		list.append(getConfigListEntry(_("Background transparency"), config.plugins.XionHDF.BackgroundColorTrans, _("This option activate/deactive/change the background transparency of skin.")))
+		list.append(getConfigListEntry(_("ChannelSelection"), config.plugins.XionHDF.ChannelSelectionStyle, _("This option changes the view of channellist.")))
+		list.append(getConfigListEntry(_("Infobar Channelname"), config.plugins.XionHDF.InfobarChannelname, _("This option activates the channelname within the infobar.")))
+		list.append(getConfigListEntry(_("Second Infobar"), config.plugins.XionHDF.SIB, _("This option changes the view of second infobar.")))
+		list.append(getConfigListEntry(_("EnhancedMovieCenter"), config.plugins.XionHDF.EMCStyle, _("This option changes the view of cover inside from EnhancedMovieCenter.")))
+		list.append(getConfigListEntry(_("MovieSelection"), config.plugins.XionHDF.MovieStyle, _("This option changes the view of cover inside from MovieSelection.")))
 		list.append(getConfigListEntry(_("_____________________________ Weather _________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
 		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your personal WeatherID. Please visit the website metrixweather.open-store.net to find your location.")))
@@ -430,12 +440,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Secondary font"), config.plugins.XionHDF.Font2, _("Please select the color of secundary font inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection font"), config.plugins.XionHDF.SelectionFont, _("Please select the color of listselection font inside the skin.")))
 		list.append(getConfigListEntry(_("Button text"), config.plugins.XionHDF.ButtonText, _("Please select the color of button text inside the skin.")))
-		list.append(getConfigListEntry(_("_____________________________ Styles __________________________________"), ))
-		list.append(getConfigListEntry(_("Second Infobar"), config.plugins.XionHDF.SIB, _("This option changes the view of second infobar.")))
-#		list.append(getConfigListEntry(_("Fontsize Second Infobar"), config.plugins.XionHDF.SIBFontSize, _("This option changes the size of font within the secondinfobar.")))
-		list.append(getConfigListEntry(_("ChannelSelection"), config.plugins.XionHDF.ChannelSelectionStyle, _("This option changes the view of channellist.")))
-		list.append(getConfigListEntry(_("EnhancedMovieCenter"), config.plugins.XionHDF.EMCStyle, _("This option changes the view of cover inside from EnhancedMovieCenter.")))
-		list.append(getConfigListEntry(_("MovieSelection"), config.plugins.XionHDF.MovieStyle, _("This option changes the view of cover inside from MovieSelection.")))
+#		list.append(getConfigListEntry(_("_____________________________ Styles __________________________________"), ))
 		
 		self["config"].list = list
 		self["config"].l.setList(list)
