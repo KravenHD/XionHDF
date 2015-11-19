@@ -457,7 +457,7 @@ msgstr "Schmal"
 msgid "Small"
 msgstr "Klein"
 
-msgid "Infobar Channelname"
+msgid "Infobar channelname"
 msgstr "Infobar Sendername anzeigen"
 
 msgid "Image"
