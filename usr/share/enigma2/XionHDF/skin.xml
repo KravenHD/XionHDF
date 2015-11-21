@@ -2320,8 +2320,8 @@
   <!-- SleepTimerEdit -->  
   <!-- SleepTimer -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="SleepTimerEdit" position="0,0" size="1280,720" title="Sleep Timer">
-    <widget name="config" position="70,80" size="708,120" itemHeight="30" font="Regular;22" foregroundColor="ZeroFont1" backgroundColor="XionBackground" transparent="1" />
-    <widget name="description" position="70,545" size="708,54" font="Regular;22" halign="center" foregroundColor="ZeroFont1" backgroundColor="XionBackground" transparent="1" />
+    <widget name="config" position="70,80" size="708,120" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+    <widget name="description" position="70,545" size="708,54" font="Regular;22" halign="center" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_full_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
@@ -4494,7 +4494,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <!-- ********** Kodi ********** -->  
   <!-- KodiSetupScreen -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="KodiSetupScreen" position="0,0" size="1280,720" title="Kodi Setup Menu">
-    <widget name="config" position="70,80" size="708,120" itemHeight="30" font="Regular;22" foregroundColor="ZeroFont1" backgroundColor="XionBackground" transparent="1" />
+    <widget name="config" position="70,80" size="708,120" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_full_button" />
     <panel name="template_colorkey_text_source" />
   </screen>  

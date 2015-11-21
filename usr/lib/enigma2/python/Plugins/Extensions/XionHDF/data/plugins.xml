@@ -690,7 +690,7 @@
   <!-- ********** Kodi ********** -->  
   <!-- KodiSetupScreen -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="KodiSetupScreen" position="0,0" size="1280,720" title="Kodi Setup Menu">
-    <widget name="config" position="70,80" size="708,120" itemHeight="30" font="Regular;22" foregroundColor="ZeroFont1" backgroundColor="XionBackground" transparent="1" />
+    <widget name="config" position="70,80" size="708,120" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_full_button" />
     <panel name="template_colorkey_text_source" />
   </screen>  
