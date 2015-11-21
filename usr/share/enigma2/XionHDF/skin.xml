@@ -14,8 +14,8 @@
     <color name="blue" value="#000064c7" />
     <color name="green" value="#00389416" />
     <color name="grey" value="#00f0e3d6" />
-	<color name="foreground" value="#00ffffff" />
-    <color name="XionBackground" value="#0a000000" />
+  	<color name="foreground" value="#00ffffff" />
+    <color name="XionBackground" value="#1c000000" />
     <color name="XionButtonText" value="#00ffffff" />
     <color name="XionFont1" value="#00ffffff" />
     <color name="XionFont2" value="#00ffffff" />
@@ -99,7 +99,7 @@
     <widget font="Regular; 20" halign="left" valign="center" source="key_red" position="64,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
     <widget font="Regular; 20" halign="left" valign="center" source="key_green" position="264,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
     <widget font="Regular; 20" halign="left" valign="center" source="key_yellow" position="464,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-    <widget font="Regular; 20" halign="left" valign="center" source="key_blue" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="white" transparent="1" zPosition="1" />
+    <widget font="Regular; 20" halign="left" valign="center" source="key_blue" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
   </screen>
   <screen name="template_colorkey_text_button">
     <widget font="Regular; 20" halign="left" valign="center" name="buttonred" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
@@ -107,6 +107,12 @@
     <widget font="Regular; 20" halign="left" valign="center" name="buttonyellow" position="464,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
     <widget font="Regular; 20" halign="left" valign="center" name="buttonblue" position="664,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
   </screen>
+  <screen name="template_colorkey_text_old">
+    <widget font="Regular; 20" halign="left" valign="center" source="red" position="64,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+    <widget font="Regular; 20" halign="left" valign="center" source="green" position="264,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+    <widget font="Regular; 20" halign="left" valign="center" source="yellow" position="464,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+    <widget font="Regular; 20" halign="left" valign="center" source="blue" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+  </screen>  
   <screen name="template_menu_left">
     <eLabel backgroundColor="XionLine" position="0,64" size="1280,2" zPosition="2" />
     <eLabel backgroundColor="XionLine" position="0,656" size="1280,2" zPosition="2" />
@@ -284,9 +290,6 @@
     <widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget font="Regular2; 35" foregroundColor="XionFont1" halign="left" noWrap="1" position="27,518" render="Label" size="1020,60" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="blend" backgroundColor="XionBackground">
-      <convert type="ServiceName">Name</convert>
-    </widget>
     <widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="950,605" render="Label" size="107,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
       <convert type="XionHDFEventTime">Remaining</convert>
       <convert type="XionHDFRemainingToText">InMinutes</convert>
@@ -346,9 +349,6 @@
   </widget>
   <widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
     <convert type="ConditionalShowHide">Blink</convert>
-  </widget>
-  <widget font="Regular2; 35" foregroundColor="XionFont1" halign="left" noWrap="1" position="27,518" render="Label" size="1020,60" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="blend" backgroundColor="XionBackground">
-    <convert type="ServiceName">Name</convert>
   </widget>
   <widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="950,605" render="Label" size="107,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
     <convert type="XionHDFEventTime">Remaining</convert>
@@ -452,7 +452,7 @@
   <widget backgroundColor="XionBackground" font="Regular2; 38" halign="center" noWrap="1" position="39,88" foregroundColor="XionFont1" render="Label" size="1203,42" source="session.Event_Now" transparent="1" zPosition="1" valign="bottom">
     <convert type="XionHDFEventName">Name</convert>
   </widget>
-  <widget backgroundColor="XionBackground" font="Regular2; 30" foregroundColor="XionFont1" halign="center" position="39,136" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1200,326" source="session.Event_Now" zPosition="1" transparent="1">
+  <widget backgroundColor="XionBackground" font="Regular2; 28" foregroundColor="XionFont1" halign="center" position="39,136" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1200,322" source="session.Event_Now" zPosition="1" transparent="1">
     <convert type="XionHDFEventName">ExtendedDescription</convert>
   </widget>
   <widget backgroundColor="XionBackground" font="Regular2; 34" foregroundColor="XionFont2" halign="center" position="39,470" render="Label" size="1200,42" source="session.Event_Now" zPosition="1" transparent="1">
@@ -511,9 +511,6 @@
     
     <widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
       <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <widget font="Regular2; 35" foregroundColor="XionFont1" halign="left" noWrap="1" position="27,518" render="Label" size="1020,60" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="blend" backgroundColor="XionBackground">
-      <convert type="ServiceName">Name</convert>
     </widget>
     <widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="950,605" render="Label" size="107,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
       <convert type="XionHDFEventTime">Remaining</convert>
@@ -677,9 +674,6 @@
   </widget>
   <widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
     <convert type="ConditionalShowHide">Blink</convert>
-  </widget>
-  <widget font="Regular2; 35" foregroundColor="XionFont1" halign="left" noWrap="1" position="27,518" render="Label" size="1020,60" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="blend" backgroundColor="XionBackground">
-    <convert type="ServiceName">Name</convert>
   </widget>
   <widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="950,605" render="Label" size="107,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
     <convert type="XionHDFEventTime">Remaining</convert>
@@ -937,32 +931,42 @@
 
  <!-- /* ChannelSelection Two Columns-->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelSelection" position="-1,0" size="1280,720" title="Channel Selection">
-    <widget backgroundColor="XionBackground" scrollbarMode="showNever" foregroundColorMarkedSelected="green" foregroundColor="XionFont1" colorEventProgressbarBorder="XionLine" colorEventProgressbarBorderSelected="XionLine" colorServiceDescription="XionFont2" colorServiceDescriptionSelected="XionSelFont" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="17,78" serviceInfoFont="Regular;23" serviceItemHeight="35" serviceNameFont="Regular2;25" serviceNumberFont="Regular;25" size="816,564" transparent="1" />
-    <widget source="ServiceEvent" render="XionHDFSingleEpgList" position="891,561" size="362,113" noWrap="1" font="Regular2;22" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
-    </widget>
-    <widget alphatest="blend" position="891,105" render="XionHDFXPicon" size="67,40" source="ServiceEvent" transparent="1" zPosition="4">
-      <convert type="XionHDFRefString">ServicelistRef</convert>
-    </widget>
-    <widget backgroundColor="XionBackground" font="Regular; 20" halign="right" position="1153,123" render="Label" size="100,25" source="ServiceEvent" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
-      <convert type="XionHDFEventTime">Remaining</convert>
-      <convert type="XionHDFRemainingToText">InMinutes</convert>
-    </widget>
-    <widget source="ServiceEvent" render="Progress" position="891,150" size="362,3" borderWidth="0" backgroundColor="XionBackground" foregroundColor="XionProgress" transparent="1" zPosition="1">
-      <convert type="XionHDFEventTime">Progress</convert>
-    </widget>
-    <eLabel position="891,151" size="362,1" backgroundColor="XionLine" />
-    <widget font="Regular; 22" foregroundColor="XionFont1" position="891,163" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="362,381" source="ServiceEvent" valign="top" backgroundColor="XionBackground" transparent="1" zPosition="-8">
-      <convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
-    </widget>
-    <widget font="Regular2; 30" foregroundColor="XionFont2" position="891,53" halign="center" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="362,40" source="ServiceEvent" backgroundColor="XionBackground" transparent="1" zPosition="-8" valign="left" noWrap="1">
-      <convert type="XionHDFEventName">Name</convert>
-    </widget>
-    <widget backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" position="891,680" render="Label" size="362,30" source="ServiceEvent" transparent="1" zPosition="5" noWrap="1">
-  <convert type="XionHDFEventsInfo">PrimeTime,noDuration</convert>
-</widget>
-    <panel name="template_menu_cs_button" />
-    <panel name="template_colorkey_text" />
-  </screen>
+  <widget backgroundColor="XionBackground" scrollbarMode="showNever" foregroundColorMarkedSelected="green" foregroundColor="XionFont1" colorEventProgressbarBorder="XionLine" colorEventProgressbarBorderSelected="XionLine" colorServiceDescription="XionFont2" colorServiceDescriptionSelected="XionSelFont" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="17,78" serviceInfoFont="Regular;23" serviceItemHeight="35" serviceNameFont="Regular2;25" serviceNumberFont="Regular;25" size="816,564" transparent="1" />
+  <widget source="ServiceEvent" render="XionHDFSingleEpgList" position="891,561" size="362,113" noWrap="1" font="Regular2;22" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
+  </widget>
+  <widget alphatest="blend" position="891,100" render="XionHDFXPicon" size="67,40" source="ServiceEvent" transparent="1" zPosition="4">
+    <convert type="XionHDFRefString">ServicelistRef</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular; 24" halign="left" noWrap="1" position="891,148" render="Label" size="72,30" source="ServiceEvent" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">
+    </convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular; 24" halign="right" noWrap="1" position="1181,148" render="Label" size="72,30" source="ServiceEvent" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">
+    </convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular; 18" halign="right" position="955,146" render="Label" size="232,25" source="ServiceEvent" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+    <convert type="XionHDFEventTime">Remaining</convert>
+    <convert type="XionHDFRemainingToText">InMinutes</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Progress" position="955,171" size="232,3" borderWidth="0" backgroundColor="XionBackground" foregroundColor="XionProgress" transparent="1" zPosition="1">
+    <convert type="XionHDFEventTime">Progress</convert>
+  </widget>
+  <eLabel position="955,171" size="232,3" backgroundColor="XionLine" />
+  <widget font="Regular; 22" foregroundColor="XionFont1" position="891,176" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="362,377" source="ServiceEvent" valign="top" backgroundColor="XionBackground" transparent="1" zPosition="-8">
+    <convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
+  </widget>
+  <widget font="Regular2; 30" foregroundColor="XionFont2" position="891,53" halign="center" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="362,40" source="ServiceEvent" backgroundColor="XionBackground" transparent="1" zPosition="-8" valign="left" noWrap="1">
+    <convert type="XionHDFEventName">Name</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" position="891,680" render="Label" size="362,30" source="ServiceEvent" transparent="1" zPosition="5" noWrap="1">
+    <convert type="XionHDFEventsInfo">PrimeTime,noDuration</convert>
+  </widget>
+  <panel name="template_menu_cs_button" />
+  <panel name="template_colorkey_text" />
+</screen>
   <!-- /* ChannelSelection Two Columns -->
   
   
@@ -990,11 +994,10 @@
     <panel name="template_menu_left" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ChoiceBox" position="0,0" size="1280,720">
-    <eLabel backgroundColor="XionBackground" text="Auswahlfenster" font="Regular2;23" foregroundColor="XionFont2" position="70,12" size="708,46" halign="center" valign="center" zPosition="1" transparent="1" />
-	<widget backgroundColor="XionBackground" font="Regular2;20" foregroundColor="XionFont2" position="70,80" size="708,27" render="Label" source="Title" halign="left" valign="center" transparent="1" />
-	<widget backgroundColor="XionBackground" font="Regular2;20" foregroundColor="XionFont2" position="70,107" size="708,80" halign="left" valign="center" name="text" transparent="1" />
-	<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="list" position="70,193" size="708,450" transparent="1" />
-    <panel name="template_choicebox" />
+	<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" size="708,46" render="Label" source="Title" halign="center" valign="center" transparent="1" />
+	<widget backgroundColor="XionBackground" font="Regular2;22" halign="left" name="text" position="70,607" size="708,45" foregroundColor="XionFont2" transparent="1" />
+	<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="35" name="list" position="70,110" size="708,490" transparent="1" />
+	<panel name="template_choicebox" />
   </screen>
   <screen name="ConsoleBox" position="0,0" size="1280,720" title="Console Box" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="text" font="Regular;20" itemHeight="30" position="70,120" size="708,420" transparent="1" backgroundColor="XionBackground" foregroundColor="XionFont1" />
@@ -1028,6 +1031,17 @@
           </convert>
     </widget>
     <panel name="template_menu_left" />
+  </screen>
+  <screen name="ZapHistoryBrowser" position="670,440" size="560,210" title="ZapHistoryBrowser" flags="wfNoBorder" backgroundColor="XionBackground" >
+	<ePixmap pixmap="XionHDF/buttons/key_red.png" position="10,8" size="140,40" transparent="1" alphatest="on" />
+	<ePixmap pixmap="XionHDF/buttons/key_green.png" position="150,8" size="140,40" transparent="1" alphatest="on" />
+	<ePixmap pixmap="XionHDF/buttons/key_yellow.png" position="290,8" size="140,40" transparent="1" alphatest="on" />
+	<ePixmap pixmap="XionHDF/buttons/key_blue.png" position="430,8" size="140,40" transparent="1" alphatest="on" />
+	<widget name="key_red" position="40,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
+	<widget name="key_green" position="180,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
+	<widget name="key_yellow" position="320,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
+	<widget name="key_blue" position="460,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
+	<widget name="list" position="10,40" size="540,180" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="LanguageSelection" position="0,0" size="1280,720" title="Language selection">
     <widget position="70,120" render="Listbox" size="708,420" source="languages" transparent="1" zPosition="3">
@@ -1204,6 +1218,11 @@
     <panel name="template_menu_full_button" />
     <panel name="template_colorkey_text" />
   </screen>
+  <!-- EventViewMenu -->
+  <screen name="EventViewContextMenu" position="0,0" size="1280,720" title="Eventview Menu" flags="wfNoBorder" backgroundColor="transparent">
+    <widget name="menu" font="Regular;20" itemHeight="30" position="70,121" size="708,420" transparent="1" backgroundColor="XionBackground" />
+    <panel name="template_menu_left" />
+  </screen>	
   <!-- EventViewSimple -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EventViewSimple" position="0,0" size="1280,720" title="Eventview">
     <widget backgroundColor="XionBackground" scrollbarMode="showNever" font="Regular2; 26" name="epg_description" position="45,155" size="1190,443" transparent="1" />
@@ -2746,6 +2765,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1280,720">
     <widget position="6,6" render="Canvas" size="1280,720" source="Canvas" />
   </screen>
+  <!-- 3D AutoSwitch -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="ThreeDSettings" position="0,0" size="1280,720" title="AutoSwitch 3D">
+    <widget name="config" position="70,80" size="708,540" transparent="1" zPosition="2" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_old" />
+  </screen>
   <!-- UI3DSetupScreen -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="UI3DSetupScreen" position="0,0" size="1280,720" title="UI 3D setup">
     <widget name="config" position="70,80" size="708,540" transparent="1" zPosition="2" />
@@ -2771,6 +2796,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <screen name="Volume_adjust" position="0,0" size="1280,720" title="Volume Adjust" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="ServiceList" position="70,80" size="708,450" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <widget source="press_menu" render="Label" position="70,585" zPosition="1" size="708,28" font="Regular2;22" foregroundColor="XionFont2" halign="left" valign="center" backgroundColor="XionBackground" transparent="1" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_source" />
+  </screen>
+  <!-- Automatic Volume Adjustment -->
+  <screen name="AutomaticVolumeAdjustmentConfigScreen" position="0,0" size="1280,720" title="Automatic Volume Adjust" flags="wfNoBorder" backgroundColor="transparent">
+    <widget name="config" position="70,80" size="708,450" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
@@ -3479,12 +3510,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <panel name="template_menu_left_button" />
   </screen>
   <!--/* Volume -->
-  <screen name="Volume" position="47,38" size="330,80" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
+  <screen name="Volume" position="47,38" size="333,80" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
     <widget name="Volume" position="72,36" size="170,5" zPosition="3" transparent="1" foregroundColor="XionProgress" />
     <ePixmap position="6,7" size="64,64" zPosition="1" pixmap="XionHDF/buttons/volume.png" transparent="0" alphatest="blend" />
     <widget font="Regular;40" foregroundColor="XionFont1" backgroundColor="XionBackground" halign="center" valign="center" render="XionHDFVolumeText" source="global.CurrentTime" position="243,8" size="85,60" zPosition="20" transparent="1" />
     <eLabel position="72,38" size="170,1" backgroundColor="XionFont1" foregroundColor="XionFont1" />
-    <eLabel position="2,1" size="327,77" backgroundColor="XionBackground" zPosition="-2" transparent="0" />
+    <eLabel position="2,1" size="333,77" backgroundColor="XionBackground" zPosition="-2" transparent="0" />
   </screen>
   <!-- About -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="About" position="1,1" size="1280,720" title="About">
@@ -3518,7 +3549,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <!-- UpdatePluginMenu -->
   <screen name="UpdatePluginMenu" flags="wfNoBorder" position="0,0" size="1280,720" title="Update Plugin Menu" backgroundColor="transparent">
     <widget name="hdfStatusPic" position="90,500" size="100,118" backgroundColor="XionBackground" transparent="1" alphatest="on" />
-    <widget source="menu" render="Listbox" position="44,134" size="370,298" scrollbarMode="showOnDemand">
+    <widget source="menu" render="Listbox" position="44,134" size="370,298" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
 					{"template": [
 							MultiContentEntryText(pos = (2, 2), size = (370, 24), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
@@ -3528,7 +3559,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 					}
 				</convert>
     </widget>
-    <widget source="menu" render="Listbox" position="444,134" size="240,300" scrollbarMode="showNever" selectionDisabled="1">
+    <widget source="menu" render="Listbox" position="444,134" size="240,300" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
       <convert type="TemplatedMultiContent">
 					{"template": [
 							MultiContentEntryText(pos = (2, 2), size = (240, 300), flags = RT_HALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
@@ -3575,17 +3606,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 </screen>
   <!-- HddSetup -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="HddSetup" position="0,0" size="1280,720" title="Hard Drive Setup">
-  <widget source="menu" render="Listbox" position="70,80" size="708,540" scrollbarMode="showOnDemand" itemHeight="50" transparent="1">
-    <convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos = (2, 0), size = (48, 48), png = 0),
-					MultiContentEntryText(pos = (65, 10), size = (330, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-					MultiContentEntryText(pos = (475, 10), size = (125, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
-					],
-					"fonts": [gFont("Regular", 20)],
-					"itemHeight": 50
-				}
-			</convert>
+  <widget name="menu" position="70,80" size="708,540" scrollbarMode="showOnDemand" itemHeight="50" transparent="1">
   </widget>
   <panel name="template_menu_left_button" />
   <panel name="template_colorkey_text_source" />
@@ -3626,17 +3647,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <panel name="template_colorkey_text_source" />
 </screen>
   <!-- HddInfo -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="HddInfo" position="0,0" size="1280,720" title="Hard Drive Info">
-  <widget name="config" position="95,237" size="585,30" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="model" position="95,320" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="serial" position="95,350" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="firmware" position="95,380" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="cylinders" position="95,410" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="heads" position="95,440" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="sectors" position="95,470" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="readDisk" position="95,500" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="readCache" position="95,530" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget font="Regular;20" foregroundColor="XionFont1" halign="left" name="temp" position="95,560" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+<screen backgroundColor="transparent" flags="wfNoBorder" name="HddInfo" position="0,0" size="1280,720" title="Hard Drive Info">
+  <widget name="config" position="95,107" size="585,30" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="model" position="95,200" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="serial" position="95,230" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="firmware" position="95,260" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="cylinders" position="95,290" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="heads" position="95,320" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="sectors" position="95,350" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="readDisk" position="95,380" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="readCache" position="95,410" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget font="Regular;20" halign="left" name="temp" position="95,440" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
   <panel name="template_menu_left_button" />
   <panel name="template_colorkey_text_source" />
 </screen>
@@ -3657,6 +3678,32 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <panel name="template_menu_left_button" />
   <panel name="template_colorkey_text_source" />
 </screen>
+<!-- HarddiskSelection -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="HarddiskSelection" position="0,0" size="1280,720" title="Select HDD">
+  <widget itemHeight="30" name="hddlist" position="70,80" size="708,540" transparent="1" />
+    <panel name="template_menu_left" />
+</screen>
+<!-- HarddiskSetup -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="HarddiskSetup" position="0,0" size="1280,720" title="Harddisk">
+  <widget font="Regular2;23" name="model" position="70,150" size="700,25" transparent="1" />
+  <widget font="Regular2;23" name="capacity" position="70,200" size="700,25" transparent="1" />
+  <widget font="Regular2;23" name="bus" position="70,250" size="700,25" transparent="1" />
+  <widget backgroundColor="XionBackground" halign="left" valign="center" font="Regular2;20" name="initializetext" position="64,662" size="148,48" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+<panel name="template_colorkey_text" />
+    <panel name="template_menu_left_button" />
+</screen>
+<!-- HarddiskWait -->
+<screen backgroundColor="transparent" flags="wfNoBorder" name="HarddiskWait" position="0,0" size="1280,720">
+  <widget name="wait" position="70,80" size="708,540" transparent="1" />
+    <panel name="template_menu_left" />
+</screen>
+<!-- DriverManagerFile -->
+<screen flags="wfNoBorder" name="DriverManagerFile" position="0,0" size="1280,720" title="Select file to execute" transparent="0" backgroundColor="transparent">
+  <widget backgroundColor="XionBackground" font="Regular2;23" name="driverfile" position="70,74" size="708,28" transparent="1" foregroundColor="XionFont2" />
+  <widget backgroundColor="XionBackground" itemHeight="30" name="filelist" position="70,107" size="708,540" transparent="1" zPosition="3" />
+<panel name="template_colorkey_text_source" />
+    <panel name="template_menu_left_button" />
+</screen>
   <!-- LED_GigaSetup -->
   <screen name="LED_GigaSetup" position="0,0" size="1280,720" title="LED Setup" backgroundColor="transparent">
   <widget name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
@@ -3667,8 +3714,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <screen name="VFDSkinSelector" position="0,0" size="1280,720" title="LCD Skin-Selector" backgroundColor="transparent">
   <widget name="lab1" position="70,111" size="250,26" zPosition="1" font="Regular2; 22" halign="left" transparent="1" foregroundColor="XionFont2" />
   <widget name="lab2" position="423,201" size="250,26" zPosition="1" font="Regular2; 22" halign="left" transparent="1" foregroundColor="XionFont2" />
-  <widget name="SkinList" position="70,158" size="270,371" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
-  <widget name="Preview" position="422,261" size="280,210" zPosition="2" backgroundColor="XionBackground" transparent="0" alphatest="on" />
+  <widget name="SkinList" position="70,158" size="310,371" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+  <widget name="Preview" position="462,261" size="280,210" zPosition="2" backgroundColor="XionBackground" transparent="0" alphatest="on" />
   <widget name="lab3" position="70,549" halign="center" size="700,26" zPosition="1" foregroundColor="XionFont2" font="Regular2; 22" transparent="1" />
   <panel name="template_menu_left_button" />
   <panel name="template_colorkey_text" />
@@ -3686,8 +3733,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <panel name="template_colorkey_text" />
 </screen>
   <!-- DownloadMenu -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="Hdf_Downloader" position="0,0" size="1280,720" title="Select your Download">
-  <widget name="downloadmenu" position="68,115" size="400,300" scrollbarMode="showOnDemand" />
+<screen backgroundColor="transparent" flags="wfNoBorder" name="Hdf_Downloader" position="0,0" size="1280,720" title="Select your Download">
+  <widget name="downloadmenu" position="68,115" size="400,300" scrollbarMode="showOnDemand" transparent="1" />
   <widget source="introduction" render="Label" position="12,438" size="560,30" zPosition="10" font="Regular;21" foregroundColor="XionFont1" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
   <widget source="size" render="Label" position="555,121" size="100,30" zPosition="10" font="Regular;15" foregroundColor="XionFont1" halign="left" valign="top" backgroundColor="XionBackground" transparent="1" />
   <widget source="size2" render="Label" position="485,116" size="100,30" zPosition="10" font="Regular;21" foregroundColor="XionFont1" halign="left" valign="top" backgroundColor="XionBackground" transparent="1" />
@@ -3707,7 +3754,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget name="key_6" position="853,510" zPosition="2" size="200,25" valign="center" halign="right" font="Regular;15" foregroundColor="XionFont1" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
   <ePixmap name="0" position="1058,535" zPosition="1" size="35,25" pixmap="skin_default/buttons/key_0.png" transparent="1" alphatest="on" />
   <widget name="key_0" position="853,535" zPosition="2" size="200,25" valign="center" halign="right" font="Regular;15" foregroundColor="XionFont1" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-  <panel name="template_menu_full_button" />
+  <panel name="template_menu_left_button" /> 
   <panel name="template_colorkey_text_source" />
 </screen>
   <!-- Backup Software Restore Manager -->
@@ -3729,25 +3776,25 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <panel name="template_colorkey_text_source" />
   </screen>
   <!-- Softcam Cardserver Manager -->
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="ScSelection" position="0,0" size="1280,720" title="Softcam Cardserver Manager">
+<screen backgroundColor="transparent" flags="wfNoBorder" name="ScSelection" position="0,0" size="1280,720" title="Softcam Cardserver Manager">
   <widget name="entries" position="68,160" size="505,310" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
-  <eLabel font="Regular;18" foregroundColor="XionFont1" halign="left" valign="top" position="695,160" size="90,26" text="ECM:" zPosition="2" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="780,160" size="490,56" transparent="1" zPosition="2" font="Regular;18" foregroundColor="XionFont1" valign="top" halign="left" noWrap="1">
+  <eLabel font="Regular;18" foregroundColor="XionFont1" halign="left" valign="top" position="695,160" size="90,26" text="ECM:" zPosition="2" transparent="1" backgroundColor="XionBackground" />
+  <widget source="session.CurrentService" render="Label" position="780,160" size="490,56" transparent="1" zPosition="2" font="Regular;18" foregroundColor="XionFont1" valign="top" halign="left" noWrap="1" backgroundColor="XionBackground">
     <convert type="CryptoInfo">VerboseInfo</convert>
   </widget>
-  <eLabel font="Regular;18" foregroundColor="XionFont1" halign="left" valign="top" position="695,220" size="90,26" text="Channel:" zPosition="2" transparent="1" />
-  <widget source="session.CurrentService" render="Label" position="780,220" size="480,26" transparent="1" zPosition="2" font="Regular;18" foregroundColor="XionFont1" valign="top" halign="left">
+  <eLabel font="Regular;18" foregroundColor="XionFont1" halign="left" valign="top" position="695,220" size="90,26" text="Channel:" zPosition="2" transparent="1" backgroundColor="XionBackground" />
+  <widget source="session.CurrentService" render="Label" position="780,220" size="480,26" transparent="1" zPosition="2" font="Regular;18" foregroundColor="XionFont1" valign="top" halign="left" backgroundColor="XionBackground">
     <convert type="ServiceName">All</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="695,300" size="479,26" transparent="1" zPosition="2" font="Regular;18" foregroundColor="XionFont1" valign="top" halign="left" noWrap="1">
+  <widget source="session.CurrentService" render="Label" position="695,300" size="479,26" transparent="1" zPosition="2" font="Regular;18" foregroundColor="XionFont1" valign="top" halign="left" noWrap="1" backgroundColor="XionBackground">
     <convert type="XionHDFExtraInfo">CryptoInfo</convert>
   </widget>
-  <eLabel font="Regular;18" foregroundColor="XionFont1" halign="left" valign="top" position="695,260" size="90,26" text="RES:" zPosition="2" transparent="1" />
-  <widget source="session.CurrentService" render="Label" zPosition="2" position="780,260" size="55,24" halign="left" valign="top" font="Regular;18" foregroundColor="XionFont1" transparent="1">
+  <eLabel font="Regular;18" foregroundColor="XionFont1" halign="left" valign="top" position="695,260" size="90,26" text="RES:" zPosition="2" transparent="1" backgroundColor="XionBackground" />
+  <widget source="session.CurrentService" render="Label" zPosition="2" position="780,260" size="55,24" halign="left" valign="top" font="Regular;18" foregroundColor="XionFont1" transparent="1" backgroundColor="XionBackground">
     <convert type="XionHDFServiceInfo">VideoWidth</convert>
   </widget>
-  <eLabel text="x" zPosition="2" position="830,260" size="35,24" halign="left" valign="top" font="Regular;18" foregroundColor="XionFont1" transparent="1" />
-  <widget source="session.CurrentService" render="Label" zPosition="2" position="850,260" size="55,24" halign="left" valign="top" font="Regular;18" foregroundColor="XionFont1" transparent="1">
+  <eLabel text="x" zPosition="2" position="830,260" size="35,24" halign="left" valign="top" font="Regular;18" foregroundColor="XionFont1" transparent="1" backgroundColor="XionBackground" />
+  <widget source="session.CurrentService" render="Label" zPosition="2" position="850,260" size="55,24" halign="left" valign="top" font="Regular;18" foregroundColor="XionFont1" transparent="1" backgroundColor="XionBackground">
     <convert type="XionHDFServiceInfo">VideoHeight</convert>
   </widget>
   <panel name="template_menu_full_button" />
@@ -5544,11 +5591,147 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <eLabel backgroundColor="XionLine" position="274,209" size="420,1" />
   <eLabel backgroundColor="XionLine" position="274,196" size="1,14" />
   <eLabel backgroundColor="XionLine" position="274,35" size="1,14" />
-</screen>
+</screen> 
 <!-- NumberZapExt */-->
-
+  <!-- ****** SerienRecorder ****** -->
+<!--SerienRecorder-->
+  <screen name="SerienRecorder3.0" position="0,0" size="1280,720" title="Serien Recorder" flags="wfNoBorder" backgroundColor="XionBackground">
+	<ePixmap position="0,0" size="1280,334" zPosition="-9" pixmap="XionHDF/infobar/infobar_oben.png" transparent="1" alphatest="blend" />
+    <widget name="title" position="20,50" size="880,55" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" font="Regular;26" valign="center" halign="center" />
+    <widget name="headline" position="20,50" size="860,55" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" font="Regular;26" valign="center" halign="center" />
+    <widget backgroundColor="XionBackground" name="headline" position="20,20" size="880,40" transparent="1" font="Regular;26" valign="center" halign="center" />
+    <widget backgroundColor="XionBackground" name="version" position="860,20" size="400,40" foregroundColor="XionFont2" transparent="1" font="Regular;26" valign="center" halign="right" />
+    <widget backgroundColor="XionBackground" source="global.CurrentTime" position="860,50" size="400,55" render="Label" font="Regular;26" valign="center" halign="right"  foregroundColor="XionFont2" transparent="1">
+        <convert type="XionHDFClockToText">Format:%A, %d.%m.%Y  %H:%M</convert>
+    </widget>
+    <widget name="video" position="938,120" size="322,182" zPosition="5" backgroundColor="transparent" />
+	<!-- Channelzuordnung -->
+    <widget name="list" position="20,150" size="880,470" zPosition="5" backgroundColor="XionBackground" foregroundColor="XionFont1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
+	<!-- Marker-/Planer-Listen -->
+    <widget name="config" position="20,120" size="870,500" zPosition="5" backgroundColor="black" foregroundColor="XionFont1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
+    <widget name="menu_list" position="20,120" size="870,500" zPosition="5" backgroundColor="black" foregroundColor="XionFont1" foregroundColorSelected="XionSelFont" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
+	<!-- Log-Listen -->
+    <widget name="log" position="20,120" size="1240,500" zPosition="5" backgroundColor="XionBackground" foregroundColor="XionFont1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
+	<!-- PopUp-Listen -->
+    <widget name="popup_bg" position="170,160" size="600,390" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1" zPosition="6" />
+    <widget name="popup_list" position="190,180" size="560,350" zPosition="7" backgroundColor="XionBackground" foregroundColor="XionFont1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
+	<!-- Alternative Channelliste -->
+    <widget name="popup_list2" position="190,180" size="560,350" zPosition="8" backgroundColor="XionBackground" foregroundColor="XionFont1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" />
+	<!-- Channel-List -->
+    <widget name="Web_Channel" position="55,115" size="200,30" halign="left" font="Regular; 25" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1" />
+    <widget name="STB_Channel" position="370,115" size="200,30" halign="left" font="Regular; 25" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1" />
+    <widget name="alt_STB_Channel" position="610,115" size="200,30" halign="left" font="Regular; 25" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1" />
+    <!--widget name="separator" position="20,145" size="880,2" backgroundColor="XionLine" zPosition="6" /-->
+	<!-- Setup-Beschreibungen -->
+    <widget name="config_information" position="938,320" zPosition="3" size="322,300" backgroundColor="transparent" />
+    <widget name="config_information_text" position="948,325" size="302,290" backgroundColor="XionBackground" transparent="1" halign="left" zPosition="5" font="Regular;14"/>
+	<!-- Serienbeschreibung -->
+    <widget name="info" position="20,120" size="870,500" font="Regular;24" backgroundColor="XionBackground" foregroundColor="XionFont2" scrollbarWidth="5" transparent="1" zPosition="1" />
+	<!-- Info's Log-File -->
+    <widget name="path" position="50,50" size="820,55" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1" font="Regular;19" valign="center" halign="left" />
+	<!-- Colour Buttons -->
+    <widget name="bt_red" pixmap="XionHDF/buttons/key_red1.png" position="20,651" zPosition="1" size="32,32" alphatest="blend" />
+    <widget name="text_red" position="60,654" size="200,26" zPosition="1" font="Regular; 19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+    <widget name="bt_green" pixmap="XionHDF/buttons/key_green1.png" position="268,651" zPosition="1" size="32,32" alphatest="blend" />
+    <widget name="text_green" position="308,654" size="200,26" zPosition="1" font="Regular;19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+    <widget name="bt_ok" pixmap="XionHDF/buttons/key_ok.png" position="516,651" zPosition="1" size="32,32" alphatest="blend" />
+    <widget name="text_ok" position="556,654" size="200,26" zPosition="1" font="Regular;19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+    <widget name="bt_yellow" pixmap="XionHDF/buttons/key_yellow1.png" position="764,651" zPosition="1" size="32,32" alphatest="blend" />
+    <widget name="text_yellow" position="804,654" size="200,26" zPosition="1" font="Regular;19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+    <widget name="bt_blue" pixmap="XionHDF/buttons/key_blue1.png" position="1012,651" zPosition="1" size="32,32" alphatest="blend" />
+    <widget name="text_blue" position="1052,654" size="230,26" zPosition="1" font="Regular;19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+    <widget name="bt_0" pixmap="XionHDF/buttons/keys_0.png" position="20,685" zPosition="3" size="32,32" alphatest="blend" />
+    <widget name="bt_5" pixmap="XionHDF/buttons/keys_5.png" position="20,685" zPosition="2" size="32,32" alphatest="blend" />
+    <widget name="bt_exit" pixmap="XionHDF/buttons/key_exit.png" position="20,685" zPosition="1" size="32,32" alphatest="blend" />
+    <widget name="text_0" position="60,688" size="200,26" zPosition="1" font="Regular; 19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+    <widget name="bt_1" pixmap="XionHDF/buttons/keys_1.png" position="268,685" zPosition="3" size="32,32" alphatest="blend" />
+    <widget name="bt_6" pixmap="XionHDF/buttons/keys_6.png" position="268,685" zPosition="2" size="32,32" alphatest="blend" />
+    <widget name="bt_text" pixmap="XionHDF/buttons/key_text.png" position="268,685" zPosition="1" size="32,32" alphatest="blend" />
+    <widget name="text_1" position="308,688" size="200,26" zPosition="1" font="Regular;19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+    <widget name="bt_2" pixmap="XionHDF/buttons/keys_2.png" position="516,685" zPosition="3" size="32,32" alphatest="blend" />
+    <widget name="bt_7" pixmap="XionHDF/buttons/keys_7.png" position="516,685" zPosition="2" size="32,32" alphatest="blend" />
+    <widget name="bt_epg" pixmap="XionHDF/buttons/key_epg.png" position="516,685" zPosition="1" size="32,32" alphatest="blend" />
+    <widget name="text_2" position="556,688" size="200,26" zPosition="1" font="Regular;19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+    <widget name="bt_3" pixmap="XionHDF/buttons/keys_3.png" position="764,685" zPosition="3" size="32,32" alphatest="blend" />
+    <widget name="bt_8" pixmap="XionHDF/buttons/keys_8.png" position="764,685" zPosition="2" size="32,32" alphatest="blend" />
+    <widget name="bt_info" pixmap="XionHDF/buttons/key_help.png" position="764,685" zPosition="1" size="32,32" alphatest="blend" />
+    <widget name="text_3" position="804,688" size="200,26" zPosition="1" font="Regular;19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+    <widget name="bt_4" pixmap="XionHDF/buttons/keys_4.png" position="1012,685" zPosition="3" size="32,32" alphatest="blend" />
+    <widget name="bt_9" pixmap="XionHDF/buttons/keys_9.png" position="1012,685" zPosition="2" size="32,32" alphatest="blend" />
+    <widget name="bt_menu" pixmap="XionHDF/buttons/key_menu.png" position="1012,685" zPosition="1" size="32,32" alphatest="blend" />
+    <widget name="text_4" position="1052,688" size="200,26" zPosition="1" font="Regular;19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+    <!--eLabel backgroundColor="XionBackground" foregroundColor="XionFont2" position="0,0" size="1280,720" transparent="1" zPosition="-10" /-->
+    <ePixmap position="0,488" size="1280,234" zPosition="-9" pixmap="XionHDF/infobar/infobar.png" transparent="1" alphatest="blend" />
+  </screen> 
+  <!-- SerienRecorder */-->  
+  <!--/* TMDb - The Movie Database -->
+<!-- TMDb -->
+  <screen name="tmdbScreen" position="0,0" size="1280,720" title="TMDb - The Movie Database" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="searchinfo" position="70,80" size="700,60" itemHeight="30" font="Regular; 26" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="list" position="70,140" size="700,500" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="cover" position="825,90" size="380,530" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+	<panel name="template_menu_full_button" />
+	<panel name="template_colorkey_text_source" />
+  </screen> 
+<!-- TMDb Setup -->
+  <screen name="tmdbConfigScreen" position="0,0" size="1280,720" title="TMDb - The Movie Database" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="info" position="70,80" size="708,540" itemHeight="30" font="Regular; 26" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="config" position="70,120" size="708,540" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+	<panel name="template_menu_left_button" />
+	<panel name="template_colorkey_text_source" />
+  </screen> 
+<!-- TMDb Movie -->
+	<screen name="tmdbScreenMovie" position="0,0" size="1280,720" title="TMDb - The Movie Database" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="searchinfo" position="70,80" size="560,60" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" font="Regular; 26" />
+	<widget name="fulldescription" position="70,130" size="560,490" font="Regular;24" backgroundColor="XionBackground" transparent="1" />
+	<widget name="cover" position="930,92" size="250,320" alphatest="blend" />
+	<ePixmap position="705,140" size="100,75" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/star.png" transparent="1" alphatest="blend" />
+	<widget name="rating" position="680,170" size="150,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" foregroundColor="black" halign="center" />
+	<widget name="votes_brackets" position="680,235" size="150,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" halign="center" />
+	<widget name="fsk" position="681,275" size="150,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" halign="center" />
+	<widget name="year_txt" position="650,320" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+	<widget name="year" position="780,320" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+	<widget name="country_txt" position="650,350" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+	<widget name="country" position="780,350" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+	<widget name="runtime_txt" position="650,380" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+	<widget name="runtime" position="780,380" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+	<widget name="votes_txt" position="650,410" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+	<widget name="votes" position="780,410" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+	<widget name="director_txt" position="650,440" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+	<widget name="director" position="780,440" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+	<widget name="author_txt" position="650,470" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+	<widget name="author" position="780,470" size="400,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" />
+	<widget name="genre_txt" position="650,500" size="100,30" backgroundColor="XionBackground" font="Regular; 22" transparent="1" />
+	<widget name="genre" position="780,500" size="400,25" backgroundColor="XionBackground" zPosition="2" transparent="1" font="Regular;22" />
+	<widget name="studio_txt" position="650,530" size="100,30" backgroundColor="XionBackground" font="Regular; 22" transparent="1" />
+	<widget name="studio" position="780,530" size="400,25" backgroundColor="XionBackground" zPosition="2" transparent="1" font="Regular;22" />
+	<panel name="template_menu_full_button" />
+	<panel name="template_colorkey_text_source" />
+  </screen>
+<!-- TMDb Movie EMC -->
+<screen name="MovieInfoTMDb" position="0,0" size="1280,720" title="Movie Information TMDb" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="movie_name" position="20,75" size="1191,42" zPosition="0" font="Regular2;24" valign="center" halign="center" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" />
+	<widget name="previewlist" position="290,132" size="600,500" itemHeight="%s" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" backgroundColor="XionBackground" transparent="1" />
+	<widget name="previewcover" position="20,132" size="254,345" alphatest="blend" zPosition="2" />
+	<widget name="contenttxt" position="290,132" size="920,420" font="Regular;24" foregroundColor="XionFont1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" backgroundColor="XionBackground" transparent="1" />
+	<widget name="runtime" position="20,572" size="200,25" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
+	<widget name="runtimetxt" position="150,572" size="230,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="genre" position="20,607" size="200,25" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
+	<widget name="genretxt" position="150,607" size="230,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="country" position="400,572" size="200,25" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
+	<widget name="countrytxt" position="620,572" size="230,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="release" position="400,607" size="200,25" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
+	<widget name="releasetxt" position="620,607" size="230,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="rating" position="870,572" size="200,25" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
+	<widget name="ratingtxt" position="1005,572" size="140,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="starsbg" position="870,610" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/starsbar_empty_10.png" zPosition="3" alphatest="blend" />
+	<widget name="stars" position="870,610" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/starsbar_filled_10.png" zPosition="4" transparent="1" />
+	<widget name="setup" position="64,662" size="148,48" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText"  transparent="1" zPosition="1" />
+	<widget name="save" position="264,662" size="148,48" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText"  transparent="1" zPosition="1" />
+	<panel name="template_menu_full_button" />
+</screen> 
+<!-- TMDb - The Movie Database */-->
 <!-- plugins -->
-
 <!-- /* EMC NoCover -->
 <screen name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">
   <eLabel text="Enhanced Movie Center" position="70,12" size="708,46" font="Regular2;34" foregroundColor="XionFont2" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
@@ -5590,8 +5773,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <screen backgroundColor="transparent" flags="wfNoBorder" name="MovieSelection" position="0,0" size="1280,720" title="MovieSelection">
   <widget name="waitingtext" position="0,0" size="0,0" />
   <eLabel text="MovieSelection" position="70,12" size="708,46" font="Regular2;34" foregroundColor="XionFont2" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget name="list" position="70,110" enableWrapAround="1" size="708,540" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
-  <widget backgroundColor="XionBackground" font="Regular;17" halign="right" name="freeDiskSpace" position="70,80" size="708,24" transparent="1" valign="center" />
+  <widget name="list" position="70,130" enableWrapAround="1" size="708,520" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
+  <widget backgroundColor="XionBackground" font="Regular;20" halign="right" name="freeDiskSpace" position="70,70" size="708,24" transparent="1" valign="center" />
+  <widget source="Service" render="Label" position="70,100" size="708,28" font="Regular; 20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" valign="center" halign="left">
+    <convert type="XionHDFDiskSpace">path</convert>
+  </widget>
   <widget backgroundColor="XionBackground" font="Regular2;30" foregroundColor="XionFont2" position="888,78" render="Label" size="377,80" source="Service" transparent="1" zPosition="1">
     <convert type="XionHDFEventName">Name</convert>
   </widget>
@@ -5599,6 +5785,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <convert type="ServiceTime">Duration</convert>
     <convert type="XionHDFClockToText">AsLength</convert>
   </widget>
+  <widget source="Service" render="Label" position="968,671" size="195,40" font="Regular2; 17" halign="center" backgroundColor="XionBackground" transparent="1">
+	<convert type="MovieInfo">RecordServiceName</convert>
+  </widget>  
   <widget backgroundColor="XionBackground" font="Regular2;17" foregroundColor="XionFont2" halign="right" position="1165,671" render="Label" size="100,24" source="Service" transparent="1" zPosition="1">
     <convert type="MovieInfo">FileSize</convert>
   </widget>
