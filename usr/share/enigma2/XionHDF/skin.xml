@@ -3515,12 +3515,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <panel name="template_menu_left_button" />
   </screen>
   <!--/* Volume -->
-  <screen name="Volume" position="47,38" size="333,80" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
-    <widget name="Volume" position="72,36" size="170,5" zPosition="3" transparent="1" foregroundColor="XionProgress" />
-    <ePixmap position="6,7" size="64,64" zPosition="1" pixmap="XionHDF/buttons/volume.png" transparent="0" alphatest="blend" />
-    <widget font="Regular;40" foregroundColor="XionFont1" backgroundColor="XionBackground" halign="center" valign="center" render="XionHDFVolumeText" source="global.CurrentTime" position="243,8" size="85,60" zPosition="20" transparent="1" />
-    <eLabel position="72,38" size="170,1" backgroundColor="XionFont1" foregroundColor="XionFont1" />
-    <eLabel position="2,1" size="333,77" backgroundColor="XionBackground" zPosition="-2" transparent="0" />
+  <screen name="Volume" position="47,38" size="340,74" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
+	<widget name="Volume" position="72,34" size="170,5" zPosition="3" transparent="1" foregroundColor="XionProgress" />
+	<ePixmap position="4,5" size="64,64" zPosition="1" pixmap="XionHDF/buttons/volume.png" transparent="0" alphatest="blend" />
+	<widget font="Regular;40" foregroundColor="XionFont1" backgroundColor="XionBackground" halign="center" valign="center" render="XionHDFVolumeText" source="global.CurrentTime" position="243,8" size="85,60" zPosition="20" transparent="1" />
+	<eLabel position="72,35" size="170,3" backgroundColor="XionLine" />
+	<eLabel position="0,0" size="340,74" backgroundColor="XionBackground" zPosition="-2" transparent="0" />
   </screen>
   <!-- About -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="About" position="1,1" size="1280,720" title="About">
