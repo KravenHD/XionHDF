@@ -2,7 +2,7 @@
 <screen backgroundColor="transparent" flags="wfNoBorder" name="MovieSelection" position="0,0" size="1280,720" title="MovieSelection">
   <widget name="waitingtext" position="0,0" size="0,0" />
   <eLabel text="MovieSelection" position="70,12" size="708,46" font="Regular2;34" foregroundColor="XionFont2" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget name="list" position="70,130" enableWrapAround="1" size="708,520" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
+  <widget name="list" position="70,130" enableWrapAround="1" size="708,520" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
   <widget backgroundColor="XionBackground" font="Regular;20" halign="right" name="freeDiskSpace" position="70,70" size="708,24" transparent="1" valign="center" />
   <widget source="Service" render="Label" position="70,100" size="708,28" font="Regular; 20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" valign="center" halign="left">
     <convert type="XionHDFDiskSpace">path</convert>

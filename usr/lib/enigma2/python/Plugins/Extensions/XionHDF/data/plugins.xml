@@ -107,7 +107,7 @@
   <!-- ********** AutoTimer ********** -->
   <!-- AutoTimerSettings -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerSettings" position="0,0" size="1280,720" title="AutoTimer Settings">
-    <widget backgroundColor="XionBackground" scrollbarMode="showNever" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="700,450" transparent="1" />
+    <widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="700,450" transparent="1" />
     <widget backgroundColor="XionBackground" font="Regular2;20" position="70,558" render="Label" size="700,50" source="help" transparent="1" foregroundColor="XionFont2" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
@@ -121,7 +121,7 @@
   </screen>
   <!-- AutoTimerFilterEditor -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerFilterEditor" position="0,0" size="1280,720" title="Edit AutoTimer Filters">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" scrollbarMode="showNever" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" scrollbarMode="showOnDemand" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
@@ -232,7 +232,7 @@
   <!-- ********** DreamExplorerII ********** -->
   <!-- DreamExplorerII -->
   <screen name="DreamExplorerII" position="0,0" size="1280,720" flags="wfNoBorder" title="Dream-Explorer" backgroundColor="transparent">
-    <widget name="filelist" position="70,80" size="708,540" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
+    <widget name="filelist" position="70,80" size="708,540" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
     <eLabel text="delete" position="64,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
     <eLabel text="Rename" position="264,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
     <eLabel text="Move/Copy" position="464,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
@@ -241,19 +241,19 @@
   </screen>
   <!-- vEditor -->
   <screen name="vEditor" position="0,0" size="1280,720" flags="wfNoBorder" title="File-Explorer" backgroundColor="transparent">
-    <widget name="filedata" position="70,80" size="708,540" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
+    <widget name="filedata" position="70,80" size="708,540" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- vInputBox -->
   <screen name="vInputBox" position="0,0" size="1280,720" flags="wfNoBorder" title="Input..." backgroundColor="transparent">
-    <widget name="text" position="70,80" size="708,250" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
-    <widget name="input" position="70,383" size="708,250" scrollbarMode="showNever" font="Regular2; 20" itemHeight="28" transparent="1" foregroundColor="XionFont2" enableWrapAround="1" backgroundColor="XionBackground" />
+    <widget name="text" position="70,80" size="708,250" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+    <widget name="input" position="70,383" size="708,250" scrollbarMode="showOnDemand" font="Regular2; 20" itemHeight="28" transparent="1" foregroundColor="XionFont2" enableWrapAround="1" backgroundColor="XionBackground" />
     <panel name="template_menu_left" />
   </screen>
   <!-- CPmaniger -->
   <screen name="CPmaniger" position="0,0" size="1280,720" flags="wfNoBorder" title="Select Copy/Move location..." backgroundColor="transparent">
-    <widget name="File" position="70,80" size="708,160" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
-    <widget name="CPto" position="70,240" size="708,330" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
+    <widget name="File" position="70,80" size="708,160" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+    <widget name="CPto" position="70,240" size="708,330" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
     <eLabel text="Move" position="64,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
     <eLabel text="Copy" position="464,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
     <panel name="template_menu_left_button" />
@@ -544,14 +544,14 @@
   <!-- FritzCallSetup -->
   <screen name="FritzCallSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="FritzCallSetup" backgroundColor="transparent">
     <widget name="consideration" position="70,80" size="708,90" font="Regular2; 20" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-    <widget name="config" position="71,196" size="708,440" itemHeight="30" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" font="Regular; 18" />
+    <widget name="config" position="71,196" size="708,440" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" font="Regular; 18" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
   <!-- FritzDisplayCalls -->
   <screen name="FritzDisplayCalls" position="0,0" size="1280,720" flags="wfNoBorder" title="Fritz Display Calls" backgroundColor="transparent">
     <widget name="statusbar" position="70,80" size="708,46" font="Regular2; 20" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-    <widget source="entries" render="Listbox" position="70,154" size="708,460" zPosition="3" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1">
+    <widget source="entries" render="Listbox" position="70,154" size="708,460" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 					 MultiContentEntryText(pos = (5,5),size = (120,24),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
@@ -570,7 +570,7 @@
   </screen>
   <!-- FritzDisplayPhonebook -->
   <screen name="FritzDisplayPhonebook" position="0,0" size="1280,720" flags="wfNoBorder" title="Fritz Display Phonebook" backgroundColor="transparent">
-    <widget source="entries" render="Listbox" position="70,80" size="708,540" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
+    <widget source="entries" render="Listbox" position="70,80" size="708,540" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">
 					 {"template": [
 						MultiContentEntryText(pos = (5,5),size = (620,24),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the name,index 1 is shortname
@@ -586,7 +586,7 @@
   </screen>
   <!-- AddScreen -->
   <screen name="AddScreen" position="0,0" size="1280,720" flags="wfNoBorder" title="Add Screen" backgroundColor="transparent">
-    <widget name="config" position="70,80" size="708,540" scrollbarMode="showNever" enableWrapAround="1" transparent="1" font="Regular; 18" backgroundColor="XionBackground" />
+    <widget name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" font="Regular; 18" backgroundColor="XionBackground" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
@@ -653,7 +653,7 @@
   <!-- IPTV -->
   <screen name="IPTV" position="0,0" size="1280,720" flags="wfNoBorder" title="IPTV List Updater" backgroundColor="transparent">
     <widget name="text1" position="57,98" size="880,30" font="Regular2; 24" transparent="1" valign="center" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont2" />
-    <widget name="IPTVList" position="58,147" size="560,420" scrollbarMode="showNever" font="Regular; 18" itemHeight="30" transparent="1" enableWrapAround="1" backgroundColor="XionBackground" />
+    <widget name="IPTVList" position="58,147" size="560,420" scrollbarMode="showOnDemand" font="Regular; 18" itemHeight="30" transparent="1" enableWrapAround="1" backgroundColor="XionBackground" />
     <widget name="text2" position="56,578" size="880,30" font="Regular2; 20" transparent="1" valign="center" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont2" />
     <widget name="country" position="638,147" size="300,300" zPosition="2" transparent="1" alphatest="on" backgroundColor="XionBackground" />
     <panel name="template_menu_full_button" />
@@ -671,19 +671,19 @@
   </screen>
   <!-- Changelog -->
   <screen name="Changelog" position="0,0" size="1280,720" flags="wfNoBorder" title="Changelog IPTV List Updater" backgroundColor="transparent">
-    <widget name="text" position="70,80" size="708,540" scrollbarMode="showNever" font="Regular; 21" transparent="1" enableWrapAround="1" backgroundColor="XionBackground" />
+    <widget name="text" position="70,80" size="708,540" scrollbarMode="showOnDemand" font="Regular; 21" transparent="1" enableWrapAround="1" backgroundColor="XionBackground" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
   <!-- FAQ -->
   <screen name="FAQ" position="0,0" size="1280,720" flags="wfNoBorder" title="FAQ IPTV List Updater" backgroundColor="transparent">
-    <widget name="text" position="70,80" size="708,540" scrollbarMode="showNever" font="Regular; 21" transparent="1" enableWrapAround="1" backgroundColor="XionBackground" />
+    <widget name="text" position="70,80" size="708,540" scrollbarMode="showOnDemand" font="Regular; 21" transparent="1" enableWrapAround="1" backgroundColor="XionBackground" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
   <!-- Credits -->
   <screen name="Credits" position="0,0" size="1280,720" flags="wfNoBorder" title="Credits IPTV List Updater" backgroundColor="transparent">
-    <widget name="text" position="70,80" size="708,540" scrollbarMode="showNever" font="Regular; 21" transparent="1" enableWrapAround="1" backgroundColor="XionBackground" />
+    <widget name="text" position="70,80" size="708,540" scrollbarMode="showOnDemand" font="Regular; 21" transparent="1" enableWrapAround="1" backgroundColor="XionBackground" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
@@ -714,20 +714,20 @@
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="mediaInfo" position="0,0" size="1280,720" title="MediaInfo">
     <widget backgroundColor="XionBackground" font="Regular;24" halign="center" name="info" position="60,90" size="1160,45" transparent="0" valign="center" zPosition="5" />
     <widget backgroundColor="XionBackground" font="Regular;30" foregroundColor="XionFont1" halign="center" name="head" position="60,143" size="1160,45" transparent="0" valign="center" zPosition="5" />
-    <widget backgroundColor="XionBackground" name="downloadList" itemHeight="65" position="21,215" scrollbarMode="showNever" size="1240,405" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" zPosition="-1" />
+    <widget backgroundColor="XionBackground" name="downloadList" itemHeight="65" position="21,215" scrollbarMode="showOnDemand" size="1240,405" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" zPosition="-1" />
     <panel name="template_menu_full_button" />
     <panel name="template_colorkey_text" />
   </screen>
   <!-- mediaInfoFolderScreen -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="mediaInfoFolderScreen" position="0,0" size="1280,720" title="MediaInfo">
     <widget font="Regular; 26" name="media" position="30,120" size="940,40" transparent="1" valign="top" />
-    <widget name="folderlist" backgroundColor="XionBackground" itemHeight="65" position="21,168" scrollbarMode="showNever" size="1240,440" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" />
+    <widget name="folderlist" backgroundColor="XionBackground" itemHeight="65" position="21,168" scrollbarMode="showOnDemand" size="1240,440" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" />
     <panel name="template_menu_full_button" />
     <panel name="template_colorkey_text" />
   </screen>
   <!-- mediaInfoConfigScreen -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="mediaInfoConfigScreen" position="0,0" size="1280,720" title="MediaInfo">
-  <widget name="config" backgroundColor="XionBackground" position="20,70" size="1240,580" itemHeight="25" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" />
+  <widget name="config" backgroundColor="XionBackground" position="20,70" size="1240,580" itemHeight="25" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" />
   <panel name="template_menu_full_button" />
   <panel name="template_colorkey_text" />
 </screen>
@@ -736,7 +736,7 @@
   <screen backgroundColor="transparent" flags="wfNoBorder" name="MediaPlayer" position="center,center" size="1280,720" title="MediaPlayer" transparent="0">
     <eLabel backgroundColor="XionBackground" font="Regular2; 22" position="432,280" size="500,40" text="Playlist" transparent="1" />
     <eLabel backgroundColor="XionFont1" foregroundColor="XionFont1"  position="71,412" size="300,1" zPosition="-1" />
-    <widget backgroundColor="XionBackground" scrollbarMode="showNever" enableWrapAround="1" itemHeight="25" name="filelist" position="430,107" size="782,167" transparent="1" />
+    <widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" enableWrapAround="1" itemHeight="25" name="filelist" position="430,107" size="782,167" transparent="1" />
     <widget alphatest="blend" name="coverArt" pixmap="XionHDF/buttons/media.png" position="96,67" size="256,256" transparent="1" />
     <widget backgroundColor="XionBackground" font="Regular2;22" name="artist" position="58,371" size="329,30" transparent="1" valign="top" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont1" halign="left" name="albumtext" position="57,470" size="120,25" transparent="1" valign="top" />
@@ -744,7 +744,7 @@
     <widget backgroundColor="XionBackground" font="Regular2;22" halign="right" name="year" position="131,468" size="250,30" transparent="1" valign="top" />
     <widget backgroundColor="XionBackground" font="Regular2;22" name="genre" position="58,540" size="320,30" transparent="1" valign="top" />
     <widget backgroundColor="XionBackground" font="Regular2; 26" halign="left" name="title" position="58,328" size="325,40" transparent="1" />
-    <widget backgroundColor="XionBackground" scrollbarMode="showNever" enableWrapAround="1" itemHeight="25" name="playlist" position="430,324" size="782,307" transparent="1" />
+    <widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" enableWrapAround="1" itemHeight="25" name="playlist" position="430,324" size="782,307" transparent="1" />
     <widget alphatest="blend" name="repeat" pixmaps="XionHDF/repeat_off.png,XionHDF/repeat_on.png" position="1037,671" size="70,30" transparent="1" />
     <widget backgroundColor="XionBackground" font="Regular2; 22" halign="left" noWrap="1" position="58,425" render="Label" size="119,32" source="session.CurrentService" transparent="1" zPosition="2">
       <convert type="ServicePosition">Position,ShowHours</convert>
@@ -762,14 +762,14 @@
   </screen>
   <!-- DirectoryBrowser -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="DirectoryBrowser" position="0,0" size="1280,720" title="Directorybrowser">
-    <widget name="filelist" position="70,80" scrollbarMode="showNever" size="708,540" transparent="1" zPosition="3" />
+    <widget name="filelist" position="70,80" scrollbarMode="showOnDemand" size="708,540" transparent="1" zPosition="3" />
     <eLabel text="Cancel" position="64,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
     <eLabel text="Save" position="264,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
     <panel name="template_menu_left_button" />
   </screen>
   <!-- MediaPlayerSettings -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="MediaPlayerSettings" position="0,0" size="1280,720" title="Edit Settings">
-    <widget name="config" position="70,80" scrollbarMode="showNever" size="708,540" transparent="1" zPosition="3" />
+    <widget name="config" position="70,80" scrollbarMode="showOnDemand" size="708,540" transparent="1" zPosition="3" />
     <eLabel text="Cancel" position="64,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
     <eLabel text="Save" position="264,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
     <panel name="template_menu_left_button" />
@@ -1039,7 +1039,7 @@
   <!-- PiconManagerFolderScreen -->
   <screen name="PiconManagerFolderScreen" position="0,0" size="1280,720" title="" backgroundColor="transparent" flags="wfNoBorder">
     <widget name="media" position="70,80" size="540,30" valign="top" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
-    <widget name="folderlist" position="70,140" size="708,450" itemHeight="30" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderForegroundColor="grey" scrollbarSliderBorderColor="grey" scrollbarSliderBorderWidth="1" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+    <widget name="folderlist" position="70,140" size="708,450" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderForegroundColor="grey" scrollbarSliderBorderColor="grey" scrollbarSliderBorderWidth="1" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_colorkey_text_source" />
     <panel name="template_menu_left_button" />
   </screen>
@@ -1192,16 +1192,16 @@
     <widget backgroundColor="XionBackground" font="Regular;18" foregroundColor="XionFont1" halign="center" name="rec_txt2" position="70,620" size="708,26" transparent="1" valign="center" zPosition="3" />
     <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="streamlist" position="70,80" size="708,477" transparent="1" zPosition="2" />
     <widget backgroundColor="XionBackground" font="Regular;18" foregroundColor="XionFont1" name="help" position="70,80" size="708,510" transparent="1" zPosition="3" />
-    <widget backgroundColor="XionBackground" font="Regular;18" foregroundColor="XionFont1" name="info" position="70,80" scrollbarMode="showNever" size="708,510" transparent="1" zPosition="3" />
+    <widget backgroundColor="XionBackground" font="Regular;18" foregroundColor="XionFont1" name="info" position="70,80" scrollbarMode="showOnDemand" size="708,510" transparent="1" zPosition="3" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" source="playtext" render="Label" position="70,565" size="708,30" transparent="1" valign="center" zPosition="2" />
     <panel name="template_colorkey_text" />
     <panel name="template_menu_left_button" />
   </screen>
   <!-- menu_12 -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="menu_12" position="0,0" size="1280,720" title="webradioFS">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="streamlist" position="70,80" scrollbarMode="showNever" size="690,510" transparent="1" zPosition="2" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="streamlist" position="70,80" scrollbarMode="showOnDemand" size="690,510" transparent="1" zPosition="2" />
     <widget backgroundColor="XionBackground" font="Regular;18" foregroundColor="XionFont1" name="help" position="70,80" size="690,510" transparent="1" zPosition="3" />
-    <widget backgroundColor="XionBackground" foregroundColor="XionFont1" name="info" position="70,80" scrollbarMode="showNever" size="690,510" transparent="1" zPosition="3" />
+    <widget backgroundColor="XionBackground" foregroundColor="XionFont1" name="info" position="70,80" scrollbarMode="showOnDemand" size="690,510" transparent="1" zPosition="3" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="playtext" position="70,608" size="708,30" transparent="1" valign="center" zPosition="2" />
     <panel name="template_colorkey_text" />
     <panel name="template_menu_left_button" />
@@ -1229,53 +1229,53 @@
   </screen>
   <!-- genre_anzeige_12 -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="genre_anzeige_12" position="0,0" size="1280,720" title="webradioFS">
-    <widget backgroundColor="transparent" enableWrapAround="1" foregroundColor="XionFont1" name="streamlist" position="70,80" scrollbarMode="showNever" size="690,510" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" zPosition="2" />
+    <widget backgroundColor="transparent" enableWrapAround="1" foregroundColor="XionFont1" name="streamlist" position="70,80" scrollbarMode="showOnDemand" size="690,510" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" zPosition="2" />
     <widget backgroundColor="transparent" font="Regular;18" foregroundColor="XionFont1" name="help" position="70,80" size="690,510" transparent="1" zPosition="3" />
-    <widget backgroundColor="transparent" foregroundColor="XionFont1" name="info" position="70,80" scrollbarMode="showNever" size="690,510" transparent="1" zPosition="3" />
+    <widget backgroundColor="transparent" foregroundColor="XionFont1" name="info" position="70,80" scrollbarMode="showOnDemand" size="690,510" transparent="1" zPosition="3" />
     <widget backgroundColor="transparent" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="playtext" position="70,608" size="708,30" transparent="1" valign="center" zPosition="2" />
     <panel name="template_colorkey_text" />
     <panel name="template_menu_left_button" />
   </screen>
   <!-- groups_12 -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="groups_12" position="0,0" size="1280,720" title="webradioFS">
-    <widget backgroundColor="transparent" enableWrapAround="1" foregroundColor="XionFont1" name="streamlist" position="70,80" scrollbarMode="showNever" size="690,510" transparent="1" zPosition="2" />
+    <widget backgroundColor="transparent" enableWrapAround="1" foregroundColor="XionFont1" name="streamlist" position="70,80" scrollbarMode="showOnDemand" size="690,510" transparent="1" zPosition="2" />
     <widget backgroundColor="transparent" font="Regular;18" foregroundColor="XionFont1" name="help" position="70,80" size="690,510" transparent="1" zPosition="3" />
-    <widget backgroundColor="transparent" foregroundColor="XionFont1" name="info" position="70,80" scrollbarMode="showNever" size="690,510" transparent="1" zPosition="3" />
+    <widget backgroundColor="transparent" foregroundColor="XionFont1" name="info" position="70,80" scrollbarMode="showOnDemand" size="690,510" transparent="1" zPosition="3" />
     <widget backgroundColor="transparent" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="playtext" position="70,608" size="708,30" transparent="1" valign="center" zPosition="2" />
     <panel name="template_colorkey_text" />
     <panel name="template_menu_left_button" />
   </screen>
   <!-- WebradioFSSetup_12 -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="WebradioFSSetup_12" position="0,0" size="1280,720" title="webradioFS">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="config" position="70,80" size="690,503" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" zPosition="3" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="config" position="70,80" size="690,503" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" zPosition="3" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" name="playtext" position="70,608" size="708,30" transparent="1" valign="center" zPosition="2" />
     <panel name="template_colorkey_text" />
     <panel name="template_menu_left_button" />
   </screen>
   <!-- WebradioFS_FB_Setup_12 -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="WebradioFS_FB_Setup_12" position="0,0" size="1280,720" title="webradioFS">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="config" position="70,80" size="690,503" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" zPosition="3" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="config" position="70,80" size="690,503" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" zPosition="3" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="playtext" position="70,608" size="708,30" transparent="1" valign="center" zPosition="2" />
     <panel name="template_colorkey_text" />
     <panel name="template_menu_left_button" />
   </screen>
   <!-- rec_menu_12 -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="rec_menu_12" position="0,0" size="1280,720" title="webradioFS">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="config" position="70,80" scrollbarMode="showNever" size="690,490" transparent="1" selectionPixmap="XionHDF/selpic/1240x24nt.png" zPosition="3" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="config" position="70,80" scrollbarMode="showOnDemand" size="690,490" transparent="1" selectionPixmap="XionHDF/selpic/1240x24nt.png" zPosition="3" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="playtext" position="70,608" size="708,30" transparent="1" valign="center" zPosition="2" />
     <panel name="template_colorkey_text" />
     <panel name="template_menu_left_button" />
   </screen>
   <!-- col_set_12 -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="col_set_12" position="0,0" size="1280,720" title="webradioFS">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="config" position="70,80" scrollbarMode="showNever" size="690,490" transparent="1" zPosition="3" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="config" position="70,80" scrollbarMode="showOnDemand" size="690,490" transparent="1" zPosition="3" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" name="playtext" position="70,608" size="708,30" transparent="1" valign="center" zPosition="2" />
     <panel name="template_colorkey_text" />
     <panel name="template_menu_left_button" />
   </screen>
   <!-- Fav_edit_12 -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Fav_edit_12" position="0,0" size="1280,720" title="webradioFS">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="config" position="70,80" scrollbarMode="showNever" size="690,490" transparent="1" zPosition="3" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" foregroundColor="XionFont1" name="config" position="70,80" scrollbarMode="showOnDemand" size="690,490" transparent="1" zPosition="3" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" name="playtext" position="70,608" size="708,30" transparent="1" valign="center" zPosition="2" />
     <panel name="template_colorkey_text" />
     <panel name="template_menu_left_button" />
@@ -1369,7 +1369,7 @@
   </screen>
   <!-- MyTubePlayerMainScreen -->
   <screen name="MyTubePlayerMainScreen" flags="wfNoBorder" position="0,0" size="1280,720" title="MyTube - Browser" backgroundColor="transparent">
-    <widget name="config" zPosition="2" position="70,80" size="600,50" backgroundColor="transparent" scrollbarMode="showNever" transparent="1" />
+    <widget name="config" zPosition="2" position="70,80" size="600,50" backgroundColor="transparent" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="result" position="910,80" zPosition="3" size="350,50" font="Regular;21" foregroundColor="XionFont1" transparent="1" backgroundColor="transparent" halign="right" />
     <widget source="feedlist" render="Listbox" position="70,130" size="1140,500" zPosition="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderForegroundColor="white" scrollbarSliderBorderColor="white" scrollbarSliderBorderWidth="1" transparent="1">
       <convert type="TemplatedMultiContent">
@@ -1401,7 +1401,7 @@
   <screen name="MyTubeVideoInfoScreen" flags="wfNoBorder" position="0,0" size="1280,720" title="MyTube - Video Info" backgroundColor="transparent">
     <widget name="starsbg" pixmap="~/starsbar_empty.png" position="560,220" zPosition="5" size="100,20" transparent="1" alphatest="on" />
     <widget name="stars" pixmap="~/starsbar_filled.png" position="560,220" zPosition="6" size="100,20" transparent="1" />
-    <widget source="infolist" render="Listbox" position="50,110" size="748,110" foregroundColor="XionFont1" zPosition="6" scrollbarMode="showNever" selectionDisabled="1" transparent="0">
+    <widget source="infolist" render="Listbox" position="50,110" size="748,110" foregroundColor="XionFont1" zPosition="6" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="0">
       <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (110,[
@@ -1578,7 +1578,7 @@
   <screen backgroundColor="transparent" name="CoolTVGuide" position="0,0" size="1280,720" flags="wfNoBorder" title="Cool TV Guide">
     <eLabel backgroundColor="XionBackground" font="Regular2;30" foregroundColor="XionFont2" halign="left" position="60,18" size="350,40" text="Cool TV Guide" transparent="1" valign="top" />
     <widget backgroundColor="XionBackground" name="timeline_text" position="5,70" size="1230,30" transparent="1" />
-    <widget CoolRecAlarmCol="blue" CoolBackColorSel="blue" CoolCurrentColSel="blue" CoolFontColSel="white" CoolNowColSel="blue" CoolNowFontColSel="white" backgroundColor="XionBackground" foregroundColor="white" name="list" position="40,95" scrollbarMode="showNever" size="1200,420" transparent="1" />
+    <widget CoolRecAlarmCol="blue" CoolBackColorSel="blue" CoolCurrentColSel="blue" CoolFontColSel="white" CoolNowColSel="blue" CoolNowFontColSel="white" backgroundColor="XionBackground" foregroundColor="white" name="list" position="40,95" scrollbarMode="showOnDemand" size="1200,420" transparent="1" />
     <widget name="timeline0" pixmap="XionHDF/epg/timeline.png" position="0,140" size="0,0" zPosition="1" />
     <widget name="timeline1" pixmap="XionHDF/epg/timeline.png" position="0,140" size="0,0" zPosition="1" />
     <widget name="timeline2" pixmap="XionHDF/epg/timeline.png" position="0,140" size="0,0" zPosition="1" />
@@ -1621,7 +1621,7 @@
       <convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
     </widget>
     <widget backgroundColor="XionBackground" foregroundColor="white" name="timeline_text" position="5,285" size="1230,30" transparent="1" />
-    <widget CoolRecAlarmCol="blue" CoolBackColorSel="blue" CoolCurrentColSel="blue" CoolFontColSel="white" CoolNowColSel="blue" CoolNowFontColSel="white" backgroundColor="XionBackground" foregroundColor="white" name="list" position="40,313" scrollbarMode="showNever" size="1200,335" transparent="1" />
+    <widget CoolRecAlarmCol="blue" CoolBackColorSel="blue" CoolCurrentColSel="blue" CoolFontColSel="white" CoolNowColSel="blue" CoolNowFontColSel="white" backgroundColor="XionBackground" foregroundColor="white" name="list" position="40,313" scrollbarMode="showOnDemand" size="1200,335" transparent="1" />
     <widget name="timeline0" pixmap="XionHDF/epg/timeline.png" position="0,320" size="0,0" zPosition="1" />
     <widget name="timeline1" pixmap="XionHDF/epg/timeline.png" position="0,320" size="0,0" zPosition="1" />
     <widget name="timeline2" pixmap="XionHDF/epg/timeline.png" position="0,320" size="0,0" zPosition="1" />
@@ -1694,7 +1694,7 @@
       <convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
     </widget>
     <widget backgroundColor="XionBackground" name="timeline_text" position="5,282" size="1230,30" transparent="1" />
-    <widget CoolRecAlarmCol="blue" CoolBackColorSel="blue" CoolCurrentColSel="blue" CoolFontColSel="white" CoolNowColSel="blue" CoolNowFontColSel="white" backgroundColor="XionBackground" foregroundColor="white" name="list" position="40,310" scrollbarMode="showNever" size="1200,337" transparent="1" />
+    <widget CoolRecAlarmCol="blue" CoolBackColorSel="blue" CoolCurrentColSel="blue" CoolFontColSel="white" CoolNowColSel="blue" CoolNowFontColSel="white" backgroundColor="XionBackground" foregroundColor="white" name="list" position="40,310" scrollbarMode="showOnDemand" size="1200,337" transparent="1" />
     <widget name="timeline0" pixmap="XionHDF/epg/timeline.png" position="0,320" size="0,0" zPosition="1" />
     <widget name="timeline1" pixmap="XionHDF/epg/timeline.png" position="0,320" size="0,0" zPosition="1" />
     <widget name="timeline2" pixmap="XionHDF/epg/timeline.png" position="0,320" size="0,0" zPosition="1" />
@@ -1710,7 +1710,7 @@
   <screen backgroundColor="transparent" name="CoolTinyGuide" position="0,0" size="1280,720" flags="wfNoBorder" title="Cool Tiny Guide">
     <eLabel backgroundColor="XionBackground" font="Regular2;30" foregroundColor="XionFont2" halign="left" position="60,18" size="350,40" text="Cool Tiny Guide" transparent="1" valign="top" />
     <widget backgroundColor="XionBackground" name="timeline_text" position="4,65" size="1250,30" transparent="1" />
-    <widget name="list" foregroundColor="white" backgroundColor="XionBackground" CoolRecAlarmCol="blue" CoolFontColSel="white" CoolNowFontColSel="white" CoolNowColSel="blue" CoolBackColorSel="blue" CoolCurrentColSel="blue" CoolRecColSel="blue" position="20,92" size="1240,423" scrollbarMode="showNever" transparent="1" />
+    <widget name="list" foregroundColor="white" backgroundColor="XionBackground" CoolRecAlarmCol="blue" CoolFontColSel="white" CoolNowFontColSel="white" CoolNowColSel="blue" CoolBackColorSel="blue" CoolCurrentColSel="blue" CoolRecColSel="blue" position="20,92" size="1240,423" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="timeline0" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline1" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline2" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />

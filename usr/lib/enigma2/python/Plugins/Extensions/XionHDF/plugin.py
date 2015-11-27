@@ -362,6 +362,11 @@ config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", cho
 				("weather-slim", _("Slim")),
 				("weather-small", _("Small"))
 				])
+
+config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showOnDemand", choices = [
+				("showOnDemand", _("On")),
+				("showNever", _("Off"))
+				])
 				
 #######################################################################
 
@@ -371,7 +376,7 @@ class XionHDF(ConfigListScreen, Screen):
   <eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="64,662" size="148,48" text="Cancel" transparent="1" />
   <eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
   <eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
-  <widget name="config" position="70,90" size="708,532" itemHeight="28" font="Regular;24" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00000000" />
+  <widget name="config" position="70,75" size="708,572" itemHeight="28" font="Regular;24" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00000000" />
   <eLabel position="70,12" size="708,46" text="XionHDF - Konfigurationstool" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
   <eLabel position="847,200" size="368,2" backgroundColor="#00ffffff" />
   <eLabel position="847,409" size="368,2" backgroundColor="#00ffffff" />
@@ -420,6 +425,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list = []
 		list.append(getConfigListEntry(_("_____________________________ Styles __________________________________"), config.plugins.XionHDF.System, _(" ")))
 		list.append(getConfigListEntry(_("Running text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
+		list.append(getConfigListEntry(_("Scrollbars"), config.plugins.XionHDF.ScrollBar, _("This option activates the scrollbars for some parts of skin.")))
 		list.append(getConfigListEntry(_("Background transparency"), config.plugins.XionHDF.BackgroundColorTrans, _("This option activate/deactive/change the background transparency of skin.")))
 		list.append(getConfigListEntry(_("ChannelSelection"), config.plugins.XionHDF.ChannelSelectionStyle, _("This option changes the view of channellist.")))
 		list.append(getConfigListEntry(_("Infobar channelname"), config.plugins.XionHDF.InfobarChannelname, _("This option activates the channelname within the infobar.")))
@@ -591,7 +597,7 @@ class XionHDF(ConfigListScreen, Screen):
 			self.skinSearchAndReplace.append(['name="XionProgress" value="#00ffffff', 'name="XionProgress" value="#' + config.plugins.XionHDF.Progress.value])
 			self.skinSearchAndReplace.append(['name="XionLine" value="#00ffffff', 'name="XionLine" value="#' + config.plugins.XionHDF.Line.value])
 			self.skinSearchAndReplace.append(["movetype=running", config.plugins.XionHDF.RunningText.value])
-			
+			self.skinSearchAndReplace.append(["showOnDemand", config.plugins.XionHDF.ScrollBar.value])			
 			
 			### Header
 			self.appendSkinFile(self.daten + "header.xml")
