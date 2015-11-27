@@ -8,7 +8,7 @@
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ChoiceBox" position="0,0" size="1280,720">
 	<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" size="708,46" render="Label" source="Title" halign="center" valign="center" transparent="1" />
 	<widget backgroundColor="XionBackground" font="Regular2;22" halign="left" name="text" position="70,607" size="708,45" foregroundColor="XionFont2" transparent="1" />
-	<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="35" name="list" position="70,110" size="708,490" transparent="1" />
+	<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="35" name="list" position="70,110" size="708,490" scrollbarMode="showOnDemand" transparent="1" />
 	<panel name="template_choicebox" />
   </screen>
   <screen name="ConsoleBox" position="0,0" size="1280,720" title="Console Box" flags="wfNoBorder" backgroundColor="transparent">
@@ -2091,7 +2091,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <!-- Setup -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Setup" position="0,0" size="1280,720" title="Setup">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>

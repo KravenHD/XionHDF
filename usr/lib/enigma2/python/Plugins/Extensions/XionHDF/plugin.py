@@ -363,7 +363,7 @@ config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", cho
 				("weather-small", _("Small"))
 				])
 
-config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showOnDemand", choices = [
+config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showNever", choices = [
 				("showOnDemand", _("On")),
 				("showNever", _("Off"))
 				])
