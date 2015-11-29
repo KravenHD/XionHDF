@@ -1593,7 +1593,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <!--Extensionslist-->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ExtensionsList" position="0,0" size="1280,720" title="Extensions">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" name="list" position="70,80" size="708,550" transparent="1" />
+    <widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" itemHeight="32" enableWrapAround="1" name="list" position="70,80" size="708,550" transparent="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- ********** Channel Selection and Infobar ********** -->
