@@ -1073,6 +1073,7 @@
   <screen backgroundColor="transparent" flags="wfNoBorder" name="picshow" position="0,0" size="1280,720" title="PicturePlayer">
     <widget alphatest="blend" name="thn" position="802,100" size="426,240" zPosition="4" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" position="800,350" render="Label" size="430,260" source="label" transparent="1" />
+    <eLabel text="Menu button for configuration" position="828,476" size="380,30" font="Regular2; 23" halign="center" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" zPosition="2" />
     <widget backgroundColor="XionBackground" itemHeight="30" name="filelist" position="70,80" size="708,510" transparent="1" />
     <panel name="template_colorkey_text_source" />
     <panel name="template_menu_full_button" />
