@@ -777,8 +777,18 @@
   <!-- AdapterSetup -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AdapterSetup" position="0,0" size="1280,720" title="Network Setup">
     <widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" position="70,80" render="Label" size="495,30" source="Adapter" transparent="1" />
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,130" size="708,240" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,130" size="708,200" transparent="1" />
     <widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="center" position="70,585" render="Label" size="708,30" source="introduction2" transparent="1" />
+	<widget source="IPtext" render="Label" position="200,400" size="210,24" font="Regular;20" halign="right" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget source="Netmasktext" render="Label" position="200,430" size="210,24" font="Regular;20" halign="right" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget source="Gatewaytext" render="Label" position="200,460" size="210,24" font="Regular;20" halign="right" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget source="DNS1text" render="Label" position="200,490" size="210,24" font="Regular;20" halign="right" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget source="DNS2text" render="Label" position="200,520" size="210,24" font="Regular;20" halign="right" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+	<widget source="IP" render="Label" position="420,400" size="210,24" font="Regular;20" halign="left" backgroundColor="XionBackground" transparent="1" />
+	<widget source="Mask" render="Label" position="420,430" size="210,24" font="Regular;20" halign="left" backgroundColor="XionBackground" transparent="1" />
+	<widget source="Gateway" render="Label" position="420,460" size="210,24" font="Regular;20" halign="left" backgroundColor="XionBackground" transparent="1" />
+	<widget source="DNS1" render="Label" position="420,490" size="210,24" font="Regular;20" halign="left" backgroundColor="XionBackground" transparent="1" />
+	<widget source="DNS2" render="Label" position="420,520" size="210,24" font="Regular;20" halign="left" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
