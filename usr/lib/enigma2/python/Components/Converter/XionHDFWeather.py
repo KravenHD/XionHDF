@@ -20,12 +20,15 @@ from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Tools.Directories import fileExists, resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
 from Components.Language import language
-import gettext, os, time
 from twisted.web.client import getPage
 from xml.dom.minidom import parseString
 from enigma import eTimer
 from Components.config import config
 from time import strftime
+from Poll import Poll
+from copy import deepcopy
+import gettext, os, time
+
 
 lang = language.getLanguage()
 os.environ["LANGUAGE"] = lang[:2]
@@ -40,30 +43,42 @@ def _(txt):
 	return t
 
 weather_data = None
+weather_data_old = None
+look_again = False
+load_data = False
+look_count = 0
 
-class XionHDFWeather(Converter, object):
+class XionHDFWeather(Poll, Converter, object):
 
 	def __init__(self, type):
+		Poll.__init__(self)
 		Converter.__init__(self, type)
-		global weather_data
-		if weather_data is None:
-			weather_data = WeatherData()
 		self.type = type
+		self.poll_interval = 10000
+		self.poll_enabled = True
+		global weather_data
+		global weather_data_old
+		global load_data
+		if weather_data is None:
+			load_data = True
+			weather_data = WeatherData()
+		if weather_data_old is None:
+			load_data = False
+			weather_data_old = WeatherData()
 
 	@cached
 	def getText(self):
-		WeatherInfo = weather_data.WeatherInfo
-		
-		# modification by tomele 
+		WeatherInfo = weather_data_old.WeatherInfo
+
 		# due to yahoo changing the forecast scheme hours after the actual day has changed
 		# read actual day name and tomorrow forecast day name
 
-		self.aday = _(strftime("%a", time.localtime()))
-		self.fday = WeatherInfo["forecastTomorrowDay"]
+		self.aday = _(strftime("%a", time.localtime())).upper()
+		self.fday = WeatherInfo["forecastTomorrowDay"].upper()
 		
 		# if actual day equals tomorrow forecast day, shift forecasts left one day
 
-		if self.aday == self.fday:
+		if self.fday == self.aday:
 			
 			WeatherInfo["forecastTodayCode"] = WeatherInfo["forecastTomorrowCode"] 
 			WeatherInfo["forecastTodayDay"] = WeatherInfo["forecastTomorrowDay"] 
@@ -102,15 +117,29 @@ class XionHDFWeather(Converter, object):
 			WeatherInfo["forecastTomorrow2Picon"] = WeatherInfo["forecastTomorrow3Picon"] 
 		
 			WeatherInfo["forecastTomorrow3Code"] = "("
-			WeatherInfo["forecastTomorrow3Day"] = "N/A"
-			WeatherInfo["forecastTomorrow3Date"] = "N/A"
-			WeatherInfo["forecastTomorrow3TempMax"] = "0"
-			WeatherInfo["forecastTomorrow3TempMin"] = "0"
-			WeatherInfo["forecastTomorrow3TempMinMax"] = "0"
-			WeatherInfo["forecastTomorrow3Text"] = "N/A"
-			WeatherInfo["forecastTomorrow3Picon"] = "N/A"
+			WeatherInfo["forecastTomorrow3Date"] = ""
+			WeatherInfo["forecastTomorrow3TempMax"] = ""
+			WeatherInfo["forecastTomorrow3TempMin"] = ""
+			WeatherInfo["forecastTomorrow3TempMinMax"] = ""
+			WeatherInfo["forecastTomorrow3Text"] = ""
+			WeatherInfo["forecastTomorrow3Picon"] = "3200"
 
-		# end of modification by tomele
+			if WeatherInfo["forecastTomorrow3Day"] == "MO":
+				WeatherInfo["forecastTomorrow3Day"] = "DI"
+			elif WeatherInfo["forecastTomorrow3Day"] == "DI":
+ 				WeatherInfo["forecastTomorrow3Day"] = "MI"
+			elif WeatherInfo["forecastTomorrow3Day"] == "MI":
+ 				WeatherInfo["forecastTomorrow3Day"] = "DO"
+			elif WeatherInfo["forecastTomorrow3Day"] == "DO":
+ 				WeatherInfo["forecastTomorrow3Day"] = "FR"
+			elif WeatherInfo["forecastTomorrow3Day"] == "FR":
+ 				WeatherInfo["forecastTomorrow3Day"] = "SA"
+			elif WeatherInfo["forecastTomorrow3Day"] == "SA":
+ 				WeatherInfo["forecastTomorrow3Day"] = "SO"
+			elif WeatherInfo["forecastTomorrow3Day"] == "SO":
+ 				WeatherInfo["forecastTomorrow3Day"] = "MO"
+
+		# end of yahoo forecast fix
 				
 		if self.type == "currentLocation":
 			return WeatherInfo[self.type]
@@ -238,9 +267,9 @@ class XionHDFWeather(Converter, object):
 		elif self.type == "forecastTodayDate":
 			return WeatherInfo[self.type]
 		elif self.type == "forecastTodayTempMin":
-			return WeatherInfo[self.type] + "°"
+			return WeatherInfo[self.type]
 		elif self.type == "forecastTodayTempMax":
-			return WeatherInfo[self.type] + "°"
+			return WeatherInfo[self.type]
 		elif self.type == "forecastTodayTempMinMax":
 			return WeatherInfo[self.type]
 		elif self.type == "forecastTodayText":
@@ -353,9 +382,9 @@ class XionHDFWeather(Converter, object):
 		elif self.type == "forecastTomorrowDate":
 			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrowTempMin":
-			return WeatherInfo[self.type] + "°"
+			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrowTempMax":
-			return WeatherInfo[self.type] + "°"
+			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrowTempMinMax":
 			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrowText":
@@ -468,9 +497,9 @@ class XionHDFWeather(Converter, object):
 		elif self.type == "forecastTomorrow1Date":
 			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrow1TempMin":
-			return WeatherInfo[self.type] + "°"
+			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrow1TempMax":
-			return WeatherInfo[self.type] + "°"
+			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrow1TempMinMax":
 			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrow1Text":
@@ -583,9 +612,9 @@ class XionHDFWeather(Converter, object):
 		elif self.type == "forecastTomorrow2Date":
 			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrow2TempMin":
-			return WeatherInfo[self.type] + "°"
+			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrow2TempMax":
-			return WeatherInfo[self.type] + "°"
+			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrow2TempMinMax":
 			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrow2Text":
@@ -698,9 +727,9 @@ class XionHDFWeather(Converter, object):
 		elif self.type == "forecastTomorrow3Date":
 			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrow3TempMin":
-			return WeatherInfo[self.type] + "°"
+			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrow3TempMax":
-			return WeatherInfo[self.type] + "°"
+			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrow3TempMinMax":
 			return WeatherInfo[self.type]
 		elif self.type == "forecastTomorrow3Text":
@@ -833,6 +862,7 @@ class WeatherData:
 			"forecastTodayPicon": "N/A",
 			"forecastTodayDay": "N/A",
 			"forecastTodayDate": "N/A",
+			"forecastTodayDateEn": "N/A",
 			"forecastTodayTempMin": "0",
 			"forecastTodayTempMax": "0",
 			"forecastTodayTempMinMax": "0",
@@ -841,6 +871,7 @@ class WeatherData:
 			"forecastTomorrowPicon": "N/A",
 			"forecastTomorrowDay": "N/A",
 			"forecastTomorrowDate": "N/A",
+			"forecastTomorrowDateEn": "N/A",
 			"forecastTomorrowTempMin": "0",
 			"forecastTomorrowTempMax": "0",
 			"forecastTomorrowTempMinMax": "0",
@@ -869,7 +900,7 @@ class WeatherData:
 			"forecastTomorrow3TempMax": "0",
 			"forecastTomorrow3TempMinMax": "0",
 		}
-		if config.plugins.XionHDF.refreshInterval.value > 0:
+		if config.plugins.XionHDF.refreshInterval.value > 0 and load_data:
 			self.timer = eTimer()
 			self.timer.callback.append(self.GetWeather)
 			self.GetWeather()
@@ -878,19 +909,51 @@ class WeatherData:
 		print "[WeatherUpdate] error fetching weather data"
 
 	def GetWeather(self):
-		timeout = config.plugins.XionHDF.refreshInterval.value * 1000 * 60
+		global look_again
+		global look_count
+		global weather_data_old
+		
+		url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%3D%22"+str(config.plugins.XionHDF.weather_city.value)+"%22&format=xml"
+		timeout = int(config.plugins.XionHDF.refreshInterval.value) * 1000.0 * 60.0
+		retry_timeout = 15555
+		
 		if timeout > 0:
-			self.timer.start(timeout, True)
-			print "XionHDF lookup for ID " + str(config.plugins.XionHDF.weather_city.value)
-			url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%3D%22"+str(config.plugins.XionHDF.weather_city.value)+"%22&format=xml"
-			getPage(url,method = 'GET').addCallback(self.GotWeatherData).addErrback(self.downloadError)
+			if weather_data is None:
+				look_count = 1
+				print "XionWeather lookup 1 for ID " + str(config.plugins.XionHDF.weather_city.value)
+				getPage(url,method = 'GET').addCallback(self.GotWeatherData).addErrback(self.downloadError)
+				self.timer.start(retry_timeout, True)
+				look_again = True
+			else:
+				adate = strftime("%-d. %b", time.localtime()).replace('Dez','Dec').replace('Mai','May').replace('Okt','Oct').replace('Mrz','Mar')
+				ddate = weather_data.WeatherInfo["forecastTodayDateEn"]
+				mdate = weather_data.WeatherInfo["forecastTomorrowDateEn"]
+				looking = look_again
+				if adate not in (ddate,mdate):
+					look_count +=1
+					print "XionWeather: Weather data for "+str(ddate)+" is not for current day: "+str(adate)
+					print "XionWeather: Weather lookup "+str(look_count)+" for ID " + str(config.plugins.XionHDF.weather_city.value)
+					getPage(url,method = 'GET').addCallback(self.GotWeatherData).addErrback(self.downloadError)
+					self.timer.start(retry_timeout, True)
+					look_again = True
+				elif looking:
+					look_count = 0
+					print "XionWeather: Weather data is correct, next lookup in "+str(config.plugins.XionHDF.refreshInterval.value)+" minutes"
+					weather_data_old = deepcopy(weather_data)
+					self.timer.start(int(timeout), True)
+					look_again = False
+				else:
+					look_count +=1
+					print "XionWeather: Weather lookup "+str(look_count)+" for ID "+str(config.plugins.XionHDF.weather_city.value)
+					getPage(url,method = 'GET').addCallback(self.GotWeatherData).addErrback(self.downloadError)
+					self.timer.start(retry_timeout, True)
+					look_again = True
 
 	def GotWeatherData(self, data = None):
 		if data is not None:
 			dom = parseString(data)
 			title = self.getText(dom.getElementsByTagName('title')[0].childNodes)
 			self.WeatherInfo["currentLocation"] = str(title).split(',')[0].replace("Yahoo! Weather - ","")
-
 			weather = dom.getElementsByTagName('yweather:wind')[0]
 			self.WeatherInfo["currentDirection"] = _(str(weather.getAttributeNode('direction').nodeValue))
 			if not self.WeatherInfo["currentDirection"] is 'N/A':
@@ -952,8 +1015,9 @@ class WeatherData:
 			self.WeatherInfo["forecastTodayCode"] = self.ConvertCondition(weather.getAttributeNode('code').nodeValue)
 			self.WeatherInfo["forecastTodayDay"] = _(weather.getAttributeNode('day').nodeValue)
 			self.WeatherInfo["forecastTodayDate"] = self.getWeatherDate(weather)
-			self.WeatherInfo["forecastTodayTempMax"] = self.getTemp(weather.getAttributeNode('high').nodeValue)
-			self.WeatherInfo["forecastTodayTempMin"] = self.getTemp(weather.getAttributeNode('low').nodeValue)
+			self.WeatherInfo["forecastTodayDateEn"] = self.getWeatherDateEn(weather)
+			self.WeatherInfo["forecastTodayTempMax"] = self.getTemp(weather.getAttributeNode('high').nodeValue) + "°C"
+			self.WeatherInfo["forecastTodayTempMin"] = self.getTemp(weather.getAttributeNode('low').nodeValue) + "°C"
 			self.WeatherInfo["forecastTodayTempMinMax"] = self.getTemp(weather.getAttributeNode('low').nodeValue) + "°/" + self.getTemp(weather.getAttributeNode('high').nodeValue) + "°"
 			self.WeatherInfo["forecastTodayText"] = _(str(weather.getAttributeNode('text').nodeValue))
 			self.WeatherInfo["forecastTodayPicon"] = _(str(weather.getAttributeNode('code').nodeValue))
@@ -962,8 +1026,9 @@ class WeatherData:
 			self.WeatherInfo["forecastTomorrowCode"] = self.ConvertCondition(weather.getAttributeNode('code').nodeValue)
 			self.WeatherInfo["forecastTomorrowDay"] = _(weather.getAttributeNode('day').nodeValue)
 			self.WeatherInfo["forecastTomorrowDate"] = self.getWeatherDate(weather)
-			self.WeatherInfo["forecastTomorrowTempMax"] = self.getTemp(weather.getAttributeNode('high').nodeValue)
-			self.WeatherInfo["forecastTomorrowTempMin"] = self.getTemp(weather.getAttributeNode('low').nodeValue)
+			self.WeatherInfo["forecastTomorrowDateEn"] = self.getWeatherDateEn(weather)
+			self.WeatherInfo["forecastTomorrowTempMax"] = self.getTemp(weather.getAttributeNode('high').nodeValue) + "°C"
+			self.WeatherInfo["forecastTomorrowTempMin"] = self.getTemp(weather.getAttributeNode('low').nodeValue) + "°C"
 			self.WeatherInfo["forecastTomorrowTempMinMax"] = self.getTemp(weather.getAttributeNode('low').nodeValue) + "°/" + self.getTemp(weather.getAttributeNode('high').nodeValue) + "°"
 			self.WeatherInfo["forecastTomorrowText"] = _(str(weather.getAttributeNode('text').nodeValue))
 			self.WeatherInfo["forecastTomorrowPicon"] = _(str(weather.getAttributeNode('code').nodeValue))
@@ -972,8 +1037,8 @@ class WeatherData:
 			self.WeatherInfo["forecastTomorrow1Code"] = self.ConvertCondition(weather.getAttributeNode('code').nodeValue)
 			self.WeatherInfo["forecastTomorrow1Day"] = _(weather.getAttributeNode('day').nodeValue)
 			self.WeatherInfo["forecastTomorrow1Date"] = self.getWeatherDate(weather)
-			self.WeatherInfo["forecastTomorrow1TempMax"] = self.getTemp(weather.getAttributeNode('high').nodeValue)
-			self.WeatherInfo["forecastTomorrow1TempMin"] = self.getTemp(weather.getAttributeNode('low').nodeValue)
+			self.WeatherInfo["forecastTomorrow1TempMax"] = self.getTemp(weather.getAttributeNode('high').nodeValue) + "°C"
+			self.WeatherInfo["forecastTomorrow1TempMin"] = self.getTemp(weather.getAttributeNode('low').nodeValue) + "°C"
 			self.WeatherInfo["forecastTomorrow1TempMinMax"] = self.getTemp(weather.getAttributeNode('low').nodeValue) + "°/" + self.getTemp(weather.getAttributeNode('high').nodeValue) + "°"
 			self.WeatherInfo["forecastTomorrow1Text"] = _(str(weather.getAttributeNode('text').nodeValue))
 			self.WeatherInfo["forecastTomorrow1Picon"] = _(str(weather.getAttributeNode('code').nodeValue))
@@ -982,8 +1047,8 @@ class WeatherData:
 			self.WeatherInfo["forecastTomorrow2Code"] = self.ConvertCondition(weather.getAttributeNode('code').nodeValue)
 			self.WeatherInfo["forecastTomorrow2Day"] = _(weather.getAttributeNode('day').nodeValue)
 			self.WeatherInfo["forecastTomorrow2Date"] = self.getWeatherDate(weather)
-			self.WeatherInfo["forecastTomorrow2TempMax"] = self.getTemp(weather.getAttributeNode('high').nodeValue)
-			self.WeatherInfo["forecastTomorrow2TempMin"] = self.getTemp(weather.getAttributeNode('low').nodeValue)
+			self.WeatherInfo["forecastTomorrow2TempMax"] = self.getTemp(weather.getAttributeNode('high').nodeValue) + "°C"
+			self.WeatherInfo["forecastTomorrow2TempMin"] = self.getTemp(weather.getAttributeNode('low').nodeValue) + "°C"
 			self.WeatherInfo["forecastTomorrow2TempMinMax"] = self.getTemp(weather.getAttributeNode('low').nodeValue) + "°/" + self.getTemp(weather.getAttributeNode('high').nodeValue) + "°"
 			self.WeatherInfo["forecastTomorrow2Text"] = _(str(weather.getAttributeNode('text').nodeValue))
 			self.WeatherInfo["forecastTomorrow2Picon"] = _(str(weather.getAttributeNode('code').nodeValue))
@@ -992,8 +1057,8 @@ class WeatherData:
 			self.WeatherInfo["forecastTomorrow3Code"] = self.ConvertCondition(weather.getAttributeNode('code').nodeValue)
 			self.WeatherInfo["forecastTomorrow3Day"] = _(weather.getAttributeNode('day').nodeValue)
 			self.WeatherInfo["forecastTomorrow3Date"] = self.getWeatherDate(weather)
-			self.WeatherInfo["forecastTomorrow3TempMax"] = self.getTemp(weather.getAttributeNode('high').nodeValue)
-			self.WeatherInfo["forecastTomorrow3TempMin"] = self.getTemp(weather.getAttributeNode('low').nodeValue)
+			self.WeatherInfo["forecastTomorrow3TempMax"] = self.getTemp(weather.getAttributeNode('high').nodeValue) + "°C"
+			self.WeatherInfo["forecastTomorrow3TempMin"] = self.getTemp(weather.getAttributeNode('low').nodeValue) + "°C"
 			self.WeatherInfo["forecastTomorrow3TempMinMax"] = self.getTemp(weather.getAttributeNode('low').nodeValue) + "°/" + self.getTemp(weather.getAttributeNode('high').nodeValue) + "°"
 			self.WeatherInfo["forecastTomorrow3Text"] =_(str(weather.getAttributeNode('text').nodeValue))
 			self.WeatherInfo["forecastTomorrow3Picon"] = _(str(weather.getAttributeNode('code').nodeValue))
@@ -1057,4 +1122,11 @@ class WeatherData:
 		str_weather = cur_weather[0]
 		if len(cur_weather) >= 2:
 			str_weather += ". " + _(cur_weather[1])
+		return str_weather
+
+	def getWeatherDateEn(self, weather):
+		cur_weather = str(weather.getAttributeNode('date').nodeValue).split(" ")
+		str_weather = cur_weather[0]
+		if len(cur_weather) >= 2:
+			str_weather += ". " + cur_weather[1]
 		return str_weather
