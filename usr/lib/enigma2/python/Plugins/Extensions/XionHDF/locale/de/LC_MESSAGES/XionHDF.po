@@ -600,6 +600,9 @@ msgstr "Hier wird die persönliche WetterID eingetragen. Dafür bitte die Websei
 msgid "Here you can change how often the weather is refreshed in the background."
 msgstr "An dieser Stelle wird der Intervall der Wetteraktualisierung im Hintergrund eingestellt."
 
+msgid "Please select the bordercolor of selection bars or deactivate borders completely."
+msgstr "Bitte die Farbe des Linienrands für den Selektor auswählen."
+
 msgid "Please select the color of lines inside the skin."
 msgstr "Bitte die Farbe der Linien innerhalb des Skins auswählen."
 

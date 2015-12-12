@@ -33,6 +33,11 @@ from skin import parseColor
 from Components.Pixmap import Pixmap
 from Components.Label import Label
 import gettext
+try:
+  from boxbranding import getBoxType
+  brand = True
+except ImportError:
+  brand = False
 from enigma import ePicLoad, getDesktop, eConsoleAppContainer
 from Tools.Directories import fileExists, resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
 from ChangeSkin import *
@@ -315,6 +320,41 @@ config.plugins.XionHDF.Line = ConfigSelection(default="00ffffff", choices = [
 				("00ffffff", _("White"))
 				])
 				
+config.plugins.XionHDF.SelectionBorder = ConfigSelection(default="none", choices = [
+				("none", _("Off")),
+				("00F0A30A", _("Amber")),
+				("00B27708", _("Amber dark")),
+				("001B1775", _("Blue")),
+				("000E0C3F", _("Blue dark")),
+				("007D5929", _("Brown")),
+				("003F2D15", _("Brown dark")),
+				("000050EF", _("Cobalt")),
+				("00001F59", _("Cobalt dark")),
+				("001BA1E2", _("Cyan")),
+				("000F5B7F", _("Cyan dark")),
+				("00FFEA04", _("Yellow")),
+				("00999999", _("Grey")),
+				("003F3F3F", _("Grey dark")),
+				("0070AD11", _("Green")),
+				("00213305", _("Green dark")),
+				("001DFF00", _("Neon green")),
+				("00FFFF00", _("Neon yellow")),
+				("006D8764", _("Olive")),
+				("00313D2D", _("Olive dark")),
+				("00C3461B", _("Orange")),
+				("00892E13", _("Orange dark")),
+				("00F472D0", _("Pink")),
+				("00723562", _("Pink dark")),
+				("00E51400", _("Red")),
+				("00330400", _("Red dark")),
+				("00000000", _("Black")),
+				("00647687", _("Steel")),
+				("00262C33", _("Steel dark")),
+				("006C0AAB", _("Violet")),
+				("001F0333", _("Violet dark")),
+				("00ffffff", _("White"))
+				])
+				
 config.plugins.XionHDF.EMCStyle = ConfigSelection(default="emc-nocover", choices = [
 				("emc-nocover", _("No cover")),
 				("emc-smallcover", _("Small cover")),
@@ -378,7 +418,15 @@ if fileExists('/proc/bmeminfo'):
 else:
    mem_info = []
    entrie = os.popen('cat /proc/cmdline').read()
-   mem = re.findall('bmem=(.*?)M', entrie)
+   
+   if brand:
+      if getBoxType() == 'vusolo4k':
+         mem = re.findall('_cma=(.*?)M', entrie)
+      else:   
+         mem = re.findall('bmem=(.*?)M', entrie)
+   else:   
+      mem = re.findall('bmem=(.*?)M', entrie)
+      
    for info in mem:
       mem_info.append((info))
        
@@ -386,17 +434,18 @@ else:
       bmem = int(mem_info[0]) + int(mem_info[1])  
    else:
       bmem = int(mem_info[0])
-
+      
 SkinModeList = []
 SkinModeList.append(("1", _("HD Skin 1280 x 720")))
 if bmem > 180:
    SkinModeList.append(("2", _("FullHD Skin 1920 x 1080")))
 if bmem > 440:
-   SkinModeList.append(("3", _("UHD Skin 3840 x 2160")))
-   SkinModeList.append(("4", _("4K Skin 4096 x 2160")))
-if bmem > 880:
-   SkinModeList.append(("5", _("FullUHD Skin 7680 x 4320")))
-   SkinModeList.append(("6", _("8K Skin 8192 x 4320")))
+   if getBoxType() == 'vusolo4k':
+      SkinModeList.append(("3", _("UHD Skin 3840 x 2160")))
+      #SkinModeList.append(("4", _("4K Skin 4096 x 2160")))
+#if bmem > 880:
+   #SkinModeList.append(("5", _("FullUHD Skin 7680 x 4320")))
+   #SkinModeList.append(("6", _("8K Skin 8192 x 4320")))
 #SkinModeList.append(("7", _("User Selection")))
 
 config.plugins.XionHDF.skin_mode = ConfigSelection(default="1", choices = SkinModeList)				
@@ -471,6 +520,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("_____________________________ Colors __________________________________"), ))
 		list.append(getConfigListEntry(_("Line"), config.plugins.XionHDF.Line, _("Please select the color of lines inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection"), config.plugins.XionHDF.SelectionBackground, _("Please select the color of listselection inside the skin.")))
+		list.append(getConfigListEntry(_("Listselection border"), config.plugins.XionHDF.SelectionBorder, _("Please select the bordercolor of selection bars or deactivate borders completely.")))
 		list.append(getConfigListEntry(_("Progress-/Volumebar"), config.plugins.XionHDF.Progress, _("Please select the color of progress- and volumebar inside the skin.")))
 		list.append(getConfigListEntry(_("Primary font"), config.plugins.XionHDF.Font1, _("Please select the color of primary font inside the skin.")))
 		list.append(getConfigListEntry(_("Secondary font"), config.plugins.XionHDF.Font2, _("Please select the color of secundary font inside the skin.")))
@@ -630,10 +680,19 @@ class XionHDF(ConfigListScreen, Screen):
 			self.skinSearchAndReplace.append(['name="XionProgress" value="#00ffffff', 'name="XionProgress" value="#' + config.plugins.XionHDF.Progress.value])
 			self.skinSearchAndReplace.append(['name="XionLine" value="#00ffffff', 'name="XionLine" value="#' + config.plugins.XionHDF.Line.value])
 			self.skinSearchAndReplace.append(["movetype=running", config.plugins.XionHDF.RunningText.value])
-			self.skinSearchAndReplace.append(["showOnDemand", config.plugins.XionHDF.ScrollBar.value])			
+			self.skinSearchAndReplace.append(["showOnDemand", config.plugins.XionHDF.ScrollBar.value])
+			
+			### Selectionborder
+			if not config.plugins.XionHDF.SelectionBorder.value == "none":
+				self.selectionbordercolor = config.plugins.XionHDF.SelectionBorder.value
+				self.borset = ("borset_" + self.selectionbordercolor + ".png")
+				self.skinSearchAndReplace.append(["borset.png", self.borset])
 			
 			### Header
-			self.appendSkinFile(self.daten + "header.xml")
+			self.appendSkinFile(self.daten + "header_begin.xml")
+			if not config.plugins.XionHDF.SelectionBorder.value == "none":
+				self.appendSkinFile(self.daten + "header_middle.xml")
+			self.appendSkinFile(self.daten + "header_end.xml")
 
 			###ChannelSelection
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.ChannelSelectionStyle.value + ".xml")

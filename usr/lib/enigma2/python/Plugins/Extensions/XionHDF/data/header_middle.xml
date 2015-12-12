@@ -1,0 +1,6 @@
+    <borderset name="bsListboxEntry" value="2">
+      <pixmap filename="XionHDF/bordersets/borset.png" pos="bpTop" />
+      <pixmap filename="XionHDF/bordersets/borset.png" pos="bpBottom" />
+      <pixmap filename="XionHDF/bordersets/borset.png" pos="bpLeft" />
+      <pixmap filename="XionHDF/bordersets/borset.png" pos="bpRight" />
+    </borderset>
