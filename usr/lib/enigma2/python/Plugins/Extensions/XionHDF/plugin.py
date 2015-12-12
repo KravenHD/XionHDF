@@ -13,6 +13,7 @@
 #
 #######################################################################
 
+import os
 from Plugins.Plugin import PluginDescriptor
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
@@ -34,7 +35,9 @@ from Components.Label import Label
 import gettext
 from enigma import ePicLoad, getDesktop, eConsoleAppContainer
 from Tools.Directories import fileExists, resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
-
+from ChangeSkin import *
+FILE = "/usr/share/enigma2/XionHDF/skin.xml"
+TMPFILE = FILE + ".tmp"
 #############################################################
 
 lang = language.getLanguage()
@@ -367,7 +370,36 @@ config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showNever", choices 
 				("showOnDemand", _("On")),
 				("showNever", _("Off"))
 				])
-				
+################# bmeminfo ##############################
+if fileExists('/proc/bmeminfo'):
+   entrie = os.popen('cat /proc/bmeminfo').read()
+   mem = entrie.split(':', 1)[1].split('k')[0]
+   bmem = int(mem)/1024
+else:
+   mem_info = []
+   entrie = os.popen('cat /proc/cmdline').read()
+   mem = re.findall('bmem=(.*?)M', entrie)
+   for info in mem:
+      mem_info.append((info))
+       
+   if len(mem_info) > 1:
+      bmem = int(mem_info[0]) + int(mem_info[1])  
+   else:
+      bmem = int(mem_info[0])
+
+SkinModeList = []
+SkinModeList.append(("1", _("HD Skin 1280 x 720")))
+if bmem > 180:
+   SkinModeList.append(("2", _("FullHD Skin 1920 x 1080")))
+if bmem > 440:
+   SkinModeList.append(("3", _("UHD Skin 3840 x 2160")))
+   SkinModeList.append(("4", _("4K Skin 4096 x 2160")))
+if bmem > 880:
+   SkinModeList.append(("5", _("FullUHD Skin 7680 x 4320")))
+   SkinModeList.append(("6", _("8K Skin 8192 x 4320")))
+#SkinModeList.append(("7", _("User Selection")))
+
+config.plugins.XionHDF.skin_mode = ConfigSelection(default="1", choices = SkinModeList)				
 #######################################################################
 
 class XionHDF(ConfigListScreen, Screen):
@@ -376,7 +408,7 @@ class XionHDF(ConfigListScreen, Screen):
   <eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="64,662" size="148,48" text="Cancel" transparent="1" />
   <eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
   <eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
-  <widget name="config" position="70,75" size="708,572" itemHeight="28" font="Regular;24" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00000000" />
+  <widget name="config" position="70,75" size="708,572" itemHeight="27" font="Regular;23" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00000000" />
   <eLabel position="70,12" size="708,46" text="XionHDF - Konfigurationstool" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
   <eLabel position="847,200" size="368,2" backgroundColor="#00ffffff" />
   <eLabel position="847,409" size="368,2" backgroundColor="#00ffffff" />
@@ -424,7 +456,8 @@ class XionHDF(ConfigListScreen, Screen):
 	def mylist(self):
 		list = []
 		list.append(getConfigListEntry(_("_____________________________ Styles __________________________________"), config.plugins.XionHDF.System, _(" ")))
-		list.append(getConfigListEntry(_("Running text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
+		list.append(getConfigListEntry(_("Skinmode"), config.plugins.XionHDF.skin_mode, _("This option set the resolution of skin.")))
+                list.append(getConfigListEntry(_("Running text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
 		list.append(getConfigListEntry(_("Scrollbars"), config.plugins.XionHDF.ScrollBar, _("This option activates the scrollbars for some parts of skin.")))
 		list.append(getConfigListEntry(_("Background transparency"), config.plugins.XionHDF.BackgroundColorTrans, _("This option activate/deactive/change the background transparency of skin.")))
 		list.append(getConfigListEntry(_("ChannelSelection"), config.plugins.XionHDF.ChannelSelectionStyle, _("This option changes the view of channellist.")))
@@ -432,7 +465,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Second Infobar"), config.plugins.XionHDF.SIB, _("This option changes the view of second infobar.")))
 		list.append(getConfigListEntry(_("EnhancedMovieCenter"), config.plugins.XionHDF.EMCStyle, _("This option changes the view of cover inside from EnhancedMovieCenter.")))
 		list.append(getConfigListEntry(_("MovieSelection"), config.plugins.XionHDF.MovieStyle, _("This option changes the view of cover inside from MovieSelection.")))
-		list.append(getConfigListEntry(_("_____________________________ Weather _________________________________"), ))
+		#list.append(getConfigListEntry(_("_____________________________ Weather _________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
 		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your personal WeatherID. Please visit the website metrixweather.open-store.net to find your location.")))
 		list.append(getConfigListEntry(_("_____________________________ Colors __________________________________"), ))
@@ -643,9 +676,18 @@ class XionHDF(ConfigListScreen, Screen):
 				xFile.writelines(xx)
 			xFile.close()
 
-			move(self.dateiTMP, self.datei)
+			#move(self.dateiTMP, self.datei)
 
 			#system('rm -rf ' + self.dateiTMP)
+                        Instance = ChangeSkin(self.session)
+                
+                        if fileExists(TMPFILE):
+                           if fileExists(FILE):
+                              move(TMPFILE, FILE)
+                              self.debug('mv : ' + TMPFILE + ' to ' + FILE + "\n")
+                           else:
+                              rename(TMPFILE, FILE)
+                              self.debug('rename : ' + TMPFILE + ' to ' + FILE + "\n")
 		except:
 			self.session.open(MessageBox, _("Error creating Skin!"), MessageBox.TYPE_ERROR)
 
@@ -699,7 +741,10 @@ class XionHDF(ConfigListScreen, Screen):
 			else:
 					pass
 		self.close()
-
+        def debug(self, what):
+                f = open('/tmp/xion_debug.txt', 'a+')
+                f.write('[PluginScreen]' + str(what) + '\n')
+                f.close()
 #############################################################
 
 def main(session, **kwargs):
