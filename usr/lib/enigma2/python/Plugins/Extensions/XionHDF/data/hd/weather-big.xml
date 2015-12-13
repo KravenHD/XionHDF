@@ -91,6 +91,6 @@
   <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="1045,80" size="215,22" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
     <convert type="XionHDFWeather">currentLocation</convert>
   </widget>
-  <ePixmap pixmap="XionHDF/infobar/ibaro_hd.png" position="0,0" size="1280,443" zPosition="-9" />
+  <ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,443" zPosition="-9" />
 <!-- Weather */-->
 

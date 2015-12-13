@@ -12,6 +12,6 @@
   <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 20" foregroundColor="XionFont1" render="Label" position="1180,66" size="50,26" source="session.CurrentService" zPosition="8" halign="center" valign="center" transparent="1">
     <convert type="XionHDFWeather">forecastTodayTempMin</convert>
   </widget>
-  <ePixmap pixmap="XionHDF/infobar/ibaror_fhd.png" position="0,0" size="1280,443" zPosition="-9" />
+  <ePixmap pixmap="XionHDF/ibaror.png" position="0,0" size="1280,443" zPosition="-9" />
 <!-- Weather */-->
 
