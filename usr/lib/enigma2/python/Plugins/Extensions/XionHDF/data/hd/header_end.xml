@@ -132,7 +132,7 @@
     <eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
   </screen>
   <screen name="template_player">
-  <ePixmap pixmap="XionHDF/ibar.png" position="0,526" size="1280,200" alphatest="blend" zPosition="-3" />
+  <ePixmap pixmap="XionHDF/infobar/ibar_hd.png" position="0,526" size="1280,200" alphatest="blend" zPosition="-3" />
   </screen>
   <screen name="template_menu_cs_button">
     <widget backgroundColor="XionBackground" font="Regular2; 34" foregroundColor="XionFont2" position="18,12" render="Label" size="815,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
@@ -236,7 +236,7 @@
       <convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
     </widget>
  <!-- Clock Standard */-->
-<ePixmap pixmap="XionHDF/ibar.png" position="0,543" size="1280,200" alphatest="blend" />
+<ePixmap pixmap="XionHDF/infobar/ibar_hd.png" position="0,543" size="1280,200" alphatest="blend" />
 <ePixmap pixmap="XionHDF/buttons/ico_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
     <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_stable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
@@ -296,7 +296,7 @@
     <convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
   </widget>
   <!-- Clock Standard */-->
-  <ePixmap pixmap="XionHDF/ibar.png" position="0,543" size="1280,200" alphatest="blend" zPosition="-9" />
+  <ePixmap pixmap="XionHDF/infobar/ibar_hd.png" position="0,543" size="1280,200" alphatest="blend" zPosition="-9" />
   <eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" zPosition="-9" />
   <widget source="session.CurrentService" render="Label" position="1107,40" size="89,22" backgroundColor="XionBackground" transparent="1" zPosition="3" foregroundColor="XionFont1" font="Regular; 19" valign="center" halign="left">
     <convert type="XionHDFExtraInfo">OrbitalPositionOrTunerSystem</convert>
@@ -395,7 +395,7 @@
   <widget backgroundColor="XionBackground" font="Regular2; 19" halign="center" position="645,7" render="Label" size="602,22" zPosition="7" source="session.CurrentService" transparent="1" valign="bottom">
     <convert type="XionHDFExtraInfo">TransponderInfo</convert>
   </widget>
-  <ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,200" alphatest="blend" zPosition="-9" />
+  <ePixmap pixmap="XionHDF/infobar/ibaro_hd.png" position="0,0" size="1280,200" alphatest="blend" zPosition="-9" />
   <ePixmap pixmap="XionHDF/buttons/ico_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
   <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_stable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
     <convert type="ConditionalShowHide">Blink</convert>
@@ -458,7 +458,7 @@
       <convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
     </widget>
  <!-- Clock Standard */-->
-<ePixmap pixmap="XionHDF/ibar.png" position="0,543" size="1280,200" alphatest="blend" zPosition="-9" />
+<ePixmap pixmap="XionHDF/infobar/ibar_hd.png" position="0,543" size="1280,200" alphatest="blend" zPosition="-9" />
 <eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" zPosition="-9" />
 
  <widget source="session.CurrentService" render="Label" position="1107,40" size="89,22" backgroundColor="XionBackground" transparent="1" zPosition="3" foregroundColor="XionFont1" font="Regular; 19" valign="center" halign="left">
@@ -561,7 +561,7 @@
 <widget backgroundColor="XionBackground" font="Regular; 26" foregroundColor="XionFont2" halign="center" position="37,396" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1203,96" source="session.Event_Next" zPosition="1" transparent="1">
     <convert type="XionHDFEventName">ExtendedDescription</convert>
   </widget>
-<ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,200" alphatest="blend" zPosition="-9" />
+<ePixmap pixmap="XionHDF/infobar/ibaro_hd.png" position="0,0" size="1280,200" alphatest="blend" zPosition="-9" />
 <ePixmap pixmap="XionHDF/buttons/ico_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
     <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_stable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
@@ -621,7 +621,7 @@
     <convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
   </widget>
   <!-- Clock Standard */-->
-  <ePixmap pixmap="XionHDF/ibar.png" position="0,543" size="1280,200" alphatest="blend" zPosition="-9" />
+  <ePixmap pixmap="XionHDF/infobar/ibar_hd.png" position="0,543" size="1280,200" alphatest="blend" zPosition="-9" />
   <eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" zPosition="-9" />
   <widget source="session.CurrentService" render="Label" position="1107,40" size="89,22" backgroundColor="XionBackground" transparent="1" zPosition="3" foregroundColor="XionFont1" font="Regular; 19" valign="center" halign="left">
     <convert type="XionHDFExtraInfo">OrbitalPositionOrTunerSystem</convert>
@@ -723,7 +723,7 @@
   <widget backgroundColor="XionBackground" font="Regular; 26" foregroundColor="XionFont2" halign="center" position="640,127" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="600,370" source="session.Event_Next" zPosition="1" transparent="1">
     <convert type="XionHDFEventName">ExtendedDescription</convert>
   </widget>
-  <ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,200" alphatest="blend" zPosition="-9" />
+  <ePixmap pixmap="XionHDF/infobar/ibaro_hd.png" position="0,0" size="1280,200" alphatest="blend" zPosition="-9" />
   <ePixmap pixmap="XionHDF/buttons/ico_update_off.png" position="1256,697" size="20,20" zPosition="0" alphatest="blend" />
   <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="XionHDF/buttons/ico_stable.png" position="1256,697" size="20,20" zPosition="1" alphatest="blend">
     <convert type="ConditionalShowHide">Blink</convert>

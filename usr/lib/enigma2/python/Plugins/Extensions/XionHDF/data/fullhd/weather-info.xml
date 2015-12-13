@@ -1,6 +1,6 @@
 
 <!-- /* Weather -->
-  <ePixmap pixmap="XionHDF/ibar.png" position="0,543" size="1280,200" alphatest="blend" zPosition="-9" />
+  <ePixmap pixmap="XionHDF/infobar/ibar_fhd.png" position="0,543" size="1280,200" alphatest="blend" zPosition="-9" />
   <widget source="session.CurrentService" render="Label" position="1107,40" size="89,22" backgroundColor="XionBackground" transparent="1" zPosition="3" foregroundColor="XionFont1" font="Regular; 19" valign="center" halign="left">
     <convert type="XionHDFExtraInfo">OrbitalPositionOrTunerSystem</convert>
   </widget>
@@ -89,6 +89,6 @@
   <widget backgroundColor="XionBackground" font="Regular2; 19" halign="center" position="645,7" render="Label" size="602,22" zPosition="7" source="session.CurrentService" transparent="1" valign="bottom">
     <convert type="XionHDFExtraInfo">TransponderInfo</convert>
   </widget>
-  <ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,443" zPosition="-9" />
+  <ePixmap pixmap="XionHDF/infobar/ibaro_fhd.png" position="0,0" size="1280,443" zPosition="-9" />
 <!-- Weather */-->
 
