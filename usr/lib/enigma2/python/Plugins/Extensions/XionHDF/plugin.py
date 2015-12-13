@@ -439,9 +439,9 @@ SkinModeList = []
 SkinModeList.append(("1", _("HD Skin 1280 x 720")))
 if bmem > 180:
    SkinModeList.append(("2", _("FullHD Skin 1920 x 1080")))
-if bmem > 440:
-   if getBoxType() == 'vusolo4k':
-      SkinModeList.append(("3", _("UHD Skin 3840 x 2160")))
+#if bmem > 440:
+#   if getBoxType() == 'vusolo4k':
+#      SkinModeList.append(("3", _("UHD Skin 3840 x 2160")))
       #SkinModeList.append(("4", _("4K Skin 4096 x 2160")))
 #if bmem > 880:
    #SkinModeList.append(("5", _("FullUHD Skin 7680 x 4320")))
@@ -480,7 +480,7 @@ class XionHDF(ConfigListScreen, Screen):
   <eLabel backgroundColor="#00ffffff" position="0,656" size="1280,2" zPosition="2" />
 </screen>
 """
-
+			
 	def __init__(self, session, args = None, picPath = None):
 		self.skin_lines = []
 		Screen.__init__(self, session)
@@ -662,6 +662,23 @@ class XionHDF(ConfigListScreen, Screen):
 		return self.getDataByKey(channelInfoFontSizes, key)
 
 	def save(self):
+		self.skin_mode = config.plugins.XionHDF.skin_mode.value
+		if self.skin_mode == '1':
+			self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/hd/"
+			os.system("cp /usr/share/enigma2/XionHDF/infobar/ibar_hd.png /usr/share/enigma2/XionHDF/ibar.png")
+			os.system("cp /usr/share/enigma2/XionHDF/infobar/ibaro_hd.png /usr/share/enigma2/XionHDF/ibaro.png")
+			os.system("cp /usr/share/enigma2/XionHDF/infobar/ibaror_hd.png /usr/share/enigma2/XionHDF/ibaror.png")		
+		else:
+			pass
+
+		if self.skin_mode == '2':
+			self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/fullhd/"
+			os.system("cp /usr/share/enigma2/XionHDF/infobar/ibar_fhd.png /usr/share/enigma2/XionHDF/ibar.png")
+			os.system("cp /usr/share/enigma2/XionHDF/infobar/ibaro_fhd.png /usr/share/enigma2/XionHDF/ibaro.png")
+			os.system("cp /usr/share/enigma2/XionHDF/infobar/ibaror_fhd.png /usr/share/enigma2/XionHDF/ibaror.png")
+		else:
+			pass
+
 		for x in self["config"].list:
 			if len(x) > 1:
 					x[1].save()

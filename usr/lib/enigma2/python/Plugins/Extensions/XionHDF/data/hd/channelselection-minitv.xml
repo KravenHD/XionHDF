@@ -1,0 +1,35 @@
+<screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
+  <widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" foregroundColorMarkedSelected="green" foregroundColor="XionFont1" colorEventProgressbarBorder="XionLine" colorEventProgressbarBorderSelected="XionLine" colorServiceDescription="XionFont2" colorServiceDescriptionSelected="XionSelFont" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="17,78" serviceInfoFont="Regular;23" serviceItemHeight="35" serviceNameFont="Regular2;25" serviceNumberFont="Regular;25" size="816,564" transparent="1" />
+  <widget source="ServiceEvent" render="XionHDFSingleEpgList" position="853,561" size="400,113" noWrap="1" font="Regular2;22" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular; 24" halign="left" noWrap="1" position="853,303" render="Label" size="72,30" source="ServiceEvent" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">
+    </convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular; 24" halign="right" noWrap="1" position="1182,303" render="Label" size="72,30" source="ServiceEvent" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">
+    </convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular; 18" halign="right" position="955,297" render="Label" size="232,25" source="ServiceEvent" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
+    <convert type="XionHDFEventTime">Remaining</convert>
+    <convert type="XionHDFRemainingToText">InMinutes</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Progress" position="920,322" size="270,3" borderWidth="0" backgroundColor="XionBackground" foregroundColor="XionProgress" transparent="1" zPosition="1">
+    <convert type="XionHDFEventTime">Progress</convert>
+  </widget>
+  <eLabel position="920,322" size="270,3" backgroundColor="XionLine" />
+  <widget font="Regular; 22" foregroundColor="XionFont1" position="853,333" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="400,221" source="ServiceEvent" valign="top" backgroundColor="XionBackground" transparent="1" zPosition="-8">
+    <convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
+  </widget>
+  <widget font="Regular2; 30" foregroundColor="XionFont2" position="853,53" halign="center" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="400,40" source="ServiceEvent" backgroundColor="XionBackground" transparent="1" zPosition="-8" valign="left" noWrap="1">
+    <convert type="XionHDFEventName">Name</convert>
+  </widget>
+  <widget backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" position="853,680" render="Label" size="400,30" source="ServiceEvent" transparent="1" zPosition="5" noWrap="1">
+    <convert type="XionHDFEventsInfo">PrimeTime,noDuration</convert>
+  </widget>
+  <widget source="session.VideoPicture" render="Pig" position="853,95" size="400,200" backgroundColor="transparent" zPosition="2" />
+  <panel name="template_menu_cs2_button" />
+  <panel name="template_colorkey_text" />
+</screen>

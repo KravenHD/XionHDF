@@ -1,0 +1,39 @@
+<!-- /* EMC SmallCover -->
+<screen name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">
+<eLabel text="Enhanced Movie Center" position="70,12" size="708,46" font="Regular2;34" foregroundColor="XionFont2" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
+  <widget name="list" position="49,102" size="755,512" itemHeight="30" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolProgressPos="50" CoolBarPos="35" CoolBarHPos="10" CoolBarSize="50,10" CoolBarSizeSa="50,10" CoolMoviePos="90" CoolMovieSize="500" CoolFolderSize="575" CoolDatePos="595" CoolDateWidth="105" CoolPiconPos="90" CoolPiconHPos="2" CoolPiconWidth="45" CoolPiconHeight="26" CoolMoviePiconPos="140" CoolMoviePiconSize="450" CoolTitleColor="1" CoolDateColor="1" CoolHighlightColor="0" DefaultColor="XionFont1" UnwatchedColor="XionFont1" WatchingColor="XionFont2" FinishedColor="green" RecordingColor="red" BackColor="XionBackground" BackColorSel="XionSelection" FrontColorSel="XionSelFont" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionFont1" scrollbarMode="showOnDemand" transparent="1" />
+  <widget source="Service" render="Label" position="49,70" size="541,28" font="Regular; 22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" valign="center" halign="left">
+	<convert type="XionHDFDiskSpace">path</convert>
+  </widget>
+  <widget source="Service" render="Label" position="595,70" size="110,28" font="Regular; 22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" valign="center" halign="right">
+	<convert type="XionHDFDiskSpace">free</convert>
+  </widget>
+  <widget source="Service" render="Label" position="710,70" size="120,28" font="Regular; 22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" valign="center" halign="left">
+	<convert type="XionHDFDiskSpace">size</convert>
+  </widget>
+  <widget name="wait" position="44,303" size="1198,50" zPosition="1" font="Regular; 32" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" halign="center" valign="center" />
+  <widget source="Service" render="Label" position="887,52" wrap="1" size="269,58" font="Regular; 24" halign="center" backgroundColor="XionBackground" transparent="1">
+    <convert type="EMCEventName">Name</convert>
+  </widget>
+  <widget source="Service" render="Label" position="888,163" size="269,40" font="Regular; 22" halign="center" backgroundColor="XionBackground" transparent="1">
+    <convert type="EMCMovieInfo">RecordServiceName</convert>
+  </widget>
+ <widget source="Service" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="888,219" size="379,429" font="Regular; 22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" halign="center" valign="top">
+    <convert type="XionHDFEventName">ExtendedDescription</convert>
+  </widget>
+  <widget source="Service" render="Label" position="888,123" size="269,30" font="Regular2; 21" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
+    <convert type="EMCServiceTime">StartTime</convert>
+    <convert type="EMCClockToText">Date</convert>
+  </widget>
+  <widget source="Service" render="Label" position="890,671" size="150,33" font="Regular2; 20" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
+    <convert type="EMCMovieInfo">FileSize</convert>
+  </widget>
+  <widget source="Service" render="Label" position="1114,671" size="150,33" font="Regular2; 20" halign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2">
+    <convert type="EMCServiceTime">Duration</convert>
+    <convert type="EMCClockToText">InMinutes</convert>
+  </widget>
+  <widget name="Cover" position="1167,52" size="100,151" zPosition="4" backgroundColor="XionBackground" alphatest="on" transparent="0" />
+  <panel name="template_emc2" />
+  <panel name="template_colorkey_text" />
+</screen>
+<!-- EMC SmallCover */-->

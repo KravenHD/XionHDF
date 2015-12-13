@@ -1,5 +1,32 @@
 
 <!-- plugins -->
+  <!-- ********** XionHDF-Setup ********** -->
+	<screen name="XionHDF" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="#00000000">
+		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="64,662" size="148,48" text="Cancel" transparent="1" />
+		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
+		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
+		<widget name="config" position="70,75" size="708,572" itemHeight="26" font="Regular;23" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00000000" />
+		<eLabel position="70,12" size="708,46" text="XionHDF - Konfigurationstool" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+		<eLabel position="847,200" size="368,2" backgroundColor="#00ffffff" />
+		<eLabel position="847,409" size="368,2" backgroundColor="#00ffffff" />
+		<eLabel position="845,200" size="2,211" backgroundColor="#00ffffff" />
+		<eLabel position="1215,200" size="2,211" backgroundColor="#00ffffff" />
+		<eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
+		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
+			<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="#00000000" transparent="1" valign="center" foregroundColor="#00ffffff">
+			<convert type="ClockToText">Default</convert>
+			</widget>
+		<eLabel position="830,80" size="402,46" text="XionHDF" font="Regular; 36" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+		<eLabel position="845,130" size="372,46" text="Version: 1.0" font="Regular; 30" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+		<ePixmap backgroundColor="#00000000" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/openhdf.png" position="847,202" size="368,207" zPosition="-9" />
+		<widget name="helperimage" position="847,202" size="368,207" zPosition="1" backgroundColor="#00000000" />
+		<widget source="help" render="Label" position="847,450" size="368,168" font="Regular2;20" backgroundColor="#00000000" foregroundColor="#00ffffff" halign="center" valign="top" transparent="1" />
+		<eLabel backgroundColor="#00ffffff" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="#00ffffff" position="0,656" size="1280,2" zPosition="2" />
+	</screen>
   <!-- ********** AutoBouquetsMaker ********** -->
   <!-- AutoBouquetsMaker -->
   <screen name="AutoBouquetsMaker" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
