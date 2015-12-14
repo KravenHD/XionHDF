@@ -1,8 +1,8 @@
 <!-- plugins -->
   <!-- ********** HDF-Toolbox ********** -->
-	<screen name="Fantastic" position="225,225" size="540,593" title="HDF Toolbox">
-		<widget name="menu" position="15,15" size="510,510" backgroundColor="XionBackground" font="Arial;23" scrollbarMode="showNever" enableWrapAround="1" />
-		<ePixmap position="15,503" size="570,86" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDF-Toolbox/banner.png" zPosition="1" alphatest="on" />
+	<screen name="Fantastic" position="125,125" size="400,353" title="HDF Toolbox">
+		<widget name="menu" position="15,15" size="380,320" font="Regular;14" scrollbarMode="showNever" enableWrapAround="1" />
+		<ePixmap position="15,303" size="570,86" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDF-Toolbox/banner.png" zPosition="1" alphatest="on" />
 	</screen>
 	<screen position="100,100" size="500,400" title="HDFreaks.cc" >
 	</screen>
@@ -10,7 +10,7 @@
 		<widget name="text" position="0,0" size="0,0" font="Regular;14" halign="center"/>
 	</screen>
 	<screen name="Hdf_Downloader" position="center,center" size="1200,600" title="Select your Download">
-		<widget name="downloadmenu" position="15,15" size="600,450" backgroundColor="XionBackground" font="Arial;23" scrollbarMode="showNever" />
+		<widget name="downloadmenu" position="15,15" size="600,450" font="Regular;14" scrollbarMode="showNever" />
 		<ePixmap name="white" position="630,23" zPosition="10" size="3,450" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDF-Toolbox/whiter.png" transparent="0" alphatest="on" />
 		<ePixmap name="1" position="1140,338" zPosition="1" size="60,60" pixmap="skin_default/buttons/key_1.png" transparent="1" alphatest="on" />
 		<widget name="key_1" position="825,341" zPosition="2" size="300,45" valign="right" halign="right" font="Regular;23" transparent="1" shadowColor="black" shadowOffset="-2,-2" />
