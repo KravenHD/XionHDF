@@ -1,42 +1,42 @@
 <!-- plugins -->
   <!-- ********** HDF-Toolbox ********** -->
-	<screen name="Fantastic" position="150,150" size="360,395" title="HDF Toolbox">
-		<widget name="menu" position="10,10" size="340,340" scrollbarMode="showOnDemand" enableWrapAround="1" />
-		<ePixmap position="10,335" size="380,57" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDF-Toolbox/banner.png" zPosition="1" alphatest="on" />
+	<screen name="Fantastic" position="225,225" size="540,593" title="HDF Toolbox">
+		<widget name="menu" position="15,15" size="510,510" backgroundColor="XionBackground" font="Arial;23" scrollbarMode="showNever" enableWrapAround="1" />
+		<ePixmap position="15,503" size="570,86" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDF-Toolbox/banner.png" zPosition="1" alphatest="on" />
 	</screen>
 	<screen position="100,100" size="500,400" title="HDFreaks.cc" >
 	</screen>
 	<screen name="FantasticLCD" position="0,0" size="0,0" title="LCD Text" >
 		<widget name="text" position="0,0" size="0,0" font="Regular;14" halign="center"/>
 	</screen>
-	<screen name="Hdf_Downloader" position="center,center" size="800,400" title="Select your Download">
-		<widget name="downloadmenu" position="10,10" size="400,300" scrollbarMode="showOnDemand" />
-		<ePixmap name="white" position="420,15" zPosition="10" size="2,300" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDF-Toolbox/whiter.png" transparent="0" alphatest="on" />
-		<ePixmap name="1" position="760,225" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_1.png" transparent="1" alphatest="on" />
-		<widget name="key_1" position="550,227" zPosition="2" size="200,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<ePixmap name="2" position="760,250" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_2.png" transparent="1" alphatest="on" />
-		<widget name="key_2" position="550,252" zPosition="2" size="200,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<ePixmap name="3" position="760,275" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_3.png" transparent="1" alphatest="on" />
-		<widget name="key_3" position="550,277" zPosition="2" size="200,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<ePixmap name="4" position="760,300" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_4.png" transparent="1" alphatest="on" />
-		<widget name="key_4" position="550,302" zPosition="2" size="200,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<ePixmap name="5" position="760,325" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_5.png" transparent="1" alphatest="on" />
-		<widget name="key_5" position="550,327" zPosition="2" size="200,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<ePixmap name="6" position="760,350" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_6.png" transparent="1" alphatest="on" />
-		<widget name="key_6" position="550,352" zPosition="2" size="200,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<ePixmap name="0" position="760,375" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_0.png" transparent="1" alphatest="on" />
-		<widget name="key_0" position="550,377" zPosition="2" size="200,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<ePixmap name="red" position="30,320" zPosition="1" size="140,40" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
-		<ePixmap name="green" position="200,320" zPosition="1" size="140,40" pixmap="skin_default/buttons/green.png" transparent="1" alphatest="on" />
-		<widget name="blue" position="370,320" zPosition="1" size="140,40" pixmap="skin_default/buttons/blue.png" transparent="1" alphatest="on" />
-		<widget name="key_red" position="30,320" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="key_green" position="200,320" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="key_blue" position="370,320" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<widget source="introduction" render="Label" position="0,370" size="560,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#25062748" transparent="1" />
-		<widget source="size" render="Label" position="500,15" size="100,30" zPosition="10" font="Regular;15" halign="left" valign="top" backgroundColor="#25062748" transparent="1" />
-		<widget source="size2" render="Label" position="430,10" size="100,30" zPosition="10" font="Regular;21" halign="left" valign="top" backgroundColor="#25062748" transparent="1" />
-		<widget source="description" render="Label" position="450,80" size="330,150" zPosition="10" font="Regular;15" halign="left" valign="top" backgroundColor="#25062748" transparent="1" />
-		<widget source="description2" render="Label" position="430,50" size="150,30" zPosition="10" font="Regular;21" halign="left" valign="top" backgroundColor="#25062748" transparent="1" />
+	<screen name="Hdf_Downloader" position="center,center" size="1200,600" title="Select your Download">
+		<widget name="downloadmenu" position="15,15" size="600,450" backgroundColor="XionBackground" font="Arial;23" scrollbarMode="showNever" />
+		<ePixmap name="white" position="630,23" zPosition="10" size="3,450" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDF-Toolbox/whiter.png" transparent="0" alphatest="on" />
+		<ePixmap name="1" position="1140,338" zPosition="1" size="60,60" pixmap="skin_default/buttons/key_1.png" transparent="1" alphatest="on" />
+		<widget name="key_1" position="825,341" zPosition="2" size="300,45" valign="right" halign="right" font="Regular;23" transparent="1" shadowColor="black" shadowOffset="-2,-2" />
+		<ePixmap name="2" position="1140,375" zPosition="1" size="60,60" pixmap="skin_default/buttons/key_2.png" transparent="1" alphatest="on" />
+		<widget name="key_2" position="825,378" zPosition="2" size="300,45" valign="right" halign="right" font="Regular;23" transparent="1" shadowColor="black" shadowOffset="-2,-2" />
+		<ePixmap name="3" position="1140,413" zPosition="1" size="60,60" pixmap="skin_default/buttons/key_3.png" transparent="1" alphatest="on" />
+		<widget name="key_3" position="825,416" zPosition="2" size="300,45" valign="right" halign="right" font="Regular;23" transparent="1" shadowColor="black" shadowOffset="-2,-2" />
+		<ePixmap name="4" position="1140,450" zPosition="1" size="60,60" pixmap="skin_default/buttons/key_4.png" transparent="1" alphatest="on" />
+		<widget name="key_4" position="825,453" zPosition="2" size="300,45" valign="right" halign="right" font="Regular;23" transparent="1" shadowColor="black" shadowOffset="-2,-2" />
+		<ePixmap name="5" position="1140,488" zPosition="1" size="60,60" pixmap="skin_default/buttons/key_5.png" transparent="1" alphatest="on" />
+		<widget name="key_5" position="825,491" zPosition="2" size="300,45" valign="right" halign="right" font="Regular;23" transparent="1" shadowColor="black" shadowOffset="-2,-2" />
+		<ePixmap name="6" position="1140,525" zPosition="1" size="60,60" pixmap="skin_default/buttons/key_6.png" transparent="1" alphatest="on" />
+		<widget name="key_6" position="825,528" zPosition="2" size="300,45" valign="right" halign="right" font="Regular;23" transparent="1" shadowColor="black" shadowOffset="-2,-2" />
+		<ePixmap name="0" position="1140,563" zPosition="1" size="60,60" pixmap="skin_default/buttons/key_0.png" transparent="1" alphatest="on" />
+		<widget name="key_0" position="825,566" zPosition="2" size="300,45" valign="right" halign="right" font="Regular;23" transparent="1" shadowColor="black" shadowOffset="-2,-2" />
+		<ePixmap name="red" position="40,490" zPosition="1" size="20,70" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
+		<ePixmap name="green" position="300,490" zPosition="1" size="20,70" pixmap="skin_default/buttons/green.png" transparent="1" alphatest="on" />
+		<widget name="blue" position="555,480" zPosition="1" size="210,60" pixmap="skin_default/buttons/blue.png" transparent="1" alphatest="on" />
+		<widget name="key_red" position="45,480" zPosition="2" size="210,60" valign="center" halign="center" font="Regular;32" transparent="1" shadowColor="black" shadowOffset="-2,-2" />
+		<widget name="key_green" position="300,480" zPosition="2" size="210,60" valign="center" halign="center" font="Regular;32" transparent="1" shadowColor="black" shadowOffset="-2,-2" />
+		<widget name="key_blue" position="555,480" zPosition="2" size="210,60" valign="center" halign="center" font="Regular;32" transparent="1" shadowColor="black" shadowOffset="-2,-2" />
+		<widget source="introduction" render="Label" position="0,555" size="840,45" zPosition="10" font="Regular;32" halign="center" valign="center" backgroundColor="#25062748" transparent="1" />
+		<widget source="size" render="Label" position="750,23" size="150,45" zPosition="10" font="Regular;23" halign="left" valign="top" backgroundColor="#25062748" transparent="1" />
+		<widget source="size2" render="Label" position="645,15" size="150,45" zPosition="10" font="Regular;32" halign="left" valign="top" backgroundColor="#25062748" transparent="1" />
+		<widget source="description" render="Label" position="675,120" size="495,225" zPosition="10" font="Regular;23" halign="left" valign="top" backgroundColor="#25062748" transparent="1" />
+		<widget source="description2" render="Label" position="645,75" size="225,45" zPosition="10" font="Regular;32" halign="left" valign="top" backgroundColor="#25062748" transparent="1" />
 	</screen>
 	<screen name="downloadfile" position="center,center" size="300,300" title="Download File" >
 		<widget name="info" position="0,5" size="290,200" font="Regular;18" transparent="1" backgroundColor="#415a80" halign="center" valign="center" />
