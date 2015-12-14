@@ -438,7 +438,7 @@ else:
 SkinModeList = []
 SkinModeList.append(("1", _("HD Skin 1280 x 720")))
 if bmem > 180:
-   SkinModeList.append(("2", _("FullHD Skin 1920 x 1080")))
+   SkinModeList.append(("2", _("FullHD Skin 1920 x 1080 [Beta]")))
 #if bmem > 440:
 #   if getBoxType() == 'vusolo4k':
 #      SkinModeList.append(("3", _("UHD Skin 3840 x 2160")))
