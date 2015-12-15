@@ -188,6 +188,10 @@ config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showNever", choices 
 				("showOnDemand", _("On")),
 				("showNever", _("Off"))
 				])
+				
+config.plugins.XionHDF.FontStyleHeight_1 = ConfigSelectionNumber(default = 95, stepwidth = 1, min = 0, max = 120, wraparound = True)
+config.plugins.XionHDF.FontStyleHeight_2 = ConfigSelectionNumber(default = 95, stepwidth = 1, min = 0, max = 120, wraparound = True)
+
 ################# bmeminfo ##############################
 if fileExists('/proc/bmeminfo'):
    entrie = os.popen('cat /proc/bmeminfo').read()
@@ -304,6 +308,8 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Secondary font"), config.plugins.XionHDF.Font2, _("Please select the color of secundary font inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection font"), config.plugins.XionHDF.SelectionFont, _("Please select the color of listselection font inside the skin.")))
 		list.append(getConfigListEntry(_("Button text"), config.plugins.XionHDF.ButtonText, _("Please select the color of button text inside the skin.")))
+		list.append(getConfigListEntry(_("font normal height in %"), config.plugins.XionHDF.FontStyleHeight_1, 'fontstyleheight'))
+		list.append(getConfigListEntry(_("font bold height in %"), config.plugins.XionHDF.FontStyleHeight_2, 'fontstyleheight'))
 		
 		self["config"].list = list
 		self["config"].l.setList(list)
@@ -468,6 +474,10 @@ class XionHDF(ConfigListScreen, Screen):
 		try:
 			#global tag search and replace in all skin elements
 			self.skinSearchAndReplace = []
+			self.FontStyleHeight_1 = config.plugins.XionHDF.FontStyleHeight_1.value
+			self.skinSearchAndReplace.append(['<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="95" />', '<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="%s" />' % str(self.FontStyleHeight_1)])
+			self.FontStyleHeight_2 = config.plugins.XionHDF.FontStyleHeight_2.value
+			self.skinSearchAndReplace.append(['<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="95" />', '<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="%s" />' % str(self.FontStyleHeight_2)])
 			self.skinSearchAndReplace.append(['name="XionBackground" value="#00', 'name="XionBackground" value="#' + config.plugins.XionHDF.BackgroundColorTrans.value])
 			self.skinSearchAndReplace.append(['name="XionSelection" value="#000050EF', 'name="XionSelection" value="#' + config.plugins.XionHDF.SelectionBackground.value])
 			self.skinSearchAndReplace.append(['name="XionFont1" value="#00ffffff', 'name="XionFont1" value="#' + config.plugins.XionHDF.Font1.value])
