@@ -632,3 +632,15 @@ msgstr "Diese Option ändert die Ansicht der Kanalliste."
 
 msgid "This option changes the view of cover inside from EnhancedMovieCenter."
 msgstr "Diese Option ändert die Ansicht und Größe der Cover innerhalb vom EnhancedMovieCenter."
+
+msgid "Font normal height in %"
+msgstr "Schriftgröße der normalen Schriftart in %"
+
+msgid "This option changes the height of normal font."
+msgstr "Diese Option ändert die Größe für die normale Schriftart."
+
+msgid "Font bold height in %"
+msgstr "Schriftgröße der dicken Schriftart in %"
+
+msgid "This option changes the height of bold font."
+msgstr "Diese Option ändert die Größe für die dicke Schriftart."
