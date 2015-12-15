@@ -81,279 +81,57 @@ config.plugins.XionHDF.BackgroundColorTrans = ConfigSelection(default="1c", choi
 				("6c", _("Medium")),
 				("8c", _("High"))
 				])
+ColorList = []				
+ColorList.append(("00F0A30A", _("Amber")))
+ColorList.append(("00B27708", _("Amber dark")))
+ColorList.append(("001B1775", _("Blue")))
+ColorList.append(("000E0C3F", _("Blue dark")))
+ColorList.append(("007D5929", _("Brown")))
+ColorList.append(("003F2D15", _("Brown dark")))
+ColorList.append(("000050EF", _("Cobalt")))
+ColorList.append(("00001F59", _("Cobalt dark")))
+ColorList.append(("001BA1E2", _("Cyan")))
+ColorList.append(("000F5B7F", _("Cyan dark")))
+ColorList.append(("00FFEA04", _("Yellow")))
+ColorList.append(("00999999", _("Grey")))
+ColorList.append(("003F3F3F", _("Grey dark")))
+ColorList.append(("0070AD11", _("Green")))
+ColorList.append(("00213305", _("Green dark")))
+ColorList.append(("001DFF00", _("Neon green")))
+ColorList.append(("00FFFF00", _("Neon yellow")))
+ColorList.append(("006D8764", _("Olive")))
+ColorList.append(("00313D2D", _("Olive dark")))
+ColorList.append(("00C3461B", _("Orange")))
+ColorList.append(("00892E13", _("Orange dark")))
+ColorList.append(("00F472D0", _("Pink")))
+ColorList.append(("00723562", _("Pink dark")))
+ColorList.append(("00E51400", _("Red")))
+ColorList.append(("00330400", _("Red dark")))
+ColorList.append(("00000000", _("Black")))
+ColorList.append(("00647687", _("Steel")))
+ColorList.append(("00262C33", _("Steel dark")))
+ColorList.append(("006C0AAB", _("Violet")))
+ColorList.append(("001F0333", _("Violet dark")))
+ColorList.append(("00ffffff", _("White")))
+
+config.plugins.XionHDF.SelectionBackground = ConfigSelection(default="00C3461B", choices = ColorList)
 				
-config.plugins.XionHDF.SelectionBackground = ConfigSelection(default="00C3461B", choices = [
-				("00F0A30A", _("Amber")),
-				("00B27708", _("Amber dark")),
-				("001B1775", _("Blue")),
-				("000E0C3F", _("Blue dark")),
-				("007D5929", _("Brown")),
-				("003F2D15", _("Brown dark")),
-				("000050EF", _("Cobalt")),
-				("00001F59", _("Cobalt dark")),
-				("001BA1E2", _("Cyan")),
-				("000F5B7F", _("Cyan dark")),
-				("00FFEA04", _("Yellow")),
-				("00999999", _("Grey")),
-				("003F3F3F", _("Grey dark")),
-				("0070AD11", _("Green")),
-				("00213305", _("Green dark")),
-				("001DFF00", _("Neon green")),
-				("00FFFF00", _("Neon yellow")),
-				("006D8764", _("Olive")),
-				("00313D2D", _("Olive dark")),
-				("00C3461B", _("Orange")),
-				("00892E13", _("Orange dark")),
-				("00F472D0", _("Pink")),
-				("00723562", _("Pink dark")),
-				("00E51400", _("Red")),
-				("00330400", _("Red dark")),
-				("00000000", _("Black")),
-				("00647687", _("Steel")),
-				("00262C33", _("Steel dark")),
-				("006C0AAB", _("Violet")),
-				("001F0333", _("Violet dark")),
-				("00ffffff", _("White"))
-				])
+config.plugins.XionHDF.Font1 = ConfigSelection(default="00ffffff", choices = ColorList)
 				
-config.plugins.XionHDF.Font1 = ConfigSelection(default="00ffffff", choices = [
-				("00F0A30A", _("Amber")),
-				("00B27708", _("Amber dark")),
-				("001B1775", _("Blue")),
-				("000E0C3F", _("Blue dark")),
-				("007D5929", _("Brown")),
-				("003F2D15", _("Brown dark")),
-				("000050EF", _("Cobalt")),
-				("00001F59", _("Cobalt dark")),
-				("001BA1E2", _("Cyan")),
-				("000F5B7F", _("Cyan dark")),
-				("00FFEA04", _("Yellow")),
-				("00999999", _("Grey")),
-				("003F3F3F", _("Grey dark")),
-				("0070AD11", _("Green")),
-				("00213305", _("Green dark")),
-				("001DFF00", _("Neon green")),
-				("00FFFF00", _("Neon yellow")),
-				("006D8764", _("Olive")),
-				("00313D2D", _("Olive dark")),
-				("00C3461B", _("Orange")),
-				("00892E13", _("Orange dark")),
-				("00F472D0", _("Pink")),
-				("00723562", _("Pink dark")),
-				("00E51400", _("Red")),
-				("00330400", _("Red dark")),
-				("00000000", _("Black")),
-				("00647687", _("Steel")),
-				("00262C33", _("Steel dark")),
-				("006C0AAB", _("Violet")),
-				("001F0333", _("Violet dark")),
-				("00ffffff", _("White"))
-				])
+config.plugins.XionHDF.Font2 = ConfigSelection(default="00ffffff", choices = ColorList)
 				
-config.plugins.XionHDF.Font2 = ConfigSelection(default="00ffffff", choices = [
-				("00F0A30A", _("Amber")),
-				("00B27708", _("Amber dark")),
-				("001B1775", _("Blue")),
-				("000E0C3F", _("Blue dark")),
-				("007D5929", _("Brown")),
-				("003F2D15", _("Brown dark")),
-				("000050EF", _("Cobalt")),
-				("00001F59", _("Cobalt dark")),
-				("001BA1E2", _("Cyan")),
-				("000F5B7F", _("Cyan dark")),
-				("00FFEA04", _("Yellow")),
-				("00999999", _("Grey")),
-				("003F3F3F", _("Grey dark")),
-				("0070AD11", _("Green")),
-				("00213305", _("Green dark")),
-				("001DFF00", _("Neon green")),
-				("00FFFF00", _("Neon yellow")),
-				("006D8764", _("Olive")),
-				("00313D2D", _("Olive dark")),
-				("00C3461B", _("Orange")),
-				("00892E13", _("Orange dark")),
-				("00F472D0", _("Pink")),
-				("00723562", _("Pink dark")),
-				("00E51400", _("Red")),
-				("00330400", _("Red dark")),
-				("00000000", _("Black")),
-				("00647687", _("Steel")),
-				("00262C33", _("Steel dark")),
-				("006C0AAB", _("Violet")),
-				("001F0333", _("Violet dark")),
-				("00ffffff", _("White"))
-				])
+config.plugins.XionHDF.SelectionFont = ConfigSelection(default="00ffffff", choices = ColorList)
 				
-config.plugins.XionHDF.SelectionFont = ConfigSelection(default="00ffffff", choices = [
-				("00F0A30A", _("Amber")),
-				("00B27708", _("Amber dark")),
-				("001B1775", _("Blue")),
-				("000E0C3F", _("Blue dark")),
-				("007D5929", _("Brown")),
-				("003F2D15", _("Brown dark")),
-				("000050EF", _("Cobalt")),
-				("00001F59", _("Cobalt dark")),
-				("001BA1E2", _("Cyan")),
-				("000F5B7F", _("Cyan dark")),
-				("00FFEA04", _("Yellow")),
-				("00999999", _("Grey")),
-				("003F3F3F", _("Grey dark")),
-				("0070AD11", _("Green")),
-				("00213305", _("Green dark")),
-				("001DFF00", _("Neon green")),
-				("00FFFF00", _("Neon yellow")),
-				("006D8764", _("Olive")),
-				("00313D2D", _("Olive dark")),
-				("00C3461B", _("Orange")),
-				("00892E13", _("Orange dark")),
-				("00F472D0", _("Pink")),
-				("00723562", _("Pink dark")),
-				("00E51400", _("Red")),
-				("00330400", _("Red dark")),
-				("00000000", _("Black")),
-				("00647687", _("Steel")),
-				("00262C33", _("Steel dark")),
-				("006C0AAB", _("Violet")),
-				("001F0333", _("Violet dark")),
-				("00ffffff", _("White"))
-				])
+config.plugins.XionHDF.ButtonText = ConfigSelection(default="00ffffff", choices = ColorList)
 				
-config.plugins.XionHDF.ButtonText = ConfigSelection(default="00ffffff", choices = [
-				("00F0A30A", _("Amber")),
-				("00B27708", _("Amber dark")),
-				("001B1775", _("Blue")),
-				("000E0C3F", _("Blue dark")),
-				("007D5929", _("Brown")),
-				("003F2D15", _("Brown dark")),
-				("000050EF", _("Cobalt")),
-				("00001F59", _("Cobalt dark")),
-				("001BA1E2", _("Cyan")),
-				("000F5B7F", _("Cyan dark")),
-				("00FFEA04", _("Yellow")),
-				("00999999", _("Grey")),
-				("003F3F3F", _("Grey dark")),
-				("0070AD11", _("Green")),
-				("00213305", _("Green dark")),
-				("001DFF00", _("Neon green")),
-				("00FFFF00", _("Neon yellow")),
-				("006D8764", _("Olive")),
-				("00313D2D", _("Olive dark")),
-				("00C3461B", _("Orange")),
-				("00892E13", _("Orange dark")),
-				("00F472D0", _("Pink")),
-				("00723562", _("Pink dark")),
-				("00E51400", _("Red")),
-				("00330400", _("Red dark")),
-				("00000000", _("Black")),
-				("00647687", _("Steel")),
-				("00262C33", _("Steel dark")),
-				("006C0AAB", _("Violet")),
-				("001F0333", _("Violet dark")),
-				("00ffffff", _("White"))
-				])
+config.plugins.XionHDF.Progress = ConfigSelection(default="00C3461B", choices = ColorList)
 				
-config.plugins.XionHDF.Progress = ConfigSelection(default="00C3461B", choices = [
-				("00F0A30A", _("Amber")),
-				("00B27708", _("Amber dark")),
-				("001B1775", _("Blue")),
-				("000E0C3F", _("Blue dark")),
-				("007D5929", _("Brown")),
-				("003F2D15", _("Brown dark")),
-				("000050EF", _("Cobalt")),
-				("00001F59", _("Cobalt dark")),
-				("001BA1E2", _("Cyan")),
-				("000F5B7F", _("Cyan dark")),
-				("00FFEA04", _("Yellow")),
-				("00999999", _("Grey")),
-				("003F3F3F", _("Grey dark")),
-				("0070AD11", _("Green")),
-				("00213305", _("Green dark")),
-				("001DFF00", _("Neon green")),
-				("00FFFF00", _("Neon yellow")),
-				("006D8764", _("Olive")),
-				("00313D2D", _("Olive dark")),
-				("00C3461B", _("Orange")),
-				("00892E13", _("Orange dark")),
-				("00F472D0", _("Pink")),
-				("00723562", _("Pink dark")),
-				("00E51400", _("Red")),
-				("00330400", _("Red dark")),
-				("00000000", _("Black")),
-				("00647687", _("Steel")),
-				("00262C33", _("Steel dark")),
-				("006C0AAB", _("Violet")),
-				("001F0333", _("Violet dark")),
-				("00ffffff", _("White"))
-				])
+config.plugins.XionHDF.Line = ConfigSelection(default="00ffffff", choices = ColorList)
 				
-config.plugins.XionHDF.Line = ConfigSelection(default="00ffffff", choices = [
-				("00F0A30A", _("Amber")),
-				("00B27708", _("Amber dark")),
-				("001B1775", _("Blue")),
-				("000E0C3F", _("Blue dark")),
-				("007D5929", _("Brown")),
-				("003F2D15", _("Brown dark")),
-				("000050EF", _("Cobalt")),
-				("00001F59", _("Cobalt dark")),
-				("001BA1E2", _("Cyan")),
-				("000F5B7F", _("Cyan dark")),
-				("00FFEA04", _("Yellow")),
-				("00999999", _("Grey")),
-				("003F3F3F", _("Grey dark")),
-				("0070AD11", _("Green")),
-				("00213305", _("Green dark")),
-				("001DFF00", _("Neon green")),
-				("00FFFF00", _("Neon yellow")),
-				("006D8764", _("Olive")),
-				("00313D2D", _("Olive dark")),
-				("00C3461B", _("Orange")),
-				("00892E13", _("Orange dark")),
-				("00F472D0", _("Pink")),
-				("00723562", _("Pink dark")),
-				("00E51400", _("Red")),
-				("00330400", _("Red dark")),
-				("00000000", _("Black")),
-				("00647687", _("Steel")),
-				("00262C33", _("Steel dark")),
-				("006C0AAB", _("Violet")),
-				("001F0333", _("Violet dark")),
-				("00ffffff", _("White"))
-				])
+SelectionBorderList = [("none", _("Off"))]
+SelectionBorderList = ColorList + SelectionBorderList
+config.plugins.XionHDF.SelectionBorder = ConfigSelection(default="none", choices = SelectionBorderList)
 				
-config.plugins.XionHDF.SelectionBorder = ConfigSelection(default="none", choices = [
-				("none", _("Off")),
-				("00F0A30A", _("Amber")),
-				("00B27708", _("Amber dark")),
-				("001B1775", _("Blue")),
-				("000E0C3F", _("Blue dark")),
-				("007D5929", _("Brown")),
-				("003F2D15", _("Brown dark")),
-				("000050EF", _("Cobalt")),
-				("00001F59", _("Cobalt dark")),
-				("001BA1E2", _("Cyan")),
-				("000F5B7F", _("Cyan dark")),
-				("00FFEA04", _("Yellow")),
-				("00999999", _("Grey")),
-				("003F3F3F", _("Grey dark")),
-				("0070AD11", _("Green")),
-				("00213305", _("Green dark")),
-				("001DFF00", _("Neon green")),
-				("00FFFF00", _("Neon yellow")),
-				("006D8764", _("Olive")),
-				("00313D2D", _("Olive dark")),
-				("00C3461B", _("Orange")),
-				("00892E13", _("Orange dark")),
-				("00F472D0", _("Pink")),
-				("00723562", _("Pink dark")),
-				("00E51400", _("Red")),
-				("00330400", _("Red dark")),
-				("00000000", _("Black")),
-				("00647687", _("Steel")),
-				("00262C33", _("Steel dark")),
-				("006C0AAB", _("Violet")),
-				("001F0333", _("Violet dark")),
-				("00ffffff", _("White"))
-				])
 				
 config.plugins.XionHDF.EMCStyle = ConfigSelection(default="emc-nocover", choices = [
 				("emc-nocover", _("No cover")),
