@@ -28,7 +28,7 @@ from Components.Sources.StaticText import StaticText
 from Components.Label import Label
 from Components.Language import language
 from os import environ, listdir, remove, rename, system
-from shutil import move
+from shutil import move, copy, rmtree, copytree
 from skin import parseColor
 from Components.Pixmap import Pixmap
 from Components.Label import Label
@@ -506,7 +506,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list = []
 		list.append(getConfigListEntry(_("_____________________________ Styles __________________________________"), config.plugins.XionHDF.System, _(" ")))
 		list.append(getConfigListEntry(_("Skinmode"), config.plugins.XionHDF.skin_mode, _("This option set the resolution of skin.")))
-                list.append(getConfigListEntry(_("Running text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
+		list.append(getConfigListEntry(_("Running text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
 		list.append(getConfigListEntry(_("Scrollbars"), config.plugins.XionHDF.ScrollBar, _("This option activates the scrollbars for some parts of skin.")))
 		list.append(getConfigListEntry(_("Background transparency"), config.plugins.XionHDF.BackgroundColorTrans, _("This option activate/deactive/change the background transparency of skin.")))
 		list.append(getConfigListEntry(_("ChannelSelection"), config.plugins.XionHDF.ChannelSelectionStyle, _("This option changes the view of channellist.")))
@@ -663,19 +663,21 @@ class XionHDF(ConfigListScreen, Screen):
 
 	def save(self):
 		self.skin_mode = config.plugins.XionHDF.skin_mode.value
-		if self.skin_mode == '1':
-			self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/hd/"
-			os.system("cp /usr/share/enigma2/XionHDF/infobar/ibar_hd.png /usr/share/enigma2/XionHDF/ibar.png")
-			os.system("cp /usr/share/enigma2/XionHDF/infobar/ibaro_hd.png /usr/share/enigma2/XionHDF/ibaro.png")
-			os.system("cp /usr/share/enigma2/XionHDF/infobar/ibaror_hd.png /usr/share/enigma2/XionHDF/ibaror.png")		
+		if os.path.exists("/usr/share/enigma2/XionHDF/buttons"):
+                        rmtree("/usr/share/enigma2/XionHDF/buttons")
+                if self.skin_mode == '1':
+			self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
+			#os.system("cp /usr/share/enigma2/XionHDF/buttonsets/hd/buttons /usr/share/enigma2/XionHDF")
+			copytree('/usr/share/enigma2/XionHDF/buttonsets/hd/buttons', '/usr/share/enigma2/XionHDF/buttons', symlinks=False, ignore=None)
+                        os.system("cp /usr/share/enigma2/XionHDF/buttonsets/hd/infobar/*.* /usr/share/enigma2/XionHDF")		
 		else:
 			pass
 
 		if self.skin_mode == '2':
-			self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/fullhd/"
-			os.system("cp /usr/share/enigma2/XionHDF/infobar/ibar_fhd.png /usr/share/enigma2/XionHDF/ibar.png")
-			os.system("cp /usr/share/enigma2/XionHDF/infobar/ibaro_fhd.png /usr/share/enigma2/XionHDF/ibaro.png")
-			os.system("cp /usr/share/enigma2/XionHDF/infobar/ibaror_fhd.png /usr/share/enigma2/XionHDF/ibaror.png")
+			self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
+			#os.system("cp /usr/share/enigma2/XionHDF/buttonsets/fhd/buttons /usr/share/enigma2/XionHDF")
+			copytree('/usr/share/enigma2/XionHDF/buttonsets/fhd/buttons', '/usr/share/enigma2/XionHDF/buttons', symlinks=False, ignore=None)
+                        os.system("cp /usr/share/enigma2/XionHDF/buttonsets/fhd/infobar/*.* /usr/share/enigma2/XionHDF")	
 		else:
 			pass
 
