@@ -230,7 +230,7 @@ if bmem > 180:
    #SkinModeList.append(("6", _("8K Skin 8192 x 4320")))
 #SkinModeList.append(("7", _("User Selection")))
 
-config.plugins.XionHDF.skin_mode = ConfigSelection(default="1", choices = SkinModeList)				
+config.plugins.XionHDF.skin_mode = ConfigSelection(default="1", choices = SkinModeList)
 #######################################################################
 
 class XionHDF(ConfigListScreen, Screen):
@@ -286,7 +286,7 @@ class XionHDF(ConfigListScreen, Screen):
 
 	def mylist(self):
 		list = []
-		list.append(getConfigListEntry(_("_____________________________ Styles __________________________________"), config.plugins.XionHDF.System, _(" ")))
+		#list.append(getConfigListEntry(_("_____________________________ Styles __________________________________"), config.plugins.XionHDF.System, _(" ")))
 		list.append(getConfigListEntry(_("Skinmode"), config.plugins.XionHDF.skin_mode, _("This option set the resolution of skin.")))
 		list.append(getConfigListEntry(_("Running text"), config.plugins.XionHDF.RunningText, _("This option activates the running text for some parts of skin.")))
 		list.append(getConfigListEntry(_("Scrollbars"), config.plugins.XionHDF.ScrollBar, _("This option activates the scrollbars for some parts of skin.")))
@@ -299,7 +299,7 @@ class XionHDF(ConfigListScreen, Screen):
 		#list.append(getConfigListEntry(_("_____________________________ Weather _________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
 		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your personal WeatherID. Please visit the website metrixweather.open-store.net to find your location.")))
-		list.append(getConfigListEntry(_("_____________________________ Colors __________________________________"), ))
+		#list.append(getConfigListEntry(_("_____________________________ Colors __________________________________"), ))
 		list.append(getConfigListEntry(_("Line"), config.plugins.XionHDF.Line, _("Please select the color of lines inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection"), config.plugins.XionHDF.SelectionBackground, _("Please select the color of listselection inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection border"), config.plugins.XionHDF.SelectionBorder, _("Please select the bordercolor of selection bars or deactivate borders completely.")))
@@ -308,8 +308,8 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Secondary font"), config.plugins.XionHDF.Font2, _("Please select the color of secundary font inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection font"), config.plugins.XionHDF.SelectionFont, _("Please select the color of listselection font inside the skin.")))
 		list.append(getConfigListEntry(_("Button text"), config.plugins.XionHDF.ButtonText, _("Please select the color of button text inside the skin.")))
-		list.append(getConfigListEntry(_("font normal height in %"), config.plugins.XionHDF.FontStyleHeight_1, 'fontstyleheight'))
-		list.append(getConfigListEntry(_("font bold height in %"), config.plugins.XionHDF.FontStyleHeight_2, 'fontstyleheight'))
+		list.append(getConfigListEntry(_("Font normal height in %"), config.plugins.XionHDF.FontStyleHeight_1, _("This option changes the height of normal font.")))
+		list.append(getConfigListEntry(_("Font bold height in %"), config.plugins.XionHDF.FontStyleHeight_2, _("This option changes the height of bold font.")))
 		
 		self["config"].list = list
 		self["config"].l.setList(list)

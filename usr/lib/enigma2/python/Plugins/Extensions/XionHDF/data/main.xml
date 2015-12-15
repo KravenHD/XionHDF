@@ -2822,5 +2822,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <panel name="template_menu_full_button" />
   <panel name="template_colorkey_text_source" />
 </screen>
+  <!-- Enigma Restart -->
+<screen name="QuitMainloopScreen" position="fill" backgroundColor="XionBackground" flags="wfNoBorder">
+	<widget name="text" position="center,590" size="720,100" font="Regular;25" halign="center" transparent="1" />
+</screen>
   <!-- main-custom-openhdf */ -->
   <!-- Main */ -->
