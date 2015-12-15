@@ -2756,26 +2756,26 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 </screen>
   <!-- DownloadMenu -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="Hdf_Downloader" position="0,0" size="1280,720" title="Select your Download">
-  <widget name="downloadmenu" position="68,115" size="400,300" scrollbarMode="showOnDemand" transparent="1" />
+  <widget name="downloadmenu" position="68,115" size="400,290" itemHeight="26" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" />
   <widget source="introduction" render="Label" position="12,438" size="560,30" zPosition="10" font="Regular;21" foregroundColor="XionFont1" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
-  <widget source="size" render="Label" position="555,121" size="100,30" zPosition="10" font="Regular;15" foregroundColor="XionFont1" halign="left" valign="top" backgroundColor="XionBackground" transparent="1" />
-  <widget source="size2" render="Label" position="485,116" size="100,30" zPosition="10" font="Regular;21" foregroundColor="XionFont1" halign="left" valign="top" backgroundColor="XionBackground" transparent="1" />
-  <widget source="description" render="Label" position="485,210" size="330,150" zPosition="10" font="Regular;15" foregroundColor="XionFont1" halign="left" valign="top" backgroundColor="XionBackground" transparent="1" />
-  <widget source="description2" render="Label" position="485,168" size="150,30" zPosition="10" font="Regular;21" foregroundColor="XionFont1" halign="left" valign="top" backgroundColor="XionBackground" transparent="1" />
-  <ePixmap name="1" position="1058,385" zPosition="1" size="35,25" pixmap="skin_default/buttons/key_1.png" transparent="1" alphatest="on" />
-  <widget name="key_1" position="853,385" zPosition="2" size="200,25" valign="center" halign="right" font="Regular;15" foregroundColor="XionFont1" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-  <ePixmap name="2" position="1058,410" zPosition="1" size="35,25" pixmap="skin_default/buttons/key_2.png" transparent="1" alphatest="on" />
-  <widget name="key_2" position="853,410" zPosition="2" size="200,25" valign="center" halign="right" font="Regular;15" foregroundColor="XionFont1" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-  <ePixmap name="3" position="1058,435" zPosition="1" size="35,25" pixmap="skin_default/buttons/key_3.png" transparent="1" alphatest="on" />
-  <widget name="key_3" position="853,435" zPosition="2" size="200,25" valign="center" halign="right" font="Regular;15" foregroundColor="XionFont1" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-  <ePixmap name="4" position="1058,460" zPosition="1" size="35,25" pixmap="skin_default/buttons/key_4.png" transparent="1" alphatest="on" />
-  <widget name="key_4" position="853,460" zPosition="2" size="200,25" valign="center" halign="right" font="Regular;15" foregroundColor="XionFont1" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-  <ePixmap name="5" position="1058,485" zPosition="1" size="35,25" pixmap="skin_default/buttons/key_5.png" transparent="1" alphatest="on" />
-  <widget name="key_5" position="853,485" zPosition="2" size="200,25" valign="center" halign="right" font="Regular;15" foregroundColor="XionFont1" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-  <ePixmap name="6" position="1058,510" zPosition="1" size="35,25" pixmap="skin_default/buttons/key_6.png" transparent="1" alphatest="on" />
-  <widget name="key_6" position="853,510" zPosition="2" size="200,25" valign="center" halign="right" font="Regular;15" foregroundColor="XionFont1" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-  <ePixmap name="0" position="1058,535" zPosition="1" size="35,25" pixmap="skin_default/buttons/key_0.png" transparent="1" alphatest="on" />
-  <widget name="key_0" position="853,535" zPosition="2" size="200,25" valign="center" halign="right" font="Regular;15" foregroundColor="XionFont1" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+  <widget source="size" render="Label" position="545,116" size="100,30" zPosition="10" font="Regular;22" foregroundColor="XionFont1" halign="left" valign="top" backgroundColor="XionBackground" transparent="1" />
+  <widget source="size2" render="Label" position="485,116" size="100,30" zPosition="10" font="Regular;22" foregroundColor="XionFont1" halign="left" valign="top" backgroundColor="XionBackground" transparent="1" />
+  <widget source="description" render="Label" position="485,210" size="330,200" zPosition="10" font="Regular;20" foregroundColor="XionFont1" halign="left" valign="top" backgroundColor="XionBackground" transparent="1" />
+  <widget source="description2" render="Label" position="485,168" size="150,30" zPosition="10" font="Regular;22" foregroundColor="XionFont1" halign="left" valign="top" backgroundColor="XionBackground" transparent="1" />
+  <ePixmap name="1" position="1058,385" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_1.png" transparent="1" alphatest="on" />
+  <widget name="key_1" position="753,386" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+  <ePixmap name="2" position="1058,410" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_2.png" transparent="1" alphatest="on" />
+  <widget name="key_2" position="753,411" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+  <ePixmap name="3" position="1058,435" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_3.png" transparent="1" alphatest="on" />
+  <widget name="key_3" position="753,435" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+  <ePixmap name="4" position="1058,460" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_4.png" transparent="1" alphatest="on" />
+  <widget name="key_4" position="753,461" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+  <ePixmap name="5" position="1058,485" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_5.png" transparent="1" alphatest="on" />
+  <widget name="key_5" position="753,486" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+  <ePixmap name="6" position="1058,510" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_6.png" transparent="1" alphatest="on" />
+  <widget name="key_6" position="753,511" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+  <ePixmap name="0" position="1058,535" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_0.png" transparent="1" alphatest="on" />
+  <widget name="key_0" position="753,536" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
   <panel name="template_menu_left_button" /> 
   <panel name="template_colorkey_text_source" />
 </screen>
@@ -2799,7 +2799,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <!-- Softcam Cardserver Manager -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="ScSelection" position="0,0" size="1280,720" title="Softcam Cardserver Manager">
-  <widget name="entries" position="68,160" size="505,310" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+  <widget name="entries" position="68,160" size="505,310" itemHeight="26" font="Regular;22" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
   <eLabel font="Regular;18" foregroundColor="XionFont1" halign="left" valign="top" position="695,160" size="90,26" text="ECM:" zPosition="2" transparent="1" backgroundColor="XionBackground" />
   <widget source="session.CurrentService" render="Label" position="780,160" size="490,56" transparent="1" zPosition="2" font="Regular;18" foregroundColor="XionFont1" valign="top" halign="left" noWrap="1" backgroundColor="XionBackground">
     <convert type="CryptoInfo">VerboseInfo</convert>
