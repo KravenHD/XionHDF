@@ -188,7 +188,7 @@ config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showNever", choices 
 config.plugins.XionHDF.FontStyleHeight_1 = ConfigSelectionNumber(default = 95, stepwidth = 1, min = 0, max = 120, wraparound = True)
 config.plugins.XionHDF.FontStyleHeight_2 = ConfigSelectionNumber(default = 95, stepwidth = 1, min = 0, max = 120, wraparound = True)
 
-################# bmeminfo ##############################
+################# bmeminfo ###########################################
 if fileExists('/proc/bmeminfo'):
    entrie = os.popen('cat /proc/bmeminfo').read()
    mem = entrie.split(':', 1)[1].split('k')[0]
@@ -270,12 +270,15 @@ class XionHDF(ConfigListScreen, Screen):
 		self["helperimage"] = Pixmap()
 		self["help"] = StaticText()
 		
-		list = []
-		ConfigListScreen.__init__(self, list)
+		ConfigListScreen.__init__(
+                self,
+                self.mylist(),
+                session = session,
+                on_change = self.__selectionChanged
+                )
 		
-		self["actions"] = ActionMap(["OkCancelActions","DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft,"down": self.keyDown,"up": self.keyUp,"right": self.keyRight,"red": self.exit,"yellow": self.reboot, "blue": self.showInfo, "green": self.save,"cancel": self.exit}, -1)
-		self.UpdatePicture()
-		self.onLayoutFinish.append(self.mylist)
+                self["actions"] = ActionMap(["OkCancelActions","DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft,"down": self.keyDown,"up": self.keyUp,"right": self.keyRight,"red": self.exit,"yellow": self.reboot, "blue": self.showInfo, "green": self.save,"cancel": self.exit}, -1)
+		self.onLayoutFinish.append(self.UpdatePicture)
 
 	def mylist(self):
 		list = []
@@ -303,13 +306,11 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Button text"), config.plugins.XionHDF.ButtonText, _("Please select the color of button text inside the skin.")))
 		list.append(getConfigListEntry(_("Font normal height in %"), config.plugins.XionHDF.FontStyleHeight_1, _("This option changes the height of normal font.")))
 		list.append(getConfigListEntry(_("Font bold height in %"), config.plugins.XionHDF.FontStyleHeight_2, _("This option changes the height of bold font.")))
+		return list
 		
-		self["config"].list = list
-		self["config"].l.setList(list)
-		
-		self.ShowPicture()
-		self.updateHelp()
-
+        def __selectionChanged(self):
+                self["config"].setList(self.mylist())
+                
 	def updateHelp(self):
 		cur = self["config"].getCurrent()
 		if cur:
@@ -409,19 +410,23 @@ class XionHDF(ConfigListScreen, Screen):
 
 	def keyLeft(self):
 		ConfigListScreen.keyLeft(self)
-		self.mylist()
+		self.ShowPicture()
+                self.updateHelp()
 
 	def keyRight(self):
 		ConfigListScreen.keyRight(self)
-		self.mylist()
+		self.ShowPicture()
+                self.updateHelp()
 
 	def keyDown(self):
 		self["config"].instance.moveSelection(self["config"].instance.moveDown)
-		self.mylist()
+		self.ShowPicture()
+                self.updateHelp()
 
 	def keyUp(self):
 		self["config"].instance.moveSelection(self["config"].instance.moveUp)
-		self.mylist()
+		self.ShowPicture()
+                self.updateHelp()
 
 	def reboot(self):
 		restartbox = self.session.openWithCallback(self.restartGUI,MessageBox,_("Do you really want to reboot now?"), MessageBox.TYPE_YESNO)
@@ -502,13 +507,13 @@ class XionHDF(ConfigListScreen, Screen):
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.ChannelSelectionStyle.value + ".xml")
 
 			###Infobar_main
-			self.appendSkinFile(self.daten + config.plugins.XionHDF.InfobarStyle.value + "_main.xml")			
+			self.appendSkinFile(self.daten + config.plugins.XionHDF.InfobarStyle.value + "_main.xml")
 			
 			###weather-style
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.WeatherStyle.value + ".xml")
 
 			###Infobar_middle
-			self.appendSkinFile(self.daten + config.plugins.XionHDF.InfobarChannelname.value + ".xml")			
+			self.appendSkinFile(self.daten + config.plugins.XionHDF.InfobarChannelname.value + ".xml")
 			
 			###Infobar_end
 			self.appendSkinFile(self.daten + config.plugins.XionHDF.SIB.value + ".xml")
