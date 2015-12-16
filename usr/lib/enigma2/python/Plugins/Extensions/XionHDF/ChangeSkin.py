@@ -25,7 +25,7 @@ class ChangeSkin():
                      tmp_skin_resolution = re.search('resolution bpp="32" xres="(.+?)" yres="(.+?)"', str(self.lines)).groups(1)
                 
                 # HD Skin 1080 x 720
-                if self.skin_mode == '1':
+                if self.skin_mode == 'hd':
                    self.x_factor = float(1280) / float(tmp_skin_resolution[0])
                    self.y_factor = float(720) / float(tmp_skin_resolution[1])
                    resolution = '<resolution bpp="32" xres="1280" yres="720" />'
@@ -33,7 +33,7 @@ class ChangeSkin():
                    self.debug('X-Factor is set to: ' + str(self.x_factor))
                    self.debug('Y-Factor is set to: ' + str(self.y_factor))
                 # FullHD Skin 1920 x 1080
-                elif self.skin_mode == '2':
+                elif self.skin_mode == 'fullhd':
                    self.x_factor = float(1920) / float(tmp_skin_resolution[0])
                    self.y_factor = float(1080) / float(tmp_skin_resolution[1])
                    resolution = '<resolution bpp="32" xres="1920" yres="1080" />'
@@ -41,7 +41,7 @@ class ChangeSkin():
                    self.debug('X-Factor is set to: ' + str(self.x_factor))
                    self.debug('Y-Factor is set to: ' + str(self.y_factor))
                 # UHD Skin 3840 x 2160
-                elif self.skin_mode == '3':
+                elif self.skin_mode == 'uhd':
                    self.x_factor = float(3840) / float(tmp_skin_resolution[0])
                    self.y_factor = float(2160) / float(tmp_skin_resolution[1])
                    resolution = '<resolution bpp="32" xres="3840" yres="2160" />'
@@ -49,7 +49,7 @@ class ChangeSkin():
                    self.debug('X-Factor is set to: ' + str(self.x_factor))
                    self.debug('Y-Factor is set to: ' + str(self.y_factor))
                 # 4K Skin 4096 x 2160
-                elif self.skin_mode == '4':
+                elif self.skin_mode == '4khd':
                    self.x_factor = float(4096) / float(tmp_skin_resolution[0])
                    self.y_factor = float(2160) / float(tmp_skin_resolution[1])
                    resolution = '<resolution bpp="32" xres="4096" yres="2160" />'
@@ -57,7 +57,7 @@ class ChangeSkin():
                    self.debug('X-Factor is set to: ' + str(self.x_factor))
                    self.debug('Y-Factor is set to: ' + str(self.y_factor))
                 # FullUHD Skin 7680 x 4320
-                elif self.skin_mode == '5':
+                elif self.skin_mode == 'fulluhd':
                    self.x_factor = float(7680) / float(tmp_skin_resolution[0])
                    self.y_factor = float(4320) / float(tmp_skin_resolution[1])
                    resolution = '<resolution bpp="32" xres="7680" yres="4320" />'
@@ -65,7 +65,7 @@ class ChangeSkin():
                    self.debug('X-Factor is set to: ' + str(self.x_factor))
                    self.debug('Y-Factor is set to: ' + str(self.y_factor))
                 # 8K Skin 8192 x 4320
-                elif self.skin_mode == '6':
+                elif self.skin_mode == '8khd':
                    self.x_factor = float(8192) / float(tmp_skin_resolution[0])
                    self.y_factor = float(4320) / float(tmp_skin_resolution[1])
                    resolution = '<resolution bpp="32" xres="8192" yres="4320" />'
@@ -608,7 +608,7 @@ class ChangeSkin():
                               line = line.replace(old_position_string, new_position_string)
                                 
                        # Cool Stuff End                         
-                       if self.skin_mode > '1':
+                       if self.skin_mode > 'hd':
                           if ' name="config" ' in line and not ' font="' in line:
                              self.skipper = '42'
                              try:

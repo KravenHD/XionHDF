@@ -211,19 +211,19 @@ else:
       bmem = int(mem_info[0])
       
 SkinModeList = []
-SkinModeList.append(("1", _("HD Skin 1280 x 720")))
+SkinModeList.append(("hd", _("HD Skin 1280 x 720")))
 if bmem > 180:
-   SkinModeList.append(("2", _("FullHD Skin 1920 x 1080 [Beta]")))
+   SkinModeList.append(("fullhd", _("FullHD Skin 1920 x 1080 [Beta]")))
 #if bmem > 440:
 #   if getBoxType() == 'vusolo4k':
-#      SkinModeList.append(("3", _("UHD Skin 3840 x 2160")))
-      #SkinModeList.append(("4", _("4K Skin 4096 x 2160")))
+#      SkinModeList.append(("uhd", _("UHD Skin 3840 x 2160")))
+      #SkinModeList.append(("4khd", _("4K Skin 4096 x 2160")))
 #if bmem > 880:
-   #SkinModeList.append(("5", _("FullUHD Skin 7680 x 4320")))
-   #SkinModeList.append(("6", _("8K Skin 8192 x 4320")))
-#SkinModeList.append(("7", _("User Selection")))
+   #SkinModeList.append(("fulluhd", _("FullUHD Skin 7680 x 4320")))
+   #SkinModeList.append(("8khd", _("8K Skin 8192 x 4320")))
+#SkinModeList.append(("userdef", _("User Selection")))
 
-config.plugins.XionHDF.skin_mode = ConfigSelection(default="1", choices = SkinModeList)
+config.plugins.XionHDF.skin_mode = ConfigSelection(default="hd", choices = SkinModeList)
 #######################################################################
 
 class XionHDF(ConfigListScreen, Screen):
@@ -318,7 +318,11 @@ class XionHDF(ConfigListScreen, Screen):
 	def GetPicturePath(self):
 		try:
 			returnValue = self["config"].getCurrent()[1].value
-			if returnValue == "openhdf":
+			if returnValue == "hd":
+				path = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/hd.jpg"
+			elif returnValue == "fullhd":
+				path = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/fullhd.jpg"
+			elif returnValue == "openhdf":
 				path = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/openhdf.png"
 			elif returnValue == "00F0A30A":
 				path = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/amber.jpg"
@@ -442,7 +446,7 @@ class XionHDF(ConfigListScreen, Screen):
 		self.skin_mode = config.plugins.XionHDF.skin_mode.value
 		if os.path.exists("/usr/share/enigma2/XionHDF/buttons"):
                         rmtree("/usr/share/enigma2/XionHDF/buttons")
-                if self.skin_mode == '1':
+                if self.skin_mode == 'hd':
 			self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
 			#os.system("cp /usr/share/enigma2/XionHDF/buttonsets/hd/buttons /usr/share/enigma2/XionHDF")
 			copytree('/usr/share/enigma2/XionHDF/buttonsets/hd/buttons', '/usr/share/enigma2/XionHDF/buttons', symlinks=False, ignore=None)
@@ -450,7 +454,7 @@ class XionHDF(ConfigListScreen, Screen):
 		else:
 			pass
 
-		if self.skin_mode == '2':
+		if self.skin_mode == 'fullhd':
 			self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
 			#os.system("cp /usr/share/enigma2/XionHDF/buttonsets/fhd/buttons /usr/share/enigma2/XionHDF")
 			copytree('/usr/share/enigma2/XionHDF/buttonsets/fhd/buttons', '/usr/share/enigma2/XionHDF/buttons', symlinks=False, ignore=None)
