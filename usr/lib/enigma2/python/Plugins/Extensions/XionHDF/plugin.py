@@ -33,11 +33,7 @@ from skin import parseColor
 from Components.Pixmap import Pixmap
 from Components.Label import Label
 import gettext
-try:
-  from boxbranding import getBoxType
-  brand = True
-except ImportError:
-  brand = False
+from boxbranding import getBoxType
 from enigma import ePicLoad, getDesktop, eConsoleAppContainer
 from Tools.Directories import fileExists, resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
 from ChangeSkin import *
@@ -201,14 +197,11 @@ else:
    mem_info = []
    entrie = os.popen('cat /proc/cmdline').read()
    
-   if brand:
-      if getBoxType() == 'vusolo4k':
-         mem = re.findall('_cma=(.*?)M', entrie)
-      else:   
-         mem = re.findall('bmem=(.*?)M', entrie)
+   if getBoxType() == 'vusolo4k':
+        mem = re.findall('_cma=(.*?)M', entrie)
    else:   
-      mem = re.findall('bmem=(.*?)M', entrie)
-      
+        mem = re.findall('bmem=(.*?)M', entrie)
+     
    for info in mem:
       mem_info.append((info))
        
