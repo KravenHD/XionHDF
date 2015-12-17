@@ -2101,9 +2101,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <!-- Setup -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Setup" position="0,0" size="1280,720" title="Setup">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
-    <panel name="template_menu_left_button" />
-    <panel name="template_colorkey_text_source" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+	<panel name="template_colorkey_text_source" />
+	<panel name="template_menu_left_button" />
   </screen>
   <!-- Blindscan -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Blindscan" position="0,0" size="1280,720" title="Blindscan">
