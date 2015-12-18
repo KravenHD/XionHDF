@@ -1552,7 +1552,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="ErrorPixmap" pixmap="XionHDF/buttons/message/attention-53.png" position="20,50" size="53,53" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="XionHDF/buttons/message/question-53.png" position="20,50" size="53,53" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="XionHDF/buttons/message/info-53.png" position="20,50" size="53,53" alphatest="blend" />
-    <widget name="list" position="21,136" size="760,320" itemHeight="32" transparent="1" />
+    <widget name="list" position="21,136" size="760,320" itemHeight="32" font="Regular;22" transparent="1" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
 from enigma import eSize,ePoint
@@ -2105,6 +2105,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<panel name="template_colorkey_text_source" />
 	<panel name="template_menu_left_button" />
   </screen>
+  <!-- Videosetup -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="VideoSetup" position="0,0" size="1280,720" title="VideoSetup">
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+	<panel name="template_colorkey_text_source" />
+	<panel name="template_menu_left_button" />
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="VideoEnhancementSetup" position="0,0" size="1280,720" title="VideoEnhancementSetup">
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+	<panel name="template_colorkey_text_source" />
+	<panel name="template_menu_left_button" />
+  </screen>  
   <!-- Blindscan -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Blindscan" position="0,0" size="1280,720" title="Blindscan">
     <widget name="config" position="70,80" size="708,450" transparent="1" />
@@ -2846,5 +2857,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <panel name="template_menu_left_button" />
 	<panel name="template_colorkey_text" />
 </screen>
+  <!-- UserInterfacePositioner -->
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="UserInterfacePositioner2" position="0,0" size="1280,720" title="UserInterfacePositioner2">
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+	<panel name="template_colorkey_text_source" />
+	<panel name="template_menu_left_button" />
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="UserInterfacePositioner" position="0,0" size="1280,720" title="UserInterfacePositioner">
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+	<panel name="template_colorkey_text_source" />
+	<panel name="template_menu_left_button" />
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="OSD3DSetupScreen" position="0,0" size="1280,720" title="OSD3DSetupScreen">
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+	<panel name="template_colorkey_text_source" />
+	<panel name="template_menu_left_button" />
+  </screen>
   <!-- main-custom-openhdf */ -->
   <!-- Main */ -->
