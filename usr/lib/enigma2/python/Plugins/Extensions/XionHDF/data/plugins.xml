@@ -1077,7 +1077,7 @@
   <!-- ********** PiconsUpdater ********** -->
   <!-- PiconsUpdaterView -->
   <screen name="PiconsUpdaterView" position="0,0" size="1280,720" title="Picons Updater" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="config" position="70,80" size="708,510" scrollbarMode="showOnDemand" transparent="1" backgroundColor="XionBackground" />
+    <widget name="config" position="70,80" size="708,510" scrollbarMode="showOnDemand" itemHeight="30" font="Regular;22" transparent="1" backgroundColor="XionBackground" />
     <widget name="previewImage" position="902,154" size="350,233" zPosition="1" alphatest="blend" transparent="1" backgroundColor="XionBackground" />
     <widget name="backgroundImage" position="902,397" size="350,156" zPosition="1" alphatest="blend" transparent="1" backgroundColor="XionBackground" />
     <eLabel text="coded by svox, idea by arn354" position="70,585" size="708,24" zPosition="1" font="Regular2;22" foregroundColor="XionFont2" halign="center" backgroundColor="XionBackground" transparent="1" />
@@ -1085,13 +1085,21 @@
     <eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Save" position="264,662" size="148,48" transparent="1" zPosition="1" />
     <eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Download Picons" position="464,662" size="148,48" transparent="1" zPosition="1" />
     <panel name="template_menu_left_right_button" />
+	<panel name="template_colorkey_text_source" />
+	<panel name="template_menu_left_button" />
+	<panel name="template_menu_full_button" />
+	<panel name="template_colorkey_text" />
   </screen>
   <!-- JobProgressView -->
   <screen name="JobProgressView" position="0,0" size="1280,720" zPosition="1" title="Job Progress" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="titleText" position="174,80" size="500,40" render="Label" font="Regular;24" foregroundColor="XionFont1" backgroundColor="XionBackground" halign="center" transparent="1" />
-    <widget name="downloadProgress" position="174,130" size="500,30" borderWidth="2" borderColor="XionProgress" backgroundColor="XionBackground" foregroundColor="XionFont1" />
+    <widget name="downloadProgress" position="174,130" size="500,30" borderWidth="2" itemHeight="30" font="Regular;22" borderColor="XionProgress" backgroundColor="XionBackground" foregroundColor="XionFont1" />
     <widget source="downloadProgressText" position="174,160" size="500,30" render="Label" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" halign="center" transparent="1" />
     <panel name="template_menu_left" />
+	<panel name="template_colorkey_text_source" />
+	<panel name="template_menu_left_button" />
+	<panel name="template_menu_full_button" />
+	<panel name="template_colorkey_text" />
   </screen>
   <!-- ********** PicturePlayer ********** -->
   <!-- picshow -->
@@ -1951,6 +1959,7 @@
 	<widget name="setup" position="64,662" size="148,48" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText"  transparent="1" zPosition="1" />
 	<widget name="save" position="264,662" size="148,48" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText"  transparent="1" zPosition="1" />
 	<panel name="template_menu_full_button" />
-</screen> 
+</screen>
+
 <!-- TMDb - The Movie Database */-->
 <!-- plugins -->
