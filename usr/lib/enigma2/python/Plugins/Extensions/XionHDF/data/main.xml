@@ -777,7 +777,7 @@
   <!-- AdapterSetup -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AdapterSetup" position="0,0" size="1280,720" title="Network Setup">
     <widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" position="70,80" render="Label" size="495,30" source="Adapter" transparent="1" />
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,130" size="708,200" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="26" font="Regular;22" name="config" position="70,130" size="708,200" transparent="1" />
     <widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="center" position="70,585" render="Label" size="708,30" source="introduction2" transparent="1" />
 	<widget source="IPtext" render="Label" position="200,400" size="210,24" font="Regular;20" halign="right" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 	<widget source="Netmasktext" render="Label" position="200,430" size="210,24" font="Regular;20" halign="right" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
@@ -797,14 +797,14 @@
     <widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" position="70,80" render="Label" size="495,28" source="IF" transparent="1" />
     <widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" position="576,80" render="Label" size="160,28" source="Statustext" transparent="1" />
     <widget alphatest="blend" name="statuspic" pixmaps="XionHDF/buttons/green.png,XionHDF/buttons/grey.png" position="742,82" size=" 24,24" transparent="1" />
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="35" name="menulist" position="70,130" size="708,280" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="26" font="Regular;22" name="menulist" position="70,130" size="708,280" transparent="1" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="70,485" render="Label" size="708,100" source="description" transparent="1" valign="center" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
   <!-- NetworkAdapterSelection -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkAdapterSelection" position="0,0" size="1280,720" title="Select Network Adapter">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" position="70,80" render="Listbox" size="708,450" source="list" transparent="1">
+    <widget backgroundColor="XionBackground" enableWrapAround="1" position="70,80" render="Listbox" itemHeight="26" font="Regular;22" size="708,450" source="list" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (54, 54), png = 3), # index 3 is the interface pixmap
@@ -861,7 +861,7 @@
   </screen>
   <!-- NetworkBrowser -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkBrowser" position="0,0" size="1280,720" title="Network Neighbourhood">
-    <widget position="70,80" render="Listbox" size="708,480" source="list" transparent="1" zPosition="3">
+    <widget position="70,80" render="Listbox" size="708,480" source="list" itemHeight="26" font="Regular;22" transparent="1" zPosition="3">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
@@ -882,7 +882,7 @@
   </screen>
   <!-- AutoMountEdit -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoMountEdit" position="0,0" size="1280,720" title="MountEdit">
-    <widget itemHeight="30" name="config" position="70,80" size="708,450" transparent="1" />
+    <widget itemHeight="26" font="Regular;22" name="config" position="70,80" size="708,450" transparent="1" />
     <widget alphatest="blend" name="HelpWindow" position="120,470" size="1,1" transparent="1" zPosition="1" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="70,585" render="Label" size="708,28" source="introduction" transparent="1" />
     <panel name="template_menu_left_button" />
@@ -890,7 +890,7 @@
   </screen>
   <!-- AutoMountManager -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="AutoMountManager" position="0,0" size="1280,720" title="AutoMountManager">
-    <widget backgroundColor="XionBackground" position="70,80" render="Listbox" size="708,480" source="config" transparent="1">
+    <widget backgroundColor="XionBackground" position="70,80" render="Listbox" size="708,480" itemHeight="26" font="Regular;22" source="config" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (60, 5), size = (620, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
@@ -911,7 +911,7 @@
     <widget font="Regular2;20" foregroundColor="XionFont2" halign="center" position="70,80" render="Label" size="130,90" source="legend1" transparent="1" valign="center" />
     <widget font="Regular2;20" foregroundColor="XionFont2" halign="center" position="230,80" render="Label" size="400,90" source="legend2" transparent="1" valign="center" />
     <widget font="Regular2;20" foregroundColor="XionFont2" halign="center" position="650,80" render="Label" size="120,90" source="legend3" transparent="1" valign="center" />
-    <widget position="70,220" render="Listbox" size="708,320" source="config" transparent="1">
+    <widget position="70,220" render="Listbox" size="708,320" source="config" itemHeight="26" font="Regular;22" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (40, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
@@ -932,7 +932,7 @@
   </screen>
   <!-- UserDialog -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="UserDialog" position="0,0" size="1280,720" title="UserDialog">
-    <widget name="config" position="70,80" size="708,350" transparent="1" zPosition="3" />
+    <widget name="config" itemHeight="26" font="Regular;22" position="70,80" size="708,350" transparent="1" zPosition="3" />
     <widget alphatest="blend" name="HelpWindow" position="120,430" size="1,1" transparent="1" zPosition="1" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="70,558" render="Label" size="708,28" source="introduction" transparent="1" />
     <panel name="template_menu_left_button" />
@@ -940,7 +940,7 @@
   </screen>
   <!-- UserManager -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="UserManager" position="0,0" size="1280,720" title="UserManager">
-    <widget position="70,80" render="Listbox" size="708,420" source="config" transparent="1" zPosition="3">
+    <widget position="70,80" render="Listbox" size="708,420" source="config" itemHeight="26" font="Regular;22" transparent="1" zPosition="3">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (80, 4), size = (590, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -958,7 +958,7 @@
   <!-- WlanScan -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="WlanScan" position="0,0" size="1280,720" title="Choose a Wireless Network">
     <widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" position="70,80" render="Label" size="708,30" source="info" transparent="1" />
-    <widget position="70,125" render="Listbox" size="708,450" source="list" transparent="1">
+    <widget position="70,125" render="Listbox" size="708,450" source="list" itemHeight="26" font="Regular;22" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 8), size = (650, 35), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
@@ -997,21 +997,21 @@
   </screen>
   <!-- WlanSelection -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="WlanSelection" position="0,0" size="1280,720" title="Wireless Network Configuration...">
-    <widget backgroundColor="XionBackground" name="menulist" position="58,80" size="360,438" transparent="1" zPosition="10" />
+    <widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="menulist" position="58,80" size="360,438" transparent="1" zPosition="10" />
     <widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont1" halign="center" position="438,80" render="Label" size="280,460" source="description" transparent="1" valign="center" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
   <!-- WlanSetup -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="WlanSetup" position="0,0" size="1280,720" title="Wireless Network Configuration...">
-    <widget backgroundColor="XionBackground" name="menulist" position="58,80" size="360,438" transparent="1" zPosition="10" />
+    <widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="menulist" position="58,80" size="360,438" transparent="1" zPosition="10" />
     <widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont1" halign="center" position="438,80" render="Label" size="280,460" source="description" transparent="1" valign="center" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
   <!-- WlanConfig -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="WlanConfig" position="0,0" size="1280,720" title="Wireless Network Configuration...">
-    <widget backgroundColor="XionBackground" name="config" position="70,180" size="708,380" transparent="1" zPosition="10" />
+    <widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="config" position="70,180" size="708,380" transparent="1" zPosition="10" />
     <eLabel backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" position="70,471" size="200,26" text="IP Address : " transparent="1" />
     <widget backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" halign="center" position="285,471" render="Label" size="200,26" source="ipaddress" transparent="1" valign="center" zPosition="1" />
     <eLabel backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" position="70,511" size="200,26" text="NetMask : " transparent="1" />
@@ -1023,7 +1023,7 @@
   </screen>
   <!-- WlanScanAp -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="WlanScanAp" position="0,0" size="1280,720" title="Wireless Network Configuration...">
-    <widget backgroundColor="XionBackground" name="menulist" position="70,80" size="360,480" transparent="1" zPosition="10" />
+    <widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="menulist" position="70,80" size="360,480" transparent="1" zPosition="10" />
     <widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont1" halign="center" position="470,80" render="Label" size="300,30" source="Address" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont1" halign="center" position="470,109" render="Label" size="300,30" source="ESSID" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont1" halign="center" position="470,140" render="Label" size="300,30" source="Protocol" transparent="1" valign="center" zPosition="1" />
@@ -1035,25 +1035,25 @@
   </screen>
   <!-- Wlanstatus -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Wlanstatus" position="0,0" size="1280,720" title="Wireless Network Configuration...">
-    <widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont1" position="70,80" render="Label" size="708,500" source="status" transparent="1" zPosition="1" />
+    <widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" foregroundColor="XionFont1" position="70,80" render="Label" size="708,500" source="status" transparent="1" zPosition="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
   <!-- NTPManager -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="NTPManager" position="0,0" size="1280,720" title="NTP-Server Contenant Selection">
-    <widget itemHeight="30" name="menu" position="70,80" size="708,480" transparent="1" />
+    <widget itemHeight="26" font="Regular;22" name="menu" position="70,80" size="708,480" transparent="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- SelectCountry -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SelectCountry" position="0,0" size="1280,720" title="NTP-Server Country Selection">
-    <widget itemHeight="30" name="countrymenu" position="70,80" size="708,480" transparent="1" />
+    <widget itemHeight="26" font="Regular;22" name="countrymenu" position="70,80" size="708,480" transparent="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- LocationBox -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="LocationBox" position="0,0" size="1280,720" title="Location Box">
     <widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" name="text" position="70,80" size="708,28" transparent="1" />
     <widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" name="target" position="70,115" size="708,28" transparent="1" />
-    <widget itemHeight="30" name="filelist" position="70,160" selectionDisabled="1" size="708,150" transparent="1" />
+    <widget itemHeight="26" font="Regular;22" name="filelist" position="70,160" selectionDisabled="1" size="708,150" transparent="1" />
     <widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" name="textbook" position="70,380" size="708,28" transparent="1" />
     <widget itemHeight="30" name="booklist" position="70,425" size="708,150" transparent="1" />
     <panel name="template_menu_left_button" />
@@ -1061,7 +1061,7 @@
   </screen>
   <!-- NameserverSetup -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="NameserverSetup" position="0,0" size="1280,720" title="Nameserver Setup">
-    <widget backgroundColor="XionBackground" itemHeight="30" name="config" position="70,80" size="708,450" transparent="1" />
+    <widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="config" position="70,80" size="708,450" transparent="1" />
     <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="introduction" position="70,560" size="708,28" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
@@ -1089,7 +1089,7 @@
   </screen>
   <!-- NetworkMountsMenu -->
   <screen name="NetworkMountsMenu" position="0,0" size="1280,720" title="Mounts Setup" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="menulist" position="70,80" size="708,510" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+    <widget name="menulist" position="70,80" size="708,510" itemHeight="26" font="Regular;22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
     <panel name="template_colorkey_text_source" />
     <panel name="template_menu_left_button" />
   </screen>
@@ -1293,19 +1293,19 @@
   <!-- ********** Timer ********** -->
   <!-- TimeInput -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="TimeInput" position="148,281" size="500,155" title="Time Input">
-    <widget itemHeight="30" name="config" position="10,54" size="480,90" backgroundColor="XionBackground" foregroundColor="XionFont1" />
+    <widget itemHeight="26" font="Regular;22" name="config" position="10,54" size="480,90" backgroundColor="XionBackground" foregroundColor="XionFont1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
   <!-- TimerEditList -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor">
-    <widget name="timerlist" position="45,80" size="766,540" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="timerlist" itemHeight="26" font="Regular;22" position="45,80" size="766,540" scrollbarMode="showOnDemand" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
   <!-- TimerEntry -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" title="Timer entry">
-    <widget itemHeight="30" name="config" position="70,80" size="708,390" transparent="1" />
+    <widget itemHeight="26" font="Regular;22" name="config" position="70,80" size="708,390" transparent="1" />
     <widget name="HelpWindow" position="156,479" size="532,170" flags="wfNoBorder" />
     <eLabel font="Regular;20" halign="left" valign="center" text="Abbrechen" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
     <eLabel font="Regular;20" halign="left" valign="center" text="OK" position="264,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
@@ -1314,14 +1314,14 @@
   </screen>
   <!-- TimerLog -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerLog" position="0,0" size="1280,720" title="Timer log">
-    <widget name="loglist" position="70,80" size="708,250" transparent="1" />
+    <widget name="loglist" itemHeight="26" font="Regular;22" position="70,80" size="708,250" transparent="1" />
     <widget font="Regular2;20" foregroundColor="XionFont2" name="logentry" position="70,372" size="708,130" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
   <!-- TimerSanityConflict -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerSanityConflict" position="0,0" size="1280,720" title="Timer sanity error">
-    <widget itemHeight="30" name="list" position="70,80" size="210,90" transparent="1" />
+    <widget itemHeight="26" font="Regular;22" name="list" position="70,80" size="210,90" transparent="1" />
     <widget name="timer1" position="45,190" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
     <widget name="timer2" position="45,380" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
     <ePixmap pixmap="XionHDF/buttons/key_red.png" position="70,308" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
@@ -1336,7 +1336,7 @@
   </screen>
   <!-- TimerSelection -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerSelection" position="0,0" size="1280,720" title="Timer selection">
-    <widget name="timerlist" position="70,80" size="708,550" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="timerlist" position="70,80" size="708,550" itemHeight="26" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- SleepTimerEdit -->  
