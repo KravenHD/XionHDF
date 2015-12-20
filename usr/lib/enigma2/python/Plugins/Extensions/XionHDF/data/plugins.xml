@@ -437,7 +437,7 @@
   </screen>
   <!-- MovieMenu -->
   <screen name="MovieMenu" position="0,0" size="1280,720" title="Movie Menu" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="menu" render="Listbox" position="70,80" size="708,550" enableWrapAround="1" backgroundColor="XionBackground" transparent="1">
+    <widget source="menu" render="Listbox" position="70,80" size="708,550" itemHeight="27" font="Regular;22" enableWrapAround="1" backgroundColor="XionBackground" transparent="1">
       <convert type="StringList" />
     </widget>
     <panel name="template_menu_left" />
