@@ -278,7 +278,7 @@ class XionHDF(ConfigListScreen, Screen):
                 on_change = self.__selectionChanged
                 )
 		
-                self["actions"] = ActionMap(["OkCancelActions","DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft,"down": self.keyDown,"up": self.keyUp,"right": self.keyRight,"red": self.exit,"yellow": self.reboot, "blue": self.showInfo, "green": self.save,"cancel": self.exit,"ok": self.rawinput  }, -1)
+                self["actions"] = ActionMap(["OkCancelActions", "DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft, "down": self.keyDown, "up": self.keyUp, "right": self.keyRight, "red": self.exit, "yellow": self.reboot, "blue": self.showInfo, "green": self.save, "cancel": self.exit, "OK": self.rawinput }, -1)
 		self.onLayoutFinish.append(self.UpdatePicture)
 
 	def mylist(self):
