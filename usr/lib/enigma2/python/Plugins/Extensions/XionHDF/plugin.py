@@ -414,7 +414,7 @@ class XionHDF(ConfigListScreen, Screen):
 		self.ShowPicture()
                 self.updateHelp()
 		returnValue = self["config"].getCurrent()[0]
-        	if returnValue == 'Weather ID' or returnValue == 'WOEID': 
+        	if returnValue == 'Weather ID' or returnValue == 'Wetter ID': 
         		self.session.openWithCallback(self.do_search, VirtualKeyBoard, title = _("Enter youre WOEID"))
 	
 	def keyRight(self):
@@ -422,7 +422,7 @@ class XionHDF(ConfigListScreen, Screen):
 		self.ShowPicture()
                 self.updateHelp()
 		returnValue = self["config"].getCurrent()[0]
-		if returnValue == 'Weather ID' or returnValue == 'WOEID': 
+		if returnValue == 'Weather ID' or returnValue == 'Wetter ID': 
         		self.session.openWithCallback(self.do_search, VirtualKeyBoard, title = _("Enter youre WOEID"))
 	
 	def keyDown(self):
@@ -437,7 +437,7 @@ class XionHDF(ConfigListScreen, Screen):
 
 	def rawinput(self):
         	returnValue = self["config"].getCurrent()[0]
-        	if returnValue == 'Weather ID' or returnValue == 'WOEID': 
+        	if returnValue == 'Weather ID' or returnValue == 'Wetter ID': 
         		self.session.openWithCallback(self.do_search, VirtualKeyBoard, title = _("Enter youre WOEID"))
 
 	def do_search(self, number = None):
