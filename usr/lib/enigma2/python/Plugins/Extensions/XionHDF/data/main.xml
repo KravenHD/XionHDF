@@ -2747,8 +2747,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <screen name="VFDSkinSelector" position="0,0" size="1280,720" title="LCD Skin-Selector" backgroundColor="transparent">
   <widget name="lab1" position="70,111" size="250,26" zPosition="1" font="Regular2; 22" halign="left" transparent="1" foregroundColor="XionFont2" />
   <widget name="lab2" position="423,201" size="250,26" zPosition="1" font="Regular2; 22" halign="left" transparent="1" foregroundColor="XionFont2" />
-  <widget name="SkinList" position="70,158" size="310,371" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
-  <widget name="Preview" position="462,261" size="280,210" zPosition="2" backgroundColor="XionBackground" transparent="0" alphatest="on" />
+  <widget name="SkinList" position="70,158" size="310,371" itemHeight="26" font="Regular;22" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+  <widget name="Preview" position="462,261" size="280,210" itemHeight="26" font="Regular;22" zPosition="2" backgroundColor="XionBackground" transparent="0" alphatest="on" />
   <widget name="lab3" position="70,549" halign="center" size="700,26" zPosition="1" foregroundColor="XionFont2" font="Regular2; 22" transparent="1" />
   <panel name="template_menu_left_button" />
   <panel name="template_colorkey_text" />
