@@ -1799,12 +1799,13 @@
   </screen>
     <!-- CoolTVGuideSetup -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="CoolTVGuideSetup" position="0,0" size="1280,720">
-    <eLabel backgroundColor="XionBackground" font="Regular2; 34" foregroundColor="XionFont2" position="70,12" text="Cool TV Guide Setup" size="708,46" transparent="1" halign="center" valign="center" noWrap="1" />
-    <widget backgroundColor="XionBackground" enableWrapAround="1" name="config" position="70,80" size="708,350" transparent="1" foregroundColor="XionFont1" />
+    <eLabel backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" text="Cool TV Guide Setup" size="708,46" transparent="1" halign="center" valign="center" noWrap="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" name="config" itemHeight="25" font="Regular;20" position="70,80" size="708,330" transparent="1" foregroundColor="XionFont1" />
+	<widget name="CoolText1" position="0,425" size="620,26" font="Regular;20" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="center" transparent="1" />
+	<widget name="CoolText2" position="0,445" size="620,26" font="Regular;20" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="center" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
-  <!-- CoolTVGuide */-->
   <!--/* NumberZapExt -->
 <screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZapExt" position="264,216" size="714,243" title="QuickZap">
   <widget name="chPicon" position="377,43" size="225,138" transparent="1" zPosition="1" alphatest="blend" />
