@@ -20,6 +20,7 @@ from Screens.MessageBox import MessageBox
 from Screens.ChoiceBox import ChoiceBox
 from Screens.Console import Console
 from Screens.Standby import TryQuitMainloop
+from Screens.VirtualKeyBoard import VirtualKeyBoard
 from Components.ActionMap import ActionMap
 from Components.AVSwitch import AVSwitch
 from Components.config import config, configfile, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection, ConfigNumber, ConfigText, ConfigInteger, ConfigSelectionNumber
@@ -277,7 +278,7 @@ class XionHDF(ConfigListScreen, Screen):
                 on_change = self.__selectionChanged
                 )
 		
-                self["actions"] = ActionMap(["OkCancelActions","DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft,"down": self.keyDown,"up": self.keyUp,"right": self.keyRight,"red": self.exit,"yellow": self.reboot, "blue": self.showInfo, "green": self.save,"cancel": self.exit}, -1)
+                self["actions"] = ActionMap(["OkCancelActions","DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft,"down": self.keyDown,"up": self.keyUp,"right": self.keyRight,"red": self.exit,"yellow": self.reboot, "blue": self.showInfo, "green": self.save,"cancel": self.exit,"ok": self.rawinput  }, -1)
 		self.onLayoutFinish.append(self.UpdatePicture)
 
 	def mylist(self):
@@ -412,12 +413,18 @@ class XionHDF(ConfigListScreen, Screen):
 		ConfigListScreen.keyLeft(self)
 		self.ShowPicture()
                 self.updateHelp()
-
+		returnValue = self["config"].getCurrent()[0]
+        	if returnValue == 'Weather ID' or returnValue == 'WOEID': 
+        		self.session.openWithCallback(self.do_search, VirtualKeyBoard, title = _("Enter youre WOEID"))
+	
 	def keyRight(self):
 		ConfigListScreen.keyRight(self)
 		self.ShowPicture()
                 self.updateHelp()
-
+		returnValue = self["config"].getCurrent()[0]
+		if returnValue == 'Weather ID' or returnValue == 'WOEID': 
+        		self.session.openWithCallback(self.do_search, VirtualKeyBoard, title = _("Enter youre WOEID"))
+	
 	def keyDown(self):
 		self["config"].instance.moveSelection(self["config"].instance.moveDown)
 		self.ShowPicture()
@@ -427,6 +434,19 @@ class XionHDF(ConfigListScreen, Screen):
 		self["config"].instance.moveSelection(self["config"].instance.moveUp)
 		self.ShowPicture()
                 self.updateHelp()
+
+	def rawinput(self):
+        	returnValue = self["config"].getCurrent()[0]
+        	if returnValue == 'Weather ID' or returnValue == 'WOEID': 
+        		self.session.openWithCallback(self.do_search, VirtualKeyBoard, title = _("Enter youre WOEID"))
+
+	def do_search(self, number = None):
+        	try:
+        		if int(number):
+        			config.plugins.XionHDF.weather_city.value = str(number)
+		except:
+        		config.plugins.XionHDF.weather_city.value = "638242"
+        		self.session.open(MessageBox, _('Only Numbers allowed!\n'), MessageBox.TYPE_INFO)
 
 	def reboot(self):
 		restartbox = self.session.openWithCallback(self.restartGUI,MessageBox,_("Do you really want to reboot now?"), MessageBox.TYPE_YESNO)
