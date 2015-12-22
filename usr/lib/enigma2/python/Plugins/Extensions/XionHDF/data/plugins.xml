@@ -1314,6 +1314,14 @@
     <panel name="template_colorkey_text" />
     <panel name="template_menu_left_button" />
   </screen>
+  <screen name="wbrScreenSaver_12" position="0,0" zPosition="5" size="1280,720" flags="wfNoBorder" backgroundColor="XionBackground" title="">
+	<widget name="background1" position="0,0" size="1280,720" zPosition="11" transparent="0" backgroundColor="XionBackground"></widget>
+	<widget name="display_station" position="255,382" zPosition="12" size="400,35" itemHeight="27" font="Regular;22" halign="left" transparent="1" foregroundColor="XionFont1" noWrap="1"></widget>
+	<widget name="display_time" position="255,282" zPosition="12" size="400,90" itemHeight="27" font="Regular;22" halign="left" transparent="1" foregroundColor="XionFont2"></widget>
+	<widget name="display_nplaying" position="255,452" zPosition="12" size="400,180" itemHeight="27" font="Regular;22" halign="left" transparent="1" foregroundColor="XionFont1"></widget>
+	<widget name="cover" zPosition="12" size="400,400" position="50,182" alphatest="blend"></widget>
+	<widget name="cover2" zPosition="12" size="800,800" position="0,182" alphatest="blend"></widget>
+  </screen>
   <!-- ********** WebInterface ********** -->
   <!-- WebIfConfigScreen -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="WebIfConfigScreen" position="0,0" size="1280,720" title="Main Setup">
