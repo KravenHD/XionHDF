@@ -462,13 +462,13 @@
   </screen>
   <!-- imdbSetup -->
   <screen name="imdbSetup" position="0,0" size="1280,720" title="EMC imdb Setup" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="config" position="70,80" size="708,540" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+    <widget name="config" position="70,80" size="708,540" itemHeight="30" font="Regular; 24" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
   <!-- IMDB -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="IMDB" position="0,0" size="1280,720" title="IMDb Details Plugin">
-    <widget itemHeight="30" name="menu" position="70,220" size="700,360" transparent="1" />
+    <widget itemHeight="30" font="Regular; 22" name="menu" position="70,220" size="700,360" transparent="1" />
     <widget alphatest="blend" name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="560,115" size="210,21" zPosition="2" />
     <widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="560,115" size="210,21" transparent="1" zPosition="3" />
     <widget font="Regular2;20" foregroundColor="XionFont1" halign="center" name="ratinglabel" position="560,134" size="210,24" transparent="1" />
@@ -1906,7 +1906,7 @@
   <!--/* TMDb - The Movie Database -->
 <!-- TMDb -->
   <screen name="tmdbScreen" position="0,0" size="1280,720" title="TMDb - The Movie Database" flags="wfNoBorder" backgroundColor="transparent">
-	<widget name="searchinfo" position="70,80" size="700,60" itemHeight="30" font="Regular; 26" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="searchinfo" position="70,80" size="700,60" itemHeight="30" font="Regular; 24" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
 	<widget name="list" position="70,140" size="700,500" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
 	<widget name="cover" position="825,90" size="380,530" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
 	<panel name="template_menu_full_button" />
@@ -1914,15 +1914,15 @@
   </screen> 
 <!-- TMDb Setup -->
   <screen name="tmdbConfigScreen" position="0,0" size="1280,720" title="TMDb - The Movie Database" flags="wfNoBorder" backgroundColor="transparent">
-	<widget name="info" position="70,80" size="708,540" itemHeight="30" font="Regular; 26" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+	<widget name="info" position="70,80" size="708,540" itemHeight="30" font="Regular; 24" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
 	<widget name="config" position="70,120" size="708,540" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
 	<panel name="template_menu_left_button" />
 	<panel name="template_colorkey_text_source" />
   </screen> 
 <!-- TMDb Movie -->
 	<screen name="tmdbScreenMovie" position="0,0" size="1280,720" title="TMDb - The Movie Database" flags="wfNoBorder" backgroundColor="transparent">
-	<widget name="searchinfo" position="70,80" size="560,60" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" font="Regular; 26" />
-	<widget name="fulldescription" position="70,130" size="560,490" font="Regular;24" backgroundColor="XionBackground" transparent="1" />
+	<widget name="searchinfo" position="70,80" size="560,60" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" font="Regular; 24" />
+	<widget name="fulldescription" position="70,130" size="560,490" itemHeight="30" font="Regular; 24" backgroundColor="XionBackground" transparent="1" />
 	<widget name="cover" position="930,92" size="250,320" alphatest="blend" />
 	<ePixmap position="705,140" size="100,75" zPosition="0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/star.png" transparent="1" alphatest="blend" />
 	<widget name="rating" position="680,170" size="150,25" zPosition="2" backgroundColor="XionBackground" transparent="1" font="Regular;22" foregroundColor="black" halign="center" />
@@ -1950,7 +1950,7 @@
 <!-- TMDb Movie EMC -->
 <screen name="MovieInfoTMDb" position="0,0" size="1280,720" title="Movie Information TMDb" flags="wfNoBorder" backgroundColor="transparent">
 	<widget name="movie_name" position="20,75" size="1191,42" zPosition="0" font="Regular2;24" valign="center" halign="center" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" />
-	<widget name="previewlist" position="290,132" size="600,500" itemHeight="%s" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" backgroundColor="XionBackground" transparent="1" />
+	<widget name="previewlist" position="290,132" size="600,500" itemHeight="30" font="Regular; 24" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" backgroundColor="XionBackground" transparent="1" />
 	<widget name="previewcover" position="20,132" size="254,345" alphatest="blend" zPosition="2" />
 	<widget name="contenttxt" position="290,132" size="920,420" font="Regular;24" foregroundColor="XionFont1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" backgroundColor="XionBackground" transparent="1" />
 	<widget name="runtime" position="20,572" size="200,25" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
