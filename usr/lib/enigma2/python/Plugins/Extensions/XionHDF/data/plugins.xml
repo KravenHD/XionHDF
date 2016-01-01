@@ -1987,16 +1987,11 @@
 	<eLabel position="100,234" size="120,20" font="Regular;18" halign="left" text="Save" transparent="1" zPosition="1" />
 	<eLabel position="445,234" size="120,20" font="Regular;18" halign="left" text="Cancel" transparent="1" zPosition="1" />
 </screen>
-<!-- OpenAirPlay */-->
-<screen name="OpenAirPlayConfig" position="center,center" size="560,400" title="OpenAirPlay Configuration">
-	<ePixmap name="red" pixmap="skin_default/buttons/red.png" position="0,0" size="140,40" zPosition="0" transparent="1" alphatest="on" />
-	<ePixmap name="green" pixmap="skin_default/buttons/green.png" position="140,0" size="140,40" zPosition="0" transparent="1" alphatest="on" />
-	<ePixmap name="yellow" pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40" zPosition="0" transparent="1" alphatest="on" />
-	<ePixmap name="blue" pixmap="skin_default/buttons/blue.png" position="420,0" size="140,40" zPosition="0" transparent="1" alphatest="on" />
-	<widget name="key_red" position="0,0" size="140,40" valign="center" halign="center" zPosition="1" transparent="1" foregroundColor="white" font="Regular;18" />
-	<widget name="key_green" position="140,0" size="140,40" valign="center" halign="center" zPosition="1" transparent="1" foregroundColor="white" font="Regular;18" />
-	<widget name="key_yellow" position="280,0" size="140,40" valign="center" halign="center" zPosition="1" transparent="1" foregroundColor="white" font="Regular;18" />
-	<widget name="key_blue" position="420,0" size="140,40" valign="center" halign="center" zPosition="1" transparent="1" foregroundColor="white" font="Regular;18" />
-	<widget name="config" position="10,50" itemHeight="25" font="Regular;20" size="540,240" scrollbarMode="showOnDemand" />
-</screen>
+   <!-- ********** OpenAirPlay ********** -->  
+  <!-- OpenAirPlay */-->
+  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="OpenAirPlayConfig" position="0,0" size="1280,720" title="OpenAirPlay Configuration">
+    <widget name="config" position="70,80" size="708,120" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_source" />
+  </screen>  
 <!-- plugins -->
