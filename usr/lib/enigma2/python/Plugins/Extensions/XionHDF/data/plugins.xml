@@ -1970,23 +1970,25 @@
 	<panel name="template_menu_full_button" />
 </screen>
 <!-- TMDb - The Movie Database */-->
-
-<!-- Menusort */-->
-<screen name="SortableMenu" backgroundColor="XionBackground" flags="wfNoBorder" position="0,0" size="1280,720" title="Menusort">
-	<widget name="menu" position="70,80" size="708,520" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+<!-- ********** Menusort ********** -->
+  <!-- Menusort */-->
+  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="SortableMenu" position="0,0" size="1280,720" title="Menusort">
+    <widget name="menu" position="70,90" size="708,400" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+    <eLabel font="Regular; 20" halign="left" valign="center" text="Hidden" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+    <panel name="template_menu_left_button" />
+	</screen> 
+<!-- ********** OSCamStatusView ********** -->  
+  <!-- OSCamStatusView */-->
+  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="oscamConfig" position="0,0" size="1280,720" title="OSCam Status View Setup">
+    <widget name="config" position="70,80" size="708,300" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_kp" />
+  </screen> 
+<!-- ********** OpenAirPlay ********** -->  
+  <!-- OpenAirPlay */-->
+  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="OpenAirPlayConfig" position="0,0" size="1280,720" title="OpenAirPlay Configuration">
+    <widget name="config" position="70,80" size="708,120" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
-</screen>
-<!-- OSCamStatusView */-->
-<screen backgroundColor="XionBackground" flags="wfNoBorder" name="oscamConfig" position="0,0" size="1280,720" title="OSCam Status View Setup">
-	<widget name="config" position="70,80" size="708,520" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
-    <panel name="template_menu_left_button" />
-    <panel name="template_colorkey_text_source" />
-</screen>
-<!-- OpenAirPlay */-->
-<screen backgroundColor="XionBackground" flags="wfNoBorder" name="OpenAirPlayConfig" position="0,0" size="1280,720" title="OpenAirPlay Configuration">
-	<widget name="config" position="70,80" size="708,120" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
-	<panel name="template_menu_left_button" />
-	<panel name="template_colorkey_text_source" />
-</screen>  
+  </screen> 
 <!-- plugins -->
