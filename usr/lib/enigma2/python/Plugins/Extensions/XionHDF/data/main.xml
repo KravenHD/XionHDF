@@ -141,10 +141,10 @@
     <panel name="template_colorkey_text" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-	<widget source="lab1" render="Label" position="70,90" size="708,35" font="Regular2;30" backgroundColor="XionBackground" transparent="1" zPosition="2" foregroundColor="XionFont2" />
-	<widget source="lab2" render="Label" position="70,135" size="708,25" font="Regular2;19" backgroundColor="XionBackground" transparent="1" zPosition="2" foregroundColor="XionFont2" />
-	<widget name="AboutScrollLabel" scrollbarMode="showOnDemand" position="70,180" size="708,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
-	<panel name="template_menu_left" />
+    <widget source="lab1" render="Label" position="70,90" size="708,35" font="Regular2;30" backgroundColor="XionBackground" transparent="1" zPosition="2" foregroundColor="XionFont2" />
+    <widget source="lab2" render="Label" position="70,135" size="708,25" font="Regular2;19" backgroundColor="XionBackground" transparent="1" zPosition="2" foregroundColor="XionFont2" />
+    <widget name="AboutScrollLabel" scrollbarMode="showOnDemand" position="70,180" size="708,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
+    <panel name="template_menu_left" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="UnhandledKey" position="49,40" size="70,70" title="UnhandledKey" zPosition="100">
     <widget alphatest="blend" name="UnhandledKeyPixmap" pixmap="XionHDF/buttons/error.png" position="3,3" size="70,70" zPosition="2" />
