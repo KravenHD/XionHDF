@@ -2572,15 +2572,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <!-- AboutOE -->
   <screen name="AboutOE" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
-    <widget source="lab1" render="Label" position="70,123" size="369,35" font="Regular;30" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" />
-    <widget source="lab2" render="Label" position="70,173" size="370,25" font="Regular;19" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" />
-    <widget source="lab3" render="Label" position="70,213" size="369,25" font="Regular;19" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
-    <eLabel text="OPEN SOURCE" position="460,123" size="353,28" font="Regular2; 22" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
-    <eLabel text="https://github.com/openhdf" position="460,155" size="352,28" font="Regular2; 19" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
-    <eLabel text="https://github.com/oe-alliance" position="460,185" size="354,28" font="Regular2; 19" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
-    <eLabel text="Designed by" position="890,460" size="355,40" font="Regular2; 24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" valign="center" halign="center" />
-    <eLabel text="Team Kraven" position="890,510" size="355,40" font="Regular2; 24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="center" />
-    <widget name="AboutScrollLabel" position="70,218" size="650,435" scrollbarMode="showOnDemand" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+    <widget source="lab1" render="Label" position="70,90" size="369,35" font="Regular;30" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" />
+    <widget source="lab2" render="Label" position="70,140" size="370,25" font="Regular;19" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" />
+    <widget source="lab3" render="Label" position="70,180" size="369,25" font="Regular;19" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+    <eLabel text="OPEN SOURCE" position="460,90" size="353,28" font="Regular2;22" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
+    <eLabel text="https://github.com/openhdf" position="460,125" size="352,28" font="Regular2;19" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
+    <eLabel text="https://github.com/oe-alliance" position="460,160" size="354,28" font="Regular2;19" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
+    <eLabel text="Designed by" position="890,460" size="355,40" font="Regular2;24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" valign="center" halign="center" />
+    <eLabel text="Team Kraven" position="890,510" size="355,40" font="Regular2;24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="center" />
+    <widget name="AboutScrollLabel" position="70,200" size="650,445" scrollbarMode="showOnDemand" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- UpdatePluginMenu -->
