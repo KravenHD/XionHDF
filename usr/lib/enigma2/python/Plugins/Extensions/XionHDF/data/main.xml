@@ -2877,5 +2877,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<panel name="template_colorkey_text_source" />
 	<panel name="template_menu_left_button" />
   </screen>
+  <!-- DeviceBrowser -->
+  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="DeviceBrowser" position="0,0" size="1280,720" >
+	<widget source="message" render="Label" backgroundColor="XionBackground" position="5,50" size="510,150" font="Regular;16" />
+	<widget name="filelist" backgroundColor="XionBackground" enableWrapAround="1" position="0,80" itemHeight="30" font="Regular;22" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+	<panel name="template_colorkey_text_source" />
+	<panel name="template_menu_left_button" />
+  </screen>  
   <!-- main-custom-openhdf */ -->
   <!-- Main */ -->
