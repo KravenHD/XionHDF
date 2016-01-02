@@ -1296,19 +1296,20 @@
   <!-- ********** Timer ********** -->
   <!-- TimeInput -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="TimeInput" position="148,281" size="500,155" title="Time Input">
-    <widget itemHeight="26" font="Regular;22" name="config" position="10,54" size="480,90" backgroundColor="XionBackground" foregroundColor="XionFont1" />
+    <widget itemHeight="30" name="config" position="10,54" size="480,90" backgroundColor="XionBackground" foregroundColor="XionFont1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
   <!-- TimerEditList -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor">
-    <widget name="timerlist" itemHeight="26" font="Regular;22" position="45,80" size="766,540" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="timerlist" rowSplit="26" iconMargin="5" satPosLeft="160" itemHeight="50" setFont="Regular;18" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" position="45,79" size="766,550" backgroundColor="XionBackground" enableWrapAround="1" transparent="1" />
+    <widget name="description" position="888,80" size="377,550" font="Regular2; 32" foregroundColor="XionFont2" halign="center" backgroundColor="XionBackground" valign="center" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
   <!-- TimerEntry -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" title="Timer entry">
-    <widget itemHeight="26" font="Regular;22" name="config" position="70,80" size="708,390" transparent="1" />
+    <widget itemHeight="30" name="config" position="70,80" size="708,390" backgroundColor="XionBackground" transparent="1" />
     <widget name="HelpWindow" position="156,479" size="532,170" flags="wfNoBorder" />
     <eLabel font="Regular;20" halign="left" valign="center" text="Abbrechen" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
     <eLabel font="Regular;20" halign="left" valign="center" text="OK" position="264,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
@@ -1317,14 +1318,14 @@
   </screen>
   <!-- TimerLog -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerLog" position="0,0" size="1280,720" title="Timer log">
-    <widget name="loglist" itemHeight="26" font="Regular;22" position="70,80" size="708,250" transparent="1" />
+    <widget name="loglist" position="70,80" size="708,250" backgroundColor="XionBackground" transparent="1" />
     <widget font="Regular2;20" foregroundColor="XionFont2" name="logentry" position="70,372" size="708,130" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
   <!-- TimerSanityConflict -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerSanityConflict" position="0,0" size="1280,720" title="Timer sanity error">
-    <widget itemHeight="26" font="Regular;22" name="list" position="70,80" size="210,90" transparent="1" />
+    <widget itemHeight="30" name="list" position="70,80" size="210,90" backgroundColor="XionBackground" transparent="1" />
     <widget name="timer1" position="45,190" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
     <widget name="timer2" position="45,380" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
     <ePixmap pixmap="XionHDF/buttons/key_red.png" position="70,308" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
@@ -1339,7 +1340,7 @@
   </screen>
   <!-- TimerSelection -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerSelection" position="0,0" size="1280,720" title="Timer selection">
-    <widget name="timerlist" position="70,80" size="708,550" itemHeight="26" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="timerlist" position="70,80" size="708,550" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- SleepTimerEdit -->  
@@ -2873,13 +2874,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="OSD3DSetupScreen" position="0,0" size="1280,720" title="OSD3DSetupScreen">
     <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
-	<panel name="template_colorkey_text_source" />
-	<panel name="template_menu_left_button" />
-  </screen>
-  <!-- DeviceBrowser -->
-  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="DeviceBrowser" position="0,0" size="1280,720" >
-	<widget source="message" render="Label" backgroundColor="XionBackground" position="5,50" size="510,150" font="Regular;16" />
-	<widget name="filelist" backgroundColor="XionBackground" enableWrapAround="1" position="0,80" itemHeight="30" font="Regular;22" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
 	<panel name="template_colorkey_text_source" />
 	<panel name="template_menu_left_button" />
   </screen>
