@@ -522,13 +522,13 @@
   <!-- ********** EPGRefresh ********** -->
   <!-- EPGRefreshServiceEditor -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EPGRefreshServiceEditor" position="0,0" size="1280,720" title="Edit Services to refresh">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" font="Regular;22" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
   <!-- EPGRefreshConfiguration -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="EPGRefreshConfiguration" position="0,0" size="1280,720" title="Configure EPGRefresh">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="708,510" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" font="Regular;22" itemHeight="30" name="config" position="70,80" size="708,510" transparent="1" />
     <widget backgroundColor="XionBackground" font="Regular2;20" position="70,600" render="Label" size="708,50" source="help" transparent="1" foregroundColor="XionFont2" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
@@ -536,14 +536,14 @@
   <!-- ********** Filebrowser ********** -->
   <!-- FilebrowserConfigScreen -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="FilebrowserConfigScreen" position="0,0" size="1280,720" title="">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_button" />
   </screen>
   <!-- FilebrowserScreen -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="FilebrowserScreen" position="0,0" size="1280,720" title="">
-    <widget backgroundColor="XionBackground" itemHeight="30" name="list_left" position=" 70,115" size="550,510" transparent="1" />
-    <widget backgroundColor="XionBackground" itemHeight="30" name="list_right" position="660,115" size="550,510" transparent="1" />
+    <widget backgroundColor="XionBackground" itemHeight="30" font="Regular;22" name="list_left" position=" 70,115" size="550,510" transparent="1" />
+    <widget backgroundColor="XionBackground" itemHeight="30" font="Regular;22" name="list_right" position="660,115" size="550,510" transparent="1" />
     <panel name="template_menu_full_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
@@ -1969,26 +1969,28 @@
 	<widget name="save" position="264,662" size="148,48" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText"  transparent="1" zPosition="1" />
 	<panel name="template_menu_full_button" />
 </screen>
-<!-- TMDb - The Movie Database */-->
-<!-- ********** Menusort ********** -->
-  <!-- Menusort */-->
+<!-- Menusort -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="SortableMenu" position="0,0" size="1280,720" title="Menusort">
     <widget name="menu" position="70,90" size="708,400" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <eLabel font="Regular; 20" halign="left" valign="center" text="Hidden" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
     <panel name="template_menu_left_button" />
 	</screen> 
-<!-- ********** OSCamStatusView ********** -->  
-  <!-- OSCamStatusView */-->
+<!-- OSCamStatusView -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="oscamConfig" position="0,0" size="1280,720" title="OSCam Status View Setup">
     <widget name="config" position="70,80" size="708,300" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_kp" />
   </screen> 
-<!-- ********** OpenAirPlay ********** -->  
-  <!-- OpenAirPlay */-->
+<!-- OpenAirPlay -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="OpenAirPlayConfig" position="0,0" size="1280,720" title="OpenAirPlay Configuration">
     <widget name="config" position="70,80" size="708,120" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
-  </screen> 
-<!-- plugins -->
+  </screen>
+<!-- RecordTimerQuestion -->
+  <screen name="RecordTimerQuestion" position="0,0" size="372,82" zPosition="99" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel position="1,1" size="370,80" backgroundColor="XionBackground" zPosition="-1" transparent="0" />
+    <eLabel position="0,0" size="372,82" backgroundColor="XionBackground" zPosition="-2" transparent="0" />
+    <widget name="list" position="11,11" size="350,60" itemHeight="30" font="Regular;22" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
+  </screen>
+<!-- Plugins -->
