@@ -1309,7 +1309,7 @@
   </screen>
   <!-- TimerEntry -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" title="Timer entry">
-    <widget itemHeight="30" name="config" position="70,80" size="708,390" backgroundColor="XionBackground" transparent="1" />
+    <widget itemHeight="30" font="Regular;20" name="config" position="70,80" size="708,390" backgroundColor="XionBackground" transparent="1" />
     <widget name="HelpWindow" position="156,479" size="532,170" flags="wfNoBorder" />
     <eLabel font="Regular;20" halign="left" valign="center" text="Abbrechen" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
     <eLabel font="Regular;20" halign="left" valign="center" text="OK" position="264,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
