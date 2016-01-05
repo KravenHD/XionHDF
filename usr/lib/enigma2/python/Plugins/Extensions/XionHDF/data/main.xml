@@ -1340,7 +1340,7 @@
   </screen>
   <!-- TimerSelection -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="TimerSelection" position="0,0" size="1280,720" title="Timer selection">
-    <widget name="timerlist" position="70,80" size="708,550" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+    <widget name="timerlist" itemHeight="50" position="70,80" size="708,550" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- SleepTimerEdit -->  
