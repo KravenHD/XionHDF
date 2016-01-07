@@ -69,6 +69,8 @@
     <parameter name="HelpMenuListHlp" value="0,0,700,26"/>
     <parameter name="FileListName" value="35,1,470,26"/>
     <parameter name="FileListIcon" value="9,1,20,20"/>
+    <parameter name="FileListMultiName" value="35,1,470,26"/>
+    <parameter name="FileListMultiIcon" value="20,5,20,20"/>
     <parameter name="PlayListName" value="25,1,470,22"/>
     <parameter name="PlayListIcon" value="5,3,16,16"/>
     <parameter name="ServiceInfo" value="0,0,300,30"/>
