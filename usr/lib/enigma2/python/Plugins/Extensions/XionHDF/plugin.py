@@ -135,6 +135,7 @@ config.plugins.XionHDF.EMCStyle = ConfigSelection(default="emc-nocover", choices
 				("emc-smallcover", _("Small cover")),
 				("emc-bigcover", _("Big cover")),
 				("emc-verybigcover", _("Very big cover")),
+				("emc-listbigcover", _("List big cover")),
 				("emc-minitv", _("MiniTV"))
 				])
 				
@@ -142,6 +143,7 @@ config.plugins.XionHDF.MovieStyle = ConfigSelection(default="movieselectionnocov
 				("movieselectionnocover", _("No cover")),
 				("movieselectionsmallcover", _("Small cover")),
 				("movieselectionbigcover", _("Big cover")),
+				("movieselectionlistbigcover", _("List big cover")),
 				("movieselectionminitv", _("MiniTV"))
 				])
 				
