@@ -141,7 +141,7 @@ class XionHDFECMLine(Poll, Converter, object):
 					if self.type == self.VERYSHORT:
 						ecmline = caid + ', ' + ecmtime
 					elif self.type == self.SHORT:
-						ecmline = caid + ' - ' + address + ' - ' + ecmtime
+						ecmline = caid + ' - ' + address + ' - ' + hops + ' - ' + ecmtime
 					else:
 						ecmline = active + ' - ' + caid + ' - ' + system + ' - ' + address + ' - ' + hops + ' - ' + ecmtime					
 	
@@ -150,7 +150,7 @@ class XionHDFECMLine(Poll, Converter, object):
 					if self.type == self.VERYSHORT:
 						ecmline = caid + ', ' + ecmtime
 					elif self.type == self.SHORT:
-						ecmline = caid + ' - ' + reader + ' - ' + ecmtime
+						ecmline = caid + ' - ' + reader + ' - ' + hops + ' - ' + ecmtime
 					else:
 						ecmline = active + ' - ' + caid + ' - ' + system + ' - ' + reader + ' - ' + hops + ' - ' + ecmtime
 	
