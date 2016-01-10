@@ -1013,7 +1013,7 @@
     <!-- OpenWebifConfig -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="OpenWebifConfig" position="0,0" size="1280,720" title="OpenWebif Configuration">
     <widget backgroundColor="XionBackground" font="Regular2;24" halign="center" name="lab1" position="70,80" size="708,60" transparent="1" valign="top" zPosition="1" foregroundColor="XionFont2" />
-    <widget name="config" position="70,161" size="708,410" transparent="1" />
+    <widget name="config" itemHeight="30" font="Regular;22" position="70,161" size="708,410" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text" />
   </screen>
