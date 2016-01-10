@@ -1774,36 +1774,36 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <!-- ********** Parental Control ********** -->
   <!-- ParentalControlChangePin -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ParentalControlChangePin" position="0,0" size="1280,720" title="Change pin code">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
   <!-- ParentalControlEditor -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ParentalControlEditor" position="0,0" size="1280,720" title="Parental control services Editor">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="servicelist" position="70,80" size="708,540" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="servicelist" position="70,80" size="708,540" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
   <!-- ParentalControlSetup -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ParentalControlSetup" position="0,0" size="1280,720" title="Parental control setup">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
   <!-- ********** Audio and Video  ********** -->
   <!-- VideoFinetune -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1280,720">
-    <widget position="6,6" render="Canvas" size="1280,720" source="Canvas" />
+    <widget position="6,6" render="Canvas" itemHeight="30" font="Regular;22" size="1280,720" source="Canvas" />
   </screen>
   <!-- 3D AutoSwitch -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ThreeDSettings" position="0,0" size="1280,720" title="AutoSwitch 3D">
-    <widget name="config" position="70,80" size="708,540" transparent="1" zPosition="2" />
+    <widget name="config" itemHeight="30" font="Regular;22" position="70,80" size="708,540" transparent="1" zPosition="2" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_old" />
   </screen>
   <!-- UI3DSetupScreen -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="UI3DSetupScreen" position="0,0" size="1280,720" title="UI 3D setup">
-    <widget name="config" position="70,80" size="708,540" transparent="1" zPosition="2" />
+    <widget name="config" position="70,80" itemHeight="30" font="Regular;22" size="708,540" transparent="1" zPosition="2" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
@@ -1824,14 +1824,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <!-- Volume_adjust -->
   <screen name="Volume_adjust" position="0,0" size="1280,720" title="Volume Adjust" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="ServiceList" position="70,80" size="708,450" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
-    <widget source="press_menu" render="Label" position="70,585" zPosition="1" size="708,28" font="Regular2;22" foregroundColor="XionFont2" halign="left" valign="center" backgroundColor="XionBackground" transparent="1" />
+    <widget name="ServiceList" position="70,80" size="708,450" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+    <widget source="press_menu" render="Label" position="70,585" zPosition="1" size="708,28" itemHeight="30" font="Regular;22" foregroundColor="XionFont2" halign="left" valign="center" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
   <!-- Automatic Volume Adjustment -->
   <screen name="AutomaticVolumeAdjustmentConfigScreen" position="0,0" size="1280,720" title="Automatic Volume Adjust" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="config" position="70,80" size="708,450" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+    <widget name="config" position="70,80" size="708,450" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <panel name="template_menu_left_button" />
     <panel name="template_colorkey_text_source" />
   </screen>
@@ -1981,11 +1981,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <!-- ********** Tuner Setup ********** -->
   <!-- Dish -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="Dish" position="900,90" size="170,170" title="Dish" zPosition="-1">
-    <widget alphatest="off" name="Dishpixmap" pixmap="XionHDF/buttons/dish.png" position="4,6" size="171,170" />
+    <widget alphatest="off" itemHeight="30" font="Regular;22" name="Dishpixmap" pixmap="XionHDF/buttons/dish.png" position="4,6" size="171,170" />
   </screen>
   <!-- NimSelection -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="NimSelection" position="0,0" size="1280,720" title="Choose Tuner">
-    <widget enableWrapAround="1" position="70,80" render="Listbox" size="708,440" source="nimlist" transparent="1">
+    <widget enableWrapAround="1" position="70,80" font="Regular;22" render="Listbox" size="708,440" source="nimlist" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 8), size = (680, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
@@ -2000,7 +2000,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <!-- NimSetup -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="NimSetup" position="0,0" size="1280,720" title="Reception Settings">
-    <widget itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
+    <widget itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" transparent="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- PositionerSetup -->
@@ -2065,15 +2065,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <!-- ScanSetup -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ScanSetup" position="0,0" size="1280,720" title="Service scan">
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="708,480" transparent="1" />
-    <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="introduction" position="70,595" size="708,28" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,480" transparent="1" />
+    <widget backgroundColor="XionBackground" itemHeight="30" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="introduction" position="70,595" size="708,28" transparent="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- ScanSimple -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="ScanSimple" position="0,0" size="1280,720" title="Service scan">
-    <widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" name="header" position="70,80" size="708,30" transparent="1" />
-    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,130" size="708,450" transparent="1" />
-    <widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="footer" position="70,595" size="708,28" transparent="1" />
+    <widget backgroundColor="XionBackground" itemHeight="30" font="Regular2;22" foregroundColor="XionFont2" name="header" position="70,80" size="708,30" transparent="1" />
+    <widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,130" size="708,450" transparent="1" />
+    <widget backgroundColor="XionBackground" itemHeight="30" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="footer" position="70,595" size="708,28" transparent="1" />
     <panel name="template_menu_left" />
   </screen>
   <!-- ServiceScan -->
@@ -2133,7 +2133,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   </screen>
   <!-- CableScanScreen -->
   <screen name="CableScanScreen" position="0,0" size="1280,720" title="Cable Scan" flags="wfNoBorder" backgroundColor="transparent">
-    <widget name="config" position="70,80" size="500,250" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+    <widget name="config" itemHeight="30" font="Regular;22" position="70,80" size="500,250" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
     <widget name="introduction" position="70,595" size="500,28" font="Regular2;22" foregroundColor="XionFont2" halign="center" backgroundColor="XionBackground" transparent="1" />
     <eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
     <panel name="template_menu_left" />
