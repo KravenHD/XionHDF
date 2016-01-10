@@ -1,6 +1,7 @@
 #!/bin/sh
-if [ -f /tmp/skin.xml ]; then
-mv /tmp/skin.xml /usr/share/enigma2/XionHDF
+if [ -f /tmp/XionHDF/skin.xml ]; then
+	rm -rf /usr/share/enigma2/XionHDF/
+	mv /tmp/XionHDF /usr/share/enigma2/
 fi
 echo "                                                          "
 echo "             ...Skin successful installed.                "

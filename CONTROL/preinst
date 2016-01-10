@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "Checking for previous installations..."
 if [ -f /usr/share/enigma2/XionHDF/skin.xml ]; then
-    cp /usr/share/enigma2/XionHDF/skin.xml /tmp
+    cp -R /usr/share/enigma2/XionHDF/ /tmp
     rm -rf /usr/share/enigma2/XionHDF
     rm -rf /usr/lib/enigma2/python/Components/Converter/XionHDF*
     rm -rf /usr/lib/enigma2/python/Components/Renderer/XionHDF*
