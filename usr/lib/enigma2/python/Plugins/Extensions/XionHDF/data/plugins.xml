@@ -1974,13 +1974,7 @@
     <widget name="menu" position="70,90" size="708,400" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
     <eLabel font="Regular; 20" halign="left" valign="center" text="Hidden" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
     <panel name="template_menu_left_button" />
-	</screen> 
-<!-- OSCamStatusView -->
-  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="oscamConfig" position="0,0" size="1280,720" title="OSCam Status View Setup">
-    <widget name="config" position="70,80" size="708,300" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
-    <panel name="template_menu_left_button" />
-    <panel name="template_colorkey_text_kp" />
-  </screen> 
+	</screen>  
 <!-- OpenAirPlay -->
   <screen backgroundColor="XionBackground" flags="wfNoBorder" name="OpenAirPlayConfig" position="0,0" size="1280,720" title="OpenAirPlay Configuration">
     <widget name="config" position="70,80" size="708,120" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
@@ -1993,4 +1987,31 @@
     <eLabel position="0,0" size="372,82" backgroundColor="XionBackground" zPosition="-2" transparent="0" />
     <widget name="list" position="11,11" size="350,60" itemHeight="30" font="Regular;22" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
   </screen>
+<!-- ********** Kashmir Plugins ********** -->  
+  <!-- OSCam Status View */-->
+  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="oscamConfig" position="0,0" size="1280,720" title="OSCam Status View Setup">
+    <widget name="config" position="70,80" size="708,300" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_kp" />
+  </screen> 
+  <!-- EPG Translater */-->
+  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="translatorConfig" position="0,0" size="1280,720" title="EPG Translator Setup">
+    <widget name="config" position="70,80" size="708,300" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_kp" />
+  </screen> 
+  <!-- EPG YouTube Trailer */-->
+  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="youtubeConfig" position="0,0" size="1280,720" title="EPG YouTube Trailer Setup">
+    <widget name="config" position="70,80" size="708,300" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_kp" />
+  </screen>
+  <!-- Wikipedia */-->
+  <screen backgroundColor="XionBackground" flags="wfNoBorder" name="wikiConfig" position="0,0" size="1280,720" title="Wikipedia Setup">
+    <widget name="config" position="70,80" size="708,200" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+    <widget name="plugin" position="70,230" size="708,400" alphatest="blend" transparent="1" />
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_kp" />
+  </screen>  
+<!-- Kashmir Plugins */-->    
 <!-- Plugins -->
