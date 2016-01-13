@@ -311,8 +311,10 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Font bold height in %"), config.plugins.XionHDF.FontStyleHeight_2, _("This option changes the height of bold font.")))
 		return list
 		
-        def __selectionChanged(self):
-                self["config"].setList(self.mylist())
+	def __selectionChanged(self):
+		returnValue = self["config"].getCurrent()[0]
+		if returnValue != 'Weather ID' or returnValue != 'Wetter ID':
+			self["config"].setList(self.mylist())
                 
 	def updateHelp(self):
 		cur = self["config"].getCurrent()
@@ -415,17 +417,17 @@ class XionHDF(ConfigListScreen, Screen):
 		ConfigListScreen.keyLeft(self)
 		self.ShowPicture()
                 self.updateHelp()
-		returnValue = self["config"].getCurrent()[0]
-        	if returnValue == 'Weather ID' or returnValue == 'Wetter ID': 
-        		self.session.openWithCallback(self.do_search, VirtualKeyBoard, title = _("Enter youre WOEID"))
+#		returnValue = self["config"].getCurrent()[0]
+#        	if returnValue == 'Weather ID' or returnValue == 'Wetter ID': 
+#        		self.session.openWithCallback(self.do_search, VirtualKeyBoard, title = _("Enter youre WOEID"))
 	
 	def keyRight(self):
 		ConfigListScreen.keyRight(self)
 		self.ShowPicture()
                 self.updateHelp()
-		returnValue = self["config"].getCurrent()[0]
-		if returnValue == 'Weather ID' or returnValue == 'Wetter ID': 
-        		self.session.openWithCallback(self.do_search, VirtualKeyBoard, title = _("Enter youre WOEID"))
+#		returnValue = self["config"].getCurrent()[0]
+#		if returnValue == 'Weather ID' or returnValue == 'Wetter ID': 
+#        		self.session.openWithCallback(self.do_search, VirtualKeyBoard, title = _("Enter youre WOEID"))
 	
 	def keyDown(self):
 		self["config"].instance.moveSelection(self["config"].instance.moveDown)
