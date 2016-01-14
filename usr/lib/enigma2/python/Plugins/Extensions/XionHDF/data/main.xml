@@ -2887,6 +2887,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<widget name="filelist" backgroundColor="XionBackground" enableWrapAround="1" position="0,80" itemHeight="30" font="Regular;22" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
 	<panel name="template_colorkey_text_source" />
 	<panel name="template_menu_left_button" />
+  </screen>
+  <!-- ShowUpdatePackages --> 
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="ShowUpdatePackages" position="0,0" size="1280,720" title="New Packages">
+    <widget source="list" render="Listbox" position="70,90" size="708,520" backgroundColor="XionBackground" itemHeight="50" alphatest="blend" transparent="1">
+    <convert type="TemplatedMultiContent">
+    {"template": [
+      MultiContentEntryText(pos = (6, 2), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+      MultiContentEntryText(pos = (6, 28), size = (540, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+      MultiContentEntryPixmapAlphaTest(pos = (605, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+      MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (610, 2), png = 5), # index 4 is the div pixmap
+     ],
+    "fonts": [gFont("Regular", 22),gFont("Regular", 14)],
+    "itemHeight": 52
+    }
+    </convert>
+    </widget>
+    <panel name="template_menu_left_button" />
+    <panel name="template_colorkey_text_source" />
   </screen>  
   <!-- main-custom-openhdf */ -->
   <!-- Main */ -->
