@@ -1,18 +1,18 @@
-<!--/* NumberZapExt -->
-<screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZapExt" position="264,216" size="714,243" title="QuickZap">
-  <widget name="chPicon" position="377,43" size="225,138" transparent="1" zPosition="1" alphatest="blend" />
-  <widget font="Regular; 80" foregroundColor="XionFont1" halign="center" name="chNum" position="67,72" size="200,100" transparent="0" zPosition="0" />
-  <widget font="Regular; 20" foregroundColor="XionFont1" halign="center" name="chName" noWrap="1" position="295,179" size="387,26" transparent="0" zPosition="0" />
-  <eLabel halign="center" position="271,32" size="427,181" zPosition="-1" />
-  <eLabel backgroundColor="XionLine" position="694,35" size="1,175" />
-  <eLabel backgroundColor="XionLine" position="274,35" size="420,1" />
-  <eLabel halign="center" position="46,46" size="225,154" zPosition="-1" />
-  <eLabel backgroundColor="XionLine" position="49,49" size="1,147" />
-  <eLabel backgroundColor="XionLine" position="49,49" size="235,1" />
-  <eLabel backgroundColor="XionLine" position="284,49" size="1,147" />
-  <eLabel backgroundColor="XionLine" position="49,195" size="235,1" />
-  <eLabel backgroundColor="XionLine" position="274,209" size="420,1" />
-  <eLabel backgroundColor="XionLine" position="274,196" size="1,14" />
-  <eLabel backgroundColor="XionLine" position="274,35" size="1,14" />
-</screen>
-<!-- NumberZapExt */-->
+		<!--/* NumberZapExt -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZapExt" position="264,216" size="714,243" title="QuickZap">
+		<widget name="chPicon" position="377,43" size="225,138" transparent="1" zPosition="1" alphatest="blend" />
+		<widget font="Regular; 80" foregroundColor="XionFont1" halign="center" name="chNum" position="67,72" size="200,100" transparent="0" zPosition="0" />
+		<widget font="Regular; 20" foregroundColor="XionFont1" halign="center" name="chName" noWrap="1" position="295,179" size="387,26" transparent="0" zPosition="0" />
+		<eLabel halign="center" position="271,32" size="427,181" zPosition="-1" />
+		<eLabel backgroundColor="XionLine" position="694,35" size="1,175" />
+		<eLabel backgroundColor="XionLine" position="274,35" size="420,1" />
+		<eLabel halign="center" position="46,46" size="225,154" zPosition="-1" />
+		<eLabel backgroundColor="XionLine" position="49,49" size="1,147" />
+		<eLabel backgroundColor="XionLine" position="49,49" size="235,1" />
+		<eLabel backgroundColor="XionLine" position="284,49" size="1,147" />
+		<eLabel backgroundColor="XionLine" position="49,195" size="235,1" />
+		<eLabel backgroundColor="XionLine" position="274,209" size="420,1" />
+		<eLabel backgroundColor="XionLine" position="274,196" size="1,14" />
+		<eLabel backgroundColor="XionLine" position="274,35" size="1,14" />
+	</screen>
+		<!-- NumberZapExt */-->

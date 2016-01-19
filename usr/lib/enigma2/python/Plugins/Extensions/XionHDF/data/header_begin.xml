@@ -1,110 +1,110 @@
 <skin>
-  <copyright>
-    <!-- DONT REMOVE THIS DISCLAIMER -->
-    <!-- XionHDF by Team Kraven -->
-    <!-- You can change this skin for PERSONAL USE ONLY -->
-    <!-- You are not allowed to publish our skin without our permission -->
-  </copyright>
-  <support url="http://www.hdfreaks.cc" />
-  <output id="0">
-    <resolution bpp="32" xres="1280" yres="720" />
-  </output>
-  <colors>
-    <color name="black" value="#00000000" />
-    <color name="blue" value="#000064c7" />
-    <color name="green" value="#00389416" />
-    <color name="grey" value="#00f0e3d6" />
-  	<color name="foreground" value="#00ffffff" />
-    <color name="XionBackground" value="#00000000" />
-    <color name="XionButtonText" value="#00ffffff" />
-    <color name="XionFont1" value="#00ffffff" />
-    <color name="XionFont2" value="#00ffffff" />
-    <color name="XionLine" value="#00ffffff" />
-    <color name="XionProgress" value="#00ffffff" />
-    <color name="XionSelection" value="#000050EF" />
-    <color name="XionSelFont" value="#00ffffff" />
-    <color name="XionMeteoFont" value="#00ffffff" />
-    <color name="orange" value="#00dc5221" />
-    <color name="rds_text_bg" value="#00003258" />
-    <color name="red" value="#00f23d21" />
-    <color name="rssviewtop" value="#45005050" />
-    <color name="shadow" value="#40101010" />
-    <color name="transparent" value="#ff000000" />
-    <color name="white" value="#00ffffff" />
-    <color name="yellow" value="#00e5b243" />
-  </colors>
-  <fonts>
-    <font filename="lcd.ttf" name="LCD" scale="100" />
-    <font filename="ae_AlMateen.ttf" name="Replacement" replacement="1" scale="100" />
-    <font filename="tuxtxt.ttf" name="Console" scale="100" />
-    <font filename="XionHDF/fonts/nmsbd2.ttf" name="Arial" scale="100" />
-    <font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="95" />
-    <font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="95" />
-    <font filename="XionHDF/fonts/meteocons.ttf" name="Meteo" scale="100" />
-    <alias name="Body" font="Regular" size="20" height="30" />
-    <alias name="ChoiceList" font="Regular" size="20" height="30" />
-    <alias name="Dreamexplorer" font="Regular" size="20" height="30" />
-    <alias name="SelectionList" font="Regular" size="20" height="30" />
-    <alias name="FileList" font="Regular" size="20" height="30" />
-    <alias name="FileListMulti" font="Regular" size="20" height="30" />
-    <alias name="TextNormal" font="Regular" size="20" height="30" />
-    <alias name="PluginBrowser0" font="Regular" size="20" height="46" />
-    <alias name="PluginBrowser1" font="Regular" size="20" />
-    <alias name="HelpMenuList" font="Regular" size="20" height="23" />
-    <alias name="HelpMenuListExt0" font="Regular" size="20" height="30" />
-    <alias name="HelpMenuListExt1" font="Regular" size="20"/>
-    <alias name="PlayList" font="Regular" size="20" height="30" />
-    <alias name="ServiceInfo" font="Regular" size="20" height="30" />
-    <alias name="VirtualKeyboard" font="Regular" size="24" height="45" />
+	<copyright>
+		<!-- DONT REMOVE THIS DISCLAIMER -->
+		<!-- XionHDF by Team Kraven -->
+		<!-- You can change this skin for PERSONAL USE ONLY -->
+		<!-- You are not allowed to publish our skin without our permission -->
+	</copyright>
+	<support url="http://www.hdfreaks.cc" />
+	<output id="0">
+		<resolution bpp="32" xres="1280" yres="720" />
+	</output>
+	<colors>
+		<color name="black" value="#00000000" />
+		<color name="blue" value="#000064c7" />
+		<color name="green" value="#00389416" />
+		<color name="grey" value="#00f0e3d6" />
+		<color name="foreground" value="#00ffffff" />
+		<color name="XionBackground" value="#00000000" />
+		<color name="XionButtonText" value="#00ffffff" />
+		<color name="XionFont1" value="#00ffffff" />
+		<color name="XionFont2" value="#00ffffff" />
+		<color name="XionLine" value="#00ffffff" />
+		<color name="XionProgress" value="#00ffffff" />
+		<color name="XionSelection" value="#000050EF" />
+		<color name="XionSelFont" value="#00ffffff" />
+		<color name="XionMeteoFont" value="#00ffffff" />
+		<color name="orange" value="#00dc5221" />
+		<color name="rds_text_bg" value="#00003258" />
+		<color name="red" value="#00f23d21" />
+		<color name="rssviewtop" value="#45005050" />
+		<color name="shadow" value="#40101010" />
+		<color name="transparent" value="#ff000000" />
+		<color name="white" value="#00ffffff" />
+		<color name="yellow" value="#00e5b243" />
+	</colors>
+	<fonts>
+		<font filename="lcd.ttf" name="LCD" scale="100" />
+		<font filename="ae_AlMateen.ttf" name="Replacement" replacement="1" scale="100" />
+		<font filename="tuxtxt.ttf" name="Console" scale="100" />
+		<font filename="XionHDF/fonts/nmsbd2.ttf" name="Arial" scale="100" />
+		<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="95" />
+		<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="95" />
+		<font filename="XionHDF/fonts/meteocons.ttf" name="Meteo" scale="100" />
+		<alias name="Body" font="Regular" size="20" height="30" />
+		<alias name="ChoiceList" font="Regular" size="20" height="30" />
+		<alias name="Dreamexplorer" font="Regular" size="20" height="30" />
+		<alias name="SelectionList" font="Regular" size="20" height="30" />
+		<alias name="FileList" font="Regular" size="20" height="30" />
+		<alias name="FileListMulti" font="Regular" size="20" height="30" />
+		<alias name="TextNormal" font="Regular" size="20" height="30" />
+		<alias name="PluginBrowser0" font="Regular" size="20" height="46" />
+		<alias name="PluginBrowser1" font="Regular" size="20" />
+		<alias name="HelpMenuList" font="Regular" size="20" height="23" />
+		<alias name="HelpMenuListExt0" font="Regular" size="20" height="30" />
+		<alias name="HelpMenuListExt1" font="Regular" size="20"/>
+		<alias name="PlayList" font="Regular" size="20" height="30" />
+		<alias name="ServiceInfo" font="Regular" size="20" height="30" />
+		<alias name="VirtualKeyboard" font="Regular" size="24" height="45" />
 	</fonts>
-  <parameters>
-    <parameter name="ChoicelistName" value="33,3,433,30"/>
-    <parameter name="ChoicelistIcon" value="1,1,27,27"/>
-    <parameter name="PluginBrowserName" value="113,1,26"/>
-    <parameter name="PluginBrowserDescr" value="113,20,26"/>
-    <parameter name="PluginBrowserIcon" value="7,3,100,40"/>
-    <parameter name="PluginBrowserDownloadName" value="73,2,26"/>
-    <parameter name="PluginBrowserDownloadDescr" value="73,20,26"/>
-    <parameter name="PluginBrowserDownloadIcon" value="7,0,60,50"/>
-    <parameter name="HelpMenuListHlp" value="0,0,700,26"/>
-    <parameter name="FileListName" value="35,1,470,26"/>
-    <parameter name="FileListIcon" value="9,1,20,20"/>
-    <parameter name="FileListMultiName" value="35,1,470,26"/>
-    <parameter name="FileListMultiIcon" value="20,5,20,20"/>
-    <parameter name="PlayListName" value="25,1,470,22"/>
-    <parameter name="PlayListIcon" value="5,3,16,16"/>
-    <parameter name="ServiceInfo" value="0,0,300,30"/>
-    <parameter name="ServiceInfoLeft" value="0,0,300,30"/>
-    <parameter name="ServiceInfoRight" value="300,0,667,30"/>
-    <parameter name="VirtualKeyboard" value="45,45"/>
-  </parameters>
-  <subtitles>
-    <sub font="Regular;30" name="Subtitle_TTX" shadowColor="#shadow" shadowOffset="3,3" />
-    <sub font="Regular;30" foregroundColor="grey" name="Subtitle_Regular" shadowColor="#shadow" shadowOffset="3,3" />
-    <sub font="Replacement;30" foregroundColor="grey" name="Subtitle_Bold" shadowColor="#shadow" shadowOffset="3,3" />
-    <sub font="Regular;30" foregroundColor="orange" name="Subtitle_Italic" shadowColor="#shadow" shadowOffset="3,3" />
-  </subtitles>
-  <windowstyle id="0" type="skinned">
-    <title font="Regular;24" offset="20,5" />
-    <color color="black" name="Background" />
-    <color color="XionFont1" name="LabelForeground" />
-    <color color="black" name="ListboxBackground" />
-    <color color="XionFont1" name="ListboxForeground" />
-    <color color="XionSelection" name="ListboxSelectedBackground" />
-    <color color="XionSelFont" name="ListboxSelectedForeground" />
-    <color color="XionSelection" name="ListboxMarkedBackground" />
-    <color color="XionSelFont" name="ListboxMarkedForeground" />
-    <color color="XionSelection" name="ListboxMarkedAndSelectedBackground" />
-    <color color="XionSelFont" name="ListboxMarkedAndSelectedForeground" />
-    <color color="XionFont1" name="WindowTitleForeground" />
-    <color color="black" name="WindowTitleBackground" />
-    <borderset name="bsWindow">
-      <pixmap filename="XionHDF/bsWindow/bs_tl.png" pos="bpTopLeft" />
-      <pixmap filename="XionHDF/bsWindow/bs_t.png" pos="bpTop" />
-      <pixmap filename="XionHDF/bsWindow/bs_tr.png" pos="bpTopRight" />
-      <pixmap filename="XionHDF/bsWindow/bs_l.png" pos="bpLeft" />
-      <pixmap filename="XionHDF/bsWindow/bs_r.png" pos="bpRight" />
-      <pixmap filename="XionHDF/bsWindow/bs_bl.png" pos="bpBottomLeft" />
-      <pixmap filename="XionHDF/bsWindow/bs_b.png" pos="bpBottom" />
-      <pixmap filename="XionHDF/bsWindow/bs_br.png" pos="bpBottomRight" />
-    </borderset>
+	<parameters>
+		<parameter name="ChoicelistName" value="33,3,433,30"/>
+		<parameter name="ChoicelistIcon" value="1,1,27,27"/>
+		<parameter name="PluginBrowserName" value="113,1,26"/>
+		<parameter name="PluginBrowserDescr" value="113,20,26"/>
+		<parameter name="PluginBrowserIcon" value="7,3,100,40"/>
+		<parameter name="PluginBrowserDownloadName" value="73,2,26"/>
+		<parameter name="PluginBrowserDownloadDescr" value="73,20,26"/>
+		<parameter name="PluginBrowserDownloadIcon" value="7,0,60,50"/>
+		<parameter name="HelpMenuListHlp" value="0,0,700,26"/>
+		<parameter name="FileListName" value="35,1,470,26"/>
+		<parameter name="FileListIcon" value="9,1,20,20"/>
+		<parameter name="FileListMultiName" value="35,1,470,26"/>
+		<parameter name="FileListMultiIcon" value="20,5,20,20"/>
+		<parameter name="PlayListName" value="25,1,470,22"/>
+		<parameter name="PlayListIcon" value="5,3,16,16"/>
+		<parameter name="ServiceInfo" value="0,0,300,30"/>
+		<parameter name="ServiceInfoLeft" value="0,0,300,30"/>
+		<parameter name="ServiceInfoRight" value="300,0,667,30"/>
+		<parameter name="VirtualKeyboard" value="45,45"/>
+	</parameters>
+	<subtitles>
+		<sub font="Regular;30" name="Subtitle_TTX" shadowColor="#shadow" shadowOffset="3,3" />
+		<sub font="Regular;30" foregroundColor="grey" name="Subtitle_Regular" shadowColor="#shadow" shadowOffset="3,3" />
+		<sub font="Replacement;30" foregroundColor="grey" name="Subtitle_Bold" shadowColor="#shadow" shadowOffset="3,3" />
+		<sub font="Regular;30" foregroundColor="orange" name="Subtitle_Italic" shadowColor="#shadow" shadowOffset="3,3" />
+	</subtitles>
+	<windowstyle id="0" type="skinned">
+		<title font="Regular;24" offset="20,5" />
+		<color color="black" name="Background" />
+		<color color="XionFont1" name="LabelForeground" />
+		<color color="black" name="ListboxBackground" />
+		<color color="XionFont1" name="ListboxForeground" />
+		<color color="XionSelection" name="ListboxSelectedBackground" />
+		<color color="XionSelFont" name="ListboxSelectedForeground" />
+		<color color="XionSelection" name="ListboxMarkedBackground" />
+		<color color="XionSelFont" name="ListboxMarkedForeground" />
+		<color color="XionSelection" name="ListboxMarkedAndSelectedBackground" />
+		<color color="XionSelFont" name="ListboxMarkedAndSelectedForeground" />
+		<color color="XionFont1" name="WindowTitleForeground" />
+		<color color="black" name="WindowTitleBackground" />
+		<borderset name="bsWindow">
+			<pixmap filename="XionHDF/bsWindow/bs_tl.png" pos="bpTopLeft" />
+			<pixmap filename="XionHDF/bsWindow/bs_t.png" pos="bpTop" />
+			<pixmap filename="XionHDF/bsWindow/bs_tr.png" pos="bpTopRight" />
+			<pixmap filename="XionHDF/bsWindow/bs_l.png" pos="bpLeft" />
+			<pixmap filename="XionHDF/bsWindow/bs_r.png" pos="bpRight" />
+			<pixmap filename="XionHDF/bsWindow/bs_bl.png" pos="bpBottomLeft" />
+			<pixmap filename="XionHDF/bsWindow/bs_b.png" pos="bpBottom" />
+			<pixmap filename="XionHDF/bsWindow/bs_br.png" pos="bpBottomRight" />
+		</borderset>

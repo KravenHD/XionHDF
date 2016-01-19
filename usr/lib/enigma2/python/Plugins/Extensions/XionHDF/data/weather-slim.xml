@@ -1,61 +1,59 @@
-
-  <!-- /* Weather -->
-  <widget backgroundColor="XionBackground" font="Regular2; 24" foregroundColor="XionFont2" render="Label" position="40,22" size="60,30" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
-    <convert type="XionHDFWeather">forecastTodayDay</convert>
-  </widget>
-  <widget source="session.CurrentService" position="100,10" transparent="1" zPosition="8" size="60,60" render="Label" font="Meteo; 50" halign="center" valign="center" foregroundColor="XionMeteoFont" backgroundColor="XionBackground" noWrap="1">
-    <convert type="XionHDFWeather">currentWeatherCode</convert>
-  </widget>
-  <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="160,10" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
-    <convert type="XionHDFWeather">forecastTodayTempMax</convert>
-  </widget>
-  <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="160,40" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
-    <convert type="XionHDFWeather">forecastTodayTempMin</convert>
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular2; 24" foregroundColor="XionFont2" render="Label" position="260,22" size="60,30" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
-    <convert type="XionHDFWeather">forecastTomorrowDay</convert>
-  </widget>
-  <widget source="session.CurrentService" position="320,10" transparent="1" zPosition="8" size="60,60" render="Label" font="Meteo; 50" halign="center" valign="center" foregroundColor="XionMeteoFont" backgroundColor="XionBackground" noWrap="1">
-    <convert type="XionHDFWeather">forecastTomorrowCode</convert>
-  </widget>
-  <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="380,10" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
-    <convert type="XionHDFWeather">forecastTomorrowTempMax</convert>
-  </widget>
-  <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="380,40" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
-    <convert type="XionHDFWeather">forecastTomorrowTempMin</convert>
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular2; 24" foregroundColor="XionFont2" render="Label" position="480,22" size="60,30" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
-    <convert type="XionHDFWeather">forecastTomorrow1Day</convert>
-  </widget>
-  <widget source="session.CurrentService" position="540,10" transparent="1" zPosition="8" size="60,60" render="Label" font="Meteo; 50" halign="center" valign="center" foregroundColor="XionMeteoFont" backgroundColor="XionBackground" noWrap="1">
-    <convert type="XionHDFWeather">forecastTomorrow1Code</convert>
-  </widget>
-  <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="600,10" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
-    <convert type="XionHDFWeather">forecastTomorrow1TempMax</convert>
-  </widget>
-  <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="600,40" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
-    <convert type="XionHDFWeather">forecastTomorrow1TempMin</convert>
-  </widget>
-  <widget backgroundColor="XionBackground" font="Regular2; 24" foregroundColor="XionFont2" render="Label" position="700,22" size="60,30" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
-    <convert type="XionHDFWeather">forecastTomorrow2Day</convert>
-  </widget>
-  <widget source="session.CurrentService" position="760,10" transparent="1" zPosition="8" size="60,60" render="Label" font="Meteo; 50" halign="center" valign="center" foregroundColor="XionMeteoFont" backgroundColor="XionBackground" noWrap="1">
-    <convert type="XionHDFWeather">forecastTomorrow2Code</convert>
-  </widget>
-  <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="820,10" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
-    <convert type="XionHDFWeather">forecastTomorrow2TempMax</convert>
-  </widget>
-  <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="820,40" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
-    <convert type="XionHDFWeather">forecastTomorrow2TempMin</convert>
-  </widget>
-  <eLabel text="Temp:" position="976,10" size="189,30" zPosition="5" halign="left" font="Regular2; 20" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-  <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 20" foregroundColor="XionFont1" render="Label" position="1045,10" size="215,30" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
-    <convert type="XionHDFWeather">feels</convert>
-  </widget>
-  <eLabel text="Location:" position="945,40" size="105,30" zPosition="5" halign="left" font="Regular2; 20" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-  <widget noWrap="1" backgroundColor="XionBackground" font="Regular; 20" foregroundColor="XionFont1" render="Label" position="1045,40" size="215,30" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
-    <convert type="XionHDFWeather">currentLocation</convert>
-  </widget>
-  <ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,443" zPosition="-9" />
-  <!-- Weather */-->
-
+		<!-- /* Weather -->
+		<widget backgroundColor="XionBackground" font="Regular2; 24" foregroundColor="XionFont2" render="Label" position="40,22" size="60,30" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
+			<convert type="XionHDFWeather">forecastTodayDay</convert>
+		</widget>
+		<widget source="session.CurrentService" position="100,10" transparent="1" zPosition="8" size="60,60" render="Label" font="Meteo; 50" halign="center" valign="center" foregroundColor="XionMeteoFont" backgroundColor="XionBackground" noWrap="1">
+			<convert type="XionHDFWeather">currentWeatherCode</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="160,10" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+			<convert type="XionHDFWeather">forecastTodayTempMax</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="160,40" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+			<convert type="XionHDFWeather">forecastTodayTempMin</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" font="Regular2; 24" foregroundColor="XionFont2" render="Label" position="260,22" size="60,30" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
+			<convert type="XionHDFWeather">forecastTomorrowDay</convert>
+		</widget>
+		<widget source="session.CurrentService" position="320,10" transparent="1" zPosition="8" size="60,60" render="Label" font="Meteo; 50" halign="center" valign="center" foregroundColor="XionMeteoFont" backgroundColor="XionBackground" noWrap="1">
+			<convert type="XionHDFWeather">forecastTomorrowCode</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="380,10" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+			<convert type="XionHDFWeather">forecastTomorrowTempMax</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="380,40" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+			<convert type="XionHDFWeather">forecastTomorrowTempMin</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" font="Regular2; 24" foregroundColor="XionFont2" render="Label" position="480,22" size="60,30" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
+			<convert type="XionHDFWeather">forecastTomorrow1Day</convert>
+		</widget>
+		<widget source="session.CurrentService" position="540,10" transparent="1" zPosition="8" size="60,60" render="Label" font="Meteo; 50" halign="center" valign="center" foregroundColor="XionMeteoFont" backgroundColor="XionBackground" noWrap="1">
+			<convert type="XionHDFWeather">forecastTomorrow1Code</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="600,10" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+			<convert type="XionHDFWeather">forecastTomorrow1TempMax</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="600,40" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+			<convert type="XionHDFWeather">forecastTomorrow1TempMin</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" font="Regular2; 24" foregroundColor="XionFont2" render="Label" position="700,22" size="60,30" source="session.CurrentService" zPosition="3" halign="center" transparent="1" noWrap="1">
+			<convert type="XionHDFWeather">forecastTomorrow2Day</convert>
+		</widget>
+		<widget source="session.CurrentService" position="760,10" transparent="1" zPosition="8" size="60,60" render="Label" font="Meteo; 50" halign="center" valign="center" foregroundColor="XionMeteoFont" backgroundColor="XionBackground" noWrap="1">
+			<convert type="XionHDFWeather">forecastTomorrow2Code</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="820,10" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+			<convert type="XionHDFWeather">forecastTomorrow2TempMax</convert>
+		</widget>
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont1" render="Label" position="820,40" size="60,30" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
+			<convert type="XionHDFWeather">forecastTomorrow2TempMin</convert>
+		</widget>
+		<eLabel text="Temp:" position="976,10" size="189,30" zPosition="5" halign="left" font="Regular2; 20" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 20" foregroundColor="XionFont1" render="Label" position="1045,10" size="215,30" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
+			<convert type="XionHDFWeather">feels</convert>
+		</widget>
+		<eLabel text="Location:" position="945,40" size="105,30" zPosition="5" halign="left" font="Regular2; 20" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 20" foregroundColor="XionFont1" render="Label" position="1045,40" size="215,30" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
+			<convert type="XionHDFWeather">currentLocation</convert>
+		</widget>
+		<ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,443" zPosition="-9" />
+		<!-- Weather */-->
