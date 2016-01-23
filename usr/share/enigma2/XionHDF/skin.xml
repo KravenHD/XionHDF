@@ -2599,7 +2599,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ********** Plugin Browser ********** -->
 		<!-- PluginBrowser -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PluginBrowser" position="0,0" size="1280,720" title="Plugin browser">
-		<widget backgroundColor="XionBackground" scrollbarMode="showNever" enableWrapAround="1" name="list" position="70,80" size="708,550" transparent="1" />
+		<widget backgroundColor="XionBackground" scrollbarMode="showNever" enableWrapAround="1" name="list" position="70,80" size="708,555" transparent="1" />
 		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Plugins entfernen" position="64,662" size="148,48" transparent="1" zPosition="1" />
 		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Download Plugins" position="264,662" size="148,48" transparent="1" zPosition="1" />
 		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Plugins sperren" position="664,662" size="148,48" transparent="1" zPosition="1" />
@@ -3842,7 +3842,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- Enigma Restart -->
-<!-- Skipper 2.1--><!-- /* ERROR LINE -->	<screen name="QuitMainloopScreen" position="fill" backgroundColor="XionBackground" flags="wfNoBorder">
+	<screen name="QuitMainloopScreen" position="fill" backgroundColor="XionBackground" flags="wfNoBorder">
 		<widget name="text" position="center,590" size="720,100" font="Regular;25" halign="center" transparent="1" />
 	</screen>
 		<!-- Enigma Restart -->

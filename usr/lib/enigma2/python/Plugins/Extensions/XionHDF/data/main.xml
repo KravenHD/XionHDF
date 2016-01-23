@@ -1579,7 +1579,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ********** Plugin Browser ********** -->
 		<!-- PluginBrowser -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PluginBrowser" position="0,0" size="1280,720" title="Plugin browser">
-		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" enableWrapAround="1" name="list" position="70,80" size="708,550" transparent="1" />
+		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" enableWrapAround="1" name="list" position="70,80" size="708,555" transparent="1" />
 		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Plugins entfernen" position="64,662" size="148,48" transparent="1" zPosition="1" />
 		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Download Plugins" position="264,662" size="148,48" transparent="1" zPosition="1" />
 		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Plugins sperren" position="664,662" size="148,48" transparent="1" zPosition="1" />
