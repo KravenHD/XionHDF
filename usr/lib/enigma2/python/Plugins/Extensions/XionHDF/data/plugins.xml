@@ -2122,7 +2122,7 @@
 		<widget name="config" position="70,80" size="608,540" scrollbarMode="showOnDemand" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<widget name="information" position="70,450" size="550,200" halign="center" valign="center" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_full_button" />
-		<panel name="template_colorkey_text_kp" />
+		<panel name="template_colorkey_text" />
 	</screen>
 	<screen name="CrossEPG_Menu" position="0,0" size="1280,720" title="CrossEPG_Menu" zposition="6" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="list" render="Listbox" position="70,80" size="708,540" backgroundColor="XionBackground" transparent="1">
@@ -2137,7 +2137,7 @@
 		</convert>
 		</widget>
 		<panel name="template_menu_full_button" />
-		<panel name="template_colorkey_text_kp" />
+		<panel name="template_colorkey_text" />
 	</screen>
 	<screen name="CrossEPG_Providers" position="0,0" size="1280,720" title="CrossEPG_Providers" zposition="6" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="list" render="Listbox" position="70,80" size="708,540" backgroundColor="XionBackground" transparent="1">
@@ -2152,7 +2152,7 @@
 		</convert>
 		</widget>
 		<panel name="template_menu_full_button" />
-		<panel name="template_colorkey_text_kp" />	
+		<panel name="template_colorkey_text" />	
 	</screen>
 	<screen name="CrossEPG_Ordering" position="0,0" size="1280,720" title="CrossEPG_Ordering" zposition="6" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="list" render="Listbox" position="70,80" size="708,540" backgroundColor="XionBackground" transparent="1">
@@ -2167,27 +2167,27 @@
 		</convert>
 		</widget>
 		<panel name="template_menu_full_button" />
-		<panel name="template_colorkey_text_kp" />	
+		<panel name="template_colorkey_text" />	
 	</screen>
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="CrossEPG_Loader" position="0,0" size="1280,720" title="CrossEPG_Loader">
 		<widget name="config" position="70,80" size="608,540" scrollbarMode="showOnDemand" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<widget name="plugin" position="700,200" size="600,400" alphatest="blend" transparent="1" />
 		<panel name="template_menu_full_button" />
-		<panel name="template_colorkey_text_kp" />
+		<panel name="template_colorkey_text" />
 	</screen>
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="CrossEPG_Downloader" position="0,0" size="1280,720" title="CrossEPG_Downloader">
 		<widget name="action" halign="center" valign="center" position="70,120" size="520,20" font="Regular;16" transparent="1"/>
 		<widget name="status" halign="center" valign="center" position="70,170" size="520,20" font="Regular;16" transparent="1"/>
 		<widget name="progress" position="70,80" size="520,5" borderWidth="1" />
 		<panel name="template_menu_full_button" />
-		<panel name="template_colorkey_text_kp" />
+		<panel name="template_colorkey_text" />
 	</screen>
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="CrossEPG_About" position="0,0" size="1280,720" title="CrossEPG_About">
 		<widget name="about" position="80,80" size="660,360" font="Regular;15" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<widget name="rytec_pix" position="480,200" size="70,70" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<widget name="krkadoni_pix" position="480,290" size="70,22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_full_button" />
-		<panel name="template_colorkey_text_kp" />
+		<panel name="template_colorkey_text" />
 	</screen>
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="CrossEPG_Info" position="0,0" size="1280,720" title="CrossEPG_Info">
 		<widget name="version" position="80,80" size="540,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
@@ -2202,6 +2202,6 @@
 		<widget name="events_count" position="80,350" size="540,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<widget name="hashes_count" position="80,380" size="540,25" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_full_button" />
-		<panel name="template_colorkey_text_kp" />
+		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- Plugins -->
