@@ -2204,4 +2204,10 @@
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
+	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="YampConfigScreen" position="0,0" size="1280,720" title="YampConfigScreen">
+		<widget name="config" position="70,80" size="608,540" scrollbarMode="showOnDemand" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<panel name="template_menu_full_button" />
+		<panel name="template_colorkey_text_kp" />
+	</screen>
+
 		<!-- Plugins -->
