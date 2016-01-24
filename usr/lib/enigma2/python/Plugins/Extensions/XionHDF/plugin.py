@@ -242,10 +242,10 @@ class XionHDF(ConfigListScreen, Screen):
   <eLabel position="845,200" size="2,211" backgroundColor="#00ffffff" />
   <eLabel position="1215,200" size="2,211" backgroundColor="#00ffffff" />
   <eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-  <ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
-  <ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
-  <ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
-  <ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttonsets/hd/buttons/key_red1.png" position="22,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttonsets/hd/buttons/key_green1.png" position="222,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttonsets/hd/buttons/key_yellow1.png" position="422,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
+  <ePixmap pixmap="XionHDF/buttonsets/hd/buttons/key_blue1.png" position="622,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
   <widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="#00000000" transparent="1" valign="center" foregroundColor="#00ffffff">
     <convert type="ClockToText">Default</convert>
   </widget>
