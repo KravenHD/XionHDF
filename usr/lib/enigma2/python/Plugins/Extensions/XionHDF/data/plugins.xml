@@ -2209,5 +2209,37 @@
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text_kp" />
 	</screen>
-
+	<screen name="TranscodingSetup" backgroundColor="XionBackground" position="center,center" size="1280,720">
+		<widget name="config" position="70,80" size="608,540" scrollbarMode="showOnDemand" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="description" position="70,450" size="550,200" halign="center" valign="center" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="HelpTextHeader1" position="70,300" size="880,22" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="HelpText1" position="70,330" size="880,110" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="HelpTextHeader2" position="70,440" size="880,22" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="HelpText2" position="70,470" size="880,20" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<panel name="template_menu_full_button" />
+		<panel name="template_colorkey_text_kp" />
+	</screen>
+	<screen name="SeriesPluginConfiguration" backgroundColor="XionBackground" position="center,center" size="1280,720">
+		<widget name="config" position="70,80" size="908,540" scrollbarMode="showOnDemand" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<panel name="template_menu_full_button" />
+		<panel name="template_colorkey_text" />
+	</screen>
+	<screen name="SeriesPluginChannelEditor" backgroundColor="XionBackground" position="center,center" size="1280,720">
+		<widget name="list" position="70,80" size="608,540" itemHeight="30" font="Regular;35" backgroundColor="XionBackground" transparent="1" />
+		<panel name="template_menu_full_button" />
+		<panel name="template_colorkey_text" />
+	</screen>
+	<screen name="SeriesPluginInfoScreen" backgroundColor="XionBackground" position="center,center" size="1280,720" title="SeriesPlugin">
+		<widget name="logo" position="70,80" size="400,64" alphatest="on" />
+		<widget name="cover" position="500,80" size="540,80" alphatest="on" />
+		<widget name="state" position="580,80" size="540,80" alphatest="on" />
+		<widget name="event_title" position="70,160" size="540,35" font="Regular;22" backgroundColor="XionBackground" transparent="1" />
+		<widget name="event_episode" position="70,190" size="540,60" font="Regular;22" backgroundColor="XionBackground" transparent="1" />
+		<widget name="event_description" position="70,270" size="1040,320" font="Regular;22" backgroundColor="XionBackground" transparent="1" />
+		<widget name="datetime" position="70,600" size="400,25" font="Regular;22" backgroundColor="XionBackground" transparent="1" />
+		<widget name="duration" position="310,600" size="480,25" font="Regular;22" backgroundColor="XionBackground" transparent="1" />
+		<widget name="channel" position="390,600" size="460,25" font="Regular;22" backgroundColor="XionBackground" transparent="1" />
+		<panel name="template_menu_full_button" />
+		<panel name="template_colorkey_text" />
+	</screen>
 		<!-- Plugins -->
