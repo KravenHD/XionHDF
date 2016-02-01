@@ -810,7 +810,7 @@
 	</screen>
 		<!-- NetworkAdapterSelection -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkAdapterSelection" position="0,0" size="1280,720" title="Select Network Adapter">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" position="70,80" render="Listbox" itemHeight="26" font="Regular;22" size="708,450" source="list" transparent="1">
+		<widget backgroundColor="XionBackground" enableWrapAround="1" position="70,80" render="Listbox" size="708,450" source="list" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (54, 54), png = 3), # index 3 is the interface pixmap
