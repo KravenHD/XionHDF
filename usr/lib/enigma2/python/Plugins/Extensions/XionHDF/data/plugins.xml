@@ -741,13 +741,13 @@
 		<!-- mediaInfoFolderScreen -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="mediaInfoFolderScreen" position="0,0" size="1280,720" title="MediaInfo">
 		<widget font="Regular; 26" name="media" position="30,120" size="940,40" transparent="1" valign="top" />
-		<widget name="folderlist" backgroundColor="XionBackground" itemHeight="65" position="21,168" scrollbarMode="showOnDemand" size="1240,440" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" />
+		<widget name="folderlist" backgroundColor="XionBackground" itemHeight="30" font="Regular;22" position="20,80" scrollbarMode="showOnDemand" size="1240,540" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" />
 		<panel name="template_menu_full_button" />
-		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- mediaInfoConfigScreen -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="mediaInfoConfigScreen" position="0,0" size="1280,720" title="MediaInfo">
-		<widget name="config" backgroundColor="XionBackground" position="20,70" size="1240,580" itemHeight="25" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" />
+		<widget name="config" backgroundColor="XionBackground" position="20,70" size="1240,580" itemHeight="30" font="Regular;22" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
