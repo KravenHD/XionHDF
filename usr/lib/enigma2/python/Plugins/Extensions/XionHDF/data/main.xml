@@ -2881,6 +2881,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
+		<!-- StreamingClientsInfo -->
+	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="StreamingClientsInfo" position="0,0" size="1280,720" >
+		<widget name="ScrollLabel" scrollbarMode="showOnDemand" position="70,180" size="708,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
+		<panel name="template_menu_left" />
+	</screen>
+
 		<!-- ShowUpdatePackages -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ShowUpdatePackages" position="0,0" size="1280,720" title="New Packages">
 		<widget source="list" render="Listbox" position="70,90" size="708,520" backgroundColor="XionBackground" itemHeight="50" alphatest="blend" transparent="1">
