@@ -338,27 +338,36 @@
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
-		<!-- GraphicalEPGPIG -->
+	<!-- GraphicalEPGPIG -->
 	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="XionBackground" transparent="0">
-		<widget source="Event" render="Label" position="25,70" size="700,39" font="Regular; 24" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+		<widget source="Event" render="Label" position="25,70" size="700,39" font="Regular;24" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget source="Event" render="Label" position="25,110" size=" 65, 26" font="Regular2; 24" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+		<widget source="Event" render="Label" position="25,110" size="65,26" font="Regular2;24" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFEventTime">StartTime</convert>
 			<convert type="XionHDFClockToText">Format:%H:%M </convert>
 		</widget>
-		<widget source="Event" render="Label" position="640,110" size=" 80, 26" font="Regular2; 24" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" halign="center">
+		<widget source="Event" render="Label" position="640,110" size="80,26" font="Regular2;24" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" halign="center">
 			<convert type="XionHDFEventTime">EndTime</convert>
 			<convert type="XionHDFClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="Event" render="Progress" position="101,123" size="535,5" borderWidth="0" backgroundColor="XionBackground" foregroundColor="XionProgress" transparent="1" zPosition="1">
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
-		<widget source="Event" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" position="25,143" size="880,118" font="Regular2; 19" backgroundColor="XionBackground" foregroundColor="XionFont1" valign="top" zPosition="-8">
+		<widget source="Event" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=15000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="25,145" size="880,105" font="Regular2;19" backgroundColor="XionBackground" foregroundColor="XionFont1" valign="top" zPosition="-8">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
+		<ePixmap pixmap="buttons/key_8_epg.png" position="25,253" size="60,18" alphatest="blend" zPosition="1" />
+		<widget name="page" position="70,255" size="150,18" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
+		<ePixmap pixmap="buttons/key_9_epg.png" position="230,253" size="60,18" alphatest="blend" zPosition="1" />
+		<widget name="primetime" position="275,255" size="250,18" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
+		<ePixmap pixmap="buttons/key_prev_next.png" position="490,253" size="60,18" alphatest="blend" zPosition="1" />
+		<widget name="change_bouquet" position="535,255" size="200,18" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
+		<ePixmap pixmap="buttons/key_ch.png" position="670,253" size="60,18" alphatest="blend" zPosition="1" />
+		<widget name="jump" position="715,255" size="200,18" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
+		<widget name="bouquetlist" position="50,30" size="900,120" itemHeight="40" foregroundColor="XionFont1" backgroundColor="XionBackground" foregroundColorSelected="white" backgroundColorSelected="XionBackground" scrollbarMode="showNever" zPosition="6" transparent="1" />
 		<widget name="timeline_text" position="25,273" size="1230,25" selectionDisabled="1" transparent="1" />
-		<widget name="list" position="25,304" size="1230,345" EntryBorderColor="white" EntrybackgroundColor="XionBackground" EntryBackgroundColorSelected="grey" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="list" position="25,304" size="1230,345" EntryBorderColor="white" EntrybackgroundColor="XionBackground" EntryBackgroundColorSelected="grey" scrollbarMode="showNever" transparent="1" />
 		<widget name="timeline_now" position="80,297" zPosition="2" size="13,355" pixmap="XionHDF/epg/timeline-now.png" alphatest="blend" />
 		<widget source="session.VideoPicture" render="Pig" position="927,77" size="330,187" zPosition="3" backgroundColor="transparent" />
 		<eLabel position="101,125" size="535,1" backgroundColor="XionLine" />
