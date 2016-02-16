@@ -2242,4 +2242,8 @@
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
+	<screen name="MessageBoxPixmap" backgroundColor="XionBackground" position="center,center" size="600,10" title="New Call">
+		<widget name="text" backgroundColor="XionBackground" position="115,8" size="520,0" font="Regular;22" />
+		<widget name="InfoPixmap" pixmap="%s" position="5,5" size="100,100" alphatest="on" />
+	</screen>
 		<!-- Plugins -->
