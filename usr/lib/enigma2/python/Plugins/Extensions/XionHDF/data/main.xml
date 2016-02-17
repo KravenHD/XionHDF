@@ -313,28 +313,19 @@
 	</screen>
 		<!-- GraphicalEPG -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="GraphicalEPG" position="0,0" size="1280,720" title="Electronic Program Guide">
-		<widget backgroundColor="XionBackground" font="Regular2; 28" position="25,70" render="Label" size="700,39" source="Event" transparent="1">
-			<convert type="XionHDFEventName">Name</convert>
-		</widget>
-		<widget backgroundColor="XionBackground" font="Regular2; 24" halign="right" position="25,104" render="Label" size=" 65, 26" source="Event" transparent="1">
-			<convert type="XionHDFEventTime">StartTime</convert>
-			<convert type="XionHDFClockToText">Format:%H:%M </convert>
-		</widget>
-		<widget backgroundColor="XionBackground" font="Regular2; 24" position="1100,104" render="Label" size=" 80, 26" source="Event" transparent="1">
-			<convert type="XionHDFEventTime">EndTime</convert>
-			<convert type="XionHDFClockToText">Format:%H:%M</convert>
-		</widget>
-		<widget source="Event" render="Progress" position="101,117" size="990,5" borderWidth="0" backgroundColor="XionBackground" foregroundColor="XionProgress" transparent="1" zPosition="1">
-			<convert type="XionHDFEventTime">Progress</convert>
-		</widget>
-		<widget backgroundColor="XionBackground" font="Regular2; 21" position="25,139" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1230,126" source="Event" valign="top" zPosition="-8" foregroundColor="XionFont2">
-			<convert type="XionHDFEventName">ExtendedDescription</convert>
-		</widget>
-		<eLabel backgroundColor="XionFont1" position="101,119" size="990,1" />
-		<widget name="timeline_text" position="25,273" selectionDisabled="1" size="1230,25" transparent="1" />
-		<widget EntryBackgroundColor="XionBackground" EntryBackgroundColorSelected="XionFont1" EntryBorderColor="XionFont1" itemHeight="60" name="list" position="25,300" size="1230,345" transparent="1" />
-		<widget name="timeline_now" position="80,297" zPosition="2" size="13,355" pixmap="XionHDF/epg/timeline-now.png" alphatest="blend" />
-		<eLabel position="101,119" size="990,1" backgroundColor="XionFont1" />
+		<widget name="lab1" position="0,70" size="1280,720" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="XionBackground" transparent="0"/>
+		<ePixmap pixmap="buttons/key_8_epg.png" position="500,25" size="60,18" alphatest="blend" zPosition="1" />
+		<widget name="page" position="545,25" size="150,18" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
+		<ePixmap pixmap="buttons/key_9_epg.png" position="500,45" size="60,18" alphatest="blend" zPosition="1" />
+		<widget name="primetime" position="545,45" size="250,18" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
+		<ePixmap pixmap="buttons/key_prev_next.png" position="845,25" size="60,18" alphatest="blend" zPosition="1" />
+		<widget name="change_bouquet" position="890,25" size="200,18" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
+		<ePixmap pixmap="buttons/key_ch.png" position="845,45" size="60,18" alphatest="blend" zPosition="1" />
+		<widget name="jump" position="890,45" size="200,18" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
+		<widget name="bouquetlist" position="50,30" size="900,120" itemHeight="40" foregroundColor="XionFont1" backgroundColor="XionBackground" foregroundColorSelected="white" backgroundColorSelected="XionBackground" scrollbarMode="showNever" zPosition="6" transparent="1" />
+		<widget name="timeline_text" position="0,65" selectionDisabled="1" size="1290,25" transparent="1" />
+		<widget EntryBackgroundColor="XionBackground" EntryBackgroundColorSelected="XionFont1" EntryBorderColor="XionFont1" itemHeight="60" name="list" position="0,90" size="1330,575" transparent="1" />
+		<widget name="timeline_now" position="80,90" zPosition="2" size="13,570" pixmap="/usr/share/enigma2/skin_default/epg/timeline-now.png" alphatest="blend" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
