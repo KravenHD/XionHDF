@@ -1994,7 +1994,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- NimSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NimSetup" position="0,0" size="1280,720" title="Reception Settings">
 		<widget itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" transparent="1" />
-		<panel name="template_menu_left" />
+		<ePixmap pixmap="XionHDF/logo2.png" position="914,120" size="300,300" backgroundColor="XionBackground" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont1">
+			<convert type="XionHDFClockToText">Default</convert>
+		</widget>
+		<panel name="template_colorkey_text" />
+		<panel name="template_menu_full_button" />
 	</screen>
 		<!-- PositionerSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PositionerSetup" position="0,0" size="1280,720" title="Positioner setup...">
