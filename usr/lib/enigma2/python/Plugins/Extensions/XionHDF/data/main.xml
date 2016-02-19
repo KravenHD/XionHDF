@@ -1683,8 +1683,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- BouquetSelector -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="BouquetSelector" position="0,0" size="1280,720" title="Choose bouquet">
-		<eLabel backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" position="70,90" size="708,28" text="Choose bouquet" transparent="1" />
-		<widget enableWrapAround="1" itemHeight="30" name="menu" position="70,130" size="708,450" transparent="1" zPosition="3" />
+		<!--eLabel backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" position="70,90" size="708,28" text="Choose bouquet" transparent="1" /-->
+		<widget enableWrapAround="1" itemHeight="30" font="Regular2;22" name="menu" position="70,130" size="708,450" transparent="1" zPosition="3" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- InfoBarLite -->
