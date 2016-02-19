@@ -1332,10 +1332,10 @@
 	</screen>
 		<!-- YoutubeTVWindow -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="YoutubeTVWindow" position="0,0" size="1280,720" title="Start YouTube TV">
-		<widget name="information" position="70,80" size="708,480" backgroundColor="XionBackground" transparent="1" />
-		<panel name="template_colorkey_text" />
-		<panel name="template_menu_left_button" />
-	</screen>
+        <widget name="information" position="70,80" size="708,480" backgroundColor="XionBackground" transparent="1" />
+        <panel name="template_colorkey_text_source" />
+        <panel name="template_menu_left_button" />
+    </screen>
 		<!-- YoutubeTVSettings -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="YoutubeTVSettings" position="0,0" size="1280,720" title="YouTube TV Settings">
 		<widget itemHeight="30" name="config" position="70,80" size="708,480" transparent="1" />
