@@ -927,7 +927,7 @@
 	</screen>
 		<!-- AutoMountManager -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="AutoMountManager" position="0,0" size="1280,720" title="AutoMountManager">
-		<widget backgroundColor="XionBackground" position="70,80" render="Listbox" size="708,480" itemHeight="26" font="Regular;22" source="config" transparent="1">
+		<widget backgroundColor="XionBackground" position="70,80" render="Listbox" size="708,480" itemHeight="85" font="Regular;22" source="config" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (60, 5), size = (620, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
