@@ -2019,7 +2019,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text" />
 		<panel name="template_menu_full_button" />
 	</screen>
-			<!-- PositionerSetup -->
+		<!-- PositionerSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PositionerSetup" position="0,0" size="1280,720" title="Positioner setup...">
 		<widget backgroundColor="XionBackground" itemHeight="30" name="list" position="220,120" size="400,180" transparent="1" />
 		<widget backgroundColor="red" font="Regular2;20" foregroundColor="XionFont2" halign="center" name="red" position="70,330" size="170,100" valign="center" alphatest="blend" />
@@ -2048,7 +2048,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text" />
 		<panel name="template_menu_full_button" />
 	</screen>
-				<!-- Satfinder -->
+		<!-- Satfinder -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="Satfinder" position="0,0" size="1280,720" title="Satfinder">
 		<widget backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" halign="center" position="120,80" render="Label" size="600,22" source="Frontend" transparent="1" zPosition="2">
 			<convert type="FrontendInfo">SNRdB</convert>
@@ -2088,7 +2088,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
-			<!-- ScanSimple -->
+		<!-- ScanSimple -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ScanSimple" position="0,0" size="1280,720" title="Service scan">
 		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular2;22" foregroundColor="XionFont2" name="header" position="70,80" size="708,30" transparent="1" />
 		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,130" size="708,450" transparent="1" />
@@ -2096,7 +2096,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
-			<!-- ServiceScan -->
+		<!-- ServiceScan -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ServiceScan" position="0,0" size="1280,720" title="Service Scan">
 		<widget alphatest="blend" pixmap="skin_default/icons/scan-s.png" position="707,120" render="Pixmap" size="64,64" source="FrontendInfo" transparent="1">
 			<convert type="FrontendInfo">TYPE</convert>
@@ -2122,7 +2122,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>	
-			<!-- CableScanScreen -->
+		<!-- CableScanScreen -->
 	<screen name="CableScanScreen" position="0,0" size="1280,720" title="Cable Scan" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="config" itemHeight="30" font="Regular;22" position="70,80" size="500,250" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
 		<widget name="introduction" position="70,595" size="500,28" font="Regular2;22" foregroundColor="XionFont2" halign="center" backgroundColor="XionBackground" transparent="1" />
@@ -2130,7 +2130,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>	
-			<!-- CableScanStatus -->
+		<!-- CableScanStatus -->
 	<screen name="CableScanStatus" position="0,0" size="1280,720" title="Cable Scan" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="frontend" pixmap="icons/scan-c.png" position="105,556" size="64,64" transparent="1" alphatest="on" />
 		<widget name="scan_state" position="173,557" zPosition="2" size="400,30" font="Regular2;18" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
