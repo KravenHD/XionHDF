@@ -2739,7 +2739,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- HddInfo -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HddInfo" position="0,0" size="1280,720" title="Hard Drive Info">
-		<widget name="config" position="95,107" size="585,30" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+		<widget name="config" position="95,107" size="585,30" font="Regular;22" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
 		<widget font="Regular;20" halign="left" name="model" position="95,200" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
 		<widget font="Regular;20" halign="left" name="serial" position="95,230" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
 		<widget font="Regular;20" halign="left" name="firmware" position="95,260" size="580,25" valign="center" backgroundColor="XionBackground" transparent="1" />
@@ -2802,14 +2802,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- VFDSkinSelector -->
-	<screen name="VFDSkinSelector" position="0,0" size="1280,720" title="LCD Skin-Selector" backgroundColor="transparent">
-		<widget name="lab1" position="70,111" size="250,26" zPosition="1" font="Regular2; 22" halign="left" transparent="1" foregroundColor="XionFont2" />
-		<widget name="lab2" position="423,201" size="250,26" zPosition="1" font="Regular2; 22" halign="left" transparent="1" foregroundColor="XionFont2" />
-		<widget name="SkinList" position="70,158" size="310,371" itemHeight="26" font="Regular;22" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
-		<widget name="Preview" position="462,261" size="280,210" itemHeight="26" font="Regular;22" zPosition="2" backgroundColor="XionBackground" transparent="0" alphatest="on" />
-		<widget name="lab3" position="70,549" halign="center" size="700,26" zPosition="1" foregroundColor="XionFont2" font="Regular2; 22" transparent="1" />
-		<panel name="template_menu_left_button" />
-		<panel name="template_colorkey_text" />
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector">
+		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="35" font="Regular;23" name="SkinList" position="221,143" scrollbarMode="showNever" size="389,453" transparent="1" foregroundColor="XionFont1"/>
+		<widget alphatest="blend" name="Preview" position="941,182" size="280,240" />
+		<widget backgroundColor="XionBackground" font="Regular2;18" halign="center" position="220,80" render="Label" size="392,49" source="introduction" transparent="1" foregroundColor="XionFont2" />
+		<panel name="template_menu_left_right_button" />
+		<panel name="template_colorkey_text_kp" />
 	</screen>
 		<!-- HFD Toolbox -->
 	<screen name="Fantastic" position="0,0" size="1280,720" title="HDF Toolbox" backgroundColor="transparent">
