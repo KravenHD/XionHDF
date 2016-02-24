@@ -794,15 +794,15 @@
 	</screen>
 		<!-- ********** VideoEnhancement ********** -->
 		<!-- VideoEnhancementPreview -->
-	<screen backgroundColor="XionBackground" name="VideoEnhancementPreview" position="center,480" size="600,200" title="VideoEnhancementPreview">
-		<widget itemHeight="30" name="config" position="10,10" size="580,90" />
-		<widget font="Regular2;22" halign="center" position="10,123" render="Label" size="580,26" source="introduction" transparent="1" valign="center" />
-		<eLabel backgroundColor="XionBackground" position="  0,160" size="600,40" zPosition="1" />
-		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_red.png" position="25,165" size="25,25" zPosition="2" />
-		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_green.png" position="244,165" size="25,25" zPosition="2" />
-		<widget backgroundColor="XionBackground" font="Regular2;20" position="55,165" render="Label" size="160,24" source="key_red" transparent="1" zPosition="2" />
-		<widget backgroundColor="XionBackground" font="Regular2;20" position="278,165" render="Label" size="160,24" source="key_green" transparent="1" zPosition="2" />
-	</screen>
+    <screen backgroundColor="transparent" name="VideoEnhancementPreview" position="0,60" size="1280,720" title="VideoEnhancementPreview">
+        <ePixmap pixmap="XionHDF/ibar.png" position="0,540" size="1280,200" alphatest="blend" />
+        <widget name="config" backgroundColor="XionBackground" position="400,575" size="520,200" zPosition="2" transparent="1"/>
+        <widget font="Regular;22" backgroundColor="XionBackground" halign="center" valign="center" zPosition="2" position="800,390" render="Label" size="620,450" source="introduction" transparent="1" />
+        <ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_red.png" position="25,600" size="25,25" zPosition="2" />
+        <ePixmap alphatest="blend" pixmap="XionHDF/buttons/key_green.png" position="244,600" size="25,25" zPosition="2" />
+        <widget font="Regular;20" backgroundColor="XionBackground" position="55,600" render="Label" size="160,24" source="key_red" transparent="1" zPosition="2" />
+        <widget font="Regular;20" backgroundColor="XionBackground" position="278,600" render="Label" size="160,24" source="key_green" transparent="1" zPosition="2" />
+    </screen>
 		<!-- VideoEnhancementSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="VideoEnhancementSetup" position="0,0" size="1280,720" title="VideoEnhancementSetup">
 		<widget backgroundColor="XionBackground" itemHeight="30" name="config" position="70,80" size="700,450" transparent="1" />
