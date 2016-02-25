@@ -62,19 +62,20 @@
 		<widget name="list" position="10,40" size="540,180" scrollbarMode="showOnDemand" itemHeight="27" font="Regular;28" backgroundColor="XionBackground" transparent="1" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="LanguageSelection" position="0,0" size="1280,720" title="Language selection">
-		<widget position="70,120" render="Listbox" size="708,420" source="languages" transparent="1" zPosition="3">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (130, 17), size = (550, 60), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-				MultiContentEntryPixmap(pos = (20, 10), size = (60, 40), png = 2), # index 2 is the pixmap
-				],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
-		<panel name="template_menu_left" />
-	</screen>
+        <widget position="70,120" render="Listbox" size="708,420" source="languages" transparent="1" zPosition="3">
+            <convert type="TemplatedMultiContent">
+                {"template": [
+                MultiContentEntryText(pos = (130, 17), size = (550, 60), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+                MultiContentEntryPixmap(pos = (20, 10), size = (60, 40), png = 2), # index 2 is the pixmap
+                ],
+                "fonts": [gFont("Regular", 24)],
+                "itemHeight": 60
+                }
+            </convert>
+        </widget>
+        <panel name="template_menu_left_button" />
+        <panel name="template_colorkey_text_kp" />
+    </screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="LEDBrightnessSetup" position="0,0" size="1280,720" title="LED Brightness Setup">
 		<widget name="config" position="70,120" size="708,455" transparent="1" zPosition="2" foregroundColor="XionFont1" />
 		<widget font="Regular2; 18" halign="center" name="current_entry" position="70,585" size="708,40" valign="center" foregroundColor="XionFont2" />
