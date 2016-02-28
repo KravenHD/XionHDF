@@ -47,7 +47,7 @@
 		</widget>
 		<panel name="template_menu_left" />
 	</screen>
-	<screen name="ZapHistoryBrowser" position="670,440" size="560,210" title="ZapHistoryBrowser" flags="wfNoBorder" backgroundColor="XionBackground" >
+	<screen name="ZapHistoryBrowser" position="710,440" size="560,270" title="ZapHistoryBrowser" flags="wfNoBorder" backgroundColor="XionBackground" >
 		<ePixmap pixmap="XionHDF/buttons/key_red.png" position="10,8" size="140,40" transparent="1" alphatest="on" />
 		<ePixmap pixmap="XionHDF/buttons/key_green.png" position="150,8" size="140,40" transparent="1" alphatest="on" />
 		<ePixmap pixmap="XionHDF/buttons/key_yellow.png" position="290,8" size="140,40" transparent="1" alphatest="on" />
@@ -56,7 +56,10 @@
 		<widget name="key_green" position="180,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
 		<widget name="key_yellow" position="320,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
 		<widget name="key_blue" position="460,0" zPosition="1" size="140,40" font="Regular;20" valign="center" halign="left" backgroundColor="XionBackground" transparent="1" />
-		<widget name="list" position="10,40" size="540,180" scrollbarMode="showOnDemand" itemHeight="27" font="Regular;28" backgroundColor="XionBackground" transparent="1" />
+		<widget name="list" position="10,40" size="540,220" scrollbarMode="showOnDemand" itemHeight="27" font="Regular;27" backgroundColor="XionBackground" transparent="1" />
+	</screen>
+	<screen name="ZapHistoryConfigurator" position="center,center" size="420,70" >
+			<widget name="config" position="0,0" itemHeight="27" font="Regular;22" size="420,70" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
 	</screen>
 	<screen name="ZapHistoryBrowserList" position="670,440" size="560,210" title="" flags="wfNoBorder" backgroundColor="XionBackground" >
 		<widget name="list" position="10,40" size="540,180" scrollbarMode="showOnDemand" itemHeight="27" font="Regular;28" backgroundColor="XionBackground" transparent="1" />
@@ -2025,7 +2028,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- PositionerSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PositionerSetup" position="0,0" size="1280,720" title="Positioner setup...">
-		<widget backgroundColor="XionBackground" itemHeight="30" name="list" position="220,120" size="400,180" transparent="1" />
+		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular;22" name="list" position="220,120" size="400,180" transparent="1" />
 		<widget backgroundColor="red" font="Regular2;20" foregroundColor="XionFont2" halign="center" name="red" position="70,330" size="170,100" valign="center" alphatest="blend" />
 		<widget backgroundColor="green" font="Regular2;20" foregroundColor="XionFont2" halign="center" name="green" position="241,330" size="170,100" valign="center" alphatest="blend" />
 		<widget backgroundColor="yellow" font="Regular2;20" foregroundColor="XionFont2" halign="center" name="yellow" position="410,330" size="170,100" valign="center" alphatest="blend" />
