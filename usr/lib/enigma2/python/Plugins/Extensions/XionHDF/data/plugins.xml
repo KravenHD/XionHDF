@@ -1241,8 +1241,7 @@
 					])
 			},		
 			"fonts": [gFont("Regular", 22),gFont("Regular", 20)],
-			"itemHeight": 30,
-			
+			"itemHeight": 30			
 			}
 		</convert>
 		</widget>
@@ -1257,7 +1256,7 @@
 		<widget name="rec_pic" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/rec1.png" position="792,620" size="40,30" zPosition="2" />
 		<panel name="template_menu_full_button" />
 	</screen>
-		<!-- genere_anzeige_13 -->
+		<!-- genre_anzeige_13 -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="genre_anzeige_13" position="0,0" size="1280,720" title="">
 		<!--<eLabel backgroundColor="XionBackground" font="Regular;13" foregroundColor="red" text="genre_anzeige_13" position="50,13" size="500,16" halign="left" valign="center" transparent="1" />-->
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
@@ -1285,8 +1284,7 @@
 					])
 			},		
 			"fonts": [gFont("Regular", 22),gFont("Regular", 20)],
-			"itemHeight": 30,
-			
+			"itemHeight": 30			
 			}
 		</convert>
 		</widget>
@@ -1329,8 +1327,7 @@
 					])
 			},		
 			"fonts": [gFont("Regular", 22),gFont("Regular", 20)],
-			"itemHeight": 45,
-			
+			"itemHeight": 45			
 			}
 		</convert>
 		</widget>
@@ -1373,8 +1370,7 @@
 					])
 			},		
 			"fonts": [gFont("Regular", 22),gFont("Regular", 20)],
-			"itemHeight": 30,
-			
+			"itemHeight": 30			
 			}
 		</convert>
 		</widget>
