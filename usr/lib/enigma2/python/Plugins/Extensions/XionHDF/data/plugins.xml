@@ -1226,17 +1226,17 @@
 					MultiContentEntryPixmapAlphaTest(pos = (0, 2), size = (30, 30), png = 2), # index 2: picture
 					MultiContentEntryText(pos = (40, 3), size = (660, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1: text
 					]),
-                               "info": (30,[
+                               "info": (45,[
 					MultiContentEntryText(pos = (0, 3), size = (260, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 1: text
 					MultiContentEntryText(pos = (260, 3), size = (440, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, color=0xf47d19,color_sel=0xf47d19 , text = 1)
 					],False),
-			"menus": (30,[
+			"menus": (45,[
 					MultiContentEntryText(pos = (0, 3), size = (700, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1: text
 					]),
-			"about": (30,[
+			"about": (45,[
 					MultiContentEntryText(pos = (0, 3), size = (700, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, color=0xf47d19,color_sel=0xf47d19, border_width = 0, text = 0)
 					],False),
-			"genre": (30,[
+			"genre": (45,[
 					MultiContentEntryText(pos = (0, 3), size = (700, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, border_width = 0, text = 1)
 					])
 			},		
