@@ -1345,7 +1345,7 @@
 		<widget name="rec_pic" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/rec1.png" position="792,620" size="40,30" zPosition="2" />
 		<panel name="template_menu_full_button" />
 	</screen>
-		<!-- grous_13 -->
+		<!-- groups_13 -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="groups_13" position="0,0" size="1280,720" title="">
 		<!--<eLabel backgroundColor="XionBackground" font="Regular;13" foregroundColor="red" text="groups_13" position="50,13" size="500,16" halign="left" valign="center" transparent="1" />-->
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
@@ -1407,20 +1407,20 @@
 	</screen>
 		<!-- WebradioFSSetup_13 -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="WebradioFSSetup_13" position="0,0" size="1280,720" title="webradioFS">
-		<!--<eLabel backgroundColor="XionBackground" font="Regular;13" foregroundColor="red" text="WebradioFSSetup_12" position="50,13" size="500,16" halign="left" valign="center" transparent="1" />-->
+		<!--<eLabel backgroundColor="XionBackground" font="Regular;13" foregroundColor="red" text="WebradioFSSetup_13" position="50,13" size="500,16" halign="left" valign="center" transparent="1" />-->
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" name="rec_txt" position="70,80" size="708,27" transparent="1" valign="center" zPosition="2" />
-		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" name="config" position="70,110" size="708,425" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="0" zPosition="3" />
+		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" itemHeight="30" name="config" position="70,110" size="708,425" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="0" zPosition="3" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="playtext" position="70,545" size="708,81" transparent="1" valign="center" zPosition="2" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- WebradioFS_FB_Setup_13 -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="WebradioFS_FB_Setup_13" position="0,0" size="1280,720" title="webradioFS">
-		<!--<eLabel backgroundColor="XionBackground" font="Regular;13" foregroundColor="red" text="WebradioFS_FB_Setup_12" position="50,13" size="500,16" halign="left" valign="center" transparent="1" />-->
+		<!--<eLabel backgroundColor="XionBackground" font="Regular;13" foregroundColor="red" text="WebradioFS_FB_Setup_13" position="50,13" size="500,16" halign="left" valign="center" transparent="1" />-->
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" name="rec_txt" position="70,80" size="708,27" transparent="1" valign="center" zPosition="2" />
-		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" name="config" position="70,110" size="708,425" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="0" zPosition="3" />
+		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" itemHeight="30" name="config" position="70,110" size="708,425" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="0" zPosition="3" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="playtext" position="70,545" size="708,81" transparent="1" valign="center" zPosition="2" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
@@ -1430,7 +1430,7 @@
 		<!--<eLabel backgroundColor="XionBackground" font="Regular;13" foregroundColor="red" text="Fav_edit_12" position="50,13" size="500,16" halign="left" valign="center" transparent="1" />-->
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" name="rec_txt" position="70,80" size="708,27" transparent="1" valign="center" zPosition="2" />
-		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" name="config" position="70,110" size="708,425" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="0" zPosition="3" />
+		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" itemHeight="30" name="config" position="70,110" size="708,425" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="0" zPosition="3" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="playtext" position="70,545" size="708,81" transparent="1" valign="center" zPosition="2" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
@@ -1440,7 +1440,7 @@
 		<!--<eLabel backgroundColor="XionBackground" font="Regular;13" foregroundColor="red" text="rec_menu_12" position="50,13" size="500,16" halign="left" valign="center" transparent="1" />-->
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" name="rec_txt" position="70,80" size="708,27" transparent="1" valign="center" zPosition="2" />
-		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" name="config" position="70,110" size="708,425" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="0" zPosition="3" />
+		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" itemHeight="30" name="config" position="70,110" size="708,425" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="0" zPosition="3" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="playtext" position="70,545" size="708,81" transparent="1" valign="center" zPosition="2" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
@@ -1450,7 +1450,7 @@
 		<!--<eLabel backgroundColor="XionBackground" font="Regular;13" foregroundColor="red" text="col_set_12" position="50,13" size="500,16" halign="left" valign="center" transparent="1" />-->
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" name="rec_txt" position="70,80" size="708,27" transparent="1" valign="center" zPosition="2" />
-		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" name="config" position="70,110" size="708,425" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="0" zPosition="3" />
+		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" itemHeight="30" name="config" position="70,110" size="708,425" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="0" zPosition="3" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="playtext" position="70,545" size="708,81" transparent="1" valign="center" zPosition="2" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
@@ -1459,7 +1459,7 @@
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="webradioFSsetDisplay" position="0,0" size="1280,720" title="webradioFS - Display-Settings">
 		<!--<eLabel backgroundColor="XionBackground" font="Regular;13" foregroundColor="red" text="webradioFSsetDisplay" position="50,13" size="500,16" halign="left" valign="center" transparent="1" />-->
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" size="708,46" name="titel" transparent="1" halign="left" valign="center" noWrap="1" />
-		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" name="config" position="70,80" size="708,480" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" zPosition="3" />
+		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" itemHeight="30" name="config" position="70,80" size="708,480" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" zPosition="3" />
 		<widget font="Regular; 18" halign="left" valign="center" name="label_red" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular; 18" halign="left" valign="center" name="label_green" position="264,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_menu_full_button" />
@@ -1468,7 +1468,7 @@
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="wbrfs_set_we" position="0,0" size="1280,720" title="Info">
 		<!--<eLabel backgroundColor="XionBackground" font="Regular;13" foregroundColor="red" text="wbrfs_set_we" position="50,13" size="500,16" halign="left" valign="center" transparent="1" />-->
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
-		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" name="config" position="70,80" size="708,390" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" zPosition="3" />
+		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" itemHeight="30" name="config" position="70,80" size="708,390" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" transparent="1" zPosition="3" />
 		<widget backgroundColor="XionBackground" name="warn" foregroundColor="XionFont2" font="Regular2;22" position="70,490" size="708,135" transparent="1" halign="center" valign="center" zPosition="2" />
 		<panel name="template_colorkey_text" />
 		<panel name="template_menu_full_button" />
