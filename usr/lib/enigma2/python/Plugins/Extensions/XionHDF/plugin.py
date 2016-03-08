@@ -33,7 +33,7 @@ from shutil import move, copy, rmtree, copytree
 from skin import parseColor
 from Components.Pixmap import Pixmap
 from Components.Label import Label
-import gettext
+import gettext, time, subprocess, re, requests
 from boxbranding import getBoxType
 from enigma import ePicLoad, getDesktop, eConsoleAppContainer
 from Tools.Directories import fileExists, resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
@@ -63,9 +63,13 @@ def translateBlock(block):
 #############################################################
 
 config.plugins.XionHDF = ConfigSubsection()
-config.plugins.XionHDF.weather_city = ConfigNumber(default="638242")
-config.plugins.XionHDF.refreshInterval = ConfigNumber(default="60")
 				
+config.plugins.XionHDF.weather_city = ConfigText(default = "")
+
+config.plugins.XionHDF.refreshInterval = ConfigNumber(default="60")
+config.plugins.XionHDF.weather_realtek_latlon = ConfigText(default = "")
+config.plugins.XionHDF.weather_foundcity = ConfigText(default = "")
+
 config.plugins.XionHDF.System = ConfigSelection(default="openhdf", choices = [
 				("openhdf", _(" "))
 				])
@@ -280,7 +284,7 @@ class XionHDF(ConfigListScreen, Screen):
                 on_change = self.__selectionChanged
                 )
 		
-                self["actions"] = ActionMap(["OkCancelActions", "DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft, "down": self.keyDown, "up": self.keyUp, "right": self.keyRight, "red": self.exit, "yellow": self.reboot, "blue": self.showInfo, "green": self.save, "cancel": self.exit }, -1)
+                self["actions"] = ActionMap(["OkCancelActions", "DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft, "down": self.keyDown, "up": self.keyUp, "right": self.keyRight, "red": self.exit, "yellow": self.reboot, "blue": self.showInfo, "green": self.save, "cancel": self.exit, "ok": self.keyOK }, -1)
 		self.onLayoutFinish.append(self.UpdatePicture)
 
 	def mylist(self):
@@ -435,6 +439,22 @@ class XionHDF(ConfigListScreen, Screen):
 		self.ShowPicture()
                 self.updateHelp()
 
+	def keyOK(self):
+		if isinstance(self["config"].getCurrent()[1],ConfigText):
+			from Screens.VirtualKeyBoard import VirtualKeyBoard
+			text = self["config"].getCurrent()[1].value
+			title = _("Enter the city name of your location:")
+			self.session.openWithCallback(self.keyVirtualKeyBoardCallBack, VirtualKeyBoard, title = title, text = text)
+
+	def keyVirtualKeyBoardCallBack(self, callback):
+		try:
+			if callback:  
+				self["config"].getCurrent()[1].value = callback
+			else:
+				pass
+		except:
+			pass
+			
 	def reboot(self):
 		restartbox = self.session.openWithCallback(self.restartGUI,MessageBox,_("Do you really want to reboot now?"), MessageBox.TYPE_YESNO)
 		restartbox.setTitle(_("Restart GUI"))
@@ -566,6 +586,9 @@ class XionHDF(ConfigListScreen, Screen):
 		except:
 			self.session.open(MessageBox, _("Error creating Skin!"), MessageBox.TYPE_ERROR)
 
+		### Get weather data to make sure the helper config values are not empty
+		self.get_weather_data()
+			
 		self.restart()
 
 	def restart(self):
@@ -616,10 +639,54 @@ class XionHDF(ConfigListScreen, Screen):
 			else:
 					pass
 		self.close()
-        def debug(self, what):
-                f = open('/tmp/xion_debug.txt', 'a+')
-                f.write('[PluginScreen]' + str(what) + '\n')
-                f.close()
+		
+	def debug(self, what):
+		f = open('/tmp/xion_debug.txt', 'a+')
+		f.write('[PluginScreen]' + str(what) + '\n')
+		f.close()
+
+	def get_weather_data(self):
+			
+			self.city = ''
+			self.lat = ''
+			self.lon = ''
+			self.accu_id = ''
+			
+			if config.plugins.XionHDF.weather_city.value == '':
+				self.get_latlon_by_ip()
+			else:
+				self.get_latlon_by_name()
+			
+			config.plugins.XionHDF.weather_foundcity.value=self.city
+			config.plugins.XionHDF.weather_foundcity.save()
+	
+			config.plugins.XionHDF.weather_realtek_latlon.value = 'lat=%s&lon=%s&metric=1&language=de' % (str(self.lat), str(self.lon))
+			config.plugins.XionHDF.weather_realtek_latlon.save()
+			
+	def get_latlon_by_ip(self):
+		try:
+			res = requests.request('get', 'http://api.wunderground.com/api/2b0d6572c90d3e4a/geolookup/q/autoip.json')
+			data = res.json()
+			
+			self.city = data['location']['city']
+			self.lat = data['location']['lat'] 
+			self.lon = data['location']['lon']
+		except:
+			self.session.open(MessageBox, _("Error retrieving weather data!"), MessageBox.TYPE_ERROR)
+			
+	def get_latlon_by_name(self):
+		try:
+			name = config.plugins.XionHDF.weather_city.value
+			res = requests.request('get', 'http://maps.googleapis.com/maps/api/geocode/json?address=%s&sensor=true' % str(name))
+			data = res.json()
+			
+			self.city = data['results'][0]['address_components'][1]['long_name']
+			self.lat = data['results'][0]['geometry']['location']['lat']
+			self.lon = data['results'][0]['geometry']['location']['lng']
+		except:
+			self.session.open(MessageBox, _("Error retrieving weather data,\nfallback to IP!"), MessageBox.TYPE_ERROR)
+			self.get_latlon_by_ip()
+	
 #############################################################
 
 def main(session, **kwargs):

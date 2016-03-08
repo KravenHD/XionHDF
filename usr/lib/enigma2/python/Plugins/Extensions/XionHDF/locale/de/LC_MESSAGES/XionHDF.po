@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.7\n"
 
 msgid "N"
 msgstr "N"
@@ -597,8 +597,8 @@ msgstr "Diese Option aktiviert/deaktiviert/ändert die Hintergrundtransparenz im
 msgid "This option activate/deactive/change the weather on top inside the infobar."
 msgstr "Diese Option aktiviert/deaktiviert/ändert die Wetteranzeige in der oberen Hälfte der Infobar."
 
-msgid "Here you can insert your personal WeatherID. Please visit the website metrixweather.open-store.net to find your location."
-msgstr "Hier wird die persönliche WetterID eingetragen. Dafür bitte die Webseite metrixweather.open-store.net besuchen und die WetterID suchen."
+msgid "Here you can insert your city, district, zip code or alltogether."
+msgstr "Hier wird deine Stadt, Ortsteil, PLZ oder bunt gemischt eingetragen."
 
 msgid "Here you can change how often the weather is refreshed in the background."
 msgstr "An dieser Stelle wird der Intervall der Wetteraktualisierung im Hintergrund eingestellt."
