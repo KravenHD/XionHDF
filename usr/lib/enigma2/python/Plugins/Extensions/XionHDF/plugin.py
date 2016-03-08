@@ -301,7 +301,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("MovieSelection"), config.plugins.XionHDF.MovieStyle, _("This option changes the view of cover inside from MovieSelection.")))
 		#list.append(getConfigListEntry(_("_____________________________ Weather _________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
-		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your personal WeatherID. Please visit the website metrixweather.open-store.net to find your location.")))
+		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your city, district, zip code or alltogether.")))
 		#list.append(getConfigListEntry(_("_____________________________ Colors __________________________________"), ))
 		list.append(getConfigListEntry(_("Line"), config.plugins.XionHDF.Line, _("Please select the color of lines inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection"), config.plugins.XionHDF.SelectionBackground, _("Please select the color of listselection inside the skin.")))

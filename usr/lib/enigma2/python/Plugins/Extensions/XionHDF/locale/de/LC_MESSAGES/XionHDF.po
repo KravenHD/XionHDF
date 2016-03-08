@@ -633,6 +633,12 @@ msgstr "Diese Option ändert die Größe der Picons innerhalb der Infobar."
 msgid "This option changes the view of channellist."
 msgstr "Diese Option ändert die Ansicht der Kanalliste."
 
+msgid "This option changes the view of second infobar."
+msgstr "Diese Option ändert die Ansicht der SecondInfobar."
+
+msgid "This option changes the view of cover inside from MovieSelection."
+msgstr "Diese Option ändert die Ansicht und Größe der Cover innerhalb vom MovieSelection."
+
 msgid "This option changes the view of cover inside from EnhancedMovieCenter."
 msgstr "Diese Option ändert die Ansicht und Größe der Cover innerhalb vom EnhancedMovieCenter."
 
