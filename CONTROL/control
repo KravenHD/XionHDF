@@ -3,7 +3,7 @@ Version: 1.2
 Section: misc
 Priority: optional
 Architecture: all
-Depends:
+Depends: python-requests
 Maintainer: Team Kraven
 Description: Skin for HDF Images
 Source:
