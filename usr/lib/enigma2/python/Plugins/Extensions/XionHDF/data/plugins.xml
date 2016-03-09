@@ -2450,4 +2450,12 @@
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
+		<!-- Programmlisten_Updater -->
+	<screen backgroundColor="transparent" name="Programmlisten_Updater" position="0,0" size="1280,720" title="Programmlisten_Updater von DXAndy">
+		<widget name="MenuListSetting" backgroundColor="XionBackground" position="70,117" size="708,484" font="Regular;22" scrollbarMode="showOnDemand" />
+		<widget name="description" backgroundColor="XionBackground" position="70,621" size="708,25" font="Regular;22" halign="center" valign="center" />
+		<widget name="update" backgroundColor="XionBackground" position="70,80" size="708,25" font="Regular;22" halign="center" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>		
 		<!-- Plugins -->
