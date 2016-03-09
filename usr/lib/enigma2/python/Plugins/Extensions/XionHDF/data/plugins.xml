@@ -2452,10 +2452,26 @@
 	</screen>
 		<!-- Programmlisten_Updater -->
 	<screen backgroundColor="transparent" name="Programmlisten_Updater" position="0,0" size="1280,720" title="Programmlisten_Updater von DXAndy">
-		<widget name="MenuListSetting" backgroundColor="XionBackground" position="70,117" size="708,484" font="Regular;22" scrollbarMode="showOnDemand" />
-		<widget name="description" backgroundColor="XionBackground" position="70,621" size="708,25" font="Regular;22" halign="center" valign="center" />
-		<widget name="update" backgroundColor="XionBackground" position="70,80" size="708,25" font="Regular;22" halign="center" valign="center" />
+		<widget name="MenuListSetting" backgroundColor="XionBackground" position="70,117" size="708,484" font="Regular;24" itemHeight="30" scrollbarMode="showOnDemand" />
+		<widget name="description" backgroundColor="XionBackground" position="70,80" size="708,30" font="Regular2;24" itemHeight="30" halign="left" valign="center" />
+		<widget name="update" backgroundColor="XionBackground" position="664,662" size="148,48" font="Regular;22" itemHeight="30" halign="left" valign="center" />
+		<eLabel text="History" backgroundColor="XionBackground" position="64,622" size="244,30" font="Regular;22" itemHeight="30" halign="left" valign="center" />
+		<eLabel text="Restore" backgroundColor="XionBackground" position="264,622" size="244,30" font="Regular;22" itemHeight="30" halign="left" valign="center" />
+		<ePixmap pixmap="XionHDF/buttons/key_info.png" position="22,621" zPosition="1" size="32,37" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_menu.png" position="222,621" zPosition="1" size="32,37" alphatest="blend" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
-	</screen>		
+	</screen>
+		<!-- PU_History -->
+	<screen backgroundColor="transparent" name="PU_History" position="0,0" size="1280,720" title="Programmlisten_Updater von DXAndy">
+		<widget name="History" backgroundColor="XionBackground" position="70,80" size="708,540" font="Regular;24" itemHeight="30" halign="center" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- PU_Restore -->
+	<screen backgroundColor="transparent" name="PU_Restore" position="0,0" size="1280,720" title="Programmlisten_Updater von DXAndy">
+		<widget name="ListSetting" backgroundColor="XionBackground" position="70,80" size="708,540" itemHeight="30" font="Regular;24" halign="center" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>	
 		<!-- Plugins -->
