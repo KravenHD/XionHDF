@@ -1091,8 +1091,6 @@
 		<widget source="downloadProgressText" position="174,160" size="500,30" render="Label" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" halign="center" transparent="1" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey_text_source" />
-		<panel name="template_menu_full_button" />
-		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- ********** PicturePlayer ********** -->
 		<!-- picshow -->
