@@ -2398,7 +2398,7 @@
 		<panel name="template_colorkey_text" />
 	</screen>
 	<screen name="SeriesPluginChannelEditor" backgroundColor="XionBackground" position="center,center" size="1280,720">
-		<widget name="list" position="70,80" size="608,540" itemHeight="30" font="Regular;35" backgroundColor="XionBackground" transparent="1" />
+		<widget name="list" position="70,80" size="608,540" itemHeight="30" font="Regular;22" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
