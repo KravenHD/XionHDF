@@ -730,7 +730,7 @@
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- ********** MediaInfo ********** -->
-		<!-- MediaInfo -->
+		<!-- MediaInfo 2.x -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="mediaInfo" position="0,0" size="1280,720" title="MediaInfo">
 		<widget backgroundColor="XionBackground" font="Regular;24" halign="center" name="info" position="60,90" size="1160,45" transparent="0" valign="center" zPosition="5" />
 		<widget backgroundColor="XionBackground" font="Regular;30" foregroundColor="XionFont1" halign="center" name="head" position="60,143" size="1160,45" transparent="0" valign="center" zPosition="5" />
@@ -748,6 +748,28 @@
 		<!-- mediaInfoConfigScreen -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="mediaInfoConfigScreen" position="0,0" size="1280,720" title="MediaInfo">
 		<widget name="config" backgroundColor="XionBackground" position="20,70" size="1240,580" itemHeight="30" font="Regular;22" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" />
+		<panel name="template_menu_full_button" />
+		<panel name="template_colorkey_text" />
+	</screen>
+		<!-- ********** MediaInfo ********** -->
+		<!-- MediaInfo 3.x -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="MediaInfo" position="0,0" size="1280,720" title="">
+		<widget backgroundColor="XionBackground"  font="Regular;30" foregroundColor="XionFont1" halign="center" name="head" position="60,90" size="1140,45" transparent="1" valign="center" zPosition="5" />
+		<widget backgroundColor="XionBackground"  name="downloadList" itemHeight="50" font="Regular;24" position="40,152" scrollbarMode="showNever" size="1200,490" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" zPosition="-1" />
+		<panel name="template_menu_full_button" />
+		<panel name="template_colorkey_text" />
+	</screen>
+		<!-- mediaInfoFolderScreen -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="MediaInfoFolderScreen" position="0,0" size="1280,720" title="">
+		<widget font="Regular; 26" name="media" position="30,100" size="940,40" backgroundColor="XionBackground"  transparent="1" valign="top" />
+		<widget name="folderlist" backgroundColor="XionBackground"  itemHeight="30" font="Regular;22" position="30,148" scrollbarMode="showNever" size="1220,440" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" />
+		<panel name="template_menu_full_button" />
+		<panel name="template_colorkey_text" />
+	</screen>
+		<!-- mediaInfoConfigScreen -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="MediaInfoConfigScreen" position="0,0" size="1280,720" title="">
+		<widget backgroundColor="XionBackground"  font="Regular;24" halign="center" name="head" position="60,90" size="1160,45" transparent="1" valign="center" zPosition="5" />
+		<widget backgroundColor="XionBackground"  name="config" itemHeight="30" font="Regular;22" position="30,100" scrollbarMode="showNever" size="1220,405" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" zPosition="-1" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
