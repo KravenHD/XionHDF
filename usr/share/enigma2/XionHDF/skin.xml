@@ -3747,14 +3747,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- HddMounts -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HddMount" position="0,0" size="1280,720" title="Hard Drive Mount">
-		<widget name="menu" render="Listbox" position="70,80" size="708,540" scrollbarMode="showNever" itemHeight="50" transparent="1">
+		<widget name="menu" render="Listbox" position="70,80" size="708,540" scrollbarMode="showNever" font="Regular;22" itemHeight="50" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (2, 0), size = (48, 48), png = 0),
 					MultiContentEntryText(pos = (65, 10), size = (330, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 					MultiContentEntryText(pos = (475, 10), size = (125, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
 					],
-					"fonts": [gFont("Regular", 20)],
+					"fonts": [gFont("Regular", 22)],
 					"itemHeight": 50
 				}
 			</convert>
@@ -3815,60 +3815,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- ExtraMessageBox -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ExtraMessageBox" position="0,0" size="1280,720" title=" ">
-		<widget name="message" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1280,720" font="Regular;22" />
-		<widget backgroundColor="XionBackground" source="menu" render="Listbox" position="70,80" size="1280,720" scrollbarMode="showNever">
+		<widget name="message" backgroundColor="XionBackground" flags="wfNoBorder" position="70,80" size="708,30" foregroundColor="XionFont2" font="Regular;22" />
+		<widget backgroundColor="XionBackground" source="menu" render="Listbox" position="70,120" size="708,480" scrollbarMode="showNever">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
-					MultiContentEntryText(pos = (65, 10), size = (425, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (65, 10), size = (643, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 					],
 					"fonts": [gFont("Regular", 22)],
 					"itemHeight": 48
 				}
 			</convert>
 		</widget>
-		<applet type="onLayoutFinish">
-# this should be factored out into some helper code, but currently demonstrates applets.
-from enigma import eSize, ePoint
-
-orgwidth = self.instance.size().width()
-orgheight = self.instance.size().height()
-orgpos = self.instance.position()
-textsize = self[&quot;message&quot;].getSize()
-
-# y size still must be fixed in font stuff...
-if self[&quot;message&quot;].getText() != &quot;&quot;:
-	textsize = (textsize[0] + 80, textsize[1] + 60)
-else:
-	textsize = (textsize[0] + 80, textsize[1] + 4)
-
-count = len(self.list)
-if count &gt; 7:
-	count = 17
-offset = 48 * count
-wsizex = textsize[0] + 80
-wsizey = textsize[1] + offset + 60
-
-if (720 &gt; wsizex):
-	wsizex = 720
-wsize = (wsizex, wsizey)
-
-# resize
-self.instance.resize(eSize(*wsize))
-
-# resize label
-self[&quot;message&quot;].instance.resize(eSize(*textsize))
-
-# move list
-listsize = (wsizex - 20, 48 * count)
-self[&quot;menu&quot;].downstream_elements.downstream_elements.instance.move(ePoint(10, textsize[1] + 10))
-self[&quot;menu&quot;].downstream_elements.downstream_elements.instance.resize(eSize(*listsize))
-
-# center window
-newwidth = wsize[0]
-newheight = wsize[1]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (orgheight - newheight)/2))
-		</applet>
+		<panel name="template_menu_left" />
 	</screen>
 		<!-- DriverManagerFile -->
 	<screen flags="wfNoBorder" name="DriverManagerFile" position="0,0" size="1280,720" title="Select file to execute" transparent="0" backgroundColor="transparent">
@@ -3883,6 +3842,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
+		<!-- LED_VFD_INISetup -->
+	<screen name="VFD_INISetup" position="0,0" size="1280,720" title="LED Setup" backgroundColor="transparent">
+		<widget name="config" position="70,80" size="708,540" scrollbarMode="showNever" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>		
 		<!-- VFDSkinSelector -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector">
 		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="35" font="Regular;23" name="SkinList" position="221,143" scrollbarMode="showNever" size="389,453" transparent="1" foregroundColor="XionFont1"/>
@@ -4775,7 +4740,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- ********** MediaInfo ********** -->
-		<!-- MediaInfo -->
+		<!-- MediaInfo 2.x -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="mediaInfo" position="0,0" size="1280,720" title="MediaInfo">
 		<widget backgroundColor="XionBackground" font="Regular;24" halign="center" name="info" position="60,90" size="1160,45" transparent="0" valign="center" zPosition="5" />
 		<widget backgroundColor="XionBackground" font="Regular;30" foregroundColor="XionFont1" halign="center" name="head" position="60,143" size="1160,45" transparent="0" valign="center" zPosition="5" />
@@ -4793,6 +4758,28 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
 		<!-- mediaInfoConfigScreen -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="mediaInfoConfigScreen" position="0,0" size="1280,720" title="MediaInfo">
 		<widget name="config" backgroundColor="XionBackground" position="20,70" size="1240,580" itemHeight="30" font="Regular;22" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="0" />
+		<panel name="template_menu_full_button" />
+		<panel name="template_colorkey_text" />
+	</screen>
+		<!-- ********** MediaInfo ********** -->
+		<!-- MediaInfo 3.x -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="MediaInfo" position="0,0" size="1280,720" title="">
+		<widget backgroundColor="XionBackground"  font="Regular;30" foregroundColor="XionFont1" halign="center" name="head" position="60,90" size="1140,45" transparent="1" valign="center" zPosition="5" />
+		<widget backgroundColor="XionBackground"  name="downloadList" itemHeight="50" font="Regular;24" position="40,152" scrollbarMode="showNever" size="1200,490" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" zPosition="-1" />
+		<panel name="template_menu_full_button" />
+		<panel name="template_colorkey_text" />
+	</screen>
+		<!-- mediaInfoFolderScreen -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="MediaInfoFolderScreen" position="0,0" size="1280,720" title="">
+		<widget font="Regular;26" name="media" position="30,100" size="940,40" backgroundColor="XionBackground"  transparent="1" valign="top" />
+		<widget name="folderlist" backgroundColor="XionBackground"  itemHeight="30" font="Regular;22" position="30,148" scrollbarMode="showNever" size="1220,440" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" />
+		<panel name="template_menu_full_button" />
+		<panel name="template_colorkey_text" />
+	</screen>
+		<!-- mediaInfoConfigScreen -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="MediaInfoConfigScreen" position="0,0" size="1280,720" title="">
+		<widget backgroundColor="XionBackground"  font="Regular;24" halign="center" name="head" position="60,90" size="1160,45" transparent="1" valign="center" zPosition="5" />
+		<widget backgroundColor="XionBackground"  name="config" itemHeight="30" font="Regular;22" position="30,100" scrollbarMode="showNever" size="1220,405" scrollbarWidth="5" scrollbarSliderForegroundColor="XionFont1" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" transparent="1" zPosition="-1" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
@@ -6443,7 +6430,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
 		<panel name="template_colorkey_text" />
 	</screen>
 	<screen name="SeriesPluginChannelEditor" backgroundColor="XionBackground" position="center,center" size="1280,720">
-		<widget name="list" position="70,80" size="608,540" itemHeight="30" font="Regular;35" backgroundColor="XionBackground" transparent="1" />
+		<widget name="list" position="70,80" size="608,540" itemHeight="30" font="Regular;22" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
@@ -6514,7 +6501,36 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (o
 		<widget name="ListSetting" backgroundColor="XionBackground" position="70,80" size="708,540" itemHeight="30" font="Regular;24" halign="center" valign="center" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
-	</screen>	
+	</screen>
+		<!-- XMLTVImport -->	
+		<!-- XMLTVImport Config -->
+	<screen backgroundColor="transparent" name="XMLTVImportConfig" position="0,0" size="1280,720" title="XMLTV Import Configuration">
+		<widget name="config" backgroundColor="XionBackground" position="70,117" size="708,484" font="Regular;24" itemHeight="34" scrollbarMode="showNever" />
+		<widget name="statusbar" backgroundColor="XionBackground" position="70,80" size="708,30" font="Regular2;24" itemHeight="34" halign="left" valign="center" />
+		<widget name="status" backgroundColor="XionBackground" position="664,662" size="148,48" font="Regular;22" itemHeight="34" halign="left" valign="center" />
+		<ePixmap pixmap="XionHDF/buttons/key_info.png" position="22,621" zPosition="1" size="32,37" alphatest="on" />
+		<ePixmap pixmap="XionHDF/buttons/key_menu.png" position="222,621" zPosition="1" size="32,37" alphatest="on" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- XMLTVImport Sources -->
+	<screen backgroundColor="transparent" name="XMLTVImportSources" position="0,0" size="1280,720" title="XMLTV Import Sources">
+		<widget name="list" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" font="Regular;24" itemHeight="34" halign="center" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- XMLTVImport Profile -->
+	<screen backgroundColor="transparent" name="XMLTVImportProfile" position="0,0" size="1280,720" title="XMLTVImportProfile">
+		<widget name="config" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" itemHeight="34" font="Regular;24" halign="center" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- XMLTVImport Log -->
+	<screen backgroundColor="transparent" name="XMLTVImportLog" position="0,0" size="1280,720" title="XMLTV Import Log">
+		<widget name="list" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" itemHeight="34" font="Regular;24" halign="center" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>		
 		<!-- Plugins -->
 		<!-- /* EMC NoCover -->
 	<screen name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">

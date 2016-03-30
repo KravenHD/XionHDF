@@ -2491,5 +2491,34 @@
 		<widget name="ListSetting" backgroundColor="XionBackground" position="70,80" size="708,540" itemHeight="30" font="Regular;24" halign="center" valign="center" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
-	</screen>	
+	</screen>
+		<!-- XMLTVImport -->	
+		<!-- XMLTVImport Config -->
+	<screen backgroundColor="transparent" name="XMLTVImportConfig" position="0,0" size="1280,720" title="XMLTV Import Configuration">
+		<widget name="config" backgroundColor="XionBackground" position="70,117" size="708,484" font="Regular;24" itemHeight="34" scrollbarMode="showOnDemand" />
+		<widget name="statusbar" backgroundColor="XionBackground" position="70,80" size="708,30" font="Regular2;24" itemHeight="34" halign="left" valign="center" />
+		<widget name="status" backgroundColor="XionBackground" position="664,662" size="148,48" font="Regular;22" itemHeight="34" halign="left" valign="center" />
+		<ePixmap pixmap="XionHDF/buttons/key_info.png" position="22,621" zPosition="1" size="32,37" alphatest="on" />
+		<ePixmap pixmap="XionHDF/buttons/key_menu.png" position="222,621" zPosition="1" size="32,37" alphatest="on" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- XMLTVImport Sources -->
+	<screen backgroundColor="transparent" name="XMLTVImportSources" position="0,0" size="1280,720" title="XMLTV Import Sources">
+		<widget name="list" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" font="Regular;24" itemHeight="34" halign="center" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- XMLTVImport Profile -->
+	<screen backgroundColor="transparent" name="XMLTVImportProfile" position="0,0" size="1280,720" title="XMLTVImportProfile">
+		<widget name="config" backgroundColor="XionBackground" scrollbarMode="showOnDemand" position="70,80" size="708,540" itemHeight="34" font="Regular;24" halign="center" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- XMLTVImport Log -->
+	<screen backgroundColor="transparent" name="XMLTVImportLog" position="0,0" size="1280,720" title="XMLTV Import Log">
+		<widget name="list" backgroundColor="XionBackground" scrollbarMode="showOnDemand" position="70,80" size="708,540" itemHeight="34" font="Regular;24" halign="center" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>		
 		<!-- Plugins -->
