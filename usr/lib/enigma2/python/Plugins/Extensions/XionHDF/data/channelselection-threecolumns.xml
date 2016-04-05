@@ -3,7 +3,7 @@
 		<widget source="global.CurrentTime" render="Label" position="814,19" size="80,30" font="Regular2; 23" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" foregroundColorMarkedSelected="green" colorEventProgressbarBorder="XionLine" colorEventProgressbarBorderSelected="XionLine" colorServiceDescription="XionFont2" colorServiceDescriptionSelected="XionSelFont" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" name="list" position="18,76" serviceInfoFont="Regular;20" serviceItemHeight="28" serviceNameFont="Regular;20" serviceNumberFont="Regular;20" size="439,571" transparent="1" />
+		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" foregroundColorMarkedSelected="green" colorEventProgressbarBorder="XionLine" colorEventProgressbarBorderSelected="XionSelFont" colorEventProgressbarSelected="XionSelFont" colorServiceDescription="XionFont2" colorServiceDescriptionSelected="XionSelFont" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" name="list" position="18,76" serviceInfoFont="Regular;20" serviceItemHeight="28" serviceNameFont="Regular;20" serviceNumberFont="Regular;20" size="439,571" transparent="1" />
 		<widget source="ServiceEvent" render="Label" position="925,12" size="339,46" font="Regular2; 25" halign="center" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
