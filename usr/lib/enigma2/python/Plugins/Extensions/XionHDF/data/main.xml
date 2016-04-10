@@ -1238,6 +1238,11 @@
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
+		<!-- NetworkOpenvpnLog -->
+	<screen name="NetworkVpnLog" title="OpenVpn Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="infotext" position="70,80" size="708,500" font="Regular;18" zPosition="3" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<panel name="template_menu_left" />
+	</screen>		
 		<!-- NetworkSABnzbd -->
 	<screen name="NetworkSABnzbd" title="SABnzbd Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="lab1" position="70,80" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
