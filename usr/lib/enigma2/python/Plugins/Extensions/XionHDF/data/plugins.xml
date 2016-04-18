@@ -2550,4 +2550,16 @@
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
+		<!-- FanSetupScreen -->
+	<screen backgroundColor="transparent" name="FanSetupScreen" position="0,0" size="1280,720">
+		<widget name="config" backgroundColor="XionBackground" scrollbarMode="showOnDemand" position="70,80" size="708,540" itemHeight="34" font="Regular;20" halign="center" valign="center" transparent="1" />
+		<widget name="powerstatus" position="70,410" size="160,25" font="Regular;22" zPosition="1" transparent="1" />
+		<widget name="daemon0" alphatest="on" pixmap="skin_default/buttons/button_green_off.png" position="260,420" size="15,16" zPosition="10" transparent="1"/>
+		<widget name="daemon1" alphatest="on" pixmap="skin_default/buttons/button_green.png" position="260,420" size="15,16" zPosition="10" transparent="1"/>
+		<widget name="sysTemp" position="70,450" size="260,25" font="Regular;22" halign="left" zPosition="1" transparent="1" />
+		<widget name="hddTemp" position="70,490" size="260,25" font="Regular;22" halign="left" zPosition="1" transparent="1" />
+		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Cancel" position="64,662" size="148,48" transparent="1" zPosition="1" />
+		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Save" position="264,662" size="148,48" transparent="1" zPosition="1" />
+		<panel name="template_menu_left_button" />
+	</screen>
 		<!-- Plugins -->
