@@ -2558,18 +2558,13 @@
 		<widget name="daemon1" alphatest="on" pixmap="skin_default/buttons/button_green.png" position="260,420" size="15,16" zPosition="10" transparent="1"/>
 		<widget name="sysTemp" position="70,450" size="260,25" font="Regular;22" halign="left" zPosition="1" transparent="1" />
 		<widget name="hddTemp" position="70,490" size="260,25" font="Regular;22" halign="left" zPosition="1" transparent="1" />
-		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Cancel" position="64,662" size="148,48" transparent="1" zPosition="1" />
-		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Save" position="264,662" size="148,48" transparent="1" zPosition="1" />
 		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_kp" />		
 	</screen>
-		<!-- TVChartsMain -->
 	<screen backgroundColor="transparent" name="TVChartsMain" position="0,0" size="1280,720">
 		<widget name="channellist" backgroundColor="XionBackground" position="70,80" zPosition="1" font="Regular;22" size="650,480" itemHeight="80" scrollbarMode="showOnDemand" />
-		<widget name="info" position="0,600" zPosition="2" size="708,30" itemHeight="30" font="Regular;22" noWrap="1" foregroundColor="#ffffff" transparent="1" halign="center" valign="center" />
-		<widget name="key_red" position="42,665" zPosition="4" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="key_green" position="255,665" zPosition="4" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="key_yellow" position="454,665" zPosition="4" size="140,40" valign="center" halign="center"  font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="key_blue" position="630,665" zPosition="4" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-	<panel name="template_menu_left_button" />
+		<widget name="info" position="0,600" zPosition="2" size="708,30" itemHeight="30" font="Regular;22" noWrap="1" foregroundColor="XionFont1" transparent="1" halign="center" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- Plugins -->

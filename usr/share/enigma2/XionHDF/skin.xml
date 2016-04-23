@@ -962,7 +962,7 @@
 		<!-- TEMPLATES */-->
 		<!-- /* ChannelSelection Two Columns-->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelSelection" position="-1,0" size="1280,720" title="Channel Selection">
-		<widget backgroundColor="XionBackground" scrollbarMode="showNever" foregroundColorMarkedSelected="green" foregroundColor="XionFont1" colorEventProgressbarBorder="XionLine" colorEventProgressbarBorderSelected="XionLine" colorServiceDescription="XionFont2" colorServiceDescriptionSelected="XionSelFont" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="17,78" serviceInfoFont="Regular;23" serviceItemHeight="35" serviceNameFont="Regular2;25" serviceNumberFont="Regular;25" size="816,564" transparent="1" />
+		<widget backgroundColor="XionBackground" scrollbarMode="showNever" foregroundColorMarkedSelected="green" foregroundColor="XionFont1" colorEventProgressbarBorder="XionLine" colorEventProgressbarBorderSelected="XionSelFont" colorEventProgressbarSelected="XionSelFont" colorServiceDescription="XionFont2" colorServiceDescriptionSelected="XionSelFont" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="17,78" serviceInfoFont="Regular;23" serviceItemHeight="35" serviceNameFont="Regular2;25" serviceNumberFont="Regular;25" size="816,564" transparent="1" />
 		<widget source="ServiceEvent" render="XionHDFSingleEpgList" position="891,561" size="362,113" noWrap="1" font="Regular2;22" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
 		</widget>
 		<widget alphatest="blend" position="891,100" render="XionHDFXPicon" size="67,40" source="ServiceEvent" transparent="1" zPosition="4">
@@ -1005,16 +1005,10 @@
 		<!--/* WEATHER -->
 		<!-- DEACTIVATED -->
 		<!-- WEATHER */-->
-		<widget font="Regular2;35" foregroundColor="XionFont1" halign="left" noWrap="1" position="27,518" render="Label" size="1020,60" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="blend" backgroundColor="XionBackground">
-			<convert type="ServiceName">Name</convert>
-		</widget>
 	</screen>
 		<!-- /* InfoBar XPicon -->
 		<!--/* SecondInfoBar XPicon -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="1280,720" title="SecondInfoBar">
-		<widget font="Regular2;35" foregroundColor="XionFont1" halign="left" noWrap="1" position="27,518" render="Label" size="1020,60" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="blend" backgroundColor="XionBackground">
-			<convert type="ServiceName">Name</convert>
-		</widget>
 		<panel name="template_menu_sibx1" />
 	</screen>
 		<!-- SecondInfobar XPicon*/-->
@@ -2258,6 +2252,11 @@
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
+		<!-- NetworkOpenvpnLog -->
+	<screen name="NetworkVpnLog" title="OpenVpn Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="infotext" position="70,80" size="708,500" font="Regular;18" zPosition="3" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<panel name="template_menu_left" />
+	</screen>		
 		<!-- NetworkSABnzbd -->
 	<screen name="NetworkSABnzbd" title="SABnzbd Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="lab1" position="70,80" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
@@ -3168,6 +3167,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ServiceInfo -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo">
 		<widget backgroundColor="XionBackground" itemHeight="40" font="Regular;24" name="infolist" position="70,80" selectionDisabled="1" size="708,480" transparent="1" />
+		<eLabel text="HbbTV URL:" position="70,450" size="150,32" font="Regular;23" halign="left" noWrap="1" backgroundColor="black" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="370,450" size="950,30" transparent="1" noWrap="1" zPosition="1" backgroundColor="background" font="Regular;23" valign="top" halign="left">
+			<convert type="ServiceInfo">HasHBBTV</convert>
+		</widget>
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
@@ -3650,6 +3653,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<eLabel text="Designed by" position="890,460" size="355,40" font="Regular2;24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" valign="center" halign="center" />
 		<eLabel text="Team Kraven" position="890,510" size="355,40" font="Regular2;24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="center" />
 		<widget name="AboutScrollLabel" position="70,200" size="650,445" scrollbarMode="showNever" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+		<ePixmap pixmap="XionHDF/buttons/key_info.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<eLabel font="Regular;20" halign="left" valign="center" text="HDF Update Info" position="64,662" size="248,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- UpdatePluginMenu -->
@@ -3937,7 +3942,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- Enigma Restart -->
-	<screen name="QuitMainloopScreen" position="fill" backgroundColor="XionBackground" flags="wfNoBorder">
+<!-- Skipper 2.1--><!-- /* ERROR LINE -->	<screen name="QuitMainloopScreen" position="fill" backgroundColor="XionBackground" flags="wfNoBorder">
 		<widget name="text" position="center,590" size="720,100" font="Regular;25" halign="center" transparent="1" />
 	</screen>
 		<!-- Enigma Restart -->
@@ -6505,32 +6510,78 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- XMLTVImport -->	
 		<!-- XMLTVImport Config -->
 	<screen backgroundColor="transparent" name="XMLTVImportConfig" position="0,0" size="1280,720" title="XMLTV Import Configuration">
-		<widget name="config" backgroundColor="XionBackground" position="70,117" size="708,484" font="Regular;24" itemHeight="34" scrollbarMode="showNever" />
-		<widget name="statusbar" backgroundColor="XionBackground" position="70,80" size="708,30" font="Regular2;24" itemHeight="34" halign="left" valign="center" />
-		<widget name="status" backgroundColor="XionBackground" position="664,662" size="148,48" font="Regular;22" itemHeight="34" halign="left" valign="center" />
-		<ePixmap pixmap="XionHDF/buttons/key_info.png" position="22,621" zPosition="1" size="32,37" alphatest="on" />
-		<ePixmap pixmap="XionHDF/buttons/key_menu.png" position="222,621" zPosition="1" size="32,37" alphatest="on" />
+		<widget name="config" backgroundColor="XionBackground" position="70,118" size="708,484" font="Regular;24" itemHeight="34" scrollbarMode="showNever" transparent="1" />
+		<widget name="statusbar" backgroundColor="XionBackground" position="72,80" size="708,30" font="Regular2;24" itemHeight="34" halign="left" valign="center" transparent="1" />
+		<widget name="status" backgroundColor="XionBackground" position="76,68" size="708,48" enableWrapAround="1" font="Regular;20" itemHeight="30" halign="left" valign="center" transparent="1" />
+		<ePixmap pixmap="XionHDF/buttons/key_menu.png" position="706,76" zPosition="1" size="32,37" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_info.png" position="742,76" zPosition="1" size="32,37" alphatest="blend" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- XMLTVImport Sources -->
 	<screen backgroundColor="transparent" name="XMLTVImportSources" position="0,0" size="1280,720" title="XMLTV Import Sources">
-		<widget name="list" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" font="Regular;24" itemHeight="34" halign="center" valign="center" />
+		<widget name="list" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" font="Regular;24" itemHeight="34" halign="center" valign="center" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- XMLTVImport Profile -->
 	<screen backgroundColor="transparent" name="XMLTVImportProfile" position="0,0" size="1280,720" title="XMLTVImportProfile">
-		<widget name="config" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" itemHeight="34" font="Regular;24" halign="center" valign="center" />
+		<widget name="config" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" itemHeight="34" font="Regular;24" halign="center" valign="center" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- XMLTVImport Log -->
 	<screen backgroundColor="transparent" name="XMLTVImportLog" position="0,0" size="1280,720" title="XMLTV Import Log">
-		<widget name="list" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" itemHeight="34" font="Regular;24" halign="center" valign="center" />
+		<widget name="list" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" itemHeight="34" font="Regular;24" halign="center" valign="center" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
-	</screen>		
+	</screen>
+		<!-- EPGImport -->	
+		<!-- EPGImport Config -->
+	<screen backgroundColor="transparent" name="EPGImportConfig" position="0,0" size="1280,720" title="EPG Import Configuration">
+		<widget name="config" backgroundColor="XionBackground" position="70,118" size="708,484" font="Regular;24" itemHeight="34" scrollbarMode="showNever" transparent="1" />
+		<widget name="statusbar" backgroundColor="XionBackground" position="72,80" size="708,30" font="Regular2;24" itemHeight="34" halign="left" valign="center" transparent="1" />
+		<widget name="status" backgroundColor="XionBackground" position="76,68" size="708,48" enableWrapAround="1" font="Regular;20" itemHeight="30" halign="left" valign="center" transparent="1" />
+		<ePixmap pixmap="XionHDF/buttons/key_menu.png" position="706,76" zPosition="1" size="32,37" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_info.png" position="742,76" zPosition="1" size="32,37" alphatest="blend" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- EPGImport Sources -->
+	<screen backgroundColor="transparent" name="EPGImportSources" position="0,0" size="1280,720" title="EPG Import Sources">
+		<widget name="list" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" font="Regular;24" itemHeight="34" halign="center" valign="center" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- EPGImport Profile -->
+	<screen backgroundColor="transparent" name="EPGImportProfile" position="0,0" size="1280,720" title="EPGImportProfile">
+		<widget name="config" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" itemHeight="34" font="Regular;24" halign="center" valign="center" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- EPGImport Log -->
+	<screen backgroundColor="transparent" name="EPGImportLog" position="0,0" size="1280,720" title="EPG Import Log">
+		<widget name="list" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" itemHeight="34" font="Regular;24" halign="center" valign="center" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- FanSetupScreen -->
+	<screen backgroundColor="transparent" name="FanSetupScreen" position="0,0" size="1280,720">
+		<widget name="config" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" itemHeight="34" font="Regular;20" halign="center" valign="center" transparent="1" />
+		<widget name="powerstatus" position="70,410" size="160,25" font="Regular;22" zPosition="1" transparent="1" />
+		<widget name="daemon0" alphatest="on" pixmap="skin_default/buttons/button_green_off.png" position="260,420" size="15,16" zPosition="10" transparent="1"/>
+		<widget name="daemon1" alphatest="on" pixmap="skin_default/buttons/button_green.png" position="260,420" size="15,16" zPosition="10" transparent="1"/>
+		<widget name="sysTemp" position="70,450" size="260,25" font="Regular;22" halign="left" zPosition="1" transparent="1" />
+		<widget name="hddTemp" position="70,490" size="260,25" font="Regular;22" halign="left" zPosition="1" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_kp" />		
+	</screen>
+	<screen backgroundColor="transparent" name="TVChartsMain" position="0,0" size="1280,720">
+		<widget name="channellist" backgroundColor="XionBackground" position="70,80" zPosition="1" font="Regular;22" size="650,480" itemHeight="80" scrollbarMode="showNever" />
+		<widget name="info" position="0,600" zPosition="2" size="708,30" itemHeight="30" font="Regular;22" noWrap="1" foregroundColor="XionFont1" transparent="1" halign="center" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
 		<!-- Plugins -->
 		<!-- /* EMC NoCover -->
 	<screen name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">
