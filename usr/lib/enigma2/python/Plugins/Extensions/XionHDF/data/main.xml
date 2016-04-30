@@ -2952,13 +2952,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- UserInterfacePositioner -->
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="UserInterfacePositioner2" position="0,0" size="1280,720" title="UserInterfacePositioner2">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+	<screen backgroundColor="#00000000" flags="wfNoBorder" name="UserInterfacePositioner2" position="0,0" size="1280,720" title="UserInterfacePositioner2">
+		<widget backgroundColor="#00000000" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="0" />
+		<eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-1" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="UserInterfacePositioner" position="0,0" size="1280,720" title="UserInterfacePositioner">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+	<screen backgroundColor="#00000000" flags="wfNoBorder" name="UserInterfacePositioner" position="0,0" size="1280,720" title="UserInterfacePositioner">
+		<widget backgroundColor="#00000000" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="0" />
+		<eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-1" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
