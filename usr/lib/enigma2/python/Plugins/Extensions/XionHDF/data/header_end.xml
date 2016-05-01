@@ -230,8 +230,11 @@
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
 		<!-- Clock Standard */-->
-		<widget source="global.CurrentTime" position="1090,597" size="148,44" font="Regular2; 38" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+		<widget source="global.CurrentTime" position="1090,597" size="110,44" font="Regular2;38" render="Label" halign="right" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" position="1205,605" size="42,44" font="Regular2; 24" render="Label" halign="left" valign="top" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+			<convert type="ClockToText">Format:: %S</convert>
 		</widget>
 		<widget source="global.CurrentTime" position="1090,660" size="148,36" font="Regular; 22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
 			<convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
@@ -290,8 +293,11 @@
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
 		<!-- Clock Standard */-->
-		<widget source="global.CurrentTime" position="1090,597" size="148,44" font="Regular2; 38" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+		<widget source="global.CurrentTime" position="1090,597" size="110,44" font="Regular2;38" render="Label" halign="right" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" position="1205,605" size="42,44" font="Regular2; 24" render="Label" halign="left" valign="top" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+			<convert type="ClockToText">Format:: %S</convert>
 		</widget>
 		<widget source="global.CurrentTime" position="1090,660" size="148,36" font="Regular; 22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
 			<convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
@@ -449,8 +455,11 @@
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
 		<!-- Clock Standard */-->
-		<widget source="global.CurrentTime" position="1090,597" size="148,44" font="Regular2; 38" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+		<widget source="global.CurrentTime" position="1090,597" size="110,44" font="Regular2;38" render="Label" halign="right" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" position="1205,605" size="42,44" font="Regular2; 24" render="Label" halign="left" valign="top" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+			<convert type="ClockToText">Format:: %S</convert>
 		</widget>
 		<widget source="global.CurrentTime" position="1090,660" size="148,36" font="Regular; 22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
 			<convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
@@ -611,8 +620,11 @@
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
 		<!-- Clock Standard */-->
-		<widget source="global.CurrentTime" position="1090,597" size="148,44" font="Regular2; 38" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+		<widget source="global.CurrentTime" position="1090,597" size="110,44" font="Regular2;38" render="Label" halign="right" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" position="1205,605" size="42,44" font="Regular2; 24" render="Label" halign="left" valign="top" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+			<convert type="ClockToText">Format:: %S</convert>
 		</widget>
 		<widget source="global.CurrentTime" position="1090,660" size="148,36" font="Regular; 22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
 			<convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
