@@ -423,14 +423,14 @@
 	</screen>
 		<!-- QuickEPG -->
 	<screen name="QuickEPG" flags="wfNoBorder" position="0,435" size="1280,285" title="InfoBar" backgroundColor="XionBackground">
-		<widget source="Event" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" position="761,95" size="498,120" font="Regular;21" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" valign="top" zPosition="-8">
+		<widget source="Event" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" position="761,95" size="498,130" font="Regular;21" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" valign="top" zPosition="-8">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="Service" render="Label" position="87,19" size="595,40" font="Regular; 32" valign="center" noWrap="1" backgroundColor="transparent" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<eLabel position="8,70" size="1264,1" backgroundColor="XionLine" />
-		<widget source="Event" render="Progress" foregroundColor="XionProgress" position="8,67" size="1264,6" transparent="1" alphatest="on">
+		<eLabel position="8,70" size="1264,2" backgroundColor="XionLine" />
+		<widget source="Event" render="Progress" foregroundColor="XionProgress" position="8,68" size="1264,6" transparent="1" zPosition="1" alphatest="on">
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1135,232" size="126,40" backgroundColor="XionBackground" zPosition="1" XionBackground="1" font="Regular; 38" valign="center" halign="center">
