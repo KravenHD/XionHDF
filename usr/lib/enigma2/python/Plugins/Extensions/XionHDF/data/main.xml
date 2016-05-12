@@ -436,14 +436,21 @@
 		<widget source="global.CurrentTime" render="Label" position="1135,232" size="126,40" backgroundColor="XionBackground" zPosition="1" XionBackground="1" font="Regular; 38" valign="center" halign="center">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="XionHDF/buttons/ico_rec_on.png" zPosition="2" position="840,235" size="32,32" alphatest="blend">
+		<widget source="session.RecordState" render="Pixmap" pixmap="XionHDF/buttons/ico_rec_on.png" position="20,230" size="32,32" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget name="list" position="17,95" size="715,120" font="Regular; 24" foregroundColor="XionFont1" backgroundColor="XionBackground" />
 		<widget source="Service" render="Picon" position="9,19" size="70,42" transparent="0" zPosition="2" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<panel name="template_menu_quick2" />
+		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="100,230" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="335,229" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="570,230" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="800,230" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_red" position="140,220" size="180,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_green" position="375,220" size="180,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="610,220" size="180,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="840,220" size="280,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 	</screen>
 		<!-- ********** Menu ********** -->
 		<!-- Menu -->
