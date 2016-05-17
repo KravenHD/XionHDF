@@ -3007,8 +3007,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text_source" />
 	</screen>
 	<!-- BufferIndicator -->
-	<screen name="BufferIndicator" title="Indicator" position="center,45" size="400,35" backgroundColor="XionBackground" flags="wfNoBorder" zPosition="100">
-		<widget name="status" position="0,0" size="400,35" backgroundColor="XionBackground" transparent="1" font="Regular2;20" borderColor="black" borderWidth="2" valign="center" halign="center"/>
+	<screen name="BufferIndicator" title="Indicator" position="center,105" size="400,35" flags="wfNoBorder" zPosition="100">
+		<widget name="status" position="0,0" size="400,35" transparent="1" zPosition="-1" font="Regular;26" valign="center" halign="center"/>
 	</screen>
 		<!-- main-custom-openhdf */ -->
 		<!-- Main */ -->
