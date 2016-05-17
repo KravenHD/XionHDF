@@ -340,10 +340,13 @@
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
 		<!-- Clock Standard */-->
-		<widget source="global.CurrentTime" position="1090,597" size="148,44" font="Regular2;38" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+		<widget source="global.CurrentTime" position="1080,597" size="110,44" font="Regular2;38" render="Label" halign="right" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" position="1090,660" size="148,36" font="Regular;22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
+		<widget source="global.CurrentTime" position="1195,605" size="50,44" font="Regular2;24" render="Label" halign="left" valign="top" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+			<convert type="ClockToText">Format:: %S</convert>
+		</widget>
+		<widget source="global.CurrentTime" position="1085,660" size="166,36" font="Regular;22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
 			<convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
 		</widget>
 		<!-- Clock Standard */-->
@@ -400,10 +403,13 @@
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
 		<!-- Clock Standard */-->
-		<widget source="global.CurrentTime" position="1090,597" size="148,44" font="Regular2;38" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+		<widget source="global.CurrentTime" position="1080,597" size="110,44" font="Regular2;38" render="Label" halign="right" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" position="1090,660" size="148,36" font="Regular;22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
+		<widget source="global.CurrentTime" position="1195,605" size="50,44" font="Regular2;24" render="Label" halign="left" valign="top" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+			<convert type="ClockToText">Format:: %S</convert>
+		</widget>
+		<widget source="global.CurrentTime" position="1085,660" size="166,36" font="Regular;22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
 			<convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
 		</widget>
 		<!-- Clock Standard */-->
@@ -559,10 +565,13 @@
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
 		<!-- Clock Standard */-->
-		<widget source="global.CurrentTime" position="1090,597" size="148,44" font="Regular2;38" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+		<widget source="global.CurrentTime" position="1080,597" size="110,44" font="Regular2;38" render="Label" halign="right" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" position="1090,660" size="148,36" font="Regular;22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
+		<widget source="global.CurrentTime" position="1195,605" size="50,44" font="Regular2;24" render="Label" halign="left" valign="top" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+			<convert type="ClockToText">Format:: %S</convert>
+		</widget>
+		<widget source="global.CurrentTime" position="1085,660" size="166,36" font="Regular;22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
 			<convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
 		</widget>
 		<!-- Clock Standard */-->
@@ -721,10 +730,13 @@
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
 		<!-- Clock Standard */-->
-		<widget source="global.CurrentTime" position="1090,597" size="148,44" font="Regular2;38" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+		<widget source="global.CurrentTime" position="1080,597" size="110,44" font="Regular2;38" render="Label" halign="right" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" position="1090,660" size="148,36" font="Regular;22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
+		<widget source="global.CurrentTime" position="1195,605" size="50,44" font="Regular2;24" render="Label" halign="left" valign="top" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
+			<convert type="ClockToText">Format:: %S</convert>
+		</widget>
+		<widget source="global.CurrentTime" position="1085,660" size="166,36" font="Regular;22" render="Label" halign="center" valign="center" zPosition="12" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
 			<convert type="XionHDFClockToText">Format:%d.%m.%Y</convert>
 		</widget>
 		<!-- Clock Standard */-->
@@ -1005,16 +1017,10 @@
 		<!--/* WEATHER -->
 		<!-- DEACTIVATED -->
 		<!-- WEATHER */-->
-		<widget font="Regular;50" foregroundColor="XionFont1" halign="left" noWrap="1" position="27,515" render="Label" size="1020,65" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="blend" backgroundColor="XionBackground">
-			<convert type="ServiceName">Name</convert>
-		</widget>
 	</screen>
 		<!-- /* InfoBar XPicon -->
 		<!--/* SecondInfoBar XPicon -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="1280,720" title="SecondInfoBar">
-		<widget font="Regular;50" foregroundColor="XionFont1" halign="left" noWrap="1" position="27,515" render="Label" size="1020,65" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="blend" backgroundColor="XionBackground">
-			<convert type="ServiceName">Name</convert>
-		</widget>
 		<panel name="template_menu_sibx1" />
 	</screen>
 		<!-- SecondInfobar XPicon*/-->
@@ -1443,27 +1449,34 @@
 	</screen>
 		<!-- QuickEPG -->
 	<screen name="QuickEPG" flags="wfNoBorder" position="0,435" size="1280,285" title="InfoBar" backgroundColor="XionBackground">
-		<widget source="Event" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" position="761,95" size="498,120" font="Regular;21" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" valign="top" zPosition="-8">
+		<widget source="Event" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" position="761,95" size="498,130" font="Regular;21" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" valign="top" zPosition="-8">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="Service" render="Label" position="87,19" size="595,40" font="Regular;32" valign="center" noWrap="1" backgroundColor="transparent" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<eLabel position="8,70" size="1264,1" backgroundColor="XionLine" />
-		<widget source="Event" render="Progress" foregroundColor="XionProgress" position="8,67" size="1264,6" transparent="1" alphatest="on">
+		<eLabel position="8,70" size="1264,2" backgroundColor="XionLine" />
+		<widget source="Event" render="Progress" foregroundColor="XionProgress" position="8,68" size="1264,6" transparent="1" zPosition="1" alphatest="on">
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1135,232" size="126,40" backgroundColor="XionBackground" zPosition="1" XionBackground="1" font="Regular;38" valign="center" halign="center">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="XionHDF/buttons/ico_rec_on.png" zPosition="2" position="840,235" size="32,32" alphatest="blend">
+		<widget source="session.RecordState" render="Pixmap" pixmap="XionHDF/buttons/ico_rec_on.png" position="20,230" size="32,32" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget name="list" position="17,95" size="715,120" font="Regular;24" foregroundColor="XionFont1" backgroundColor="XionBackground" />
 		<widget source="Service" render="Picon" position="9,19" size="70,42" transparent="0" zPosition="2" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<panel name="template_menu_quick2" />
+		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="100,230" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="335,229" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="570,230" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="800,230" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_red" position="140,220" size="180,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_green" position="375,220" size="180,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="610,220" size="180,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="840,220" size="280,50" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 	</screen>
 		<!-- ********** Menu ********** -->
 		<!-- Menu -->
@@ -3972,13 +3985,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- UserInterfacePositioner -->
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="UserInterfacePositioner2" position="0,0" size="1280,720" title="UserInterfacePositioner2">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showNever" transparent="1" />
+	<screen backgroundColor="#00000000" flags="wfNoBorder" name="UserInterfacePositioner2" position="0,0" size="1280,720" title="UserInterfacePositioner2">
+		<widget backgroundColor="#00000000" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showNever" transparent="0" />
+		<eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-1" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="UserInterfacePositioner" position="0,0" size="1280,720" title="UserInterfacePositioner">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showNever" transparent="1" />
+	<screen backgroundColor="#00000000" flags="wfNoBorder" name="UserInterfacePositioner" position="0,0" size="1280,720" title="UserInterfacePositioner">
+		<widget backgroundColor="#00000000" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="70,80" size="708,540" scrollbarMode="showNever" transparent="0" />
+		<eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-1" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
@@ -4016,6 +4031,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
+	</screen>
+	<!-- BufferIndicator -->
+	<screen name="BufferIndicator" title="Indicator" position="center,105" size="400,35" flags="wfNoBorder" zPosition="100">
+		<widget name="status" position="0,0" size="400,35" transparent="1" zPosition="-1" font="Regular;26" valign="center" halign="center"/>
 	</screen>
 		<!-- main-custom-openhdf */ -->
 		<!-- Main */ -->
@@ -4585,7 +4604,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- FritzCallSetup -->
 	<screen name="FritzCallSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="FritzCallSetup" backgroundColor="transparent">
 		<widget name="consideration" position="70,80" size="708,90" font="Regular2;20" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-		<widget name="config" position="71,196" size="708,440" itemHeight="30" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" font="Regular;18" />
+		<widget name="config" position="71,196" size="708,440" itemHeight="30" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" font="Regular;20" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
