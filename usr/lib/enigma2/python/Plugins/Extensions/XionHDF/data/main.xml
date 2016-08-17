@@ -2659,7 +2659,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 							MultiContentEntryText(pos = (2, 2), size = (370, 24), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
 						],
 					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 25
+					"itemHeight": 32
 					}
 			</convert>
 		</widget>
