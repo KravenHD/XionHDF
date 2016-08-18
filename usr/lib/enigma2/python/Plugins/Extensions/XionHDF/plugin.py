@@ -204,7 +204,8 @@ else:
    mem_info = []
    entrie = os.popen('cat /proc/cmdline').read()
    
-   if getBoxType() == 'vusolo4k':
+   #if getBoxType() == 'vusolo4k':
+   if getBoxType() in ('vusolo4k', 'mutant51', 'mutant52'):
         mem = re.findall('_cma=(.*?)M', entrie)
    else:   
         mem = re.findall('bmem=(.*?)M', entrie)
