@@ -1769,7 +1769,7 @@
 		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="24,458" render="XionHDFRunningText" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="1232,176" source="Event" transparent="1" valign="top" zPosition="1">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
-		<widget CoolBackColor="XionBackground" CoolDayColor="white" CoolDayPos="0" CoolDaySize="50" CoolEventColor="white" CoolEventFont="Regular;22" CoolEventPos="150" CoolFont="Regular;22" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolTimeColor="white" CoolTimePos="70" CoolTimeSize="70" backgroundColor="Background1" foregroundColor="Foreground" itemHeight="30" name="list" position="435,80" size="820,330" transparent="1" zPosition="-8" />
+		<widget name="list" CoolBackColor="XionBackground" CoolDayColor="white" CoolDayPos="0" CoolDaySize="50" CoolEventColor="white" CoolEventFont="Regular;22" CoolEventPos="150" CoolEventSize="650" CoolFont="Regular;22" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolTimeColor="white" CoolTimePos="70" CoolTimeSize="70" backgroundColor="Background1" foregroundColor="Foreground" itemHeight="30" position="435,80" size="820,330" transparent="1" zPosition="-8" />
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="right" name="date" position="1060,670" size="180,30" transparent="1" />
 		<widget source="session.VideoPicture" render="Pig" position="60,80" size="352,198" zPosition="3" backgroundColor="transparent" />
 		<panel name="template_cool" />
