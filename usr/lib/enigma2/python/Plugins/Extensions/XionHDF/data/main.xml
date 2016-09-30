@@ -2989,11 +2989,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- Multiboot Selector -->
-	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="MultiBootStartup" position="0,0" size="1280,720" >
+	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="MultiBootStartupOPT" position="0,0" size="1280,720" >
+		<eLabel name="b" position="0,0" size="600,250" backgroundColor="XionBackground" zPosition="-2" />
+		<eLabel name="a" position="1,1" size="598,248" backgroundColor="XionBackground" zPosition="-1" />
+		<eLabel name="line" position="20,220" size="570,1" backgroundColor="#00ffffff" zPosition="1" />
 		<widget source="config" render="Label" position="40,120" size="480,60" halign="center" itemHeight="30" font="Regular;30" enableWrapAround="1" backgroundColor="XionBackground" foregroundColor="XionFont1" />
-		<eLabel name="line" position="90,190" size="550,1" backgroundColor="#00ffffff" zPosition="1" />
-		<eLabel text="Use left/right buttons to toggle between the images." position="100,225" size="552,28" font="Regular;22" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
-		<eLabel text="Press green button to save and reboot your box." position="100,255" size="552,28" font="Regular;22" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
+		<widget source="options" render="Label" position="10,172" size="580,35" halign="center" font="Regular; 24" backgroundColor="XionBackground" />
+		<widget name="description" position="10,250" size="580,26" font="Regular; 19" foregroundColor="#00ffffff" halign="center" backgroundColor="XionBackground" valign="center" />
+		<ePixmap position="555,245" size="35,25" zPosition="2" pixmap="/usr/share/enigma2/skin_default/buttons/key_info.png" alphatest="blend" />
+		<eLabel text="Press left/right to select Image" backgroundColor="Xionbackground" font="Regular;16" foregroundColor="XionButtonText" halign="center" position="10,450" size="580,30" transparent="1" zPosition="3" />
+		<eLabel text="Press up/down to select Bootoption (Standard/Experimental)" backgroundColor="Xionbackground" font="Regular;16" foregroundColor="XionButtonText" halign="center" position="10,470" size="580,30" transparent="1" zPosition="3" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
