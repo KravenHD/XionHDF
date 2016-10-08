@@ -1868,7 +1868,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- AudioSelection -->
 	<screen name="AudioSelection" title="Audio" position="center,center" size="600,426" flags="wfNoBorder" backgroundColor="XionBackground">
 		<widget source="Title" render="Label" position="25,5" size="550,40" backgroundColor="Xionbackground" transparent="1" font="Regular2;34" foregroundColor="XionFont2" valign="center" halign="left" noWrap="1" />
-		<widget name="config" position="74,64" font="Regular;22" foregroundColor="XionFont1" size="500,200" itemHeight="40" transparent="1" zPosition="3" />
+		<widget name="config" position="74,64" font="Regular;24" foregroundColor="XionFont1" size="500,200" itemHeight="40" transparent="1" zPosition="3" />
 		<widget source="key_red" render="Pixmap" pixmap="XionHDF/buttons/key_red.png" position="25,70" size="32,32" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -1884,23 +1884,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="streams" render="Listbox" position="25,277" size="550,100" zPosition="3" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"templates":
-					{"default": (25, [
-						MultiContentEntryText(pos = (0, 0),   size = (20, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
+					{"default": (23, [
+						MultiContentEntryText(pos = (0, 0),   size = (25, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
 						MultiContentEntryText(pos = (25, 0),  size = (55, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
 						MultiContentEntryText(pos = (85, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
 						MultiContentEntryText(pos = (210, 0), size = (290, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
 						MultiContentEntryText(pos = (505, 2), size = (20, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], True, "showOnDemand"),
-					"notselected": (25, [
-						MultiContentEntryText(pos = (0, 0),   size = (20, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
+					"notselected": (23, [
+						MultiContentEntryText(pos = (0, 0),   size = (25, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
 						MultiContentEntryText(pos = (25, 0),  size = (55, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
 						MultiContentEntryText(pos = (85, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
 						MultiContentEntryText(pos = (210, 0), size = (290, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
 						MultiContentEntryText(pos = (505, 2), size = (20, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], False, "showOnDemand")
 					},
-				"fonts": [gFont("Regular", 20), gFont("Regular", 16)],
-				"itemHeight": 30
+				"fonts": [gFont("Regular", 16), gFont("Regular", 16)],
+				"itemHeight": 28
 				}
 			</convert>
 		</widget>
