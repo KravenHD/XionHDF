@@ -2996,7 +2996,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="config" render="Label" position="40,120" size="480,60" halign="center" itemHeight="30" font="Regular;30" enableWrapAround="1" backgroundColor="XionBackground" foregroundColor="XionFont1" />
 		<widget source="options" render="Label" position="10,172" size="580,35" halign="center" font="Regular; 24" backgroundColor="XionBackground" />
 		<widget name="description" position="10,250" size="580,26" font="Regular; 19" foregroundColor="#00ffffff" halign="center" backgroundColor="XionBackground" valign="center" />
-		<ePixmap position="555,245" size="35,25" zPosition="2" pixmap="/usr/share/enigma2/skin_default/buttons/key_info.png" alphatest="blend" />
+		<ePixmap position="575,245" size="35,25" zPosition="2" pixmap="/usr/share/enigma2/skin_default/buttons/key_info.png" alphatest="blend" />
 		<eLabel text="Press left/right to select Image" backgroundColor="Xionbackground" font="Regular;16" foregroundColor="XionButtonText" halign="center" position="10,450" size="580,30" transparent="1" zPosition="3" />
 		<eLabel text="Press up/down to select Bootoption (Standard/Experimental)" backgroundColor="Xionbackground" font="Regular;16" foregroundColor="XionButtonText" halign="center" position="10,470" size="580,30" transparent="1" zPosition="3" />
 		<panel name="template_colorkey_text_source" />
