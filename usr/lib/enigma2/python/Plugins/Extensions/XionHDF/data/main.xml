@@ -3024,5 +3024,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen name="BufferIndicator" title="Indicator" position="center,105" size="400,35" flags="wfNoBorder" zPosition="100">
 		<widget name="status" position="0,0" size="400,35" transparent="1" zPosition="-1" font="Regular;26" valign="center" halign="center"/>
 	</screen>
-		<!-- main-custom-openhdf */ -->
-		<!-- Main */ -->
+	<!-- Seekbar Example 1 -->
+	<!--screen name="Seekbar" backgroundColor="XionBackground" position="center,40" size="560,255" flags="wfNoBorder">
+		<widget name="cursor" position="0,15" size="8,18" pixmap="XionHDF/timeline.png" alphatest="on" />
+		<widget source="session.CurrentService" render="PositionGauge" position="145,30" size="270,10" zPosition="2" pointer="position_pointer.png:540,0" transparent="1" foregroundColor="XionButtonText">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget name="time" position="50,25" size="100,20" font="Regular;20" halign="left" backgroundColor="XionBackground" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="420,25" size="90,24" font="Regular;20" halign="right" backgroundColor="XionBackground" transparent="1">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+	</screen-->
+	<!-- Seekbar Example 2 -->
+	<!--screen name="Seekbar" position="center,238" zPosition="2" size="574,230" backgroundColor="XionBackground" flags="wfNoBorder">
+		<widget name="cursor" position="0,0" size="16,230" pixmap="XionHDF/timeline.png" alphatest="blend" zPosition="6" />
+		<widget name="time" position="0,40" size="574,100" backgroundColor="XionBackground" foregroundColor="XionButtonText" font="Regular; 80" halign="center" transparent="1" valign="center" />
+		<widget source="session.CurrentService" render="Label" position="32,176" size="80,27" font="Regular;20" halign="right" valign="bottom" foregroundColor="XionButtonText" backgroundColor="XionBackground">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="462,176" size="80,27" font="Regular;20" halign="left" valign="bottom" foregroundColor="XionButtonText" backgroundColor="XionBackground">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="152,187" size="270,5" zPosition="5" foregroundColor="XionButtonText" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+	</screen-->
+	
+	<!-- main-custom-openhdf */ -->
+	<!-- Main */ -->
