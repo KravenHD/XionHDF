@@ -257,7 +257,7 @@
 		<!-- ********** DreamExplorerII ********** -->
 		<!-- DreamExplorerII -->
 	<screen name="DreamExplorerII" position="0,0" size="1280,720" flags="wfNoBorder" title="Dream-Explorer" backgroundColor="transparent">
-		<widget name="filelist" position="70,80" size="708,540" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+		<widget name="filelist" position="70,80" size="708,540" itemHeight="30" font="Regular;18" scrollbarMode="showAlways" backgroundColor="XionBackground" transparent="1" />
 		<eLabel text="delete" position="64,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
 		<eLabel text="Rename" position="264,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
 		<eLabel text="Move/Copy" position="464,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
@@ -537,8 +537,8 @@
 	</screen>
 		<!-- FilebrowserScreen -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="FilebrowserScreen" position="0,0" size="1280,720" title="">
-		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular;22" name="list_left" position=" 70,115" size="550,510" transparent="1" />
-		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular;22" name="list_right" position="660,115" size="550,510" transparent="1" />
+		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular;22" name="list_left" scrollbarMode="showAlways" position="70,115" size="550,510" transparent="1" />
+		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular;22" name="list_right" scrollbarMode="showAlways" position="660,115" size="550,510" transparent="1" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
