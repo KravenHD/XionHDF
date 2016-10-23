@@ -1534,11 +1534,11 @@ from enigma import eSize,ePoint, getDesktop
 offset_listposx = 10
 offset_listposy = 90
 offset_listwidth = 10
-offset_listheight = 45
+offset_listheight = 35
 offset_textwidth = 170
-offset_textheight = 50
+offset_textheight = 30
 min_width = 400
-min_height = 100
+min_height = 30
 #----
 deskwidth = getDesktop(0).size().width()
 deskheight = getDesktop(0).size().height()
@@ -1999,8 +1999,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" name="SubtitleDisplay" position="0,0" size="1280,720" />
 		<!-- ********** Timeshift ********** -->
 		<!-- TimeshiftState -->
-	<screen name="TimeshiftState" position="260,10" size="770,45" backgroundColor="transparent" flags="wfNoBorder">
-		<eLabel backgroundColor="XionBackground" position="0,0" size="770,45" zPosition="5" />
+	<screen name="TimeshiftState" position="260,center" size="770,55" backgroundColor="XionBackground" flags="wfNoBorder">
+		<eLabel backgroundColor="XionBackground" position="0,0" size="770,55" zPosition="5" />
 		<widget name="state" position="5,0" size="100,35" font="Regular;32" foregroundColor="XionFont1" halign="center" backgroundColor="XionBackground" transparent="1" zPosition="15" valign="center" />
 		<widget source="session.CurrentService" render="Label" position="612,0" size="100,30" font="Regular;24" halign="right" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="15" valign="top">
 			<convert type="ServicePosition">Remaining</convert>
@@ -2012,7 +2012,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 		<eLabel text="min" position="220,0" size="60,30" font="Regular;24" halign="left" backgroundColor="XionBackground" transparent="1" zPosition="15" valign="top" foregroundColor="XionFont1" />
 		<eLabel position="283,0" size="230,32" text="timeshift aktiv" font="Regular;28" backgroundColor="XionBackground" transparent="1" zPosition="10" valign="center" foregroundColor="red" halign="center" />
-		<widget foregroundColor="orange" position="13,33" render="Progress" size="730,5" source="session.CurrentService" transparent="1" zPosition="20">
+		<widget foregroundColor="XionFont2" position="13,33" render="Progress" size="730,5" source="session.CurrentService" transparent="1" zPosition="20">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<eLabel backgroundColor="XionBackground" foregroundColor="XionFont1" position="13,35" size="730,1" zPosition="17" />
