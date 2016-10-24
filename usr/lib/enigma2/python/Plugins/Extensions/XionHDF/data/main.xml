@@ -1536,7 +1536,7 @@ offset_listposy = 90
 offset_listwidth = 10
 offset_listheight = 35
 offset_textwidth = 170
-offset_textheight = 30
+offset_textheight = 10
 min_width = 400
 min_height = 30
 #----
