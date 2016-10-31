@@ -1534,11 +1534,11 @@ from enigma import eSize,ePoint, getDesktop
 offset_listposx = 10
 offset_listposy = 90
 offset_listwidth = 10
-offset_listheight = 35
+offset_listheight = 55
 offset_textwidth = 170
 offset_textheight = 10
 min_width = 400
-min_height = 30
+min_height = 20
 #----
 deskwidth = getDesktop(0).size().width()
 deskheight = getDesktop(0).size().height()
