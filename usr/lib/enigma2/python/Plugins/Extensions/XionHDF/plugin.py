@@ -215,8 +215,11 @@ else:
    if len(mem_info) > 1:
       bmem = int(mem_info[0]) + int(mem_info[1])  
    else:
-      bmem = int(mem_info[0])
-      
+      if getBoxType() in ('sf4008'):
+         bmem = 250
+      else:
+         bmem = int(mem_info[0])
+
 SkinModeList = []
 SkinModeList.append(("hd", _("HD Skin 1280 x 720")))
 if bmem > 180:
