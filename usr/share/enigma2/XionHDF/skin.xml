@@ -2559,30 +2559,80 @@ self.autoResize()
 		<widget name="list" font="Regular;22" foregroundColor="XionFont1" position="21,136" size="760,320" itemHeight="32" transparent="1" />
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
-from enigma import eSize,ePoint
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
+from enigma import eSize,ePoint, getDesktop
+#orgwidth = self.instance.size().width()
+#orgheight = self.instance.size().height()
+#---
+offset_listposx = 10
+offset_listposy = 90
+offset_listwidth = 10
+offset_listheight = 55
+offset_textwidth = 170
+offset_textheight = 10
+min_width = 400
+min_height = 20
+#----
+deskwidth = getDesktop(0).size().width()
+deskheight = getDesktop(0).size().height()
 textsize = self["text"].getSize()
-textsize = (textsize[0] + 60,textsize[1] + 60)
-offset = 30
-if self.type == self.TYPE_YESNO:
-	offset = 107
-wsizex = textsize[0] + 107
-wsizey = textsize[1] + offset
-if (280 &gt; wsizex):
-	wsizex = 280
-wsize = (wsizex,wsizey)
+textwidth = textsize[0] + offset_textwidth
+textheight = textsize[1] + offset_textheight
+
+listwidth = 0
+listheight = 0
+
+if self.list:
+	try:
+		for i in self.list:
+			if len(i[0]) > listwidth:
+				listwidth = len(i[0])
+		listwidth = listwidth * offset_listwidth
+		listheight = len(self.list) * offset_listheight
+	except:
+		pass
+
+if (min_height &gt; textheight):
+	textheight = min_height
+if (min_width &gt; textwidth):
+	textwidth = min_width
+if (listheight &gt; 0):
+	offset = 21
+else:
+	offset = 13
+if (textwidth &gt; listwidth):
+	wsizex = textwidth + offset_listposx * 2
+else:
+	textwidth = listwidth - offset_listposx
+<!-- Skipper 25--><!-- /* ERROR LINE -->	wsizex = listwidth + offset_listposx
+
+wsizey = textheight + listheight + offset
+
+if ((wsizey + offset_listposy - offset_listposx) &gt; deskheight):
+	textheight = deskheight - listheight - offset - offset_listposy + offset_listposx
+	wsizey = textheight + listheight + offset
+
+if (wsizex &gt; deskwidth):
+	textwidth = deskwidth - offset_listposx * 2
+<!-- Skipper 25--><!-- /* ERROR LINE -->	listwidth = wsizex = deskwidth
+
+<!-- Skipper 29--><!-- /* ERROR LINE -->wsize = (wsizex,wsizey + offset_listposy - offset_listposx)
+
 # resize
 self.instance.resize(eSize(*wsize))
+
 # resize label
+textsize = (textwidth,textheight)
 self["text"].instance.resize(eSize(*textsize))
+
 # move list
-listsize = (wsizex - 20, 64)
-self["list"].instance.move(ePoint(10,textsize[1] + 27))
+<!-- Skipper 27--><!-- /* ERROR LINE -->listsize = (wsizex - offset_listposx * 2,listheight)
+<!-- Skipper 28--><!-- /* ERROR LINE -->self["list"].instance.move(ePoint(offset_listposx,textheight + offset_listposy))
 self["list"].instance.resize(eSize(*listsize))
+
 # center window
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
+newheight = wsize[1]
+self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight)/2))
 		</applet>
 	</screen>
 		<!-- MessageBoxGenuine -->
@@ -2900,7 +2950,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- AudioSelection -->
 	<screen name="AudioSelection" title="Audio" position="center,center" size="600,426" flags="wfNoBorder" backgroundColor="XionBackground">
 		<widget source="Title" render="Label" position="25,5" size="550,40" backgroundColor="Xionbackground" transparent="1" font="Regular2;34" foregroundColor="XionFont2" valign="center" halign="left" noWrap="1" />
-		<widget name="config" position="74,64" font="Regular;22" foregroundColor="XionFont1" size="500,200" itemHeight="40" transparent="1" zPosition="3" />
+		<widget name="config" position="74,64" font="Regular;24" foregroundColor="XionFont1" size="500,200" itemHeight="40" transparent="1" zPosition="3" />
 		<widget source="key_red" render="Pixmap" pixmap="XionHDF/buttons/key_red.png" position="25,70" size="32,32" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -2916,23 +2966,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="streams" render="Listbox" position="25,277" size="550,100" zPosition="3" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"templates":
-					{"default": (25, [
-						MultiContentEntryText(pos = (0, 0),   size = (20, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
+					{"default": (23, [
+						MultiContentEntryText(pos = (0, 0),   size = (25, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
 						MultiContentEntryText(pos = (25, 0),  size = (55, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
 						MultiContentEntryText(pos = (85, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
 						MultiContentEntryText(pos = (210, 0), size = (290, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
 						MultiContentEntryText(pos = (505, 2), size = (20, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], True, "showNever"),
-					"notselected": (25, [
-						MultiContentEntryText(pos = (0, 0),   size = (20, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
+					"notselected": (23, [
+						MultiContentEntryText(pos = (0, 0),   size = (25, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
 						MultiContentEntryText(pos = (25, 0),  size = (55, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
 						MultiContentEntryText(pos = (85, 0), size = (120, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
 						MultiContentEntryText(pos = (210, 0), size = (290, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
 						MultiContentEntryText(pos = (505, 2), size = (20, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
 					], False, "showNever")
 					},
-				"fonts": [gFont("Regular", 20), gFont("Regular", 16)],
-				"itemHeight": 30
+				"fonts": [gFont("Regular", 16), gFont("Regular", 16)],
+				"itemHeight": 28
 				}
 			</convert>
 		</widget>
@@ -2981,8 +3031,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" name="SubtitleDisplay" position="0,0" size="1280,720" />
 		<!-- ********** Timeshift ********** -->
 		<!-- TimeshiftState -->
-	<screen name="TimeshiftState" position="260,10" size="770,45" backgroundColor="transparent" flags="wfNoBorder">
-		<eLabel backgroundColor="XionBackground" position="0,0" size="770,45" zPosition="5" />
+	<screen name="TimeshiftState" position="260,center" size="770,55" backgroundColor="XionBackground" flags="wfNoBorder">
+		<eLabel backgroundColor="XionBackground" position="0,0" size="770,55" zPosition="5" />
 		<widget name="state" position="5,0" size="100,35" font="Regular;32" foregroundColor="XionFont1" halign="center" backgroundColor="XionBackground" transparent="1" zPosition="15" valign="center" />
 		<widget source="session.CurrentService" render="Label" position="612,0" size="100,30" font="Regular;24" halign="right" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="15" valign="top">
 			<convert type="ServicePosition">Remaining</convert>
@@ -2994,7 +3044,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 		<eLabel text="min" position="220,0" size="60,30" font="Regular;24" halign="left" backgroundColor="XionBackground" transparent="1" zPosition="15" valign="top" foregroundColor="XionFont1" />
 		<eLabel position="283,0" size="230,32" text="timeshift aktiv" font="Regular;28" backgroundColor="XionBackground" transparent="1" zPosition="10" valign="center" foregroundColor="red" halign="center" />
-		<widget foregroundColor="orange" position="13,33" render="Progress" size="730,5" source="session.CurrentService" transparent="1" zPosition="20">
+		<widget foregroundColor="XionFont2" position="13,33" render="Progress" size="730,5" source="session.CurrentService" transparent="1" zPosition="20">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<eLabel backgroundColor="XionBackground" foregroundColor="XionFont1" position="13,35" size="730,1" zPosition="17" />
@@ -3191,9 +3241,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- ServiceInfo -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo">
-		<widget backgroundColor="XionBackground" itemHeight="40" font="Regular;24" name="infolist" position="70,80" selectionDisabled="1" size="708,480" transparent="1" />
-		<eLabel text="HbbTV URL:" position="70,450" size="150,32" font="Regular;23" halign="left" noWrap="1" backgroundColor="black" transparent="1" />
-		<widget source="session.CurrentService" render="Label" position="370,450" size="950,30" transparent="1" noWrap="1" zPosition="1" backgroundColor="background" font="Regular;23" valign="top" halign="left">
+		<widget backgroundColor="XionBackground" itemHeight="40" font="Regular;24" scrollbarMode="showNever" name="infolist" position="70,80" selectionDisabled="1" size="708,550" transparent="1" />
+		<eLabel text="HbbTV URL:" position="70,585" size="150,32" font="Regular;23" halign="left" noWrap="1" backgroundColor="black" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="370,585" size="950,30" transparent="1" noWrap="1" zPosition="1" backgroundColor="background" font="Regular;23" valign="top" halign="left">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 		</widget>
 		<panel name="template_menu_left_button" />
@@ -4028,7 +4078,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="config" render="Label" position="40,120" size="480,60" halign="center" itemHeight="30" font="Regular;30" enableWrapAround="1" backgroundColor="XionBackground" foregroundColor="XionFont1" />
 		<widget source="options" render="Label" position="10,172" size="580,35" halign="center" font="Regular;24" backgroundColor="XionBackground" />
 		<widget name="description" position="10,250" size="580,26" font="Regular;19" foregroundColor="#00ffffff" halign="center" backgroundColor="XionBackground" valign="center" />
-		<ePixmap position="555,245" size="35,25" zPosition="2" pixmap="/usr/share/enigma2/skin_default/buttons/key_info.png" alphatest="blend" />
+		<ePixmap position="575,245" size="35,25" zPosition="2" pixmap="/usr/share/enigma2/skin_default/buttons/key_info.png" alphatest="blend" />
 		<eLabel text="Press left/right to select Image" backgroundColor="Xionbackground" font="Regular;16" foregroundColor="XionButtonText" halign="center" position="10,450" size="580,30" transparent="1" zPosition="3" />
 		<eLabel text="Press up/down to select Bootoption (Standard/Experimental)" backgroundColor="Xionbackground" font="Regular;16" foregroundColor="XionButtonText" halign="center" position="10,470" size="580,30" transparent="1" zPosition="3" />
 		<panel name="template_colorkey_text_source" />
@@ -4056,9 +4106,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen name="BufferIndicator" title="Indicator" position="center,105" size="400,35" flags="wfNoBorder" zPosition="100">
 		<widget name="status" position="0,0" size="400,35" transparent="1" zPosition="-1" font="Regular;26" valign="center" halign="center"/>
 	</screen>
-		<!-- main-custom-openhdf */ -->
-		<!-- Main */ -->
-		<!-- plugins -->
+	<!-- main-custom-openhdf */ -->
+	<!-- Main */ -->		<!-- plugins -->
 	<screen name="XionHDF" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="#00000000">
 		<eLabel font="Regular;20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="64,662" size="148,48" text="Cancel" transparent="1" />
 		<eLabel font="Regular;20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
@@ -4317,7 +4366,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ********** DreamExplorerII ********** -->
 		<!-- DreamExplorerII -->
 	<screen name="DreamExplorerII" position="0,0" size="1280,720" flags="wfNoBorder" title="Dream-Explorer" backgroundColor="transparent">
-		<widget name="filelist" position="70,80" size="708,540" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
+		<widget name="filelist" position="70,80" size="708,540" itemHeight="30" font="Regular;18" scrollbarMode="showAlways" backgroundColor="XionBackground" transparent="1" />
 		<eLabel text="delete" position="64,662" size="148,48" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
 		<eLabel text="Rename" position="264,662" size="148,48" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
 		<eLabel text="Move/Copy" position="464,662" size="148,48" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
@@ -4517,8 +4566,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- imdbSetup -->
 	<screen name="imdbSetup" position="0,0" size="1280,720" title="EMC imdb Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="70,80" size="708,540" itemHeight="30" font="Regular;24" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
-		<panel name="template_menu_left_button" />
+		<widget name="config" position="70,80" size="1150,540" itemHeight="30" font="Regular;24" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+		<panel name="template_menu_full_button" />
+		<!--panel name="template_menu_left_button" /-->
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- IMDB -->
@@ -4597,8 +4647,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- FilebrowserScreen -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="FilebrowserScreen" position="0,0" size="1280,720" title="">
-		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular;22" name="list_left" position="70,115" size="550,510" transparent="1" />
-		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular;22" name="list_right" position="660,115" size="550,510" transparent="1" />
+		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular;22" name="list_left" scrollbarMode="showAlways" position="70,115" size="550,510" transparent="1" />
+		<widget backgroundColor="XionBackground" itemHeight="30" font="Regular;22" name="list_right" scrollbarMode="showAlways" position="660,115" size="550,510" transparent="1" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
