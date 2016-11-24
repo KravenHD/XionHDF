@@ -457,8 +457,8 @@
 	</screen>
 		<!-- imdbSetup -->
 	<screen name="imdbSetup" position="0,0" size="1280,720" title="EMC imdb Setup" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="70,80" size="708,540" itemHeight="30" font="Regular; 24" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
-		<panel name="template_menu_left_button" />
+		<widget name="config" position="70,80" size="1150,540" itemHeight="30" font="Regular; 24" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- IMDB -->
