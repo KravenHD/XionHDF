@@ -850,8 +850,8 @@
 		</widget>
 		<eLabel text="next" position="80,623" size="60,25" font="Regular2; 18" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1" />
 		<widget name="nextTitle" position="140,620" size="680,26" font="Regular2; 20" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1" />
-		<widget name="shuffle" position="630,120" size="50,25" pixmaps="XionHDF/mmp/placeholder1.png,XionHDF/mmp/shuffle.png" alphatest="blend" />
-		<widget name="repeat" position="700,120" size="50,25" pixmaps="XionHDF/mmp/placeholder1.png,XionHDF/mmp/repeat.png" alphatest="blend" />
+		<widget name="shuffle" position="630,120" size="50,25" pixmaps="XionHDF/ibar.png,XionHDF/mmp/shuffle.png" alphatest="blend" />
+		<widget name="repeat" position="700,120" size="50,25" pixmaps="XionHDF/ibar.png,XionHDF/mmp/repeat.png" alphatest="blend" />
 		<widget name="PositionGauge" position="0,0" size="0,0" />
 		<widget name="coverArt" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MerlinMusicPlayer/images/no_coverArt.png" position="789,140" size="470,470" transparent="1" alphatest="blend" />
 		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
