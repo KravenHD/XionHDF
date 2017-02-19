@@ -11,7 +11,7 @@
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ChoiceBox" position="0,0" size="1280,720">
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" size="848,46" render="Label" source="Title" halign="center" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;26" halign="left" name="text" position="75,71" size="708,45" foregroundColor="XionFont2" transparent="1" />
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="32" name="list" position="70,115" size="708,490" scrollbarMode="showOnDemand" transparent="1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="32" name="list" position="70,115" size="708,450" scrollbarMode="showOnDemand" transparent="1" />
 		<panel name="template_choicebox" />
 	</screen>
 	<screen name="ConsoleBox" position="0,0" size="1280,720" title="Console Box" flags="wfNoBorder" backgroundColor="transparent">
@@ -1375,7 +1375,7 @@
 	</screen>
 		<!-- TimerSanityConflict -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimerSanityConflict" position="0,0" size="1280,720" title="Timer sanity error">
-		<widget itemHeight="30" name="list" position="70,80" size="210,90" backgroundColor="XionBackground" transparent="1" />
+		<widget itemHeight="30" name="list" position="70,80" size="700,90" backgroundColor="XionBackground" transparent="1" />
 		<widget name="timer1" position="45,190" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
 		<widget name="timer2" position="45,380" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
 		<ePixmap pixmap="XionHDF/buttons/key_red.png" position="70,308" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
