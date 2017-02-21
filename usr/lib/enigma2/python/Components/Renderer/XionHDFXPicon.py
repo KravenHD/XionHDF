@@ -49,6 +49,8 @@ class XionHDFXPicon(Renderer):
 							fields[2] = '1'
 						if fields[0] == '4097': #fallback to 1 for IPTV streams
 							fields[0] = '1'
+						if fields[0] == '5002': #fallback to 1 for IPTV streams
+							fields[0] = '1'
 						pngname = self.findPicon('_'.join(fields))
 					if not pngname: # picon by channel name
 						name = ServiceReference(self.source.text).getServiceName()
