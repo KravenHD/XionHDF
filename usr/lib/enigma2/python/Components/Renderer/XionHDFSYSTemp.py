@@ -23,6 +23,10 @@ class XionHDFSYSTemp(Renderer, VariableText):
 				elif path.exists('/proc/stb/fp/temp_sensor_avs'):
 					out_line = popen("cat /proc/stb/fp/temp_sensor_avs").readline()
 					systemp = out_line.replace('\n', '').replace(' ','')
+				elif path.exists('/sys/devices/virtual/thermal/thermal_zone0/temp'):
+					out_line = open('/sys/devices/virtual/thermal/thermal_zone0/temp', 'r')
+					systemp = out_line.read()
+					systemp = systemp[:-4]
 				if not systemp == "-- " and len(systemp) > 2:
 					systemp = systemp[:2]
 			except:
