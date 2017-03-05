@@ -1,0 +1,610 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Kraven <kravenhd@web.de>, 2015.
+# Hasan Kiran <sunder67@hotmail.com>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: XionHDF\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-06 23:16+0200\n"
+"PO-Revision-Date: 2015-10-25 04:11+0300\n"
+"Last-Translator: Hasan Kiran <Sunder67@hotmail.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+"X-Generator: Poedit 1.8.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "N"
+msgstr "K"
+
+msgid "N-NE"
+msgstr ""
+
+msgid "NE"
+msgstr "KD"
+
+msgid "E-NE"
+msgstr ""
+
+msgid "E"
+msgstr "D"
+
+msgid "E-SE"
+msgstr ""
+
+msgid "SE"
+msgstr "GD"
+
+msgid "S-SE"
+msgstr ""
+
+msgid "S"
+msgstr "G"
+
+msgid "S-SW"
+msgstr ""
+
+msgid "SW"
+msgstr "GB"
+
+msgid "W-SW"
+msgstr ""
+
+msgid "W"
+msgstr "B"
+
+msgid "W-NW"
+msgstr ""
+
+msgid "NW"
+msgstr "KB"
+
+msgid "N-NW"
+msgstr ""
+
+msgid ", feels "
+msgstr ""
+
+msgid "N/A"
+msgstr "Mevcut değil"
+
+msgid " from "
+msgstr ""
+
+msgid " km/h"
+msgstr " km/s"
+
+msgid "Mon"
+msgstr "Pts"
+
+msgid "Tue"
+msgstr "Sal"
+
+msgid "Wed"
+msgstr "Çar"
+
+msgid "Thu"
+msgstr "Per"
+
+msgid "Fri"
+msgstr "Cum"
+
+msgid "Sat"
+msgstr "Cts"
+
+msgid "Sun"
+msgstr "Paz"
+
+msgid "Tornado"
+msgstr ""
+
+msgid ""
+"Tropical\n"
+" storm"
+msgstr ""
+
+msgid "Hurricane"
+msgstr "Kasırga"
+
+msgid ""
+"Severe\n"
+" thunderstorms"
+msgstr ""
+
+msgid "Thunderstorms"
+msgstr "Gök gürültülü fırtına"
+
+msgid ""
+"Mixed rain\n"
+" and snow"
+msgstr ""
+
+msgid ""
+"Mixed rain\n"
+" and sleet"
+msgstr ""
+
+msgid ""
+"Mixed snow\n"
+" and sleet"
+msgstr ""
+
+msgid ""
+"Freezing\n"
+" drizzle"
+msgstr ""
+
+msgid "Drizzle"
+msgstr "Çiseleme"
+
+msgid ""
+"Freezing\n"
+" rain"
+msgstr ""
+
+msgid "Showers"
+msgstr "Sağanak"
+
+msgid "Rain"
+msgstr "Yağmur"
+
+msgid ""
+"Snow\n"
+" flurries"
+msgstr ""
+
+msgid ""
+"Light\n"
+" snow showers"
+msgstr ""
+
+msgid ""
+"Blowing\n"
+" snow"
+msgstr ""
+
+msgid "Snow"
+msgstr "Kar"
+
+msgid "Hail"
+msgstr "Dolu"
+
+msgid "Sleet"
+msgstr "Karla Larışık Yağmur"
+
+msgid "Dust"
+msgstr "Toz"
+
+msgid "Foggy"
+msgstr "Sisli"
+
+msgid "Haze"
+msgstr "Puslu"
+
+msgid "Smoky"
+msgstr ""
+
+msgid "Blustery"
+msgstr ""
+
+msgid "Windy"
+msgstr ""
+
+msgid "Cold"
+msgstr "Soğuk"
+
+msgid "Cloudy"
+msgstr "Bulutlu"
+
+msgid ""
+"Mostly\n"
+" cloudy"
+msgstr ""
+
+msgid ""
+"Partly\n"
+" cloudy"
+msgstr ""
+
+msgid "Clear"
+msgstr "Açık"
+
+msgid "Sunny"
+msgstr "Güneşli"
+
+msgid "Fair"
+msgstr "Güzel"
+
+msgid ""
+"Mixed rain\n"
+" and hail"
+msgstr ""
+
+msgid "Hot"
+msgstr ""
+
+msgid ""
+"Isolated\n"
+" thunderstorms"
+msgstr ""
+
+msgid ""
+"Scattered\n"
+" thunderstorms"
+msgstr ""
+
+msgid ""
+"Scattered\n"
+" showers"
+msgstr ""
+
+msgid "Heavy snow"
+msgstr "Şiddetli kar"
+
+msgid ""
+"Scattered\n"
+" snow showers"
+msgstr ""
+
+msgid "Thundershowers"
+msgstr ""
+
+msgid "Snow showers"
+msgstr ""
+
+msgid ""
+"Isolated\n"
+" thundershowers"
+msgstr ""
+
+msgid "% humidity"
+msgstr ""
+
+msgid ""
+"Not\n"
+" available"
+msgstr ""
+
+msgid "openHDF"
+msgstr "openHDF"
+
+msgid "Zero"
+msgstr "Sıfır"
+
+msgid "with Border"
+msgstr ""
+
+msgid "left"
+msgstr ""
+
+msgid "right"
+msgstr ""
+
+msgid "top"
+msgstr ""
+
+msgid "center"
+msgstr ""
+
+msgid "lower"
+msgstr ""
+
+msgid "low"
+msgstr "düşük"
+
+msgid "middle"
+msgstr ""
+
+msgid "medium"
+msgstr ""
+
+msgid "high"
+msgstr ""
+
+msgid "amber"
+msgstr ""
+
+msgid "amber dark"
+msgstr ""
+
+msgid "black"
+msgstr "siyah"
+
+msgid "blue"
+msgstr "mavi"
+
+msgid "blue dark"
+msgstr ""
+
+msgid "brown"
+msgstr "kahverengi"
+
+msgid "brown dark"
+msgstr ""
+
+msgid "cobalt"
+msgstr "kobalt"
+
+msgid "cobalt dark"
+msgstr ""
+
+msgid "cyan"
+msgstr "camgöbeği"
+
+msgid "cyan dark"
+msgstr ""
+
+msgid "grey"
+msgstr "gri"
+
+msgid "grey dark"
+msgstr ""
+
+msgid "green"
+msgstr "yeşil"
+
+msgid "green dark"
+msgstr ""
+
+msgid "olive"
+msgstr ""
+
+msgid "olive dark"
+msgstr ""
+
+msgid "orange"
+msgstr "turuncu"
+
+msgid "orange dark"
+msgstr ""
+
+msgid "pink"
+msgstr "pembe"
+
+msgid "pink dark"
+msgstr ""
+
+msgid "red"
+msgstr "kırmızı"
+
+msgid "red dark"
+msgstr ""
+
+msgid "steel"
+msgstr ""
+
+msgid "steel dark"
+msgstr ""
+
+msgid "violet"
+msgstr ""
+
+msgid "violet dark"
+msgstr ""
+
+msgid "white"
+msgstr "beyaz"
+
+msgid "off"
+msgstr ""
+
+msgid "ZPicon"
+msgstr ""
+
+msgid "XPicon"
+msgstr ""
+
+msgid "two Columns"
+msgstr "iki Sütun"
+
+msgid "three Columns"
+msgstr "üç Sütun"
+
+msgid "MiniTV"
+msgstr ""
+
+msgid "ZPicons"
+msgstr ""
+
+msgid "XPicons"
+msgstr ""
+
+msgid "Picon"
+msgstr ""
+
+msgid "no Cover"
+msgstr ""
+
+msgid "small Cover"
+msgstr ""
+
+msgid "big Cover"
+msgstr ""
+
+msgid "very big Cover"
+msgstr ""
+
+msgid "on"
+msgstr ""
+
+msgid "Weather"
+msgstr "Hava Durumu"
+
+msgid "______________________ Weather __________________________________"
+msgstr ""
+
+msgid "big"
+msgstr "büyük"
+
+msgid "slim"
+msgstr ""
+
+msgid "small"
+msgstr "küçük"
+
+msgid "______________________ System __________________________________"
+msgstr ""
+
+msgid "Image"
+msgstr ""
+
+msgid "Style"
+msgstr ""
+
+msgid "Font Style"
+msgstr ""
+
+msgid "Button Style"
+msgstr ""
+
+msgid "Running Text"
+msgstr ""
+
+msgid "Background Transparency"
+msgstr "Arkaplan Şeffaflığı"
+
+msgid "Weather ID"
+msgstr ""
+
+msgid "______________________ Colors __________________________________"
+msgstr ""
+
+msgid "Line"
+msgstr ""
+
+msgid "Infobar"
+msgstr "Bilgi Çubuğu"
+
+msgid "Background"
+msgstr "Arkaplan"
+
+msgid "Border"
+msgstr "Kenarlık"
+
+msgid "Listselection"
+msgstr ""
+
+msgid "Listselection Border"
+msgstr ""
+
+msgid "Progress-/Volumebar"
+msgstr ""
+
+msgid "primary Font"
+msgstr ""
+
+msgid "secondary Font"
+msgstr ""
+
+msgid "Listselection Font"
+msgstr ""
+
+msgid "Button Text"
+msgstr ""
+
+msgid "______________________ Infobar __________________________________"
+msgstr ""
+
+msgid "Clock"
+msgstr "Saat"
+
+msgid "Clock Analog Color"
+msgstr ""
+
+msgid "______________________ General __________________________________"
+msgstr ""
+
+msgid "ChannelSelection"
+msgstr ""
+
+msgid "EMC"
+msgstr ""
+
+msgid "ExtNumberZap"
+msgstr ""
+
+msgid "Volume Style"
+msgstr ""
+
+msgid "CoolTVGuide"
+msgstr ""
+
+msgid "Do you really want to reboot now?"
+msgstr ""
+
+msgid "Restart GUI"
+msgstr ""
+
+msgid "Information"
+msgstr "Bilgiler"
+
+msgid "Error creating Skin!"
+msgstr ""
+
+msgid ""
+"GUI needs a restart to apply a new skin.\n"
+"Do you want to Restart the GUI now?"
+msgstr ""
+
+msgid "Configuration tool for XionHDF"
+msgstr ""
+
+msgid "clock with weekday"
+msgstr ""
+
+msgid "Refresh interval (in minutes)"
+msgstr ""
+
+msgid "This option activates the running text for some parts of skin."
+msgstr ""
+
+msgid ""
+"This option activate/deactive/change the background transparency of skin."
+msgstr ""
+
+msgid ""
+"This option activate/deactive/change the weather on top inside the infobar."
+msgstr ""
+
+msgid ""
+"Here you can insert your personal WeatherID. Please visit the website "
+"metrixweather.open-store.net to find your location."
+msgstr ""
+
+msgid ""
+"Here you can change how often the weather is refreshed in the background."
+msgstr ""
+
+msgid "Please select the color of lines inside the skin."
+msgstr ""
+
+msgid "Please select the color of listselection inside the skin."
+msgstr ""
+
+msgid "Please select the color of progress- and volumebar inside the skin."
+msgstr ""
+
+msgid "Please select the color of primary font inside the skin."
+msgstr ""
+
+msgid "Please select the color of secundary font inside the skin."
+msgstr ""
+
+msgid "Please select the color of listselection font inside the skin."
+msgstr ""
+
+msgid "Please select the color of button text inside the skin."
+msgstr ""
+
+msgid "This option changes the size of picons within the infobar."
+msgstr ""
+
+msgid "This option changes the view of channellist."
+msgstr ""
+
+msgid "This option changes the view of cover inside from EnhancedMovieCenter."
+msgstr ""
