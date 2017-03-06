@@ -1361,7 +1361,7 @@
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" title="Timer entry">
 		<widget itemHeight="30" font="Regular;20" name="config" position="70,80" size="708,390" backgroundColor="XionBackground" transparent="1" />
 		<widget name="HelpWindow" position="156,479" size="532,170" flags="wfNoBorder" />
-		<eLabel font="Regular;20" halign="left" valign="center" text="Abbrechen" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<eLabel font="Regular;20" halign="left" valign="center" text="Abort" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<eLabel font="Regular;20" halign="left" valign="center" text="OK" position="264,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_colorkey_text" />
 		<panel name="template_menu_left_button" />
@@ -1382,7 +1382,7 @@
 		<ePixmap pixmap="XionHDF/buttons/key_green.png" position="370,308" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_yellow.png" position="70,498" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_blue.png" position="370,498" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
-		<eLabel font="Regular;20" halign="left" valign="center" text="Bearbeiten" position="112,300" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<eLabel font="Regular;20" halign="left" valign="center" text="Edit" position="112,300" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular;20" halign="left" valign="center" name="key_green" position="412,300" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="112,490" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="412,490" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
@@ -1680,9 +1680,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- PluginBrowser -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PluginBrowser" position="0,0" size="1280,720" title="Plugin browser">
 		<widget backgroundColor="XionBackground" scrollbarMode="showOnDemand" enableWrapAround="1" name="list" position="70,80" size="708,555" transparent="1" />
-		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Plugins entfernen" position="64,662" size="148,48" transparent="1" zPosition="1" />
+		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Remove Plugins" position="64,662" size="148,48" transparent="1" zPosition="1" />
 		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Download Plugins" position="264,662" size="148,48" transparent="1" zPosition="1" />
-		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Plugins sperren" position="664,662" size="148,48" transparent="1" zPosition="1" />
+		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Lock Plugins" position="664,662" size="148,48" transparent="1" zPosition="1" />
 		<panel name="template_menu_left_button" />
 	</screen>
 		<!-- PluginDownloadBrowser -->
@@ -1900,7 +1900,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<eLabel backgroundColor="red" position="1260,0" size="20,20" />
 		<eLabel backgroundColor="red" position="1260,700" size="20,20" />
 		<eLabel backgroundColor="red" position="0,700" size="20,20" />
-		<eLabel backgroundColor="XionBackground" font="Arial; 22" halign="center" position="307,233" size="664,36" text="Die roten Quadrate genau in den Ecken positionieren" foregroundColor="XionFont1" valign="top" />
+		<eLabel backgroundColor="XionBackground" font="Arial; 22" halign="center" position="307,233" size="664,36" text="Position the red squares exactly in the corners" foregroundColor="XionFont1" valign="top" />
 	</screen>
 		<!-- Volume_adjust -->
 	<screen name="Volume_adjust" position="0,0" size="1280,720" title="Volume Adjust" flags="wfNoBorder" backgroundColor="transparent">
@@ -1957,7 +1957,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="339,387" size="32,32" zPosition="3" alphatest="blend" />
 		<eLabel text="Cancel" backgroundColor="Xionbackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" position="378,393" size="220,30" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_ok.png" alphatest="blend" position="35,387" size="32,32" zPosition="3" />
-		<eLabel text="Auswahl" backgroundColor="Xionbackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" position="75,393" size="220,30" transparent="1" zPosition="3" />
+		<eLabel text="Selection" backgroundColor="Xionbackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" position="75,393" size="220,30" transparent="1" zPosition="3" />
 	</screen>
 		<!-- Change_volume -->
 	<screen name="Change_volume" position="0,0" size="1280,720" title="Change Volume offset" flags="wfNoBorder" backgroundColor="transparent">
@@ -2011,7 +2011,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 		<eLabel text="min" position="220,0" size="60,30" font="Regular;24" halign="left" backgroundColor="XionBackground" transparent="1" zPosition="15" valign="top" foregroundColor="XionFont1" />
-		<eLabel position="283,0" size="230,32" text="timeshift aktiv" font="Regular;28" backgroundColor="XionBackground" transparent="1" zPosition="10" valign="center" foregroundColor="red" halign="center" />
+		<eLabel position="283,0" size="230,32" text="timeshift active" font="Regular;28" backgroundColor="XionBackground" transparent="1" zPosition="10" valign="center" foregroundColor="red" halign="center" />
 		<widget foregroundColor="XionFont2" position="13,33" render="Progress" size="730,5" source="session.CurrentService" transparent="1" zPosition="20">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
@@ -2725,10 +2725,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 		<eLabel text="Feed-Status" position="43,451" size="191,29" zPosition="1" font="Regular; 22" foregroundColor="XionFont1" halign="center" backgroundColor="XionBackground" transparent="1" />
 		<eLabel text="Its recommend to create a Fullbackup before update!" position="239,452" size="446,20" zPosition="1" font="Regular; 16" foregroundColor="XionFont1" halign="left" backgroundColor="XionBackground" transparent="1" />
-		<eLabel text="Empfohlen wird ein Fullbackup vor dem Update!" position="239,476" size="446,20" zPosition="1" font="Regular; 16" foregroundColor="XionFont1" halign="left" backgroundColor="XionBackground" transparent="1" />
-		<eLabel text="update recommend / Alles OK!" position="202,585" size="396,25" zPosition="1" font="Regular; 20" halign="left" foregroundColor="black" backgroundColor="green" transparent="0" />
-		<eLabel text="No Update! / nicht updaten!" position="202,509" size="396,25" zPosition="1" font="Regular; 20" foregroundColor="white" halign="left" backgroundColor="red" transparent="0" />
-		<eLabel text="update at your own risk / auf eigene Gefahr!" position="202,546" size="396,25" zPosition="1" font="Regular; 18" halign="left" foregroundColor="black" backgroundColor="yellow" transparent="0" />
+		<eLabel text="A full backup is recommended before the update!" position="239,476" size="446,20" zPosition="1" font="Regular; 16" foregroundColor="XionFont1" halign="left" backgroundColor="XionBackground" transparent="1" />
+		<eLabel text="Update recommend" position="202,585" size="396,25" zPosition="1" font="Regular; 20" halign="left" foregroundColor="black" backgroundColor="green" transparent="0" />
+		<eLabel text="No Update!" position="202,509" size="396,25" zPosition="1" font="Regular; 20" foregroundColor="white" halign="left" backgroundColor="red" transparent="0" />
+		<eLabel text="update at your own risk!" position="202,546" size="396,25" zPosition="1" font="Regular; 18" halign="left" foregroundColor="black" backgroundColor="yellow" transparent="0" />
 		<panel name="template_colorkey_text" />
 		<panel name="template_menu_left_button" />
 	</screen>

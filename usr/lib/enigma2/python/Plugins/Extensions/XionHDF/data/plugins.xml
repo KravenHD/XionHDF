@@ -4,7 +4,7 @@
 		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
 		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
 		<widget name="config" position="70,75" size="708,580" itemHeight="27" font="Regular;22" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00000000" />
-		<eLabel position="70,12" size="708,46" text="XionHDF - Konfigurationstool" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+		<eLabel position="70,12" size="708,46" text="XionHDF - Configuration tool" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
 		<eLabel position="847,200" size="368,2" backgroundColor="#00ffffff" />
 		<eLabel position="847,409" size="368,2" backgroundColor="#00ffffff" />
 		<eLabel position="845,200" size="2,211" backgroundColor="#00ffffff" />
@@ -447,12 +447,12 @@
 		<widget name="no_poster" position="69,470" size="200,24" font="Regular; 20" halign="left" backgroundColor="XionBackground" transparent="1" />
 		<widget name="download" position="69,408" size="200,24" font="Regular; 20" halign="left" backgroundColor="XionBackground" transparent="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_menu.png" position="67,538" size="32,32" alphatest="blend" />
-		<eLabel text="Einfache Suche" position="121,507" size="240,24" zPosition="1" font="Regular; 20" halign="left" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
+		<eLabel text="Simple Search" position="121,507" size="240,24" zPosition="1" font="Regular; 20" halign="left" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_ok.png" position="67,502" size="32,32" alphatest="blend" />
-		<eLabel text="Einstellungen" position="121,542" size="240,24" zPosition="1" font="Regular; 20" halign="left" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
-		<eLabel text="Löschen" position="64,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
-		<eLabel text="Suchen" position="264,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
-		<eLabel text="Verwalte Cover" position="464,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
+		<eLabel text="Settings" position="121,542" size="240,24" zPosition="1" font="Regular; 20" halign="left" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
+		<eLabel text="Erase" position="64,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
+		<eLabel text="Search" position="264,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
+		<eLabel text="Manage Cover" position="464,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
 		<panel name="template_menu_full_button" />
 	</screen>
 		<!-- imdbSetup -->
@@ -970,7 +970,7 @@
 		<eLabel font="Regular; 20" halign="left" position="155,134" size="600,30" text="Today" backgroundColor="XionBackground" foregroundColor="XionFont1" render="Label" transparent="1" />
 		<widget name="currenticon" position="966,206" zPosition="1" size="220,220" alphatest="blend" />
 		<widget render="Label" source="condition" position="981,429" size="195,55" font="Regular;16" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" zPosition="2" halign="center" />
-		<eLabel render="Label" text="Aktuell:" position="155,190" size="100,30" font="Regular; 22" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<eLabel render="Label" text="Current:" position="155,190" size="100,30" font="Regular; 22" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget render="Label" source="currentTemp" position="300,190" size="100,30" font="Regular;22" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget render="Label" source="feelsliketemp" position="368,190" size="200,30" font="Regular;22" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<eLabel render="Label" text="Max./Min.:" position="155,230" size="100,30" font="Regular; 22" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
