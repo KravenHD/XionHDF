@@ -2,69 +2,69 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Kraven <kravenhd@web.de>, 2015.
-# Hasan Kiran <sunder67@hotmail.com>, 2015.
+# Hasan Kiran <sunder67@hotmail.com>, 2015, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: XionHDF\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-06 23:16+0200\n"
-"PO-Revision-Date: 2015-10-25 04:11+0300\n"
-"Last-Translator: Hasan Kiran <Sunder67@hotmail.com>\n"
+"PO-Revision-Date: 2017-03-10 11:58+0200\n"
+"Last-Translator: Hasan Kiran <sunder67@hotmail.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: tr\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Lokalize 2.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "N"
 msgstr "K"
 
 msgid "N-NE"
-msgstr ""
+msgstr "K-KD"
 
 msgid "NE"
 msgstr "KD"
 
 msgid "E-NE"
-msgstr ""
+msgstr "D-KD"
 
 msgid "E"
 msgstr "D"
 
 msgid "E-SE"
-msgstr ""
+msgstr "D-GD"
 
 msgid "SE"
 msgstr "GD"
 
 msgid "S-SE"
-msgstr ""
+msgstr "G-GD"
 
 msgid "S"
 msgstr "G"
 
 msgid "S-SW"
-msgstr ""
+msgstr "G-GB"
 
 msgid "SW"
 msgstr "GB"
 
 msgid "W-SW"
-msgstr ""
+msgstr "B-GB"
 
 msgid "W"
 msgstr "B"
 
 msgid "W-NW"
-msgstr ""
+msgstr "B-KB"
 
 msgid "NW"
 msgstr "KB"
 
 msgid "N-NW"
-msgstr ""
+msgstr "K-KB"
 
 msgid ", feels "
 msgstr ""
@@ -100,7 +100,7 @@ msgid "Sun"
 msgstr "Paz"
 
 msgid "Tornado"
-msgstr ""
+msgstr "Kasırga"
 
 msgid ""
 "Tropical\n"
@@ -186,13 +186,13 @@ msgid "Haze"
 msgstr "Puslu"
 
 msgid "Smoky"
-msgstr ""
+msgstr "Dumanlı"
 
 msgid "Blustery"
-msgstr ""
+msgstr "Fırtınalı"
 
 msgid "Windy"
-msgstr ""
+msgstr "Rüzgârlı"
 
 msgid "Cold"
 msgstr "Soğuk"
@@ -225,7 +225,7 @@ msgid ""
 msgstr ""
 
 msgid "Hot"
-msgstr ""
+msgstr "Sıcak"
 
 msgid ""
 "Isolated\n"
@@ -251,10 +251,10 @@ msgid ""
 msgstr ""
 
 msgid "Thundershowers"
-msgstr ""
+msgstr "Gök gürültülü yağmur"
 
 msgid "Snow showers"
-msgstr ""
+msgstr "Sağanak kar yağışı"
 
 msgid ""
 "Isolated\n"
@@ -262,7 +262,7 @@ msgid ""
 msgstr ""
 
 msgid "% humidity"
-msgstr ""
+msgstr "% nem"
 
 msgid ""
 "Not\n"
@@ -276,34 +276,34 @@ msgid "Zero"
 msgstr "Sıfır"
 
 msgid "with Border"
-msgstr ""
+msgstr "kenarlık ile"
 
 msgid "left"
-msgstr ""
+msgstr "sol"
 
 msgid "right"
-msgstr ""
+msgstr "sağ"
 
 msgid "top"
-msgstr ""
+msgstr "üst"
 
 msgid "center"
-msgstr ""
+msgstr "merkez"
 
 msgid "lower"
-msgstr ""
+msgstr "Alt"
 
 msgid "low"
 msgstr "düşük"
 
 msgid "middle"
-msgstr ""
+msgstr "orta"
 
 msgid "medium"
-msgstr ""
+msgstr "orta"
 
 msgid "high"
-msgstr ""
+msgstr "yüksek"
 
 msgid "amber"
 msgstr ""
@@ -318,85 +318,85 @@ msgid "blue"
 msgstr "mavi"
 
 msgid "blue dark"
-msgstr ""
+msgstr "koyu mavi"
 
 msgid "brown"
 msgstr "kahverengi"
 
 msgid "brown dark"
-msgstr ""
+msgstr "koyu kahverengi"
 
 msgid "cobalt"
 msgstr "kobalt"
 
 msgid "cobalt dark"
-msgstr ""
+msgstr "koyu kobalt"
 
 msgid "cyan"
 msgstr "camgöbeği"
 
 msgid "cyan dark"
-msgstr ""
+msgstr "koyu camgöbeği"
 
 msgid "grey"
 msgstr "gri"
 
 msgid "grey dark"
-msgstr ""
+msgstr "koyu gri"
 
 msgid "green"
 msgstr "yeşil"
 
 msgid "green dark"
-msgstr ""
+msgstr "koyu yeşil"
 
 msgid "olive"
-msgstr ""
+msgstr "zeytin"
 
 msgid "olive dark"
-msgstr ""
+msgstr "koyu zeytin"
 
 msgid "orange"
 msgstr "turuncu"
 
 msgid "orange dark"
-msgstr ""
+msgstr "koyu turuncu"
 
 msgid "pink"
 msgstr "pembe"
 
 msgid "pink dark"
-msgstr ""
+msgstr "koyu pembe"
 
 msgid "red"
 msgstr "kırmızı"
 
 msgid "red dark"
-msgstr ""
+msgstr "koyu kırmızı"
 
 msgid "steel"
-msgstr ""
+msgstr "çelik"
 
 msgid "steel dark"
-msgstr ""
+msgstr "koyu çelik"
 
 msgid "violet"
-msgstr ""
+msgstr "menekşe"
 
 msgid "violet dark"
-msgstr ""
+msgstr "koyu menekşe"
 
 msgid "white"
 msgstr "beyaz"
 
 msgid "off"
-msgstr ""
+msgstr "kapalı"
 
 msgid "ZPicon"
-msgstr ""
+msgstr "ZPicon"
 
 msgid "XPicon"
-msgstr ""
+msgstr "XPicon"
 
 msgid "two Columns"
 msgstr "iki Sütun"
@@ -405,76 +405,76 @@ msgid "three Columns"
 msgstr "üç Sütun"
 
 msgid "MiniTV"
-msgstr ""
+msgstr "MiniTV"
 
 msgid "ZPicons"
-msgstr ""
+msgstr "ZPicons"
 
 msgid "XPicons"
-msgstr ""
+msgstr "XPicons"
 
 msgid "Picon"
-msgstr ""
+msgstr "Simge"
 
 msgid "no Cover"
-msgstr ""
+msgstr "kapak yok"
 
 msgid "small Cover"
-msgstr ""
+msgstr "küçük kapak"
 
 msgid "big Cover"
-msgstr ""
+msgstr "büyük kapak"
 
 msgid "very big Cover"
-msgstr ""
+msgstr "çok büyük kapak"
 
 msgid "on"
-msgstr ""
+msgstr "açık"
 
 msgid "Weather"
 msgstr "Hava Durumu"
 
 msgid "______________________ Weather __________________________________"
-msgstr ""
+msgstr "______________________Hava Durumu __________________________________"
 
 msgid "big"
 msgstr "büyük"
 
 msgid "slim"
-msgstr ""
+msgstr "ince"
 
 msgid "small"
 msgstr "küçük"
 
 msgid "______________________ System __________________________________"
-msgstr ""
+msgstr "______________________ Sistem __________________________________"
 
 msgid "Image"
-msgstr ""
+msgstr "İmaj"
 
 msgid "Style"
-msgstr ""
+msgstr "Biçim"
 
 msgid "Font Style"
-msgstr ""
+msgstr "Yazı Tipi Biçimi"
 
 msgid "Button Style"
-msgstr ""
+msgstr "Tuş Stili"
 
 msgid "Running Text"
-msgstr ""
+msgstr "Kayan Yazı"
 
 msgid "Background Transparency"
 msgstr "Arkaplan Şeffaflığı"
 
 msgid "Weather ID"
-msgstr ""
+msgstr "Hava Durumu Kimliği"
 
 msgid "______________________ Colors __________________________________"
-msgstr ""
+msgstr "______________________ Renkler __________________________________"
 
 msgid "Line"
-msgstr ""
+msgstr "Satır"
 
 msgid "Infobar"
 msgstr "Bilgi Çubuğu"
@@ -486,28 +486,28 @@ msgid "Border"
 msgstr "Kenarlık"
 
 msgid "Listselection"
-msgstr ""
+msgstr "Liste seçimi"
 
 msgid "Listselection Border"
-msgstr ""
+msgstr "Liste seçimi Kenarlığı"
 
 msgid "Progress-/Volumebar"
 msgstr ""
 
 msgid "primary Font"
-msgstr ""
+msgstr "birincil yazı tipi"
 
 msgid "secondary Font"
-msgstr ""
+msgstr "ikincil yazı tipi"
 
 msgid "Listselection Font"
-msgstr ""
+msgstr "Liste Seçimi Yazı Tipi"
 
 msgid "Button Text"
-msgstr ""
+msgstr "Tuş Metni"
 
 msgid "______________________ Infobar __________________________________"
-msgstr ""
+msgstr "______________________ Bilgi Çubuğu __________________________________"
 
 msgid "Clock"
 msgstr "Saat"
@@ -516,10 +516,10 @@ msgid "Clock Analog Color"
 msgstr ""
 
 msgid "______________________ General __________________________________"
-msgstr ""
+msgstr "______________________ Genel __________________________________"
 
 msgid "ChannelSelection"
-msgstr ""
+msgstr "Kanal Seçimi"
 
 msgid "EMC"
 msgstr ""
@@ -528,7 +528,7 @@ msgid "ExtNumberZap"
 msgstr ""
 
 msgid "Volume Style"
-msgstr ""
+msgstr "Ses Sitili"
 
 msgid "CoolTVGuide"
 msgstr ""
@@ -537,7 +537,7 @@ msgid "Do you really want to reboot now?"
 msgstr ""
 
 msgid "Restart GUI"
-msgstr ""
+msgstr "Grafiksel arayüzü yeniden başlat"
 
 msgid "Information"
 msgstr "Bilgiler"
@@ -551,7 +551,7 @@ msgid ""
 msgstr ""
 
 msgid "Configuration tool for XionHDF"
-msgstr ""
+msgstr "XionHDF için yapılandırma aracı"
 
 msgid "clock with weekday"
 msgstr ""
@@ -578,33 +578,131 @@ msgstr ""
 msgid ""
 "Here you can change how often the weather is refreshed in the background."
 msgstr ""
+"Burada, arka planda hava durumunun ne sıklıkla yenilenileceğini"
+" değiştirebilirsiniz."
 
 msgid "Please select the color of lines inside the skin."
-msgstr ""
+msgstr "Lütfen arayüzdeki satırların rengini seçin."
 
 msgid "Please select the color of listselection inside the skin."
-msgstr ""
+msgstr "Lütfen arayüz içindeki liste seçimi rengini seçin."
 
 msgid "Please select the color of progress- and volumebar inside the skin."
-msgstr ""
+msgstr "Lütfen arayüzdeki ilerleme ve ses çubuğunun rengini seçin."
 
 msgid "Please select the color of primary font inside the skin."
-msgstr ""
+msgstr "Lütfen arayüz içindeki birincil yazı tipinin rengini seçin."
 
 msgid "Please select the color of secundary font inside the skin."
-msgstr ""
+msgstr "Lütfen arayüz içindeki ikincil yazı tipinin rengini seçin."
 
 msgid "Please select the color of listselection font inside the skin."
-msgstr ""
+msgstr "Lütfen arayüz içindeki liste seçimi yazı tipinin rengini seçin."
 
 msgid "Please select the color of button text inside the skin."
-msgstr ""
+msgstr "Lütfen arayüzdeki tuş metninin rengini seçin."
 
 msgid "This option changes the size of picons within the infobar."
-msgstr ""
+msgstr "Bu seçenek, bilgi çubuğu içindeki simgelerin boyutunu değiştirir."
 
 msgid "This option changes the view of channellist."
-msgstr ""
+msgstr "Bu seçenek, kanal listesinin görünümünü değiştirir."
 
 msgid "This option changes the view of cover inside from EnhancedMovieCenter."
 msgstr ""
+
+msgid "Abort"
+msgstr "Vazgeç"
+
+msgid "Edit"
+msgstr "Düzenle"
+
+msgid "Remove Plugins"
+msgstr "Eklentileri kaldır"
+
+msgid "Lock Plugins"
+msgstr "Eklentileri kilitle"
+
+msgid "Download Plugins"
+msgstr "Eklentileri indir"
+
+msgid "Position the red squares exactly in the corners"
+msgstr "Kırmızı kareleri tam köşelere yerleştirin"
+
+msgid "Selection"
+msgstr "Seçim"
+
+msgid "timeshift active"
+msgstr "zaman kaydırma etkin"
+
+msgid "A full backup is recommended before the update!"
+msgstr "Güncellemeden önce tam bir yedekleme önerilir!"
+
+msgid "Update recommend"
+msgstr "Güncelleme önerisi"
+
+msgid "No Update!"
+msgstr "Güncelleme yok!"
+
+msgid "update at your own risk!"
+msgstr "Güncelleme kendi sorumluluğunuzdadır!"
+
+msgid "Its recommend to create a Fullbackup before update!"
+msgstr "Güncellemeden önce bir tam yedek yapılması önerilir!"
+
+msgid "XionHDF - Configuration tool"
+msgstr "XionHDF - Yapılandırma aracı"
+
+msgid "Simple Search"
+msgstr "Basit Arama"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Erase"
+msgstr "Sil"
+
+msgid "Search"
+msgstr "Ara"
+
+msgid "Manage Cover"
+msgstr "Kapağı Yönet"
+
+msgid "Current:"
+msgstr "Geçerli:"
+
+msgid "Radio Channel Selection"
+msgstr "Radyo Kanal Seçimi"
+
+msgid "bis live:"
+msgstr ""
+
+msgid "Continue in background"
+msgstr "Arkaplanda devam et"
+
+msgid "Support for Image: "
+msgstr "İmaj Desteği:"
+
+msgid "OPEN SOURCE"
+msgstr "AÇIK KAYNAK"
+
+msgid "Designed by"
+msgstr "Tarafından tasarlanmıştır"
+
+msgid "Team Kraven"
+msgstr "Kraven Ekibi"
+
+msgid "HDF Update Info"
+msgstr "HDF Güncelleme Bilgileri"
+
+msgid "Feed-Status"
+msgstr "Besleme Durumu"
+
+msgid "Press left/right to select Image"
+msgstr "İmaj seçmek için sola/sağa basın"
+
+msgid "Press up/down to select Bootoption (Standard/Experimental)"
+msgstr ""
+"Önyükleme Seçeneğini (Standart/Deneysel) seçmek için yukarı/aşağı tuşlarına"
+" basın"
+
