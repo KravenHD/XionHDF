@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: XionHDF\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-06 23:16+0200\n"
-"PO-Revision-Date: 2017-03-10 11:58+0200\n"
+"PO-Revision-Date: 2017-03-14 21:19+0200\n"
 "Last-Translator: Hasan Kiran <sunder67@hotmail.com>\n"
-"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language-Team: Turkish <sunder67@hotmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -268,6 +268,8 @@ msgid ""
 "Not\n"
 " available"
 msgstr ""
+"Mevcut\n"
+" değil "
 
 msgid "openHDF"
 msgstr "openHDF"
@@ -621,7 +623,7 @@ msgid "Remove Plugins"
 msgstr "Eklentileri kaldır"
 
 msgid "Lock Plugins"
-msgstr "Eklentileri kilitle"
+msgstr "Yüklü eklentiler"
 
 msgid "Download Plugins"
 msgstr "Eklentileri indir"
@@ -706,3 +708,92 @@ msgstr ""
 "Önyükleme Seçeneğini (Standart/Deneysel) seçmek için yukarı/aşağı tuşlarına"
 " basın"
 
+msgid "Console Box"
+msgstr "Konsol kutusu"
+
+msgid "Command execution..."
+msgstr "Komut çalıştırılıyor..."
+
+msgid "HDMI CEC setup"
+msgstr "HDMI CEC ayarı"
+
+msgid "History Zap"
+msgstr ""
+
+msgid "ZapHistoryBrowser"
+msgstr ""
+
+msgid "Language selection"
+msgstr ""
+
+msgid "LED Brightness Setup"
+msgstr ""
+
+msgid "Fancontrol Settings in Standby mode"
+msgstr "Bekleme modunda fan kontrol ayarları"
+
+msgid "Mute"
+msgstr "Sessiz"
+
+msgid "Recording paths..."
+msgstr "Kayıt yeri..."
+
+msgid "Position Setup"
+msgstr "Konum Ayarları"
+
+msgid "Script Runner"
+msgstr ""
+
+msgid "Skin Selector"
+msgstr ""
+
+msgid "Swap"
+msgstr ""
+
+msgid "SystemInfo"
+msgstr "Sistem Bilgisi"
+
+msgid "UnhandledKey"
+msgstr ""
+
+msgid "EPG Selection"
+msgstr "EPG Seçimi"
+
+msgid "Electronic Program Guide"
+msgstr "Elektronik Televizyon Rehberi"
+
+msgid "Main menu"
+msgstr "Ana menü"
+
+msgid "Channellist menu"
+msgstr "Kanal listesi menüsü"
+
+msgid "QuickZap"
+msgstr "Hızlı Kanal Değiştir"
+
+msgid "Welcome..."
+msgstr "Hoşgeldiniz..."
+
+msgid "CleanupWizard settings"
+msgstr ""
+
+msgid "Help"
+msgstr "Yardım"
+
+msgid "VideoEnhancementPreview"
+msgstr ""
+
+msgid "VideoEnhancementSetup"
+msgstr ""
+
+msgid "Network Configuration..."
+msgstr "Ağ Yapılandırması ..."
+
+msgid "Network Setup"
+msgstr "Ağ Kurulumu"
+
+msgid "Select Network Adapter"
+msgstr ""
+
+msgid "Network test..."
+msgstr "Ağ testi..."
