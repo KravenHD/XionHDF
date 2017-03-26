@@ -66,7 +66,7 @@ config.plugins.XionHDF = ConfigSubsection()
 				
 config.plugins.XionHDF.weather_city = ConfigText(default = "")
 
-config.plugins.XionHDF.refreshInterval = ConfigNumber(default="60")
+config.plugins.XionHDF.refreshInterval = ConfigNumber(default="30")
 config.plugins.XionHDF.weather_realtek_latlon = ConfigText(default = "")
 config.plugins.XionHDF.weather_foundcity = ConfigText(default = "")
 
