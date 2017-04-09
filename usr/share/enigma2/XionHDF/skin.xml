@@ -306,7 +306,7 @@
 			<convert type="XionHDFEventTime">EndTime</convert>
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget font="Regular2;30" halign="left" valign="center" noWrap="1" position="426,601" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Now" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1">
+		<widget font="Regular2;30" halign="left" valign="center" noWrap="1" position="426,601" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Now" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" foregroundColor="XionFont2" font="Regular;22" halign="right" noWrap="1" position="260,660" render="Label" size="72,36" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
@@ -318,7 +318,7 @@
 			<convert type="XionHDFEventTime">EndTime</convert>
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget font="Regular;30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
+		<widget font="Regular;30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
 		<widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
@@ -369,7 +369,7 @@
 			<convert type="XionHDFEventTime">EndTime</convert>
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget font="Regular2;30" halign="left" valign="center" noWrap="1" position="426,601" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Now" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1">
+		<widget font="Regular2;30" halign="left" valign="center" noWrap="1" position="426,601" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Now" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" foregroundColor="XionFont2" font="Regular;22" halign="right" noWrap="1" position="260,660" render="Label" size="72,36" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
@@ -381,7 +381,7 @@
 			<convert type="XionHDFEventTime">EndTime</convert>
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget font="Regular;30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
+		<widget font="Regular;30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
 		<widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
@@ -495,7 +495,7 @@
 		<widget backgroundColor="XionBackground" font="Regular2;38" halign="center" noWrap="1" position="39,88" foregroundColor="XionFont1" render="Label" size="1203,42" source="session.Event_Now" transparent="1" zPosition="1" valign="bottom">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;28" foregroundColor="XionFont1" halign="center" position="39,136" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1200,322" source="session.Event_Now" zPosition="1" transparent="1">
+		<widget backgroundColor="XionBackground" font="Regular;28" foregroundColor="XionFont1" halign="center" position="39,136" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1200,322" source="session.Event_Now" zPosition="1" transparent="1">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" halign="center" position="39,470" render="Label" size="1200,42" source="session.Event_Now" zPosition="1" transparent="1">
@@ -531,7 +531,7 @@
 			<convert type="XionHDFEventTime">EndTime</convert>
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget font="Regular2;30" halign="left" valign="center" noWrap="1" position="426,601" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Now" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1">
+		<widget font="Regular2;30" halign="left" valign="center" noWrap="1" position="426,601" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Now" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" foregroundColor="XionFont2" font="Regular;22" halign="right" noWrap="1" position="260,660" render="Label" size="72,36" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
@@ -543,7 +543,7 @@
 			<convert type="XionHDFEventTime">EndTime</convert>
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget font="Regular;30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
+		<widget font="Regular;30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
 		<widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
@@ -657,7 +657,7 @@
 		<widget backgroundColor="XionBackground" font="Regular2;30" halign="center" noWrap="1" position="37,81" foregroundColor="XionFont1" render="Label" size="1203,38" source="session.Event_Now" transparent="1" zPosition="1" valign="bottom">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;26" foregroundColor="XionFont1" halign="center" position="37,127" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1203,206" source="session.Event_Now" zPosition="1" transparent="1">
+		<widget backgroundColor="XionBackground" font="Regular;26" foregroundColor="XionFont1" halign="center" position="37,127" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1203,206" source="session.Event_Now" zPosition="1" transparent="1">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;30" noWrap="1" foregroundColor="XionFont2" halign="center" position="37,352" render="Label" size="1203,38" source="session.Event_Next" transparent="1" zPosition="1" valign="bottom">
@@ -674,7 +674,7 @@
 		<widget backgroundColor="XionBackground" font="Regular2;19" halign="center" position="645,7" render="Label" size="602,22" zPosition="7" source="session.CurrentService" transparent="1" valign="bottom">
 			<convert type="XionHDFExtraInfo">TransponderInfo</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;26" foregroundColor="XionFont2" halign="center" position="37,396" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1203,96" source="session.Event_Next" zPosition="1" transparent="1">
+		<widget backgroundColor="XionBackground" font="Regular;26" foregroundColor="XionFont2" halign="center" position="37,396" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1203,96" source="session.Event_Next" zPosition="1" transparent="1">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,200" alphatest="blend" zPosition="-9" />
@@ -696,7 +696,7 @@
 			<convert type="XionHDFEventTime">EndTime</convert>
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget font="Regular2;30" halign="left" valign="center" noWrap="1" position="426,601" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Now" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1">
+		<widget font="Regular2;30" halign="left" valign="center" noWrap="1" position="426,601" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Now" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" foregroundColor="XionFont2" font="Regular;22" halign="right" noWrap="1" position="260,660" render="Label" size="72,36" source="session.Event_Next" transparent="1" valign="center" zPosition="1">
@@ -708,7 +708,7 @@
 			<convert type="XionHDFEventTime">EndTime</convert>
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget font="Regular;30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
+		<widget font="Regular;30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
 		<widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
@@ -822,7 +822,7 @@
 		<widget backgroundColor="XionBackground" font="Regular2;30" halign="center" noWrap="1" position="37,81" foregroundColor="XionFont1" render="Label" size="595,38" source="session.Event_Now" transparent="1" zPosition="1" valign="bottom">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;26" foregroundColor="XionFont1" halign="center" position="37,127" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="595,370" source="session.Event_Now" zPosition="1" transparent="1">
+		<widget backgroundColor="XionBackground" font="Regular;26" foregroundColor="XionFont1" halign="center" position="37,127" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="595,370" source="session.Event_Now" zPosition="1" transparent="1">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;30" noWrap="1" foregroundColor="XionFont2" halign="center" position="640,81" render="Label" size="600,38" source="session.Event_Next" transparent="1" zPosition="1" valign="bottom">
@@ -839,7 +839,7 @@
 		<widget backgroundColor="XionBackground" font="Regular2;19" halign="center" position="645,7" render="Label" size="602,22" zPosition="7" source="session.CurrentService" transparent="1" valign="bottom">
 			<convert type="XionHDFExtraInfo">TransponderInfo</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;26" foregroundColor="XionFont2" halign="center" position="640,127" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="600,370" source="session.Event_Next" zPosition="1" transparent="1">
+		<widget backgroundColor="XionBackground" font="Regular;26" foregroundColor="XionFont2" halign="center" position="640,127" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="600,370" source="session.Event_Next" zPosition="1" transparent="1">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,200" alphatest="blend" zPosition="-9" />
@@ -998,10 +998,10 @@
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
 		<eLabel position="955,171" size="232,3" backgroundColor="XionLine" />
-		<widget font="Regular;22" foregroundColor="XionFont1" position="891,176" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="362,377" source="ServiceEvent" valign="top" backgroundColor="XionBackground" transparent="1" zPosition="-8">
+		<widget font="Regular;22" foregroundColor="XionFont1" position="891,176" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="362,377" source="ServiceEvent" valign="top" backgroundColor="XionBackground" transparent="1" zPosition="-8">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
-		<widget font="Regular2;30" foregroundColor="XionFont2" position="891,53" halign="center" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="362,40" source="ServiceEvent" backgroundColor="XionBackground" transparent="1" zPosition="-8" valign="left" noWrap="1">
+		<widget font="Regular2;30" foregroundColor="XionFont2" position="891,53" halign="center" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="362,40" source="ServiceEvent" backgroundColor="XionBackground" transparent="1" zPosition="-8" valign="left" noWrap="1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" position="891,680" render="Label" size="362,30" source="ServiceEvent" transparent="1" zPosition="5" noWrap="1">
@@ -1209,7 +1209,7 @@
 		<widget alphatest="blend" position="894,12" render="Picon" size="67,40" source="Service" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" position="897,76" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=15000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" size="366,572" source="Event" valign="top" transparent="1" zPosition="-8">
+		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" position="897,76" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=15000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" size="366,572" source="Event" valign="top" transparent="1" zPosition="-8">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<panel name="template_menu_left_right_button" />
@@ -1309,7 +1309,7 @@
 		<widget backgroundColor="XionBackground" font="Regular;22" halign="center" name="more_text" position="370,87" size="150,30" text="MORE" transparent="1" zPosition="10" />
 		<widget font="Regular;22" halign="right" name="date" position="960,87" size="250,30" transparent="1" valign="center" />
 		<widget backgroundColor="XionBackground" itemHeight="30" name="list" position="50,142" size="1180,360" transparent="1" />
-		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" position="50,528" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1180,117" source="Event" zPosition="-8">
+		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" position="50,528" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1180,117" source="Event" zPosition="-8">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<panel name="template_menu_full_button" />
@@ -1331,7 +1331,7 @@
 		<widget backgroundColor="XionFont1" borderWidth="0" position="146,138" render="Progress" size="990,5" source="Event" transparent="1" zPosition="20" foregroundColor="XionProgress">
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular2;19" position="70,163" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1153,139" source="Event" valign="top" zPosition="-8" foregroundColor="XionFont2">
+		<widget backgroundColor="XionBackground" font="Regular2;19" position="70,163" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1153,139" source="Event" valign="top" zPosition="-8" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<eLabel backgroundColor="XionLine" position="146,140" size="990,1" />
@@ -1363,7 +1363,7 @@
 		<widget source="Event" render="Progress" position="800,90" size="370,5" borderWidth="0" backgroundColor="XionBackground" foregroundColor="XionProgress" transparent="1" zPosition="1">
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular2;21" position="25,115" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1230,135" source="Event" valign="top" zPosition="-8" foregroundColor="XionFont2">
+		<widget backgroundColor="XionBackground" font="Regular2;21" position="25,115" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1230,135" source="Event" valign="top" zPosition="-8" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<eLabel backgroundColor="XionFont1" position="800,92" size="370,1" />
@@ -1399,7 +1399,7 @@
 		<widget source="Event" render="Progress" position="101,123" size="535,5" borderWidth="0" backgroundColor="XionBackground" foregroundColor="XionProgress" transparent="1" zPosition="1">
 			<convert type="XionHDFEventTime">Progress</convert>
 		</widget>
-		<widget source="Event" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=15000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="25,145" size="880,105" font="Regular2;19" backgroundColor="XionBackground" foregroundColor="XionFont1" valign="top" zPosition="-8">
+		<widget source="Event" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=15000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="25,145" size="880,105" font="Regular2;19" backgroundColor="XionBackground" foregroundColor="XionFont1" valign="top" zPosition="-8">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<ePixmap pixmap="buttons/key_8_epg.png" position="25,253" size="60,18" alphatest="blend" zPosition="1" />
@@ -1455,7 +1455,7 @@
 	</screen>
 		<!-- QuickEPG -->
 	<screen name="QuickEPG" flags="wfNoBorder" position="0,435" size="1280,285" title="InfoBar" backgroundColor="XionBackground">
-		<widget source="Event" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" position="761,95" size="498,130" font="Regular;21" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" valign="top" zPosition="-8">
+		<widget source="Event" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" position="761,95" size="498,130" font="Regular;21" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" valign="top" zPosition="-8">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="Service" render="Label" position="87,19" size="595,40" font="Regular;32" valign="center" noWrap="1" backgroundColor="transparent" transparent="1">
@@ -4019,7 +4019,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- Enigma Restart -->
-	<screen name="QuitMainloopScreen" position="fill" backgroundColor="XionBackground" flags="wfNoBorder">
+<!-- Skipper 2.1--><!-- /* ERROR LINE -->	<screen name="QuitMainloopScreen" position="fill" backgroundColor="XionBackground" flags="wfNoBorder">
 		<widget name="text" position="center,590" size="720,100" font="Regular;25" halign="center" transparent="1" />
 	</screen>
 		<!-- Enigma Restart -->
@@ -4479,7 +4479,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="global.CurrentTime" position="910,637" size="65,32" font="Regular;20" render="Label" halign="right" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;30" noWrap="1" position="210,620" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,steptime=90,wrap=0,always=0,repeat=2,oneshot=1" size="708,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular;30" noWrap="1" position="210,620" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,steptime=90,wrap=0,always=0,repeat=2,oneshot=1" size="708,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular;18" halign="left" position="624,683" render="Label" size="80,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
@@ -5014,7 +5014,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="global.CurrentTime" position="910,681" size="65,32" font="Regular;20" render="Label" halign="right" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;30" noWrap="1" position="210,620" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,steptime=90,wrap=0,always=0,repeat=2,oneshot=1" size="708,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular;30" noWrap="1" position="210,620" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,steptime=90,wrap=0,always=0,repeat=2,oneshot=1" size="708,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular;18" halign="left" position="676,683" render="Label" size="80,25" source="session.CurrentService" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
@@ -5880,7 +5880,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" halign="center" position="24,418" render="Label" size="416,28" source="Event" transparent="1">
 			<convert type="XionHDFEventName">Description</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="24,458" render="XionHDFRunningText" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="1232,176" source="Event" transparent="1" valign="top" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="24,458" render="XionHDFRunningText" options="movetype=none,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="1232,176" source="Event" transparent="1" valign="top" zPosition="1">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<widget name="list" CoolBackColor="XionBackground" CoolDayColor="white" CoolDayPos="0" CoolDaySize="50" CoolEventColor="white" CoolEventFont="Regular;22" CoolEventPos="150" CoolEventSize="650" CoolFont="Regular;22" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolTimeColor="white" CoolTimePos="70" CoolTimeSize="70" backgroundColor="Background1" foregroundColor="Foreground" itemHeight="30" position="435,80" size="820,330" transparent="1" zPosition="-8" />
@@ -5938,7 +5938,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="left" position="220,524" render="Label" size="1055,30" source="Event" transparent="1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="40,560" render="XionHDFRunningText" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="1200,88" source="Event" transparent="1" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="40,560" render="XionHDFRunningText" options="movetype=none,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="1200,88" source="Event" transparent="1" zPosition="1">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="right" name="date" position="1060,670" size="180,30" transparent="1" />
@@ -5958,7 +5958,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="left" position="636,66" render="Label" size="600,32" source="Event" transparent="1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="450,98" render="XionHDFRunningText" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="790,176" source="Event" transparent="0" valign="top" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="450,98" render="XionHDFRunningText" options="movetype=none,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="790,176" source="Event" transparent="0" valign="top" zPosition="1">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" foregroundColor="white" name="timeline_text" position="5,285" size="1230,30" transparent="1" />
@@ -5988,7 +5988,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="left" position="636,66" render="Label" size="600,32" source="Event" transparent="1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="450,98" render="XionHDFRunningText" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="790,176" source="Event" transparent="0" valign="top" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="450,98" render="XionHDFRunningText" options="movetype=none,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="790,176" source="Event" transparent="0" valign="top" zPosition="1">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<widget CoolBackColor="XionBackground" CoolDateColor="white" CoolDateHPos="2" CoolDatePos="70" CoolDateSize="70" CoolDayColor="white" CoolDayHPos="2" CoolDayPos="0" CoolDaySize="50" CoolEventColor="white" CoolEventFont="Regular;24" CoolEventHPos="2" CoolEventPos="500" CoolEventSize="700" CoolFont="Regular;24" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolRecEventBackColor="XionBackground" CoolServiceColor="white" CoolServiceFont="Regular;24" CoolServiceHPos="2" CoolServicePos="230" CoolServiceSize="280" CoolTimeColor="white" CoolTimeHPos="2" CoolTimePos="150" CoolTimeSize="70" backgroundColor="XionBackground" itemHeight="30" name="list" position="45,300" size="1190,330" transparent="1" zPosition="3" />
@@ -6009,7 +6009,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="left" position="636,66" render="Label" size="600,32" source="Event" transparent="1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="450,98" render="XionHDFRunningText" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="790,176" source="Event" transparent="0" valign="top" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="450,98" render="XionHDFRunningText" options="movetype=none,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="790,176" source="Event" transparent="0" valign="top" zPosition="1">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<widget CoolCurrentCol="white" CoolBarColor="white" CoolBarHPos="7" CoolBarHigh="17" CoolBarPos="270" CoolBarSize="150" CoolDurationPos="1085" CoolDurationColor="white" CoolDurationSize="105" CoolEventColor="white" CoolEventFont="Regular;24" CoolEventHPos="0" CoolEventPos="440" CoolEventSize="625" CoolFont="Regular;24" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolServiceColor="white" CoolServiceFont="Regular;24" CoolServiceHPos="0" CoolServicePos="5" CoolServiceSize="235" CoolTimeHPos="0" CoolTimePos="265" CoolTimeSize="150" backgroundColor="XionBackground" foregroundColor="white" itemHeight="30" name="list" position="40,300" size="1200,330" transparent="1" zPosition="25" />
@@ -6031,7 +6031,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="left" position="636,66" render="Label" size="600,32" source="Event" transparent="1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="450,98" render="XionHDFRunningText" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="790,176" source="Event" transparent="0" valign="top" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="450,98" render="XionHDFRunningText" options="movetype=none,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="790,176" source="Event" transparent="0" valign="top" zPosition="1">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" name="timeline_text" position="5,282" size="1230,30" transparent="1" />
@@ -6070,7 +6070,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="left" position="202,524" render="Label" size="1055,30" source="Event" transparent="1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="20,564" render="XionHDFRunningText" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="1240,92" source="Event" transparent="1" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" position="20,564" render="XionHDFRunningText" options="movetype=none,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" size="1240,92" source="Event" transparent="1" zPosition="1">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="right" name="date" position="1060,670" size="180,30" transparent="1" />
@@ -6093,7 +6093,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" halign="center" position="50,309" render="Label" size="434,30" source="Event" transparent="1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont1" halign="center" position="50,342" size="434,170" source="Event" render="XionHDFRunningText" options="movetype=running,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" transparent="1" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont1" halign="center" position="50,342" size="434,170" source="Event" render="XionHDFRunningText" options="movetype=none,startpoint=0,direction=top,steptime=125,repeat=5,startdelay=10000,wrap,always=0" transparent="1" zPosition="1">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<widget CoolBar="0" CoolBarColor="white" CoolCurrentCol="white" CoolDurationColor="white" CoolDurationPos="666" CoolDurationSize="70" CoolEventColor="white" CoolEventFont="Regular;22" CoolEventHPos="3" CoolEventPos="240" CoolEventSize="350" CoolFont="Regular;25" CoolMarkerHPos="1" CoolMarkerPicHPos="2" CoolMarkerPicPos="2" CoolMarkerPos="140" CoolPico="28" CoolPicoHPos="1" CoolRecAlarmCol="yellow" CoolRecColor="red" CoolServiceColor="white" CoolServiceFont="Regular;24" CoolServiceHPos="0" CoolServicePos="2" CoolServiceSize="210" CoolTime="1" CoolTimeHPos="3" CoolTimePos="580" CoolTimeSize="130" CoolTunerCol="white" backgroundColor="Background" foregroundColor="Foreground" itemHeight="32" selectionPixmap="XionHDF/selpic/1240x32.png" name="list" position="515,70" size="750,580" transparent="1" zPosition="25" />
@@ -6702,7 +6702,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="Service" render="Label" position="888,155" size="379,40" font="Regular;22" halign="center" backgroundColor="XionBackground" transparent="1">
 			<convert type="EMCMovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget source="Service" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="888,220" size="379,428" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" halign="center" valign="top">
+		<widget source="Service" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="888,220" size="379,428" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" halign="center" valign="top">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<widget source="Service" render="Label" position="888,118" size="379,30" font="Regular2;21" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
@@ -6742,7 +6742,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular2;17" foregroundColor="XionFont2" halign="right" position="1165,671" render="Label" size="100,24" source="Service" transparent="1" zPosition="1">
 			<convert type="MovieInfo">FileSize</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;19" foregroundColor="XionFont1" position="888,168" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=2000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" size="377,478" source="Service" transparent="1" valign="top">
+		<widget backgroundColor="XionBackground" font="Regular;19" foregroundColor="XionFont1" position="888,168" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=2000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" size="377,478" source="Service" transparent="1" valign="top">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" foregroundColor="XionFont2" />
