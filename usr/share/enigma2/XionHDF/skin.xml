@@ -6681,6 +6681,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
+		<!-- ledManager -->
+	<screen backgroundColor="transparent" name="ledManager" position="0,0" size="1280,720">
+		<widget name="config" backgroundColor="XionBackground" position="70,80" zPosition="1" font="Regular;22" size="650,480" itemHeight="30" scrollbarMode="showNever" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_kp" />	
+	</screen>	
 		<!-- Plugins -->
 		<!-- /* EMC NoCover -->
 	<screen name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">
