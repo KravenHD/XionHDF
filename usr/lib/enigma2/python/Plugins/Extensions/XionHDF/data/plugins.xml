@@ -2559,12 +2559,18 @@
 		<widget name="sysTemp" position="70,450" size="260,25" font="Regular;22" halign="left" zPosition="1" transparent="1" />
 		<widget name="hddTemp" position="70,490" size="260,25" font="Regular;22" halign="left" zPosition="1" transparent="1" />
 		<panel name="template_menu_left_button" />
-		<panel name="template_colorkey_text_kp" />		
+		<panel name="template_colorkey_text_kp" />
 	</screen>
+		<!-- TVChartsMain -->
 	<screen backgroundColor="transparent" name="TVChartsMain" position="0,0" size="1280,720">
 		<widget name="channellist" backgroundColor="XionBackground" position="70,80" zPosition="1" font="Regular;22" size="650,480" itemHeight="80" scrollbarMode="showOnDemand" />
 		<widget name="info" position="0,600" zPosition="2" size="708,30" itemHeight="30" font="Regular;22" noWrap="1" foregroundColor="XionFont1" transparent="1" halign="center" valign="center" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
-		<!-- Plugins -->
+		<!-- ledManager -->
+	<screen backgroundColor="transparent" name="ledManager" position="0,0" size="1280,720">
+		<widget name="config" backgroundColor="XionBackground" position="70,80" zPosition="1" font="Regular;22" size="650,480" itemHeight="30" scrollbarMode="showOnDemand" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_kp" />	
+	</screen>
