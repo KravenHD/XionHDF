@@ -3942,6 +3942,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap position="70,100" size="380,57" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDF-Toolbox/banner.png" zPosition="2" alphatest="on" />
 		<panel name="template_menu_left" />
 	</screen>
+	<screen backgroundColor="transparent" name="ConfigMenu" position="0,0" size="1280,720">
+		<widget name="config" backgroundColor="XionBackground" position="70,80" zPosition="1" font="Regular;22" size="650,480" itemHeight="30" scrollbarMode="showOnDemand" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_kp" />	
+	</screen>
 		<!-- LogManager -->
 	<screen name="LogManager" position="0,0" size="1280,720" title="Log Manager" backgroundColor="transparent">
 		<widget name="list" position="70,80" size="708,540" font="Regular;14" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
