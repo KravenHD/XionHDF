@@ -3083,5 +3083,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen name="BufferIndicator" title="Indicator" position="center,105" size="400,35" flags="wfNoBorder" zPosition="100">
 		<widget name="status" position="0,0" size="400,35" transparent="1" zPosition="-1" font="Regular;26" valign="center" halign="center"/>
 	</screen>
+	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="ServiceInfoSimple" position="0,0" size="1280,720" >
+		<widget name="infolist" render="Listbox" scrollbarMode="showOnDemand" selectionDisabled="1" position="70,180" size="708,450" itemHight="65" font="Regular;16" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
+		<panel name="template_menu_left" />
+	</screen>	
 	<!-- main-custom-openhdf */ -->
 	<!-- Main */ -->
