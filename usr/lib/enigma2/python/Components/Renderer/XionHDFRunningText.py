@@ -62,7 +62,7 @@ class XionHDFRunningText(Renderer):
 		self.X = self.Y = self.W = self.H = self.mStartDelay = 0
 		self.mAlways = 1		# always move text
 		self.mStep = 1			# moving step: 1 pixel per 1 time
-		self.mStepTimeout = 50		# step timeout: 1 step per 50 milliseconds ( speed: 20 pixel per second )
+		self.mStepTimeout = 100		# step timeout: 1 step per 50 milliseconds ( speed: 20 pixel per second )
 		self.direction = LEFT
 		self.mLoopTimeout = self.mOneShot = 0
 		self.mRepeat = 0
