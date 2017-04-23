@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: XionHDF\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-06 23:16+0200\n"
-"PO-Revision-Date: 2017-03-14 21:19+0200\n"
+"PO-Revision-Date: 2017-04-23 04:53+0200\n"
 "Last-Translator: Hasan Kiran <sunder67@hotmail.com>\n"
 "Language-Team: Turkish <sunder67@hotmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -536,7 +536,7 @@ msgid "CoolTVGuide"
 msgstr ""
 
 msgid "Do you really want to reboot now?"
-msgstr ""
+msgstr "Şimdi yeniden başlatmak istiyor musunuz?"
 
 msgid "Restart GUI"
 msgstr "Grafiksel arayüzü yeniden başlat"
@@ -559,10 +559,10 @@ msgid "clock with weekday"
 msgstr ""
 
 msgid "Refresh interval (in minutes)"
-msgstr ""
+msgstr "Yenile aralığı (dakika olarak)"
 
 msgid "This option activates the running text for some parts of skin."
-msgstr ""
+msgstr "Bu seçenek, arayüzün bazı bölümleri için kayan metni aktive eder."
 
 msgid ""
 "This option activate/deactive/change the background transparency of skin."
@@ -724,7 +724,7 @@ msgid "ZapHistoryBrowser"
 msgstr ""
 
 msgid "Language selection"
-msgstr ""
+msgstr "Dil seçimi"
 
 msgid "LED Brightness Setup"
 msgstr ""
@@ -797,3 +797,10 @@ msgstr ""
 
 msgid "Network test..."
 msgstr "Ağ testi..."
+
+msgid "free to air"
+msgstr "şifresiz"
+
+msgid "SysTemp:"
+msgstr "SisSıcaklığı:"
+
