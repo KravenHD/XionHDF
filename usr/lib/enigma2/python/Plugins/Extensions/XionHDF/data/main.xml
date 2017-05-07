@@ -2913,8 +2913,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 	<screen backgroundColor="transparent" name="ConfigMenu" position="0,0" size="1280,720">
 		<widget name="config" backgroundColor="XionBackground" position="70,80" zPosition="1" font="Regular;22" size="650,480" itemHeight="30" scrollbarMode="showOnDemand" />
+		<widget backgroundColor="XionBackground" font="Regular2;20" position="70,600" render="Label" size="708,50" source="help" transparent="1" foregroundColor="XionFont2" />
 		<panel name="template_menu_left_button" />
-		<panel name="template_colorkey_text_kp" />	
+		<panel name="template_colorkey_text_kp" />
 	</screen>
 		<!-- LogManager -->
 	<screen name="LogManager" position="0,0" size="1280,720" title="Log Manager" backgroundColor="transparent">
