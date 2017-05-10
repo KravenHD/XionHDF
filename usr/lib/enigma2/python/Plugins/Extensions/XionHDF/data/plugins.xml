@@ -216,6 +216,26 @@
 		<eLabel text="current" position="260,135" zPosition="1" size="110,26" font="Regular; 20" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" />
 		<widget name="acur" position="260,160" size="80,26" font="Regular; 20" transparent="1" backgroundColor="XionBackground" />
 	</screen>
+	<screen name="BitrateViewerExtra" backgroundColor="XionBackground" position="100,180" size="340,190" title="Bitrate viewer" flags="wfBorder">
+		<eLabel text="Video" position="10,10" zPosition="1" size="80,26" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="XionBackground" />
+		<eLabel text="min" position="10,40" zPosition="1" size="80,26" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="XionBackground" />
+		<widget name="vmin" position="10,70" size="80,26" font="Regular; 20" transparent="1" backgroundColor="XionBackground" />
+		<eLabel text="max" position="80,40" zPosition="1" size="80,26" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="XionBackground" />
+		<widget name="vmax" position="80,70" size="80,26" font="Regular; 20" transparent="1" backgroundColor="XionBackground" />
+		<eLabel text="avg" position="160,40" zPosition="1" size="80,26" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="XionBackground" />
+		<widget name="vavg" position="160,70" size="80,26" font="Regular; 20" transparent="1" backgroundColor="XionBackground" />
+		<eLabel text="current" position="260,40" zPosition="1" size="110,26" font="Regular; 20" transparent="1" foregroundColor="white" backgroundColor="XionBackground" />
+		<widget name="vcur" position="260,70" size="80,26" font="Regular; 20" transparent="1" backgroundColor="XionBackground" />
+		<eLabel text="Audio" position="10,110" zPosition="1" size="80,26" font="Regular; 20" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" />
+		<eLabel text="min" position="10,135" zPosition="1" size="80,26" font="Regular; 20" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" />
+		<widget name="amin" position="10,160" size="80,26" font="Regular; 20" transparent="1" backgroundColor="XionBackground" />
+		<eLabel text="max" position="80,135" zPosition="1" size="80,26" font="Regular; 20" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" />
+		<widget name="amax" position="80,160" size="80,26" font="Regular; 20" transparent="1" backgroundColor="XionBackground" />
+		<eLabel text="avg" position="160,135" zPosition="1" size="80,26" font="Regular; 20" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" />
+		<widget name="aavg" position="160,160" size="80,26" font="Regular; 20" transparent="1" backgroundColor="XionBackground" />
+		<eLabel text="current" position="260,135" zPosition="1" size="110,26" font="Regular; 20" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" />
+		<widget name="acur" position="260,160" size="80,26" font="Regular; 20" transparent="1" backgroundColor="XionBackground" />
+	</screen>
 		<!-- ********** CDInfo ********** -->
 		<!-- CDInfo -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="CDInfo" position="0,0" size="1280,720" title="CDInfo">
