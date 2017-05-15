@@ -3977,6 +3977,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="key_6" position="753,511" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 		<ePixmap name="7" position="1058,535" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_7.png" transparent="1" alphatest="on" />
 		<widget name="key_7" position="753,536" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+		<ePixmap name="menu" position="1058,585" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_menu.png" transparent="1" alphatest="on" />
+		<widget name="menu" position="753,586" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 		<ePixmap name="0" position="1058,560" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_0.png" transparent="1" alphatest="on" />
 		<widget name="key_0" position="753,561" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 		<panel name="template_menu_left_button" />
