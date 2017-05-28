@@ -203,15 +203,15 @@ if fileExists('/proc/bmeminfo'):
 else:
    mem_info = []
    entrie = os.popen('cat /proc/cmdline').read()
-   
-   if getBoxType() in ('vusolo4k', 'mutant51', 'mutant52', 'ax51'):
+
+   if getBoxType() in ('vusolo4k', 'mutant51', 'mutant52', 'ax51', 'zgemmah7'):
         mem = re.findall('_cma=(.*?)M', entrie)
    else:   
         mem = re.findall('bmem=(.*?)M', entrie)
-     
+
    for info in mem:
       mem_info.append((info))
-       
+
    if len(mem_info) > 1:
       bmem = int(mem_info[0]) + int(mem_info[1])  
    else:
