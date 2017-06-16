@@ -2130,23 +2130,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" position="640,110" render="Label" size="80,25" source="Frontend" transparent="1">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<eLabel backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" halign="right" name="ber" position="120,145" size="80,25" text="BER:" transparent="1" />
+		<eLabel backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" halign="right" name="agc" position="120,145" size="80,25" text="AGC:" transparent="1" />
 		<widget borderColor="XionLine" borderWidth="1" position="210,147" render="Progress" size="420,20" source="Frontend" transparent="1">
-			<convert type="FrontendInfo">BER</convert>
+			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" position="640,145" render="Label" size="80,25" source="Frontend" transparent="1">
+			<convert type="FrontendInfo">AGC</convert>
+		</widget>
+
+		<eLabel backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" halign="right" name="ber" position="120,180" size="80,25" text="BER:" transparent="1" />
+		<widget borderColor="XionLine" borderWidth="1" position="210,182" render="Progress" size="420,20" source="Frontend" transparent="1">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<eLabel backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" halign="right" name="lock" position="120,185" size="80,25" text="Lock:" transparent="1" />
-		<widget alphatest="blend" pixmap="skin_default/icons/lock_on.png" position="210,183" render="Pixmap" size="38,31" source="Frontend" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" position="640,180" render="Label" size="80,25" source="Frontend" transparent="1">
+			<convert type="FrontendInfo">BER</convert>
+		</widget>
+		<eLabel backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" halign="right" name="lock" position="120,217" size="80,25" text="Lock:" transparent="1" />
+		<widget alphatest="blend" pixmap="skin_default/icons/lock_on.png" position="210,223" render="Pixmap" size="38,31" source="Frontend" zPosition="1">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget alphatest="blend" pixmap="skin_default/icons/lock_off.png" position="210,183" render="Pixmap" size="8,31" source="Frontend" zPosition="1">
+		<widget alphatest="blend" pixmap="skin_default/icons/lock_off.png" position="210,223" render="Pixmap" size="8,31" source="Frontend" zPosition="1">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget itemHeight="30" name="config" position="120,249" size="600,330" transparent="1" foregroundColor="XionFont1" />
+		<widget itemHeight="30" name="config" position="120,279" size="600,330" transparent="1" foregroundColor="XionFont1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="introduction" position="70,595" size="708,28" transparent="1" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text_source" />
