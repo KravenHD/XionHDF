@@ -2594,3 +2594,32 @@
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_kp" />	
 	</screen>
+		<!-- Sat IP Client -->
+	<screen backgroundColor="transparent" name="SATIPClient" position="0,0" size="1280,720">
+		<widget source="vtunerList" render="Listbox" position="70,80" size="800,540" backgroundColor="XionBackground" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{"templates":
+				{"default": (58,[
+						MultiContentEntryText(pos = (20, 0), size = (280, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (50, 28), size = (240, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (210, 28), size = (240, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
+						MultiContentEntryText(pos = (370, 28), size = (240, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3),
+						MultiContentEntryText(pos = (50, 48), size = (490, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4),
+				]),
+				},
+				"fonts": [gFont("Regular", 24),gFont("Regular", 16)],
+				"itemHeight": 58
+			}
+			</convert>
+		</widget>
+		<widget source="description" render="Label" position="60,610" size="610,30" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" halign="left" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_kp" />
+	</screen>
+	<screen backgroundColor="transparent" name="SATIPTuner" position="0,0" size="1280,720">
+		<widget name="config" zPosition="2" position="50,60" size="550,50" backgroundColor="XionBackground" scrollbarMode="showOnDemand" transparent="1" />
+		<widget source="description" render="Label" position="50,170" size="550,210" font="Regular;20" backgroundColor="XionBackground" halign="left" valign="center" />
+		<widget source="choices" render="Label" position="50,120" size="550,40" font="Regular;18" backgroundColor="XionBackground" halign="left" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_kp" />
+	</screen>
