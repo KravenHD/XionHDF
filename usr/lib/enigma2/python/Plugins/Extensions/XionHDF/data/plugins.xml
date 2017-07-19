@@ -2464,12 +2464,12 @@
 	<screen name="SHOUTcastWidget" backgroundColor="XionBackground" position="center,center" size="1280,720" title="SHOUTcast" >
 		<widget name="headertext" position="50,77" zPosition="1" itemHeight="30" size="1180,23" font="Regular;20" transparent="1"  backgroundColor="XionBackground"/>
 		<widget name="statustext" position="20,270" zPosition="1" itemHeight="30" size="1240,90" font="Regular;20" halign="center" valign="center" transparent="0" backgroundColor="XionBackground"/>
-		<widget name="list" position="50,110" zPosition="2" itemHeight="30" size="1180,445" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" backgroundColor="XionBackground"/>
-		<widget name="titel" position="160,580" zPosition="1" itemHeight="30" size="900,20" font="Regular;20" transparent="1" backgroundColor="XionBackground"/>
-		<widget name="station" position="160,600" zPosition="1" itemHeight="30" size="900,40" font="Regular;20" transparent="1" backgroundColor="XionBackground"/>
+		<widget name="list" position="50,110" zPosition="2" itemHeight="30" size="1180,412" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" backgroundColor="XionBackground"/>
+		<widget name="titel" position="160,570" zPosition="1" itemHeight="35" size="900,30" font="Regular;22" transparent="1" backgroundColor="XionBackground"/>
+		<widget name="station" position="160,600" zPosition="1" itemHeight="30" size="900,40" font="Regular;22" transparent="1" backgroundColor="XionBackground"/>
 		<widget name="console" position="160,650" zPosition="1" itemHeight="30" size="900,50" font="Regular;20" transparent="1" backgroundColor="XionBackground"/>
-		<widget name="cover" zPosition="2" position="50,580" size="102,110" alphatest="blend" />
-		<ePixmap position="1100,35" zPosition="4" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" transparent="1" alphatest="on" />
+		<widget name="cover" zPosition="2" position="50,540" size="102,110" alphatest="blend" />
+		<ePixmap position="1050,20" zPosition="4" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" transparent="1" alphatest="on" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
