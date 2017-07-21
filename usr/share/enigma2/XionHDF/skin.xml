@@ -415,10 +415,10 @@
 		<!-- Clock Standard */-->
 		<ePixmap pixmap="XionHDF/ibar.png" position="0,543" size="1280,200" alphatest="blend" zPosition="-9" />
 		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" zPosition="-9" />
-		<widget source="session.CurrentService" render="Label" position="1107,40" size="89,22" backgroundColor="XionBackground" transparent="1" zPosition="3" foregroundColor="XionFont1" font="Regular;19" valign="center" halign="left">
+		<widget source="session.CurrentService" render="Label" position="1107,38" size="89,22" backgroundColor="XionBackground" transparent="1" zPosition="3" foregroundColor="XionFont1" font="Regular;19" valign="center" halign="left">
 			<convert type="XionHDFExtraInfo">OrbitalPositionOrTunerSystem</convert>
 		</widget>
-		<widget source="session.FrontendStatus" render="Label" position="1166,40" size="70,21" font="Regular;19" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" zPosition="3" halign="right" valign="center">
+		<widget source="session.FrontendStatus" render="Label" position="1166,38" size="70,21" font="Regular;19" transparent="1" foregroundColor="XionFont1" backgroundColor="XionBackground" zPosition="3" halign="right" valign="center">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<eLabel text="x" position="82,40" size="15,22" zPosition="3" font="Regular;19" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
@@ -428,30 +428,60 @@
 		<widget source="session.CurrentService" render="Label" zPosition="3" position="32,40" size="50,22" font="Regular;19" halign="right" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
 			<convert type="XionHDFServiceInfo">VideoWidth</convert>
 		</widget>
-		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/c_on.png" position="1015,35" zPosition="2" size="32,32" backgroundColor="XionBackground" alphatest="blend" valign="center">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">4</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/b_on.png" position="975,35" zPosition="2" size="32,32" backgroundColor="XionBackground" alphatest="blend" valign="center">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">2</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/a_on.png" position="935,35" zPosition="2" size="32,32" backgroundColor="XionBackground" alphatest="blend" valign="center">
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/a_on.png" position="860,38" zPosition="2" size="22,22" backgroundColor="XionBackground" alphatest="blend" valign="center">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/d_on.png" position="1055,35" zPosition="2" size="32,32" backgroundColor="XionBackground" alphatest="blend" valign="center">
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/b_on.png" position="885,38" zPosition="2" size="22,22" backgroundColor="XionBackground" alphatest="blend" valign="center">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">2</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/c_on.png" position="910,38" zPosition="2" size="22,22" backgroundColor="XionBackground" alphatest="blend" valign="center">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">4</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/d_on.png" position="935,38" zPosition="2" size="22,22" backgroundColor="XionBackground" alphatest="blend" valign="center">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">8</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="XionHDF/buttons/a_off.png" position="935,35" size="32,32" zPosition="1" alphatest="blend" />
-		<ePixmap pixmap="XionHDF/buttons/b_off.png" position="975,35" size="32,32" zPosition="1" alphatest="blend" />
-		<ePixmap pixmap="XionHDF/buttons/c_off.png" position="1015,35" size="32,32" zPosition="1" alphatest="blend" />
-		<ePixmap pixmap="XionHDF/buttons/d_off.png" position="1055,35" size="32,32" zPosition="1" alphatest="blend" />
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/e_on.png" position="960,38" zPosition="2" size="22,22" backgroundColor="XionBackground" alphatest="blend" valign="center">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">16</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/f_on.png" position="985,38" zPosition="2" size="22,22" backgroundColor="XionBackground" alphatest="blend" valign="center">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">32</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/g_on.png" position="1010,38" zPosition="2" size="22,22" backgroundColor="XionBackground" alphatest="blend" valign="center">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">64</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/h_on.png" position="1035,38" zPosition="2" size="22,22" backgroundColor="XionBackground" alphatest="blend" valign="center">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">128</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/i_on.png" position="1060,38" zPosition="2" size="22,22" backgroundColor="XionBackground" alphatest="blend" valign="center">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">256</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap pixmap="XionHDF/buttons/a_off.png" position="860,38" size="22,22" zPosition="1" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/b_off.png" position="885,38" size="22,22" zPosition="1" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/c_off.png" position="910,38" size="22,22" zPosition="1" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/d_off.png" position="935,38" size="22,22" zPosition="1" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/e_off.png" position="960,38" size="22,22" zPosition="1" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/f_off.png" position="985,38" size="22,22" zPosition="1" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/g_off.png" position="1010,38" size="22,22" zPosition="1" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/h_off.png" position="1035,38" size="22,22" zPosition="1" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/i_off.png" position="1060,38" size="22,22" zPosition="1" alphatest="blend" />
 		<ePixmap alphatest="blend" pixmap="XionHDF/buttons/ico_subtitle_off.png" position="705,35" size="32,32" zPosition="1" />
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_subtitle_on.png" position="705,35" render="Pixmap" size="32,32" source="session.CurrentService" zPosition="5">
 			<convert type="XionHDFServiceInfo">SubtitlesAvailable</convert>
@@ -506,7 +536,7 @@
 		</widget>
 		<eLabel text="SysTemp:" position="353,40" size="101,22" font="Regular2;19" halign="left" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="2" />
 		<widget source="global.CurrentTime" render="XionHDFSYSTemp" position="447,40" size="60,22" font="Regular2;19" halign="left" valign="bottom" foregroundColor="XionFont1" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="3" />
-		<widget source="session.CurrentService" render="Label" position="745,40" size="182,22" font="Regular2;19" halign="center" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="4">
+		<widget source="session.CurrentService" render="Label" position="705,40" size="182,22" font="Regular2;19" halign="center" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="4">
 			<convert type="XionHDFCpuUsage">CPU: $0</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;19" halign="center" position="645,7" render="Label" size="602,22" zPosition="7" source="session.CurrentService" transparent="1" valign="bottom">
@@ -668,7 +698,7 @@
 		</widget>
 		<eLabel text="SysTemp:" position="353,40" size="101,22" font="Regular2;19" halign="left" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="2" />
 		<widget source="global.CurrentTime" render="XionHDFSYSTemp" position="447,40" size="60,22" font="Regular2;19" halign="left" valign="bottom" foregroundColor="XionFont1" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="3" />
-		<widget source="session.CurrentService" render="Label" position="745,40" size="182,22" font="Regular2;19" halign="center" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="4">
+		<widget source="session.CurrentService" render="Label" position="705,40" size="182,22" font="Regular2;19" halign="center" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="4">
 			<convert type="XionHDFCpuUsage">CPU: $0</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;19" halign="center" position="645,7" render="Label" size="602,22" zPosition="7" source="session.CurrentService" transparent="1" valign="bottom">
@@ -833,7 +863,7 @@
 		</widget>
 		<eLabel text="SysTemp:" position="353,40" size="101,22" font="Regular2;19" halign="left" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="2" />
 		<widget source="global.CurrentTime" render="XionHDFSYSTemp" position="447,40" size="60,22" font="Regular2;19" halign="left" valign="bottom" foregroundColor="XionFont1" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="3" />
-		<widget source="session.CurrentService" render="Label" position="745,40" size="182,22" font="Regular2;19" halign="center" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="4">
+		<widget source="session.CurrentService" render="Label" position="705,40" size="182,22" font="Regular2;19" halign="center" valign="bottom" backgroundColor="XionBackground" noWrap="1" transparent="1" zPosition="4">
 			<convert type="XionHDFCpuUsage">CPU: $0</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;19" halign="center" position="645,7" render="Label" size="602,22" zPosition="7" source="session.CurrentService" transparent="1" valign="bottom">
@@ -1055,7 +1085,7 @@
 		<panel name="template_menu_left" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HdmiCECSetupScreen" position="0,0" size="1280,720" title="HDMI CEC setup">
-		<widget name="config" itemHeight="30" font="Regular;22" position="70,80" size="708,500" transparent="1" zPosition="2" foregroundColor="XionFont1" />
+		<widget name="config" itemHeight="27" font="Regular;22" position="70,80" size="708,500" transparent="1" zPosition="2" foregroundColor="XionFont1" />
 		<widget source="current_address" render="Label" position="161,621" size="500,30" zPosition="10" font="Regular2;21" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
 		<widget source="fixed_address" render="Label" position="161,621" size="500,30" zPosition="10" font="Regular2;21" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
 		<panel name="template_colorkey_text_source" />
@@ -3162,23 +3192,31 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" position="640,110" render="Label" size="80,25" source="Frontend" transparent="1">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<eLabel backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" halign="right" name="ber" position="120,145" size="80,25" text="BER:" transparent="1" />
+		<eLabel backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" halign="right" name="agc" position="120,145" size="80,25" text="AGC:" transparent="1" />
 		<widget borderColor="XionLine" borderWidth="1" position="210,147" render="Progress" size="420,20" source="Frontend" transparent="1">
-			<convert type="FrontendInfo">BER</convert>
+			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" position="640,145" render="Label" size="80,25" source="Frontend" transparent="1">
+			<convert type="FrontendInfo">AGC</convert>
+		</widget>
+
+		<eLabel backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" halign="right" name="ber" position="120,180" size="80,25" text="BER:" transparent="1" />
+		<widget borderColor="XionLine" borderWidth="1" position="210,182" render="Progress" size="420,20" source="Frontend" transparent="1">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<eLabel backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" halign="right" name="lock" position="120,185" size="80,25" text="Lock:" transparent="1" />
-		<widget alphatest="blend" pixmap="skin_default/icons/lock_on.png" position="210,183" render="Pixmap" size="38,31" source="Frontend" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" position="640,180" render="Label" size="80,25" source="Frontend" transparent="1">
+			<convert type="FrontendInfo">BER</convert>
+		</widget>
+		<eLabel backgroundColor="XionBackground" font="Regular2;21" foregroundColor="XionFont2" halign="right" name="lock" position="120,217" size="80,25" text="Lock:" transparent="1" />
+		<widget alphatest="blend" pixmap="skin_default/icons/lock_on.png" position="210,223" render="Pixmap" size="38,31" source="Frontend" zPosition="1">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget alphatest="blend" pixmap="skin_default/icons/lock_off.png" position="210,183" render="Pixmap" size="8,31" source="Frontend" zPosition="1">
+		<widget alphatest="blend" pixmap="skin_default/icons/lock_off.png" position="210,223" render="Pixmap" size="8,31" source="Frontend" zPosition="1">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget itemHeight="30" name="config" position="120,249" size="600,330" transparent="1" foregroundColor="XionFont1" />
+		<widget itemHeight="30" name="config" position="120,279" size="600,330" transparent="1" foregroundColor="XionFont1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="introduction" position="70,595" size="708,28" transparent="1" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text_source" />
@@ -6591,12 +6629,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen name="SHOUTcastWidget" backgroundColor="XionBackground" position="center,center" size="1280,720" title="SHOUTcast" >
 		<widget name="headertext" position="50,77" zPosition="1" itemHeight="30" size="1180,23" font="Regular;20" transparent="1"  backgroundColor="XionBackground"/>
 		<widget name="statustext" position="20,270" zPosition="1" itemHeight="30" size="1240,90" font="Regular;20" halign="center" valign="center" transparent="0" backgroundColor="XionBackground"/>
-		<widget name="list" position="50,110" zPosition="2" itemHeight="30" size="1180,445" font="Regular;20" scrollbarMode="showNever" transparent="1" backgroundColor="XionBackground"/>
-		<widget name="titel" position="160,580" zPosition="1" itemHeight="30" size="900,20" font="Regular;20" transparent="1" backgroundColor="XionBackground"/>
-		<widget name="station" position="160,600" zPosition="1" itemHeight="30" size="900,40" font="Regular;20" transparent="1" backgroundColor="XionBackground"/>
+		<widget name="list" position="50,110" zPosition="2" itemHeight="30" size="1180,412" font="Regular;22" scrollbarMode="showNever" transparent="1" backgroundColor="XionBackground"/>
+		<widget name="titel" position="160,570" zPosition="1" itemHeight="35" size="900,30" font="Regular;22" transparent="1" backgroundColor="XionBackground"/>
+		<widget name="station" position="160,600" zPosition="1" itemHeight="30" size="900,40" font="Regular;22" transparent="1" backgroundColor="XionBackground"/>
 		<widget name="console" position="160,650" zPosition="1" itemHeight="30" size="900,50" font="Regular;20" transparent="1" backgroundColor="XionBackground"/>
-		<widget name="cover" zPosition="2" position="50,580" size="102,110" alphatest="blend" />
-		<ePixmap position="1100,35" zPosition="4" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" transparent="1" alphatest="on" />
+		<widget name="cover" zPosition="2" position="50,540" size="102,110" alphatest="blend" />
+		<ePixmap position="1050,20" zPosition="4" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" transparent="1" alphatest="on" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
@@ -6721,7 +6759,35 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_kp" />	
 	</screen>
-		<!-- /* EMC NoCover -->
+		<!-- Sat IP Client -->
+	<screen backgroundColor="transparent" name="SATIPClient" position="0,0" size="1280,720">
+		<widget source="vtunerList" render="Listbox" position="70,80" size="800,540" backgroundColor="XionBackground" scrollbarMode="showNever" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{"templates":
+				{"default": (58,[
+						MultiContentEntryText(pos = (20, 0), size = (280, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (50, 28), size = (240, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (210, 28), size = (240, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
+						MultiContentEntryText(pos = (370, 28), size = (240, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3),
+						MultiContentEntryText(pos = (50, 48), size = (490, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4),
+				]),
+				},
+				"fonts": [gFont("Regular", 24),gFont("Regular", 16)],
+				"itemHeight": 58
+			}
+			</convert>
+		</widget>
+		<widget source="description" render="Label" position="60,610" size="610,30" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" halign="left" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_kp" />
+	</screen>
+	<screen backgroundColor="transparent" name="SATIPTuner" position="0,0" size="1280,720">
+		<widget name="config" zPosition="2" position="50,60" size="550,50" backgroundColor="XionBackground" scrollbarMode="showNever" transparent="1" />
+		<widget source="description" render="Label" position="50,170" size="550,210" font="Regular;20" backgroundColor="XionBackground" halign="left" valign="center" />
+		<widget source="choices" render="Label" position="50,120" size="550,40" font="Regular;18" backgroundColor="XionBackground" halign="left" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_kp" />
+	</screen>		<!-- /* EMC NoCover -->
 	<screen name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Enhanced Movie Center" position="70,12" size="708,46" font="Regular2;34" foregroundColor="XionFont2" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
 		<widget name="list" position="49,102" size="755,542" itemHeight="30" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolProgressPos="50" CoolBarPos="35" CoolBarHPos="10" CoolBarSize="50,10" CoolBarSizeSa="50,10" CoolMoviePos="90" CoolMovieSize="500" CoolFolderSize="575" CoolDatePos="595" CoolDateWidth="105" CoolPiconPos="90" CoolPiconHPos="2" CoolPiconWidth="45" CoolPiconHeight="26" CoolMoviePiconPos="140" CoolMoviePiconSize="450" CoolTitleColor="1" CoolDateColor="1" CoolHighlightColor="0" DefaultColor="XionFont1" UnwatchedColor="XionFont1" WatchingColor="XionFont2" FinishedColor="green" RecordingColor="red" BackColor="XionBackground" BackColorSel="XionSelection" FrontColorSel="XionSelFont" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionFont1" scrollbarMode="showNever" transparent="1" />
