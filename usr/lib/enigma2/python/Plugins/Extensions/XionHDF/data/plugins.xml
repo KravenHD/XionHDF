@@ -1343,7 +1343,7 @@
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" name="rec_txt" position="70,80" size="708,27" transparent="1" valign="center" zPosition="2" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" name="rec_txt2" position="70,80" size="708,27" transparent="1" valign="center" zPosition="3" />
-		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" source="streamlist" render="Listbox" font="Regular;22" itemHight="45" position="70,110" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" size="708,390" transparent="1" zPosition="2">
+		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" source="streamlist" render="Listbox" font="Regular;22" itemHeight="45" position="70,110" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" size="708,390" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent" transparent="0">
 			{"templates": 
                                {"default": (30,[
@@ -2622,4 +2622,10 @@
 		<widget source="choices" render="Label" position="50,120" size="550,40" font="Regular;18" backgroundColor="XionBackground" halign="left" valign="center" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_kp" />
+	</screen>
+		<!-- LED Display Setup -->
+	<screen name="VFD_INISetup" position="0,0" size="1280,720" flags="wfNoBorder" title="LED Display Setup" backgroundColor="transparent">
+		<widget name="config" position="70,80" size="708,540" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" font="Regular; 20" backgroundColor="XionBackground" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text" />
 	</screen>
