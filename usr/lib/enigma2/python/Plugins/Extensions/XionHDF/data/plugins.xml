@@ -2629,3 +2629,13 @@
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
+		<!-- VFDSkinSelector -->
+	<screen name="VFDSkinSelector" position="0,0" size="1280,720" flags="wfNoBorder" title="VFD Skin-Selector" backgroundColor="transparent">
+		<eLabel text="Select skin:" position="50,80" size="250,26" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" halign="left" />
+		<eLabel text="Preview:" position="380,80" size="250,26" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" halign="left" />
+		<widget name="SkinList" render="Listbox" position="50,120" size="270,400" itemHeight="30" font="Regular; 20" zPosition="1" backgroundColor="XionBackground" enableWrapAround="1" scrollbarMode="showOnDemand" />
+		<widget name="Preview" position="380,120" size="480,410" zPosition="1" backgroundColor="XionBackground" transparent="1" alphatest="on" />
+		<eLabel text="Select your skin and press OK to activate the selected skin" position="0,607" halign="center" size="700,26" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text" />
+		</screen>
