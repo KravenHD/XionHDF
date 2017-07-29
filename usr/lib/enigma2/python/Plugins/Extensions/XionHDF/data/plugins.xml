@@ -2628,7 +2628,7 @@
 		<widget name="config" position="70,80" size="708,540" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" font="Regular; 20" backgroundColor="XionBackground" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
-	</screen>
+	</screen>		
 		<!-- VFDSkinSelector -->
 	<screen name="VFDSkinSelector" position="0,0" size="1280,720" flags="wfNoBorder" title="VFD Skin-Selector" backgroundColor="transparent">
 		<eLabel text="Select skin:" position="50,80" size="250,26" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" halign="left" />
@@ -2638,4 +2638,26 @@
 		<eLabel text="Select your skin and press OK to activate the selected skin" position="0,607" halign="center" size="700,26" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
-		</screen>
+	</screen>
+		<!-- IPTV Player -->	
+	<screen name="IPTVPlayerWidget" position="center,center" size="1090,525" title="IPTV Player">
+        <ePixmap position="5,495" zPosition="4" size="30,30" pixmap="XionHDF/buttons/key_red.png" transparent="1" alphatest="on" />
+        <ePixmap position="230,495" zPosition="4" size="30,30" pixmap="XionHDF/buttons/key_green.png" transparent="1" alphatest="on" />
+        <ePixmap position="480,495" zPosition="4" size="30,30" pixmap="XionHDF/buttons/key_yellow.png" transparent="1" alphatest="on" />
+        <ePixmap position="730,495" zPosition="4" size="30,30" pixmap="XionHDF/buttons/key_blue.png" transparent="1" alphatest="on" />
+        <widget render="Label" source="key_red"    position="35,495"  size="210,27" zPosition="5" valign="center" halign="left" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+        <widget render="Label" source="key_green"  position="260,495" size="210,27" zPosition="5" valign="center" halign="left" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+        <widget render="Label" source="key_yellow" position="510,495" size="210,27" zPosition="5" valign="center" halign="left" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+        <widget render="Label" source="key_blue"   position="760,495" size="210,27" zPosition="5" valign="center" halign="left" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+        <widget name="list" position="372,5" zPosition="2" size="693,280" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" backgroundColor="#00000000" />
+        <widget name="console" position="5,295" zPosition="1" size="1080,188" font="Regular;18" transparent="1" backgroundColor="#00000000" />
+        <widget name="cover" zPosition="2" position="5,10" size="360,270" alphatest="blend" />     
+        <widget name="playerlogo" zPosition="1" position="964,485" size="120,40" alphatest="blend" />
+        <ePixmap zPosition="4" position="5,290" size="1080,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/icons/line.png" transparent="1" />
+        <widget name="sequencer" position="0,0" zPosition="6" size="1090,525" font="Regular;160" halign="center" valign="center" transparent="1" backgroundColor="#00000000" />        
+        <widget name="spinner"   zPosition="2" position="689,300" size="16,16" transparent="1" alphatest="blend" />
+        <widget name="spinner_1" zPosition="1" position="689,300" size="16,16" transparent="1" alphatest="blend" />
+        <widget name="spinner_2" zPosition="1" position="705,300" size="16,16" transparent="1" alphatest="blend" />
+        <widget name="spinner_3" zPosition="1" position="721,300" size="16,16" transparent="1" alphatest="blend" />
+        <widget name="spinner_4" zPosition="1" position="737,300" size="16,16" transparent="1" alphatest="blend" />
+	</screen>	
