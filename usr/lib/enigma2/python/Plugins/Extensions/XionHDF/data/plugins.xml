@@ -4,7 +4,7 @@
 		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
 		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
 		<widget name="config" position="70,75" size="708,580" itemHeight="27" font="Regular;22" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00000000" />
-		<eLabel position="70,12" size="708,46" text="XionHDF - Configuration tool" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+		<eLabel position="70,12" size="708,46" text="XionHDF" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
 		<eLabel position="847,200" size="368,2" backgroundColor="#00ffffff" />
 		<eLabel position="847,409" size="368,2" backgroundColor="#00ffffff" />
 		<eLabel position="845,200" size="2,211" backgroundColor="#00ffffff" />
