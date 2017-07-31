@@ -2653,7 +2653,7 @@
         <widget name="console" position="25,395" zPosition="1" size="1250,290" font="Regular;20" transparent="1" backgroundColor="#00000000" />
         <widget name="cover" zPosition="2" position="25,10" size="340,340" alphatest="blend" />     
         <widget name="playerlogo" zPosition="1" position="1150,675" size="120,40" alphatest="blend" />
-        <ePixmap zPosition="4" position="25,390" size="1290,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/icons/line.png" transparent="1" />
+		<ePixmap zPosition="4" position="25,390" size="1290,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/icons/line.png" transparent="1" />
 		<widget name="spinner" zPosition="2" position="158,360" size="16,16" transparent="1" alphatest="blend" />
 		<widget name="spinner_1" zPosition="1" position="158,360" size="16,16" transparent="1" alphatest="blend" />
 		<widget name="spinner_2" zPosition="1" position="174,360" size="16,16" transparent="1" alphatest="blend" />
