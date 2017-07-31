@@ -1092,18 +1092,18 @@
 		<panel name="template_menu_left_button" />
 	</screen>
 	<screen name="HistoryZapSelector" position="0,0" size="1280,720" title="History Zap" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="menu" render="Listbox" position="70,120" size="708,500" backgroundColor="XionBackground" transparent="1">
+		<widget source="menu" render="Listbox" position="10,120" size="850,480" backgroundColor="XionBackground" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (60, 10), size = (10, 20), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-						MultiContentEntryText(pos = (80, 0), size = (260, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2),
-						MultiContentEntryText(pos = (350, 5), size = (270, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
-						MultiContentEntryText(pos = (80, 25), size = (180, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5),
-						MultiContentEntryText(pos = (270, 25), size = (510, 17), font = 3, flags = RT_HALIGN_LEFT, text = 4),
-						MultiContentEntryPixmapAlphaBlend(pos = (0, 6), size = (50, 30), png=6, flags = BT_SCALE)
+						MultiContentEntryText(pos = (80, 0), size = (260, 23), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2),
+						MultiContentEntryText(pos = (320, 0), size = (500, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
+						MultiContentEntryText(pos = (80, 25), size = (180, 19), font = 3, flags = RT_HALIGN_LEFT, text = 5),
+						MultiContentEntryText(pos = (320, 25), size = (500, 19), font = 3, flags = RT_HALIGN_LEFT, text = 4),
+						MultiContentEntryPixmapAlphaBlend(pos = (5, 10), size = (50, 30), png=6, flags = BT_SCALE)
 					],
 				 "fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
-				 "itemHeight": 45
+				 "itemHeight": 60
 				}
 			</convert>
 		</widget>
@@ -2750,7 +2750,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- PluginDownloadBrowser -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PluginDownloadBrowser" position="0,0" size="1280,720" title="Downloadable plugins">
-		<widget backgroundColor="XionBackground" name="list" position="70,80" size="708,550" transparent="1" zPosition="4" />
+		<widget backgroundColor="XionBackground" name="list" position="70,80" size="728,552" transparent="1" zPosition="4" />
 		<widget font="Regular2;22" backgroundColor="XionBackground" foregroundColor="XionFont2" halign="center" name="text" position="70,662" size="708,48" transparent="1" valign="center" zPosition="1" />
 		<panel name="template_menu_left" />
 	</screen>
@@ -3975,28 +3975,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left_right_button" />
 		<panel name="template_colorkey_text_kp" />
 	</screen>
-		<!-- IPTV Player -->	
-	<screen name="IPTVPlayerWidget" position="center,center" size="1090,525" title="IPTV Player">
-        <ePixmap position="5,495" zPosition="4" size="30,30" pixmap="XionHDF/buttons/key_red.png" transparent="1" alphatest="on" />
-        <ePixmap position="230,495" zPosition="4" size="30,30" pixmap="XionHDF/buttons/key_green.png" transparent="1" alphatest="on" />
-        <ePixmap position="480,495" zPosition="4" size="30,30" pixmap="XionHDF/buttons/key_yellow.png" transparent="1" alphatest="on" />
-        <ePixmap position="730,495" zPosition="4" size="30,30" pixmap="XionHDF/buttons/key_blue.png" transparent="1" alphatest="on" />
-        <widget render="Label" source="key_red"    position="35,495"  size="210,27" zPosition="5" valign="center" halign="left" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-        <widget render="Label" source="key_green"  position="260,495" size="210,27" zPosition="5" valign="center" halign="left" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-        <widget render="Label" source="key_yellow" position="510,495" size="210,27" zPosition="5" valign="center" halign="left" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-        <widget render="Label" source="key_blue"   position="760,495" size="210,27" zPosition="5" valign="center" halign="left" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
-        <widget name="list" position="372,5" zPosition="2" size="693,280" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" backgroundColor="#00000000" />
-        <widget name="console" position="5,295" zPosition="1" size="1080,188" font="Regular;18" transparent="1" backgroundColor="#00000000" />
-        <widget name="cover" zPosition="2" position="5,10" size="360,270" alphatest="blend" />     
-        <widget name="playerlogo" zPosition="1" position="964,485" size="120,40" alphatest="blend" />
-        <ePixmap zPosition="4" position="5,290" size="1080,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/icons/line.png" transparent="1" />
-        <widget name="sequencer" position="0,0" zPosition="6" size="1090,525" font="Regular;160" halign="center" valign="center" transparent="1" backgroundColor="#00000000" />        
-        <widget name="spinner"   zPosition="2" position="689,300" size="16,16" transparent="1" alphatest="blend" />
-        <widget name="spinner_1" zPosition="1" position="689,300" size="16,16" transparent="1" alphatest="blend" />
-        <widget name="spinner_2" zPosition="1" position="705,300" size="16,16" transparent="1" alphatest="blend" />
-        <widget name="spinner_3" zPosition="1" position="721,300" size="16,16" transparent="1" alphatest="blend" />
-        <widget name="spinner_4" zPosition="1" position="737,300" size="16,16" transparent="1" alphatest="blend" />
-	</screen>	
 		<!-- HFD Toolbox -->
 	<screen name="Fantastic" position="0,0" size="1280,720" title="HDF Toolbox" backgroundColor="transparent">
 		<widget name="menu" position="70,165" size="510,469" itemHeight="28" font="Regular;22" scrollbarMode="showNever" transparent="1" />
@@ -4191,7 +4169,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<eLabel font="Regular;20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
 		<eLabel font="Regular;20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
 		<widget name="config" position="70,75" size="708,580" itemHeight="27" font="Regular;22" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="1" backgroundColor="#00000000" />
-		<eLabel position="70,12" size="708,46" text="XionHDF - Configuration tool" font="Regular;34" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+		<eLabel position="70,12" size="708,46" text="XionHDF" font="Regular;34" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
 		<eLabel position="847,200" size="368,2" backgroundColor="#00ffffff" />
 		<eLabel position="847,409" size="368,2" backgroundColor="#00ffffff" />
 		<eLabel position="845,200" size="2,211" backgroundColor="#00ffffff" />
@@ -5530,7 +5508,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="left" valign="center" noWrap="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" name="rec_txt" position="70,80" size="708,27" transparent="1" valign="center" zPosition="2" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" name="rec_txt2" position="70,80" size="708,27" transparent="1" valign="center" zPosition="3" />
-		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" source="streamlist" render="Listbox" font="Regular;22" itemHight="45" position="70,110" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" size="708,390" transparent="1" zPosition="2">
+		<widget backgroundColor="XionBackground" foregroundColor="XionFont1" source="streamlist" render="Listbox" font="Regular;22" itemHeight="45" position="70,110" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" size="708,390" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent" transparent="0">
 			{"templates": 
                                {"default": (30,[
@@ -6809,7 +6787,45 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="choices" render="Label" position="50,120" size="550,40" font="Regular;18" backgroundColor="XionBackground" halign="left" valign="center" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_kp" />
-	</screen>		<!-- /* EMC NoCover -->
+	</screen>
+		<!-- LED Display Setup -->
+	<screen name="VFD_INISetup" position="0,0" size="1280,720" flags="wfNoBorder" title="LED Display Setup" backgroundColor="transparent">
+		<widget name="config" position="70,80" size="708,540" itemHeight="30" scrollbarMode="showNever" enableWrapAround="1" transparent="1" font="Regular;20" backgroundColor="XionBackground" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text" />
+	</screen>		
+		<!-- VFDSkinSelector -->
+	<screen name="VFDSkinSelector" position="0,0" size="1280,720" flags="wfNoBorder" title="VFD Skin-Selector" backgroundColor="transparent">
+		<eLabel text="Select skin:" position="50,80" size="250,26" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" halign="left" />
+		<eLabel text="Preview:" position="380,80" size="250,26" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" halign="left" />
+		<widget name="SkinList" render="Listbox" position="50,120" size="270,400" itemHeight="30" font="Regular;20" zPosition="1" backgroundColor="XionBackground" enableWrapAround="1" scrollbarMode="showNever" />
+		<widget name="Preview" position="380,120" size="480,410" zPosition="1" backgroundColor="XionBackground" transparent="1" alphatest="on" />
+		<eLabel text="Select your skin and press OK to activate the selected skin" position="0,607" halign="center" size="700,26" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text" />
+	</screen>
+		<!-- IPTV Player -->
+	<screen name="IPTVPlayerWidget" position="center,center" size="1280,720" title="IPTV Player">
+        <ePixmap position="5,685" zPosition="4" size="30,30" pixmap="XionHDF/buttons/key_red.png" transparent="1" alphatest="on" />
+        <ePixmap position="230,685" zPosition="4" size="30,30" pixmap="XionHDF/buttons/key_green.png" transparent="1" alphatest="on" />
+        <ePixmap position="480,685" zPosition="4" size="30,30" pixmap="XionHDF/buttons/key_yellow.png" transparent="1" alphatest="on" />
+        <ePixmap position="730,685" zPosition="4" size="30,30" pixmap="XionHDF/buttons/key_blue.png" transparent="1" alphatest="on" />
+        <widget render="Label" source="key_red"    position="40,685"  size="210,27" zPosition="5" valign="center" halign="left" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+        <widget render="Label" source="key_green"  position="265,685" size="210,27" zPosition="5" valign="center" halign="left" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+        <widget render="Label" source="key_yellow" position="515,685" size="210,27" zPosition="5" valign="center" halign="left" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+        <widget render="Label" source="key_blue"   position="765,685" size="210,27" zPosition="5" valign="center" halign="left" backgroundColor="black" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
+        <widget name="list" position="375,5" zPosition="2" size="890,380" scrollbarMode="showAlways" enableWrapAround="1" transparent="1" backgroundColor="#00000000" />
+        <widget name="console" position="25,395" zPosition="1" size="1250,290" font="Regular;20" transparent="1" backgroundColor="#00000000" />
+        <widget name="cover" zPosition="2" position="25,10" size="340,340" alphatest="blend" />     
+        <widget name="playerlogo" zPosition="1" position="1150,675" size="120,40" alphatest="blend" />
+        <ePixmap zPosition="4" position="25,390" size="1290,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/icons/line.png" transparent="1" />
+		<widget name="spinner" zPosition="2" position="158,360" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="spinner_1" zPosition="1" position="158,360" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="spinner_2" zPosition="1" position="174,360" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="spinner_3" zPosition="1" position="190,360" size="16,16" transparent="1" alphatest="blend" />
+		<widget name="spinner_4" zPosition="1" position="206,360" size="16,16" transparent="1" alphatest="blend" />
+	</screen>
+			<!-- /* EMC NoCover -->
 	<screen name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Enhanced Movie Center" position="70,12" size="708,46" font="Regular2;34" foregroundColor="XionFont2" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
 		<widget name="list" position="49,102" size="755,542" itemHeight="30" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolProgressPos="50" CoolBarPos="35" CoolBarHPos="10" CoolBarSize="50,10" CoolBarSizeSa="50,10" CoolMoviePos="90" CoolMovieSize="500" CoolFolderSize="575" CoolDatePos="595" CoolDateWidth="105" CoolPiconPos="90" CoolPiconHPos="2" CoolPiconWidth="45" CoolPiconHeight="26" CoolMoviePiconPos="140" CoolMoviePiconSize="450" CoolTitleColor="1" CoolDateColor="1" CoolHighlightColor="0" DefaultColor="XionFont1" UnwatchedColor="XionFont1" WatchingColor="XionFont2" FinishedColor="green" RecordingColor="red" BackColor="XionBackground" BackColorSel="XionSelection" FrontColorSel="XionSelFont" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionFont1" scrollbarMode="showNever" transparent="1" />
