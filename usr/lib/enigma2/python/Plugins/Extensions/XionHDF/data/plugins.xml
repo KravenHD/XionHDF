@@ -2641,8 +2641,8 @@
 	</screen>
 		<!-- IPTV Player -->
 	<screen name="IPTVPlayerWidget" position="0,0" size="1280,720" title="IPTV Player" backgroundColor="transparent">
-        <widget name="list" position="380,80" zPosition="2" size="890,350" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" backgroundColor="#00000000" />
-		<widget name="console" position="25,450" zPosition="1" size="1250,205" font="Regular;19" transparent="1" backgroundColor="#00000000" />
+		<widget name="list" position="380,80" zPosition="2" size="890,350" foregroundColor="XionFont1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" backgroundColor="XionBackground" />
+		<widget name="console" position="25,450" zPosition="1" size="1250,205" foregroundColor="XionFont1" font="Regular;19" transparent="1" backgroundColor="XionBackground" />
 		<widget name="cover" zPosition="2" position="25,80" size="330,330" alphatest="blend" />     
 		<widget name="playerlogo" zPosition="1" position="1150,670" size="120,40" alphatest="blend" />
 		<eLabel backgroundColor="XionLine" position="0,440" size="1280,2" zPosition="2" />
