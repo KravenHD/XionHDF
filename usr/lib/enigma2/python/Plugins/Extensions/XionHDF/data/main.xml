@@ -78,7 +78,7 @@
             </convert>
         </widget>
         <panel name="template_menu_left_button" />
-        <panel name="template_colorkey_text_kp" />
+		<panel name="template_colorkey_text" />
     </screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="LEDBrightnessSetup" position="0,0" size="1280,720" title="LED Brightness Setup">
 		<widget name="config" position="70,120" size="708,455" transparent="1" zPosition="2" foregroundColor="XionFont1" />
