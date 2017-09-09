@@ -1140,7 +1140,7 @@
             </convert>
         </widget>
         <panel name="template_menu_left_button" />
-        <panel name="template_colorkey_text_kp" />
+		<panel name="template_colorkey_text" />
     </screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="LEDBrightnessSetup" position="0,0" size="1280,720" title="LED Brightness Setup">
 		<widget name="config" position="70,120" size="708,455" transparent="1" zPosition="2" foregroundColor="XionFont1" />
@@ -2934,10 +2934,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- ********** Audio and Video  ********** -->
-		<!-- VideoFinetune -->
-	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1280,720">
-		<widget position="6,6" render="Canvas" itemHeight="30" font="Regular;22" size="1280,720" source="Canvas" />
-	</screen>
 		<!-- 3D AutoSwitch -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ThreeDSettings" position="0,0" size="1280,720" title="AutoSwitch 3D">
 		<widget name="config" itemHeight="30" font="Regular;22" position="70,80" size="708,540" transparent="1" zPosition="2" />
@@ -4129,7 +4125,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="config" render="Label" position="10,120" size="630,120" halign="center" itemHeight="30" font="Regular;28" enableWrapAround="1" backgroundColor="XionBackground" foregroundColor="XionFont1" />
 		<widget source="options" render="Label" position="10,172" size="630,35" halign="center" font="Regular;24" backgroundColor="XionBackground" />
 		<widget name="description" position="10,250" size="630,26" font="Regular;19" foregroundColor="#00ffffff" halign="center" backgroundColor="XionBackground" valign="center" />
-		<ePixmap position="610,245" size="35,25" zPosition="2" pixmap="/usr/share/enigma2/skin_default/buttons/key_info.png" alphatest="blend" />
+		<ePixmap position="630,245" size="35,25" zPosition="2" pixmap="/usr/share/enigma2/skin_default/buttons/key_info.png" alphatest="blend" />
 		<eLabel text="Press left/right to select Image" backgroundColor="Xionbackground" font="Regular;16" foregroundColor="XionButtonText" halign="center" position="10,450" size="580,30" transparent="1" zPosition="3" />
 		<eLabel text="Press up/down to select Bootoption (Standard/Experimental)" backgroundColor="Xionbackground" font="Regular;16" foregroundColor="XionButtonText" halign="center" position="10,470" size="580,30" transparent="1" zPosition="3" />
 		<panel name="template_colorkey_text_source" />
@@ -6806,7 +6802,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- IPTV Player -->
 	<screen name="IPTVPlayerWidget" position="0,0" size="1280,720" title="IPTV Player" backgroundColor="transparent">
-		<widget name="list" position="380,80" zPosition="2" size="890,350" foregroundColor="XionFont1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" backgroundColor="XionBackground" />
+		<widget name="list" position="380,80" zPosition="2" size="890,350" foregroundColor="XionFont1" scrollbarMode="showNever" enableWrapAround="1" transparent="1" backgroundColor="XionBackground" />
 		<widget name="console" position="25,450" zPosition="1" size="1250,205" foregroundColor="XionFont1" font="Regular;19" transparent="1" backgroundColor="XionBackground" />
 		<widget name="cover" zPosition="2" position="25,80" size="330,330" alphatest="blend" />     
 		<widget name="playerlogo" zPosition="1" position="1150,670" size="120,40" alphatest="blend" />
@@ -6819,10 +6815,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left_right_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
-			<!-- /* EMC NoCover -->
+		<!-- /* EMC SmallCover -->
 	<screen name="EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="transparent">
 		<eLabel text="Enhanced Movie Center" position="70,12" size="708,46" font="Regular2;34" foregroundColor="XionFont2" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
-		<widget name="list" position="49,102" size="755,542" itemHeight="30" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolProgressPos="50" CoolBarPos="35" CoolBarHPos="10" CoolBarSize="50,10" CoolBarSizeSa="50,10" CoolMoviePos="90" CoolMovieSize="500" CoolFolderSize="575" CoolDatePos="595" CoolDateWidth="105" CoolPiconPos="90" CoolPiconHPos="2" CoolPiconWidth="45" CoolPiconHeight="26" CoolMoviePiconPos="140" CoolMoviePiconSize="450" CoolTitleColor="1" CoolDateColor="1" CoolHighlightColor="0" DefaultColor="XionFont1" UnwatchedColor="XionFont1" WatchingColor="XionFont2" FinishedColor="green" RecordingColor="red" BackColor="XionBackground" BackColorSel="XionSelection" FrontColorSel="XionSelFont" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionFont1" scrollbarMode="showNever" transparent="1" />
+		<widget name="list" position="49,102" size="755,512" itemHeight="30" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolProgressPos="50" CoolBarPos="35" CoolBarHPos="10" CoolBarSize="50,10" CoolBarSizeSa="50,10" CoolMoviePos="90" CoolMovieSize="500" CoolFolderSize="575" CoolDatePos="595" CoolDateWidth="105" CoolPiconPos="90" CoolPiconHPos="2" CoolPiconWidth="45" CoolPiconHeight="26" CoolMoviePiconPos="140" CoolMoviePiconSize="450" CoolTitleColor="1" CoolDateColor="1" CoolHighlightColor="0" DefaultColor="XionFont1" UnwatchedColor="XionFont1" WatchingColor="XionFont2" FinishedColor="green" RecordingColor="red" BackColor="XionBackground" BackColorSel="XionSelection" FrontColorSel="XionSelFont" backgroundColorSelected="XionSelection" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionFont1" scrollbarMode="showNever" transparent="1" />
 		<widget source="Service" render="Label" position="49,70" size="541,28" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" valign="center" halign="left">
 			<convert type="XionHDFDiskSpace">path</convert>
 		</widget>
@@ -6833,16 +6829,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="XionHDFDiskSpace">size</convert>
 		</widget>
 		<widget name="wait" position="44,303" size="1198,50" zPosition="1" font="Regular;32" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" halign="center" valign="center" />
-		<widget source="Service" render="Label" position="887,52" wrap="1" size="379,58" font="Regular;24" halign="center" backgroundColor="XionBackground" transparent="1">
+		<widget source="Service" render="Label" position="887,52" wrap="1" size="269,58" font="Regular;24" halign="center" backgroundColor="XionBackground" transparent="1">
 			<convert type="EMCEventName">Name</convert>
 		</widget>
-		<widget source="Service" render="Label" position="888,155" size="379,40" font="Regular;22" halign="center" backgroundColor="XionBackground" transparent="1">
+		<widget source="Service" render="Label" position="888,163" size="269,40" font="Regular;22" halign="center" backgroundColor="XionBackground" transparent="1">
 			<convert type="EMCMovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget source="Service" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="888,220" size="379,428" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" halign="center" valign="top">
+		<widget source="Service" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="888,219" size="379,429" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" halign="center" valign="top">
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
-		<widget source="Service" render="Label" position="888,118" size="379,30" font="Regular2;21" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
+		<widget source="Service" render="Label" position="888,123" size="269,30" font="Regular2;21" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont2" transparent="1">
 			<convert type="EMCServiceTime">StartTime</convert>
 			<convert type="EMCClockToText">Date</convert>
 		</widget>
@@ -6853,11 +6849,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="EMCServiceTime">Duration</convert>
 			<convert type="EMCClockToText">InMinutes</convert>
 		</widget>
+		<widget name="Cover" position="1167,52" size="100,151" zPosition="4" backgroundColor="XionBackground" alphatest="on" transparent="0" />
 		<panel name="template_emc2" />
 		<panel name="template_colorkey_text" />
 	</screen>
-		<!-- EMC NoCover */-->
-		<!-- MovieSelection NoCover -->
+		<!-- EMC SmallCover */-->
+		<!-- MovieSelection SmallCover -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="MovieSelection" position="0,0" size="1280,720" title="MovieSelection">
 		<widget name="waitingtext" position="0,0" size="0,0" />
 		<eLabel text="MovieSelection" position="70,12" size="708,46" font="Regular2;34" foregroundColor="XionFont2" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
@@ -6866,7 +6863,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="Service" render="Label" position="70,100" size="708,28" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" valign="center" halign="left">
 			<convert type="XionHDFDiskSpace">path</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular2;30" foregroundColor="XionFont2" position="888,78" render="Label" size="377,80" source="Service" transparent="1" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular2;30" foregroundColor="XionFont2" position="888,89" render="Label" size="270,80" source="Service" transparent="1" zPosition="1">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2;17" foregroundColor="XionFont2" halign="left" position="888,671" render="Label" size="70,24" source="Service" transparent="1" zPosition="1">
@@ -6879,11 +6876,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" font="Regular2;17" foregroundColor="XionFont2" halign="right" position="1165,671" render="Label" size="100,24" source="Service" transparent="1" zPosition="1">
 			<convert type="MovieInfo">FileSize</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular;19" foregroundColor="XionFont1" position="888,168" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=2000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" size="377,478" source="Service" transparent="1" valign="top">
+		<widget backgroundColor="XionBackground" font="Regular;19" foregroundColor="XionFont1" position="888,219" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=2000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" size="377,428" source="Service" transparent="1" valign="top">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" foregroundColor="XionFont2" />
-		<eLabel backgroundColor="XionLine" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="XionLine" position="18,64" size="816,2" zPosition="2" />
 		<eLabel backgroundColor="XionLine" position="0,656" size="1280,2" zPosition="2" />
 		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
@@ -6892,6 +6889,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont1">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
+		<widget source="Service" render="XionHDFCover" position="1165,52" size="100,151" zPosition="4" backgroundColor="XionBackgroundRight" alphatest="on" transparent="1" />
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- skin-end -->
