@@ -1872,10 +1872,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- ********** Audio and Video  ********** -->
-		<!-- VideoFinetune -->
-	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1280,720">
-		<widget position="6,6" render="Canvas" itemHeight="30" font="Regular;22" size="1280,720" source="Canvas" />
-	</screen>
 		<!-- 3D AutoSwitch -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ThreeDSettings" position="0,0" size="1280,720" title="AutoSwitch 3D">
 		<widget name="config" itemHeight="30" font="Regular;22" position="70,80" size="708,540" transparent="1" zPosition="2" />
