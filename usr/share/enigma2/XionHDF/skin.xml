@@ -6872,5 +6872,4 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="Service" render="XionHDFCover" position="1165,52" size="100,151" zPosition="4" backgroundColor="XionBackgroundRight" alphatest="on" transparent="1" />
 		<panel name="template_colorkey_text" />
 	</screen>
-		<!-- skin-end -->
 </skin>
