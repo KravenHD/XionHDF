@@ -1427,7 +1427,7 @@
 		<widget name="labrun" position="460,80" size="100,24" font="Regular;20" foregroundColor="XionFont1" valign="center" halign="center" backgroundColor="green" zPosition="2" />
 		<widget name="labstop" position="460,80" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="lab2" position="320,80" size="150,24" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" valign="center" transparent="1" />
-		<widget name="key" position="70,605" size="503,25" font="Regular;20" halign="center" valign="center" backgroundColor="XionBackground" />
+		<widget name="key" position="70,605" size="553,25" font="Regular;20" halign="center" valign="center" backgroundColor="XionBackground" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
