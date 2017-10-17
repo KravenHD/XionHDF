@@ -1537,6 +1537,58 @@
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
+		<!-- YouTubeMain -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="YouTubeMain" position="0,0" size="1280,720" title="YouTube">
+		<widget source="list" render="Listbox" position="70,80" size="708,540" itemHeight="110" backgroundColor="XionBackground" transparent="1" alphatest="on">
+			<convert type="TemplatedMultiContent" >
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos=(0,0), size=(100,72), png=2), # Thumbnail
+					MultiContentEntryText(pos=(110,0), size=(575,52), \
+						font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
+					MultiContentEntryText(pos=(120, 52), size=(200,22), \
+						font=1, flags=RT_HALIGN_LEFT, text=4), # Views
+					MultiContentEntryText(pos=(360,52), size=(200,22), \
+						font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
+					],
+				"fonts": [gFont("Regular",20), gFont("Regular",13)],
+				"itemHeight": 110}
+			</convert>
+		</widget>
+		<widget name="thumbnail" position="0,0" backgroundColor="XionBackground" itemHeight="110" transparent="1" alphatest="on" size="100,72" />
+		<panel name="template_menu_left" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_menu_left_button" />
+	</screen>
+		<!-- YouTubeSearch -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="YouTubeSearch" position="0,0" size="1280,720" title="YouTubeSearch">
+		<widget name="config" position="70,430" size="708,45" zPosition="2" scrollbarMode="showNever" itemHeight="35" font="Regular;22" />
+		<widget source="list" render="Listbox" position="70,80" size="708,540" backgroundColor="XionBackground" transparent="1">
+			<convert type="TemplatedMultiContent" >
+				{"template": [MultiContentEntryText(pos=(15,1), size=(870,45), \
+					font=0, flags=RT_HALIGN_LEFT, text=0)],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 45}
+			</convert>
+		</widget>
+		<widget name="HelpWindow" position="120,500" size="100,100" zPosition="1" pixmap="skin_default/vkey_icon.png" transparent="1" alphatest="on" />
+		<panel name="template_menu_left" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_menu_left_button" />
+	</screen>
+		<!-- YouTubeInfo -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="YouTubeInfo" position="0,0" size="1280,720" title="YouTubeInfo">
+		<widget name="title" position="center,13" backgroundColor="XionBackground" size="800,60" halign="center" font="Regular;24" />
+		<widget name="pic" position="20,80" size="320,180" transparent="1" alphatest="on" />
+		<widget name="description" position="360,80" size="500,500" transparent="1" alphatest="on" font="Regular;20" />
+		<widget name="views" position="30,270" size="150,20" transparent="1" alphatest="on" font="Regular;16" />
+		<widget name="duration" position="200,270" size="150,20" transparent="1" alphatest="on" font="Regular;16" />
+		<widget name="likes" position="30,300" size="150,20" transparent="1" alphatest="on" font="Regular;16" />
+		<widget name="dislikes" position="200,300" size="150,20" transparent="1" alphatest="on" font="Regular;16" />
+		<widget name="published" position="30,330" size="300,20" transparent="1" alphatest="on" font="Regular;16" />
+		<panel name="template_menu_left" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_menu_left_button" />
+	</screen>
 		<!-- WebcamViewer -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="WebcamViewer" position="0,0" size="1280,720" title="WebcamViewer">
 		<widget enableWrapAround="1" itemHeight="30" font="Regular;22" foregroundColor="XionFont1" name="menu" position="70,80" scrollbarMode="showOnDemand" size="708,540" transparent="1" />
