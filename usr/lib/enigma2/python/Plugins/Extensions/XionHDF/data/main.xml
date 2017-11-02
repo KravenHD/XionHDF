@@ -1354,8 +1354,8 @@
 		<!-- TimerEditList -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor">
 		<widget name="timerlist" rowSplit="26" iconMargin="5" satPosLeft="160" itemHeight="50" setFont="Regular;18" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" position="45,79" size="766,550" backgroundColor="XionBackground" enableWrapAround="1" transparent="1" />
-		<widget name="description" position="888,80" size="377,550" font="Regular2; 32" foregroundColor="XionFont2" halign="center" backgroundColor="XionBackground" valign="center" transparent="1" />
-		<panel name="template_menu_left_button" />
+		<widget name="description" position="888,80" size="377,550" font="Regular2; 22" foregroundColor="XionFont2" halign="center" backgroundColor="XionBackground" valign="center" transparent="1" />
+		<panel name="template_menu_left_right_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- TimerEntry -->
