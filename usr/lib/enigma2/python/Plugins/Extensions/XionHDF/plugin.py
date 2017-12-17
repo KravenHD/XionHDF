@@ -215,7 +215,7 @@ else:
    if len(mem_info) > 1:
       bmem = int(mem_info[0]) + int(mem_info[1])  
    else:
-      if getBoxType() in ('sf4008'):
+      if getBoxType() in ('sf4008', 'dinobot4k'):
          bmem = 250
       else:
          bmem = int(mem_info[0])
