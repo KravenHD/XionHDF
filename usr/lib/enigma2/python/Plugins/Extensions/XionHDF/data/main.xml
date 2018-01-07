@@ -1376,17 +1376,18 @@
 	</screen>
 		<!-- TimerSanityConflict -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimerSanityConflict" position="0,0" size="1280,720" title="Timer sanity error">
-		<widget itemHeight="30" name="list" position="70,80" size="700,90" backgroundColor="XionBackground" transparent="1" />
-		<widget name="timer1" position="45,190" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
-		<widget name="timer2" position="45,380" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
-		<ePixmap pixmap="XionHDF/buttons/key_red.png" position="70,308" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
-		<ePixmap pixmap="XionHDF/buttons/key_green.png" position="370,308" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
-		<ePixmap pixmap="XionHDF/buttons/key_yellow.png" position="70,498" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
-		<ePixmap pixmap="XionHDF/buttons/key_blue.png" position="370,498" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
-		<eLabel font="Regular;20" halign="left" valign="center" text="Edit" position="112,300" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_green" position="412,300" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="112,490" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="412,490" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget itemHeight="25" name="list" position="70,80" size="300,90" backgroundColor="XionBackground" transparent="1" />
+		<widget itemHeight="50" name="timer1" position="45,190" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
+		<eLabel backgroundColor="XionLine" position="20,380" size="820,2" zPosition="2" />
+		<widget itemHeight="50" name="timer2" position="45,400" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
+		<ePixmap pixmap="XionHDF/buttons/key_red.png" position="70,338" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_green.png" position="370,338" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_yellow.png" position="70,622" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_blue.png" position="370,622" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<eLabel font="Regular;20" halign="left" valign="center" text="Edit" position="110,325" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_green" position="410,325" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_yellow" position="110,610" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" name="key_blue" position="410,610" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- TimerSelection -->
