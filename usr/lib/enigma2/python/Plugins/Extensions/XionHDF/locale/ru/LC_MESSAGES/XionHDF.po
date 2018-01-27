@@ -1,0 +1,694 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Kraven <kravenhd@web.de>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: XionHDF\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-06 23:16+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Sowa\n"
+"Language-Team: Sowa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "N"
+msgstr "С"
+
+msgid "N-NE"
+msgstr "С-СВ"
+
+msgid "NE"
+msgstr "СВ"
+
+msgid "E-NE"
+msgstr "В-СВ"
+
+msgid "E"
+msgstr "В"
+
+msgid "E-SE"
+msgstr "В-ЮВ"
+
+msgid "SE"
+msgstr "ЮВ"
+
+msgid "S-SE"
+msgstr "Ю-ЮВ"
+
+msgid "S"
+msgstr "В"
+
+msgid "S-SW"
+msgstr "Ю-ЮЗ"
+
+msgid "SW"
+msgstr "ЮЗ"
+
+msgid "W-SW"
+msgstr "З-ЮЗ"
+
+msgid "W"
+msgstr "З"
+
+msgid "W-NW"
+msgstr "З-СЗ"
+
+msgid "NW"
+msgstr "СЗ"
+
+msgid "N-NW"
+msgstr "С-СЗ"
+
+msgid ", feels "
+msgstr ", по ощущ."
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid " from "
+msgstr "из"
+
+msgid " km/h"
+msgstr "км/ч"
+
+msgid "Mon"
+msgstr "Пон."
+
+msgid "Tue"
+msgstr "Втор."
+
+msgid "Wed"
+msgstr "Среда"
+
+msgid "Thu"
+msgstr "Четв."
+
+msgid "Fri"
+msgstr "Пятн."
+
+msgid "Sat"
+msgstr "Суб."
+
+msgid "Sun"
+msgstr "Воск."
+
+msgid "Tornado"
+msgstr "Смерч"
+
+msgid ""
+"Tropical\n"
+" storm"
+msgstr ""
+"Тропический\n"
+" шторм"
+
+msgid "Hurricane"
+msgstr "Ураган"
+
+msgid ""
+"Severe\n"
+" thunderstorms"
+msgstr ""
+"Силные\n"
+" грозы"
+
+msgid "Thunderstorms"
+msgstr "Грозы"
+
+msgid ""
+"Mixed rain\n"
+" and snow"
+msgstr ""
+"Дождь\n"
+" со снегом"
+
+msgid ""
+"Mixed rain\n"
+" and sleet"
+msgstr ""
+"Дождь с\n"
+" мокрым снегом"
+
+msgid ""
+"Mixed snow\n"
+" and sleet"
+msgstr ""
+"Снег с\n"
+" дождем"
+
+msgid ""
+"Freezing\n"
+" drizzle"
+msgstr ""
+"Заморозки\n"
+" с дождем"
+
+msgid "Drizzle"
+msgstr "Изморось"
+
+msgid ""
+"Freezing\n"
+" rain"
+msgstr ""
+"Гололёд\n"
+" с дождем"
+
+msgid "Showers"
+msgstr "Ливень"
+
+msgid "Rain"
+msgstr "Дождь"
+
+msgid ""
+"Snow\n"
+" flurries"
+msgstr "Поземка"
+
+msgid ""
+"Light\n"
+" snow showers"
+msgstr ""
+"Легкий\n"
+" снег"
+
+msgid ""
+"Blowing\n"
+" snow"
+msgstr "Метель"
+
+msgid "Snow"
+msgstr "Снег"
+
+msgid "Hail"
+msgstr "Град"
+
+msgid "Sleet"
+msgstr "Мокрый снег"
+
+msgid "Dust"
+msgstr "Пыль"
+
+msgid "Foggy"
+msgstr "Туманно"
+
+msgid "Haze"
+msgstr "Туман"
+
+msgid "Smoky"
+msgstr "Дымно"
+
+msgid "Blustery"
+msgstr ""
+"Порывистый\n"
+" ветер"
+
+msgid "Windy"
+msgstr "Ветрено"
+
+msgid "Cold"
+msgstr "Холодо"
+
+msgid "Cloudy"
+msgstr "Облачно"
+
+msgid ""
+"Mostly\n"
+" cloudy"
+msgstr ""
+"В основном\n"
+" облачно"
+
+msgid ""
+"Partly\n"
+" cloudy"
+msgstr ""
+"Местами\n"
+" облачно"
+
+msgid "Clear"
+msgstr "Ясно"
+
+msgid "Sunny"
+msgstr "Солнечно"
+
+msgid "Fair"
+msgstr "Безоблачно"
+
+msgid ""
+"Mixed rain\n"
+" and hail"
+msgstr ""
+"Дождь\n"
+"с градом"
+
+msgid "Hot"
+msgstr "Жарко"
+
+msgid ""
+"Isolated\n"
+" thunderstorms"
+msgstr ""
+"Местами\n"
+" грозы"
+
+msgid ""
+"Scattered\n"
+" thunderstorms"
+msgstr ""
+"Редкие \n"
+"грозы"
+
+msgid ""
+"Scattered\n"
+" showers"
+msgstr ""
+"Местами\n"
+"дожди"
+
+msgid "Heavy snow"
+msgstr "Снегопад"
+
+msgid ""
+"Scattered\n"
+" snow showers"
+msgstr ""
+"Редкие\n"
+"дожди"
+
+msgid "Thundershowers"
+msgstr ""
+"Грозовые\n"
+"ливни"
+
+msgid "Snow showers"
+msgstr "Снегопад"
+
+msgid ""
+"Isolated\n"
+" thundershowers"
+msgstr ""
+"Местами\n"
+" грозы"
+
+msgid "% humidity"
+msgstr "% влажности"
+
+msgid ""
+"Not\n"
+" available"
+msgstr "Не доступно"
+
+msgid "openHDF"
+msgstr "openHDF"
+
+msgid "Zero"
+msgstr "Ноль"
+
+msgid "with Border"
+msgstr "с границей"
+
+msgid "left"
+msgstr "слева"
+
+msgid "right"
+msgstr "справа"
+
+msgid "top"
+msgstr "Вверху"
+
+msgid "center"
+msgstr "по центру"
+
+msgid "Lower"
+msgstr "мало"
+
+msgid "Low"
+msgstr "30%"
+
+msgid "Middle"
+msgstr "50%"
+
+msgid "Medium"
+msgstr "70%"
+
+msgid "High"
+msgstr "90%"
+
+msgid "Amber"
+msgstr "янтарный"
+
+msgid "Amber dark"
+msgstr "янтарный темный"
+
+msgid "Black"
+msgstr "Чёрный"
+
+msgid "Blue"
+msgstr "Синий"
+
+msgid "Blue dark"
+msgstr "Синий темный"
+
+msgid "Brown"
+msgstr "Коричневый"
+
+msgid "Brown dark"
+msgstr "темно коричневый"
+
+msgid "Cobalt"
+msgstr "Кобальт"
+
+msgid "Cobalt dark"
+msgstr "кобальт темный"
+
+msgid "Cyan"
+msgstr "Циан"
+
+msgid "Cyan dark"
+msgstr "Циан темный"
+
+msgid "Grey"
+msgstr "Серый"
+
+msgid "Grey dark"
+msgstr "Темно-серый"
+
+msgid "Green"
+msgstr "Зелёный"
+
+msgid "Green dark"
+msgstr "темно зеленый"
+
+msgid "Neon green"
+msgstr "Неоновый Зеленый"
+
+msgid "Neon yellow"
+msgstr "Неоновый Желтый"
+
+msgid "Olive"
+msgstr "Оливковый"
+
+msgid "Olive dark"
+msgstr "оливковый темный"
+
+msgid "Orange"
+msgstr "Оранжевый"
+
+msgid "Orange dark"
+msgstr "Оранжевый темный"
+
+msgid "Pink"
+msgstr "Розовый"
+
+msgid "Pink dark"
+msgstr "темно розовый"
+
+msgid "Red"
+msgstr "Красный"
+
+msgid "Red dark"
+msgstr "темно красный"
+
+msgid "Steel"
+msgstr "Стальной"
+
+msgid "Steel dark"
+msgstr "Стальной темный"
+
+msgid "Violet"
+msgstr "Фиолетовый"
+
+msgid "Violet dark"
+msgstr "Фиолетовый темный"
+
+msgid "White"
+msgstr "Светлый"
+
+msgid "Off"
+msgstr "Выкл."
+
+msgid "X-Picon"
+msgstr "X-Пикон"
+
+msgid "Two columns"
+msgstr "Две колонки"
+
+msgid "Three columns"
+msgstr "Три колонки"
+
+msgid "MiniTV"
+msgstr "МиниТВ"
+
+msgid "Only current program"
+msgstr "Только текущая программа"
+
+msgid "Top/Bottom"
+msgstr "Верх/Низ"
+
+msgid "Left/Right"
+msgstr "Лево/Право"
+
+msgid "X-Picons"
+msgstr "Х-пиконы"
+
+msgid "Picon"
+msgstr "пикон"
+
+msgid "No cover"
+msgstr "Без обложки"
+
+msgid "Small cover"
+msgstr "малая Обложка"
+
+msgid "Big cover"
+msgstr "большая обложка"
+
+msgid "Very big cover"
+msgstr "огромная Обложка"
+
+msgid "List big cover"
+msgstr "Список больших обложек"
+
+msgid "On"
+msgstr "Вкл"
+
+msgid "Infos in place of weather"
+msgstr "Информация вместо погоды"
+
+msgid "Weather"
+msgstr "Погода"
+
+msgid "_____________________________ Weather _________________________________"
+msgstr "_____________________________ Погода _________________________________"
+
+msgid "Big"
+msgstr "Большой"
+
+msgid "Slim"
+msgstr "Узкий"
+
+msgid "Small"
+msgstr "Маленький"
+
+msgid "Infobar channelname"
+msgstr "Имя канала в Инфо-баре"
+
+msgid "Image"
+msgstr "Изображение"
+
+msgid "Style"
+msgstr "Стиль отображения"
+
+msgid "Font style"
+msgstr "Стиль Шрифта"
+
+msgid "Button style"
+msgstr "Стиль кнопки"
+
+msgid "Running text"
+msgstr "Бегущая строка"
+
+msgid "Skinmode"
+msgstr "Режим Скина"
+
+msgid "Background transparency"
+msgstr "Прозрачность фона"
+
+msgid "Weather ID"
+msgstr "ID Местонахождения"
+
+msgid "Second Infobar"
+msgstr "Второй инфо-бар"
+
+msgid "_____________________________ Colors __________________________________"
+msgstr "_____________________________ Цвета __________________________________"
+
+msgid "Line"
+msgstr "Линия"
+
+msgid "Infobar"
+msgstr "Инфобар"
+
+msgid "Background"
+msgstr "Фон"
+
+msgid "Border"
+msgstr "Граница"
+
+msgid "Listselection"
+msgstr "Выбор списка"
+
+msgid "Listselection border"
+msgstr "Обрамление выбора списка"
+
+msgid "Progress-/Volumebar"
+msgstr "Прогресс / шкала громкости"
+
+msgid "Primary font"
+msgstr "Основной шрифт"
+
+msgid "Secondary font"
+msgstr "Доп. шрифт"
+
+msgid "Listselection font"
+msgstr "Выбор списка-Шрифт"
+
+msgid "Button text"
+msgstr "Текст кнопки"
+
+msgid "_____________________________ Styles __________________________________"
+msgstr "_____________________________ Стили __________________________________"
+
+msgid "Scrollbars"
+msgstr "Полосы прокрутки"
+
+msgid "Clock analog color"
+msgstr "Цвет аналоговых часов"
+
+msgid "__________________________ General ___________________________________"
+msgstr "__________________________ Основные ________________________________"
+
+msgid "ChannelSelection"
+msgstr "Селектор каналов"
+
+msgid "EMC"
+msgstr "EMC"
+
+msgid "ExtNumberZap"
+msgstr "ExtNumberZap"
+
+msgid "Volume style"
+msgstr "Стиль рег. громкости"
+
+msgid "CoolTVGuide"
+msgstr "CoolTVGuide"
+
+msgid "Do you really want to reboot now?"
+msgstr "Вы действительно хотите перезагрузить  сейчас?"
+
+msgid "Restart GUI"
+msgstr "Перезапуск GUI"
+
+msgid "Information"
+msgstr "Информация"
+
+msgid "Error creating Skin!"
+msgstr "Ошибка создания скина!"
+
+msgid ""
+"GUI needs a restart to apply a new skin.\n"
+"Do you want to Restart the GUI now?"
+msgstr ""
+"Для активации нового скина необходима перезагрузка.\n"
+"Хотите сделать это сейчас?"
+
+msgid "Configuration tool for XionHDF"
+msgstr "Инструмент настройки XionHDF"
+
+msgid "clock with weekday"
+msgstr "часы с днем недели"
+
+msgid "Refresh interval (in minutes)"
+msgstr "Интервал обновления в минутах:"
+
+msgid "This option set the resolution of skin."
+msgstr "Эта опция устанавливает разрешение скина."
+
+msgid "This option activates the running text for some parts of skin."
+msgstr "Эта опция активирует бегущий текст для некоторых частей скина."
+
+msgid "This option activates the scrollbars for some parts of skin."
+msgstr "Эта опция активирует полосы прокрутки для некоторых частей скина."
+
+msgid "This option activates the channelname within the infobar."
+msgstr "Эта опция активирует имя канала внутри инфо-бара."
+
+msgid "This option activate/deactive/change the background transparency of skin."
+msgstr "Этот параметр активирует/деактивирует/изменяет прозрачность фона скина."
+
+msgid "This option activate/deactive/change the weather on top inside the infobar."
+msgstr "Эта опция активирует/деактивирует/изменяет показ погоды в верхней части инфо-бара."
+
+msgid "Here you can insert your city, district, zip code or alltogether."
+msgstr "Здесь вы можете указать свой город, район, почтовый индекс или все вместе."
+
+msgid "Here you can change how often the weather is refreshed in the background."
+msgstr "Здесь вы можете изменить частоту обновления данных погоды в фоновом режиме."
+
+msgid "Please select the bordercolor of selection bars or deactivate borders completely."
+msgstr "Пожалуйста, выберите цвет границы выбора или полностью отключите их."
+
+msgid "Please select the color of lines inside the skin."
+msgstr "Выберите цвет линий скина."
+
+msgid "Please select the color of listselection inside the skin."
+msgstr "Выберите цвет выбоа в списках скина."
+
+msgid "Please select the color of progress- and volumebar inside the skin."
+msgstr "Выберите цвет области прогресса и рег. громкости в скине."
+
+msgid "Please select the color of primary font inside the skin."
+msgstr "Выберите цвет основного шрифта скина."
+
+msgid "Please select the color of secundary font inside the skin."
+msgstr "Выберите цвет вторичного шрифта скина."
+
+msgid "Please select the color of listselection font inside the skin."
+msgstr "Выберите цвет шрифта в выборе в списках скина."
+
+msgid "Please select the color of button text inside the skin."
+msgstr "Выберите цвет текста в кнопках скина."
+
+msgid "This option changes the size of picons within the infobar."
+msgstr "Этот параметр изменяет размер пиконов внутри инфо-бара."
+
+msgid "This option changes the view of channellist."
+msgstr "Этот параметр изменяет вид (стиль) списка канала."
+
+msgid "This option changes the view of second infobar."
+msgstr "Этот параметр изменяет вид второго инфо-бара."
+
+msgid "This option changes the view of cover inside from MovieSelection."
+msgstr "Этот параметр изменяет вид подложки выбора фильмов."
+
+msgid "This option changes the view of cover inside from EnhancedMovieCenter."
+msgstr "Этот параметр изменяет вид подложки EnhancedMovieCenter."
+
+msgid "Font normal height in %"
+msgstr "Нормальная высота шрифта в%"
+
+msgid "This option changes the height of normal font."
+msgstr "Этот параметр изменяет высоту обычного шрифта."
+
+msgid "Font bold height in %"
+msgstr "Высота жирного шрифта в%"
+
+msgid "This option changes the height of bold font."
+msgstr "Этот параметр изменяет высоту жирного шрифта."
