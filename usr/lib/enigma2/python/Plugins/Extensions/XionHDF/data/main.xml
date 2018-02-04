@@ -2779,12 +2779,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- Devices -->
 	<screen name="Devices" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="TunerHeader" render="Label" position="70,121" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
-		<widget source="nims" render="Label" position="70,162" size="708,108" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
-		<widget source="HDDHeader" render="Label" position="70,275" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
-		<widget source="hdd" render="Label" position="70,315" size="708,112" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
-		<widget source="MountsHeader" render="Label" position="70,431" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
-		<widget source="mounts" render="Label" position="70,471" size="708,143" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
+		<widget source="TunerHeader" render="Label" position="70,90" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+		<widget source="nims" render="Label" position="70,120" size="708,200" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
+		<widget source="HDDHeader" render="Label" position="70,370" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+		<widget source="hdd" render="Label" position="70,400" size="708,112" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
+		<widget source="MountsHeader" render="Label" position="70,500" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+		<widget source="mounts" render="Label" position="70,530" size="708,143" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- HotkeySetup -->
