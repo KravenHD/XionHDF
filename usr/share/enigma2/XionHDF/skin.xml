@@ -919,6 +919,8 @@
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<!--eLabel backgroundColor="XionLine" position="0,655" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="XionLine" position="0,210" size="1280,2" zPosition="2" /-->
 	</screen>
 	<screen name="template_emc">
 		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
@@ -2443,9 +2445,9 @@
 		<!-- TimerSanityConflict -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimerSanityConflict" position="0,0" size="1280,720" title="Timer sanity error">
 		<widget itemHeight="25" name="list" position="70,80" size="300,90" backgroundColor="XionBackground" transparent="1" />
-		<widget itemHeight="50" name="timer1" position="45,190" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
+		<widget itemHeight="50" name="timer1" position="45,190" scrollbarMode="showNever" size="766,100" transparent="1" foregroundColor="XionFont1" />
 		<eLabel backgroundColor="XionLine" position="20,380" size="820,2" zPosition="2" />
-		<widget itemHeight="50" name="timer2" position="45,400" scrollbarMode="showOnDemand" size="766,100" transparent="1" foregroundColor="XionFont1" />
+		<widget itemHeight="50" name="timer2" position="45,400" scrollbarMode="showNever" size="766,100" transparent="1" foregroundColor="XionFont1" />
 		<ePixmap pixmap="XionHDF/buttons/key_red.png" position="70,338" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_green.png" position="370,338" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_yellow.png" position="70,622" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
@@ -3806,7 +3808,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<eLabel text="https://github.com/oe-alliance" position="460,160" size="354,28" font="Regular2;19" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" />
 		<eLabel text="Designed by" position="890,460" size="355,40" font="Regular2;24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" valign="center" halign="center" />
 		<eLabel text="Team Kraven" position="890,510" size="355,40" font="Regular2;24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="center" />
-		<widget name="AboutScrollLabel" position="70,200" size="650,445" scrollbarMode="showNever" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+		<widget name="AboutScrollLabel" position="70,200" size="655,450" scrollbarMode="showNever" font="Regular;19" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_info.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<eLabel font="Regular;20" halign="left" valign="center" text="HDF Update Info" position="64,662" size="248,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_menu_left" />
@@ -3845,12 +3847,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- Devices -->
 	<screen name="Devices" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="TunerHeader" render="Label" position="70,121" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
-		<widget source="nims" render="Label" position="70,162" size="708,108" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
-		<widget source="HDDHeader" render="Label" position="70,275" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
-		<widget source="hdd" render="Label" position="70,315" size="708,112" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
-		<widget source="MountsHeader" render="Label" position="70,431" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
-		<widget source="mounts" render="Label" position="70,471" size="708,143" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
+		<widget source="TunerHeader" render="Label" position="70,90" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+		<widget source="nims" render="Label" position="70,120" size="708,200" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
+		<widget source="HDDHeader" render="Label" position="70,370" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+		<widget source="hdd" render="Label" position="70,400" size="708,112" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
+		<widget source="MountsHeader" render="Label" position="70,500" size="708,36" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+		<widget source="mounts" render="Label" position="70,530" size="708,143" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" enableWrapAround="0" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- HotkeySetup -->
@@ -4641,7 +4643,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- EnhancedMovieCenterMenu -->
 	<screen name="EnhancedMovieCenterMenu" position="0,0" size="1280,720" title="EnhancedMovieCenterMenu" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="70,80" size="708,375" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" itemHeight="27" font="Regular;22" />
+		<widget name="config" position="70,80" size="708,385" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" itemHeight="27" font="Regular;22" />
 		<widget source="help" render="Label" position="70,492" size="708,108" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
