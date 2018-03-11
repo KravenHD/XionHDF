@@ -564,21 +564,21 @@
 		<!-- FritzCallSetup -->
 	<screen name="FritzCallSetup" position="0,0" size="1280,720" flags="wfNoBorder" title="FritzCallSetup" backgroundColor="transparent">
 		<widget name="consideration" position="70,80" size="708,90" font="Regular2; 20" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-		<widget name="config" position="71,196" size="708,440" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" font="Regular; 20" />
+		<widget name="config" position="71,156" size="728,450" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" font="Regular; 20" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- FritzDisplayCalls -->
 	<screen name="FritzDisplayCalls" position="0,0" size="1280,720" flags="wfNoBorder" title="Fritz Display Calls" backgroundColor="transparent">
 		<widget name="statusbar" position="70,80" size="708,46" font="Regular2; 20" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-		<widget source="entries" render="Listbox" position="70,154" size="708,460" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1">
+		<widget source="entries" render="Listbox" position="70,154" size="800,450" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					 MultiContentEntryText(pos = (5,5),size = (120,24),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
 					 MultiContentEntryPixmapAlphaTest(pos = (130,5),size = (25,25),png = 2),# index 1 i direction pixmap
-					 MultiContentEntryText(pos = (160,5),size = (270,24),flags = RT_HALIGN_LEFT,text = 3),# index 2 is remote name/number
-					 MultiContentEntryText(pos = (440,5),size = (60,24),flags = RT_HALIGN_LEFT,text = 4),# index 3 is length of call
-					 MultiContentEntryText(pos = (510,5),size = (225,24),flags = RT_HALIGN_CENTER,text = 5),# index 4 is my number/name for number
+					 MultiContentEntryText(pos = (160,5),size = (320,24),flags = RT_HALIGN_LEFT,text = 3),# index 2 is remote name/number
+					 MultiContentEntryText(pos = (490,5),size = (60,24),flags = RT_HALIGN_LEFT,text = 4),# index 3 is length of call
+					 MultiContentEntryText(pos = (560,5),size = (225,24),flags = RT_HALIGN_CENTER,text = 5),# index 4 is my number/name for number
 					],
 					 "fonts": [gFont("Regular",18)],
 					 "itemHeight": 30
