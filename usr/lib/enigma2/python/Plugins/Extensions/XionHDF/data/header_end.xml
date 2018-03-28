@@ -14,6 +14,10 @@
 		<color color="white" name="WindowTitleForeground" />
 		<color color="black" name="WindowTitleBackground" />
 	</windowstyle>
+	<switchpixmap>
+		<pixmap name="menu_on" filename="XionHDF/menu_on.png"/>
+		<pixmap name="menu_off" filename="XionHDF/menu_off.png"/>
+	</switchpixmap>
 		<!--/* TEMPLATES -->
 	<screen name="template_colorkey_text">
 		<widget font="Regular; 20" halign="left" valign="center" name="key_red" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
