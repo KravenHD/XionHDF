@@ -33,6 +33,10 @@
 		<color name="white" value="#00ffffff" />
 		<color name="yellow" value="#00e5b243" />
 	</colors>
+	<switchpixmap>
+		<pixmap name="menu_on" filename="XionHDF/menu_on.png"/>
+		<pixmap name="menu_off" filename="XionHDF/menu_off.png"/>
+	</switchpixmap>
 	<fonts>
 		<font filename="lcd.ttf" name="LCD" scale="100" />
 		<font filename="ae_AlMateen.ttf" name="Replacement" replacement="1" scale="100" />
