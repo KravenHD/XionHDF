@@ -204,7 +204,7 @@ else:
    mem_info = []
    entrie = os.popen('cat /proc/cmdline').read()
 
-   if getBoxType() in ('vusolo4k', 'mutant51', 'mutant52', 'ax51', 'zgemmah7', 'e4hdultra'):
+   if getBoxType() in ('vusolo4k', 'mutant51', 'mutant52', 'ax51', 'zgemmah7', 'zgemmah9t', 'zgemmah9s', 'e4hdultra'):
         mem = re.findall('_cma=(.*?)M', entrie)
    else:   
         mem = re.findall('bmem=(.*?)M', entrie)
@@ -215,7 +215,7 @@ else:
    if len(mem_info) > 1:
       bmem = int(mem_info[0]) + int(mem_info[1])  
    else:
-      if getBoxType() in ('sf4008', 'dinobot4k', 'anadol4k', 'gbquad4k', 'gbue4k', 'e4hdultra'):
+      if getBoxType() in ('sf4008', 'dinobot4k', 'anadol4k', 'zgemmah9t', 'zgemmah9s', 'gbquad4k', 'gbue4k', 'e4hdultra'):
          bmem = 250
       else:
          bmem = int(mem_info[0])
