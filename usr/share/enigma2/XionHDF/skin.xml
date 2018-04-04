@@ -33,10 +33,6 @@
 		<color name="white" value="#00ffffff" />
 		<color name="yellow" value="#00e5b243" />
 	</colors>
-	<switchpixmap>
-		<pixmap name="menu_on" filename="XionHDF/menu_on.png"/>
-		<pixmap name="menu_off" filename="XionHDF/menu_off.png"/>
-	</switchpixmap>
 	<fonts>
 		<font filename="lcd.ttf" name="LCD" scale="100" />
 		<font filename="ae_AlMateen.ttf" name="Replacement" replacement="1" scale="100" />
@@ -128,6 +124,10 @@
 		<color color="white" name="WindowTitleForeground" />
 		<color color="black" name="WindowTitleBackground" />
 	</windowstyle>
+	<switchpixmap>
+		<pixmap name="menu_on" filename="XionHDF/menu_on.png"/>
+		<pixmap name="menu_off" filename="XionHDF/menu_off.png"/>
+	</switchpixmap>
 		<!--/* TEMPLATES -->
 	<screen name="template_colorkey_text">
 		<widget font="Regular;20" halign="left" valign="center" name="key_red" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
@@ -2711,7 +2711,7 @@ if (textwidth &gt; listwidth):
 	wsizex = textwidth + offset_listposx * 2
 else:
 	textwidth = listwidth - offset_listposx
-<!-- Skipper 25--><!-- /* ERROR LINE -->	wsizex = listwidth + offset_listposx
+	wsizex = listwidth + offset_listposx
 
 wsizey = textheight + listheight + offset
 
@@ -2721,9 +2721,9 @@ if ((wsizey + offset_listposy - offset_listposx) &gt; deskheight):
 
 if (wsizex &gt; deskwidth):
 	textwidth = deskwidth - offset_listposx * 2
-<!-- Skipper 25--><!-- /* ERROR LINE -->	listwidth = wsizex = deskwidth
+	listwidth = wsizex = deskwidth
 
-<!-- Skipper 29--><!-- /* ERROR LINE -->wsize = (wsizex,wsizey + offset_listposy - offset_listposx)
+wsize = (wsizex,wsizey + offset_listposy - offset_listposx)
 
 # resize
 self.instance.resize(eSize(*wsize))
@@ -2733,8 +2733,8 @@ textsize = (textwidth,textheight)
 self["text"].instance.resize(eSize(*textsize))
 
 # move list
-<!-- Skipper 27--><!-- /* ERROR LINE -->listsize = (wsizex - offset_listposx * 2,listheight)
-<!-- Skipper 28--><!-- /* ERROR LINE -->self["list"].instance.move(ePoint(offset_listposx,textheight + offset_listposy))
+listsize = (wsizex - offset_listposx * 2,listheight)
+self["list"].instance.move(ePoint(offset_listposx,textheight + offset_listposy))
 self["list"].instance.resize(eSize(*listsize))
 
 # center window
@@ -6785,9 +6785,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="headertext" position="50,77" zPosition="1" itemHeight="30" size="1180,23" font="Regular;20" transparent="1"  backgroundColor="XionBackground"/>
 		<widget name="statustext" position="20,270" zPosition="1" itemHeight="30" size="1240,90" font="Regular;20" halign="center" valign="center" transparent="0" backgroundColor="XionBackground"/>
 		<widget name="list" position="50,110" zPosition="2" itemHeight="30" size="1180,412" font="Regular;22" scrollbarMode="showNever" transparent="1" backgroundColor="XionBackground"/>
-		<widget name="titel" position="160,570" zPosition="1" itemHeight="35" size="900,30" font="Regular;22" transparent="1" backgroundColor="XionBackground"/>
-		<widget name="station" position="160,600" zPosition="1" itemHeight="30" size="900,40" font="Regular;22" transparent="1" backgroundColor="XionBackground"/>
-		<widget name="console" position="160,650" zPosition="1" itemHeight="30" size="900,50" font="Regular;20" transparent="1" backgroundColor="XionBackground"/>
+		<widget name="titel" position="160,540" zPosition="1" itemHeight="35" size="900,30" font="Regular;22" transparent="1" backgroundColor="XionBackground"/>
+		<widget name="station" position="160,570" zPosition="1" itemHeight="30" size="900,40" font="Regular;22" transparent="1" backgroundColor="XionBackground"/>
+		<widget name="console" position="160,600" zPosition="1" itemHeight="30" size="1080,50" font="Regular;12" transparent="1" backgroundColor="XionBackground"/>
 		<widget name="cover" zPosition="2" position="50,540" size="102,110" alphatest="blend" />
 		<ePixmap position="1050,20" zPosition="4" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" transparent="1" alphatest="on" />
 		<panel name="template_menu_full_button" />
