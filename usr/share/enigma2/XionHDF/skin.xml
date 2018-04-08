@@ -4420,39 +4420,39 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ********** AutoTimer ********** -->
 		<!-- AutoTimerSettings -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerSettings" position="0,0" size="1280,720" title="AutoTimer Settings">
-		<widget backgroundColor="XionBackground" scrollbarMode="showNever" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="700,450" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular;22" scrollbarMode="showNever" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="700,450" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;20" position="70,558" render="Label" size="700,50" source="help" transparent="1" foregroundColor="XionFont2" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- AutoTimerEditor -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerEditor" position="0,0" size="1280,720" title="Edit AutoTimer">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" scrollbarMode="showNever" itemHeight="30" name="config" position="70,80" size="700,450" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular;22" enableWrapAround="1" scrollbarMode="showNever" itemHeight="30" name="config" position="70,80" size="700,450" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;20" position="70,558" render="Label" size="700,50" source="help" transparent="1" foregroundColor="XionFont2" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- AutoTimerFilterEditor -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerFilterEditor" position="0,0" size="1280,720" title="Edit AutoTimer Filters">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" scrollbarMode="showNever" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular;22" enableWrapAround="1" scrollbarMode="showNever" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- AutoTimerServiceEditor -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerServiceEditor" position="0,0" size="1280,720" title="Edit AutoTimer Services">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular;22" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- AutoTimerImporter -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerImporter" position="0,0" size="1280,720" title="Import AutoTimer">
-		<widget backgroundColor="XionBackground" scrollbarMode="showNever" enableWrapAround="1" itemHeight="30" name="list" position="70,80" size="708,540" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular;22" scrollbarMode="showNever" enableWrapAround="1" itemHeight="30" name="list" position="70,80" size="708,540" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- AutoTimerOverview -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerOverview" position="0,0" size="1280,720" title="AutoTimer Overview">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" scrollbarMode="showNever" itemHeight="30" name="entries" position="70,80" size="708,540" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular;22" enableWrapAround="1" scrollbarMode="showNever" itemHeight="30" name="entries" position="70,80" size="708,540" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
