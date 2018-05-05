@@ -241,6 +241,17 @@
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
+	<!-- InfoBarEventView -->
+	<screen name="InfoBarEventView" position="0,0" size="1280,170" backgroundColor="XionBackground" flags="wfNoBorder">
+		<widget backgroundColor="XionBackground" source="Event" render="Label" foregroundColor="XionFont2" font="Regular2;30" position="42,12" size="736,38" halign="left" noWrap="1" transparent="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" name="datetime" foregroundColor="XionFont1" font="Regular;24" position="800,16" size="280,30" halign="right" noWrap="1" transparent="1" />
+		<widget backgroundColor="XionBackground" name="duration" foregroundColor="XionFont1" font="Regular;24" position="1000,16" size="238,30" halign="right" noWrap="1" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" position="42,55" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1196,118" source="Event" transparent="1" valign="top">
+			<convert type="EventName">ExtendedDescription</convert>
+		</widget>
+	</screen>
 		<!-- EventViewMenu -->
 	<screen name="EventViewContextMenu" position="0,0" size="1280,720" title="Eventview Menu" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="menu" font="Regular;20" itemHeight="30" position="70,121" size="708,420" transparent="1" backgroundColor="XionBackground" />

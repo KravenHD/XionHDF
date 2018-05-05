@@ -186,7 +186,6 @@
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
-
 		<!-- ********** Bluetooth ********** -->
 		<!-- BluetoothDevicesManager -->
 	<screen name="BluetoothDevicesManager" title="Bluetooth Devices Manager" flags="wfNoBorder" size="1280,720" position="0,0" backgroundColor="transparent">
