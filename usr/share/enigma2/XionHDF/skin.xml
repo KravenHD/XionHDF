@@ -1701,7 +1701,7 @@
 	</screen>
 		<!-- ChannelContextMenu -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ChannelContextMenu" position="center,center" size="1280,720" title="Channellist menu" >
-		<widget enableWrapAround="1" itemHeight="34" name="menu" position="70,80" scrollbarMode="showNever" size="708,560" transparent="1" zPosition="3" />
+		<widget enableWrapAround="1" itemHeight="30" name="menu" position="70,80" scrollbarMode="showNever" size="708,560" transparent="1" zPosition="3" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- ********** NumberZap ********** -->
