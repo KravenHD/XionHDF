@@ -2109,7 +2109,7 @@
 		<widget font="Regular2;20" foregroundColor="XionFont2" halign="center" position="70,80" render="Label" size="130,90" source="legend1" transparent="1" valign="center" />
 		<widget font="Regular2;20" foregroundColor="XionFont2" halign="center" position="230,80" render="Label" size="400,90" source="legend2" transparent="1" valign="center" />
 		<widget font="Regular2;20" foregroundColor="XionFont2" halign="center" position="650,80" render="Label" size="120,90" source="legend3" transparent="1" valign="center" />
-		<widget position="70,220" render="Listbox" size="708,320" source="config" itemHeight="26" font="Regular;22" transparent="1">
+		<widget position="70,220" render="Listbox" size="708,320" source="config" itemHeight="60" font="Regular;22" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryPixmapAlphaTest(pos = (40, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
