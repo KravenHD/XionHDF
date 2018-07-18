@@ -1147,9 +1147,9 @@
 		<panel name="template_menu_left" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ChoiceBox" position="0,0" size="1280,720">
-		<widget backgroundColor="XionBackground" font="Regular2;34" foregroundColor="XionFont2" position="70,12" size="848,46" render="Label" source="Title" halign="center" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular2;28" foregroundColor="XionFont2" position="70,12" size="1148,46" render="Label" source="Title" halign="left" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;26" halign="left" name="text" position="75,71" size="708,145" foregroundColor="XionFont2" transparent="1" />
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="32" name="list" position="70,155" size="708,450" scrollbarMode="showNever" transparent="1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="32" name="list" position="70,115" size="708,450" valign="center" scrollbarMode="showNever" transparent="1" />
 		<panel name="template_choicebox" />
 	</screen>
 	<screen name="ConsoleBox" position="0,0" size="1280,720" title="Console Box" flags="wfNoBorder" backgroundColor="transparent">
