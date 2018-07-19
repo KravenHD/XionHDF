@@ -2942,7 +2942,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- LED_GigaSetup -->
 	<screen name="LED_GigaSetup" position="0,0" size="1280,720" title="LED Setup" backgroundColor="transparent">
-		<widget name="config" position="70,80" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="config" position="70,80" size="708,540" font="Regular;22" itemHeight="30" scrollbarMode="showOnDemand" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
