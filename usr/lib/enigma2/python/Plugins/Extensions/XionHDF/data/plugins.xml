@@ -1,20 +1,20 @@
 		<!-- plugins -->
-	<screen name="XionHDF" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="#00000000">
-		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="64,662" size="148,48" text="Cancel" transparent="1" />
-		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
-		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="#00000000" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
-		<widget name="config" position="70,75" size="708,580" itemHeight="27" font="Regular;22" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#00000000" />
-		<eLabel position="70,12" size="708,46" text="XionHDF" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+	<screen name="XionHDF" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="XionBackground" halign="left" valign="center" position="64,662" size="148,48" text="Cancel" transparent="1" />
+		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="XionBackground" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
+		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="XionBackground" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
+		<widget name="config" position="70,75" size="708,580" itemHeight="27" font="Regular;22" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="XionBackground" />
+		<eLabel position="70,12" size="708,46" text="XionHDF" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="XionBackground" foregroundColor="#00ffffff" name="," />
 		<eLabel position="847,200" size="368,2" backgroundColor="#00ffffff" />
 		<eLabel position="847,409" size="368,2" backgroundColor="#00ffffff" />
 		<eLabel position="845,200" size="2,211" backgroundColor="#00ffffff" />
 		<eLabel position="1215,200" size="2,211" backgroundColor="#00ffffff" />
-		<eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
-		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
-		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
-		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,32" backgroundColor="#00000000" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="#00000000" transparent="1" valign="center" foregroundColor="#00ffffff">
+		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
+		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="#00ffffff">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<eLabel position="830,80" size="402,46" text="XionHDF" font="Regular; 36" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
