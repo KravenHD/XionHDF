@@ -5856,7 +5856,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- YouTubeMain -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="YouTubeMain" position="0,0" size="1280,720" title="YouTube">
-		<widget source="list" render="Listbox" position="70,80" size="708,540" itemHeight="110" backgroundColor="XionBackground" transparent="1" alphatest="on">
+		<widget source="list" render="Listbox" position="70,100" size="808,513" itemHeight="110" backgroundColor="XionBackground" transparent="1" alphatest="on">
 			<convert type="TemplatedMultiContent" >
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (100, 72), png=2), # Thumbnail
