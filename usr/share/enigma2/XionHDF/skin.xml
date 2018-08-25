@@ -3242,8 +3242,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- JobView -->
 	<screen name="JobView" position="0,0" size="1280,720" title="JobView" flags="wfNoBorder" backgroundColor="transparent">
-		<widget backgroundColor="XionBackground" source="job_name" render="Label" position="70,80" size="708,70" font="Regular;28" foregroundColor="XionFont1" />
-		<widget backgroundColor="XionBackground" source="job_progress" render="Label" position="285,238" size="280,32" font="Regular2;28" foregroundColor="XionFont2" zPosition="2" halign="center" transparent="1">
+		<widget backgroundColor="XionBackground" source="job_name" render="Label" position="70,80" size="708,70" font="Regular;20" foregroundColor="XionFont1" />
+		<widget backgroundColor="XionBackground" source="job_progress" render="Label" position="285,220" size="280,32" font="Regular2;28" foregroundColor="XionFont2" zPosition="2" halign="center" transparent="1">
 			<convert type="ProgressToText" />
 		</widget>
 		<widget source="cancelable" render="FixedLabel" text="Cancel" position="64,662" size="148,48" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1">
@@ -3255,7 +3255,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="664,662" size="148,48" zPosition="1" font="Regular;20" halign="left" valign="center" foregroundColor="XionButtonText" backgroundColor="XionBackground" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="job_progress" render="Progress" position="70,238" size="708,36" borderWidth="2" foregroundColor="blue" backgroundColor="XionBackground" />
+		<widget source="job_progress" render="Progress" position="70,220" size="708,36" borderWidth="2" foregroundColor="blue" backgroundColor="XionBackground" />
 		<widget backgroundColor="XionBackground" source="job_task" render="Label" position="70,160" size="708,50" font="Regular2;22" foregroundColor="XionFont2" />
 		<widget backgroundColor="XionBackground" source="job_status" render="Label" position="70,291" size="480,28" font="Regular2;22" foregroundColor="XionFont2" />
 		<widget name="config" position="70,335" size="480,20" />
