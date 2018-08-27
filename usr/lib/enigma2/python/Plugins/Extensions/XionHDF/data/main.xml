@@ -1128,7 +1128,7 @@
 	</screen>
 		<!-- SystemNetworkInfo -->
 	<screen name="SystemNetworkInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="AboutScrollLabel" position="70,80" size="708,415" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
+		<widget name="AboutScrollLabel" position="70,80" size="708,515" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
 		<widget source="LabelBSSID" render="Label" position="70,294" size="200,25" valign="left" font="Regular;20" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget source="LabelESSID" render="Label" position="70,329" size="200,25" valign="center" font="Regular;20" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget source="LabelQuality" render="Label" position="70,364" size="200,25" valign="center" font="Regular;20" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
@@ -1142,9 +1142,9 @@
 		<widget source="bitrate" render="Label" position="245,434" size="310,25" valign="center" font="Regular;20" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget source="enc" render="Label" position="245,469" size="310,25" valign="center" font="Regular;20" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget source="IFtext" render="Label" position="70,504" size="120,25" zPosition="10" font="Regular;20" backgroundColor="XionBackground" foregroundColor="XionFont1" halign="left" transparent="1" />
-		<widget source="IF" render="Label" position="181,504" size="375,25" zPosition="10" font="Regular;20" backgroundColor="XionBackground" foregroundColor="XionFont1" halign="left" transparent="1" />
-		<widget source="Statustext" render="Label" position="70,544" size="150,28" zPosition="10" font="Regular2;22" backgroundColor="XionBackground" foregroundColor="XionFont2" halign="left" transparent="1" />
-		<widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="220,550" zPosition="10" size="15,16" transparent="1" alphatest="on" />
+		<widget source="IF" render="Label" position="376,504" size="375,25" zPosition="10" font="Regular;20" backgroundColor="XionBackground" foregroundColor="XionFont1" halign="left" transparent="1" />
+		<widget source="Statustext" render="Label" position="70,574" size="150,28" zPosition="10" font="Regular2;22" backgroundColor="XionBackground" foregroundColor="XionFont2" halign="left" transparent="1" />
+		<widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="376,583" zPosition="10" size="15,16" transparent="1" alphatest="on" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- NetworkMountsMenu -->
