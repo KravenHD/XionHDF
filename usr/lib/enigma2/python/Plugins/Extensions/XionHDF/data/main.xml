@@ -9,8 +9,8 @@
 		<panel name="template_menu_left" />
 	</screen>
 	<screen name="ChoiceBox" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1280,720">
-		<widget backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" position="70,12" size="1148,46" render="Label" source="Title" halign="left" valign="center" transparent="1" />
-		<widget name="list" backgroundColor="XionBackground" enableWrapAround="1" itemHeight="27" font="Regular;24" position="70,115" size="708,450" scrollbarMode="showOnDemand" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont2" position="70,12" size="1148,46" render="Label" source="Title" halign="left" valign="center" transparent="1" />
+		<widget name="list" backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;24" position="70,115" size="708,450" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="text" backgroundColor="XionBackground" font="Regular;26" halign="left" position="75,71" size="1148,145" foregroundColor="XionFont2" transparent="1" />
 		<panel name="template_choicebox" />
 	</screen>
