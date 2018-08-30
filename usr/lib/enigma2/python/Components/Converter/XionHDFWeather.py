@@ -38,7 +38,8 @@ def _(txt):
 		t = gettext.gettext(txt)
 	return t
 
-URL = 'http://realtek.accu-weather.com/widget/realtek/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
+URL = 'http://blstreamhptablet.accu-weather.com/widget/blstreamhptablet/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
+#URL = 'http://realtek.accu-weather.com/widget/realtek/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
 WEATHER_DATA = None
 WEATHER_LOAD = True
 
