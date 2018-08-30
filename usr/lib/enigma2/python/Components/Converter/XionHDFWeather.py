@@ -40,6 +40,8 @@ def _(txt):
 
 URL = 'http://blstreamhptablet.accu-weather.com/widget/blstreamhptablet/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
 #URL = 'http://realtek.accu-weather.com/widget/realtek/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
+#URL = 'http://cloudtv.accu-weather.com/widget/cloudtv/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
+#URL = 'http://htctablet.accu-weather.com/widget/htctablet/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
 WEATHER_DATA = None
 WEATHER_LOAD = True
 
