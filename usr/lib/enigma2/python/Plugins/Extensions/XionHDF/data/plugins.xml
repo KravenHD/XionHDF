@@ -2672,7 +2672,7 @@
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- IPTV Player -->
-	<screen name="IPTVPlayerWidget" position="0,0" size="1280,720" title="IPTV Player" backgroundColor="transparent">
+	<screen name="IPTVPlayerWidget" position="0,0" size="1280,720" title="E2iPlayer" backgroundColor="transparent">
 		<widget name="list" position="380,80" zPosition="2" size="890,350" foregroundColor="XionFont1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" backgroundColor="XionBackground" />
 		<widget name="console" position="25,450" zPosition="1" size="1250,205" foregroundColor="XionFont1" font="Regular;19" transparent="1" backgroundColor="XionBackground" />
 		<widget name="cover" zPosition="2" position="25,80" size="330,330" alphatest="blend" />     
@@ -2684,7 +2684,7 @@
 		<widget name="spinner_3" zPosition="1" position="190,420" size="16,16" transparent="1" alphatest="blend" />
 		<widget name="spinner_4" zPosition="1" position="206,420" size="16,16" transparent="1" alphatest="blend" />
 		<panel name="template_menu_left_right_button" />
-		<panel name="template_colorkey_text_source" />
+		<panel name="template_colorkey_text_source_2" />
 	</screen>
 		<!-- Quad PiP -->
 	<screen name="CreateQuadPipChannelEntry" position="0,0" size="1280,720" flags="wfNoBorder" title="CreateQuadPipChannelEntry" backgroundColor="transparent">

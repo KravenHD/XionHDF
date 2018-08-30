@@ -141,6 +141,12 @@
 		<widget font="Regular;20" halign="left" valign="center" source="key_yellow" position="464,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular;20" halign="left" valign="center" source="key_blue" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 	</screen>
+	<screen name="template_colorkey_text_source_2">
+		<widget font="Regular; 20" halign="left" valign="center" source="key_red" position="64,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" source="key_green_ext" position="264,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" source="key_yellow" position="464,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular; 20" halign="left" valign="center" source="key_blue" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+	</screen>
 	<screen name="template_colorkey_text_button">
 		<widget font="Regular;20" halign="left" valign="center" name="buttonred" position="64,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular;20" halign="left" valign="center" name="buttongreen" position="264,662" size="148,48" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
@@ -6990,8 +6996,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- IPTV Player -->
-	<screen name="IPTVPlayerWidget" position="0,0" size="1280,720" title="IPTV Player" backgroundColor="transparent">
-		<widget name="list" position="380,80" zPosition="2" size="890,350" foregroundColor="XionFont1" scrollbarMode="showNever" enableWrapAround="1" transparent="1" backgroundColor="XionBackground" />
+	<screen name="IPTVPlayerWidget" position="0,0" size="1280,720" title="E2iPlayer" backgroundColor="transparent">
+		<widget name="list" position="380,80" zPosition="2" size="890,350" foregroundColor="XionFont1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" backgroundColor="XionBackground" />
 		<widget name="console" position="25,450" zPosition="1" size="1250,205" foregroundColor="XionFont1" font="Regular;19" transparent="1" backgroundColor="XionBackground" />
 		<widget name="cover" zPosition="2" position="25,80" size="330,330" alphatest="blend" />     
 		<widget name="playerlogo" zPosition="1" position="1150,670" size="120,40" alphatest="blend" />
@@ -7002,7 +7008,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="spinner_3" zPosition="1" position="190,420" size="16,16" transparent="1" alphatest="blend" />
 		<widget name="spinner_4" zPosition="1" position="206,420" size="16,16" transparent="1" alphatest="blend" />
 		<panel name="template_menu_left_right_button" />
-		<panel name="template_colorkey_text_source" />
+		<panel name="template_colorkey_text_source_2" />
 	</screen>
 		<!-- Quad PiP -->
 	<screen name="CreateQuadPipChannelEntry" position="0,0" size="1280,720" flags="wfNoBorder" title="CreateQuadPipChannelEntry" backgroundColor="transparent">
