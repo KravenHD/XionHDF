@@ -2269,9 +2269,10 @@
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="LocationBox" position="0,0" size="1280,720" title="Location Box">
 		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" name="text" position="70,80" size="708,28" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" name="target" position="70,115" size="708,28" transparent="1" />
-		<widget itemHeight="26" font="Regular;22" name="filelist" position="70,160" selectionDisabled="1" size="708,150" transparent="1" />
-		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" name="textbook" position="70,380" size="708,28" transparent="1" />
-		<widget itemHeight="30" name="booklist" position="70,425" size="708,150" transparent="1" />
+		<widget itemHeight="26" font="Regular;22" name="filelist" position="70,160" selectionDisabled="1" size="708,315" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+		<eLabel backgroundColor="XionLine" position="70,483" size="708,1" zPosition="2" />
+		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" name="textbook" position="70,488" size="708,28" transparent="1" />
+		<widget itemHeight="25" name="booklist" font="Regular;20" position="70,523" size="708,150" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
