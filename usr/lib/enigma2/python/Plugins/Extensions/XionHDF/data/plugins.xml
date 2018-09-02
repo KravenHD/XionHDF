@@ -1577,14 +1577,18 @@
 	</screen>
 		<!-- YouTubeInfo -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="YouTubeInfo" position="0,0" size="1280,720" title="YouTubeInfo">
-		<widget name="title" position="center,13" backgroundColor="XionBackground" size="800,60" halign="center" font="Regular;24" />
-		<widget name="pic" position="20,80" size="320,180" transparent="1" alphatest="on" />
-		<widget name="description" position="360,80" size="500,500" transparent="1" alphatest="on" font="Regular;20" />
-		<widget name="views" position="30,270" size="150,20" transparent="1" alphatest="on" font="Regular;16" />
-		<widget name="duration" position="200,270" size="150,20" transparent="1" alphatest="on" font="Regular;16" />
-		<widget name="likes" position="30,300" size="150,20" transparent="1" alphatest="on" font="Regular;16" />
-		<widget name="dislikes" position="200,300" size="150,20" transparent="1" alphatest="on" font="Regular;16" />
-		<widget name="published" position="30,330" size="300,20" transparent="1" alphatest="on" font="Regular;16" />
+		<widget name="title" position="20,80" backgroundColor="XionBackground" size="1200,40" font="Regular;30" />
+		<widget name="pic" position="20,130" size="500,300" transparent="1" alphatest="blend" />
+		<widget name="views" position="550,140" size="250,20" transparent="1" font="Regular;20" />
+		<eLabel backgroundColor="XionLine" position="550,173" size="90,1" zPosition="2" />
+		<widget name="duration" position="550,180" size="250,20" transparent="1" font="Regular;20" />
+		<eLabel backgroundColor="XionLine" position="550,213" size="90,1" zPosition="2" />
+		<widget name="likes" position="550,220" size="250,20" transparent="1" font="Regular;20" />
+		<eLabel backgroundColor="XionLine" position="550,253" size="90,1" zPosition="2" />
+		<widget name="dislikes" position="550,260" size="250,20" transparent="1" font="Regular;20" />
+		<eLabel backgroundColor="XionLine" position="550,293" size="90,1" zPosition="2" />
+		<widget name="published" position="550,300" size="400,20" transparent="1" font="Regular;20" />
+		<widget name="description" position="20,460" size="1258,200" transparent="1" alphatest="blend" font="Regular;22" />
 		<panel name="template_menu_left" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
