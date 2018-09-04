@@ -30,22 +30,22 @@
 		<panel name="template_menu_left_button" />
 	</screen>
 	<screen name="HistoryZapSelector" position="0,0" size="1280,720" title="History Zap" flags="wfNoBorder" backgroundColor="transparent">
-		<widget source="menu" render="Listbox" position="10,120" size="850,480" backgroundColor="XionBackground" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="menu" render="Listbox" position="10,80" size="1260,540" backgroundColor="XionBackground" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (60, 10), size = (10, 20), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-						MultiContentEntryText(pos = (80, 0), size = (260, 23), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2),
-						MultiContentEntryText(pos = (320, 0), size = (500, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
-						MultiContentEntryText(pos = (80, 25), size = (180, 19), font = 3, flags = RT_HALIGN_LEFT, text = 5),
-						MultiContentEntryText(pos = (320, 25), size = (500, 19), font = 3, flags = RT_HALIGN_LEFT, text = 4),
-						MultiContentEntryPixmapAlphaBlend(pos=(5, 10), size=(50, 30), png=6, flags = BT_SCALE)
+						MultiContentEntryText(pos = (90, 0), size = (250, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2),
+						MultiContentEntryText(pos = (360, 3), size = (900, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
+						MultiContentEntryText(pos = (90, 30), size = (180, 19), font = 3, flags = RT_HALIGN_LEFT, text = 5),
+						MultiContentEntryText(pos = (360, 30), size = (900, 19), font = 3 ,flags = RT_HALIGN_LEFT, text = 4),
+						MultiContentEntryPixmapAlphaBlend(pos=(5, 15), size=(60, 35), png=6, flags = BT_SCALE)
 					],
-				 "fonts": [gFont("Regular", 22), gFont("Regular", 20), gFont("Regular", 17), gFont("Regular", 16)],
+				 "fonts": [gFont("Regular", 24), gFont("Regular", 24), gFont("Regular", 18), gFont("Regular", 16)],
 				 "itemHeight": 60
 				}
 			</convert>
 		</widget>
-		<panel name="template_menu_left" />
+		<panel name="template_menu_left_logo_off" />
 	</screen>
 	<screen name="ZapHistoryBrowser" position="710,240" size="560,475" title="ZapHistoryBrowser" flags="wfNoBorder" backgroundColor="XionBackground" >
 		<ePixmap pixmap="XionHDF/buttons/key_red.png" position="10,8" size="140,40" transparent="1" alphatest="on" />
