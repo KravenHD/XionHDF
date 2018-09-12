@@ -1185,9 +1185,9 @@
 		<panel name="template_menu_left" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HdmiCECSetupScreen" position="0,0" size="1280,720" title="HDMI CEC setup">
-		<widget name="config" itemHeight="27" font="Regular;22" position="70,80" size="708,500" transparent="1" zPosition="2" foregroundColor="XionFont1" />
-		<widget source="current_address" render="Label" position="161,621" size="500,30" zPosition="10" font="Regular2;21" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-		<widget source="fixed_address" render="Label" position="161,621" size="500,30" zPosition="10" font="Regular2;21" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
+		<widget name="config" itemHeight="27" font="Regular;22" position="70,80" size="708,547" transparent="1" zPosition="2" foregroundColor="XionFont1" />
+		<widget source="current_address" render="Label" position="10,623" size="500,30" zPosition="10" font="Regular2; 16" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
+		<widget source="fixed_address" render="Label" position="280,623" size="500,30" zPosition="10" font="Regular2; 16" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
