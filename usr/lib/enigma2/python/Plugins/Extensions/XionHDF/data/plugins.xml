@@ -2675,7 +2675,7 @@
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
-		<!-- IPTV Player -->
+		<!-- E2iPlayer Player -->
 	<screen name="E2iPlayerWidget" position="0,0" size="1280,720" title="E2iPlayer" backgroundColor="transparent">
 		<widget name="list" position="380,80" zPosition="2" size="890,350" foregroundColor="XionFont1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" backgroundColor="XionBackground" />
 		<widget name="console" position="25,450" zPosition="1" size="1250,205" foregroundColor="XionFont1" font="Regular;19" transparent="1" backgroundColor="XionBackground" />
@@ -2687,6 +2687,12 @@
 		<widget name="spinner_2" zPosition="1" position="174,420" size="16,16" transparent="1" alphatest="blend" />
 		<widget name="spinner_3" zPosition="1" position="190,420" size="16,16" transparent="1" alphatest="blend" />
 		<widget name="spinner_4" zPosition="1" position="206,420" size="16,16" transparent="1" alphatest="blend" />
+		<panel name="template_menu_left_right_button" />
+		<panel name="template_colorkey_text_source_2" />
+	</screen>
+	<screen name="IPTVDMWidget" position="0,0" title="E2iPlayer Download Manager" size="1280,720" backgroundColor="transparent">
+		<widget name="list" position="50,140" zPosition="2" size="1200,500" scrollbarMode="showOnDemand" transparent="1" backgroundColor="XionBackground" enableWrapAround="1" />
+		<widget name="titel" position="70,100" zPosition="1" size="1200,23" font="Regular;18" transparent="1" backgroundColor="XionBackground" />
 		<panel name="template_menu_left_right_button" />
 		<panel name="template_colorkey_text_source_2" />
 	</screen>
