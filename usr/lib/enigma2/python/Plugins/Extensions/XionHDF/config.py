@@ -144,7 +144,7 @@ config.plugins.XionHDF.SIB = ConfigSelection(default="infobar-style-xpicon_end1"
                                 ("infobar-style-xpicon_end2", _("Top/Bottom")),
                                 ("infobar-style-xpicon_end3", _("Left/Right"))
                                 ])
-config.plugins.XionHDF.refreshInterval = ConfigNumber(default="30")
+config.plugins.XionHDF.refreshInterval = ConfigSelectionNumber(min = 10, max = 240, stepwidth = 5, default = 60, wraparound = True)
 config.plugins.XionHDF.skin_mode = ConfigSelection(default="hd", choices = SkinModeList)
 config.plugins.XionHDF.RunningText = ConfigSelection(default="movetype=running", choices = [
                                 ("movetype=running", _("On")),

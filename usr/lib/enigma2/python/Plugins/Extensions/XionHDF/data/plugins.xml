@@ -3,7 +3,7 @@
 		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="XionBackground" halign="left" valign="center" position="64,662" size="148,48" text="Cancel" transparent="1" />
 		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="XionBackground" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
 		<eLabel font="Regular; 20" foregroundColor="#00ffffff" backgroundColor="XionBackground" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
-		<widget name="config" position="70,75" size="708,580" itemHeight="27" font="Regular;22" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="XionBackground" />
+		<widget name="config" position="70,75" size="708,580" itemHeight="26" font="Regular;22" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="XionBackground" />
 		<eLabel position="70,12" size="708,46" text="XionHDF" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="XionBackground" foregroundColor="#00ffffff" name="," />
 		<eLabel position="847,200" size="368,2" backgroundColor="#00ffffff" />
 		<eLabel position="847,409" size="368,2" backgroundColor="#00ffffff" />

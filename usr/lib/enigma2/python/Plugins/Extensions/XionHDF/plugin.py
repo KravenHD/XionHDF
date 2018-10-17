@@ -66,7 +66,7 @@ config.plugins.XionHDF = ConfigSubsection()
 				
 config.plugins.XionHDF.weather_city = ConfigText(default = "")
 
-config.plugins.XionHDF.refreshInterval = ConfigNumber(default="30")
+config.plugins.XionHDF.refreshInterval = ConfigSelectionNumber(min = 10, max = 240, stepwidth = 5, default = 60, wraparound = True)
 config.plugins.XionHDF.weather_realtek_latlon = ConfigText(default = "")
 config.plugins.XionHDF.weather_foundcity = ConfigText(default = "")
 
@@ -304,6 +304,7 @@ class XionHDF(ConfigListScreen, Screen):
 		#list.append(getConfigListEntry(_("_____________________________ Weather _________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
 		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your city, district, zip code or alltogether.")))
+		list.append(getConfigListEntry(_("Refresh interval (in minutes)"), config.plugins.XionHDF.refreshInterval, _("Here you can change how often the weather is refreshed in the background.")))
 		#list.append(getConfigListEntry(_("_____________________________ Colors __________________________________"), ))
 		list.append(getConfigListEntry(_("Line"), config.plugins.XionHDF.Line, _("Please select the color of lines inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection"), config.plugins.XionHDF.SelectionBackground, _("Please select the color of listselection inside the skin.")))
