@@ -2691,8 +2691,8 @@
 		<panel name="template_colorkey_text_source_2" />
 	</screen>
 	<screen name="IPTVDMWidget" position="0,0" title="E2iPlayer Download Manager" size="1280,720" backgroundColor="transparent">
-		<widget name="list" position="50,140" zPosition="2" size="1200,500" scrollbarMode="showOnDemand" transparent="1" backgroundColor="XionBackground" enableWrapAround="1" />
-		<widget name="titel" position="70,100" zPosition="1" size="1200,23" font="Regular;18" transparent="1" backgroundColor="XionBackground" />
+		<widget name="list" position="50,80" zPosition="2" size="1200,537" scrollbarMode="showOnDemand" transparent="1" backgroundColor="XionBackground" enableWrapAround="1" />
+		<widget name="titel" position="800,30" zPosition="1" size="1200,23" font="Regular;18" transparent="1" backgroundColor="XionBackground" />
 		<panel name="template_menu_left_right_button" />
 		<panel name="template_colorkey_text_source_2" />
 	</screen>
