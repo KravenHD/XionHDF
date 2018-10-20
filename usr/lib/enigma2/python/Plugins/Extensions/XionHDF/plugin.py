@@ -33,7 +33,7 @@ from shutil import move, copy, rmtree, copytree
 from skin import parseColor
 from Components.Pixmap import Pixmap
 from Components.Label import Label
-import gettext, time, subprocess, re, requests
+import gettext, time, subprocess, re, requests, json
 from boxbranding import getBoxType
 from enigma import ePicLoad, getDesktop, eConsoleAppContainer
 from Tools.Directories import fileExists, resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
@@ -303,7 +303,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("MovieSelection"), config.plugins.XionHDF.MovieStyle, _("This option changes the view of cover inside from MovieSelection.")))
 		#list.append(getConfigListEntry(_("_____________________________ Weather _________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
-		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your city, district, zip code or alltogether.")))
+		#list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your city, district, zip code or alltogether.")))
 		list.append(getConfigListEntry(_("Refresh interval (in minutes)"), config.plugins.XionHDF.refreshInterval, _("Here you can change how often the weather is refreshed in the background.")))
 		#list.append(getConfigListEntry(_("_____________________________ Colors __________________________________"), ))
 		list.append(getConfigListEntry(_("Line"), config.plugins.XionHDF.Line, _("Please select the color of lines inside the skin.")))
@@ -648,11 +648,14 @@ class XionHDF(ConfigListScreen, Screen):
 			self.lat = ''
 			self.lon = ''
 			self.accu_id = ''
+			self.get_latlon_by_ip()
+			#self.get_latlon_by_name()
 
-			if config.plugins.XionHDF.weather_city.value == '':
-				self.get_latlon_by_ip()
-			else:
-				self.get_latlon_by_name()
+#			if config.plugins.XionHDF.weather_city.value == '':
+#				self.get_latlon_by_ip()
+#				#self.get_latlon_by_name()
+#			else:
+#				self.get_latlon_by_name()
 
 			config.plugins.XionHDF.weather_foundcity.value=self.city
 			config.plugins.XionHDF.weather_foundcity.save()
@@ -661,27 +664,35 @@ class XionHDF(ConfigListScreen, Screen):
 
 	def get_latlon_by_ip(self):
 		try:
-			res = requests.request('get', 'http://api.wunderground.com/api/2b0d6572c90d3e4a/geolookup/q/autoip.json')
+			res = requests.get('http://ip-api.com/json/?lang=de&fields=status,city,lat,lon', timeout=3)
 			data = res.json()
-			self.city = data['location']['city']
-			self.lat = data['location']['lat'] 
-			self.lon = data['location']['lon']
+
+			if data['status']=='success':
+				self.city = data['city']
+				self.lat = data['lat']
+				self.lon = data['lon']
+				self.preview_text = str(self.city) + '\nLat: ' + str(self.lat) + '\nLong: ' + str(self.lon)
+			else:
+				self.preview_text = _('No data for IP')
+
 		except:
-			self.session.open(MessageBox, _("Error retrieving weather data!"), MessageBox.TYPE_ERROR)
+			self.preview_text = _('No data for IP')
 
 	def get_latlon_by_name(self):
 		try:
 			name = config.plugins.XionHDF.weather_city.value
-			res = requests.request('get', 'http://maps.googleapis.com/maps/api/geocode/json?address=%s&sensor=true' % str(name))
-			data = res.json()
+			#res = requests.request('get', 'http://maps.googleapis.com/maps/api/geocode/json?address=%s&sensor=true' % str(name))
+			response = requests.urlopen('get', 'http://www.mapquestapi.com/geocoding/v1/address?key=46e6mCww60Y4X2m8pttGoNTrdsPqedKW&location=' % str(name).format(lat, long))
+			json_data = response.read().decode(response.info().get_param('charset') or 'utf-8')
+			data = json.loads(json_data)
 			
-			self.city = data['results'][0]['address_components'][1]['long_name']
-			self.lat = data['results'][0]['geometry']['location']['lat']
-			self.lon = data['results'][0]['geometry']['location']['lng']
+			self.city = data['results'][0]['locations'][0]['adminArea4']
+			self.lat = data['results']['locations']['latLng']['lat']
+			self.lon = data['results']['locations']['latLng']['lng']
 		except:
 			self.session.open(MessageBox, _("Error retrieving weather data,\nfallback to IP!"), MessageBox.TYPE_ERROR)
 			self.get_latlon_by_ip()
-	
+
 #############################################################
 
 def main(session, **kwargs):
