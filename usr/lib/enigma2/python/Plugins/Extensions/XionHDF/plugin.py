@@ -303,7 +303,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("MovieSelection"), config.plugins.XionHDF.MovieStyle, _("This option changes the view of cover inside from MovieSelection.")))
 		#list.append(getConfigListEntry(_("_____________________________ Weather _________________________________"), ))
 		list.append(getConfigListEntry(_("Weather"), config.plugins.XionHDF.WeatherStyle, _("This option activate/deactive/change the weather on top inside the infobar.")))
-		#list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your city, district, zip code or alltogether.")))
+		list.append(getConfigListEntry(_("Weather ID"), config.plugins.XionHDF.weather_city, _("Here you can insert your city, district, zip code or alltogether.\nLeave blank to automatically detect your location via the IP adress.")))
 		list.append(getConfigListEntry(_("Refresh interval (in minutes)"), config.plugins.XionHDF.refreshInterval, _("Here you can change how often the weather is refreshed in the background.")))
 		#list.append(getConfigListEntry(_("_____________________________ Colors __________________________________"), ))
 		list.append(getConfigListEntry(_("Line"), config.plugins.XionHDF.Line, _("Please select the color of lines inside the skin.")))
@@ -648,50 +648,70 @@ class XionHDF(ConfigListScreen, Screen):
 			self.lat = ''
 			self.lon = ''
 			self.accu_id = ''
-			self.get_latlon_by_ip()
-			#self.get_latlon_by_name()
 
-#			if config.plugins.XionHDF.weather_city.value == '':
-#				self.get_latlon_by_ip()
-#				#self.get_latlon_by_name()
-#			else:
-#				self.get_latlon_by_name()
+			if config.plugins.XionHDF.weather_city.value == '':
+				self.get_latlon_by_ip()
+			else:
+				self.get_latlon_by_name()
 
 			config.plugins.XionHDF.weather_foundcity.value=self.city
 			config.plugins.XionHDF.weather_foundcity.save()
 			config.plugins.XionHDF.weather_realtek_latlon.value = 'lat=%s&lon=%s&metric=1&language=de' % (str(self.lat), str(self.lon))
+			#print config.plugins.XionHDF.weather_realtek_latlon.value
 			config.plugins.XionHDF.weather_realtek_latlon.save()
 
 	def get_latlon_by_ip(self):
+		#print "try to found weather via IP"
 		try:
-			res = requests.get('http://ip-api.com/json/?lang=de&fields=status,city,lat,lon', timeout=3)
+			res = requests.get('http://ip-api.com/json/?lang=de&fields=status,city,lat,lon,country', timeout=3)
 			data = res.json()
-
 			if data['status']=='success':
-				self.city = data['city']
+				self.country = data ['country']
+				self.city1 = data['city']
+				self.city = str(self.city1) + ' / ' + str(self.country)
 				self.lat = data['lat']
 				self.lon = data['lon']
 				self.preview_text = str(self.city) + '\nLat: ' + str(self.lat) + '\nLong: ' + str(self.lon)
 			else:
 				self.preview_text = _('No data for IP')
-
+				self.session.open(MessageBox, _("Error retrieving weather data!"), MessageBox.TYPE_ERROR)
 		except:
 			self.preview_text = _('No data for IP')
+			self.session.open(MessageBox, _("Error retrieving weather data!"), MessageBox.TYPE_ERROR)
+
+#############################################################
+# location detect via bing maps #
 
 	def get_latlon_by_name(self):
+		#print "try to found weather via Name"
 		try:
 			name = config.plugins.XionHDF.weather_city.value
-			#res = requests.request('get', 'http://maps.googleapis.com/maps/api/geocode/json?address=%s&sensor=true' % str(name))
-			response = requests.urlopen('get', 'http://www.mapquestapi.com/geocoding/v1/address?key=46e6mCww60Y4X2m8pttGoNTrdsPqedKW&location=' % str(name).format(lat, long))
-			json_data = response.read().decode(response.info().get_param('charset') or 'utf-8')
-			data = json.loads(json_data)
-			
-			self.city = data['results'][0]['locations'][0]['adminArea4']
-			self.lat = data['results']['locations']['latLng']['lat']
-			self.lon = data['results']['locations']['latLng']['lng']
+			res = requests.request('get', 'http://dev.virtualearth.net/REST/v1/Locations/' + name + '?&key=AiU2Jrx506GVhCwH5kw6h6KLiYGbgwWDtYUFvDxYNYQ5yAcb81_RxlIMmFOLB8Rr', timeout=3)
+			data = res.json()
+			self.city1 = data['resourceSets'][0]['resources'][0]['address']['locality']
+			self.city2 = data['resourceSets'][0]['resources'][0]['address']['countryRegion']
+			self.lat = data['resourceSets'][0]['resources'][0]['geocodePoints'][0]['coordinates'][0]
+			self.lon = data['resourceSets'][0]['resources'][0]['geocodePoints'][0]['coordinates'][1]
+			self.city = str(self.city1) + ' / ' + str(self.city2)
 		except:
-			self.session.open(MessageBox, _("Error retrieving weather data,\nfallback to IP!"), MessageBox.TYPE_ERROR)
+			#self.session.open(MessageBox, _("Error retrieving weather data,\nfallback to IP!"), MessageBox.TYPE_ERROR)
 			self.get_latlon_by_ip()
+
+#############################################################
+# location detect via mapquestapi #
+
+#	def get_latlon_by_name(self):
+#		#print "try to found weather via Name"
+#		try:
+#			name = config.plugins.XionHDF.weather_city.value
+#			res = requests.request('get', 'http://www.mapquestapi.com/geocoding/v1/address?key=46e6mCww60Y4X2m8pttGoNTrdsPqedKW&location=' + name, timeout=3)
+#			data = res.json()
+#			self.city = data['results'][0]['locations'][0]['adminArea4']
+#			self.lat = data['results'][0]['locations'][0]['latLng']['lat']
+#			self.lon = data['results'][0]['locations'][0]['latLng']['lng']
+#		except:
+#			self.session.open(MessageBox, _("Error retrieving weather data,\nfallback to IP!"), MessageBox.TYPE_ERROR)
+#			self.get_latlon_by_ip()
 
 #############################################################
 
