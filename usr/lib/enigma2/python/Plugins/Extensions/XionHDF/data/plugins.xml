@@ -2696,6 +2696,9 @@
 		<panel name="template_menu_left_right_button" />
 		<panel name="template_colorkey_text_source_2" />
 	</screen>
+	<screen name="IPTVDMNotificationWidget" position="center,30" zPosition="10" size="550,60" title="IPTVPlayer downloader" backgroundColor="XionBackground" >
+		<widget name="message_label" font="Regular;22" position="0,0" zPosition="2" valign="center" halign="center" size="550,60" backgroundColor="XionBackground" transparent="1" />
+	</screen>
 		<!-- Quad PiP -->
 	<screen name="CreateQuadPipChannelEntry" position="0,0" size="1280,720" flags="wfNoBorder" title="CreateQuadPipChannelEntry" backgroundColor="transparent">
 		<widget name="list" position="50,80" zPosition="2" serviceItemHeight="35" size="500,550" serviceNumberFont="Regular;20" serviceNameFont="Regular;20" foregroundColor="XionFont1" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" backgroundColor="XionBackground" />
