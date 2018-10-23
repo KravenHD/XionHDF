@@ -405,7 +405,7 @@ class XionHDF(ConfigListScreen, Screen):
 			if fileExists(path):
 				return path
 			else:
-				return "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/black.jpg"
+				return "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/fb.jpg"
 		except:
 			return "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/fb.jpg"
 
