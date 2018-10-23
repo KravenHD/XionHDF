@@ -1197,10 +1197,10 @@
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (60, 10), size = (10, 20), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-						MultiContentEntryText(pos = (90, 0), size = (250, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2),
-						MultiContentEntryText(pos = (360, 3), size = (900, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
+						MultiContentEntryText(pos = (90, 0), size = (300, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2),
+						MultiContentEntryText(pos = (390, 3), size = (900, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
 						MultiContentEntryText(pos = (90, 30), size = (180, 19), font = 3, flags = RT_HALIGN_LEFT, text = 5),
-						MultiContentEntryText(pos = (360, 30), size = (900, 19), font = 3 ,flags = RT_HALIGN_LEFT, text = 4),
+						MultiContentEntryText(pos = (390, 30), size = (900, 19), font = 3 ,flags = RT_HALIGN_LEFT, text = 4),
 						MultiContentEntryPixmapAlphaBlend(pos=(5, 15), size=(60, 35), png=6, flags = BT_SCALE)
 					],
 				 "fonts": [gFont("Regular", 24), gFont("Regular", 24), gFont("Regular", 18), gFont("Regular", 16)],
