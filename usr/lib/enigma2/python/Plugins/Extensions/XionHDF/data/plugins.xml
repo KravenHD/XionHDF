@@ -2740,3 +2740,15 @@
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
+		<!-- RemoteChannelStreamConverter -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="ServerEditor" position="0,0" size="1280,720" title="ServerEditor">
+		<widget backgroundColor="XionBackground" font="Regular;22" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="StreamingChannelFromServerScreen" position="0,0" size="1280,720" title="StreamingChannelFromServerScreen">
+		<widget backgroundColor="XionBackground" font="Regular;22" enableWrapAround="1" itemHeight="30" name="list" position="70,110" size="708,540" transparent="1" />
+		<widget source="statusbar" render="Label" position="35,80" zPosition="10" size="550,30" halign="center" valign="center" font="Regular;24" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
