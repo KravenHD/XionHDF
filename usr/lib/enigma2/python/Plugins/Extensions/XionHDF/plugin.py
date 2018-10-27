@@ -34,7 +34,7 @@ from skin import parseColor
 from Components.Pixmap import Pixmap
 from Components.Label import Label
 import gettext, time, subprocess, re, requests, json
-from boxbranding import getBoxType
+from boxbranding import getBoxType, getImageArch
 from enigma import ePicLoad, getDesktop, eConsoleAppContainer
 from Tools.Directories import fileExists, resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
 from ChangeSkin import *
@@ -203,7 +203,7 @@ else:
    mem_info = []
    entrie = os.popen('cat /proc/cmdline').read()
 
-   if getBoxType() in ('vusolo4k', 'mutant51', 'mutant52', 'ax51', 'zgemmah7', 'zgemmah9t', 'zgemmah9s', 'e4hdultra'):
+   if getBoxType() in ('vusolo4k', 'zgemmah7', 'zgemmah9t', 'zgemmah9s', 'e4hdultra'):
         mem = re.findall('_cma=(.*?)M', entrie)
    else:   
         mem = re.findall('bmem=(.*?)M', entrie)
@@ -214,7 +214,7 @@ else:
    if len(mem_info) > 1:
       bmem = int(mem_info[0]) + int(mem_info[1])  
    else:
-      if getBoxType() in ('sf8008','sf4008','dinobot4k','anadol4k','zgemmah9t','zgemmah9s','gbquad4k','gbue4k','e4hdultra','axashis4kcombo','axashis4kcomboplus'):
+      if getImageArch() == 'cortexa15hf-neon-vfpv4' or getBoxType() in ('zgemmah9s','e4hdultra'):
          bmem = 250
       else:
          bmem = int(mem_info[0])
