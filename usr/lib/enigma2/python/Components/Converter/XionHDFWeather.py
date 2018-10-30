@@ -69,12 +69,16 @@ class XionHDFWeather(Poll, Converter, object):
 		day = self.day_value.split('_')[1]
 		if self.what == 'DayTemp':
 			self.info = self.getDayTemp()
+		if self.what == 'DayTemp1':
+			self.info = self.getDayTemp1()
 		elif self.what == 'FeelTemp':
 			self.info = self.getFeelTemp()
 		elif self.what == 'MinTemp':
 			self.info = self.getMinTemp(int(day))
 		elif self.what == 'MaxTemp':
 			self.info = self.getMaxTemp(int(day))
+		elif self.what == 'MaxTemp1':
+			self.info = self.getMaxTemp1(int(day))
 		elif self.what == 'MinMaxTemp':
 			if self.getMinTemp(int(day)) == '' or self.getMaxTemp(int(day)) == '':
 				self.info = ''
@@ -110,7 +114,7 @@ class XionHDFWeather(Poll, Converter, object):
 		global WEATHER_LOAD
 		if WEATHER_LOAD == True:
 			try:
-				print "KravenWeather: Weather download from RealTek"
+				print "Xion Weather: Weather download now"
 				self.data = {}
 				index = 0
 				res = requests.request('get', URL, timeout=5)
@@ -163,6 +167,15 @@ class XionHDFWeather(Poll, Converter, object):
 		except:
 			return ''
 
+	def getMaxTemp1(self, day):
+		try:
+			temp = self.data['Day_%s' % str(day)]['high']
+			if temp == '':
+				return temp
+			return str(temp)
+		except:
+			return ''
+
 	def getFeelTemp(self):
 		try:
 			temp = self.data['Day_0']['temp']
@@ -178,6 +191,13 @@ class XionHDFWeather(Poll, Converter, object):
 		except:
 			return 'N/A'
 
+	def getDayTemp1(self):
+		try:
+			temp = self.data['Day_0']['temp']
+			return str(temp)
+		except:
+			return 'N/A'
+
 	def getWeatherDes(self, day):
 		try:
 			weather = self.data['Day_%s' % str(day)]['skytextday']
@@ -188,6 +208,7 @@ class XionHDFWeather(Poll, Converter, object):
 			weather = weather.replace("Ã„","Ä")
 			weather = weather.replace("Ã–","Ö")
 			weather = weather.replace("Ãœ","Ü")
+			weather = weather.replace("Ã","Ü")
 			return str(weather)
 		except:
 			return ''
