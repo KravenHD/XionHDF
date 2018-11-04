@@ -237,12 +237,12 @@
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="950,605" render="Label" size="107,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
-			<convert type="XionHDFEventTime">Remaining</convert>
-			<convert type="XionHDFRemainingToText">InMinutes</convert>
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular; 22" foregroundColor="XionFont2" valign="center" halign="right" position="950,660" render="Label" size="107,35" source="session.Event_Next" transparent="1" zPosition="1">
-			<convert type="XionHDFEventTime">Duration</convert>
-			<convert type="XionHDFClockToText">InMinutes</convert>
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
 		</widget>
 		<eLabel backgroundColor="XionLine" position="277,647" size="780,2" zPosition="2" />
 		<widget position="277,645" render="Progress" size="780,6" source="session.Event_Now" transparent="1" zPosition="7" foregroundColor="XionProgress">
