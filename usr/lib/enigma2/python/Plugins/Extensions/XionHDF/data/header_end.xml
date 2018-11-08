@@ -15,8 +15,8 @@
 		<color color="black" name="WindowTitleBackground" />
 	</windowstyle>
 	<switchpixmap>
-		<pixmap name="menu_on" filename="XionHDF/menu_on.png"/>
-		<pixmap name="menu_off" filename="XionHDF/menu_off.png"/>
+		<pixmap name="menu_on" filename="XionHDF/menu_on.png" backgroundColor="XionBackground" alphatest="blend" />
+		<pixmap name="menu_off" filename="XionHDF/menu_off.png" backgroundColor="XionBackground" alphatest="blend" />
 	</switchpixmap>
 		<!--/* TEMPLATES -->
 	<screen name="template_colorkey_text">
