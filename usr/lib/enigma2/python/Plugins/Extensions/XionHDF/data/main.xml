@@ -2317,6 +2317,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="BlindscanState" position="0,0" size="1280,720" title="Satellite Blindscan">
+		<widget name="config" position="40,160" size="708,450" alphatest="blend" font="Regular;16" transparent="1" halign="center" />
+		<widget name="progress" position="40,70" size="800,80" alphatest="blend" font="Regular;20" transparent="1" />
+		<widget name="post_action" position="870,402" size="380,340" alphatest="blend" font="Regular;19" halign="center" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
 		<!-- CableScanScreen -->
 	<screen name="CableScanScreen" position="0,0" size="1280,720" title="Cable Scan" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="config" itemHeight="30" font="Regular;22" position="70,80" size="500,250" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
