@@ -58,7 +58,7 @@
 		<alias name="VirtualKeyboard" font="Regular" size="24" height="45" />
 	</fonts>
 	<parameters>
-		<parameter name="ChoicelistName" value="33,3,433,30"/>
+		<parameter name="ChoicelistName" value="33,3,800,30"/>
 		<parameter name="ChoicelistIcon" value="1,1,27,27"/>
 		<parameter name="PluginBrowserName" value="113,1,26"/>
 		<parameter name="PluginBrowserDescr" value="113,20,26"/>
