@@ -17,8 +17,8 @@
 			</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular; 18" halign="right" position="955,146" render="Label" size="232,25" source="ServiceEvent" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
-			<convert type="XionHDFEventTime">Remaining</convert>
-			<convert type="XionHDFRemainingToText">InMinutes</convert>
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Progress" position="955,171" size="232,3" borderWidth="0" backgroundColor="XionBackground" foregroundColor="XionProgress" transparent="1" zPosition="1">
 			<convert type="XionHDFEventTime">Progress</convert>

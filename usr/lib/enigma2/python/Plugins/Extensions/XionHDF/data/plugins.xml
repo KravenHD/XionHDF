@@ -1805,8 +1805,8 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" halign="center" position="168,313" render="Label" size="128,25" source="Event" transparent="1">
-			<convert type="XionHDFEventTime">Remaining</convert>
-			<convert type="XionHDFRemainingToText">InMinutes</convert>
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" halign="right" position="122,347" render="Label" size="100,30" source="Event" transparent="1">
 			<convert type="XionHDFEventTime">StartTime</convert>
@@ -1845,8 +1845,8 @@
 			<convert type="XionHDFClockToText">Format:- %H:%M</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont1" halign="left" position="622,115" render="Label" size="150,32" source="Event" transparent="1" zPosition="3">
-			<convert type="XionHDFEventTime">Remaining</convert>
-			<convert type="XionHDFRemainingToText">InMinutes</convert>
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 		<eLabel backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" halign="left" position="915,73" size="300,30" text="Similar broadcasts:" transparent="1" zPosition="3" />
 		<widget backgroundColor="XionBackground" font="Regular;22" foregroundColor="XionFont1" halign="left" name="CoolSimilar" position="915,100" size="336,180" transparent="1" zPosition="3" />

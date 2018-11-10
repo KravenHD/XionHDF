@@ -30,8 +30,8 @@
 		<eLabel text="Jetzt läuft:" position="488,19" size="180,30" font="Regular2; 23" halign="left" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" zPosition="2" />
 		<eLabel text="Es folgt in" position="488,376" size="180,30" font="Regular2; 23" halign="left" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" zPosition="2" />
 		<widget backgroundColor="XionBackground" font="Regular2; 23" halign="left" position="603,376" render="Label" size="125,30" source="ServiceEvent" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont2">
-			<convert type="XionHDFEventTime">Remaining</convert>
-			<convert type="XionHDFRemainingToText">InMinutes</convert>
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 		<widget source="ServiceEvent" render="XionHDFSingleEpgListNobile" position="925,77" size="339,566" font="Regular;17" foregroundColor="XionFont1" backgroundColor="XionBackground" noWrap="1" transparent="1" />
 		<widget source="ServiceEvent" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" position="488,415" zPosition="1" size="408,25" font="Regular2; 20" halign="center" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2">
