@@ -2487,7 +2487,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- IPKGMenu -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="IPKGMenu" position="0,0" size="1280,720" title="Select IPKG source.....">
-		<widget itemHeight="30" name="filelist" position="70,80" size="708,540" transparent="1" />
+		<widget itemHeight="30" font="Regular;20" name="filelist" position="70,80" size="708,540" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
@@ -2523,7 +2523,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- BackupSuiteRestore -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="BackupSuiteRestore" position="0,0" size="1280,720" title="Restore Backups">
-		<widget itemHeight="30" name="filelist" position="70,80" size="708,540" transparent="1" />
+		<widget itemHeight="30" name="filelist" font="Regular;20" position="70,80" size="708,540" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
@@ -2536,13 +2536,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- RestoreMenu -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="RestoreMenu" position="0,0" size="1280,720" title="Restore Backups">
-		<widget itemHeight="30" name="filelist" position="70,80" size="708,540" transparent="1" />
+		<widget itemHeight="30" font="Regular;20" name="filelist" position="70,80" size="708,540" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- RestoreMenuImage -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="RestoreMenuImage" position="0,0" size="1280,720" title="Restore Backups">
-		<widget itemHeight="30" name="filelist" position="70,80" size="708,540" transparent="1" />
+		<widget itemHeight="30" font="Regular;20" name="filelist" position="70,80" size="708,540" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
@@ -2592,7 +2592,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- CronManagerFile -->
 	<screen flags="wfNoBorder" name="CronManagerFile" position="0,0" size="1280,720" title="Select file to execute" backgroundColor="transparent">
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" name="executable" position="70,80" size="708,30" transparent="1" />
-		<widget backgroundColor="XionBackground" itemHeight="30" name="filelist" position="70,130" size="708,480" transparent="1" zPosition="3" />
+		<widget backgroundColor="XionBackground" itemHeight="30" name="filelist" font="Regular;20" position="70,130" size="708,480" transparent="1" zPosition="3" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
@@ -2618,7 +2618,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ExeManagerFile -->
 	<screen flags="wfNoBorder" name="ExeManagerFile" position="0,0" backgroundColor="transparent" size="1280,720" title="Select file to execute">
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" name="executable" position="70,75" size="708,28" transparent="1" />
-		<widget backgroundColor="XionBackground" itemHeight="30" name="filelist" position="70,110" size="708,540" transparent="1" zPosition="3" />
+		<widget backgroundColor="XionBackground" itemHeight="30" name="filelist" font="Regular;20" position="70,110" size="708,540" transparent="1" zPosition="3" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
@@ -2962,7 +2962,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- DriverManagerFile -->
 	<screen flags="wfNoBorder" name="DriverManagerFile" position="0,0" size="1280,720" title="Select file to execute" transparent="0" backgroundColor="transparent">
 		<widget backgroundColor="XionBackground" font="Regular2;23" name="driverfile" position="70,74" size="708,28" transparent="1" foregroundColor="XionFont2" />
-		<widget backgroundColor="XionBackground" itemHeight="30" name="filelist" position="70,107" size="708,540" transparent="1" zPosition="3" />
+		<widget backgroundColor="XionBackground" itemHeight="30" name="filelist" font="Regular;20" position="70,107" size="708,540" transparent="1" zPosition="3" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
