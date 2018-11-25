@@ -177,8 +177,13 @@ class XionHDFServiceInfo(Converter, object):
                 video_width = int(f.read(), 16)
                 f.close()
             if not video_width:
-                video_width = int(self.getServiceInfoString(info, iServiceInformation.sVideoWidth))
-            return '%d' % video_width
+                #video_width = int(self.getServiceInfoString(info, iServiceInformation.sVideoWidth))
+                video_width = self.info.getInfo(iServiceInformation.sVideoWidth)
+            if video_width > 4200:
+                video_width = int('0')
+                return '%d' % video_width
+            else:
+                return '%d' % video_width
         elif self.type == self.YRES:
             video_height = None
             if path.exists('/proc/stb/vmpeg/0/yres'):
@@ -186,8 +191,13 @@ class XionHDFServiceInfo(Converter, object):
                 video_height = int(f.read(), 16)
                 f.close()
             if not video_height:
-                video_height = int(self.getServiceInfoString(info, iServiceInformation.sVideoHeight))
-            return '%d' % video_height
+                #video_height = int(self.getServiceInfoString(info, iServiceInformation.sVideoHeight))
+                video_height = self.info.getInfo(iServiceInformation.sVideoHeight)
+            if video_height > 4200:
+                video_height = int('0')
+                return '%d' % video_height
+            else:
+                return '%d' % video_height
         elif self.type == self.APID:
             return self.getServiceInfoString(info, iServiceInformation.sAudioPID)
         elif self.type == self.VPID:
