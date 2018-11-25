@@ -2752,3 +2752,13 @@
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
+		<!-- KiddyblockScreen -->
+	<screen backgroundColor="#00000000" name="KiddyblockScreen" position="0,0" size="1280,720" transparent="0" title="Password">
+		<widget backgroundColor="XionBackground" font="Regular;22" scrollbarMode="showOnDemand" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="700,450" transparent="1" />
+		<panel name="template_menu_left_notransparent" />
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="KiddyBlockSetup" position="0,0" size="1280,720" title="KiddyBlockSetup Settings">
+		<widget backgroundColor="XionBackground" font="Regular;22" scrollbarMode="showOnDemand" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="700,450" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>

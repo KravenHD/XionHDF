@@ -173,6 +173,16 @@
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
 	</screen>
+	<screen name="template_menu_left_notransparent">
+		<eLabel backgroundColor="XionLine" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="XionLine" position="0,656" size="1280,2" zPosition="2" />
+		<widget backgroundColor="#00000000" font="Regular2;34" foregroundColor="XionFont2" position="70,12" render="Label" size="708,46" source="Title" transparent="0" halign="center" valign="center" noWrap="1" />
+		<eLabel backgroundColor="#00000000" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
+		<ePixmap pixmap="XionHDF/logo2.png" position="914,120" size="300,300" backgroundColor="XionBackground" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="0" valign="center" foregroundColor="XionFont1">
+			<convert type="XionHDFClockToText">Default</convert>
+		</widget>
+	</screen>
 	<screen name="template_menu_left_logo_off">
 		<eLabel backgroundColor="XionLine" position="0,64" size="1280,2" zPosition="2" />
 		<eLabel backgroundColor="XionLine" position="0,656" size="1280,2" zPosition="2" />
@@ -7113,6 +7123,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="StreamingChannelFromServerScreen" position="0,0" size="1280,720" title="StreamingChannelFromServerScreen">
 		<widget backgroundColor="XionBackground" font="Regular;22" enableWrapAround="1" itemHeight="30" name="list" position="70,110" size="708,540" transparent="1" />
 		<widget source="statusbar" render="Label" position="35,80" zPosition="10" size="550,30" halign="center" valign="center" font="Regular;24" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- KiddyblockScreen -->
+	<screen backgroundColor="#00000000" name="KiddyblockScreen" position="0,0" size="1280,720" transparent="0" title="Password">
+		<widget backgroundColor="XionBackground" font="Regular;22" scrollbarMode="showNever" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="700,450" transparent="1" />
+		<panel name="template_menu_left_notransparent" />
+	</screen>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="KiddyBlockSetup" position="0,0" size="1280,720" title="KiddyBlockSetup Settings">
+		<widget backgroundColor="XionBackground" font="Regular;22" scrollbarMode="showNever" enableWrapAround="1" itemHeight="30" name="config" position="70,80" size="700,450" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
