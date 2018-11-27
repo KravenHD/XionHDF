@@ -177,8 +177,8 @@ class XionHDFServiceInfo(Converter, object):
                 video_width = int(f.read(), 16)
                 f.close()
             if not video_width:
-                #video_width = int(self.getServiceInfoString(info, iServiceInformation.sVideoWidth))
-                video_width = self.info.getInfo(iServiceInformation.sVideoWidth)
+                video_width = int(self.getServiceInfoString(info, iServiceInformation.sVideoWidth))
+                #video_width = self.info.getInfo(iServiceInformation.sVideoWidth)
             if video_width > 4200:
                 video_width = int('0')
                 return '%d' % video_width
@@ -191,8 +191,8 @@ class XionHDFServiceInfo(Converter, object):
                 video_height = int(f.read(), 16)
                 f.close()
             if not video_height:
-                #video_height = int(self.getServiceInfoString(info, iServiceInformation.sVideoHeight))
-                video_height = self.info.getInfo(iServiceInformation.sVideoHeight)
+                video_height = int(self.getServiceInfoString(info, iServiceInformation.sVideoHeight))
+                #video_height = self.info.getInfo(iServiceInformation.sVideoHeight)
             if video_height > 4200:
                 video_height = int('0')
                 return '%d' % video_height
