@@ -348,10 +348,10 @@
 		</widget>
 		<eLabel text="x" position="82,40" size="15,22" zPosition="3" font="Regular; 19" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget source="session.CurrentService" render="Label" zPosition="3" position="97,40" size="62,22" font="Regular; 19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
-			<convert type="XionHDFServiceInfo">VideoHeight</convert>
+			<convert type="XionHDFServiceInfo2">VideoHeight</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" zPosition="3" position="32,40" size="50,22" font="Regular; 19" halign="right" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
-			<convert type="XionHDFServiceInfo">VideoWidth</convert>
+			<convert type="XionHDFServiceInfo2">VideoWidth</convert>
 		</widget>
 		<widget source="session.TunerInfo" render="Pixmap" pixmap="XionHDF/buttons/a_on.png" position="860,41" zPosition="2" size="22,22" backgroundColor="XionBackground" alphatest="blend" valign="center">
 			<convert type="TunerInfo">TunerUseMask</convert>
