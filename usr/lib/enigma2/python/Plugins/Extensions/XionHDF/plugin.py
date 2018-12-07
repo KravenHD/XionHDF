@@ -656,7 +656,7 @@ class XionHDF(ConfigListScreen, Screen):
 
 			config.plugins.XionHDF.weather_foundcity.value=self.city
 			config.plugins.XionHDF.weather_foundcity.save()
-			config.plugins.XionHDF.weather_realtek_latlon.value = 'lat=%s&lon=%s&metric=1&language=de' % (str(self.lat), str(self.lon))
+			config.plugins.XionHDF.weather_realtek_latlon.value = 'lat=%s&lon=%s&metric=1&language=%s' % (str(self.lat), str(self.lon), lang[:2])
 			#print config.plugins.XionHDF.weather_realtek_latlon.value
 			config.plugins.XionHDF.weather_realtek_latlon.save()
 
