@@ -209,6 +209,13 @@ class XionHDFWeather(Poll, Converter, object):
 			weather = weather.replace("Ã–","Ö")
 			weather = weather.replace("Ãœ","Ü")
 			weather = weather.replace("Ã","Ü")
+			weather = weather.replace("Ü","Ç")			
+			weather = weather.replace("Å","Ş")
+			weather = weather.replace("Ä°","İ")			
+			weather = weather.replace("ÅŸ","ş")
+			weather = weather.replace("ÄŸ","ğ")
+			weather = weather.replace("Ã§","ç")
+			weather = weather.replace("Ä±","ı")
 			return str(weather)
 		except:
 			return ''
