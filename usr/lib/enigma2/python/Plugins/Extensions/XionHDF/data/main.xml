@@ -2479,8 +2479,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- IpkgInstaller -->
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="IpkgInstaller" position="0,0" size="1280,720" title="...">
-		<widget itemHeight="30" name="list" position="70,80" size="708,450" transparent="1" />
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="IpkgInstaller" position="0,0" size="1280,720" title="Ipk Installer">
+		<widget itemHeight="35" font="Regular;22" name="list" position="70,80" size="708,450" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="70,595" render="Label" size="708,28" source="introduction" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
