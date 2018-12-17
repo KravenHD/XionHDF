@@ -2018,9 +2018,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- Change_volume -->
 	<screen name="Change_volume" position="0,0" size="1280,720" title="Change Volume offset" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="70,80" size="708,540" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="config" position="70,80" size="708,540" itemHeight="30" font="Regular;21" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_left_button" />
-		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- AC3LipSyncSetup -->
 	<screen name="AC3LipSyncSetup" position="0,0" size="1280,720" title="AC3 Lip Sync Setup" flags="wfNoBorder" backgroundColor="transparent">
