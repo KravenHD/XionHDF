@@ -200,23 +200,36 @@ class XionHDFWeather(Poll, Converter, object):
 
 	def getWeatherDes(self, day):
 		try:
-			weather = self.data['Day_%s' % str(day)]['skytextday']
-			weather = weather.replace("Ã¤","ä")
-			weather = weather.replace("Ã¶","ö")
-			weather = weather.replace("Ã¼","ü")
-			weather = weather.replace("ÃŸ","ß")
-			weather = weather.replace("Ã„","Ä")
-			weather = weather.replace("Ã–","Ö")
-			weather = weather.replace("Ãœ","Ü")
-			weather = weather.replace("Ã","Ü")
-			weather = weather.replace("Ü","Ç")			
-			weather = weather.replace("Å","Ş")
-			weather = weather.replace("Ä°","İ")			
-			weather = weather.replace("ÅŸ","ş")
-			weather = weather.replace("ÄŸ","ğ")
-			weather = weather.replace("Ã§","ç")
-			weather = weather.replace("Ä±","ı")
-			return str(weather)
+			languagecheck = lang[:2]
+			if languagecheck == "de":
+				weather = self.data['Day_%s' % str(day)]['skytextday']
+				weather = weather.replace("Ã¤","ä")
+				weather = weather.replace("Ã¶","ö")
+				weather = weather.replace("Ã¼","ü")
+				weather = weather.replace("ÃŸ","ß")
+				weather = weather.replace("Ã„","Ä")
+				weather = weather.replace("Ã–","Ö")
+				weather = weather.replace("Ãœ","Ü")
+				weather = weather.replace("Ã","Ü")
+				return str(weather)
+			else:
+				weather = self.data['Day_%s' % str(day)]['skytextday']
+				weather = weather.replace("Ã¤","ä")
+				weather = weather.replace("Ã¶","ö")
+				weather = weather.replace("Ã¼","ü")
+				weather = weather.replace("ÃŸ","ß")
+				weather = weather.replace("Ã„","Ä")
+				weather = weather.replace("Ã–","Ö")
+				weather = weather.replace("Ãœ","Ü")
+				weather = weather.replace("Ã","Ü")
+				weather = weather.replace("Ü","Ç")
+				weather = weather.replace("Å","Ş")
+				weather = weather.replace("Ä°","İ")
+				weather = weather.replace("ÅŸ","ş")
+				weather = weather.replace("ÄŸ","ğ")
+				weather = weather.replace("Ã§","ç")
+				weather = weather.replace("Ä±","ı")
+				return str(weather)
 		except:
 			return ''
 
