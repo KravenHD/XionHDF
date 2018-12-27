@@ -4315,9 +4315,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- StreamingClientsInfo -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="StreamingClientsInfo" position="0,0" size="1280,720" >
 		<widget name="ScrollLabel" scrollbarMode="showNever" position="70,80" size="708,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
-		<widget name="ScrollLabel2" scrollbarMode="showOnDemand" position="70,110" size="708,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
+		<widget name="ScrollLabel2" scrollbarMode="showOnDemand" position="70,110" size="1108,450" font="Regular;20" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont1" />
 		<panel name="template_colorkey_text_source" />
-		<panel name="template_menu_left_button" />
+		<panel name="template_menu_left_logo_off" />
 	</screen>
 		<!-- Multiboot Selector -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="MultiBootStartupOPT" position="0,0" size="1280,720" >
