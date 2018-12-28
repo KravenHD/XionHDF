@@ -2200,7 +2200,7 @@
 		<!-- WlanScan -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="WlanScan" position="0,0" size="1280,720" title="Choose a Wireless Network">
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" position="70,80" render="Label" size="708,30" source="info" transparent="1" />
-		<widget position="70,125" render="Listbox" size="708,450" source="list" itemHeight="26" font="Regular;22" transparent="1">
+		<widget position="70,125" render="Listbox" size="708,450" source="list" itemHeight="75" font="Regular;22" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 8), size = (650, 35), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
