@@ -3493,8 +3493,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- Blindscan -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="Blindscan" position="0,0" size="1280,720" title="Blindscan">
-		<widget name="config" itemHeight="30" font="Regular;22" position="70,80" size="708,450" scrollbarMode="showOnDemand" transparent="1" />
-		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" name="introduction" position="70,595" size="708,28" transparent="1" zPosition="1" />
+		<widget name="config" itemHeight="30" font="Regular;22" position="20,80" size="850,450" scrollbarMode="showOnDemand" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
