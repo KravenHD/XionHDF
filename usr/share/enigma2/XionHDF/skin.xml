@@ -3710,7 +3710,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ImageBackup -->
 	<screen name="ImageBackup" position="0,0" size="1280,720" title="Image Backup" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="info-hdd" position="20,80" zPosition="1" size="708,150" font="Regular;22" foregroundColor="XionFont1" halign="left" valign="top" transparent="1" backgroundColor="XionBackground" />
-		<widget name="info-usb" position="70,245" zPosition="1" size="708,330" font="Regular;22" foregroundColor="XionFont1" halign="left" valign="top" transparent="1" backgroundColor="XionBackground" />
+		<widget name="info-usb" position="20,245" zPosition="1" size="708,330" font="Regular;22" foregroundColor="XionFont1" halign="left" valign="top" transparent="1" backgroundColor="XionBackground" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
