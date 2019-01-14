@@ -55,7 +55,7 @@ class XionHDFExtraInfo2(Poll, Converter, object):
 		return str(xres) + "x" + str(yres) + mode
 
 	def createVideoCodec(self,info):
-		return ("MPEG2", "MPEG4", "MPEG1", "MPEG4-II", "VC1", "VC1-SM", "")[info.getInfo(iServiceInformation.sVideoType)]
+		return codec_data.get(info.getInfo(iServiceInformation.sVideoType), "N/A")
 
 	def createAudioCodec(self,info):
 		service = self.source.service
