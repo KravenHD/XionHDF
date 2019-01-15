@@ -1711,7 +1711,7 @@
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="menu_mainmenu" position="0,0" size="1280,720" title="Main menu">
 		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showNever" size="708,540" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (16, 10), size = (500, 50), flags = RT_HALIGN_LEFT, text = 0) ],
+				{"template": [ MultiContentEntryText(pos = (16, 10), size = (600, 50), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular", 30)],
 				"itemHeight": 60
 				}
