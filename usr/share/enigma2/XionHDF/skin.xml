@@ -4770,7 +4770,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.CurrentService" render="Label" zPosition="3" position="363,683" size="145,25" font="Regular;18" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
-			<convert type="XionHDFExtraInfo2">ResolutionString</convert>
+			<convert type="XionHDFExtraInfo">ResolutionString</convert>
 		</widget>
 		<widget position="210,666" render="PositionGauge" size="858,9" source="session.CurrentService" zPosition="2" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
@@ -4789,10 +4789,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular;19" halign="center" position="722,683" render="Label" size="224,25" source="session.CurrentService" text="Dolby Digital" transparent="1" valign="center" zPosition="3">
-			<convert type="XionHDFExtraInfo2">AudioCodec</convert>
+			<convert type="XionHDFExtraInfo">AudioCodec</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular;19" halign="center" position="960,683" render="Label" size="107,25" source="session.CurrentService" transparent="1" valign="center" zPosition="3">
-			<convert type="XionHDFExtraInfo2">VideoCodec</convert>
+			<convert type="XionHDFExtraInfo">VideoCodec</convert>
 		</widget>
 		<panel name="template_player" />
 	</screen>
@@ -5305,7 +5305,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.CurrentService" render="Label" zPosition="3" position="404,685" size="127,22" font="Regular;18" halign="center" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1">
-			<convert type="XionHDFExtraInfo2">Resolution</convert>
+			<convert type="XionHDFExtraInfo">Resolution</convert>
 		</widget>
 		<widget position="210,666" render="PositionGauge" size="858,9" source="session.CurrentService" zPosition="2" transparent="1">
 			<convert type="ServicePosition">Gauge</convert>
