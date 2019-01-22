@@ -350,7 +350,7 @@
 		<widget font="Regular;30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="25,582" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
@@ -416,7 +416,7 @@
 		<widget font="Regular;30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="25,582" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
@@ -617,7 +617,7 @@
 		<widget font="Regular;30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="25,582" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
@@ -821,7 +821,7 @@
 		<widget font="Regular;30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=none,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="25,582" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
@@ -1126,7 +1126,7 @@
 		<widget backgroundColor="XionBackground" scrollbarMode="showNever" foregroundColorMarkedSelected="green" foregroundColor="XionFont1" colorEventProgressbarBorder="XionLine" colorEventProgressbarBorderSelected="XionSelFont" colorEventProgressbarSelected="XionSelFont" colorServiceDescription="XionFont2" colorServiceDescriptionSelected="XionSelFont" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="17,78" serviceInfoFont="Regular;23" serviceItemHeight="35" serviceNameFont="Regular2;25" serviceNumberFont="Regular;25" size="816,564" transparent="1" />
 		<widget source="ServiceEvent" render="XionHDFSingleEpgList" position="891,561" size="362,113" noWrap="1" font="Regular2;22" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
 		</widget>
-		<widget alphatest="blend" position="891,100" render="XionHDFXPicon" size="67,40" source="ServiceEvent" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="891,100" render="Picon" size="67,40" source="ServiceEvent" transparent="1" zPosition="4">
 			<convert type="XionHDFRefString">ServicelistRef</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular;24" halign="left" noWrap="1" position="891,148" render="Label" size="72,30" source="ServiceEvent" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
@@ -1374,7 +1374,7 @@
 		<widget font="Regular;40" foregroundColor="XionFont1" halign="left" noWrap="1" position="113,430" render="Label" size="1020,60" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="on">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget alphatest="blend" position="6,428" render="XionHDFXPicon" size="100,60" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="6,428" render="Picon" size="100,60" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular;22" halign="right" position="1165,463" render="Label" size="107,35" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" alphatest="on">
@@ -2906,7 +2906,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" scrollbarMode="showNever" foregroundColorMarkedSelected="green" foregroundColor="XionFont1" colorEventProgressbarBorder="XionLine" colorEventProgressbarBorderSelected="XionLine" colorServiceDescription="XionFont2" colorServiceDescriptionSelected="white" colorServiceRecording="red" foregroundColorServiceNotAvail="yellow" itemHeight="50" name="list" position="17,78" serviceInfoFont="Regular;23" serviceItemHeight="35" serviceNameFont="Regular2;25" serviceNumberFont="Regular;25" size="816,564" transparent="1" />
 		<widget source="ServiceEvent" render="XionHDFSingleEpgList" position="891,561" size="362,113" noWrap="1" font="Regular2;22" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
 		</widget>
-		<widget alphatest="blend" position="891,15" render="XionHDFXPicon" size="47,28" source="ServiceEvent" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="891,15" render="Picon" size="47,28" source="ServiceEvent" transparent="1" zPosition="4">
 			<convert type="XionHDFRefString">ServicelistRef</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular;18" halign="right" position="1153,124" render="Label" size="100,24" source="session.Event_Now" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1">
@@ -3075,7 +3075,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="XionHDFClockToText">WithSeconds</convert>
 		</widget>
 		<eLabel backgroundColor="XionLine" position="14,516" size="1250,1" zPosition="2" />
-		<widget alphatest="blend" position="14,448" render="XionHDFXPicon" size="100,60" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="14,448" render="Picon" size="100,60" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="19,537" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
@@ -4785,7 +4785,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 		<eLabel backgroundColor="XionBackground" font="Regular;20" halign="center" position="978,633" size="40,35" text="---&gt;" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
 		<widget name="Cover" position="1091,453" size="180,264" zPosition="1" alphatest="on" valign="bottom" halign="center" />
-		<widget alphatest="blend" position="25,619" render="XionHDFXPicon" size="150,90" source="Service" transparent="1" zPosition="2">
+		<widget alphatest="blend" position="25,619" render="Picon" size="150,90" source="Service" transparent="1" zPosition="2">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular;19" halign="center" position="722,683" render="Label" size="224,25" source="session.CurrentService" text="Dolby Digital" transparent="1" valign="center" zPosition="3">

@@ -308,7 +308,7 @@
 		</widget>
 		<eLabel backgroundColor="XionBackground" font="Regular; 20" halign="center" position="978,633" size="40,35" text="---&gt;" transparent="1" valign="center" zPosition="1" foregroundColor="XionFont1" />
 		<widget name="Cover" position="1091,453" size="180,264" zPosition="1" alphatest="on" valign="bottom" halign="center" />
-		<widget alphatest="blend" position="25,619" render="XionHDFXPicon" size="150,90" source="Service" transparent="1" zPosition="2">
+		<widget alphatest="blend" position="25,619" render="Picon" size="150,90" source="Service" transparent="1" zPosition="2">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget backgroundColor="XionBackground" font="Regular; 19" halign="center" position="722,683" render="Label" size="224,25" source="session.CurrentService" text="Dolby Digital" transparent="1" valign="center" zPosition="3">

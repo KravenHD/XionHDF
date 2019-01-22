@@ -240,7 +240,7 @@
 		<widget font="Regular; 30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="25,582" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
@@ -306,7 +306,7 @@
 		<widget font="Regular; 30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="25,582" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
@@ -507,7 +507,7 @@
 		<widget font="Regular; 30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="25,582" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
@@ -711,7 +711,7 @@
 		<widget font="Regular; 30" halign="left" valign="center" noWrap="1" position="426,656" render="XionHDFRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="520,40" source="session.Event_Next" backgroundColor="XionBackground" transparent="1" zPosition="1" foregroundColor="XionFont2">
 			<convert type="XionHDFEventName">Name</convert>
 		</widget>
-		<widget alphatest="blend" position="25,582" render="XionHDFXPicon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
+		<widget alphatest="blend" position="25,582" render="Picon" size="220,132" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
