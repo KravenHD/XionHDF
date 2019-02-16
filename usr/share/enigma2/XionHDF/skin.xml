@@ -3544,35 +3544,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- SoftwareUpdateChanges -->
 	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" title="SoftwareUpdateChanges" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="text" position="20,80" size="708,540" font="Regular;22" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="text" position="20,80" size="880,560" font="Regular;18" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
-		<!-- UpdatePluginMenu -->
-	<!--screen backgroundColor="transparent" flags="wfNoBorder" name="UpdatePluginMenu" position="0,0" size="1280,720" title="Softwaremanager...">
-		<widget enableWrapAround="1" position="20,80" render="Listbox" scrollbarMode="showNever" size="708,520" source="menu" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (15, 6), size = (383, 30), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
-					],
-					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 40
-				}
-			</convert>
-		</widget>
-		<widget backgroundColor="XionBackground" foregroundColor="XionFont2" position="901,80" render="Listbox" scrollbarMode="showNever" selectionDisabled="1" size="355,540" source="menu" transparent="1" zPosition="3">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos = (0, 0), size = (355, 180), flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP, text = 2), # index 2 is the Description,
-					],
-					"fonts": [gFont("Regular2", 22)],
-					"itemHeight": 180
-				}
-			</convert>
-		</widget>
-		<panel name="template_menu_left_right_button" />
-		<panel name="template_colorkey_text_source" />
-	</screen-->
 		<!-- PluginDetails -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PluginDetails" position="0,0" size="1280,720" title="Plugin details">
 		<widget alphatest="blend" name="statuspic" position="70,120" size="48,48" />
