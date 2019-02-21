@@ -1471,7 +1471,7 @@
 		<widget backgroundColor="XionBackground" font="Regular;22" halign="center" name="more_text" position="370,87" size="150,30" text="MORE" transparent="1" zPosition="10" />
 		<widget font="Regular;22" halign="right" name="date" position="960,87" size="250,30" transparent="1" valign="center" />
 		<widget backgroundColor="XionBackground" itemHeight="30" name="list" position="50,142" size="1180,360" transparent="1" />
-		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" position="50,528" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1180,117" source="Event" zPosition="-8">
+		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="left" position="50,508" render="XionHDFRunningText" options="movetype=none,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" size="1180,135" source="Event" zPosition="-8">
 			<convert type="XionHDFEventName">BothDescriptionsFiltered</convert>
 		</widget>
 		<panel name="template_menu_full_button" />
@@ -1575,7 +1575,7 @@
 		<widget name="bouquetlist" position="50,30" size="900,120" itemHeight="40" foregroundColor="XionFont1" backgroundColor="XionBackground" foregroundColorSelected="white" backgroundColorSelected="XionBackground" scrollbarMode="showNever" zPosition="6" transparent="1" />
 		<widget name="timeline_text" position="25,273" size="1230,25" selectionDisabled="1" transparent="1" />
 		<widget name="list" position="25,304" size="1230,345" EntryBorderColor="white" EntrybackgroundColor="XionBackground" EntryBackgroundColorSelected="grey" scrollbarMode="showNever" transparent="1" />
-		<widget name="timeline_now" position="80,297" zPosition="2" size="13,355" pixmap="XionHDF/epg/timeline-now.png" alphatest="blend" />
+		<widget name="timeline_now" position="80,274" zPosition="2" size="3,30" pixmap="XionHDF/epg/SelectedZapEvent.png" alphatest="blend" />
 		<widget source="session.VideoPicture" render="Pig" position="927,70" size="320,180" zPosition="3" backgroundColor="transparent" />
 		<eLabel position="101,125" size="535,1" backgroundColor="XionLine" />
 		<panel name="template_menu_full_button" />
