@@ -380,7 +380,7 @@ class XionHDFExtraInfo(Poll, Converter, object):
         return str(xres) + 'x' + str(yres) + mode + fps
 
     def createVideoCodec(self, info):
-        return ('MPEG2', 'MPEG4', 'MPEG1', 'MPEG4-II', 'VC1', 'VC1-SM', '')[info.getInfo(iServiceInformation.sVideoType)]
+        return ("MPEG2", "AVC", "H263", "VC1", "MPEG4-VC", "VC1-SM", "MPEG1", "HEVC", "VB8", "VB9", "XVID", "N/A 11", "N/A 12", "DIVX 3.11", "DIVX 4", "DIVX 5", "AVC", "N/A 17", "VB6", "N/A 19", "N/A 20", "SPARK", "")[info.getInfo(iServiceInformation.sVideoType)]
 
     def createPIDInfo(self, info):
         vpid = info.getInfo(iServiceInformation.sVideoPID)
