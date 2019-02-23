@@ -3464,9 +3464,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- ServiceInfo -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo">
-		<widget backgroundColor="XionBackground" itemHeight="40" font="Regular;24" scrollbarMode="showNever" name="infolist" position="20,80" selectionDisabled="1" size="708,550" transparent="1" />
-		<eLabel text="HbbTV URL:" position="70,585" size="150,32" font="Regular;23" halign="left" noWrap="1" backgroundColor="black" transparent="1" />
-		<widget source="session.CurrentService" render="Label" position="370,585" size="950,30" transparent="1" noWrap="1" zPosition="1" backgroundColor="background" font="Regular;23" valign="top" halign="left">
+		<widget backgroundColor="XionBackground" itemHeight="40" font="Regular; 24" scrollbarMode="showOnDemand" name="infolist" position="20,80" selectionDisabled="1" size="1200,550" transparent="1" />
+		<eLabel text="HbbTV URL:" position="700,630" size="150,32" font="Regular;15" halign="left" noWrap="1" backgroundColor="black" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="780,630" size="950,30" transparent="1" noWrap="1" zPosition="1" backgroundColor="background" font="Regular;15" valign="top" halign="left">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 		</widget>
 		<panel name="template_menu_left_button" />
