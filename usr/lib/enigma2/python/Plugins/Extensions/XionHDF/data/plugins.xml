@@ -2119,10 +2119,10 @@
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- RecordTimerQuestion -->
-	<screen name="RecordTimerQuestion" position="0,0" size="372,82" zPosition="99" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="RecordTimerQuestion" position="0,0" size="372,112" zPosition="99" flags="wfNoBorder" backgroundColor="XionBackground">
 		<eLabel position="1,1" size="370,80" backgroundColor="XionBackground" zPosition="-1" transparent="0" />
 		<eLabel position="0,0" size="372,82" backgroundColor="XionBackground" zPosition="-2" transparent="0" />
-		<widget name="list" position="11,11" size="350,60" itemHeight="30" font="Regular;22" scrollbarMode="showOnDemand" enableWrapAround="1" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
+		<widget name="list" position="11,11" size="350,90" itemHeight="30" font="Regular;22" scrollbarMode="showNever" enableWrapAround="1" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
 	</screen>
 		<!-- ********** Kashmir Plugins ********** -->
 		<!-- BILD Online */-->
