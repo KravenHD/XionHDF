@@ -36,9 +36,9 @@ class XionHDFSYSTemp(Renderer, VariableText):
 							if line[0] in ("Tsensor"):
 								temp = line[1].split("=")
 								temp = line[1].split(" ")
-								tempinfo = temp[2]
+								systemp = temp[2]
 					except:
-						tempinfo = ""
+						systemp = ""
 				elif path.exists('/sys/devices/virtual/thermal/thermal_zone0/temp'):
 					out_line = open('/sys/devices/virtual/thermal/thermal_zone0/temp', 'r')
 					systemp = out_line.read()
