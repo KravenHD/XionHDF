@@ -82,6 +82,19 @@
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>
 	</screen>
+	<screen name="template_menu_left_button_logo_off">
+		<eLabel backgroundColor="XionLine" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="XionLine" position="0,656" size="1280,2" zPosition="2" />
+		<widget backgroundColor="XionBackground" font="Regular2; 34" foregroundColor="XionFont2" position="70,12" render="Label" size="708,46" source="Title" transparent="1" halign="center" valign="center" noWrap="1" />
+		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
+		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont1">
+			<convert type="XionHDFClockToText">Default</convert>
+		</widget>
+	</screen>
 	<screen name="template_menu_left_button">
 		<eLabel backgroundColor="XionLine" position="0,64" size="1280,2" zPosition="2" />
 		<eLabel backgroundColor="XionLine" position="0,656" size="1280,2" zPosition="2" />
