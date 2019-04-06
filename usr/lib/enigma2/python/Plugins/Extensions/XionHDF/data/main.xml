@@ -175,7 +175,7 @@
 		<!-- ********** EPG ********** -->
 		<!-- EPGSelection -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection">
-		<widget backgroundColor="XionBackground" itemHeight="32" foregroundColor="XionFont1" font="Regular; 22" name="list" enableWrapAround="1" scrollbarMode="showOnDemand" position="20,80" size="778,570" transparent="1" zPosition="3" />
+		<widget backgroundColor="XionBackground" itemHeight="32" foregroundColor="XionFont1" font="Regular; 22" name="list" enableWrapAround="1" scrollbarMode="showOnDemand" position="20,80" size="848,570" transparent="1" zPosition="3" />
 		<widget alphatest="blend" position="894,12" render="Picon" size="67,40" source="Service" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>

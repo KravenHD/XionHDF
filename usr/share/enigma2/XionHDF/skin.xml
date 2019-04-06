@@ -1356,7 +1356,7 @@
 		<!-- ********** EPG ********** -->
 		<!-- EPGSelection -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection">
-		<widget backgroundColor="XionBackground" itemHeight="32" foregroundColor="XionFont1" font="Regular;22" name="list" enableWrapAround="1" scrollbarMode="showNever" position="20,80" size="778,570" transparent="1" zPosition="3" />
+		<widget backgroundColor="XionBackground" itemHeight="32" foregroundColor="XionFont1" font="Regular;22" name="list" enableWrapAround="1" scrollbarMode="showNever" position="20,80" size="848,570" transparent="1" zPosition="3" />
 		<widget alphatest="blend" position="894,12" render="Picon" size="67,40" source="Service" transparent="1" zPosition="4">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -4891,8 +4891,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- Filebrowser -->
-	<screen name="Filebrowser" title="File Browser" flags="wfNoBorder" size="1280,720" position="0,0" backgroundColor="transparent">
-		<widget name="file_list" position="20,80" size="708,540" font="Regular;22" foregroundColor="white" backgroundColor="XionBackground" transparent="1" itemHeight="30" />
+	<screen name="FileBrowser" title="File Browser" flags="wfNoBorder" size="1280,720" position="0,0" backgroundColor="transparent">
+		<widget name="filelist" position="20,80" size="708,540" font="Regular;22" foregroundColor="white" backgroundColor="XionBackground" transparent="1" itemHeight="30" />
 		<widget name="status" position="905,398" size="349,227" font="Regular2;22" backgroundColor="XionBackground" transparent="1" halign="center" foregroundColor="XionFont2" />
 		<panel name="template_menu_left_right_button" />
 		<panel name="template_colorkey_text_source" />
