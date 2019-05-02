@@ -4303,6 +4303,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left_logo_off" />
 	</screen>
 		<!-- Multiboot Selector -->
+	<screen name="MultiBootSelector" position="0,0" size="1280,720" title="Multiboot Image Selector" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="config" position="20,80" size="708,540" transparent="1" />
+		<widget source="options" render="Label" position="40,272" size="730,35" halign="left" font="Regular; 20" backgroundColor="XionBackground" />
+		<widget source="description" render="Label" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" halign="center" position="840,370" size="430,350" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="MultiBootStartupOPT" position="0,0" size="1280,720" >
 		<eLabel name="b" position="0,0" size="600,250" backgroundColor="XionBackground" zPosition="-2" />
 		<eLabel name="a" position="1,1" size="598,248" backgroundColor="XionBackground" zPosition="-1" />
