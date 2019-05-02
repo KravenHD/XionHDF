@@ -2094,6 +2094,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
+		<!-- MultiBootWizard -->
+	<screen name="MultiBootWizard" position="0,0" size="1280,720" title="MultiBoot Manager" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="config" position="20,80" size="708,540" transparent="1" />
+		<widget source="options" render="Label" position="40,272" size="730,35" halign="left" font="Regular; 20" backgroundColor="XionBackground" />
+		<widget source="description" render="Label" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" halign="center" position="840,370" size="430,350" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
 		<!-- JobView -->
 	<screen name="JobView" position="0,0" size="1280,720" title="JobView" flags="wfNoBorder" backgroundColor="transparent">
 		<widget backgroundColor="XionBackground" source="job_name" render="Label" position="20,80" size="708,70" font="Regular;20" foregroundColor="XionFont1" />
@@ -2759,7 +2768,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- UpdatePluginMenu -->
 	<screen name="UpdatePluginMenu" flags="wfNoBorder" position="0,0" size="1280,720" title="Update Plugin Menu" backgroundColor="transparent">
 		<widget name="hdfStatusPic" position="90,500" size="100,118" backgroundColor="XionBackground" transparent="1" alphatest="on" />
-		<widget source="menu" render="Listbox" position="44,100" size="590,310" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="menu" render="Listbox" position="44,90" size="590,340" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 					{"template": [
 							MultiContentEntryText(pos = (2, 2), size = (590, 27), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
