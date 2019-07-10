@@ -259,7 +259,7 @@
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="950,605" render="Label" size="107,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="920,605" render="Label" size="137,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
@@ -325,7 +325,7 @@
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="950,605" render="Label" size="107,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="920,605" render="Label" size="137,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
@@ -526,7 +526,7 @@
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="950,605" render="Label" size="107,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="920,605" render="Label" size="137,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
@@ -730,7 +730,7 @@
 		<widget alphatest="blend" pixmap="XionHDF/buttons/ico_rec_on.png" position="1244,542" render="Pixmap" size="32,32" source="session.RecordState" zPosition="5">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="950,605" render="Label" size="107,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
+		<widget backgroundColor="XionBackground" font="Regular2; 22" halign="right" position="920,605" render="Label" size="137,36" source="session.Event_Now" transparent="1" valign="center" zPosition="1">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
