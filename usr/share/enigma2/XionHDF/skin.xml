@@ -1787,18 +1787,18 @@
 		<eLabel backgroundColor="XionBackground" position="610,3" size="1,129" transparent="0" zPosition="0" />
 		<eLabel backgroundColor="XionLine" position="2,2" size="3,131" transparent="0" zPosition="-5" />
 		<eLabel backgroundColor="XionBackground" position="3,3" size="1,129" transparent="0" zPosition="0" />
-		<widget font="Console;21" halign="center" name="key1" position="6,6" size="200,30" valign="center" />
-		<widget font="Console;21" halign="center" name="key2" position="207,6" size="200,30" valign="center" />
-		<widget font="Console;21" halign="center" name="key3" position="408,6" size="200,30" valign="center" />
-		<widget font="Console;21" halign="center" name="key4" position="6,37" size="200,30" valign="center" />
-		<widget font="Console;21" halign="center" name="key5" position="207,37" size="200,30" valign="center" />
-		<widget font="Console;21" halign="center" name="key6" position="408,37" size="200,30" valign="center" />
-		<widget font="Console;21" halign="center" name="key7" position="6,68" size="200,30" valign="center" />
-		<widget font="Console;21" halign="center" name="key8" position="207,68" size="200,30" valign="center" />
-		<widget font="Console;21" halign="center" name="key9" position="408,68" size="200,30" valign="center" />
-		<widget font="Console;22" halign="center" name="help1" position="6,99" size="200,30" valign="center" />
-		<widget font="Console;17" halign="center" name="key0" position="207,99" size="200,30" valign="center" />
-		<widget font="Console;22" halign="center" name="help2" position="408,99" size="200,30" valign="center" />
+		<widget font="Console;16" halign="center" name="key1" position="6,6" size="200,30" valign="center" />
+		<widget font="Console;16" halign="center" name="key2" position="207,6" size="200,30" valign="center" />
+		<widget font="Console;16" halign="center" name="key3" position="408,6" size="200,30" valign="center" />
+		<widget font="Console;16" halign="center" name="key4" position="6,37" size="200,30" valign="center" />
+		<widget font="Console;16" halign="center" name="key5" position="207,37" size="200,30" valign="center" />
+		<widget font="Console;16" halign="center" name="key6" position="408,37" size="200,30" valign="center" />
+		<widget font="Console;16" halign="center" name="key7" position="6,68" size="200,30" valign="center" />
+		<widget font="Console;16" halign="center" name="key8" position="207,68" size="200,30" valign="center" />
+		<widget font="Console;16" halign="center" name="key9" position="408,68" size="200,30" valign="center" />
+		<widget font="Console;16" halign="center" name="help1" position="6,99" size="200,30" valign="center" />
+		<widget font="Console;16" halign="center" name="key0" position="207,99" size="200,30" valign="center" />
+		<widget font="Console;16" halign="center" name="help2" position="408,99" size="200,30" valign="center" />
 	</screen>
 		<!-- ********** Wizard and Help ********** -->
 		<!-- CleanupWizard -->
