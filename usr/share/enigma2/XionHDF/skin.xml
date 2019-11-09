@@ -2322,6 +2322,14 @@
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
+		<!-- NetworkPassword -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkPassword" position="0,0" size="1280,720" title="Nameserver Setup">
+		<widget backgroundColor="XionBackground" itemHeight="26" font="Regular;22" name="config" position="20,180" size="708,450" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" name="introduction" position="70,560" size="708,28" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="70,485" render="Label" size="708,100" source="description" transparent="1" valign="center" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
 		<!-- SystemNetworkInfo -->
 	<screen name="SystemNetworkInfo" position="0,0" size="1280,720" title="SystemInfo" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="AboutScrollLabel" position="20,80" size="708,515" font="Regular;20" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
