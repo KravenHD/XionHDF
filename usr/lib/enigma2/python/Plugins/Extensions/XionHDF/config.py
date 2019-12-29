@@ -118,6 +118,7 @@ config.plugins.XionHDF.FontStyleHeight_2 = ConfigSelectionNumber(default = 95, s
 config.plugins.XionHDF.InfobarChannelname = ConfigSelection(default="infobar-style-xpicon_middle1", choices = [
                                 ("infobar-style-xpicon_middle1", _("Small")),
                                 ("infobar-style-xpicon_middle2", _("Big")),
+                                ("infobar-style-xpicon_middleP", _("Poster")),
                                 ("infobar-style-xpicon_middle3", _("Off"))
                                 ])
 config.plugins.XionHDF.InfobarStyle = ConfigSelection(default="infobar-style-xpicon", choices = [

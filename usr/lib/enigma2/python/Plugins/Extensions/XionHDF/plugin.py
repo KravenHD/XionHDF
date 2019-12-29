@@ -170,6 +170,7 @@ config.plugins.XionHDF.ChannelSelectionStyle = ConfigSelection(default="channels
 config.plugins.XionHDF.InfobarChannelname = ConfigSelection(default="infobar-style-xpicon_middle1", choices = [
 				("infobar-style-xpicon_middle1", _("Small")),
 				("infobar-style-xpicon_middle2", _("Big")),
+				("infobar-style-xpicon_middleP", _("Poster")),
 				("infobar-style-xpicon_middle3", _("Off"))
 				])
 				
