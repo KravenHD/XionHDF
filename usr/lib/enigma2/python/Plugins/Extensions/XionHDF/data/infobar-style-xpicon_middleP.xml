@@ -1,6 +1,9 @@
 		<widget render="pstrRndr" source="session.Event_Now" path="poster" position="1105,400" size="185,278" backgroundColor="XionBackground" zPosition="1" transparent="0">
 			<convert type="pstrCnvrt">POSTER</convert>
 		</widget>
+		<widget font="Regular2; 25" foregroundColor="XionFont1" halign="left" noWrap="1" position="27,525" render="Label" size="1020,60" source="session.CurrentService" transparent="1" valign="center" zPosition="1" alphatest="blend" backgroundColor="XionBackground">
+			<convert type="ServiceName">Name</convert>
+		</widget>
 	</screen>
 		<!-- /* InfoBar XPicon -->
 		<!--/* SecondInfoBar XPicon -->
