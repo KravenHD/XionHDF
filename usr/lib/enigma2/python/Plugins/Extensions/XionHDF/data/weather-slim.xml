@@ -51,7 +51,7 @@
 		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 20" foregroundColor="XionFont1" render="Label" position="1045,10" size="215,30" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
 			<convert type="XionHDFWeather">Day_0,FeelTemp</convert>
 		</widget>
-		<eLabel text="Location:" position="945,40" size="105,30" zPosition="5" halign="left" font="Regular2; 20" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
+		<eLabel text="Ort:" position="945,40" size="105,30" zPosition="5" halign="left" font="Regular2; 20" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
 		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 20" foregroundColor="XionFont1" render="Label" position="1045,40" size="215,30" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
 			<convert type="XionHDFWeather">Day_0,City</convert>
 		</widget>
