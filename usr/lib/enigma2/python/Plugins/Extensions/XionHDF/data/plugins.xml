@@ -360,9 +360,7 @@
 		<!-- IMDB -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="IMDB" position="0,0" size="1280,720" title="IMDb Details Plugin">
 		<widget itemHeight="30" font="Regular; 22" name="menu" position="70,220" size="700,360" transparent="1" />
-		<widget alphatest="blend" name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="560,115" size="210,21" zPosition="2" />
-		<widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="560,115" size="210,21" transparent="1" zPosition="3" />
-		<widget font="Regular2;20" foregroundColor="XionFont1" halign="center" name="ratinglabel" position="560,134" size="210,24" transparent="1" />
+		<widget font="Regular2;20" foregroundColor="XionFont1" halign="center" name="ratinglabel" position="470,134" size="310,24" transparent="1" />
 		<widget alphatest="blend" name="poster" position=" 80,170" size="110,180" />
 		<widget backgroundColor="XionBackground" font="Regular2;20" name="detailslabel" position="199,170" size="570,175" transparent="1" foregroundColor="XionFont2" />
 		<widget backgroundColor="XionBackground" font="Regular; 20" name="castlabel" position=" 70,365" size="700,220" transparent="1" />
