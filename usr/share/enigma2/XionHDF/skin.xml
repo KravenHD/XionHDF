@@ -4372,15 +4372,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- ShowUpdatePackages -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ShowUpdatePackages" position="0,0" size="1280,720" title="New Packages">
-		<widget source="list" render="Listbox" position="70,90" size="708,520" backgroundColor="XionBackground" itemHeight="50" alphatest="blend" transparent="1">
+		<widget source="list" render="Listbox" position="70,90" size="808,520" backgroundColor="XionBackground" itemHeight="50" alphatest="blend" transparent="1">
 			<convert type="TemplatedMultiContent">
     {"template": [
-      MultiContentEntryText(pos = (6, 2), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-      MultiContentEntryText(pos = (6, 28), size = (540, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-      MultiContentEntryPixmapAlphaTest(pos = (605, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+      MultiContentEntryText(pos = (6, 2), size = (700, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+      MultiContentEntryText(pos = (6, 28), size = (700, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+      MultiContentEntryPixmapAlphaTest(pos = (755, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
       MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (610, 2), png = 5), # index 4 is the div pixmap
      ],
-    "fonts": [gFont("Regular", 22),gFont("Regular", 14)],
+    "fonts": [gFont("Regular", 20),gFont("Regular", 14)],
     "itemHeight": 52
     }
 			</convert>
