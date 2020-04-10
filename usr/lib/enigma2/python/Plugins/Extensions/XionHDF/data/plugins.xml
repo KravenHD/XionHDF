@@ -2701,3 +2701,11 @@
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
+		<!-- Lotto Setup -->
+	<screen name="LottoMain" position="0,0" size="1280,720" flags="wfNoBorder" title="LottoExtended Hauptmenü" backgroundColor="transparent">
+		<widget name="details" position="70,80" size="708,540" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" font="Regular; 20" backgroundColor="XionBackground" />
+		<panel name="template_menu_left_button_logo_off" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_colorkey_text" />
+	</screen>
+
