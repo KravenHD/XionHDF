@@ -2105,14 +2105,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ********** Flash Online ********** -->
 		<!-- doFlashImage -->
 	<screen name="doFlashImage" position="0,0" size="1280,720" title="doFlashImage" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="imageList" position="20,80" size="708,540" font="Regular;21" foregroundColor="XionFont1" halign="left" valign="top" transparent="1" backgroundColor="XionBackground" />
+		<widget name="imageList" position="20,100" zPosition="1" size="680,450" itemHeight="26" font="Regular;16" scrollbarMode="showOnDemand" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- FlashOnline -->
 	<screen name="FlashOnline" position="0,0" size="1280,720" title="FlashOnline" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="info-online" position="20,80" zPosition="1" size="708,242" font="Regular;22" foregroundColor="XionFont1" halign="left" valign="top" transparent="1" backgroundColor="XionBackground" />
-		<widget name="info-local" position="70,340" zPosition="1" size="708,242" font="Regular;22" foregroundColor="XionFont1" halign="left" valign="top" transparent="1" backgroundColor="XionBackground" />
+		<widget name="info-online" position="10,80" zPosition="1" size="450,100" font="Regular;20" halign="left" valign="top" transparent="1" />
+		<widget name="info-local" position="10,150" zPosition="1" size="450,200" font="Regular;20" halign="left" valign="top" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
@@ -3091,26 +3091,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen name="QuitMainloopScreen" position="fill" backgroundColor="XionBackground" flags="wfNoBorder">
 		<widget name="text" position="center,590" size="720,100" font="Regular;25" halign="center" transparent="1" />
 	</screen>
-		<!-- Enigma Restart -->
-	<screen name ="FlashOnline" backgroundColor="XionBackground" position="0,0" size="1280,720" title="Flash On the Fly">
-		<widget name="key_red" position="0,360" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="key_green" position="140,360" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="key_yellow" position="280,360" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="key_blue" position="420,360" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="info-online" position="10,80" zPosition="1" size="450,100" font="Regular;20" halign="left" valign="top" transparent="1" />
-		<widget name="info-local" position="10,150" zPosition="1" size="450,200" font="Regular;20" halign="left" valign="top" transparent="1" />
-		<panel name="template_menu_left_button" />
-		<panel name="template_colorkey_text" />
-	</screen>
-	<screen name="doFlashImage" backgroundColor="XionBackground" position="0,0" size="1280,720" title="Flash On the fly (select a image)">
-		<widget name="key_red" position="0,460" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="key_green" position="140,460" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="key_yellow" position="280,460" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="key_blue" position="420,460" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<widget name="imageList" position="20,100" zPosition="1" size="680,450" itemHeight="26" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" />
-		<panel name="template_menu_left_button" />
-		<panel name="template_colorkey_text" />
-	</screen>
 		<!-- UserInterfacePositioner -->
 	<screen backgroundColor="#00000000" flags="wfNoBorder" name="UserInterfacePositioner2" position="0,0" size="1280,720" title="UserInterfacePositioner2">
 		<widget backgroundColor="#00000000" enableWrapAround="1" itemHeight="30" font="Regular;22" name="config" position="20,80" size="708,540" scrollbarMode="showOnDemand" transparent="0" />
@@ -3131,7 +3111,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- DeviceBrowser -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="DeviceBrowser" position="0,0" size="1280,720" >
-		<widget source="message" render="Label" backgroundColor="XionBackground" position="5,50" size="510,150" font="Regular;16" />
+		<widget source="message" render="Label" backgroundColor="XionBackground" position="5,50" size="710,450" font="Regular;16" />
 		<widget name="filelist" backgroundColor="XionBackground" enableWrapAround="1" position="0,80" itemHeight="30" font="Regular;22" size="708,540" scrollbarMode="showOnDemand" transparent="1" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
