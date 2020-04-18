@@ -109,10 +109,10 @@
 			<pixmap filename="XionHDF/bsWindow/bs_br.png" pos="bpBottomRight" />
 		</borderset>
 		<borderset name="bsListboxEntry" value="2">
-			<pixmap filename="XionHDF/bordersets/borset_00ffffff.png" pos="bpTop" />
-			<pixmap filename="XionHDF/bordersets/borset_00ffffff.png" pos="bpBottom" />
-			<pixmap filename="XionHDF/bordersets/borset_00ffffff.png" pos="bpLeft" />
-			<pixmap filename="XionHDF/bordersets/borset_00ffffff.png" pos="bpRight" />
+			<pixmap filename="XionHDF/bordersets/borset_000F5B7F.png" pos="bpTop" />
+			<pixmap filename="XionHDF/bordersets/borset_000F5B7F.png" pos="bpBottom" />
+			<pixmap filename="XionHDF/bordersets/borset_000F5B7F.png" pos="bpLeft" />
+			<pixmap filename="XionHDF/bordersets/borset_000F5B7F.png" pos="bpRight" />
 		</borderset>
 	</windowstyle>
 	<windowstyle id="1" type="skinned">
