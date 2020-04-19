@@ -2769,7 +2769,7 @@ self.autoResize()
 		<widget name="ErrorPixmap" pixmap="XionHDF/buttons/message/attention-53.png" position="20,50" size="53,53" alphatest="blend" />
 		<widget name="QuestionPixmap" pixmap="XionHDF/buttons/message/question-53.png" position="20,50" size="53,53" alphatest="blend" />
 		<widget name="InfoPixmap" pixmap="XionHDF/buttons/message/info-53.png" position="20,50" size="53,53" alphatest="blend" />
-		<widget name="list" font="Regular;22" foregroundColor="XionFont1" position="21,136" size="760,320" itemHeight="32" transparent="1" />
+		<widget name="list" font="Regular;20" foregroundColor="XionFont1" position="21,136" size="760,320" itemHeight="32" transparent="1" />
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
 from enigma import eSize,ePoint, getDesktop
@@ -3306,6 +3306,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- FlashOnline -->
 	<screen name="FlashOnline" position="0,0" size="1280,720" title="FlashOnline" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="list" position="20,80" size="708,540" font="Regular;14" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text" />
+	</screen>
+	<screen name="FlashImage" position="0,0" size="1280,720" title="FlashImage" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="header" position="30,100" size="500,40" font="Regular;22" transparent="0" noWrap="1" backgroundColor="XionBackground" foregroundColor="XionFont1" />
+		<widget name="info" position="30,155" size="635,386" font="Regular;20" transparent="0" noWrap="1" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" />
+		<widget name="progress" position="30,235" size="635,35" font="Regular;24" borderWidth="2" borderColor="white" transparent="1" noWrap="1" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
