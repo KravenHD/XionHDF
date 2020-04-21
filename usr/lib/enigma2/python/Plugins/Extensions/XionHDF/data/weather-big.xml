@@ -74,20 +74,16 @@
 		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="876,35" size="60,25" source="session.CurrentService" zPosition="8" halign="center" transparent="1">
 			<convert type="XionHDFWeather">Day_4,MinTemp</convert>
 		</widget>
-		<eLabel text="Temp:" position="990,8" size="170,22" zPosition="5" halign="left" font="Regular2; 18" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="1045,8" size="215,22" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 17" foregroundColor="XionFont1" render="Label" position="999,8" size="215,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1">
 			<convert type="XionHDFWeather">Day_0,FeelTemp</convert>
 		</widget>
-		<eLabel text="Wind:" position="990,32" size="70,22" zPosition="5" halign="left" font="Regular2; 18" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-		<widget backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="1045,32" size="215,22" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
+		<widget backgroundColor="XionBackground" font="Regular; 17" foregroundColor="XionFont1" render="Label" position="999,32" size="215,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1">
 			<convert type="XionHDFWeather">Day_0,Wind</convert>
 		</widget>
-		<eLabel text="Klima:" position="990,56" size="180,25" zPosition="5" halign="left" font="Regular2; 18" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="1045,56" size="215,22" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 17" foregroundColor="XionFont1" render="Label" position="999,56" size="215,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1">
 			<convert type="XionHDFWeather">Day_0,Humidity</convert>
 		</widget>
-		<eLabel text="Ort:" position="990,80" size="60,25" zPosition="5" halign="left" font="Regular2; 18" backgroundColor="XionBackground" transparent="1" foregroundColor="XionFont2" />
-		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 18" foregroundColor="XionFont1" render="Label" position="1045,80" size="215,22" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
+		<widget noWrap="1" backgroundColor="XionBackground" font="Regular; 17" foregroundColor="XionFont1" render="Label" position="999,80" size="215,22" source="session.CurrentService" zPosition="3" halign="center" transparent="1">
 			<convert type="XionHDFWeather">Day_0,City</convert>
 		</widget>
 		<ePixmap pixmap="XionHDF/ibaro.png" position="0,0" size="1280,443" zPosition="-9" />
