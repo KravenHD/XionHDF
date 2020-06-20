@@ -40,6 +40,7 @@
 		<font filename="XionHDF/fonts/nmsbd2.ttf" name="Arial" scale="100" />
 		<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="95" />
 		<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="95" />
+		<font filename="XionHDF/fonts/NotoSans-RDS-Regular.ttf" name="RegRDS" scale="95" />
 		<font filename="XionHDF/fonts/meteocons.ttf" name="Meteo" scale="100" />
 		<alias name="Body" font="Regular" size="20" height="30" />
 		<alias name="ChoiceList" font="Regular" size="20" height="30" />
@@ -3127,8 +3128,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- RdsInfoDisplay -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="0,0" size="1280,720" zPosition="-2">
 		<widget name="RassLogo" pixmap="skin_default/icons/rass_logo.png" position="100,585" size="50,21" />
-		<widget backgroundColor="rds_text_bg" font="Regular;24" foregroundColor="XionFont1" name="RadioText" noWrap="1" position="100,620" shadowColor="transpBlack" shadowOffset="-2,-2" size="1080,30" />
-		<widget backgroundColor="rds_text_bg" font="Regular;24" foregroundColor="XionFont1" halign="right" name="RtpText" noWrap="1" position="100,650" shadowColor="transpBlack" shadowOffset="-2,-2" size="1080,30" />
+		<widget backgroundColor="rds_text_bg" font="RegRDS;24" foregroundColor="XionFont1" name="RadioText" noWrap="1" position="100,620" shadowColor="transpBlack" shadowOffset="-2,-2" size="1080,30" />
+		<widget backgroundColor="rds_text_bg" font="RegRDS;24" foregroundColor="XionFont1" halign="right" name="RtpText" noWrap="1" position="100,650" shadowColor="transpBlack" shadowOffset="-2,-2" size="1080,30" />
 	</screen>
 		<!-- PVRState -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PVRState" position="9,27" size="220,90" zPosition="10">

@@ -40,6 +40,7 @@
 		<font filename="XionHDF/fonts/nmsbd2.ttf" name="Arial" scale="100" />
 		<font filename="XionHDF/fonts/NotoSans-Regular.ttf" name="Regular" scale="95" />
 		<font filename="XionHDF/fonts/NotoSans-Bold.ttf" name="Regular2" scale="95" />
+		<font filename="XionHDF/fonts/NotoSans-RDS-Regular.ttf" name="RegRDS" scale="95" />
 		<font filename="XionHDF/fonts/meteocons.ttf" name="Meteo" scale="100" />
 		<alias name="Body" font="Regular" size="20" height="30" />
 		<alias name="ChoiceList" font="Regular" size="20" height="30" />
