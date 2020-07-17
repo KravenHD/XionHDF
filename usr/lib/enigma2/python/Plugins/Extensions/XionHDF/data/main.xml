@@ -1479,7 +1479,7 @@
 		<!-- CiSelection -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="CiSelection" position="0,0" size="1280,720" title="Common Interface">
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="XionFont2" name="text" position="20,80" size="700,28" transparent="1" />
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="entries" position="70,130" size="708,450" transparent="1" foregroundColor="XionFont1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" font="Regular;24" itemHeight="30" name="entries" position="70,130" size="708,450" transparent="1" foregroundColor="XionFont1" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- MMIDialog -->
@@ -1491,7 +1491,7 @@
 	</screen>
 		<!-- CIselectMainMenu -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="CIselectMainMenu" position="0,0" size="1280,720" title="CI Assignment">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" name="CiList" position="20,80" size="708,450" transparent="1" foregroundColor="XionFont1" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" font="Regular;24" itemHeight="30" name="CiList" position="20,80" size="708,450" transparent="1" foregroundColor="XionFont1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
