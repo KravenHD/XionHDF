@@ -11,8 +11,8 @@ TMPFILE = FILE + ".tmp"
 class ChangeSkin():
         
         def __init__(self, session):
-		self.session = session
-		self.onClose = [ ]                                                  
+                self.session = session
+                self.onClose = [ ]                                                  
                 self.do_update()   
 
         
