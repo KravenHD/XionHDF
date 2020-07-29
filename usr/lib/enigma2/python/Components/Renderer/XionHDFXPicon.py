@@ -2,6 +2,7 @@
 ## Picon renderer by Gruffy .. some speedups by Ghost
 ## XPicon mod by iMaxxx
 ##
+from __future__ import absolute_import
 from Renderer import Renderer
 from enigma import ePixmap
 from enigma import iServiceInformation, iPlayableService, iPlayableServicePtr
@@ -9,6 +10,8 @@ from Tools.Directories import fileExists, SCOPE_SKIN_IMAGE, SCOPE_CURRENT_SKIN, 
 
 from ServiceReference import ServiceReference
 import re, unicodedata
+import sys
+import six
 
 class XionHDFXPicon(Renderer):
 	searchPaths = ('/media/usb/XPicons/%s/','/media/usb/%s/','/%s/','/%sx/','/usr/share/enigma2/XPicons/%s/','/usr/share/enigma2/%s/','/usr/%s/','/media/hdd/XPicons/%s/','/media/hdd/%s/')
@@ -50,7 +53,10 @@ class XionHDFXPicon(Renderer):
 						pngname = self.findPicon('_'.join(fields))
 					if not pngname: # picon by channel name
 						name = ServiceReference(self.source.text).getServiceName()
-						name = unicodedata.normalize('NFKD', unicode(name, 'utf_8', errors='ignore')).encode('ASCII', 'ignore')
+						if sys.version_info[0] >= 3:
+							name = six.ensure_str(unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore'))
+						else:
+							name = unicodedata.normalize('NFKD', unicode(name, 'utf_8', errors='ignore')).encode('ASCII', 'ignore')
 						name = re.sub('[^a-z0-9]', '', name.replace('&', 'and').replace('+', 'plus').replace('*', 'star').lower())
 						if len(name) > 0:
 							pngname = self.findPicon(name)

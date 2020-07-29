@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import os
 import enigma
 import eBaseImpl
@@ -8,7 +9,7 @@ from Components.config import config, ConfigSelection, ConfigSubsection, ConfigS
 from Tools.Directories import fileExists
 import re
 from shutil import move, copy, rmtree, copytree
-from ChangeSkin import ChangeSkin
+from .ChangeSkin import ChangeSkin
 
 skinSearchAndReplace = []
 skin_lines = []
@@ -18,7 +19,7 @@ FILE = "/usr/share/enigma2/XionHDF/skin.xml"
 TMPFILE = FILE + ".tmp"
 #############################################################
 
-from config import *
+from .config import *
 
 #######################################################################
 

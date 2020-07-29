@@ -1,8 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-#written and © by .:TBX:. 
+#written and (c) by .:TBX:. 
 # on Sat-Soft.net/forum
 #      10/2015
+from __future__ import absolute_import
 import re
 from Components.config import config
 FILE = "/usr/share/enigma2/XionHDF/skin.xml"

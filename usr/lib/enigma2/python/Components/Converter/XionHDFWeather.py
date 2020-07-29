@@ -15,6 +15,8 @@
 #  distributed other than under the conditions noted above.
 #
 
+from __future__ import absolute_import
+from __future__ import print_function
 from Tools.Directories import resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
 from Components.Converter.Converter import Converter
 from Components.Language import language
@@ -114,7 +116,7 @@ class XionHDFWeather(Poll, Converter, object):
 		global WEATHER_LOAD
 		if WEATHER_LOAD == True:
 			try:
-				print "Xion Weather: Weather download now"
+				print("Xion Weather: Weather download now")
 				self.data = {}
 				index = 0
 				res = requests.request('get', URL, timeout=5)
