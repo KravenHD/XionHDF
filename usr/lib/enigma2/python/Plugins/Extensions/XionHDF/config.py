@@ -1,4 +1,3 @@
-from __future__ import absolute_import
 import os
 import re
 from Components.config import config, ConfigSelection, ConfigSubsection, ConfigSelectionNumber, ConfigText, ConfigNumber

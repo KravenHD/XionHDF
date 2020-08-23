@@ -16,7 +16,6 @@
 #  Abbott Way, Stanford, California 94305, USA.
 #
 
-from __future__ import absolute_import
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Components.VariableText import VariableText
@@ -24,7 +23,6 @@ from enigma import eLabel, eEPGCache, eServiceReference
 from time import localtime, strftime, mktime, time
 from datetime import datetime
 from Components.config import config
-from six.moves import range
 
 class XionHDFEventsInfo(Converter, object):
 	

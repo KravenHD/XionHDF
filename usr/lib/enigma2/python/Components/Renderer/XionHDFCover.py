@@ -1,4 +1,3 @@
-from __future__ import absolute_import
 from Renderer import Renderer
 from enigma import ePixmap, ePicLoad
 from Components.AVSwitch import AVSwitch

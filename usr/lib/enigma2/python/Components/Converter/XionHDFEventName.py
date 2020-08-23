@@ -1,6 +1,5 @@
 # based on EventName.py from VTI 4.1
 # Copy to /usr/lib/enigma2/python/Components/Converter/
-from __future__ import absolute_import
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 
