@@ -6512,6 +6512,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<eLabel position="0,0" size="372,82" backgroundColor="XionBackground" zPosition="-2" transparent="0" />
 		<widget name="list" position="11,11" size="350,90" itemHeight="30" font="Regular;22" scrollbarMode="showNever" enableWrapAround="1" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
 	</screen>
+		<!-- RemoveTimerQuestion -->
+	<screen name="RemoveTimerQuestion" position="center,center" size="503,230" zPosition="5" flags="wfNoBorder" backgroundColor="XionBackground" >
+		<widget name="text" position="0,0" size="0,0" font="Regular;20" />
+		<widget name="list" position="10,10" size="320,250" enableWrapAround="1" foregroundColorSelected="XionSelFont" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
+		<applet type="onLayoutFinish">
+			self.autoResize()
+		</applet>
+	</screen>
 		<!-- ********** Kashmir Plugins ********** -->
 		<!-- BILD Online */-->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="bildConfig" position="0,0" size="1280,720" title="BILD Online Setup">
