@@ -2521,6 +2521,24 @@
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
+		<!-- NetworkSATPI -->
+	<screen name="NetworkSATPI" title="NetworkSATPI Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="lab1" position="20,80" size="708,60" font="Regular;22" valign="center" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<widget name="lab2" position="70,170" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<widget name="labstop" position="320,170" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="XionFont1" zPosition="1" />
+		<widget name="labrun" position="320,170" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="XionFont1" zPosition="2" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_menu_left_button" />
+	</screen>
+		<!-- NetworkMinisatIP -->
+	<screen name="NetworkMinisatIP" title="NetworkMinisatIP Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="lab1" position="20,80" size="708,60" font="Regular;22" valign="center" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<widget name="lab2" position="70,170" size="150,30" font="Regular;22" valign="center" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
+		<widget name="labstop" position="320,170" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="red" foregroundColor="XionFont1" zPosition="1" />
+		<widget name="labrun" position="320,170" size="172,30" font="Regular;22" valign="center" halign="center" backgroundColor="green" foregroundColor="XionFont1" zPosition="2" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_menu_left_button" />
+	</screen>
 		<!-- NetworkuShareSetup -->
 	<screen name="NetworkuShareSetup" title="uShare Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="config" position="20,80" size="708,510" backgroundColor="XionBackground" foregroundColor="XionFont1" backgroundColorSelected="XionSelection" foregroundColorSelected="XionFont1" itemHeight="30" font="Regular;20" scrollbarMode="showNever" transparent="1" />
