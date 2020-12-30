@@ -2537,16 +2537,16 @@
 		<widget source="vtunerList" render="Listbox" position="70,80" size="800,540" backgroundColor="XionBackground" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-				{"default": (68,[
+				{"default": (65,[
 						MultiContentEntryText(pos = (20, 0), size = (280, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (50, 28), size = (240, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
-						MultiContentEntryText(pos = (210, 28), size = (240, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
-						MultiContentEntryText(pos = (370, 28), size = (240, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3),
-						MultiContentEntryText(pos = (50, 48), size = (490, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4),
+						MultiContentEntryText(pos = (50, 26), size = (240, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (210, 26), size = (240, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
+						MultiContentEntryText(pos = (370, 26), size = (240, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3),
+						MultiContentEntryText(pos = (50, 43), size = (490, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4),
 				]),
 				},
-				"fonts": [gFont("Regular", 24),gFont("Regular", 16)],
-				"itemHeight": 68
+				"fonts": [gFont("Regular", 24),gFont("Regular", 14)],
+				"itemHeight": 65
 			}
 			</convert>
 		</widget>
