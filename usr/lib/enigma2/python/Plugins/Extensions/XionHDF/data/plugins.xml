@@ -60,7 +60,7 @@
 	</screen>
 		<!-- AutoTimerOverview -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="AutoTimerOverview" position="0,0" size="1280,720" title="AutoTimer Overview">
-		<widget backgroundColor="XionBackground" font="Regular;22" enableWrapAround="1" scrollbarMode="showOnDemand" itemHeight="30" name="entries" position="70,80" size="708,540" transparent="1" />
+		<widget backgroundColor="XionBackground" name="entries" itemHeight="53" rowSplit1="27" rowSplit2="27" rowHeight="26" iconMargin="8" DayNameFont="Regular;20" EventNameFont="Regular;22" ServiceNameFont="Regular;20" foregroundColor="XionFont1" position="70,80" size="736,530" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
