@@ -1,4 +1,3 @@
-from __future__ import absolute_import
 from Converter import Converter
 from Poll import Poll
 from time import time

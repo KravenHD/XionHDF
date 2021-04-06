@@ -15,8 +15,6 @@
 #  distributed other than under the conditions noted above.
 #
 
-from __future__ import absolute_import
-from __future__ import print_function
 from Tools.Directories import resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
 from Components.Converter.Converter import Converter
 from Components.Language import language
@@ -41,10 +39,10 @@ def _(txt):
 	return t
 
 #URL = 'http://lgtv.accu-weather.com/widget/lgtv/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
-URL = 'http://blstreamhptablet.accu-weather.com/widget/blstreamhptablet/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
-#URL = 'http://realtek.accu-weather.com/widget/realtek/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
+#URL = 'http://samsungmobile.accu-weather.com/widget/samsungmobile/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
+#URL = 'http://blstreamhptablet.accu-weather.com/widget/blstreamhptablet/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
 #URL = 'http://cloudtv.accu-weather.com/widget/cloudtv/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
-#URL = 'http://htctablet.accu-weather.com/widget/htctablet/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
+URL = 'http://htctablet.accu-weather.com/widget/htctablet/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
 WEATHER_DATA = None
 WEATHER_LOAD = True
 
@@ -116,7 +114,7 @@ class XionHDFWeather(Poll, Converter, object):
 		global WEATHER_LOAD
 		if WEATHER_LOAD == True:
 			try:
-				print("Xion Weather: Weather download now")
+				print "Xion Weather: Weather download now"
 				self.data = {}
 				index = 0
 				res = requests.request('get', URL, timeout=5)

@@ -1,6 +1,5 @@
 # XionHDFServiceInfo2 based on standard ServiceInfo
 
-from __future__ import absolute_import
 from Poll import Poll
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService

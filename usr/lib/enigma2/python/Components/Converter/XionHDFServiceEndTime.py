@@ -1,6 +1,5 @@
 #taken from "ServicePosition" Converter 
 #edited by mogli123 @ et-view-support.com
-from __future__ import absolute_import
 from Components.Converter.Converter import Converter
 from Poll import Poll
 from enigma import iPlayableService, iPlayableServicePtr, iServiceInformation, eTimer, eLabel

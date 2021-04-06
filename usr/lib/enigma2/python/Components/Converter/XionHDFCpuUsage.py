@@ -6,11 +6,9 @@
 # Support: http://dream.altmaster.net/
 #
 
-from __future__ import absolute_import
 from Converter import Converter
 from Poll import Poll
 from Components.Element import cached
-from six.moves import range
 
 
 class XionHDFCpuUsage(Converter, object):

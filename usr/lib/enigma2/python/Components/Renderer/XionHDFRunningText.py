@@ -28,7 +28,6 @@
 # take a look at the discussion: http://board.dreambox-tools.info/showthread.php?6050-Erweiterung-Running-Text-render
 ################################################################################
 
-from __future__ import absolute_import
 from Renderer import Renderer
 from skin import parseColor, parseFont
 from enigma import eWidget, eCanvas, eLabel, eTimer, eRect, ePoint, eSize, gRGB, gFont, \
