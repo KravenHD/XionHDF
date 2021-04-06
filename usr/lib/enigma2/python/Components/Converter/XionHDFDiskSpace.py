@@ -1,7 +1,8 @@
-from Converter import Converter
+from __future__ import absolute_import
+from Components.Converter.Converter import Converter
 from os import statvfs
 from Components.Element import cached, ElementError
-from Poll import Poll
+from Components.Converter.Poll import Poll
 
 class XionHDFDiskSpace(Poll, Converter, object):
     free = 0
@@ -9,13 +10,14 @@ class XionHDFDiskSpace(Poll, Converter, object):
     path = 2
 
     def __init__(self, type):
-        Converter.__init__(self, type)
+        _type = type
+        Converter.__init__(self, _type)
         Poll.__init__(self)
-        if type == "free":
+        if _type == "free":
             self.type = self.free
-        elif type == "size":
+        elif _type == "size":
             self.type = self.size
-        elif type == "path":
+        elif _type == "path":
             self.type = self.path
 
         self.poll_interval = 2000

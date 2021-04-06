@@ -1,6 +1,7 @@
 # XionHDFServiceInfo2 based on standard ServiceInfo
 
-from Poll import Poll
+from __future__ import absolute_import
+from Components.Converter.Poll import Poll
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService
 from Components.Element import cached
@@ -24,7 +25,8 @@ class XionHDFServiceInfo2(Poll, Converter, object):
 	Provider = 14
 
 	def __init__(self, type):
-		Converter.__init__(self, type)
+		_type = type
+		Converter.__init__(self, _type)
 		Poll.__init__(self)
 		self.type, self.interesting_events = {
 				"xAPID": (self.xAPID, (iPlayableService.evUpdatedInfo,)),
@@ -42,7 +44,7 @@ class XionHDFServiceInfo2(Poll, Converter, object):
 				"VideoWidth": (self.VideoWidth, (iPlayableService.evUpdatedInfo,)),
 				"Framerate": (self.Framerate, (iPlayableService.evVideoSizeChanged,iPlayableService.evUpdatedInfo,)),
 				"Provider": (self.Provider, (iPlayableService.evUpdatedInfo,)),
-			}[type]
+			}[_type]
 		self.poll_interval = 1000
 		self.poll_enabled = True
 

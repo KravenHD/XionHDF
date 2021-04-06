@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 
@@ -9,14 +10,15 @@ class XionHDFRemainingToText(Converter, object):
 	ONLY_MINUTES = 4
 
 	def __init__(self, type):
-		Converter.__init__(self, type)
-		if type == "WithSeconds":
+		_type = type
+		Converter.__init__(self, _type)
+		if _type == "WithSeconds":
 			self.type = self.WITH_SECONDS
-		elif type == "NoSeconds":
+		elif _type == "NoSeconds":
 			self.type = self.NO_SECONDS
-		elif type == "InSeconds":
+		elif _type == "InSeconds":
 			self.type = self.IN_SECONDS	
-		elif type == "OnlyMinutes":
+		elif _type == "OnlyMinutes":
 			self.type = self.ONLY_MINUTES	
 		else:
 			self.type = self.DEFAULT

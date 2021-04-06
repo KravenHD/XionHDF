@@ -6,8 +6,9 @@
 # Support: http://dream.altmaster.net/
 #
 
-from Converter import Converter
-from Poll import Poll
+from __future__ import absolute_import
+from Components.Converter.Converter import Converter
+from Components.Converter.Poll import Poll
 from Components.Element import cached
 
 
@@ -16,20 +17,21 @@ class XionHDFCpuUsage(Converter, object):
 	CPU_TOTAL = -1
 
 	def __init__(self, type):
-		Converter.__init__(self, type)
+		_type = type
+		Converter.__init__(self, _type)
 		
 		self.percentlist = [ ]
 		self.pfmt = "%3d%%"
-		if not type or type == "Total":
+		if not _type or _type == "Total":
 			self.type = self.CPU_TOTAL
 			self.sfmt = "$0"
-		elif len(type) == 1 and type[0].isdigit():
-			self.type = int(type)
-			self.sfmt = "$" + type
+		elif len(_type) == 1 and _type[0].isdigit():
+			self.type = int(_type)
+			self.sfmt = "$" + _type
 			self.pfmt = "%d"
 		else:
 			self.type = self.CPU_ALL
-			self.sfmt = str(type)
+			self.sfmt = str(_type)
 			cpus = cpuUsageMonitor.getCpusCount()
 			if cpus > -1:
 				pos = 0
@@ -57,14 +59,14 @@ class XionHDFCpuUsage(Converter, object):
 		res = self.sfmt[:]
 		if not self.percentlist:
 			self.percentlist = [0] * 3
-		for i in range(len(self.percentlist)):
+		for i in list(range(len(self.percentlist))):
 			res = res.replace("$" + str(i), self.pfmt%(self.percentlist[i]))
 		res = res.replace("$?", "%d" % (len(self.percentlist)-1))
 		return res
 
 	@cached
 	def getValue(self):
-		if self.type in range(len(self.percentlist)):
+		if self.type in list(range(len(self.percentlist))):
 			i = self.type
 		else:
 			i = 0
@@ -99,7 +101,7 @@ class CpuUsageMonitor(Poll, object):
 					total = busy = 0
 					# tmp = [cpu, usr, nic, sys, idle, iowait, irq, softirq, steal]
 					tmp = l.split()
-					for i in range(1, len(tmp)):
+					for i in list(range(1, len(tmp))):
 						tmp[i] = int(tmp[i])
 						total += tmp[i]
 					# busy = total - idle - iowait
@@ -115,7 +117,7 @@ class CpuUsageMonitor(Poll, object):
 		prev_info, self.__curr_info = self.__curr_info, self.getCpusInfo()
 		if len(self.__callbacks):
 			info = [ ]
-			for i in range(len(self.__curr_info)):
+			for i in list(range(len(self.__curr_info))):
 				# xxx% = (cur_xxx - prev_xxx) / (cur_total - prev_total) * 100
 				try:
 					p = 100 * ( self.__curr_info[i][2] - prev_info[i][2] ) / ( self.__curr_info[i][1] - prev_info[i][1] )

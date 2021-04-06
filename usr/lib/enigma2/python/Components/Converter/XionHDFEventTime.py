@@ -1,5 +1,6 @@
-from Converter import Converter
-from Poll import Poll
+from __future__ import absolute_import
+from Components.Converter.Converter import Converter
+from Components.Converter.Poll import Poll
 from time import time
 from Components.Element import cached, ElementError
 
@@ -12,28 +13,29 @@ class XionHDFEventTime(Poll, Converter, object):
 	RUNTIME = 5
 
 	def __init__(self, type):
-		Converter.__init__(self, type)
+		_type = type
+		Converter.__init__(self, _type)
 		Poll.__init__(self)
-		if type == "EndTime":
+		if _type == "EndTime":
 			self.type = self.ENDTIME
-		elif type == "Remaining":
+		elif _type == "Remaining":
 			self.type = self.REMAINING
 			self.poll_interval = 60*1000
 			self.poll_enabled = True
-		elif type == "StartTime":
+		elif _type == "StartTime":
 			self.type = self.STARTTIME
-		elif type == "Duration":
+		elif _type == "Duration":
 			self.type = self.DURATION
-		elif type == "Progress":
+		elif _type == "Progress":
 			self.type = self.PROGRESS
 			self.poll_interval = 30*1000
 			self.poll_enabled = True
-		elif type == "RunTime":
+		elif _type == "RunTime":
 			self.type = self.RUNTIME
 			self.poll_interval = 1*1000
 			self.poll_enabled = True
 		else:
-			raise ElementError("'%s' is not <StartTime|EndTime|Remaining|Duration|Progress|Runtime> for fenrisEventTime converter" % type)
+			raise ElementError("'%s' is not <StartTime|EndTime|Remaining|Duration|Progress|Runtime> for fenrisEventTime converter" % _type)
 
 	@cached
 	def getTime(self):

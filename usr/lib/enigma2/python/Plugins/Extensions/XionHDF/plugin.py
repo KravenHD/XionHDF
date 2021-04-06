@@ -13,6 +13,8 @@
 #
 #######################################################################
 
+from __future__ import absolute_import
+from __future__ import print_function
 import os
 from Plugins.Plugin import PluginDescriptor
 from Screens.Screen import Screen

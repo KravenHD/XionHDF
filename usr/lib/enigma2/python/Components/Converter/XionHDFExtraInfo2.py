@@ -1,12 +1,13 @@
 # shamelessly copied from pliExpertInfo and edit by (aslan2006)
 
+from __future__ import absolute_import
 from enigma import iServiceInformation, iPlayableService
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Components.config import config
 from Tools.Transponder import ConvertToHumanReadable
 from Tools.ISO639 import LanguageCodes
-from Poll import Poll
+from Components.Converter.Poll import Poll
 
 def addspace(text):
 	if text:
@@ -15,9 +16,10 @@ def addspace(text):
 
 class XionHDFExtraInfo2(Poll, Converter, object):
 	def __init__(self, type):
-		Converter.__init__(self, type)
+		_type = type
+		Converter.__init__(self, _type)
 		Poll.__init__(self)
-		self.type = type
+		self.type = _type
 		self.poll_interval = 1000
 		self.poll_enabled = True
 		self.caid_data = (

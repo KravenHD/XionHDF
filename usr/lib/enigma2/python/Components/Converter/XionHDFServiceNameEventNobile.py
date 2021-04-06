@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService, iPlayableServicePtr, eServiceReference, eEPGCache
 from Components.Element import cached
@@ -14,21 +15,22 @@ class XionHDFServiceNameEventNobile(Converter, object):
     EXTENDED_DESCRIPTION_EVENT = 6
 
     def __init__(self, type):
-        Converter.__init__(self, type)
+        _type = type
+        Converter.__init__(self, _type)
         self.epgQuery = eEPGCache.getInstance().lookupEventTime
-        if type == 'NameAndEvent':
+        if _type == 'NameAndEvent':
             self.type = self.NAMEVENT
-        elif type == 'NextEvent':
+        elif _type == 'NextEvent':
             self.type = self.NEXTEVENT
-        elif type == 'StartTime':
+        elif _type == 'StartTime':
             self.type = self.STARTTIME
-        elif type == 'Duration':
+        elif _type == 'Duration':
             self.type = self.DURATION
-        elif type == 'EndTime':
+        elif _type == 'EndTime':
             self.type = self.ENDTIME
-        elif type == 'ExtendedDescription':
+        elif _type == 'ExtendedDescription':
             self.type = self.EXTENDED_DESCRIPTION
-        elif type == 'ExtendedDescriptionEvent' or type == 'ExtendedDescriptionEventSingle':
+        elif _type == 'ExtendedDescriptionEvent' or _type == 'ExtendedDescriptionEventSingle':
             self.type = self.EXTENDED_DESCRIPTION_EVENT
 
     @cached

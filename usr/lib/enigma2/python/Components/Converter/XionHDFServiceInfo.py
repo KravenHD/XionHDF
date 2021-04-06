@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService
 from Components.Element import cached
@@ -44,7 +45,8 @@ class XionHDFServiceInfo(Converter, object):
     IS_480 = 30
 
     def __init__(self, type):
-        Converter.__init__(self, type)
+        _type = type
+        Converter.__init__(self, _type)
         self.type, self.interesting_events = {'HasTelext': (self.HAS_TELETEXT, (iPlayableService.evUpdatedInfo,)),
          'IsMultichannel': (self.IS_MULTICHANNEL, (iPlayableService.evUpdatedInfo,)),
          'IsStereo': (self.AUDIO_STEREO, (iPlayableService.evUpdatedInfo,)),
@@ -74,7 +76,7 @@ class XionHDFServiceInfo(Converter, object):
          'Is1080': (self.IS_1080, (iPlayableService.evVideoSizeChanged,)),
          'Is720': (self.IS_720, (iPlayableService.evVideoSizeChanged,)),
          'Is576': (self.IS_576, (iPlayableService.evVideoSizeChanged,)),
-         'Is480': (self.IS_480, (iPlayableService.evVideoSizeChanged,))}[type]
+         'Is480': (self.IS_480, (iPlayableService.evVideoSizeChanged,))}[_type]
 
     def getServiceInfoString(self, info, what, convert = lambda x: '%d' % x):
         v = info.getInfo(what)

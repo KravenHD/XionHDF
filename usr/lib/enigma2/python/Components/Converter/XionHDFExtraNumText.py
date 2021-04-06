@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from time import localtime, strftime
@@ -16,26 +17,27 @@ class XionHDFExtraNumText(Converter, object):
     HOURHAND = 10
 
     def __init__(self, type):
-        Converter.__init__(self, type)
-        if type == 'SnrNum':
+        _type = type
+        Converter.__init__(self, _type)
+        if _type == 'SnrNum':
             self.type = self.SNRNUM
-        elif type == 'AgcNum':
+        elif _type == 'AgcNum':
             self.type = self.AGCNUM
-        elif type == 'BerNum':
+        elif _type == 'BerNum':
             self.type = self.BERNUM
-        elif type == 'Step':
+        elif _type == 'Step':
             self.type = self.STEP
-        elif type == 'SnrText':
+        elif _type == 'SnrText':
             self.type = self.SNRTEXT
-        elif type == 'AgcText':
+        elif _type == 'AgcText':
             self.type = self.AGCTEXT
-        elif type == 'NUMBER':
+        elif _type == 'NUMBER':
             self.type = self.SLOT_NUMBER
-        elif type == 'secHand':
+        elif _type == 'secHand':
             self.type = self.SECHAND
-        elif type == 'minHand':
+        elif _type == 'minHand':
             self.type = self.MINHAND
-        elif type == 'hourHand':
+        elif _type == 'hourHand':
             self.type = self.HOURHAND
         else:
             self.type = self.LOCK

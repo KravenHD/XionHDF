@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 from Components.Converter.Converter import Converter
 from Components.Element import cached
-from Poll import Poll
+from Components.Converter.Poll import Poll
 from os import popen, statvfs
 SIZE_UNITS = ['B',
  'KB',
@@ -22,26 +23,27 @@ class XionHDFLayoutInfo(Poll, Converter):
     FLASHINFO = 8
 
     def __init__(self, type):
-        Converter.__init__(self, type)
+        _type = type
+        Converter.__init__(self, _type)
         Poll.__init__(self)
-        type = type.split(',')
-        self.shortFormat = 'Short' in type
-        self.fullFormat = 'Full' in type
-        if 'HddTemp' in type:
+        _type = _type.split(',')
+        self.shortFormat = 'Short' in _type
+        self.fullFormat = 'Full' in _type
+        if 'HddTemp' in _type:
             self.type = self.HDDTEMP
-        elif 'LoadAvg' in type:
+        elif 'LoadAvg' in _type:
             self.type = self.LOADAVG
-        elif 'MemTotal' in type:
+        elif 'MemTotal' in _type:
             self.type = self.MEMTOTAL
-        elif 'MemFree' in type:
+        elif 'MemFree' in _type:
             self.type = self.MEMFREE
-        elif 'SwapTotal' in type:
+        elif 'SwapTotal' in _type:
             self.type = self.SWAPTOTAL
-        elif 'SwapFree' in type:
+        elif 'SwapFree' in _type:
             self.type = self.SWAPFREE
-        elif 'UsbInfo' in type:
+        elif 'UsbInfo' in _type:
             self.type = self.USBINFO
-        elif 'HddInfo' in type:
+        elif 'HddInfo' in _type:
             self.type = self.HDDINFO
         else:
             self.type = self.FLASHINFO

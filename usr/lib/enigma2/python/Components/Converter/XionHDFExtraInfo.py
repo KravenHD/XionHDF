@@ -1,10 +1,11 @@
+from __future__ import absolute_import
 from enigma import iServiceInformation, iPlayableService
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Components.config import config
 from Tools.Transponder import ConvertToHumanReadable
 from Tools.GetEcmInfo import GetEcmInfo
-from Poll import Poll
+from Components.Converter.Poll import Poll
 from Components.Converter.ChannelNumbers import channelnumbers
 
 def addspace(text):
@@ -16,9 +17,10 @@ def addspace(text):
 class XionHDFExtraInfo(Poll, Converter, object):
 
     def __init__(self, type):
-        Converter.__init__(self, type)
+        _type = type
+        Converter.__init__(self, _type)
         Poll.__init__(self)
-        self.type = type
+        self.type = _type
         self.poll_interval = 1000
         self.poll_enabled = True
         self.caid_data = (('0x100',
@@ -481,7 +483,7 @@ class XionHDFExtraInfo(Poll, Converter, object):
 
     def createOrbPosOrTunerSystem(self, fedata, feraw):
         orbpos = self.createOrbPos(feraw)
-        if orbpos is not '':
+        if orbpos != '':
             return orbpos
         return self.createTunerSystem(fedata)
 

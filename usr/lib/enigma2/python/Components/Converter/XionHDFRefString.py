@@ -13,6 +13,7 @@
 #
 #######################################################################
 
+from __future__ import absolute_import
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Screens.InfoBar import InfoBar
@@ -22,12 +23,13 @@ class XionHDFRefString(Converter, object):
 	EVENT = 1
 	
 	def __init__(self, type):
-		Converter.__init__(self, type)
+		_type = type
+		Converter.__init__(self, _type)
 		self.CHANSEL = None
 		self.type = {
 				"CurrentRef": self.CURRENT,
 				"ServicelistRef": self.EVENT
-			}[type]
+			}[_type]
 
 	@cached
 	def getText(self):

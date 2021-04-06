@@ -15,6 +15,8 @@
 #  distributed other than under the conditions noted above.
 #
 
+from __future__ import absolute_import
+from __future__ import print_function
 from Tools.Directories import resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
 from Components.Converter.Converter import Converter
 from Components.Language import language
@@ -24,7 +26,7 @@ from xml.etree.cElementTree import fromstring
 from enigma import eTimer
 from datetime import datetime
 import os, gettext, requests
-from Poll import Poll
+from Components.Converter.Poll import Poll
 
 lang = language.getLanguage()
 os.environ["LANGUAGE"] = lang[:2]
@@ -39,22 +41,23 @@ def _(txt):
 	return t
 
 #URL = 'http://lgtv.accu-weather.com/widget/lgtv/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
-#URL = 'http://samsungmobile.accu-weather.com/widget/samsungmobile/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
-#URL = 'http://blstreamhptablet.accu-weather.com/widget/blstreamhptablet/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
+URL = 'http://blstreamhptablet.accu-weather.com/widget/blstreamhptablet/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
+#URL = 'http://realtek.accu-weather.com/widget/realtek/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
 #URL = 'http://cloudtv.accu-weather.com/widget/cloudtv/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
-URL = 'http://htctablet.accu-weather.com/widget/htctablet/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
+#URL = 'http://htctablet.accu-weather.com/widget/htctablet/weather-data.asp?%s' % str(config.plugins.XionHDF.weather_realtek_latlon.value)
 WEATHER_DATA = None
 WEATHER_LOAD = True
 
 class XionHDFWeather(Poll, Converter, object):
 	def __init__(self, type):
+		_type = type
 		Poll.__init__(self)
-		Converter.__init__(self, type)
+		Converter.__init__(self, _type)
 		self.poll_interval = 60000
 		self.poll_enabled = True
-		type = type.split(',')
-		self.day_value = type[0]
-		self.what = type[1]
+		_type = _type.split(',')
+		self.day_value = _type[0]
+		self.what = _type[1]
 		self.data = {}
 		self.timer = eTimer()
 		self.timer.callback.append(self.reset)
@@ -114,7 +117,7 @@ class XionHDFWeather(Poll, Converter, object):
 		global WEATHER_LOAD
 		if WEATHER_LOAD == True:
 			try:
-				print "Xion Weather: Weather download now"
+				print("Xion Weather: Weather download now")
 				self.data = {}
 				index = 0
 				res = requests.request('get', URL, timeout=5)

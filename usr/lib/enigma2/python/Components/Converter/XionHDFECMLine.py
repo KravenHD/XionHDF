@@ -9,11 +9,12 @@
 #  http://creativecommons.org/licenses/by-nc-sa/4.0/ 
 #
 
+from __future__ import absolute_import
 from enigma import iServiceInformation, iPlayableService
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Components.config import config
-from Poll import Poll
+from Components.Converter.Poll import Poll
 
 import os, gettext
 from Tools.Directories import resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
@@ -39,14 +40,15 @@ class XionHDFECMLine(Poll, Converter, object):
 	INVISIBLE = 3
 	
 	def __init__(self, type):
+		_type = type
 		Poll.__init__(self)
-		Converter.__init__(self, type)
+		Converter.__init__(self, _type)
 
-		if type == "VeryShort":
+		if _type == "VeryShort":
 			self.type = self.VERYSHORT
-		elif type == "Short":
+		elif _type == "Short":
 			self.type = self.SHORT
-		elif type == "Long":
+		elif _type == "Long":
 			self.type = self.LONG
 		else:
 			self.type = self.INVISIBLE

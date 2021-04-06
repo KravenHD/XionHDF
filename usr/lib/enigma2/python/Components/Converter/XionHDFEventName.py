@@ -1,5 +1,6 @@
 # based on EventName.py from VTI 4.1
 # Copy to /usr/lib/enigma2/python/Components/Converter/
+from __future__ import absolute_import
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 
@@ -14,18 +15,19 @@ class XionHDFEventName(Converter, object):
 	NAME_AND_SHORT_DESC_FILTERED = 6 # returns Name and Short Description, if Short Description is not equal the Name. If it is equal, only returns Title.
 	
 	def __init__(self, type):
-		Converter.__init__(self, type)
-		if type == "Description":
+		_type = type
+		Converter.__init__(self, _type)
+		if _type == "Description":
 			self.type = self.SHORT_DESCRIPTION
-		elif type == "ExtendedDescription":
+		elif _type == "ExtendedDescription":
 			self.type = self.EXTENDED_DESCRIPTION
-		elif type == "ID":
+		elif _type == "ID":
 			self.type = self.ID
-		elif type == "BothDescriptions":
+		elif _type == "BothDescriptions":
 			self.type = self.BOTH_DESCRIPTIONS
-		elif type == "BothDescriptionsFiltered":
+		elif _type == "BothDescriptionsFiltered":
 			self.type = self.BOTH_DESCRIPTIONS_FILTERED
-		elif type == "NameAndShortDescFiltered":
+		elif _type == "NameAndShortDescFiltered":
 			self.type = self.NAME_AND_SHORT_DESC_FILTERED
 		else:
 			self.type = self.NAME

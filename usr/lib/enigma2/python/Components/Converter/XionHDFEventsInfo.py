@@ -16,6 +16,7 @@
 #  Abbott Way, Stanford, California 94305, USA.
 #
 
+from __future__ import absolute_import
 from Components.Converter.Converter import Converter
 from Components.Element import cached
 from Components.VariableText import VariableText
@@ -23,6 +24,7 @@ from enigma import eLabel, eEPGCache, eServiceReference
 from time import localtime, strftime, mktime, time
 from datetime import datetime
 from Components.config import config
+from six.moves import range
 
 class XionHDFEventsInfo(Converter, object):
 	
@@ -40,23 +42,24 @@ class XionHDFEventsInfo(Converter, object):
 	longDescription = 14
 
 	def __init__(self, type):
-		Converter.__init__(self, type)
+		_type = type
+		Converter.__init__(self, _type)
 		self.epgcache = eEPGCache.getInstance()
 
-		args = type.split(',')
+		args = _type.split(',')
 		if len(args) != 2: 
 			raise ElementError("type must contain exactly 2 arguments")
 	
-		type = args.pop(0)
+		_type = args.pop(0)
 		showDuration = args.pop(0)
 				
-		if type == "Event1":
+		if _type == "Event1":
 			self.type = self.Event1
-		elif type == "Event2":
+		elif _type == "Event2":
 			self.type = self.Event2
-		elif type == "Event3":
+		elif _type == "Event3":
 			self.type = self.Event3
-		elif type == "PrimeTime":
+		elif _type == "PrimeTime":
 			self.type = self.PrimeTime
 		else:
 			self.type = self.Event0
@@ -96,9 +99,9 @@ class XionHDFEventsInfo(Converter, object):
 			if curEvent:
 				now = localtime(time())
 				try:
-	                           dt = datetime(now.tm_year, now.tm_mon, now.tm_mday, int(config.plugins.XionHD.Primetime.value[0]), int(config.plugins.XionHD.Primetime.value[1]))
-                                except:
-                                   dt = datetime(now.tm_year, now.tm_mon, now.tm_mday, 20, 15)
+					dt = datetime(now.tm_year, now.tm_mon, now.tm_mday, int(config.plugins.XionHD.Primetime.value[0]), int(config.plugins.XionHD.Primetime.value[1]))
+				except:
+					dt = datetime(now.tm_year, now.tm_mon, now.tm_mday, 20, 15)
 				primeTime = int(mktime(dt.timetuple()))
 				self.epgcache.startTimeQuery(eServiceReference(ref.toString()), primeTime)
 				next = self.epgcache.getNextTimeEntry()

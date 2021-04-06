@@ -1,7 +1,9 @@
-from Converter import Converter
+from __future__ import absolute_import
+from Components.Converter.Converter import Converter
 from time import localtime, strftime
 from Components.Element import cached
 from Components.config import config
+import six
 
 class XionHDFClockToText(Converter, object):
 	DEFAULT = 0
@@ -18,39 +20,40 @@ class XionHDFClockToText(Converter, object):
 	AS_LENGTHHOURS = 11
 	AS_LENGTHSECONDS = 12
 	FULL_DATE = 13
-    
+
 	def __init__(self, type):
-		Converter.__init__(self, type)
+		_type = type
+		Converter.__init__(self, _type)
 		self.fix = ''
-		if ';' in type:
-			(type, self.fix,) = type.split(';')
-		if type == 'WithSeconds':
+		if ';' in _type:
+			(_type, self.fix,) = _type.split(';')
+		if _type == 'WithSeconds':
 			self.type = self.WITH_SECONDS
-		elif type == 'InMinutes':
+		elif _type == 'InMinutes':
 			self.type = self.IN_MINUTES
-		elif type == 'Date':
+		elif _type == 'Date':
 			self.type = self.DATE
-		elif type == 'AsLength':
+		elif _type == 'AsLength':
 			self.type = self.AS_LENGTH
-		elif type == 'AsLengthHours':
+		elif _type == 'AsLengthHours':
 			self.type = self.AS_LENGTHHOURS
-		elif type == 'AsLengthSeconds':
+		elif _type == 'AsLengthSeconds':
 			self.type = self.AS_LENGTHSECONDS
-		elif type == 'Timestamp':
+		elif _type == 'Timestamp':
 			self.type = self.TIMESTAMP
-		elif type == 'Full':
+		elif _type == 'Full':
 			self.type = self.FULL
-		elif type == 'ShortDate':
+		elif _type == 'ShortDate':
 			self.type = self.SHORT_DATE
-		elif type == 'LongDate':
+		elif _type == 'LongDate':
 			self.type = self.LONG_DATE
-		elif type == 'VFD':
+		elif _type == 'VFD':
 			self.type = self.VFD
-		elif type == 'FullDate':
+		elif _type == 'FullDate':
 			self.type = self.FULL_DATE
-		elif 'Format' in type:
+		elif 'Format' in _type:
 			self.type = self.FORMAT
-			self.fmt_string = type[7:]
+			self.fmt_string = _type[7:]
 		else:
 			self.type = self.DEFAULT
 
@@ -58,17 +61,17 @@ class XionHDFClockToText(Converter, object):
 
 	@cached
 	def getText(self):
-        	time = self.source.time
-        	if time is None:
-            		return ''
-        
+		time = self.source.time
+		if time is None:
+			return ''
+
 		def fix_space(string):
 			if 'Proportional' in self.fix and t.tm_hour < 10:
 				return ' ' + string
 			if 'NoSpace' in self.fix:
 				return string.lstrip(' ')
 			return string
-        
+
 		if self.type == self.IN_MINUTES:
 			return ngettext('%d Min', '%d Mins', time / 60) % (time / 60)
 		if self.type == self.AS_LENGTH:
@@ -115,6 +118,7 @@ class XionHDFClockToText(Converter, object):
 			d = d.replace('%A', t2)
 			d = d.replace('%b', m1)
 			d = d.replace('%B', m2)
+			d = six.ensure_str(d)
 		return strftime(d, t)
-    
+
 	text = property(getText)

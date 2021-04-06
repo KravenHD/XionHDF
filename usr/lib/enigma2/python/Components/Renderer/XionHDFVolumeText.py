@@ -12,7 +12,8 @@
 #  Abbott Way, Stanford, California 94305, USA.
 #
 
-from Renderer import Renderer
+from __future__ import absolute_import
+from .Renderer import Renderer
 from Components.VariableText import VariableText
 from enigma import eLabel, eDVBVolumecontrol, eTimer
 

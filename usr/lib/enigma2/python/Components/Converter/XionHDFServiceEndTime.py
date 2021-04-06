@@ -1,7 +1,8 @@
 #taken from "ServicePosition" Converter 
 #edited by mogli123 @ et-view-support.com
+from __future__ import absolute_import
 from Components.Converter.Converter import Converter
-from Poll import Poll
+from Components.Converter.Poll import Poll
 from enigma import iPlayableService, iPlayableServicePtr, iServiceInformation, eTimer, eLabel
 from Components.Element import cached, ElementError
 from time import localtime, strftime, time, gmtime, asctime
@@ -12,15 +13,16 @@ class XionHDFServiceEndTime(Poll, Converter, object):
 	TYPE_ENDTIME = 0
 
 	def __init__(self, type):
+		_type = type
 		Poll.__init__(self)
-		Converter.__init__(self, type)
+		Converter.__init__(self, _type)
 
-		if type == "EndTime":
+		if _type == "EndTime":
 			self.type = self.TYPE_ENDTIME
 
 		self.poll_enabled = True
   
-        def getSeek(self):
+	def getSeek(self):
 		s = self.source.service
 		return s and s.seek()
 
@@ -33,33 +35,33 @@ class XionHDFServiceEndTime(Poll, Converter, object):
 		if pos[0]:
 			return 0
 		return pos[1]
-        
-        @cached
+
+	@cached
 	def getLength(self):
 		seek = self.getSeek()
 		if seek is None:
 			return None
 		length = seek.getLength()
-                if length[0]:
+		if length[0]:
 			return 0
 		return length[1]
 
 		
-        @cached
+	@cached
 	def getText(self):
-                seek = self.getSeek()
+		seek = self.getSeek()
 		if seek is None:
 			return ""
 		else:
 			if self.type == self.TYPE_ENDTIME:
-				e = (self.length / 90000)        
-                                s = self.position / 90000
-                                return strftime("%H:%M", localtime(time() + (self.length / 90000 - self.position / 90000)))   
-        
+				e = (self.length / 90000)
+				s = self.position / 90000
+				return strftime("%H:%M", localtime(time() + (self.length / 90000 - self.position / 90000)))   
+
 	range = 10000
 
 	position = property(getPosition)
-        length = property(getLength)
+	length = property(getLength)
 	text = property(getText)
 
 	def changed(self, what):

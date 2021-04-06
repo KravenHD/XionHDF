@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 from Components.VariableText import VariableText
 from enigma import eLabel
-from Renderer import Renderer
+from .Renderer import Renderer
 from os import path, popen
 
 class XionHDFSYSTemp(Renderer, VariableText):
