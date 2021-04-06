@@ -39,7 +39,7 @@ import gettext, time, subprocess, re, requests, json
 from boxbranding import getBoxType, getImageArch
 from enigma import ePicLoad, getDesktop, eConsoleAppContainer
 from Tools.Directories import fileExists, resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
-from ChangeSkin import *
+from .ChangeSkin import *
 FILE = "/usr/share/enigma2/XionHDF/skin.xml"
 TMPFILE = FILE + ".tmp"
 #############################################################
