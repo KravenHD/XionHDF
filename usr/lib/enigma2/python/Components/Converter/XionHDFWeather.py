@@ -25,7 +25,9 @@ from Components.config import config
 from xml.etree.cElementTree import fromstring
 from enigma import eTimer
 from datetime import datetime
-import os, gettext, requests
+import os
+import gettext
+import requests
 from Components.Converter.Poll import Poll
 
 lang = language.getLanguage()
@@ -86,7 +88,7 @@ class XionHDFWeather(Poll, Converter, object):
 			if self.getMinTemp(int(day)) == '' or self.getMaxTemp(int(day)) == '':
 				self.info = ''
 			else:
-				self.info = self.getMinTemp(int(day))+" / "+self.getMaxTemp(int(day))
+				self.info = self.getMinTemp(int(day)) + " / " + self.getMaxTemp(int(day))
 		elif self.what == 'Description':
 			self.info = self.getWeatherDes(int(day))
 		elif self.what == 'MeteoIcon':
@@ -121,7 +123,7 @@ class XionHDFWeather(Poll, Converter, object):
 				self.data = {}
 				index = 0
 				res = requests.request('get', URL, timeout=5)
-				root = fromstring(res.text.replace('xmlns="http://www.accuweather.com"',''))
+				root = fromstring(res.text.replace('xmlns="http://www.accuweather.com"', ''))
 				for child in root.findall('currentconditions'):
 					self.data['Day_%s' % str(index)] = {}
 					self.data['Day_%s' % str(index)]['temp'] = child.find('temperature').text
@@ -206,32 +208,32 @@ class XionHDFWeather(Poll, Converter, object):
 			languagecheck = lang[:2]
 			if languagecheck == "de":
 				weather = self.data['Day_%s' % str(day)]['skytextday']
-				weather = weather.replace("Ã¤","ä")
-				weather = weather.replace("Ã¶","ö")
-				weather = weather.replace("Ã¼","ü")
-				weather = weather.replace("ÃŸ","ß")
-				weather = weather.replace("Ã„","Ä")
-				weather = weather.replace("Ã–","Ö")
-				weather = weather.replace("Ãœ","Ü")
-				weather = weather.replace("Ã","Ü")
+				weather = weather.replace("Ã¤", "ä")
+				weather = weather.replace("Ã¶", "ö")
+				weather = weather.replace("Ã¼", "ü")
+				weather = weather.replace("ÃŸ", "ß")
+				weather = weather.replace("Ã„", "Ä")
+				weather = weather.replace("Ã–", "Ö")
+				weather = weather.replace("Ãœ", "Ü")
+				weather = weather.replace("Ã", "Ü")
 				return str(weather)
 			else:
 				weather = self.data['Day_%s' % str(day)]['skytextday']
-				weather = weather.replace("Ã¤","ä")
-				weather = weather.replace("Ã¶","ö")
-				weather = weather.replace("Ã¼","ü")
-				weather = weather.replace("ÃŸ","ß")
-				weather = weather.replace("Ã„","Ä")
-				weather = weather.replace("Ã–","Ö")
-				weather = weather.replace("Ãœ","Ü")
-				weather = weather.replace("Ã","Ü")
-				weather = weather.replace("Ü","Ç")
-				weather = weather.replace("Å","Ş")
-				weather = weather.replace("Ä°","İ")
-				weather = weather.replace("ÅŸ","ş")
-				weather = weather.replace("ÄŸ","ğ")
-				weather = weather.replace("Ã§","ç")
-				weather = weather.replace("Ä±","ı")
+				weather = weather.replace("Ã¤", "ä")
+				weather = weather.replace("Ã¶", "ö")
+				weather = weather.replace("Ã¼", "ü")
+				weather = weather.replace("ÃŸ", "ß")
+				weather = weather.replace("Ã„", "Ä")
+				weather = weather.replace("Ã–", "Ö")
+				weather = weather.replace("Ãœ", "Ü")
+				weather = weather.replace("Ã", "Ü")
+				weather = weather.replace("Ü", "Ç")
+				weather = weather.replace("Å", "Ş")
+				weather = weather.replace("Ä°", "İ")
+				weather = weather.replace("ÅŸ", "ş")
+				weather = weather.replace("ÄŸ", "ğ")
+				weather = weather.replace("Ã§", "ç")
+				weather = weather.replace("Ä±", "ı")
 				return str(weather)
 		except:
 			return ''
@@ -254,7 +256,7 @@ class XionHDFWeather(Poll, Converter, object):
 	def getWeatherDate(self, day):
 		try:
 			weather_date = self.data['Day_%s' % str(day)]['day']
-			date_struc = datetime.strptime(weather_date,"%m/%d/%Y")
+			date_struc = datetime.strptime(weather_date, "%m/%d/%Y")
 			weather_dayname = date_struc.strftime('%a')
 			return _(str(weather_dayname).upper()[:2])
 		except:
@@ -263,7 +265,7 @@ class XionHDFWeather(Poll, Converter, object):
 	def getHumidity(self):
 		try:
 			humi = self.data['Day_0']['humidity']
-			return str(humi.replace('%','')) + _('% humidity')
+			return str(humi.replace('%', '')) + _('% humidity')
 		except:
 			return 'N/A'
 
@@ -278,37 +280,37 @@ class XionHDFWeather(Poll, Converter, object):
 		try:
 			font = self.data['Day_%s' % str(day)]['skycodeday']
 			font = int(font)
-			if font in (1,2):
+			if font in (1, 2):
 				icon = "B" # sun
-			elif font in (3,4):
+			elif font in (3, 4):
 				icon = "H" # sun + cloud
 			elif font == 5:
 				icon = "E" # mist
-			elif font in (6,7,8,38):
+			elif font in (6, 7, 8, 38):
 				icon = "Y" # clouds
 			elif font == 11:
 				icon = "M" # fog
-			elif font in (12,13,14,39,40):
+			elif font in (12, 13, 14, 39, 40):
 				icon = "Q" # shower
-			elif font in (15,16,17,41,42):
+			elif font in (15, 16, 17, 41, 42):
 				icon = "P" # thunderstorm
 			elif font == 18:
 				icon = "R" # rain
-			elif font in (19,20,21,43):
+			elif font in (19, 20, 21, 43):
 				icon = "U" # flurries
-			elif font in (22,23,44):
+			elif font in (22, 23, 44):
 				icon = "W" # snow
 			elif font == 24:
 				icon = "G" # ice
-			elif font in (25,26,29):
+			elif font in (25, 26, 29):
 				icon = "X" # sleet
-			elif font in (30,31):
+			elif font in (30, 31):
 				icon = "'" # temperature
 			elif font == 32:
 				icon = "F" # wind
-			elif font in (33,34):
+			elif font in (33, 34):
 				icon = "C" # moon
-			elif font in (35,36,37):
+			elif font in (35, 36, 37):
 				icon = "I" # moon + cloud
 			else:
 				icon = "(" # compass

@@ -13,14 +13,14 @@ from Components.Element import cached
 
 
 class XionHDFCpuUsage(Converter, object):
-	CPU_ALL   = -2
+	CPU_ALL = -2
 	CPU_TOTAL = -1
 
 	def __init__(self, type):
 		_type = type
 		Converter.__init__(self, _type)
 		
-		self.percentlist = [ ]
+		self.percentlist = []
 		self.pfmt = "%3d%%"
 		if not _type or _type == "Total":
 			self.type = self.CPU_TOTAL
@@ -37,11 +37,12 @@ class XionHDFCpuUsage(Converter, object):
 				pos = 0
 				while True:
 					pos = self.sfmt.find("$", pos)
-					if pos == -1: break
-					if pos < len(self.sfmt)-1 and \
-					   self.sfmt[pos+1].isdigit() and \
-					   int(self.sfmt[pos+1]) > cpus:
-						self.sfmt = self.sfmt.replace("$" + self.sfmt[pos+1], "n/a")
+					if pos == -1:
+						break
+					if pos < len(self.sfmt) - 1 and \
+					   self.sfmt[pos + 1].isdigit() and \
+					   int(self.sfmt[pos + 1]) > cpus:
+						self.sfmt = self.sfmt.replace("$" + self.sfmt[pos + 1], "n/a")
 					pos += 1
 
 	def doSuspend(self, suspended):
@@ -60,8 +61,8 @@ class XionHDFCpuUsage(Converter, object):
 		if not self.percentlist:
 			self.percentlist = [0] * 3
 		for i in list(range(len(self.percentlist))):
-			res = res.replace("$" + str(i), self.pfmt%(self.percentlist[i]))
-		res = res.replace("$?", "%d" % (len(self.percentlist)-1))
+			res = res.replace("$" + str(i), self.pfmt % (self.percentlist[i]))
+		res = res.replace("$?", "%d" % (len(self.percentlist) - 1))
 		return res
 
 	@cached
@@ -85,7 +86,7 @@ class CpuUsageMonitor(Poll, object):
 
 	def __init__(self):
 		Poll.__init__(self)
-		self.__callbacks = [ ]
+		self.__callbacks = []
 		self.__curr_info = self.getCpusInfo()
 		self.poll_interval = 500
 
@@ -116,11 +117,11 @@ class CpuUsageMonitor(Poll, object):
 	def poll(self):
 		prev_info, self.__curr_info = self.__curr_info, self.getCpusInfo()
 		if len(self.__callbacks):
-			info = [ ]
+			info = []
 			for i in list(range(len(self.__curr_info))):
 				# xxx% = (cur_xxx - prev_xxx) / (cur_total - prev_total) * 100
 				try:
-					p = 100 * ( self.__curr_info[i][2] - prev_info[i][2] ) / ( self.__curr_info[i][1] - prev_info[i][1] )
+					p = 100 * (self.__curr_info[i][2] - prev_info[i][2]) / (self.__curr_info[i][1] - prev_info[i][1])
 				except ZeroDivisionError:
 					p = 0
 				info.append(p)
@@ -142,4 +143,3 @@ class CpuUsageMonitor(Poll, object):
 
 
 cpuUsageMonitor = CpuUsageMonitor()
-

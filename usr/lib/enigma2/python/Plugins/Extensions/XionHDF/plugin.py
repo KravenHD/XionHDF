@@ -35,7 +35,12 @@ from shutil import move, copy, rmtree, copytree
 from skin import parseColor
 from Components.Pixmap import Pixmap
 from Components.Label import Label
-import gettext, time, subprocess, re, requests, json
+import gettext
+import time
+import subprocess
+import re
+import requests
+import json
 from boxbranding import getBoxType, getImageArch
 from enigma import ePicLoad, getDesktop, eConsoleAppContainer
 from Tools.Directories import fileExists, resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
@@ -66,17 +71,17 @@ def translateBlock(block):
 
 config.plugins.XionHDF = ConfigSubsection()
 
-config.plugins.XionHDF.weather_city = ConfigText(default = "")
+config.plugins.XionHDF.weather_city = ConfigText(default="")
 
-config.plugins.XionHDF.refreshInterval = ConfigSelectionNumber(min = 10, max = 240, stepwidth = 5, default = 60, wraparound = True)
-config.plugins.XionHDF.weather_realtek_latlon = ConfigText(default = "")
-config.plugins.XionHDF.weather_foundcity = ConfigText(default = "")
+config.plugins.XionHDF.refreshInterval = ConfigSelectionNumber(min=10, max=240, stepwidth=5, default=60, wraparound=True)
+config.plugins.XionHDF.weather_realtek_latlon = ConfigText(default="")
+config.plugins.XionHDF.weather_foundcity = ConfigText(default="")
 
-config.plugins.XionHDF.System = ConfigSelection(default="openhdf", choices = [
+config.plugins.XionHDF.System = ConfigSelection(default="openhdf", choices=[
                                 ("openhdf", _(" "))
                                 ])
 
-config.plugins.XionHDF.BackgroundColorTrans = ConfigSelection(default="1c", choices = [
+config.plugins.XionHDF.BackgroundColorTrans = ConfigSelection(default="1c", choices=[
                                 ("00", _("Off")),
                                 ("1c", _("Lower")),
                                 ("2d", _("Low")),
@@ -117,25 +122,25 @@ ColorList.append(("006C0AAB", _("Violet")))
 ColorList.append(("001F0333", _("Violet dark")))
 ColorList.append(("00ffffff", _("White")))
 
-config.plugins.XionHDF.SelectionBackground = ConfigSelection(default="00C3461B", choices = ColorList)
+config.plugins.XionHDF.SelectionBackground = ConfigSelection(default="00C3461B", choices=ColorList)
 
-config.plugins.XionHDF.Font1 = ConfigSelection(default="00ffffff", choices = ColorList)
+config.plugins.XionHDF.Font1 = ConfigSelection(default="00ffffff", choices=ColorList)
 
-config.plugins.XionHDF.Font2 = ConfigSelection(default="00ffffff", choices = ColorList)
+config.plugins.XionHDF.Font2 = ConfigSelection(default="00ffffff", choices=ColorList)
 
-config.plugins.XionHDF.SelectionFont = ConfigSelection(default="00ffffff", choices = ColorList)
+config.plugins.XionHDF.SelectionFont = ConfigSelection(default="00ffffff", choices=ColorList)
 
-config.plugins.XionHDF.ButtonText = ConfigSelection(default="00ffffff", choices = ColorList)
+config.plugins.XionHDF.ButtonText = ConfigSelection(default="00ffffff", choices=ColorList)
 
-config.plugins.XionHDF.Progress = ConfigSelection(default="00C3461B", choices = ColorList)
+config.plugins.XionHDF.Progress = ConfigSelection(default="00C3461B", choices=ColorList)
 
-config.plugins.XionHDF.Line = ConfigSelection(default="00ffffff", choices = ColorList)
+config.plugins.XionHDF.Line = ConfigSelection(default="00ffffff", choices=ColorList)
 
 SelectionBorderList = [("none", _("Off"))]
 SelectionBorderList = ColorList + SelectionBorderList
-config.plugins.XionHDF.SelectionBorder = ConfigSelection(default="none", choices = SelectionBorderList)
+config.plugins.XionHDF.SelectionBorder = ConfigSelection(default="none", choices=SelectionBorderList)
 
-config.plugins.XionHDF.EMCStyle = ConfigSelection(default="emc-nocover", choices = [
+config.plugins.XionHDF.EMCStyle = ConfigSelection(default="emc-nocover", choices=[
                                 ("emc-nocover", _("No cover")),
                                 ("emc-smallcover", _("Small cover")),
                                 ("emc-bigcover", _("Big cover")),
@@ -144,7 +149,7 @@ config.plugins.XionHDF.EMCStyle = ConfigSelection(default="emc-nocover", choices
                                 ("emc-minitv", _("MiniTV"))
                                 ])
 
-config.plugins.XionHDF.MovieStyle = ConfigSelection(default="movieselectionnocover", choices = [
+config.plugins.XionHDF.MovieStyle = ConfigSelection(default="movieselectionnocover", choices=[
                                 ("movieselectionnocover", _("No cover")),
                                 ("movieselectionsmallcover", _("Small cover")),
                                 ("movieselectionbigcover", _("Big cover")),
@@ -152,36 +157,36 @@ config.plugins.XionHDF.MovieStyle = ConfigSelection(default="movieselectionnocov
                                 ("movieselectionminitv", _("MiniTV"))
                                 ])
 
-config.plugins.XionHDF.InfobarStyle = ConfigSelection(default="infobar-style-xpicon", choices = [
+config.plugins.XionHDF.InfobarStyle = ConfigSelection(default="infobar-style-xpicon", choices=[
                                 ("infobar-style-xpicon", _("X-Picon"))
                                 ])
 
-config.plugins.XionHDF.SIB = ConfigSelection(default="infobar-style-xpicon_end1", choices = [
+config.plugins.XionHDF.SIB = ConfigSelection(default="infobar-style-xpicon_end1", choices=[
                                 ("infobar-style-xpicon_end1", _("Only current program")),
                                 ("infobar-style-xpicon_end2", _("Top/Bottom")),
                                 ("infobar-style-xpicon_end3", _("Left/Right"))
                                 ])
 
-config.plugins.XionHDF.ChannelSelectionStyle = ConfigSelection(default="channelselection-twocolumns", choices = [
+config.plugins.XionHDF.ChannelSelectionStyle = ConfigSelection(default="channelselection-twocolumns", choices=[
                                 ("channelselection-twocolumns", _("Two columns")),
                                 ("channelselection-threecolumns", _("Three columns")),
                                 ("channelselection-xpicon", _("X-Picon")),
                                 ("channelselection-minitv", _("MiniTV"))
                                 ])
 
-config.plugins.XionHDF.InfobarChannelname = ConfigSelection(default="infobar-style-xpicon_middle1", choices = [
+config.plugins.XionHDF.InfobarChannelname = ConfigSelection(default="infobar-style-xpicon_middle1", choices=[
                                 ("infobar-style-xpicon_middle1", _("Small")),
                                 ("infobar-style-xpicon_middle2", _("Big")),
                                 ("infobar-style-xpicon_middleP", _("Poster")),
                                 ("infobar-style-xpicon_middle3", _("Off"))
                                 ])
 
-config.plugins.XionHDF.RunningText = ConfigSelection(default="movetype=running", choices = [
+config.plugins.XionHDF.RunningText = ConfigSelection(default="movetype=running", choices=[
                                 ("movetype=running", _("On")),
                                 ("movetype=none", _("Off"))
                                 ])
 
-config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", choices = [
+config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", choices=[
                                 ("weather-off", _("Off")),
                                 ("weather-info", _("Infos in place of weather")),
                                 ("weather-big", _("Big")),
@@ -189,19 +194,19 @@ config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", cho
                                 ("weather-small", _("Small"))
                                 ])
 
-config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showNever", choices = [
+config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showNever", choices=[
                                 ("showOnDemand", _("On")),
                                 ("showNever", _("Off"))
                                 ])
 
-config.plugins.XionHDF.FontStyleHeight_1 = ConfigSelectionNumber(default = 95, stepwidth = 1, min = 0, max = 120, wraparound = True)
-config.plugins.XionHDF.FontStyleHeight_2 = ConfigSelectionNumber(default = 95, stepwidth = 1, min = 0, max = 120, wraparound = True)
+config.plugins.XionHDF.FontStyleHeight_1 = ConfigSelectionNumber(default=95, stepwidth=1, min=0, max=120, wraparound=True)
+config.plugins.XionHDF.FontStyleHeight_2 = ConfigSelectionNumber(default=95, stepwidth=1, min=0, max=120, wraparound=True)
 
 ################# bmeminfo ###########################################
 if fileExists('/proc/bmeminfo'):
     entrie = os.popen('cat /proc/bmeminfo').read()
     mem = entrie.split(':', 1)[1].split('k')[0]
-    bmem = int(mem)/1024
+    bmem = int(mem) / 1024
 else:
     mem_info = []
     entrie = os.popen('cat /proc/cmdline').read()
@@ -217,7 +222,7 @@ else:
     if len(mem_info) > 1:
         bmem = int(mem_info[0]) + int(mem_info[1])
     else:
-        if getImageArch() == 'cortexa15hf-neon-vfpv4' or getBoxType() in ('zgemmah9s','e4hdultra'):
+        if getImageArch() == 'cortexa15hf-neon-vfpv4' or getBoxType() in ('zgemmah9s', 'e4hdultra'):
             bmem = 250
         else:
             bmem = int(mem_info[0])
@@ -235,7 +240,7 @@ if bmem > 180:
     #SkinModeList.append(("8khd", _("8K Skin 8192 x 4320")))
 #SkinModeList.append(("userdef", _("User Selection")))
 
-config.plugins.XionHDF.skin_mode = ConfigSelection(default="hd", choices = SkinModeList)
+config.plugins.XionHDF.skin_mode = ConfigSelection(default="hd", choices=SkinModeList)
 #######################################################################
 
 class XionHDF(ConfigListScreen, Screen):
@@ -268,7 +273,7 @@ class XionHDF(ConfigListScreen, Screen):
 </screen>
 """
 
-    def __init__(self, session, args = None, picPath = None):
+    def __init__(self, session, args=None, picPath=None):
         self.skin_lines = []
         Screen.__init__(self, session)
         self.session = session
@@ -285,11 +290,11 @@ class XionHDF(ConfigListScreen, Screen):
         ConfigListScreen.__init__(
                         self,
                         self.mylist(),
-                        session = session,
-                        on_change = self.__selectionChanged
+                        session=session,
+                        on_change=self.__selectionChanged
                         )
 
-        self["actions"] = ActionMap(["OkCancelActions", "DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft, "down": self.keyDown, "up": self.keyUp, "right": self.keyRight, "red": self.exit, "yellow": self.reboot, "blue": self.showInfo, "green": self.save, "cancel": self.exit, "ok": self.keyOK }, -1)
+        self["actions"] = ActionMap(["OkCancelActions", "DirectionActions", "InputActions", "ColorActions"], {"left": self.keyLeft, "down": self.keyDown, "up": self.keyUp, "right": self.keyRight, "red": self.exit, "yellow": self.reboot, "blue": self.showInfo, "green": self.save, "cancel": self.exit, "ok": self.keyOK}, -1)
         self.onLayoutFinish.append(self.UpdatePicture)
 
     def mylist(self):
@@ -417,10 +422,10 @@ class XionHDF(ConfigListScreen, Screen):
         self.onLayoutFinish.append(self.ShowPicture)
 
     def ShowPicture(self):
-        self.PicLoad.setPara([self["helperimage"].instance.size().width(),self["helperimage"].instance.size().height(),self.Scale[0],self.Scale[1],0,1,"#002C2C39"])
+        self.PicLoad.setPara([self["helperimage"].instance.size().width(), self["helperimage"].instance.size().height(), self.Scale[0], self.Scale[1], 0, 1, "#002C2C39"])
         self.PicLoad.startDecode(self.GetPicturePath())
 
-    def DecodePicture(self, PicInfo = ""):
+    def DecodePicture(self, PicInfo=""):
         ptr = self.PicLoad.getData()
         self["helperimage"].instance.setPixmap(ptr)
 
@@ -443,11 +448,11 @@ class XionHDF(ConfigListScreen, Screen):
         self.updateHelp()
 
     def keyOK(self):
-        if isinstance(self["config"].getCurrent()[1],ConfigText):
+        if isinstance(self["config"].getCurrent()[1], ConfigText):
             from Screens.VirtualKeyBoard import VirtualKeyBoard
             text = self["config"].getCurrent()[1].value
             title = _("Enter the city name of your location:")
-            self.session.openWithCallback(self.keyVirtualKeyBoardCallBack, VirtualKeyBoard, title = title, text = text)
+            self.session.openWithCallback(self.keyVirtualKeyBoardCallBack, VirtualKeyBoard, title=title, text=text)
 
     def keyVirtualKeyBoardCallBack(self, callback):
         try:
@@ -459,7 +464,7 @@ class XionHDF(ConfigListScreen, Screen):
             pass
 
     def reboot(self):
-        restartbox = self.session.openWithCallback(self.restartGUI,MessageBox,_("Do you really want to reboot now?"), MessageBox.TYPE_YESNO)
+        restartbox = self.session.openWithCallback(self.restartGUI, MessageBox, _("Do you really want to reboot now?"), MessageBox.TYPE_YESNO)
         restartbox.setTitle(_("Restart GUI"))
 
     def showInfo(self):
@@ -594,7 +599,7 @@ class XionHDF(ConfigListScreen, Screen):
 
     def restart(self):
         configfile.save()
-        restartbox = self.session.openWithCallback(self.restartGUI,MessageBox,_("GUI needs a restart to apply a new skin.\nDo you want to Restart the GUI now?"), MessageBox.TYPE_YESNO)
+        restartbox = self.session.openWithCallback(self.restartGUI, MessageBox, _("GUI needs a restart to apply a new skin.\nDo you want to Restart the GUI now?"), MessageBox.TYPE_YESNO)
         restartbox.setTitle(_("Restart GUI"))
 
     def appendSkinFile(self, appendFileName, skinPartSearchAndReplace=None):
@@ -657,7 +662,7 @@ class XionHDF(ConfigListScreen, Screen):
         else:
             self.get_latlon_by_name()
 
-        config.plugins.XionHDF.weather_foundcity.value=self.city
+        config.plugins.XionHDF.weather_foundcity.value = self.city
         config.plugins.XionHDF.weather_foundcity.save()
         config.plugins.XionHDF.weather_realtek_latlon.value = 'lat=%s&lon=%s&metric=1&language=%s' % (str(self.lat), str(self.lon), lang[:2])
         #print config.plugins.XionHDF.weather_realtek_latlon.value
@@ -668,8 +673,8 @@ class XionHDF(ConfigListScreen, Screen):
         try:
             res = requests.get('http://ip-api.com/json/?lang=de&fields=status,city,lat,lon,country', timeout=3)
             data = res.json()
-            if data['status']=='success':
-                self.country = data ['country']
+            if data['status'] == 'success':
+                self.country = data['country']
                 self.city1 = data['city']
                 self.city = str(self.city1) + ' / ' + str(self.country)
                 self.lat = data['lat']
@@ -719,11 +724,11 @@ class XionHDF(ConfigListScreen, Screen):
 #############################################################
 
 def main(session, **kwargs):
-    session.open(XionHDF,"/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/Xioncolors.jpg")
+    session.open(XionHDF, "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/Xioncolors.jpg")
 
 def Plugins(**kwargs):
     screenwidth = getDesktop(0).size().width()
     if screenwidth and screenwidth == 1920:
-        return [PluginDescriptor(name="XionHDF", description=_("Configuration tool for XionHDF"), where = PluginDescriptor.WHERE_PLUGINMENU, icon='pluginfhd.png', fnc=main)]
+        return [PluginDescriptor(name="XionHDF", description=_("Configuration tool for XionHDF"), where=PluginDescriptor.WHERE_PLUGINMENU, icon='pluginfhd.png', fnc=main)]
     else:
-        return [PluginDescriptor(name="XionHDF", description=_("Configuration tool for XionHDF"), where = PluginDescriptor.WHERE_PLUGINMENU, icon='plugin.png', fnc=main)]
+        return [PluginDescriptor(name="XionHDF", description=_("Configuration tool for XionHDF"), where=PluginDescriptor.WHERE_PLUGINMENU, icon='plugin.png', fnc=main)]

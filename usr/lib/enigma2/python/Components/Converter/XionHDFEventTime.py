@@ -20,7 +20,7 @@ class XionHDFEventTime(Poll, Converter, object):
 			self.type = self.ENDTIME
 		elif _type == "Remaining":
 			self.type = self.REMAINING
-			self.poll_interval = 60*1000
+			self.poll_interval = 60 * 1000
 			self.poll_enabled = True
 		elif _type == "StartTime":
 			self.type = self.STARTTIME
@@ -28,11 +28,11 @@ class XionHDFEventTime(Poll, Converter, object):
 			self.type = self.DURATION
 		elif _type == "Progress":
 			self.type = self.PROGRESS
-			self.poll_interval = 30*1000
+			self.poll_interval = 30 * 1000
 			self.poll_enabled = True
 		elif _type == "RunTime":
 			self.type = self.RUNTIME
-			self.poll_interval = 1*1000
+			self.poll_interval = 1 * 1000
 			self.poll_enabled = True
 		else:
 			raise ElementError("'%s' is not <StartTime|EndTime|Remaining|Duration|Progress|Runtime> for fenrisEventTime converter" % _type)

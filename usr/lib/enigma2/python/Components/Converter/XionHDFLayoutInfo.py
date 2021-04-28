@@ -203,7 +203,7 @@ class XionHDFLayoutInfo(Poll, Converter):
                 result[3] = result[1] * 100 / result[0]
         return result
 
-    def getSizeStr(self, value, u = 0):
+    def getSizeStr(self, value, u=0):
         fractal = 0
         if value >= 1024:
             fmt = '%(size)u.%(frac)d %(unit)s'

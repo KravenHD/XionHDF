@@ -12,7 +12,7 @@ class ChangeSkin():
         
         def __init__(self, session):
                 self.session = session
-                self.onClose = [ ]                                                  
+                self.onClose = []                                                  
                 self.do_update()   
 
         
@@ -646,9 +646,9 @@ class ChangeSkin():
                 
         def get_new_value(self, value, factor):
                 if factor == 'x':
-                   value = str(int(round(float(value)* float(self.x_factor))))
+                   value = str(int(round(float(value) * float(self.x_factor))))
                 else:
-                   value = str(int(round(float(value)* float(self.y_factor))))
+                   value = str(int(round(float(value) * float(self.y_factor))))
                 
                 return value
         
