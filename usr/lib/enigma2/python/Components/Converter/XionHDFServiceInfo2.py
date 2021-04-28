@@ -40,13 +40,13 @@ class XionHDFServiceInfo2(Poll, Converter, object):
 				"xALLTYPE": (self.xALLTYPE, (iPlayableService.evUpdatedInfo,)),
 				"VideoHeight": (self.VideoHeight, (iPlayableService.evUpdatedInfo,)),
 				"VideoWidth": (self.VideoWidth, (iPlayableService.evUpdatedInfo,)),
-				"Framerate": (self.Framerate, (iPlayableService.evVideoSizeChanged,iPlayableService.evUpdatedInfo,)),
+				"Framerate": (self.Framerate, (iPlayableService.evVideoSizeChanged, iPlayableService.evUpdatedInfo,)),
 				"Provider": (self.Provider, (iPlayableService.evUpdatedInfo,)),
 			}[type]
 		self.poll_interval = 1000
 		self.poll_enabled = True
 
-	def getServiceInfoString(self, info, what, convert = lambda x: "%d" % x):
+	def getServiceInfoString(self, info, what, convert=lambda x: "%d" % x):
 		v = info.getInfo(what)
 		if v == -1:
 			return "N/A"
@@ -55,7 +55,7 @@ class XionHDFServiceInfo2(Poll, Converter, object):
 		if v == -3:
 			t_objs = info.getInfoObject(what)
 			if t_objs and (len(t_objs) > 0):
-				ret_val=""
+				ret_val = ""
 				for t_obj in t_objs:
 					ret_val += "%.4X " % t_obj
 				return ret_val[:-1]
@@ -141,7 +141,7 @@ class XionHDFServiceInfo2(Poll, Converter, object):
 				return " "
 			return str(xres)
 		elif self.type == self.Framerate:
-			return self.getServiceInfoString(info, iServiceInformation.sFrameRate, lambda x: "%d" % ((x+500)/1000))
+			return self.getServiceInfoString(info, iServiceInformation.sFrameRate, lambda x: "%d" % ((x + 500) / 1000))
 		elif self.type == self.Provider:
 			return self.getServiceInfoString(info, iServiceInformation.sProvider).upper()
 		return ""

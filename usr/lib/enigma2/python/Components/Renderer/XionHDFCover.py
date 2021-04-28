@@ -12,7 +12,7 @@ class XionHDFCover(Renderer):
 
 	def __init__(self):
 		Renderer.__init__(self)
-		self.nameCache = { }
+		self.nameCache = {}
 		self.picname = ""
 
 	GUI_WIDGET = ePixmap
@@ -62,7 +62,7 @@ class XionHDFCover(Renderer):
 			else:
 				self.instance.hide()
 
-	def showCoverCallback(self, picInfo = None):
+	def showCoverCallback(self, picInfo=None):
 		if self.picload:
 			ptr = self.picload.getData()
 			if ptr != None:
@@ -83,10 +83,12 @@ class XionHDFCover(Renderer):
 		elif os_path.isdir(path):
 			if path.lower().endswith("/bdmv"):
 				dir = path[:-5]
-				if dir.lower().endswith("/brd"): dir = dir[:-4]
+				if dir.lower().endswith("/brd"):
+					dir = dir[:-4]
 			elif path.lower().endswith("video_ts"):
 				dir = path[:-9]
-				if dir.lower().endswith("/dvd"): dir = dir[:-4]
+				if dir.lower().endswith("/dvd"):
+					dir = dir[:-4]
 			else:
 				dir = path
 				p2 = os_path.join(dir, "folder")
@@ -99,7 +101,8 @@ class XionHDFCover(Renderer):
 		for p in pathes:
 			for ext in self.exts:
 				path = p + ext
-				if os_path.exists(path): break
+				if os_path.exists(path):
+					break
 			if os_path.exists(path):
 				fpath = path
 				break

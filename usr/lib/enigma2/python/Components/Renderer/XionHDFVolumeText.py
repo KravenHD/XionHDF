@@ -38,4 +38,3 @@ class XionHDFVolumeText(Renderer, VariableText):
 	def changed(self, what):
 		if not self.suspended:
 			self.text = str(eDVBVolumecontrol.getInstance().getVolume())
-

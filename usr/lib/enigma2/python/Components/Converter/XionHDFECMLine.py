@@ -15,7 +15,8 @@ from Components.Element import cached
 from Components.config import config
 from Poll import Poll
 
-import os, gettext
+import os
+import gettext
 from Tools.Directories import resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
 from Components.Language import language
 
@@ -71,61 +72,61 @@ class XionHDFECMLine(Poll, Converter, object):
 				camInfo = {}
 				for line in flines:
 					r = line.split(':', 1)
-					if len(r) > 1 :
+					if len(r) > 1:
 						camInfo[r[0].strip('\n\r\t ')] = r[1].strip('\n\r\t ')
 	
-				caid = camInfo.get('caid','')
+				caid = camInfo.get('caid', '')
 				
 				caid = caid.lstrip('0x')
 				caid = caid.upper()
 				caid = caid.zfill(4)
 				
-				if ((caid>='0100') and (caid<='01FF')):
+				if ((caid >= '0100') and (caid <= '01FF')):
 					system = 'System: SECA'
-				elif ((caid>='0500') and (caid<='05FF')):
+				elif ((caid >= '0500') and (caid <= '05FF')):
 					system = 'System: VIACCESS'
-				elif ((caid>='0600') and (caid<='06FF')):
+				elif ((caid >= '0600') and (caid <= '06FF')):
 					system = 'System: IRDETO'
-				elif ((caid>='0900') and (caid<='09FF')):
+				elif ((caid >= '0900') and (caid <= '09FF')):
 					system = 'System: NDS'
-				elif ((caid>='0B00') and (caid<='0BFF')):
+				elif ((caid >= '0B00') and (caid <= '0BFF')):
 					system = 'System: CONAX'
-				elif ((caid>='0D00') and (caid<='0DFF')):
+				elif ((caid >= '0D00') and (caid <= '0DFF')):
 					system = 'System: CWORKS'
-				elif ((caid>='0E00') and (caid<='0EFF')):
+				elif ((caid >= '0E00') and (caid <= '0EFF')):
 					system = 'System: POWERVU'
-				elif ((caid>='1700') and (caid<='17FF')):
+				elif ((caid >= '1700') and (caid <= '17FF')):
 					system = 'System: BETA'
-				elif ((caid>='1800') and (caid<='18FF')):
+				elif ((caid >= '1800') and (caid <= '18FF')):
 					system = 'System: NAGRA'
 				else:
 					system = _('not available')
 	
 				caid = 'CAID: ' + caid
 				
-				prov = camInfo.get('prov','')
+				prov = camInfo.get('prov', '')
 				prov = prov.lstrip("0x")
 				prov = prov.upper()
 				prov = prov.zfill(6)
 				prov = 'Provider: ' + prov
 				
-				ecmtime = camInfo.get('ecm time','')
+				ecmtime = camInfo.get('ecm time', '')
 				if ecmtime:
 					if "msec" in ecmtime:
 						ecmtime = 'ECM: ' + ecmtime				
 					else:
-						ecmtime = 'ECM: ' + ecmtime	+ ' s'			
+						ecmtime = 'ECM: ' + ecmtime + ' s'			
 	
-				hops = 'Hops: ' + str(camInfo.get('hops',''))
-				address = 'Server: ' + str(camInfo.get('address',''))
-				reader = 'Reader: ' + str(camInfo.get('reader',''))
-				source = 'Source: ' + str(camInfo.get('source',''))
+				hops = 'Hops: ' + str(camInfo.get('hops', ''))
+				address = 'Server: ' + str(camInfo.get('address', ''))
+				reader = 'Reader: ' + str(camInfo.get('reader', ''))
+				source = 'Source: ' + str(camInfo.get('source', ''))
 				
-				using = str(camInfo.get('using',''))
+				using = str(camInfo.get('using', ''))
 	
 				active = ''
 				
-				if  source == 'emu':
+				if source == 'emu':
 					active = 'EMU'
 					ecmline = active + ' - ' + caid
 				
@@ -136,7 +137,7 @@ class XionHDFECMLine(Poll, Converter, object):
 					else:
 						ecmline = active + ' - ' + caid + ' - ' + ecmtime
 					
-				elif 'system' in camInfo :
+				elif 'system' in camInfo:
 					active = 'CCCAM'
 					if self.type == self.VERYSHORT:
 						ecmline = caid + ', ' + ecmtime
@@ -145,7 +146,7 @@ class XionHDFECMLine(Poll, Converter, object):
 					else:
 						ecmline = active + ' - ' + caid + ' - ' + system + ' - ' + address + ' - ' + hops + ' - ' + ecmtime					
 	
-				elif 'reader' in camInfo :
+				elif 'reader' in camInfo:
 					active = 'OSCAM'
 					if self.type == self.VERYSHORT:
 						ecmline = caid + ', ' + ecmtime
@@ -154,7 +155,7 @@ class XionHDFECMLine(Poll, Converter, object):
 					else:
 						ecmline = active + ' - ' + caid + ' - ' + system + ' - ' + reader + ' - ' + hops + ' - ' + ecmtime
 	
-				elif 'prov' in camInfo :
+				elif 'prov' in camInfo:
 					active = 'MGCAMD'
 					if self.type == self.VERYSHORT:
 						ecmline = caid + ', ' + ecmtime
@@ -190,4 +191,3 @@ class XionHDFECMLine(Poll, Converter, object):
 	def changed(self, what):
 		if (what[0] == self.CHANGED_SPECIFIC and what[1] == iPlayableService.evUpdatedInfo) or what[0] == self.CHANGED_POLL:
 			Converter.changed(self, what)
-

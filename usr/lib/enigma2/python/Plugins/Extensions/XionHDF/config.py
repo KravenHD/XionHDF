@@ -49,7 +49,7 @@ SelectionBorderList = ColorList + SelectionBorderList
 if fileExists('/proc/bmeminfo'):
    entrie = os.popen('cat /proc/bmeminfo').read()
    mem = entrie.split(':', 1)[1].split('k')[0]
-   bmem = int(mem)/1024
+   bmem = int(mem) / 1024
 else:
    mem_info = []
    entrie = os.popen('cat /proc/cmdline').read()
@@ -65,7 +65,7 @@ else:
    if len(mem_info) > 1:
       bmem = int(mem_info[0]) + int(mem_info[1])
    else:
-      if getBoxType() in ('sf8008','sf4008','dinobot4k','anadol4k','zgemmah9t','zgemmah9s','gbquad4k','gbue4k','e4hdultra','axashis4kcombo','axashis4kcomboplus'):
+      if getBoxType() in ('sf8008', 'sf4008', 'dinobot4k', 'anadol4k', 'zgemmah9t', 'zgemmah9s', 'gbquad4k', 'gbue4k', 'e4hdultra', 'axashis4kcombo', 'axashis4kcomboplus'):
          bmem = 250
       else:
          bmem = int(mem_info[0])
@@ -88,7 +88,7 @@ if bmem > 180:
 config.plugins = ConfigSubsection()
 config.plugins.XionHDF = ConfigSubsection()
 
-config.plugins.XionHDF.BackgroundColorTrans = ConfigSelection(default="1c", choices = [
+config.plugins.XionHDF.BackgroundColorTrans = ConfigSelection(default="1c", choices=[
                                 ("00", _("Off")),
                                 ("1c", _("Lower")),
                                 ("2d", _("Low")),
@@ -96,14 +96,14 @@ config.plugins.XionHDF.BackgroundColorTrans = ConfigSelection(default="1c", choi
                                 ("6c", _("Medium")),
                                 ("8c", _("High"))
                                 ])
-config.plugins.XionHDF.ButtonText = ConfigSelection(default="00ffffff", choices = ColorList)
-config.plugins.XionHDF.ChannelSelectionStyle = ConfigSelection(default="channelselection-twocolumns", choices = [
+config.plugins.XionHDF.ButtonText = ConfigSelection(default="00ffffff", choices=ColorList)
+config.plugins.XionHDF.ChannelSelectionStyle = ConfigSelection(default="channelselection-twocolumns", choices=[
                                 ("channelselection-twocolumns", _("Two columns")),
                                 ("channelselection-threecolumns", _("Three columns")),
                                 ("channelselection-xpicon", _("X-Picon")),
                                 ("channelselection-minitv", _("MiniTV"))
                                 ])
-config.plugins.XionHDF.EMCStyle = ConfigSelection(default="emc-nocover", choices = [
+config.plugins.XionHDF.EMCStyle = ConfigSelection(default="emc-nocover", choices=[
                                 ("emc-nocover", _("No cover")),
                                 ("emc-smallcover", _("Small cover")),
                                 ("emc-bigcover", _("Big cover")),
@@ -111,57 +111,56 @@ config.plugins.XionHDF.EMCStyle = ConfigSelection(default="emc-nocover", choices
                                 ("emc-listbigcover", _("List big cover")),
                                 ("emc-minitv", _("MiniTV"))
                                 ])
-config.plugins.XionHDF.Font1 = ConfigSelection(default="00ffffff", choices = ColorList)
-config.plugins.XionHDF.Font2 = ConfigSelection(default="00ffffff", choices = ColorList)
-config.plugins.XionHDF.FontStyleHeight_1 = ConfigSelectionNumber(default = 95, stepwidth = 1, min = 0, max = 120, wraparound = True)
-config.plugins.XionHDF.FontStyleHeight_2 = ConfigSelectionNumber(default = 95, stepwidth = 1, min = 0, max = 120, wraparound = True)
-config.plugins.XionHDF.InfobarChannelname = ConfigSelection(default="infobar-style-xpicon_middle1", choices = [
+config.plugins.XionHDF.Font1 = ConfigSelection(default="00ffffff", choices=ColorList)
+config.plugins.XionHDF.Font2 = ConfigSelection(default="00ffffff", choices=ColorList)
+config.plugins.XionHDF.FontStyleHeight_1 = ConfigSelectionNumber(default=95, stepwidth=1, min=0, max=120, wraparound=True)
+config.plugins.XionHDF.FontStyleHeight_2 = ConfigSelectionNumber(default=95, stepwidth=1, min=0, max=120, wraparound=True)
+config.plugins.XionHDF.InfobarChannelname = ConfigSelection(default="infobar-style-xpicon_middle1", choices=[
                                 ("infobar-style-xpicon_middle1", _("Small")),
                                 ("infobar-style-xpicon_middle2", _("Big")),
                                 ("infobar-style-xpicon_middleP", _("Poster")),
                                 ("infobar-style-xpicon_middle3", _("Off"))
                                 ])
-config.plugins.XionHDF.InfobarStyle = ConfigSelection(default="infobar-style-xpicon", choices = [
+config.plugins.XionHDF.InfobarStyle = ConfigSelection(default="infobar-style-xpicon", choices=[
                                 ("infobar-style-xpicon", _("X-Picon"))
                                 ])
-config.plugins.XionHDF.Line = ConfigSelection(default="00ffffff", choices = ColorList)
-config.plugins.XionHDF.MovieStyle = ConfigSelection(default="movieselectionnocover", choices = [
+config.plugins.XionHDF.Line = ConfigSelection(default="00ffffff", choices=ColorList)
+config.plugins.XionHDF.MovieStyle = ConfigSelection(default="movieselectionnocover", choices=[
                                 ("movieselectionnocover", _("No cover")),
                                 ("movieselectionsmallcover", _("Small cover")),
                                 ("movieselectionbigcover", _("Big cover")),
                                 ("movieselectionlistbigcover", _("List big cover")),
                                 ("movieselectionminitv", _("MiniTV"))
                                 ])
-config.plugins.XionHDF.Progress = ConfigSelection(default="00C3461B", choices = ColorList)
-config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showNever", choices = [
+config.plugins.XionHDF.Progress = ConfigSelection(default="00C3461B", choices=ColorList)
+config.plugins.XionHDF.ScrollBar = ConfigSelection(default="showNever", choices=[
                                 ("showOnDemand", _("On")),
                                 ("showNever", _("Off"))
                                 ])
-config.plugins.XionHDF.SelectionBackground = ConfigSelection(default="00C3461B", choices = ColorList)
-config.plugins.XionHDF.SelectionBorder = ConfigSelection(default="none", choices = SelectionBorderList)
-config.plugins.XionHDF.SelectionFont = ConfigSelection(default="00ffffff", choices = ColorList)
-config.plugins.XionHDF.SIB = ConfigSelection(default="infobar-style-xpicon_end1", choices = [
+config.plugins.XionHDF.SelectionBackground = ConfigSelection(default="00C3461B", choices=ColorList)
+config.plugins.XionHDF.SelectionBorder = ConfigSelection(default="none", choices=SelectionBorderList)
+config.plugins.XionHDF.SelectionFont = ConfigSelection(default="00ffffff", choices=ColorList)
+config.plugins.XionHDF.SIB = ConfigSelection(default="infobar-style-xpicon_end1", choices=[
                                 ("infobar-style-xpicon_end1", _("Only current program")),
                                 ("infobar-style-xpicon_end2", _("Top/Bottom")),
                                 ("infobar-style-xpicon_end3", _("Left/Right"))
                                 ])
-config.plugins.XionHDF.refreshInterval = ConfigSelectionNumber(min = 10, max = 240, stepwidth = 5, default = 60, wraparound = True)
-config.plugins.XionHDF.skin_mode = ConfigSelection(default="hd", choices = SkinModeList)
-config.plugins.XionHDF.RunningText = ConfigSelection(default="movetype=running", choices = [
+config.plugins.XionHDF.refreshInterval = ConfigSelectionNumber(min=10, max=240, stepwidth=5, default=60, wraparound=True)
+config.plugins.XionHDF.skin_mode = ConfigSelection(default="hd", choices=SkinModeList)
+config.plugins.XionHDF.RunningText = ConfigSelection(default="movetype=running", choices=[
                                 ("movetype=running", _("On")),
                                 ("movetype=none", _("Off"))
                                 ])
-config.plugins.XionHDF.System = ConfigSelection(default="openhdf", choices = [
+config.plugins.XionHDF.System = ConfigSelection(default="openhdf", choices=[
                                 ("openhdf", _(" "))
                                 ])
-config.plugins.XionHDF.weather_city = ConfigText(default = "")
-config.plugins.XionHDF.weather_foundcity = ConfigText(default = "")
-config.plugins.XionHDF.weather_realtek_latlon = ConfigText(default = "")
-config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", choices = [
+config.plugins.XionHDF.weather_city = ConfigText(default="")
+config.plugins.XionHDF.weather_foundcity = ConfigText(default="")
+config.plugins.XionHDF.weather_realtek_latlon = ConfigText(default="")
+config.plugins.XionHDF.WeatherStyle = ConfigSelection(default="weather-off", choices=[
                                 ("weather-off", _("Off")),
                                 ("weather-info", _("Infos in place of weather")),
                                 ("weather-big", _("Big")),
                                 ("weather-slim", _("Slim")),
                                 ("weather-small", _("Small"))
                                 ])
-

@@ -76,7 +76,7 @@ class XionHDFServiceInfo(Converter, object):
          'Is576': (self.IS_576, (iPlayableService.evVideoSizeChanged,)),
          'Is480': (self.IS_480, (iPlayableService.evVideoSizeChanged,))}[type]
 
-    def getServiceInfoString(self, info, what, convert = lambda x: '%d' % x):
+    def getServiceInfoString(self, info, what, convert=lambda x: '%d' % x):
         v = info.getInfo(what)
         if v == -1:
             return 'N/A'
