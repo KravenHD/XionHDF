@@ -6806,8 +6806,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text" />
 	</screen>
 	<screen name="MessageBoxPixmap" backgroundColor="XionBackground" position="center,center" size="600,260" title="New Call">
-		<widget name="text" halign="left" valign="center" backgroundColor="XionBackground" position="260,10" size="300,200" font="Regular;22" />
-		<widget name="InfoPixmap" position="5,5" size="260,260" alphatest="blend" />
+		<widget name="text" halign="left" valign="center" backgroundColor="XionBackground" position="220,10" size="300,200" font="Regular;22" />
+		<widget name="InfoPixmap" position="5,5" size="200,250" scale="1" alphatest="on" />
 	</screen>
 	<screen name="SHOUTcastWidget" backgroundColor="XionBackground" position="center,center" size="1280,720" title="SHOUTcast" >
 		<widget name="headertext" position="50,77" zPosition="1" itemHeight="30" size="1180,23" font="Regular;20" transparent="1"  backgroundColor="XionBackground"/>
