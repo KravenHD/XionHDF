@@ -3147,8 +3147,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- RdsInfoDisplay -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="0,0" size="1280,720" zPosition="-2">
 		<widget name="RassLogo" pixmap="skin_default/icons/rass_logo.png" position="100,585" size="50,21" />
-		<widget backgroundColor="XionBackground" font="Regular2;30" foregroundColor="XionFont2" halign="center" valign="center" noWrap="1" name="RadioText" position="100,590" shadowColor="black" shadowOffset="-2,-2" size="1080,40" />
-		<widget backgroundColor="XionBackground" font="LCD;45" foregroundColor="XionFont1" halign="center" valign="center" noWrap="1" name="RtpText" position="100,640" shadowColor="black" shadowOffset="-2,-2" size="1080,40" />
+		<widget backgroundColor="XionBackground" font="Regular2;30" foregroundColor="XionFont1" halign="center" valign="center" noWrap="1" name="RadioText" position="100,590" shadowColor="black" shadowOffset="-2,-2" size="1080,40" />
+		<widget backgroundColor="XionBackground" font="LCD;45" foregroundColor="XionFont2" halign="center" valign="center" noWrap="1" name="RtpText" position="100,640" shadowColor="black" shadowOffset="-2,-2" size="1080,40" />
 	</screen>
 		<!-- PVRState -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PVRState" position="9,27" size="220,90" zPosition="10">
