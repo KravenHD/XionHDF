@@ -69,7 +69,7 @@ def translateBlock(block):
 
 config.plugins.XionHDF = ConfigSubsection()
 
-config.plugins.XionHDF.weather_city = ConfigText(default="")
+config.plugins.XionHDF.weather_city = ConfigText(default="", visible_width=250, fixed_size=False)
 
 config.plugins.XionHDF.refreshInterval = ConfigSelectionNumber(min=10, max=240, stepwidth=5, default=60, wraparound=True)
 config.plugins.XionHDF.weather_realtek_latlon = ConfigText(default="")
