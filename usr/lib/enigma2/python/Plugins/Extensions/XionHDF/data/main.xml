@@ -1845,15 +1845,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="PiconBg" position="43,118" size="80,43" transparent="0" alphatest="blend"/>
-		<widget source="session.CurrentService" render="Picon" position="45,119" size="80,40" transparent="0" alphatest="blend">
+		<widget source="session.CurrentService" render="Picon" position="1,119" size="80,40" transparent="0" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="55,50" size="70,24" font="Regular;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" noWrap="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="130,50" size="430,24" font="Regular;20" noWrap="1" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
+		<widget source="session.Event_Now" render="Label" position="130,50" size="430,24" font="Regular;24" noWrap="1" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="460,50" size="200,24" font="Regular;20" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="right" transparent="1" noWrap="1">
@@ -1864,7 +1863,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="130,75" size="430,24" font="Regular;20" noWrap="1" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
+		<widget source="session.Event_Next" render="Label" position="130,75" size="430,24" font="Regular;20" noWrap="1" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="460,75" size="200,24" font="Regular;20" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="right" transparent="1" noWrap="1">
