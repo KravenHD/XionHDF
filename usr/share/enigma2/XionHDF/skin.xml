@@ -6914,7 +6914,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- EPGImport Log -->
 	<screen backgroundColor="transparent" name="EPGImportLog" position="0,0" size="1280,720" title="EPG Import Log">
-		<widget name="list" backgroundColor="XionBackground" scrollbarMode="showNever" position="70,80" size="708,540" itemHeight="34" font="Regular;24" halign="center" valign="center" transparent="1" />
+		<widget name="list" foregroundColor="XionFont1" zPosition="2" scrollbarMode="showOnDemand" enableWrapAround="1" position="30,80" size="860,570" font="Regular;16" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
