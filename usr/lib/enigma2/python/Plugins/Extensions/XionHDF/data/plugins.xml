@@ -2748,8 +2748,9 @@
 		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel backgroundColor="XionBackground" text="Jetzt läuft:" font="Regular;30" foregroundColor="XionFont2" position="42,70" size="609,38" halign="center" valign="center" transparent="1" />
-		<widget backgroundColor="XionBackground" source="songtitle" render="Label" font="Regular;30" foregroundColor="XionFont2" position="42,120" size="609,76" halign="center" valign="top" transparent="1" />
+		<widget source="recording" render="Label" position="910,10" size="300,40" font="Regular;26" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="red" />
+		<widget source="station" render="Label" font="Regular;30" foregroundColor="XionFont2" position="42,90" size="609,38" halign="center" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" source="songtitle" render="Label" font="Regular;30" foregroundColor="XionFont2" position="42,130" size="609,76" halign="center" valign="top" transparent="1" />
 		<widget backgroundColor="XionBackground" name="cover" position="146,220" size="400,400" zPosition="1" />
 		<widget backgroundColor="XionBackground" source="listversion" render="Label" font="Regular;24" foregroundColor="XionFont2" position="680,80" size="574,32" halign="center" valign="top" transparent="1" />
 		<widget name="stations" position="680,130" size="574,512" itemHeight="32" font="Regular;24" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="XionBackground" transparent="1"/>
@@ -2761,11 +2762,26 @@
 	<screen name="HDFRadioConfig" position="0,0" size="1280,720" flags="wfNoBorder" title="HDFRadioConfig" backgroundColor="transparent">
 		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
 		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
+		<widget source="version" render="Label"  position="754,80" size="400,50" font="Regular;30" foregroundColor="XionFont2" halign="center" valign="center" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<widget name="config" position="42,80" size="609,300" itemHeight="30" font="Regular;24" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="XionBackground" transparent="1"/>
-		<eLabel backgroundColor="XionBackground" text="HDFRadio-Player" position="754,80" size="400,50" font="Regular;30" foregroundColor="XionFont2" halign="center" valign="center" transparent="1" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/logo.jpg" position="754,180" size="400,250" scale="1" transparent="1" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
+		<panel name="template_menu_left_button_logo_off" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_colorkey_text" />
+	</screen>
+	<screen name="HDFRadioBrowser" position="0,0" size="1280,720" flags="wfNoBorder" title="HDFRadioBrowser" backgroundColor="transparent">
+		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
+		<widget source="version" render="Label"  position="754,80" size="400,50" font="Regular;30" foregroundColor="XionFont2" halign="center" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" source="info" render="Label" position="50,75" size="1180,32" font="Regular;30" foregroundColor="XionFont2" noWrap="1" valign="center" transparent="1"/>
+		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget name="list" position="42,120" size="609,500" itemHeight="30" font="Regular;24" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="XionBackground" transparent="1"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/logo.jpg" position="754,180" size="400,250" scale="1" transparent="1" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<panel name="template_menu_left_button_logo_off" />
