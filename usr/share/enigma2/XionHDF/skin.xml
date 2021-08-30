@@ -7288,7 +7288,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget name="detailtext" position="20,80" size="790,580" font="Regular;22" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1"/>
+		<widget name="detailtext" position="20,80" size="790,580" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/logo.jpg" position="810,180" size="400,250" scale="1" transparent="1" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<panel name="template_menu_left_button_logo_off" />
