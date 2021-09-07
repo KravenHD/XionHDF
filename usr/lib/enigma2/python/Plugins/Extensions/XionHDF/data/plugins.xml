@@ -2766,6 +2766,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
+		<widget source="serviceapp" render="Label" position="42,380" size="700,100" font="Regular;24" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="2" transparent="1" />
 		<widget source="instruction" render="Label" position="42,580" size="700,60" font="Regular;24" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="2" transparent="1" />
 		<widget name="config" position="42,80" size="609,300" itemHeight="30" font="Regular;24" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="XionBackground" transparent="1"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/logo.jpg" position="754,180" size="400,250" scale="1" transparent="1" />
@@ -2805,6 +2806,24 @@
 		<widget name="detailtext" position="20,80" size="770,580" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/logo.jpg" position="810,180" size="400,250" scale="1" transparent="1" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
+		<panel name="template_menu_left_button_logo_off" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_colorkey_text" />
+	</screen>
+	<screen name="HDFRadioFavorites" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1154,13" size="100,34" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
+		<widget backgroundColor="XionBackground" name="stations" font="Regular;24" position="42,130" size="541,448" itemHeight="32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<eLabel backgroundColor="XionBackground" text="HDF-Streams" font="Regular;24" position="42,80" size="541,30" transparent="1"/>
+		<eLabel backgroundColor="XionLine" position="42,115" size="541,1" zPosition="2" />
+		<eLabel backgroundColor="XionLine" position="655,115" size="541,1" zPosition="2" />
+		<eLabel backgroundColor="XionBackground" text="Favorites" font="Regular;24" position="655,80" size="541,30" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="favorites" font="Regular;24" position="655,130" size="541,416" itemHeight="32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" source="instruction" render="Label" font="Regular;24" foregroundColor="XionFont2" position="42,580" size="700,60" halign="center" valign="center" transparent="1" />
 		<panel name="template_menu_left_button_logo_off" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_colorkey_text" />
