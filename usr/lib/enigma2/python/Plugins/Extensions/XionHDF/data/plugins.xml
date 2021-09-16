@@ -2753,8 +2753,13 @@
 		<widget backgroundColor="XionBackground" source="songtitle" render="Label" font="Regular;30" foregroundColor="XionFont2" position="42,130" size="609,76" halign="center" valign="top" transparent="1" />
 		<widget backgroundColor="XionBackground" name="cover" position="146,220" size="400,400" zPosition="1" />
 		<widget backgroundColor="XionBackground" source="listversion" render="Label" font="Regular;24" foregroundColor="XionFont2" position="680,80" size="574,32" halign="center" valign="top" transparent="1" />
-		<widget name="stations" position="680,130" size="574,512" itemHeight="32" font="Regular;24" scrollbarMode="showOnDemand" enableWrapAround="1" halign="top" valign="top" backgroundColor="XionBackground" transparent="1"/>
+		<widget name="stations" position="680,130" size="574,512" itemHeight="30" font="Regular;20" scrollbarMode="showAlways" enableWrapAround="1" halign="top" valign="top" backgroundColor="XionBackground" transparent="1"/>
+		<widget name="favorites" position="680,130" size="574,512" itemHeight="30" font="Regular;20" scrollbarMode="showAlways" enableWrapAround="1" halign="top" valign="top" backgroundColor="XionBackground" transparent="1"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
+		<ePixmap pixmap="XionHDF/buttons/key_menu.png" position="1021,670" size="32,32" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_info.png" position="1088,670" size="32,32" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_ok.png" position="1155,670" size="32,32" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="1222,670" size="32,32" alphatest="blend" />
 		<panel name="template_menu_left_button_logo_off" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_colorkey_text" />
