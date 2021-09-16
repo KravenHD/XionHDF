@@ -1393,7 +1393,7 @@
 	</screen>
 		<!-- NetworkMacSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkMacSetup" position="0,0" size="1280,720" title=" ">
-		<widget backgroundColor="XionBackground" itemHeight="30" name="config" position="20,80" size="708,100" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular;22" itemHeight="30" name="config" position="20,80" size="708,100" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" valign="center" position="70,485" render="Label" size="708,100" source="introduction" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
