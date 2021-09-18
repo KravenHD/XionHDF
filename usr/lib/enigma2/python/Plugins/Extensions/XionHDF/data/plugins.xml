@@ -2842,7 +2842,7 @@
 		</widget>
 		<widget backgroundColor="XionBackground" name="cover" position="1038,120" size="200,200" zPosition="1" />
 		<widget backgroundColor="XionBackground" source="songtitle" render="Label" font="Regular;30" foregroundColor="XionFont" position="42,73" size="1196,38" noWrap="1" valign="center" transparent="1" />
-		<widget backgroundColor="XionBackground" name="lyrics" font="Regular;22" foregroundColor="XionFont2" position="42,120" size="960,510" transparent="1" />
+		<widget backgroundColor="XionBackground" source="lyrics" font="Regular;22" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=4000,steptime=50,wrap=1,always=0,oneshot=1" foregroundColor="XionFont2" position="42,120" size="960,510" transparent="1" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<panel name="template_menu_left_button_logo_off" />
 		<panel name="template_colorkey_text_source" />
