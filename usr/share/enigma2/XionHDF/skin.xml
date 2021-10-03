@@ -59,6 +59,9 @@
 		<alias name="VirtualKeyboard" font="Regular" size="24" height="45" />
 	</fonts>
 	<parameters>
+		<parameter name="SelectionListDescr" value="40,4,1042,41" />
+		<parameter name="SelectionListLock" value="5,8,30,30" />
+		<parameter name="SelectionListLockOff" value="5,8,30,30" />
 		<parameter name="ChoicelistName" value="33,3,800,30"/>
 		<parameter name="ChoicelistIcon" value="1,1,27,27"/>
 		<parameter name="PluginBrowserName" value="113,1,26"/>
@@ -3706,7 +3709,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- IpkgInstaller -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="IpkgInstaller" position="0,0" size="1280,720" title="Ipk Installer">
-		<widget itemHeight="35" font="Regular;22" name="list" position="20,80" size="708,450" scrollbarMode="showNever" enableWrapAround="1" transparent="1" />
+		<widget itemHeight="35" font="Regular;22" name="list" position="20,80" size="808,450" scrollbarMode="showNever" enableWrapAround="1" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="70,595" render="Label" size="708,28" source="introduction" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
