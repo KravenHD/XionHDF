@@ -2800,8 +2800,9 @@
 	<screen name="HDFRadioScreenSaver" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<widget source="recording" render="Label" position="center,20" size="1130,24" font="LCD;10" halign="center" valign="center" noWrap="1" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="2" transparent="1" />
 		<widget backgroundColor="XionBackground" name="cover" position="146,80" size="300,300" zPosition="1" />
+		<widget backgroundColor="transparent" name="video" position="0,0" size="1280,720" zPosition="2" />
 		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-1" />
-		<widget source="songtitle" render="Label" position="center,680" size="1130,24" font="LCD;28" halign="center" valign="center" noWrap="1" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="2" transparent="1" />
+		<widget source="songtitle" render="Label" position="center,680" size="1130,24" font="LCD;28" halign="center" valign="center" noWrap="1" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="3" transparent="1" />
 	</screen>
 	<screen name="MPHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="MPHelp" backgroundColor="transparent">
 		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
