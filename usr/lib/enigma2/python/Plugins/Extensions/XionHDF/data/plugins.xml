@@ -2851,3 +2851,17 @@
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_colorkey_text" />
 	</screen>
+	<screen name="HDFRadioLyricsBrowser" position="0,0" size="1280,720" flags="wfNoBorder" title="HDF-Radio Lyrics Browser" backgroundColor="transparent">
+		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" source="song" render="Label" font="Regular;30" foregroundColor="XionFont2" position="42,73" size="1196,38" noWrap="1" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="list" font="Regular;22" position="42,120" size="400,510" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="lyrics" render="Label" font="Regular;24" foregroundColor="XionFont2" position="470,120" size="780,510" scrollbarMode="showOnDemand" transparent="0" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
+		<panel name="template_menu_left_button_logo_off" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_colorkey_text" />
+	</screen>
