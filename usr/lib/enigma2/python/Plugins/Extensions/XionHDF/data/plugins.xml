@@ -2860,6 +2860,7 @@
 		<widget backgroundColor="XionBackground" source="song" render="Label" font="Regular;30" foregroundColor="XionFont2" position="42,73" size="1196,38" noWrap="1" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" name="list" font="Regular;22" position="42,120" size="400,510" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="lyrics" render="Label" font="Regular;24" foregroundColor="XionFont2" position="470,120" size="780,510" scrollbarMode="showOnDemand" transparent="1" />
+		<widget backgroundColor="XionBackground" source="running" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=4000,steptime=50,wrap=1,always=0,oneshot=1" font="Regular;24" foregroundColor="XionFont2" position="470,120" size="780,510" transparent="1" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<panel name="template_menu_left_button_logo_off" />
 		<panel name="template_colorkey_text_source" />
