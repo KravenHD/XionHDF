@@ -7231,13 +7231,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- GBIpbox -->
-	<screen name="GBIpboxMenu" position="0,0" size="1920,1080" flags="wfNoBorder" title="GBIpbox" backgroundColor="transparent">
-		<widget name="config" position="105,120" size="1200,810" itemHeight="45" scrollbarMode="showNever" enableWrapAround="1" transparent="1" font="Regular;30" backgroundColor="XionBackground" />
+	<screen name="GBIpboxMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="GBIpbox" backgroundColor="transparent">
+		<widget name="config" position="20,80" size="800,540" itemHeight="40" scrollbarMode="showNever" enableWrapAround="1" transparent="1" font="Regular;30" backgroundColor="XionBackground" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
-	<screen name="GBIpboxAbout" position="0,0" size="1920,1080" flags="wfNoBorder" title="GBIpbox" backgroundColor="transparent">
-		<widget name="about" position="105,120" size="1200,810" itemHeight="45" scrollbarMode="showNever" enableWrapAround="1" transparent="1" font="Regular;30" backgroundColor="XionBackground" />
+	<screen name="GBIpboxAbout" position="0,0" size="1280,720" flags="wfNoBorder" title="GBIpbox" backgroundColor="transparent">
+		<widget name="about" position="20,80" size="800,540" itemHeight="40" scrollbarMode="showNever" enableWrapAround="1" transparent="1" font="Regular;30" backgroundColor="XionBackground" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
