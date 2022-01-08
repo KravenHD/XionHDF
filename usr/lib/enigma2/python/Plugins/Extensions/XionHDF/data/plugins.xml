@@ -2741,6 +2741,25 @@
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_colorkey_text" />
 	</screen>
+		<!-- GBIpbox -->
+	<screen name="GBIpboxMenu" position="0,0" size="1280,720" flags="wfNoBorder" title="GBIpbox" backgroundColor="transparent">
+		<widget name="config" position="70,80" size="800,540" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" font="Regular; 20" backgroundColor="XionBackground" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+	<screen name="GBIpboxWizard" position="0,0" size="1280,720" flags="wfNoBorder" title="GBIpbox" backgroundColor="transparent">
+		<widget source="list" render="Listbox" position="70,80" size="705,540" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="StringList" />
+		</widget>
+		<widget name="config" position="70,80" size="800,540" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" font="Regular; 20" backgroundColor="XionBackground" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+	<screen name="GBIpboxAbout" position="0,0" size="1280,720" flags="wfNoBorder" title="GBIpbox" backgroundColor="transparent">
+		<widget name="about" position="70,80" size="800,540" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" font="Regular; 20" backgroundColor="XionBackground" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
 		<!-- HDF Radio -->
 	<screen name="HDFRadio" position="0,0" size="1280,720" flags="wfNoBorder" title="HDFRadio" backgroundColor="transparent">
 		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
