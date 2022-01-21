@@ -2803,7 +2803,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<eLabel text="Designed by" position="890,460" size="355,40" font="Regular2;24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" valign="center" halign="center" />
 		<eLabel text="Team Kraven" position="890,510" size="355,40" font="Regular2;24" transparent="1" zPosition="1" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="center" />
 		<widget name="AboutScrollLabel" position="70,200" size="655,450" scrollbarMode="showOnDemand" font="Regular;16" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="1" />
-		<ePixmap pixmap="XionHDF/buttons/key_info.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_info1.png" position="22,670" size="32,37" backgroundColor="XionBackground" alphatest="blend" />
 		<eLabel font="Regular; 20" halign="left" valign="center" text="HDF Update Info" position="64,662" size="248,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_menu_left" />
 	</screen>
@@ -3057,7 +3057,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="key_6" position="753,511" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 		<ePixmap name="7" position="1058,535" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_7.png" transparent="1" alphatest="on" />
 		<widget name="key_7" position="753,536" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
-		<ePixmap name="menu" position="1058,585" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_menu.png" transparent="1" alphatest="on" />
+		<ePixmap name="menu" position="1058,585" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_menu1.png" transparent="1" alphatest="on" />
 		<widget name="menu" position="753,586" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 		<ePixmap name="0" position="1058,560" zPosition="1" size="40,40" pixmap="skin_default/buttons/key_0.png" transparent="1" alphatest="on" />
 		<widget name="key_0" position="753,561" zPosition="2" size="300,30" valign="right" halign="right" font="Regular;15" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
@@ -3160,7 +3160,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="config" render="Label" position="10,120" size="630,120" halign="center" itemHeight="30" font="Regular;28" enableWrapAround="1" backgroundColor="XionBackground" foregroundColor="XionFont1" />
 		<widget source="options" render="Label" position="10,172" size="630,35" halign="center" font="Regular; 24" backgroundColor="XionBackground" />
 		<widget name="description" position="10,250" size="630,26" font="Regular; 19" foregroundColor="#00ffffff" halign="center" backgroundColor="XionBackground" valign="center" />
-		<ePixmap position="630,245" size="35,25" zPosition="2" pixmap="/usr/share/enigma2/skin_default/buttons/key_info.png" alphatest="blend" />
+		<ePixmap position="630,245" size="35,25" zPosition="2" pixmap="/usr/share/enigma2/skin_default/buttons/key_info1.png" alphatest="blend" />
 		<eLabel text="Press left/right to select Image" backgroundColor="Xionbackground" font="Regular;16" foregroundColor="XionButtonText" halign="center" position="10,450" size="580,30" transparent="1" zPosition="3" />
 		<eLabel text="Press up/down to select Bootoption (Standard/Experimental)" backgroundColor="Xionbackground" font="Regular;16" foregroundColor="XionButtonText" halign="center" position="10,470" size="580,30" transparent="1" zPosition="3" />
 		<panel name="template_colorkey_text_source" />
