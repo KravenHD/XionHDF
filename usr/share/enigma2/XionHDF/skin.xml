@@ -6441,7 +6441,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="text_2" position="556,688" size="200,26" zPosition="1" font="Regular;19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget name="bt_3" pixmap="XionHDF/buttons/keys_3.png" position="764,685" zPosition="3" size="32,32" alphatest="blend" />
 		<widget name="bt_8" pixmap="XionHDF/buttons/keys_8.png" position="764,685" zPosition="2" size="32,32" alphatest="blend" />
-		<widget name="bt_info" pixmap="XionHDF/buttons/key_help.png" position="764,685" zPosition="1" size="32,32" alphatest="blend" />
+		<widget name="bt_info" pixmap="XionHDF/buttons/key_help1.png" position="764,685" zPosition="1" size="32,32" alphatest="blend" />
 		<widget name="text_3" position="804,688" size="200,26" zPosition="1" font="Regular;19" halign="left" backgroundColor="XionBackground" foregroundColor="XionFont1" transparent="1" />
 		<widget name="bt_4" pixmap="XionHDF/buttons/keys_4.png" position="1012,685" zPosition="3" size="32,32" alphatest="blend" />
 		<widget name="bt_9" pixmap="XionHDF/buttons/keys_9.png" position="1012,685" zPosition="2" size="32,32" alphatest="blend" />
