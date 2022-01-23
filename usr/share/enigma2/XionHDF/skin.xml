@@ -63,7 +63,12 @@
 		<parameter name="SelectionListLock" value="5,8,30,30" />
 		<parameter name="SelectionListLockOff" value="5,8,30,30" />
 		<parameter name="ChoicelistName" value="33,3,800,30"/>
-		<parameter name="ChoicelistIcon" value="1,1,27,27"/>
+		<parameter name="ChoicelistIcon" value="1,1,35,35"/>
+		<parameter name="ChoicelistItemHeight" value="35" />
+		<parameter name="ChoicelistFont" value="Regular;35" />
+		<parameter name="ChoicelistFontSize" value="35" />
+		<parameter name="ChoicelistNameSingle" value="70,1,1028,42" />
+		<parameter name="ChoicelistDash" value="0,36,1720,30" />
 		<parameter name="PluginBrowserName" value="113,1,26"/>
 		<parameter name="PluginBrowserDescr" value="113,20,26"/>
 		<parameter name="PluginBrowserIcon" value="7,3,100,40"/>
@@ -71,8 +76,8 @@
 		<parameter name="PluginBrowserDownloadDescr" value="73,20,26"/>
 		<parameter name="PluginBrowserDownloadIcon" value="7,0,60,50"/>
 		<parameter name="HelpMenuListHlp" value="0,0,700,26"/>
-		<parameter name="FileListName" value="35,1,470,26"/>
-		<parameter name="FileListIcon" value="9,1,20,20"/>
+		<parameter name="FileListName" value="30,1,470,26"/>
+		<parameter name="FileListIcon" value="3,1,20,20"/>
 		<parameter name="FileListMultiName" value="35,1,470,26"/>
 		<parameter name="FileListMultiIcon" value="20,5,20,20"/>
 		<parameter name="PlayListName" value="25,1,470,22"/>
@@ -81,6 +86,9 @@
 		<parameter name="ServiceInfoLeft" value="0,0,300,30"/>
 		<parameter name="ServiceInfoRight" value="300,0,667,30"/>
 		<parameter name="VirtualKeyboard" value="45,45"/>
+		<parameter name="HDFRadioDirFont" value="Regular;26" />
+		<parameter name="HDFRadioDirPixmap" value="3,1,20,20"/>
+		<parameter name="HDFRadioDirectory" value="30,1,470,26"/>
 	</parameters>
 	<subtitles>
 		<sub font="Regular;30" name="Subtitle_TTX" shadowColor="#shadow" shadowOffset="3,3" />
