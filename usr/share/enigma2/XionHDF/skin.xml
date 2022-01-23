@@ -4413,30 +4413,30 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<!-- Main */ -->
 		<!-- plugins -->
 	<screen name="XionHDF" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<eLabel font="Regular;20" foregroundColor="#00ffffff" backgroundColor="XionBackground" halign="left" valign="center" position="64,662" size="148,48" text="Cancel" transparent="1" />
-		<eLabel font="Regular;20" foregroundColor="#00ffffff" backgroundColor="XionBackground" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
-		<eLabel font="Regular;20" foregroundColor="#00ffffff" backgroundColor="XionBackground" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
-		<widget name="config" position="70,75" size="708,580" itemHeight="26" font="Regular;22" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="1" backgroundColor="XionBackground" />
-		<eLabel position="70,12" size="708,46" text="XionHDF" font="Regular;34" valign="center" halign="center" transparent="1" backgroundColor="XionBackground" foregroundColor="#00ffffff" name="," />
-		<eLabel position="847,200" size="368,2" backgroundColor="#00ffffff" />
-		<eLabel position="847,409" size="368,2" backgroundColor="#00ffffff" />
-		<eLabel position="845,200" size="2,211" backgroundColor="#00ffffff" />
-		<eLabel position="1215,200" size="2,211" backgroundColor="#00ffffff" />
+		<eLabel font="Regular; 20" foregroundColor="XionFont" backgroundColor="XionBackground" halign="left" valign="center" position="64,662" size="148,48" text="Cancel" transparent="1" />
+		<eLabel font="Regular; 20" foregroundColor="XionFont" backgroundColor="XionBackground" halign="left" valign="center" position="264,662" size="148,48" text="Save" transparent="1" />
+		<eLabel font="Regular; 20" foregroundColor="XionFont" backgroundColor="XionBackground" halign="left" valign="center" position="464,662" size="148,48" text="Reboot" transparent="1" />
+		<widget name="config" position="70,75" size="708,580" itemHeight="26" font="Regular;22" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="XionBackground" />
+		<eLabel position="70,12" size="708,46" text="XionHDF" font="Regular; 34" valign="center" halign="center" transparent="1" backgroundColor="XionBackground" foregroundColor="XionFont2" name="," />
+		<eLabel position="847,200" size="368,2" backgroundColor="XionLine" />
+		<eLabel position="847,409" size="368,2" backgroundColor="XionLine" />
+		<eLabel position="845,200" size="2,211" backgroundColor="XionLine" />
+		<eLabel position="1215,200" size="2,211" backgroundColor="XionLine" />
 		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
 		<ePixmap pixmap="XionHDF/buttons/key_red1.png" position="22,670" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_green1.png" position="222,670" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_yellow1.png" position="422,670" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_blue1.png" position="622,670" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="#00ffffff">
+		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel position="830,80" size="402,46" text="XionHDF" font="Regular;36" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
-		<eLabel position="845,130" size="372,46" text="Version: 1.3" font="Regular;30" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+		<eLabel position="830,80" size="402,46" text="XionHDF Tool" font="Regular; 36" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="XionFont2" name="," />
+		<eLabel position="845,130" size="372,46" text="Version: 1.4" font="Regular; 30" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="XionFont" name="," />
 		<ePixmap backgroundColor="#00000000" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/openhdf.png" position="847,202" size="368,207" zPosition="-9" />
 		<widget name="helperimage" position="847,202" size="368,207" zPosition="1" backgroundColor="#00000000" />
-		<widget source="help" render="Label" position="847,450" size="368,168" font="Regular2;20" backgroundColor="#00000000" foregroundColor="#00ffffff" halign="center" valign="top" transparent="1" />
-		<eLabel backgroundColor="#00ffffff" position="0,64" size="1280,2" zPosition="2" />
-		<eLabel backgroundColor="#00ffffff" position="0,656" size="1280,2" zPosition="2" />
+		<widget source="help" render="Label" position="847,450" size="368,168" font="Regular2;20" backgroundColor="#00000000" foregroundColor="XionFont2" halign="center" valign="top" transparent="1" />
+		<eLabel backgroundColor="XionLine" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="XionLine" position="0,656" size="1280,2" zPosition="2" />
 	</screen>
 		<!-- ********** AutoTimer ********** -->
 		<!-- AutoTimerSettings -->
@@ -7379,6 +7379,42 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" name="list" font="Regular;22" position="42,120" size="400,510" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="lyrics" render="Label" font="Regular;24" foregroundColor="XionFont2" position="470,120" size="780,510" scrollbarMode="showOnDemand" transparent="1" />
 		<widget backgroundColor="XionBackground" source="running" render="XionHDFRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=4000,steptime=50,wrap=1,always=0,oneshot=1" font="Regular;24" foregroundColor="XionFont2" position="470,120" size="780,510" transparent="1" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
+		<panel name="template_menu_left_button_logo_off" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_colorkey_text" />
+	</screen>
+	<screen name="HDFRadioPlayer" position="0,0" size="1280,720" flags="wfNoBorder" title="HDF-Radio Player" backgroundColor="transparent">
+		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
+		<widget backgroundColor="XionBackground" name="playermode" font="Regular;26" foregroundColor="XionFont2" position="700,13" size="430,34" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" source="global.CurrentTime" render="Label" font="Regular;26" foregroundColor="XionFont2" position="1154,13" size="100,34" halign="right" valign="center" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" name="statepixmap" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/stop.png,/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/play.png,/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/pause.png" position="42,75" size="40,30" alphatest="blend" />
+		<widget backgroundColor="XionBackground" name="shuffle" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/sorted.png,/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/shuffle.png" position="96,75" size="40,30" alphatest="blend" />
+		<eLabel backgroundColor="#3f3f3f" position="158,80" size="638,20" zPosition="1" />
+		<widget source="session.CurrentService" render="Progress" foregroundColor="XionFont2" position="158,80" size="638,20" zPosition="2" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" source="session.CurrentService" render="Label" font="Regular;24" foregroundColor="XionFont2" position="814,75" size="110,30" valign="center" transparent="1">
+			<convert type="ServicePosition">Remaining</convert>
+		</widget>
+		<widget backgroundColor="XionBackground" source="artist" render="Label" font="Regular;33" foregroundColor="XionFont2" position="42,118" size="860,42" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" source="songtitle" render="Label" font="Regular;30" foregroundColor="XionFont2" position="42,168" size="860,38" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" name="albumname" font="Regular;24" foregroundColor="XionFont2" position="42,224" size="134,30" noWrap="1" valign="top" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="album" font="Regular;24" foregroundColor="XionFont2" position="182,224" size="720,30" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" name="genrename" font="Regular;24" foregroundColor="XionFont2" position="42,266" size="134,30" noWrap="1" valign="top" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="genre" font="Regular;24" foregroundColor="XionFont2" position="182,266" size="720,30" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" name="yearname" font="Regular;24" foregroundColor="XionFont2" position="42,308" size="134,30" noWrap="1" valign="top" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="year" font="Regular;24" foregroundColor="XionFont2" position="182,308" size="720,30" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" name="playlistname" font="Regular;24" foregroundColor="XionFont2" position="42,220" size="622,30" valign="center" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="playlist" font="Regular;22" position="42,254" size="622,390" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="cover" position="938,80" size="300,300" />
+		<widget backgroundColor="XionBackground" name="directoriesname" font="Regular;24" foregroundColor="XionFont2" position="700,370" size="210,30" valign="center" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="recorddirs" font="Regular;22" position="700,405" size="538,240" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="localdirs" font="Regular;22" position="700,405" size="538,240" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="ownlist" font="Regular;22" position="700,405" size="538,240" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<panel name="template_menu_left_button_logo_off" />
 		<panel name="template_colorkey_text_source" />
