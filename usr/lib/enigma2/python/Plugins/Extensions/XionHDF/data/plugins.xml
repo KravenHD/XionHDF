@@ -2855,7 +2855,7 @@
 		</widget>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<widget backgroundColor="XionBackground" name="directoriesname" font="Regular;27" foregroundColor="XionFont2" position="42,75" size="566,36" transparent="1"/>
-		<widget backgroundColor="XionBackground" name="ownlist" font="Regular;24" position="42,120" size="566,384" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="ownlist" font="Regular;24" position="42,120" size="566,390" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="playlistname" font="Regular;27" foregroundColor="XionFont2" position="650,75" size="541,36" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="playlist" font="Regular;24" position="650,120" size="541,512" itemHeight="32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel backgroundColor="XionLine" position="42,115" size="566,1" zPosition="2" />
