@@ -2847,6 +2847,24 @@
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_colorkey_text" />
 	</screen>
+	<screen name="HDFRadioEditPlaylist" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1154,13" size="100,34" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
+		<widget backgroundColor="XionBackground" name="directoriesname" font="Regular;27" foregroundColor="XionFont2" position="42,75" size="566,36" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="ownlist" font="Regular;24" position="42,120" size="566,384" itemHeight="32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="playlistname" font="Regular;27" foregroundColor="XionFont2" position="650,75" size="541,36" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="playlist" font="Regular;24" position="650,120" size="541,512" itemHeight="32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<eLabel backgroundColor="XionLine" position="42,115" size="566,1" zPosition="2" />
+		<eLabel backgroundColor="XionLine" position="650,115" size="541,1" zPosition="2" />
+		<widget backgroundColor="XionBackground" source="instruction" render="Label" font="Regular;22" foregroundColor="XionFont2" position="42,580" size="1100,60" halign="center" valign="center" transparent="1" />
+		<panel name="template_menu_left_button_logo_off" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_colorkey_text" />
+	</screen>
 	<screen name="HDFRadioLyrics" position="0,0" size="1280,720" flags="wfNoBorder" title="HDF-Radio Lyrics" backgroundColor="transparent">
 		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
 		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
