@@ -486,19 +486,19 @@ class XionHDF(ConfigListScreen, Screen):
             rmtree("/usr/share/enigma2/XionHDF/buttons")
         if self.skin_mode == 'hd':
             self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
-            #os.system("cp /usr/share/enigma2/XionHDF/buttonsets/hd/buttons /usr/share/enigma2/XionHDF")
             copytree('/usr/share/enigma2/XionHDF/buttonsets/hd/buttons', '/usr/share/enigma2/XionHDF/buttons', symlinks=False, ignore=None)
             os.system("cp /usr/share/enigma2/XionHDF/buttonsets/hd/infobar/*.* /usr/share/enigma2/XionHDF")
             copyfile('/usr/share/enigma2/XionHDF/buttonsets/hd/buttons/bullet.png', '/usr/share/enigma2/XionHDF/icons/bullet.png')
+            os.system("cp /usr/share/enigma2/XionHDF/extensions/hd/*.* /usr/share/enigma2/XionHDF/extensions")
         else:
             pass
 
         if self.skin_mode == 'fullhd':
             self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
-            #os.system("cp /usr/share/enigma2/XionHDF/buttonsets/fhd/buttons /usr/share/enigma2/XionHDF")
             copytree('/usr/share/enigma2/XionHDF/buttonsets/fhd/buttons', '/usr/share/enigma2/XionHDF/buttons', symlinks=False, ignore=None)
             os.system("cp /usr/share/enigma2/XionHDF/buttonsets/fhd/infobar/*.* /usr/share/enigma2/XionHDF")
             copyfile('/usr/share/enigma2/XionHDF/buttonsets/fhd/buttons/bullet.png', '/usr/share/enigma2/XionHDF/icons/bullet.png')
+            os.system("cp /usr/share/enigma2/XionHDF/extensions/fhd/*.* /usr/share/enigma2/XionHDF/extensions")
         else:
             pass
 
