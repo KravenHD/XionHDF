@@ -2766,6 +2766,7 @@
 		<widget backgroundColor="XionBackground" source="listversion" render="Label" font="Regular;24" foregroundColor="XionFont2" position="680,80" size="574,32" halign="center" valign="top" transparent="1" />
 		<widget name="stations" position="680,130" size="574,512" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" halign="top" valign="top" backgroundColor="XionBackground" transparent="1"/>
 		<widget name="favorites" position="680,130" size="574,512" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" halign="top" valign="top" backgroundColor="XionBackground" transparent="1"/>
+		<widget name="quickmenu" position="680,130" size="574,512" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" halign="top" valign="top" backgroundColor="XionBackground" transparent="1"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<ePixmap pixmap="XionHDF/buttons/key_menu1.png" position="950,670" size="32,32" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_info1.png" position="1010,670" size="32,32" alphatest="blend" />
@@ -2855,11 +2856,11 @@
 		</widget>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<widget backgroundColor="XionBackground" name="directoriesname" font="Regular;27" foregroundColor="XionFont2" position="42,75" size="566,36" transparent="1"/>
-		<widget backgroundColor="XionBackground" name="ownlist" font="Regular;24" position="42,120" size="566,390" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="ownlist" font="Regular;24" position="42,120" size="566,450" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="playlistname" font="Regular;27" foregroundColor="XionFont2" position="650,75" size="541,36" transparent="1"/>
-		<widget backgroundColor="XionBackground" name="playlist" font="Regular;24" position="650,120" size="541,512" itemHeight="32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="playlist" font="Regular;20" position="650,120" size="580,450" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel backgroundColor="XionLine" position="42,115" size="566,1" zPosition="2" />
-		<eLabel backgroundColor="XionLine" position="650,115" size="541,1" zPosition="2" />
+		<eLabel backgroundColor="XionLine" position="650,115" size="580,1" zPosition="2" />
 		<widget backgroundColor="XionBackground" source="instruction" render="Label" font="Regular;22" foregroundColor="XionFont2" position="42,580" size="1100,60" halign="center" valign="center" transparent="1" />
 		<panel name="template_menu_left_button_logo_off" />
 		<panel name="template_colorkey_text_source" />
@@ -2911,21 +2912,22 @@
 		<widget backgroundColor="XionBackground" source="session.CurrentService" render="Label" font="Regular;24" foregroundColor="XionFont2" position="814,75" size="110,30" valign="center" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" source="artist" render="Label" font="Regular;33" foregroundColor="XionFont2" position="42,118" size="860,42" noWrap="1" valign="top" transparent="1" />
-		<widget backgroundColor="XionBackground" source="songtitle" render="Label" font="Regular;30" foregroundColor="XionFont2" position="42,168" size="860,38" noWrap="1" valign="top" transparent="1" />
-		<widget backgroundColor="XionBackground" name="albumname" font="Regular;24" foregroundColor="XionFont2" position="42,224" size="134,30" noWrap="1" valign="top" transparent="1"/>
-		<widget backgroundColor="XionBackground" name="album" font="Regular;24" foregroundColor="XionFont2" position="182,224" size="720,30" noWrap="1" valign="top" transparent="1" />
-		<widget backgroundColor="XionBackground" name="genrename" font="Regular;24" foregroundColor="XionFont2" position="42,266" size="134,30" noWrap="1" valign="top" transparent="1"/>
-		<widget backgroundColor="XionBackground" name="genre" font="Regular;24" foregroundColor="XionFont2" position="182,266" size="720,30" noWrap="1" valign="top" transparent="1" />
-		<widget backgroundColor="XionBackground" name="yearname" font="Regular;24" foregroundColor="XionFont2" position="42,308" size="134,30" noWrap="1" valign="top" transparent="1"/>
-		<widget backgroundColor="XionBackground" name="year" font="Regular;24" foregroundColor="XionFont2" position="182,308" size="720,30" noWrap="1" valign="top" transparent="1" />
-		<widget backgroundColor="XionBackground" name="playlistname" font="Regular;24" foregroundColor="XionFont2" position="42,220" size="622,30" valign="center" transparent="1"/>
-		<widget backgroundColor="XionBackground" name="playlist" font="Regular;22" position="42,254" size="622,390" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" source="artist" render="Label" font="Regular;33" foregroundColor="XionFont2" position="42,110" size="860,42" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" source="songtitle" render="Label" font="Regular;26" foregroundColor="XionFont2" position="42,151" size="860,38" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" name="albumname" font="Regular;24" foregroundColor="XionFont2" position="42,200" size="134,30" noWrap="1" valign="top" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="album" font="Regular;24" foregroundColor="XionFont2" position="182,200" size="720,30" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" name="genrename" font="Regular;24" foregroundColor="XionFont2" position="42,235" size="134,30" noWrap="1" valign="top" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="genre" font="Regular;24" foregroundColor="XionFont2" position="182,235" size="720,30" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" name="yearname" font="Regular;24" foregroundColor="XionFont2" position="42,270" size="134,30" noWrap="1" valign="top" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="year" font="Regular;24" foregroundColor="XionFont2" position="182,270" size="720,30" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" name="playlistname" font="Regular;24" foregroundColor="XionFont2" position="42,190" size="622,30" valign="center" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="playlist" font="Regular;22" position="42,224" size="622,420" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="cover" position="938,80" size="300,300" />
 		<widget backgroundColor="XionBackground" name="directoriesname" font="Regular;24" foregroundColor="XionFont2" position="700,370" size="210,30" valign="center" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="recorddirs" font="Regular;22" position="700,405" size="538,240" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="localdirs" font="Regular;22" position="700,405" size="538,240" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="ownlist" font="Regular;22" position="700,405" size="538,240" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="quickmenu" font="Regular;22" position="42,190" size="622,450" itemHeight="30" scrollbarMode="showNever" enableWrapAround="1" transparent="1"/>
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<panel name="template_menu_left_button_logo_off" />
 		<panel name="template_colorkey_text_source" />
