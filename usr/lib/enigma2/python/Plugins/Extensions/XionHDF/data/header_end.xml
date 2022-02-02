@@ -220,8 +220,8 @@
 		<widget font="Regular2; 20" halign="left" name="key_green" position="263,672" size="150,24" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular2; 20" halign="left" name="key_yellow" position="532,672" size="150,24" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular2; 20" halign="left" name="key_blue" position="732,672" size="150,24" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<ePixmap pixmap="XionHDF/buttons/key_menu.png" position="933,668" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
-		<ePixmap pixmap="XionHDF/buttons/key_info.png" position="1075,668" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_menu1.png" position="933,668" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_info1.png" position="1075,668" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_exit.png" position="1228,668" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
 		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
 		<eLabel backgroundColor="XionLine" position="0,64" size="1280,2" zPosition="2" />

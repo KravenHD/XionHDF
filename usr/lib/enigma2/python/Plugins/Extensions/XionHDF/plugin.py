@@ -31,7 +31,7 @@ from Components.Sources.StaticText import StaticText
 from Components.Label import Label
 from Components.Language import language
 from os import environ, listdir, remove, rename, system
-from shutil import move, copy, rmtree, copytree
+from shutil import move, copy, rmtree, copytree, copyfile
 from skin import parseColor
 from Components.Pixmap import Pixmap
 from Components.Label import Label
@@ -264,7 +264,7 @@ class XionHDF(ConfigListScreen, Screen):
 <convert type="ClockToText">Default</convert>
 </widget>
 <eLabel position="830,80" size="402,46" text="XionHDF" font="Regular; 36" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
-<eLabel position="845,130" size="372,46" text="Version: 1.3" font="Regular; 30" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
+<eLabel position="845,130" size="372,46" text="Version: 1.4" font="Regular; 30" valign="center" halign="center" transparent="1" backgroundColor="#00000000" foregroundColor="#00ffffff" name="," />
 <ePixmap backgroundColor="#00000000" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/images/openhdf.png" position="847,202" size="368,207" zPosition="-9" />
 <widget name="helperimage" position="847,202" size="368,207" zPosition="1" backgroundColor="#00000000" />
 <widget source="help" render="Label" position="847,450" size="368,168" font="Regular2;20" backgroundColor="#00000000" foregroundColor="#00ffffff" halign="center" valign="top" transparent="1" />
@@ -488,17 +488,19 @@ class XionHDF(ConfigListScreen, Screen):
             rmtree("/usr/share/enigma2/XionHDF/buttons")
         if self.skin_mode == 'hd':
             self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
-            #os.system("cp /usr/share/enigma2/XionHDF/buttonsets/hd/buttons /usr/share/enigma2/XionHDF")
             copytree('/usr/share/enigma2/XionHDF/buttonsets/hd/buttons', '/usr/share/enigma2/XionHDF/buttons', symlinks=False, ignore=None)
             os.system("cp /usr/share/enigma2/XionHDF/buttonsets/hd/infobar/*.* /usr/share/enigma2/XionHDF")
+            os.system("cp /usr/share/enigma2/XionHDF/extensions/hd/*.* /usr/share/enigma2/XionHDF/extensions")
+            os.system("cp /usr/share/enigma2/XionHDF/icons/hd/*.* /usr/share/enigma2/XionHDF/icons")
         else:
             pass
 
         if self.skin_mode == 'fullhd':
             self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
-            #os.system("cp /usr/share/enigma2/XionHDF/buttonsets/fhd/buttons /usr/share/enigma2/XionHDF")
             copytree('/usr/share/enigma2/XionHDF/buttonsets/fhd/buttons', '/usr/share/enigma2/XionHDF/buttons', symlinks=False, ignore=None)
             os.system("cp /usr/share/enigma2/XionHDF/buttonsets/fhd/infobar/*.* /usr/share/enigma2/XionHDF")
+            os.system("cp /usr/share/enigma2/XionHDF/extensions/fhd/*.* /usr/share/enigma2/XionHDF/extensions")
+            os.system("cp /usr/share/enigma2/XionHDF/icons/fhd/*.* /usr/share/enigma2/XionHDF/icons")
         else:
             pass
 
