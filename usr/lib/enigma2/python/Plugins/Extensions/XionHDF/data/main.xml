@@ -1393,7 +1393,7 @@
 	</screen>
 		<!-- NetworkMacSetup -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkMacSetup" position="0,0" size="1280,720" title=" ">
-		<widget backgroundColor="XionBackground" itemHeight="30" name="config" position="20,80" size="708,100" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular;22" itemHeight="30" name="config" position="20,80" size="708,100" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" valign="center" position="70,485" render="Label" size="708,100" source="introduction" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
@@ -1845,15 +1845,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="PiconBg" position="43,118" size="80,43" transparent="0" alphatest="blend"/>
-		<widget source="session.CurrentService" render="Picon" position="45,119" size="80,40" transparent="0" alphatest="blend">
+		<widget source="session.CurrentService" render="Picon" position="1,119" size="80,40" transparent="0" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="55,50" size="70,24" font="Regular;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" noWrap="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="130,50" size="430,24" font="Regular;20" noWrap="1" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
+		<widget source="session.Event_Now" render="Label" position="130,50" size="430,24" font="Regular;24" noWrap="1" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="460,50" size="200,24" font="Regular;20" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="right" transparent="1" noWrap="1">
@@ -1864,7 +1863,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="130,75" size="430,24" font="Regular;20" noWrap="1" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1">
+		<widget source="session.Event_Next" render="Label" position="130,75" size="430,24" font="Regular;20" noWrap="1" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="460,75" size="200,24" font="Regular;20" foregroundColor="XionFont2" backgroundColor="XionBackground" halign="right" transparent="1" noWrap="1">
@@ -1946,8 +1945,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- RdsInfoDisplay -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" position="0,0" size="1280,720" zPosition="-2">
 		<widget name="RassLogo" pixmap="skin_default/icons/rass_logo.png" position="100,585" size="50,21" />
-		<widget backgroundColor="rds_text_bg" font="RegRDS;24" foregroundColor="XionFont1" name="RadioText" noWrap="1" position="100,620" shadowColor="transpBlack" shadowOffset="-2,-2" size="1080,30" />
-		<widget backgroundColor="rds_text_bg" font="RegRDS;24" foregroundColor="XionFont1" halign="right" name="RtpText" noWrap="1" position="100,650" shadowColor="transpBlack" shadowOffset="-2,-2" size="1080,30" />
+		<widget backgroundColor="XionBackground" font="Regular2;30" foregroundColor="XionFont1" halign="center" valign="center" noWrap="1" name="RadioText" position="100,590" shadowColor="black" shadowOffset="-2,-2" size="1080,40" />
+		<widget backgroundColor="XionBackground" font="LCD;45" foregroundColor="XionFont2" halign="center" valign="center" noWrap="1" name="RtpText" position="100,640" shadowColor="black" shadowOffset="-2,-2" size="1080,40" />
 	</screen>
 		<!-- PVRState -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PVRState" position="9,27" size="220,90" zPosition="10">
@@ -2505,7 +2504,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- IpkgInstaller -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="IpkgInstaller" position="0,0" size="1280,720" title="Ipk Installer">
-		<widget itemHeight="35" font="Regular;22" name="list" position="20,80" size="708,450" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+		<widget itemHeight="35" font="Regular;22" name="list" position="20,80" size="808,450" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" position="70,595" render="Label" size="708,28" source="introduction" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />

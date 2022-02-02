@@ -59,8 +59,16 @@
 		<alias name="VirtualKeyboard" font="Regular" size="24" height="45" />
 	</fonts>
 	<parameters>
+		<parameter name="SelectionListDescr" value="40,4,1042,41" />
+		<parameter name="SelectionListLock" value="5,8,30,30" />
+		<parameter name="SelectionListLockOff" value="5,8,30,30" />
 		<parameter name="ChoicelistName" value="33,3,800,30"/>
-		<parameter name="ChoicelistIcon" value="1,1,27,27"/>
+		<parameter name="ChoicelistIcon" value="1,1,35,35"/>
+		<parameter name="ChoicelistItemHeight" value="35" />
+		<parameter name="ChoicelistFont" value="Regular;35" />
+		<parameter name="ChoicelistFontSize" value="35" />
+		<parameter name="ChoicelistNameSingle" value="70,1,1028,42" />
+		<parameter name="ChoicelistDash" value="0,36,1720,30" />
 		<parameter name="PluginBrowserName" value="113,1,26"/>
 		<parameter name="PluginBrowserDescr" value="113,20,26"/>
 		<parameter name="PluginBrowserIcon" value="7,3,100,40"/>
@@ -78,7 +86,7 @@
 		<parameter name="ServiceInfoLeft" value="0,0,300,30"/>
 		<parameter name="ServiceInfoRight" value="300,0,667,30"/>
 		<parameter name="VirtualKeyboard" value="45,45"/>
-	</parameters>
+		</parameters>
 	<subtitles>
 		<sub font="Regular;30" name="Subtitle_TTX" shadowColor="#shadow" shadowOffset="3,3" />
 		<sub font="Regular;30" foregroundColor="grey" name="Subtitle_Regular" shadowColor="#shadow" shadowOffset="3,3" />
