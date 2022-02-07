@@ -9,13 +9,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-06 23:16+0200\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Koivo <koivo@hdfreaks.cc>\n"
+"Last-Translator: henrylicious <dende@hdfreaks.cc>\n"
 "Language-Team: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0.1\n"
 
 msgid "N"
 msgstr "N"
@@ -66,7 +66,7 @@ msgid "N-NW"
 msgstr "N-NW"
 
 msgid ", feels "
-msgstr ", gefÃ¼hlt "
+msgstr ", gefühlt "
 
 msgid "N/A"
 msgstr "N/A"
@@ -188,7 +188,7 @@ msgid "Smoky"
 msgstr "Rauchig"
 
 msgid "Blustery"
-msgstr "StÃ¼rmisch"
+msgstr "Stürmisch"
 
 msgid "Windy"
 msgstr "Windig"
@@ -202,12 +202,12 @@ msgstr "Wolkig"
 msgid ""
 "Mostly\n"
 " cloudy"
-msgstr "Ãœberwiegend bewÃ¶lkt"
+msgstr "Ãœberwiegend bewölkt"
 
 msgid ""
 "Partly\n"
 " cloudy"
-msgstr "Teilweise bewÃ¶lkt"
+msgstr "Teilweise bewölkt"
 
 msgid "Clear"
 msgstr "Klar"
@@ -266,7 +266,7 @@ msgstr "% Luftfeuchtigkeit"
 msgid ""
 "Not\n"
 " available"
-msgstr "Nicht verfÃ¼gbar"
+msgstr "Nicht verfügbar"
 
 msgid "openHDF"
 msgstr "openHDF"
@@ -344,13 +344,13 @@ msgid "Grey dark"
 msgstr "Dunkel Grau"
 
 msgid "Green"
-msgstr "GrÃ¼n"
+msgstr "Grün"
 
 msgid "Green dark"
-msgstr "Dunkel GrÃ¼n"
+msgstr "Dunkelgrün"
 
 msgid "Neon green"
-msgstr "NeongrÃ¼n"
+msgstr "Neongrün"
 
 msgid "Neon yellow"
 msgstr "Neongelb"
@@ -431,19 +431,19 @@ msgid "Small cover"
 msgstr "Kleines Cover"
 
 msgid "Big cover"
-msgstr "GroÃŸes Cover"
+msgstr "Großes Cover"
 
 msgid "Very big cover"
-msgstr "Sehr groÃŸes Cover"
+msgstr "Sehr großes Cover"
 
 msgid "List big cover"
-msgstr "Liste und groÃŸes Cover"
+msgstr "Liste und großŸes Cover"
 
 msgid "On"
 msgstr "An"
 
 msgid "Infos in place of weather"
-msgstr "InfoÂ´s anstelle Wetter"
+msgstr "Infos statt Wetter"
 
 msgid "Weather"
 msgstr "Wetter"
@@ -452,7 +452,7 @@ msgid "_____________________________ Weather _________________________________"
 msgstr "_____________________________ Wetter __________________________________"
 
 msgid "Big"
-msgstr "GroÃŸ"
+msgstr "Groß"
 
 msgid "Slim"
 msgstr "Schmal"
@@ -479,7 +479,7 @@ msgid "Running text"
 msgstr "Laufschrift - Running Text"
 
 msgid "Skinmode"
-msgstr "Skin AuflÃ¶sung"
+msgstr "Skin Auflösung"
 
 msgid "Background transparency"
 msgstr "Hintergrund Transparenz"
@@ -512,13 +512,13 @@ msgid "Listselection border"
 msgstr "Auswahlbalken Rahmen"
 
 msgid "Progress-/Volumebar"
-msgstr "Fortschritts-/LautstÃ¤rkebalken"
+msgstr "Fortschritts-/Lautstärkebalken"
 
 msgid "Primary font"
 msgstr "Hauptschrift / Sendung Jetzt"
 
 msgid "Secondary font"
-msgstr "SekundÃ¤re Schriftfarbe / Sendung Danach"
+msgstr "Sekundärschrift"
 
 msgid "Listselection font"
 msgstr "Auswahlbalken Schriftfarbe"
@@ -568,10 +568,10 @@ msgstr "Fehler beim Erstellen des Skin!"
 msgid ""
 "GUI needs a restart to apply a new skin.\n"
 "Do you want to Restart the GUI now?"
-msgstr "Enigma2 muss neu gestartet werden um die Ã„nderungen zu Ã¼bernehmen. Soll jetzt neu gestartet werden?"
+msgstr "Enigma2 muss neu gestartet werden um die Ã„nderungen zu übernehmen. Soll jetzt neu gestartet werden?"
 
 msgid "Configuration tool for XionHDF"
-msgstr "Konfigurationstool fÃ¼r XionHDF"
+msgstr "Konfigurationstool für XionHDF"
 
 msgid "clock with weekday"
 msgstr "Uhr mit Wochentag"
@@ -580,7 +580,7 @@ msgid "Refresh interval (in minutes)"
 msgstr "Aktualisierungsintervall (in Minuten)"
 
 msgid "This option set the resolution of skin."
-msgstr "Diese Option Ã¤ndert die verwendete AuflÃ¶sung des Skins."
+msgstr "Diese Option stellt die Auflösung des Skins ein."
 
 msgid "This option activates the running text for some parts of skin."
 msgstr "Diese Option aktiviert den scrollenden Text an einigen Stellen im Skin."
@@ -592,16 +592,14 @@ msgid ""
 "This option activates the channelname within the infobar.\n"
 "For using Poster, you need a drive as HDD to save the pictures."
 msgstr ""
-"Diese Option aktiviert die Anzeige vom Sendernamen in der Infobar.\n"
-"FÃ¼r die Verwendung von Poster benÃ¶tigen Sie ein Laufwerk als HDD, um die Bilder zu speichern."
+"Diese Option aktiviert den Kanalnamen in der Infoleiste.\n"
+"Für die Verwendung von Poster benötigen Sie ein Laufwerk als HDD, um die Bilder zu speichern."
 
 msgid "This option activate/deactive/change the background transparency of skin."
-msgstr "Diese Option aktiviert/deaktiviert/Ã¤ndert die Hintergrundtransparenz im Skin."
+msgstr "Diese Option aktiviert/deaktiviert/ändert die Hintergrundtransparenz der Haut."
 
 msgid "This option activate/deactive/change the weather on top inside the infobar."
-msgstr ""
-"Diese Option aktiviert/deaktiviert/Ã¤ndert die Wetteranzeige in der oberen HÃ¤lfte der Infobar.\n"
-"Der Standort wird automatisch erkannt und verwendet."
+msgstr "Diese Option aktiviert/deaktiviert/ändert das Wetter oben in der Infoleiste."
 
 msgid ""
 "Here you can insert your city, district, zip code or alltogether.\n"
@@ -609,59 +607,59 @@ msgid ""
 "Press OK to insert your location manually."
 msgstr ""
 "Hier wird deine Stadt, Ortsteil, PLZ oder bunt gemischt eingetragen.\n"
-"FÃ¼r eine automatische Erkennung vom Standort einfach leer lassen.\n"
-"FÃ¼r einen manuellen Eintrag auf OK drÃ¼cken."
+"Für eine automatische Erkennung vom Standort einfach leer lassen.\n"
+"Für einen manuellen Eintrag auf OK drücken."
 
 msgid "Here you can change how often the weather is refreshed in the background."
 msgstr "An dieser Stelle wird der Intervall der Wetteraktualisierung im Hintergrund eingestellt."
 
 msgid "Please select the bordercolor of selection bars or deactivate borders completely."
-msgstr "Bitte die Farbe des Linienrands fÃ¼r den Selektor auswÃ¤hlen."
+msgstr "Bitte wählen Sie die Rahmenfarbe der Auswahlbalken oder deaktivieren Sie die Rahmen ganz."
 
 msgid "Please select the color of lines inside the skin."
-msgstr "Bitte die Farbe der Linien innerhalb des Skins auswÃ¤hlen."
+msgstr "Bitte wählen Sie die Farbe der Linien innerhalb der Haut aus."
 
 msgid "Please select the color of listselection inside the skin."
-msgstr "Bitte die Farbe des Auswahlbalkens innerhalb des Skins auswÃ¤hlen."
+msgstr "Bitte wählen Sie die Farbe der Listenauswahl im Skin aus."
 
 msgid "Please select the color of progress- and volumebar inside the skin."
-msgstr "Bitte die Farbe der Forschritts- und LautstÃ¤rkebalken innerhalb des Skins auswÃ¤hlen."
+msgstr "Bitte wählen Sie die Farbe der Fortschritts- und Lautstärkeleiste im Skin aus."
 
 msgid "Please select the color of primary font inside the skin."
-msgstr "Bitte die Farbe der ersten Schriftart innerhalb des Skins auswÃ¤hlen."
+msgstr "Bitte wählen Sie die Farbe der Hauptschrift innerhalb der Skin aus."
 
 msgid "Please select the color of secundary font inside the skin."
-msgstr "Bitte die Farbe der zweiten Schriftart innerhalb des Skins auswÃ¤hlen."
+msgstr "Bitte wählen Sie die Farbe der sekundären Schrift im Skin aus."
 
 msgid "Please select the color of listselection font inside the skin."
-msgstr "Bitte die Farbe der Schriftart des Auswahlbalkens innerhalb des Skins auswÃ¤hlen."
+msgstr "Bitte wählen Sie die Farbe der Listenauswahl-Schriftart im Skin aus."
 
 msgid "Please select the color of button text inside the skin."
-msgstr "Bitte die Farbe des Textes auf den Buttons innerhalb des Skins auswÃ¤hlen."
+msgstr "Bitte wählen Sie die Farbe des Schaltflächentextes innerhalb der Skin aus."
 
 msgid "This option changes the size of picons within the infobar."
-msgstr "Diese Option Ã¤ndert die GrÃ¶ÃŸe der Picons innerhalb der Infobar."
+msgstr "Diese Option ändert die Größe der Picons in der Infoleiste."
 
 msgid "This option changes the view of channellist."
-msgstr "Diese Option Ã¤ndert die Ansicht der Kanalliste."
+msgstr "Diese Option ändert die Ansicht der Kanalliste."
 
 msgid "This option changes the view of second infobar."
-msgstr "Diese Option Ã¤ndert die Ansicht der SecondInfobar."
+msgstr "Diese Option ändert die Ansicht der zweiten Infoleiste."
 
 msgid "This option changes the view of cover inside from MovieSelection."
-msgstr "Diese Option Ã¤ndert die Ansicht und GrÃ¶ÃŸe der Cover innerhalb vom MovieSelection."
+msgstr "Diese Option ändert die Ansicht des Covers im Inneren von MovieSelection."
 
 msgid "This option changes the view of cover inside from EnhancedMovieCenter."
-msgstr "Diese Option Ã¤ndert die Ansicht und GrÃ¶ÃŸe der Cover innerhalb vom EnhancedMovieCenter."
+msgstr "Diese Option ändert die Ansicht des Covers im Inneren von EnhancedMovieCenter."
 
 msgid "Font normal height in %"
-msgstr "SchriftgrÃ¶ÃŸe der normalen Schriftart in %"
+msgstr "Normale Schrifthöhe in %"
 
 msgid "This option changes the height of normal font."
-msgstr "Diese Option Ã¤ndert die GrÃ¶ÃŸe fÃ¼r die normale Schriftart."
+msgstr "Diese Option ändert die Höhe der normalen Schriftart."
 
 msgid "Font bold height in %"
-msgstr "SchriftgrÃ¶ÃŸe der dicken Schriftart in %"
+msgstr "Fettschrifthöhe in %"
 
 msgid "This option changes the height of bold font."
-msgstr "Diese Option Ã¤ndert die GrÃ¶ÃŸe fÃ¼r die dicke Schriftart."
+msgstr "Diese Option ändert die Höhe der Fettschrift."
