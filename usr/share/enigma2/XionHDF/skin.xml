@@ -2958,7 +2958,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" scrollbarMode="showNever" enableWrapAround="1" name="list" position="20,80" size="708,555" transparent="1" />
 		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Remove Plugins" position="64,662" size="148,48" transparent="1" zPosition="1" />
 		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Download Plugins" position="264,662" size="148,48" transparent="1" zPosition="1" />
-		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Lock Plugins" position="664,662" size="148,48" transparent="1" zPosition="1" />
+		<eLabel backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionButtonText" halign="left" valign="center" text="Hold Plugins" position="664,662" size="148,48" transparent="1" zPosition="1" />
 		<panel name="template_menu_left_button" />
 	</screen>
 		<!-- PluginDownloadBrowser -->
