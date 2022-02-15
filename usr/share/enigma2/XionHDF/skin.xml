@@ -7396,7 +7396,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen name="HDFRadioPlayer" position="0,0" size="1280,720" flags="wfNoBorder" title="HDF-Radio Player" backgroundColor="transparent">
 		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
 		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
-		<widget backgroundColor="XionBackground" name="playermode" font="Regular;26" foregroundColor="XionFont2" position="700,13" size="430,34" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="playermode" font="Regular;26" foregroundColor="XionFont2" position="820,13" size="430,34" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" source="global.CurrentTime" render="Label" font="Regular;26" foregroundColor="XionFont2" position="1154,13" size="100,34" halign="right" valign="center" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
