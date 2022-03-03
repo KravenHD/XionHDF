@@ -1392,7 +1392,14 @@
 		<panel name="template_menu_left_button" />
 	</screen>
 		<!-- NetworkMacSetup -->
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkMacSetup" position="0,0" size="1280,720" title=" ">
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="NetworkMacSetup" position="0,0" size="1280,720" title="MAC-adress settings">
+		<widget backgroundColor="XionBackground" font="Regular;22" itemHeight="30" name="config" position="20,80" size="708,100" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" valign="center" position="70,485" render="Label" size="708,100" source="introduction" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+		<!-- IPv6MacSetup -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="IPv6Setup" position="0,0" size="1280,720" title="IPv6 setup">
 		<widget backgroundColor="XionBackground" font="Regular;22" itemHeight="30" name="config" position="20,80" size="708,100" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;22" foregroundColor="XionFont2" halign="center" valign="center" position="70,485" render="Label" size="708,100" source="introduction" transparent="1" />
 		<panel name="template_menu_left_button" />
