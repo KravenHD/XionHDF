@@ -585,7 +585,16 @@
 		<!-- NumberZap -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="NumberZap" position="center,center" size="250,60" title="QuickZap">
 		<widget backgroundColor="XionBackground" font="Regular2;28" name="channel" position="25,14" size="100,28" />
-		<widget backgroundColor="XionBackground" font="Regular2;24" halign="right" name="number" position="125,14" size="100,28" />
+		<widget backgroundColor="XionBackground" font="Regular2;28" halign="right" name="number" position="125,14" size="100,28" />
+	</screen>
+		<!-- NumberZapPicon -->
+	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="NumberZapPicon" position="center,center" size="350,260" title="QuickZap">
+		<widget backgroundColor="XionBackground" font="Regular2;28" halign="left" name="channel" position="10,14" size="100,28" zPosition="1" />
+		<widget backgroundColor="XionBackground" font="Regular2;28" halign="right" name="number" position="10,14" size="330,28" zPosition="-10" />
+		<widget alphatest="blend" position="center,60" render="Picon" size="220,132" source="Service" zPosition="-11">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget name="servicename" backgroundColor="XionBackground" position="center,200" size="345,40" halign="center" valign="center" font="Regular2;28" zPosition="1" />
 	</screen>
 		<!-- NumberZapWithName -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZapWithName" position="398,257" size="483,205" title="QuickZap">
