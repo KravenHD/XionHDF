@@ -116,11 +116,22 @@
 		<panel name="template_menu_left_button" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="35" font="Regular;23" name="SkinList" position="221,143" scrollbarMode="showOnDemand" size="389,453" transparent="1" foregroundColor="XionFont1">
+		<widget name="preview" position="780,120" size="480,410" zPosition="1" transparent="1" alphatest="on" />
+		<widget backgroundColor="XionBackground" enableWrapAround="1" position="50,100" render="Listbox" size="450,450" source="skins" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{
+				"template": [
+					MultiContentEntryText(pos = (10, 0), size = (350, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # Skinname
+					MultiContentEntryText(pos = (300, 0), size = (260, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # Label
+				],
+				"fonts": [gFont("Regular", 20),gFont("Regular2", 18)],
+				"itemHeight": 30
+				}
+			</convert>
 		</widget>
-		<widget alphatest="blend" name="Preview" position="941,182" size="280,240" />
-		<widget backgroundColor="XionBackground" font="Regular2; 18" halign="center" position="220,80" render="Label" size="392,49" source="introduction" transparent="1" foregroundColor="XionFont2" />
-		<panel name="template_menu_left_right" />
+		<widget source="description" render="Label" position="50,607" size="700,26" font="Regular;20" backgroundColor="XionBackground" halign="left" valign="center" />
+		<panel name="template_menu_left_right_button" />
+		<panel name="template_colorkey_text_source" />
 	</screen>
 	<screen flags="wfNoBorder" name="Standby" position="0,0" size="1280,720" title="Standby" />
 	<screen name="SundtekControlCenter" position="0,0" size="1280,720" title="SundtekControlCenter" flags="wfNoBorder" backgroundColor="transparent">
@@ -3019,14 +3030,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>		
-		<!-- VFDSkinSelector -->
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="35" font="Regular;23" name="SkinList" position="221,143" scrollbarMode="showNever" size="389,453" transparent="1" foregroundColor="XionFont1"/>
-		<widget alphatest="blend" name="Preview" position="941,182" size="280,240" />
-		<widget backgroundColor="XionBackground" font="Regular2;18" halign="center" position="220,80" render="Label" size="392,49" source="introduction" transparent="1" foregroundColor="XionFont2" />
-		<panel name="template_menu_left_right_button" />
-		<panel name="template_colorkey_text_kp" />
-	</screen>
 		<!-- HFD Toolbox -->
 	<screen name="Fantastic" position="0,0" size="1280,720" title="HDF Toolbox" backgroundColor="transparent">
 		<widget name="menu" position="70,165" size="510,469" itemHeight="28" font="Regular;22" scrollbarMode="showOnDemand" transparent="1" />
