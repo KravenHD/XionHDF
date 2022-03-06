@@ -50,7 +50,7 @@ class XionHDFServiceNameEventNobile(Converter, object):
                 name = ref and info.getName(ref)
                 if name is None:
                     name = info.getName()
-                name = name.replace('\xc2\x86', '').replace('\xc2\x87', '')
+                name = name.replace('\x86', '').replace('\x87', '')
                 act_event = info and info.getEvent(0)
                 if not act_event and info:
                     refstr = info.getInfoString(iServiceInformation.sServiceref)
@@ -96,7 +96,7 @@ class XionHDFServiceNameEventNobile(Converter, object):
                     if len(short) > 3:
                         if short[:-2] not in tmp:
                             tmp = short.strip() + '...' + tmp
-            tmp = tmp.replace('\r', ' ').replace('\n', ' ').replace('\xc2\x8a', ' ')
+            tmp = tmp.replace('\r', ' ').replace('\n', ' ').replace('\x8a', ' ')
             return re.sub('[\\s\t]+', ' ', tmp)
         else:
             return 'Error reading EPG data'

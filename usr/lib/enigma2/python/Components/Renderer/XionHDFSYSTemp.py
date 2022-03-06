@@ -48,7 +48,7 @@ class XionHDFSYSTemp(Renderer, VariableText):
 					systemp = systemp[:2]
 			except:
 				pass
-			self.text = systemp + str('\xc2\xb0') + "C"
+			self.text = systemp + str('\xb0') + "C"
 			
 	def onShow(self):
 		self.suspended = False
