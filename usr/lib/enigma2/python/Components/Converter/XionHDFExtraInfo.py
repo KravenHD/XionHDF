@@ -391,8 +391,9 @@ class XionHDFExtraInfo(Poll, Converter):
 			f.close()
 
 		fps = str((video_rate + 500) / 1000)
-		gamma = ("SDR", "HDR", "HDR10", "HLG", "")[info.getInfo(iServiceInformation.sGamma)]
-		return str(video_width) + "x" + str(video_height) + video_pol + fps + addspace(gamma)
+		#gamma = ("SDR", "HDR", "HDR10", "HLG", "")[info.getInfo(iServiceInformation.sGamma)]
+		#return str(video_width) + "x" + str(video_height) + video_pol + fps + addspace(gamma)
+		return str(video_width) + "x" + str(video_height) + video_pol + fps
 
 	def createVideoCodec(self, info):
 		return codec_data.get(info.getInfo(iServiceInformation.sVideoType), "N/A")
