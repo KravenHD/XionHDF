@@ -1327,13 +1327,6 @@
 		<panel name="template_colorkey_text" />
 		<panel name="template_menu_left_button" />
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="35" font="Regular;23" name="SkinList" position="221,143" scrollbarMode="showNever" size="389,453" transparent="1" foregroundColor="XionFont1">
-		</widget>
-		<widget alphatest="blend" name="Preview" position="941,182" size="280,240" />
-		<widget backgroundColor="XionBackground" font="Regular2;18" halign="center" position="220,80" render="Label" size="392,49" source="introduction" transparent="1" foregroundColor="XionFont2" />
-		<panel name="template_menu_left_right" />
-	</screen>
 	<screen flags="wfNoBorder" name="Standby" position="0,0" size="1280,720" title="Standby" />
 	<screen name="SundtekControlCenter" position="0,0" size="1280,720" title="SundtekControlCenter" flags="wfNoBorder" backgroundColor="transparent">
 		<widget backgroundColor="XionBackground" name="ok" position="70,500" zPosition="1" size="708,30" font="Regular2;20" halign="left" valign="center" transparent="1" foregroundColor="XionFont2" />
@@ -4234,13 +4227,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>		
 		<!-- SkinSelector -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector">
-		<widget backgroundColor="XionBackground" enableWrapAround="1" itemHeight="35" font="Regular;23" name="SkinList" position="221,143" scrollbarMode="showNever" size="389,453" transparent="1" foregroundColor="XionFont1"/>
-		<widget alphatest="blend" name="Preview" position="941,182" size="280,240" />
-		<widget backgroundColor="XionBackground" font="Regular2;18" halign="center" position="220,80" render="Label" size="392,49" source="introduction" transparent="1" foregroundColor="XionFont2" />
-		<panel name="template_menu_left_right_button" />
-		<panel name="template_colorkey_text_kp" />
-	</screen>
-	<screen name="SkinSelector" position="0,0" size="1280,720">
 		<widget name="preview" position="780,120" size="480,410" zPosition="1" transparent="1" alphatest="on" />
 		<widget backgroundColor="XionBackground" enableWrapAround="1" position="50,100" render="Listbox" size="450,450" source="skins" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -4609,22 +4595,22 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- DreamExplorerII -->
 	<screen name="DreamExplorerII" position="0,0" size="1280,720" flags="wfNoBorder" title="Dream-Explorer" backgroundColor="transparent">
 		<widget name="filelist" position="70,80" size="708,540" itemHeight="30" font="Regular;18" scrollbarMode="showAlways" backgroundColor="XionBackground" transparent="1" />
-		<eLabel text="delete" position="64,662" size="148,48" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
-		<eLabel text="Rename" position="264,662" size="148,48" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
-		<eLabel text="Move/Copy" position="464,662" size="148,48" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
-		<eLabel text="Bookmarks" position="664,662" size="148,48" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
+		<eLabel text="delete" position="64,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
+		<eLabel text="Rename" position="264,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
+		<eLabel text="Move/Copy" position="464,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
+		<eLabel text="Bookmarks" position="664,662" size="148,48" zPosition="1" font="Regular; 20" halign="left" valign="center" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" />
 		<panel name="template_menu_left_button" />
 	</screen>
 		<!-- vEditor -->
 	<screen name="vEditor" position="0,0" size="1280,720" flags="wfNoBorder" title="File-Explorer" backgroundColor="transparent">
-		<widget name="filedata" position="70,80" size="708,540" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
-		<panel name="template_menu_left" />
+		<widget name="filedata" position="30,80" size="1210,550" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+		<panel name="template_menu_left_logo_off" />
 	</screen>
 		<!-- vInputBox -->
 	<screen name="vInputBox" position="0,0" size="1280,720" flags="wfNoBorder" title="Input..." backgroundColor="transparent">
-		<widget name="text" position="70,80" size="708,250" scrollbarMode="showNever" backgroundColor="XionBackground" transparent="1" />
-		<widget name="input" position="70,383" size="708,250" scrollbarMode="showNever" font="Regular2;20" itemHeight="28" transparent="1" foregroundColor="XionFont2" enableWrapAround="1" backgroundColor="XionBackground" />
-		<panel name="template_menu_left" />
+		<widget name="text" position="70,80" size="1100,250" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+		<widget name="input" position="70,383" size="1100,250" scrollbarMode="showOnDemand" font="Regular2; 20" itemHeight="28" transparent="1" foregroundColor="XionFont2" enableWrapAround="1" backgroundColor="XionBackground" />
+		<panel name="template_menu_left_logo_off" />
 	</screen>
 		<!-- CPmaniger -->
 	<screen name="CPmaniger" position="0,0" size="1280,720" flags="wfNoBorder" title="Select Copy/Move location..." backgroundColor="transparent">
@@ -7044,16 +7030,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- LED Display Setup -->
 	<screen name="VFD_INISetup" position="0,0" size="1280,720" flags="wfNoBorder" title="LED Display Setup" backgroundColor="transparent">
 		<widget name="config" position="70,80" size="708,540" itemHeight="30" scrollbarMode="showNever" enableWrapAround="1" transparent="1" font="Regular;20" backgroundColor="XionBackground" />
-		<panel name="template_menu_left_button" />
-		<panel name="template_colorkey_text" />
-	</screen>
-		<!-- VFDSkinSelector -->
-	<screen name="VFDSkinSelector" position="0,0" size="1280,720" flags="wfNoBorder" title="VFD Skin-Selector" backgroundColor="transparent">
-		<eLabel text="Select skin:" position="50,80" size="250,26" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" halign="left" />
-		<eLabel text="Preview:" position="380,80" size="250,26" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" halign="left" />
-		<widget name="SkinList" render="Listbox" position="50,120" size="270,400" itemHeight="30" font="Regular;20" zPosition="1" backgroundColor="XionBackground" enableWrapAround="1" scrollbarMode="showNever" />
-		<widget name="Preview" position="380,120" size="480,410" zPosition="1" backgroundColor="XionBackground" transparent="1" alphatest="on" />
-		<eLabel text="Select your skin and press OK to activate the selected skin" position="0,607" halign="center" size="700,26" zPosition="1" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;22" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
