@@ -2978,7 +2978,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 		<!-- HarddiskSelection -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HarddiskSelection" position="0,0" size="1280,720" title="Select HDD">
-		<widget itemHeight="30" name="hddlist" position="20,80" size="708,540" transparent="1" />
+		<widget font="Regular;22" itemHeight="33" name="hddlist" position="20,80" size="708,540" transparent="1" />
 		<panel name="template_menu_left" />
 	</screen>
 		<!-- HarddiskSetup -->
