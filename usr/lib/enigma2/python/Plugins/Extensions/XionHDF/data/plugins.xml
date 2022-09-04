@@ -162,14 +162,14 @@
 	</screen>
 		<!-- vEditor -->
 	<screen name="vEditor" position="0,0" size="1280,720" flags="wfNoBorder" title="File-Explorer" backgroundColor="transparent">
-		<widget name="filedata" position="70,80" size="708,540" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
-		<panel name="template_menu_left" />
+		<widget name="filedata" position="30,80" size="1210,550" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+		<panel name="template_menu_left_logo_off" />
 	</screen>
 		<!-- vInputBox -->
 	<screen name="vInputBox" position="0,0" size="1280,720" flags="wfNoBorder" title="Input..." backgroundColor="transparent">
-		<widget name="text" position="70,80" size="708,250" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
-		<widget name="input" position="70,383" size="708,250" scrollbarMode="showOnDemand" font="Regular2; 20" itemHeight="28" transparent="1" foregroundColor="XionFont2" enableWrapAround="1" backgroundColor="XionBackground" />
-		<panel name="template_menu_left" />
+		<widget name="text" position="70,80" size="1100,250" scrollbarMode="showOnDemand" backgroundColor="XionBackground" transparent="1" />
+		<widget name="input" position="70,383" size="1100,250" scrollbarMode="showOnDemand" font="Regular2; 20" itemHeight="28" transparent="1" foregroundColor="XionFont2" enableWrapAround="1" backgroundColor="XionBackground" />
+		<panel name="template_menu_left_logo_off" />
 	</screen>
 		<!-- CPmaniger -->
 	<screen name="CPmaniger" position="0,0" size="1280,720" flags="wfNoBorder" title="Select Copy/Move location..." backgroundColor="transparent">
@@ -2815,8 +2815,9 @@
 		<widget backgroundColor="XionBackground" name="favorites" font="Regular2;28" position="center,center" size="750,540" foregroundColor="XionFont2" itemHeight="36" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" transparent="0"/>
 		<widget backgroundColor="XionBackground" name="stations" font="Regular2;28" position="center,center" size="750,540" foregroundColor="XionFont2" itemHeight="36" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" transparent="0"/>
 		<widget backgroundColor="XionBackground" name="background" position="center,center" size="770,560" zPosition="2" transparent="0" />
-		<widget backgroundColor="transparent" name="video" position="0,0" size="1280,720" zPosition="2" />
-		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-1" />
+		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-3" />
+		<widget backgroundColor="#1c000000" name="saverbg" position="0,0" scale="1" size="1280,720" zPosition="-1" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" scale="1" position="0,0" size="1280,720" zPosition="-2" />
 		<widget source="songtitle" render="Label" position="center,680" size="1130,24" font="LCD;28" halign="center" valign="center" noWrap="1" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="3" transparent="1" />
 	</screen>
 	<screen name="MPHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="MPHelp" backgroundColor="transparent">
@@ -2902,7 +2903,7 @@
 	<screen name="HDFRadioPlayer" position="0,0" size="1280,720" flags="wfNoBorder" title="HDF-Radio Player" backgroundColor="transparent">
 		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
 		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
-		<widget backgroundColor="XionBackground" name="playermode" font="Regular;26" foregroundColor="XionFont2" position="820,13" size="430,34" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="playermode" font="Regular;26" foregroundColor="XionFont2" position="800,13" size="430,34" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" source="global.CurrentTime" render="Label" font="Regular;26" foregroundColor="XionFont2" position="1154,13" size="100,34" halign="right" valign="center" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
