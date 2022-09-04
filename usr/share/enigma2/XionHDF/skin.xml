@@ -7322,9 +7322,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" name="favorites" font="Regular2;28" position="center,center" size="750,540" foregroundColor="XionFont2" itemHeight="36" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" transparent="0"/>
 		<widget backgroundColor="XionBackground" name="stations" font="Regular2;28" position="center,center" size="750,540" foregroundColor="XionFont2" itemHeight="36" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="3" transparent="0"/>
 		<widget backgroundColor="XionBackground" name="background" position="center,center" size="770,560" zPosition="2" transparent="0" />
-		<widget backgroundColor="transparent" name="video" position="0,0" size="1280,720" zPosition="2" />
-		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-1" />
-		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background_saver.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
+		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-3" />
+		<widget backgroundColor="#1c000000" name="saverbg" position="0,0" scale="1" size="1280,720" zPosition="-1" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" scale="1" position="0,0" size="1280,720" zPosition="-2" />
 		<widget source="songtitle" render="Label" position="center,680" size="1130,24" font="LCD;28" halign="center" valign="center" noWrap="1" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="3" transparent="1" />
 	</screen>
 	<screen name="MPHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="MPHelp" backgroundColor="transparent">
