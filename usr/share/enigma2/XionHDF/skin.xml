@@ -7324,6 +7324,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" name="background" position="center,center" size="770,560" zPosition="2" transparent="0" />
 		<widget backgroundColor="transparent" name="video" position="0,0" size="1280,720" zPosition="2" />
 		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-1" />
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background_saver.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<widget source="songtitle" render="Label" position="center,680" size="1130,24" font="LCD;28" halign="center" valign="center" noWrap="1" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="3" transparent="1" />
 	</screen>
 	<screen name="MPHelp" position="0,0" size="1280,720" flags="wfNoBorder" title="MPHelp" backgroundColor="transparent">
@@ -7409,7 +7410,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen name="HDFRadioPlayer" position="0,0" size="1280,720" flags="wfNoBorder" title="HDF-Radio Player" backgroundColor="transparent">
 		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
 		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
-		<widget backgroundColor="XionBackground" name="playermode" font="Regular;26" foregroundColor="XionFont2" position="700,13" size="430,34" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="playermode" font="Regular;26" foregroundColor="XionFont2" position="800,13" size="430,34" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" source="global.CurrentTime" render="Label" font="Regular;26" foregroundColor="XionFont2" position="1154,13" size="100,34" halign="right" valign="center" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
