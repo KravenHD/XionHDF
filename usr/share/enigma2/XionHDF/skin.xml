@@ -7413,8 +7413,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" source="global.CurrentTime" render="Label" font="Regular;26" foregroundColor="XionFont2" position="1154,13" size="100,34" halign="right" valign="center" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget backgroundColor="XionBackground" name="statepixmap" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/stop.png,/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/play.png,/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/pause.png" position="42,75" size="40,30" alphatest="blend" />
-		<widget backgroundColor="XionBackground" name="shuffle" pixmaps="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/sorted.png,/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/shuffle.png" position="96,75" size="40,30" alphatest="blend" />
+		<widget backgroundColor="XionBackground" name="statepixmap" pixmaps="XionHDF/buttons/stop.png,XionHDF/buttons/play.png,XionHDF/buttons/pause.png" position="42,75" size="40,30" alphatest="blend" />
+		<widget backgroundColor="XionBackground" name="shuffle" pixmaps="XionHDF/buttons/sorted.png,XionHDF/buttons/shuffle.png" position="96,75" size="40,30" alphatest="blend" />
 		<eLabel backgroundColor="#3f3f3f" position="158,80" size="638,20" zPosition="1" />
 		<widget source="session.CurrentService" render="Progress" foregroundColor="XionFont2" position="158,80" size="638,20" zPosition="2" transparent="1">
 			<convert type="ServicePosition">Position</convert>
