@@ -185,11 +185,11 @@
 		<eLabel backgroundColor="XionBackground" position="0,0" size="70,70" zPosition="1" />
 	</screen>
 	<screen name="VirtualKeyBoard" position="center,center" backgroundColor="XionBackground" flags="wfNoBorder" size="715,350" zPosition="99">
-		<ePixmap pixmap="vkey_text.png" position="10,35" zPosition="-4" size="542,52" alphatest="on" />
+		<eLabel position="10,80" size="535,1" backgroundColor="XionLine" />
 		<widget name="header" position="10,10" size="500,20" font="Regular;20" transparent="1" noWrap="1" foregroundColor="XionFont1" />
-		<widget name="text" position="12,35" size="535,46" font="Regular;44" transparent="1" noWrap="1" halign="left" foregroundColor="XionFont1" />
+		<widget name="text" position="15,45" size="525,28" font="Regular;24" transparent="1" noWrap="1" halign="left" foregroundColor="XionFont1" />
 		<widget name="list" position="10,100" size="695,225" selectionDisabled="1" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
-		<widget source="country" render="Pixmap" position="643,45" size="60,40" alphatest="on" borderWidth="2" borderColor="XionLine" zPosition="1">
+		<widget source="country" render="Pixmap" scale="1" position="603,45" size="60,40" alphatest="on" borderWidth="2" borderColor="XionLine" zPosition="1">
 			<convert type="ValueToPixmap">LanguageCode</convert>
 		</widget>
 		<eLabel backgroundColor="XionLine" position="0,0" size="715,2" zPosition="2" />
