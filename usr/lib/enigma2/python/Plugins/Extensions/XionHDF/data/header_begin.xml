@@ -89,7 +89,7 @@
 		<parameter name="HDFRadioDirFont" value="Regular;26" />
 		<parameter name="HDFRadioDirPixmap" value="3,1,20,20"/>
 		<parameter name="HDFRadioDirectory" value="30,1,470,26"/>
-		<parameter name="HDFRadioSearchResultFont1" value="Regular;30" />
+		<parameter name="HDFRadioSearchResultFont1" value="Regular;26" />
 		<parameter name="HDFRadioSearchResultFont2" value="Regular;26" />
 		<parameter name="HDFRadioSongpath" value="4, 1, 1100, 25" />
 		<parameter name="HDFRadioSongname" value="4, 25, 788, 34" />

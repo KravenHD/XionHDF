@@ -173,7 +173,7 @@
 		<widget alphatest="blend" name="UnhandledKeyPixmap" pixmap="XionHDF/buttons/error.png" position="3,3" size="70,70" zPosition="2" />
 		<eLabel backgroundColor="XionBackground" position="0,0" size="70,70" zPosition="1" />
 	</screen>
-	<screen name="VirtualKeyBoard" position="center,center" backgroundColor="XionBackground" flags="wfNoBorder" size="715,350" zPosition="99">
+	<screen name="VirtualKeyBoard" position="center,center" backgroundColor="XionBackground" flags="wfNoBorder" size="715,500" zPosition="99">
 		<eLabel position="10,80" size="535,1" backgroundColor="XionLine" />
 		<widget name="header" position="10,10" size="500,20" font="Regular;20" transparent="1" noWrap="1" foregroundColor="XionFont1" />
 		<widget name="text" position="15,45" size="525,28" font="Regular;24" transparent="1" noWrap="1" halign="left" foregroundColor="XionFont1" />
@@ -181,10 +181,18 @@
 		<widget source="country" render="Pixmap" scale="1" position="603,45" size="60,40" alphatest="on" borderWidth="2" borderColor="XionLine" zPosition="1">
 			<convert type="ValueToPixmap">LanguageCode</convert>
 		</widget>
+		<ePixmap pixmap="XionHDF/buttons/key_red.png" position="10,338" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_green.png" position="170,338" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_yellow.png" position="300,338" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<ePixmap pixmap="XionHDF/buttons/key_blue.png" position="490,338" size="32,32" backgroundColor="XionBackground" alphatest="blend" />
+		<eLabel text="Exit" position="45,338" size="150,35" font="Regular; 20" halign="left" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" />
+		<eLabel text="OK" position="210,338" size="150,35" font="Regular; 20" halign="left" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" />
+		<eLabel text="Language" position="335,338" size="150,35" font="Regular; 20" halign="left" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" />
+		<eLabel text="Switch" position="525,338" size="150,35" font="Regular; 20" halign="left" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" zPosition="2" />
 		<eLabel backgroundColor="XionLine" position="0,0" size="715,2" zPosition="2" />
-		<eLabel backgroundColor="XionLine" position="0,348" size="715,2" zPosition="2" />
-		<eLabel backgroundColor="XionLine" position="0,0" size="2,350" zPosition="2" />
-		<eLabel backgroundColor="XionLine" position="713,0" size="2,350" zPosition="2" />
+		<eLabel backgroundColor="XionLine" position="0,380" size="715,2" zPosition="2" />
+		<eLabel backgroundColor="XionLine" position="0,0" size="2,380" zPosition="2" />
+		<eLabel backgroundColor="XionLine" position="713,0" size="2,380" zPosition="2" />
 	</screen>
 		<!-- ********** EPG ********** -->
 		<!-- EPGSelection -->
