@@ -371,8 +371,7 @@
 		</widget>
 		<eLabel backgroundColor="XionFont1" position="800,92" size="370,1" />
 		<widget name="timeline_text" position="25,273" selectionDisabled="1" size="1230,25" transparent="1" />
-		<widget EntryBackgroundColor="XionBackground" EntryBackgroundColorSelected="XionFont1" EntryBorderColor="XionFont1" itemHeight="60" name="list" position="25,300" size="1230,345" transparent="1" />
-		<widget name="timeline_now" position="80,297" zPosition="2" size="13,355" pixmap="XionHDF/epg/timeline-now.png" alphatest="blend" />
+		<widget name="timeline_now" position="79,297" zPosition="3" size="10,355" scale="1" pixmap="XionHDF/epg/timeline-now.png" alphatest="blend" />
 		<ePixmap pixmap="buttons/key_8_epg.png" position="25,253" size="60,20" alphatest="blend" zPosition="1" />
 		<widget name="page" position="70,253" size="250,18" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
 		<ePixmap pixmap="buttons/key_9_epg.png" position="325,253" size="60,20" alphatest="blend" zPosition="1" />
@@ -382,7 +381,8 @@
 		<ePixmap pixmap="buttons/key_ch.png" position="925,253" size="60,20" alphatest="blend" zPosition="1" />
 		<widget name="jump" position="970,253" size="250,18" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
 		<widget name="lab1" position="0,70" size="1280,720" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="XionBackground" transparent="1" />
-		<widget name="bouquetlist" position="50,30" size="900,120" itemHeight="40" foregroundColor="XionFont1" backgroundColor="XionBackground" foregroundColorSelected="white" backgroundColorSelected="XionBackground" scrollbarMode="showNever" zPosition="6" transparent="1" />
+		<widget name="list" position="25,304" size="1230,345" ServiceBackgroundColorNow="XionSelection" EntryForegroundColorNow="XionLine" EntryBackgroundColorNow="XionSelection" EntryForegroundColorNowSelected="XionFont1" EntryBackgroundColorNowSelected="XionBackground" ServiceForegroundColorNow="XionFont1" ServiceForegroundColor="XionFont1" ServiceBackgroundColor="XionBackground" EntryBorderColor="white" EntryBackgroundColorSelected="XionBackground" EntryRecColor="red" scrollbarMode="showNever" transparent="1" />
+		<widget name="bouquetlist" position="50,30" size="900,120" itemHeight="40" foregroundColor="XionFont1" backgroundColor="XionBackground" foregroundColorSelected="black" backgroundColorSelected="XionBackground" scrollbarMode="showNever" zPosition="6" transparent="1" />
 		<panel name="template_menu_full_button" />
 		<panel name="template_colorkey_text" />
 	</screen>
@@ -406,17 +406,17 @@
 			<convert type="XionHDFEventName">ExtendedDescription</convert>
 		</widget>
 		<ePixmap pixmap="buttons/key_8_epg.png" position="25,253" size="60,18" alphatest="blend" zPosition="1" />
-		<widget name="page" position="70,253" size="250,20" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
+		<widget name="page" position="70,253" size="250,20" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;15" transparent="1" />
 		<ePixmap pixmap="buttons/key_9_epg.png" position="325,253" size="60,18" alphatest="blend" zPosition="1" />
-		<widget name="primetime" position="370,253" size="250,20" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
+		<widget name="primetime" position="370,253" size="250,20" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;15" transparent="1" />
 		<ePixmap pixmap="buttons/key_prev_next.png" position="625,253" size="60,18" alphatest="blend" zPosition="1" />
-		<widget name="change_bouquet" position="670,253" size="250,20" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
+		<widget name="change_bouquet" position="670,253" size="250,20" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;15" transparent="1" />
 		<ePixmap pixmap="buttons/key_ch.png" position="925,253" size="60,18" alphatest="blend" zPosition="1" />
-		<widget name="jump" position="970,253" size="250,20" backgroundColor="XionBackground" foregroundColor="orange" font="Regular;15" transparent="1" />
-		<widget name="bouquetlist" position="50,30" size="900,120" itemHeight="40" foregroundColor="XionFont1" backgroundColor="XionBackground" foregroundColorSelected="white" backgroundColorSelected="XionBackground" scrollbarMode="showNever" zPosition="6" transparent="1" />
+		<widget name="jump" position="970,253" size="250,20" backgroundColor="XionBackground" foregroundColor="XionFont1" font="Regular;15" transparent="1" />
+		<widget name="bouquetlist" position="50,30" size="900,120" itemHeight="40" foregroundColor="XionFont1" backgroundColor="XionBackground" foregroundColorSelected="XionFont1" backgroundColorSelected="XionBackground" scrollbarMode="showNever" zPosition="6" transparent="1" />
 		<widget name="timeline_text" position="25,273" size="1230,25" selectionDisabled="1" transparent="1" />
-		<widget name="list" position="25,304" size="1230,345" EntryBorderColor="white" EntryBackgroundColorSelected="grey" scrollbarMode="showNever" transparent="1" />
-		<widget name="timeline_now" position="80,274" zPosition="2" size="3,30" pixmap="XionHDF/epg/SelectedZapEvent.png" alphatest="blend" />
+		<widget name="list" position="25,304" size="1230,345" ServiceBackgroundColorNow="XionSelection" EntryForegroundColorNow="XionLine" EntryBackgroundColorNow="XionSelection" EntryForegroundColorNowSelected="XionFont1" EntryBackgroundColorNowSelected="XionBackground" ServiceForegroundColorNow="XionFont1" ServiceForegroundColor="XionFont1" ServiceBackgroundColor="XionBackground" EntryBorderColor="white" EntryBackgroundColorSelected="XionBackground" EntryRecColor="red" scrollbarMode="showNever" transparent="1" />
+		<widget name="timeline_now" position="79,297" zPosition="3" size="10,355" scale="1" pixmap="XionHDF/epg/timeline-now.png" alphatest="blend" />
 		<widget source="session.VideoPicture" render="Pig" position="927,70" size="320,180" zPosition="3" backgroundColor="transparent" />
 		<eLabel position="101,125" size="535,1" backgroundColor="XionLine" />
 		<panel name="template_menu_full_button" />
