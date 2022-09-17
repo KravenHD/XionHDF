@@ -1386,11 +1386,11 @@
 		<eLabel backgroundColor="XionBackground" position="0,0" size="70,70" zPosition="1" />
 	</screen>
 	<screen name="VirtualKeyBoard" position="center,center" backgroundColor="XionBackground" flags="wfNoBorder" size="715,350" zPosition="99">
-		<ePixmap pixmap="vkey_text.png" position="10,35" zPosition="-4" size="542,52" alphatest="on" />
+		<eLabel position="10,80" size="535,1" backgroundColor="XionLine" />
 		<widget name="header" position="10,10" size="500,20" font="Regular;20" transparent="1" noWrap="1" foregroundColor="XionFont1" />
-		<widget name="text" position="12,35" size="535,46" font="Regular;44" transparent="1" noWrap="1" halign="left" foregroundColor="XionFont1" />
+		<widget name="text" position="15,45" size="525,28" font="Regular;24" transparent="1" noWrap="1" halign="left" foregroundColor="XionFont1" />
 		<widget name="list" position="10,100" size="695,225" selectionDisabled="1" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
-		<widget source="country" render="Pixmap" position="643,45" size="60,40" alphatest="on" borderWidth="2" borderColor="XionLine" zPosition="1">
+		<widget source="country" render="Pixmap" scale="1" position="603,45" size="60,40" alphatest="on" borderWidth="2" borderColor="XionLine" zPosition="1">
 			<convert type="ValueToPixmap">LanguageCode</convert>
 		</widget>
 		<eLabel backgroundColor="XionLine" position="0,0" size="715,2" zPosition="2" />
@@ -7438,6 +7438,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" name="localdirs" font="Regular;22" position="700,405" size="538,240" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="ownlist" font="Regular;22" position="700,405" size="538,240" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="quickmenu" font="Regular;22" position="42,190" size="622,450" itemHeight="30" scrollbarMode="showNever" enableWrapAround="1" transparent="1"/>
+		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
+		<panel name="template_menu_left_button_logo_off" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_colorkey_text" />
+	</screen>
+	<screen name="HDFRadioSearch" position="0,0" size="1280,720" flags="wfNoBorder" title="Search result:" backgroundColor="transparent">
+		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
+		<eLabel backgroundColor="XionBackground" position="0,656" size="1280,2" zPosition="2" />
+		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;24" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="0,570" size="1280,1" backgroundColor="XionLine" />
+		<widget source="instruction" render="Label" position="42,585" size="1200,60" font="Regular;22" foregroundColor="XionFont2" backgroundColor="XionBackground" zPosition="2" transparent="1" />
+		<widget name="resultlist" position="center,80" size="1200,480" font="Regular;24" foregroundColor="XionFont2" backgroundColor="#0F3E6C" foregroundColorSelected="#ffffff" backgroundColorSelected="#216b9c" itemHeight="60" scrollbarMode="showOnDemand" scrollbarSliderBorderWidth="1" scrollbarWidth="4" enableWrapAround="1" zPosition="2" transparent="1" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/HDFRadio/graphics/background.jpg" position="0,0" size="1280,720" scale="1" zPosition="-1" />
 		<panel name="template_menu_left_button_logo_off" />
 		<panel name="template_colorkey_text_source" />
