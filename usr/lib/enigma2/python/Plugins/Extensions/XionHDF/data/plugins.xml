@@ -2759,7 +2759,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="recording" render="Label" position="910,10" size="300,40" font="Regular;26" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="red" />
+		<widget name="record" position="910,10" size="300,40" font="Regular;26" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="red" />
 		<widget source="station" render="XionHDFRunningText" options="movetype=running,direction=left,startpoint=0,startdelay=4000,steptime=50,wrap=1,always=0,oneshot=1" font="Regular;30" foregroundColor="XionFont2" position="42,90" size="609,38" halign="center" valign="center" transparent="1" />
 		<widget backgroundColor="XionBackground" source="songtitle" render="Label" font="Regular;30" foregroundColor="XionFont2" position="42,130" size="609,76" halign="center" valign="top" transparent="1" />
 		<widget backgroundColor="XionBackground" name="cover" position="146,220" size="400,400" zPosition="1" />
