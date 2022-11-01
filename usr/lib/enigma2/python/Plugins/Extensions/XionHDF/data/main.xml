@@ -2452,6 +2452,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
+	<screen name="SoftwareUpdateChoices" position="center,center" size="560,225">
+		<widget name="list" position="0,0" size="560,150" itemHeight="28" font="Regular;22" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<widget name="text" position="0,150" size="560,75" font="Regular;22" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" transparent="0"/>
+	</screen>
 		<!-- PluginDetails -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="PluginDetails" position="0,0" size="1280,720" title="Plugin details">
 		<widget alphatest="blend" name="statuspic" position="70,120" size="48,48" />
