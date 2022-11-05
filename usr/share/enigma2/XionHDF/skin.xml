@@ -7364,6 +7364,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<eLabel backgroundColor="XionBackground" text="Favorites" font="Regular;24" position="655,80" size="541,30" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="favorites" font="Regular;24" position="655,130" size="541,416" itemHeight="32" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" source="instruction" render="Label" font="Regular;22" foregroundColor="XionFont2" position="42,580" size="1100,60" halign="center" valign="center" transparent="1" />
+		<widget backgroundColor="XionBackground" name="sort" font="Regular;24" position="655,130" size="541,416" itemHeight="32" foregroundColorSelected="#ffffff" backgroundColorSelected="#ff0000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>		
 		<panel name="template_menu_left_button_logo_off" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_colorkey_text" />
@@ -7379,6 +7380,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget backgroundColor="XionBackground" name="ownlist" font="Regular;24" position="42,120" size="566,450" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="playlistname" font="Regular;27" foregroundColor="XionFont2" position="650,75" size="541,36" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="playlist" font="Regular;20" position="650,120" size="580,450" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="sort" font="Regular;20" position="650,120" size="580,450" itemHeight="30" foregroundColorSelected="#ffffff" backgroundColorSelected="#ff0000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel backgroundColor="XionLine" position="42,115" size="566,1" zPosition="2" />
 		<eLabel backgroundColor="XionLine" position="650,115" size="580,1" zPosition="2" />
 		<widget backgroundColor="XionBackground" source="instruction" render="Label" font="Regular;22" foregroundColor="XionFont2" position="42,580" size="1100,60" halign="center" valign="center" transparent="1" />
