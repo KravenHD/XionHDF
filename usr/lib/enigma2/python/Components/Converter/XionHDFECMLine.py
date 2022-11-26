@@ -117,7 +117,7 @@ class XionHDFECMLine(Poll, Converter, object):
 					if "msec" in ecmtime:
 						ecmtime = 'ECM: ' + ecmtime				
 					else:
-						ecmtime = 'ECM: ' + ecmtime + ' s'			
+						ecmtime = 'ECM: ' + ecmtime + ' ms'			
 	
 				hops = 'Hops: ' + str(camInfo.get('hops', ''))
 				address = 'Server: ' + str(camInfo.get('address', ''))
