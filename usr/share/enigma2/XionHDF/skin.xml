@@ -2043,7 +2043,7 @@
 	</screen>
 		<!-- HelpMenu -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HelpMenu" position="0,0" size="1280,720" title="Menu">
-		<widget alphatest="blend" name="rc" pixmaps="XionHDF/rc.png,rcold.png" position="160,115" size="154,500" zPosition="10" />
+		<widget alphatest="blend" name="rc" pixmaps="rc.png,rcold.png" position="160,115" size="154,500" zPosition="10" />
 		<widget backgroundColor="XionBackground" font="Regular2;24" foregroundColor="yellow" halign="center" name="long_key" position="90,620" size="300,30" transparent="1" />
 		<widget itemHeight="38" name="list" position="500,120" size="720,494" scrollbarMode="showNever" transparent="1" />
 		<widget alphatest="blend" name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" />
