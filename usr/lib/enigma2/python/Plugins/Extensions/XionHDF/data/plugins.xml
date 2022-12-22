@@ -321,8 +321,8 @@
 	</screen>
 		<!-- EnhancedMovieCenterMenu -->
 	<screen name="EnhancedMovieCenterMenu" position="0,0" size="1280,720" title="EnhancedMovieCenterMenu" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="70,80" size="708,385" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" itemHeight="27" font="Regular;22" />
-		<widget source="help" render="Label" position="70,492" size="708,108" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
+		<widget name="config" position="70,80" size="708,485" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" itemHeight="27" font="Regular;22" />
+		<widget source="help" render="Label" position="70,572" size="708,108" font="Regular2;20" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
