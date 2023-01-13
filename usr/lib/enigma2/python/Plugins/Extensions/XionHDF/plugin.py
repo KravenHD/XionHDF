@@ -209,7 +209,7 @@ else:
     mem_info = []
     entrie = os.popen('cat /proc/cmdline').read()
 
-    if getBoxType() in ('vusolo4k', 'zgemmah7', 'zgemmah9t', 'zgemmah9s', 'e4hdultra', 'sfx6008', 'sfx6018'):
+    if getBoxType() in ('vusolo4k', 'zgemmah7', 'zgemmah9t', 'zgemmah9s', 'zgemmah82h', 'e4hdultra', 'sfx6008', 'sfx6018'):
         mem = re.findall('_cma=(.*?)M', entrie)
     else:
         mem = re.findall('bmem=(.*?)M', entrie)
@@ -220,7 +220,7 @@ else:
     if len(mem_info) > 1:
         bmem = int(mem_info[0]) + int(mem_info[1])
     else:
-        if getImageArch() == 'cortexa15hf-neon-vfpv4' or getBoxType() in ('zgemmah9s', 'e4hdultra', 'sfx6008', 'sfx6018'):
+        if getImageArch() == 'cortexa15hf-neon-vfpv4' or getBoxType() in ('zgemmah9s', 'zgemmah82h', 'e4hdultra', 'sfx6008', 'sfx6018'):
             bmem = 250
         else:
             bmem = int(mem_info[0])
