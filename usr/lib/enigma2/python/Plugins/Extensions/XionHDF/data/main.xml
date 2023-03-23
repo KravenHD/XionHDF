@@ -602,28 +602,46 @@
 	</screen>
 		<!-- ********** NumberZap ********** -->
 		<!-- NumberZap -->
-	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="NumberZap" position="center,center" size="250,60" title="QuickZap">
-		<widget backgroundColor="XionBackground" font="Regular2;28" name="channel" position="25,14" size="100,28" />
-		<widget backgroundColor="XionBackground" font="Regular2;28" halign="right" name="number" position="125,14" size="100,28" />
+	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="NumberZap" position="center,center" size="242,154" title="QuickZap">
+		<widget font="Regular; 80" foregroundColor="XionFont1" halign="center" name="number" position="21,27" size="200,100" transparent="0" zPosition="0" />
+		<eLabel halign="center" position="0,0" size="242,154" zPosition="-1" />
+		<eLabel backgroundColor="XionLine" position="3,3" size="1,147" />
+		<eLabel backgroundColor="XionLine" position="3,3" size="235,1" />
+		<eLabel backgroundColor="XionLine" position="238,3" size="1,147" />
+		<eLabel backgroundColor="XionLine" position="3,149" size="235,1" />
 	</screen>
 		<!-- NumberZapPicon -->
-	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="NumberZapPicon" position="center,center" size="350,260" title="QuickZap">
-		<widget backgroundColor="XionBackground" font="Regular2;28" halign="left" name="channel" position="10,14" size="100,28" zPosition="1" />
-		<widget backgroundColor="XionBackground" font="Regular2;28" halign="right" name="number" position="10,14" size="330,28" zPosition="-10" />
-		<widget alphatest="blend" position="center,60" render="Picon" size="220,132" source="Service" zPosition="-11">
-			<convert type="ServiceName">Reference</convert>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZapPicon" position="264,216" size="714,243" title="QuickZap">
+		<widget alphatest="blend" render="Picon" position="366,43" size="225,138" source="Service" zPosition="1">
+		<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget name="servicename" backgroundColor="XionBackground" position="center,200" size="345,40" halign="center" valign="center" font="Regular2;28" zPosition="1" />
+		<widget font="Regular; 80" foregroundColor="XionFont1" halign="center" name="number" position="67,72" size="200,100" transparent="0" zPosition="0" />
+		<widget font="Regular; 20" foregroundColor="XionFont1" halign="center" name="servicename" noWrap="1" position="295,179" size="387,26" transparent="0" zPosition="0" />
+		<eLabel halign="center" position="271,32" size="427,181" zPosition="-1" />
+		<eLabel backgroundColor="XionLine" position="694,35" size="1,175" />
+		<eLabel backgroundColor="XionLine" position="274,35" size="420,1" />
+		<eLabel backgroundColor="XionLine" position="274,209" size="420,1" />
+		<eLabel backgroundColor="XionLine" position="274,196" size="1,14" />
+		<eLabel backgroundColor="XionLine" position="274,35" size="1,14" />
+		<eLabel halign="center" position="46,46" size="225,154" zPosition="-1" />
+		<eLabel backgroundColor="XionLine" position="49,49" size="1,147" />
+		<eLabel backgroundColor="XionLine" position="49,49" size="235,1" />
+		<eLabel backgroundColor="XionLine" position="284,49" size="1,147" />
+		<eLabel backgroundColor="XionLine" position="49,195" size="235,1" />
 	</screen>
 		<!-- NumberZapWithName -->
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZapWithName" position="398,257" size="483,205" title="QuickZap">
-		<widget backgroundColor="XionBackground" font="Regular; 90" halign="center" name="servicenumber" position="10,10" size="220,132" transparent="1" valign="center" foregroundColor="XionFont1" />
-		<widget alphatest="blend" position="253,10" render="Picon" size="220,132" source="Service">
-			<convert type="ServiceName">Reference</convert>
-		</widget>
-		<eLabel backgroundColor="XionBackground" position="0,0" size="240,152" zPosition="-1" />
-		<eLabel backgroundColor="XionBackground" position="243,0" size="240,152" zPosition="-1" />
-		<eLabel backgroundColor="XionBackground" position="0,155" size="483,50" zPosition="-1" />
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZapWithName" position="264,215" size="714,243" title="QuickZap">
+		<widget font="Regular; 80" foregroundColor="XionFont1" halign="center" name="number" position="67,72" size="200,100" transparent="0" zPosition="0" />
+		<widget font="Regular; 40" foregroundColor="XionFont1" halign="center" name="servicename" noWrap="1" position="295,96" size="387,54" transparent="0" zPosition="0" />
+		<eLabel halign="center" position="271,92" size="427,61" zPosition="-3" />
+		<eLabel backgroundColor="XionLine" position="694,94" size="1,57" />
+		<eLabel backgroundColor="XionLine" position="274,94" size="420,1" zPosition="-2" />
+		<eLabel backgroundColor="XionLine" position="274,150" size="420,1" zPosition="-2" />
+		<eLabel halign="center" position="46,46" size="242,154" zPosition="-1" />
+		<eLabel backgroundColor="XionLine" position="49,49" size="1,147" />
+		<eLabel backgroundColor="XionLine" position="49,49" size="235,1" />
+		<eLabel backgroundColor="XionLine" position="284,49" size="1,147" />
+		<eLabel backgroundColor="XionLine" position="49,195" size="235,1" />
 	</screen>
 		<!-- NumericalTextInputHelpDialog -->
 	<screen backgroundColor="XionBackground" flags="wfNoBorder" name="NumericalTextInputHelpDialog" position="130,525" size="614,135" zPosition="8">
