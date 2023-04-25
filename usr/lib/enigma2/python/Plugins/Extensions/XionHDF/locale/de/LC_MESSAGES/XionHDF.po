@@ -11,11 +11,11 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: Koivo <koivo@hdfreaks.cc>\n"
 "Language-Team: \n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
-"X-Generator: Poedit 2.4.2\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
 
 msgid "N"
 msgstr "N"
@@ -97,168 +97,6 @@ msgstr "SA"
 
 msgid "Sun"
 msgstr "SO"
-
-msgid "Tornado"
-msgstr "Tornado"
-
-msgid ""
-"Tropical\n"
-" storm"
-msgstr "Tropischer Sturm"
-
-msgid "Hurricane"
-msgstr "Hurrikan"
-
-msgid ""
-"Severe\n"
-" thunderstorms"
-msgstr "Schwere Gewitter"
-
-msgid "Thunderstorms"
-msgstr "Gewitter"
-
-msgid ""
-"Mixed rain\n"
-" and snow"
-msgstr "Regen und Schnee"
-
-msgid ""
-"Mixed rain\n"
-" and sleet"
-msgstr "Regen und Schneeregen"
-
-msgid ""
-"Mixed snow\n"
-" and sleet"
-msgstr "Schnee und Graupel"
-
-msgid ""
-"Freezing\n"
-" drizzle"
-msgstr "Frierender Nieselregen"
-
-msgid "Drizzle"
-msgstr "Nieselregen"
-
-msgid ""
-"Freezing\n"
-" rain"
-msgstr "Eisregen"
-
-msgid "Showers"
-msgstr "Regen"
-
-msgid "Rain"
-msgstr "Regen"
-
-msgid ""
-"Snow\n"
-" flurries"
-msgstr "Schneetreiben"
-
-msgid ""
-"Light\n"
-" snow showers"
-msgstr "Leichte Schneeschauer"
-
-msgid ""
-"Blowing\n"
-" snow"
-msgstr "Schneetreiben"
-
-msgid "Snow"
-msgstr "Schnee"
-
-msgid "Hail"
-msgstr "Hagel"
-
-msgid "Sleet"
-msgstr "Schneeregen"
-
-msgid "Dust"
-msgstr "Staub"
-
-msgid "Foggy"
-msgstr "Nebelig"
-
-msgid "Haze"
-msgstr "Nebel"
-
-msgid "Smoky"
-msgstr "Rauchig"
-
-msgid "Blustery"
-msgstr "Stürmisch"
-
-msgid "Windy"
-msgstr "Windig"
-
-msgid "Cold"
-msgstr "Kalt"
-
-msgid "Cloudy"
-msgstr "Wolkig"
-
-msgid ""
-"Mostly\n"
-" cloudy"
-msgstr "Überwiegend bewölkt"
-
-msgid ""
-"Partly\n"
-" cloudy"
-msgstr "Teilweise bewölkt"
-
-msgid "Clear"
-msgstr "Klar"
-
-msgid "Sunny"
-msgstr "Sonnig"
-
-msgid "Fair"
-msgstr "Heiter"
-
-msgid ""
-"Mixed rain\n"
-" and hail"
-msgstr "Regen und Hagel"
-
-msgid "Hot"
-msgstr "Heiss"
-
-msgid ""
-"Isolated\n"
-" thunderstorms"
-msgstr "Vereinzelte Gewitter"
-
-msgid ""
-"Scattered\n"
-" thunderstorms"
-msgstr "Vereinzelte Gewitter"
-
-msgid ""
-"Scattered\n"
-" showers"
-msgstr "Vereinzelte Regenschauer"
-
-msgid "Heavy snow"
-msgstr "Starker Schneefall"
-
-msgid ""
-"Scattered\n"
-" snow showers"
-msgstr "Vereinzelte Schneeschauer"
-
-msgid "Thundershowers"
-msgstr "Gewitter"
-
-msgid "Snow showers"
-msgstr "Schneeschauer"
-
-msgid ""
-"Isolated\n"
-" thundershowers"
-msgstr "Vereinzelt Gewitter"
 
 msgid "% humidity"
 msgstr "% Luftfeuchtigkeit"
@@ -347,7 +185,7 @@ msgid "Green"
 msgstr "Grün"
 
 msgid "Green dark"
-msgstr "Dunkel Grün"
+msgstr "Dunkelgrün"
 
 msgid "Neon green"
 msgstr "Neongrün"
@@ -443,7 +281,7 @@ msgid "On"
 msgstr "An"
 
 msgid "Infos in place of weather"
-msgstr "Info´s anstelle Wetter"
+msgstr "Infos statt Wetter"
 
 msgid "Weather"
 msgstr "Wetter"
@@ -518,7 +356,7 @@ msgid "Primary font"
 msgstr "Hauptschrift / Sendung Jetzt"
 
 msgid "Secondary font"
-msgstr "Sekundäre Schriftfarbe / Sendung Danach"
+msgstr "Sekundärschrift"
 
 msgid "Listselection font"
 msgstr "Auswahlbalken Schriftfarbe"
@@ -580,7 +418,7 @@ msgid "Refresh interval (in minutes)"
 msgstr "Aktualisierungsintervall (in Minuten)"
 
 msgid "This option set the resolution of skin."
-msgstr "Diese Option ändert die verwendete Auflösung des Skins."
+msgstr "Diese Option stellt die Auflösung des Skins ein."
 
 msgid "This option activates the running text for some parts of skin."
 msgstr "Diese Option aktiviert den scrollenden Text an einigen Stellen im Skin."
@@ -590,18 +428,16 @@ msgstr "Diese Option aktiviert den Scrollbalken an einigen Stellen im Skin."
 
 msgid ""
 "This option activates the channelname within the infobar.\n"
-"For using Poster, you need a drive as HDD to save the pictures."
+"The poster will be temporarily saved under temp."
 msgstr ""
-"Diese Option aktiviert die Anzeige vom Sendernamen in der Infobar.\n"
-"Für die Verwendung von Poster benötigen Sie ein Laufwerk als HDD, um die Bilder zu speichern."
+"Diese Option aktiviert den Kanalnamen in der Infoleiste.\n"
+"Das Poster wird temporär unter temp abgelegt."
 
 msgid "This option activate/deactive/change the background transparency of skin."
-msgstr "Diese Option aktiviert/deaktiviert/ändert die Hintergrundtransparenz im Skin."
+msgstr "Diese Option aktiviert/deaktiviert/ändert die Hintergrundtransparenz der Haut."
 
 msgid "This option activate/deactive/change the weather on top inside the infobar."
-msgstr ""
-"Diese Option aktiviert/deaktiviert/ändert die Wetteranzeige in der oberen Hälfte der Infobar.\n"
-"Der Standort wird automatisch erkannt und verwendet."
+msgstr "Diese Option aktiviert/deaktiviert/ändert das Wetter oben in der Infoleiste."
 
 msgid ""
 "Here you can insert your city, district, zip code or alltogether.\n"
@@ -616,52 +452,136 @@ msgid "Here you can change how often the weather is refreshed in the background.
 msgstr "An dieser Stelle wird der Intervall der Wetteraktualisierung im Hintergrund eingestellt."
 
 msgid "Please select the bordercolor of selection bars or deactivate borders completely."
-msgstr "Bitte die Farbe des Linienrands für den Selektor auswählen."
+msgstr "Bitte wählen Sie die Rahmenfarbe der Auswahlbalken oder deaktivieren Sie die Rahmen ganz."
 
 msgid "Please select the color of lines inside the skin."
-msgstr "Bitte die Farbe der Linien innerhalb des Skins auswählen."
+msgstr "Bitte wählen Sie die Farbe der Linien innerhalb der Haut aus."
 
 msgid "Please select the color of listselection inside the skin."
-msgstr "Bitte die Farbe des Auswahlbalkens innerhalb des Skins auswählen."
+msgstr "Bitte wählen Sie die Farbe der Listenauswahl im Skin aus."
 
 msgid "Please select the color of progress- and volumebar inside the skin."
-msgstr "Bitte die Farbe der Forschritts- und Lautstärkebalken innerhalb des Skins auswählen."
+msgstr "Bitte wählen Sie die Farbe der Fortschritts- und Lautstärkeleiste im Skin aus."
 
 msgid "Please select the color of primary font inside the skin."
-msgstr "Bitte die Farbe der ersten Schriftart innerhalb des Skins auswählen."
+msgstr "Bitte wählen Sie die Farbe der Hauptschrift innerhalb der Skin aus."
 
 msgid "Please select the color of secundary font inside the skin."
-msgstr "Bitte die Farbe der zweiten Schriftart innerhalb des Skins auswählen."
+msgstr "Bitte wählen Sie die Farbe der sekundären Schrift im Skin aus."
 
 msgid "Please select the color of listselection font inside the skin."
-msgstr "Bitte die Farbe der Schriftart des Auswahlbalkens innerhalb des Skins auswählen."
+msgstr "Bitte wählen Sie die Farbe der Listenauswahl-Schriftart im Skin aus."
 
 msgid "Please select the color of button text inside the skin."
-msgstr "Bitte die Farbe des Textes auf den Buttons innerhalb des Skins auswählen."
+msgstr "Bitte wählen Sie die Farbe des Schaltflächentextes innerhalb der Skin aus."
 
 msgid "This option changes the size of picons within the infobar."
-msgstr "Diese Option ändert die Größe der Picons innerhalb der Infobar."
+msgstr "Diese Option ändert die Größe der Picons in der Infoleiste."
 
 msgid "This option changes the view of channellist."
 msgstr "Diese Option ändert die Ansicht der Kanalliste."
 
 msgid "This option changes the view of second infobar."
-msgstr "Diese Option ändert die Ansicht der SecondInfobar."
+msgstr "Diese Option ändert die Ansicht der zweiten Infoleiste."
 
 msgid "This option changes the view of cover inside from MovieSelection."
-msgstr "Diese Option ändert die Ansicht und Größe der Cover innerhalb vom MovieSelection."
+msgstr "Diese Option ändert die Ansicht des Covers im Inneren von MovieSelection."
 
 msgid "This option changes the view of cover inside from EnhancedMovieCenter."
-msgstr "Diese Option ändert die Ansicht und Größe der Cover innerhalb vom EnhancedMovieCenter."
+msgstr "Diese Option ändert die Ansicht des Covers im Inneren von EnhancedMovieCenter."
 
 msgid "Font normal height in %"
-msgstr "Schriftgröße der normalen Schriftart in %"
+msgstr "Normale Schrifthöhe in %"
 
 msgid "This option changes the height of normal font."
-msgstr "Diese Option ändert die Größe für die normale Schriftart."
+msgstr "Diese Option ändert die Höhe der normalen Schriftart."
 
 msgid "Font bold height in %"
-msgstr "Schriftgröße der dicken Schriftart in %"
+msgstr "Fettschrifthöhe in %"
 
 msgid "This option changes the height of bold font."
-msgstr "Diese Option ändert die Größe für die dicke Schriftart."
+msgstr "Diese Option ändert die Höhe der Fettschrift."
+
+msgid "clear sky"
+msgstr "klarer Himmel"
+
+msgid "mainly clear"
+msgstr "zumeist klar"
+
+msgid "partly cloudy"
+msgstr "teilsweise bewölkt"
+
+msgid "overcast"
+msgstr "bewölkt"
+
+msgid "foggy"
+msgstr "nebelig"
+
+msgid "rime fog"
+msgstr "Reifnebel"
+
+msgid "light drizzle"
+msgstr "leichter Nieselregen"
+
+msgid "moderate drizzle"
+msgstr "mäßiger Nieselregen"
+
+msgid "dense drizzle"
+msgstr "dichter Nieselregen"
+
+msgid "light freezing drizzle"
+msgstr "leichter eisiger Nieselregen"
+
+msgid "dense freezing drizzle"
+msgstr "dichter eisiger Nieselregen"
+
+msgid "slight rain"
+msgstr "leichter Regen"
+
+msgid "moderate rain"
+msgstr "mäßiger Regen"
+
+msgid "heavy rain"
+msgstr "starker Regen"
+
+msgid "light freezing rain"
+msgstr "leichter Eisregen"
+
+msgid "heavy freezing rain"
+msgstr "starker Eisregen"
+
+msgid "slight snow fall"
+msgstr "leichter Schneefall"
+
+msgid "moderate snow fall"
+msgstr "mäßiger Schneefall"
+
+msgid "heavy snow fall"
+msgstr "starker Schneefall"
+
+msgid "snow grains"
+msgstr "Schneekörner"
+
+msgid "slight rain showers"
+msgstr "leichte Regenschauer"
+
+msgid "moderate rain showers"
+msgstr "mäßige Regenschauer"
+
+msgid "violent rain showers"
+msgstr "heftige Regenschauer"
+
+msgid "slight snow showers"
+msgstr "leichte Schneeschauer"
+
+msgid "heavy snow showers"
+msgstr "starke Schneeschauer"
+
+msgid "slight thunderstorm"
+msgstr "leichtes Gewitter"
+
+msgid "thunderstorm with slight hail"
+msgstr "Gewitter mit leichtem Hagel"
+
+msgid "thunderstorm with heavy hail"
+msgstr "Gewitter mit starkem Hagel"

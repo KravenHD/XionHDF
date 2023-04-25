@@ -74,6 +74,8 @@ config.plugins.XionHDF.weather_city = ConfigText(default="", visible_width=250, 
 config.plugins.XionHDF.refreshInterval = ConfigSelectionNumber(min=10, max=240, stepwidth=5, default=60, wraparound=True)
 config.plugins.XionHDF.weather_realtek_latlon = ConfigText(default="")
 config.plugins.XionHDF.weather_foundcity = ConfigText(default="")
+config.plugins.XionHDF.weather_latitude = ConfigText(default="")
+config.plugins.XionHDF.weather_longitude = ConfigText(default="")
 
 config.plugins.XionHDF.System = ConfigSelection(default="openhdf", choices=[
                                 ("openhdf", _(" "))
@@ -303,7 +305,7 @@ class XionHDF(ConfigListScreen, Screen):
         list.append(getConfigListEntry(_("Scrollbars"), config.plugins.XionHDF.ScrollBar, _("This option activates the scrollbars for some parts of skin.")))
         list.append(getConfigListEntry(_("Background transparency"), config.plugins.XionHDF.BackgroundColorTrans, _("This option activate/deactive/change the background transparency of skin.")))
         list.append(getConfigListEntry(_("ChannelSelection"), config.plugins.XionHDF.ChannelSelectionStyle, _("This option changes the view of channellist.")))
-        list.append(getConfigListEntry(_("Infobar channelname"), config.plugins.XionHDF.InfobarChannelname, _("This option activates the channelname within the infobar.\nFor using Poster, you need a drive as HDD to save the pictures.")))
+        list.append(getConfigListEntry(_("Infobar channelname"), config.plugins.XionHDF.InfobarChannelname, _("This option activates the channelname within the infobar.\nThe poster will be temporarily saved under temp.")))
         list.append(getConfigListEntry(_("Second Infobar"), config.plugins.XionHDF.SIB, _("This option changes the view of second infobar.")))
         list.append(getConfigListEntry(_("EnhancedMovieCenter"), config.plugins.XionHDF.EMCStyle, _("This option changes the view of cover inside from EnhancedMovieCenter.")))
         list.append(getConfigListEntry(_("MovieSelection"), config.plugins.XionHDF.MovieStyle, _("This option changes the view of cover inside from MovieSelection.")))
@@ -655,7 +657,7 @@ class XionHDF(ConfigListScreen, Screen):
         self.city = ''
         self.lat = ''
         self.lon = ''
-        self.accu_id = ''
+        #self.accu_id = ''
 
         if config.plugins.XionHDF.weather_city.value == '':
             self.get_latlon_by_ip()
@@ -664,12 +666,16 @@ class XionHDF(ConfigListScreen, Screen):
 
         config.plugins.XionHDF.weather_foundcity.value = self.city
         config.plugins.XionHDF.weather_foundcity.save()
+        config.plugins.XionHDF.weather_latitude.value = str(self.lat)
+        config.plugins.XionHDF.weather_latitude.save()
+        config.plugins.XionHDF.weather_longitude.value = str(self.lon)
+        config.plugins.XionHDF.weather_longitude.save()
         config.plugins.XionHDF.weather_realtek_latlon.value = 'lat=%s&lon=%s&metric=1&language=%s' % (str(self.lat), str(self.lon), lang[:2])
-        #print config.plugins.XionHDF.weather_realtek_latlon.value
+        #print(str(config.plugins.XionHDF.weather_realtek_latlon.value))
         config.plugins.XionHDF.weather_realtek_latlon.save()
 
     def get_latlon_by_ip(self):
-        #print "try to found weather via IP"
+        #print("try to found weather via IP")
         try:
             res = requests.get('http://ip-api.com/json/?lang=de&fields=status,city,lat,lon,country', timeout=3)
             data = res.json()
@@ -679,19 +685,19 @@ class XionHDF(ConfigListScreen, Screen):
                 self.city = str(self.city1) + ' / ' + str(self.country)
                 self.lat = data['lat']
                 self.lon = data['lon']
-                self.preview_text = str(self.city) + '\nLat: ' + str(self.lat) + '\nLong: ' + str(self.lon)
+                #self.preview_text = str(self.city) + '\nLat: ' + str(self.lat) + '\nLong: ' + str(self.lon)
             else:
-                self.preview_text = _('No data for IP')
+                #self.preview_text = _('No data for IP')
                 self.session.open(MessageBox, _("Error retrieving weather data!"), MessageBox.TYPE_ERROR)
         except:
-            self.preview_text = _('No data for IP')
+            #self.preview_text = _('No data for IP')
             self.session.open(MessageBox, _("Error retrieving weather data!"), MessageBox.TYPE_ERROR)
 
 #############################################################
 # location detect via bing maps #
 
     def get_latlon_by_name(self):
-        #print "try to found weather via Name"
+        #print("try to found weather via Name")
         try:
             name = config.plugins.XionHDF.weather_city.value
             res = requests.request('get', 'http://dev.virtualearth.net/REST/v1/Locations/' + name + '?&key=AiU2Jrx506GVhCwH5kw6h6KLiYGbgwWDtYUFvDxYNYQ5yAcb81_RxlIMmFOLB8Rr', timeout=3)
@@ -709,7 +715,7 @@ class XionHDF(ConfigListScreen, Screen):
 # location detect via mapquestapi #
 
 #       def get_latlon_by_name(self):
-#               #print "try to found weather via Name"
+#               #print("try to found weather via Name")
 #               try:
 #                       name = config.plugins.XionHDF.weather_city.value
 #                       res = requests.request('get', 'http://www.mapquestapi.com/geocoding/v1/address?key=46e6mCww60Y4X2m8pttGoNTrdsPqedKW&location=' + name, timeout=3)
