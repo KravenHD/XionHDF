@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.2.2\n"
 
 msgid "N"
 msgstr "N"
@@ -97,168 +97,6 @@ msgstr "SA"
 
 msgid "Sun"
 msgstr "SO"
-
-msgid "Tornado"
-msgstr "Tornado"
-
-msgid ""
-"Tropical\n"
-" storm"
-msgstr "Tropischer Sturm"
-
-msgid "Hurricane"
-msgstr "Hurrikan"
-
-msgid ""
-"Severe\n"
-" thunderstorms"
-msgstr "Schwere Gewitter"
-
-msgid "Thunderstorms"
-msgstr "Gewitter"
-
-msgid ""
-"Mixed rain\n"
-" and snow"
-msgstr "Regen und Schnee"
-
-msgid ""
-"Mixed rain\n"
-" and sleet"
-msgstr "Regen und Schneeregen"
-
-msgid ""
-"Mixed snow\n"
-" and sleet"
-msgstr "Schnee und Graupel"
-
-msgid ""
-"Freezing\n"
-" drizzle"
-msgstr "Frierender Nieselregen"
-
-msgid "Drizzle"
-msgstr "Nieselregen"
-
-msgid ""
-"Freezing\n"
-" rain"
-msgstr "Eisregen"
-
-msgid "Showers"
-msgstr "Regen"
-
-msgid "Rain"
-msgstr "Regen"
-
-msgid ""
-"Snow\n"
-" flurries"
-msgstr "Schneetreiben"
-
-msgid ""
-"Light\n"
-" snow showers"
-msgstr "Leichte Schneeschauer"
-
-msgid ""
-"Blowing\n"
-" snow"
-msgstr "Schneetreiben"
-
-msgid "Snow"
-msgstr "Schnee"
-
-msgid "Hail"
-msgstr "Hagel"
-
-msgid "Sleet"
-msgstr "Schneeregen"
-
-msgid "Dust"
-msgstr "Staub"
-
-msgid "Foggy"
-msgstr "Nebelig"
-
-msgid "Haze"
-msgstr "Nebel"
-
-msgid "Smoky"
-msgstr "Rauchig"
-
-msgid "Blustery"
-msgstr "Stürmisch"
-
-msgid "Windy"
-msgstr "Windig"
-
-msgid "Cold"
-msgstr "Kalt"
-
-msgid "Cloudy"
-msgstr "Wolkig"
-
-msgid ""
-"Mostly\n"
-" cloudy"
-msgstr "Überwiegend bewölkt"
-
-msgid ""
-"Partly\n"
-" cloudy"
-msgstr "Teilweise bewölkt"
-
-msgid "Clear"
-msgstr "Klar"
-
-msgid "Sunny"
-msgstr "Sonnig"
-
-msgid "Fair"
-msgstr "Heiter"
-
-msgid ""
-"Mixed rain\n"
-" and hail"
-msgstr "Regen und Hagel"
-
-msgid "Hot"
-msgstr "Heiss"
-
-msgid ""
-"Isolated\n"
-" thunderstorms"
-msgstr "Vereinzelte Gewitter"
-
-msgid ""
-"Scattered\n"
-" thunderstorms"
-msgstr "Vereinzelte Gewitter"
-
-msgid ""
-"Scattered\n"
-" showers"
-msgstr "Vereinzelte Regenschauer"
-
-msgid "Heavy snow"
-msgstr "Starker Schneefall"
-
-msgid ""
-"Scattered\n"
-" snow showers"
-msgstr "Vereinzelte Schneeschauer"
-
-msgid "Thundershowers"
-msgstr "Gewitter"
-
-msgid "Snow showers"
-msgstr "Schneeschauer"
-
-msgid ""
-"Isolated\n"
-" thundershowers"
-msgstr "Vereinzelt Gewitter"
 
 msgid "% humidity"
 msgstr "% Luftfeuchtigkeit"
@@ -663,3 +501,87 @@ msgstr "Fettschrifthöhe in %"
 
 msgid "This option changes the height of bold font."
 msgstr "Diese Option ändert die Höhe der Fettschrift."
+
+msgid "clear sky"
+msgstr "klarer Himmel"
+
+msgid "mainly clear"
+msgstr "zumeist klar"
+
+msgid "partly cloudy"
+msgstr "teilsweise bewölkt"
+
+msgid "overcast"
+msgstr "bewölkt"
+
+msgid "foggy"
+msgstr "nebelig"
+
+msgid "rime fog"
+msgstr "Reifnebel"
+
+msgid "light drizzle"
+msgstr "leichter Nieselregen"
+
+msgid "moderate drizzle"
+msgstr "mäßiger Nieselregen"
+
+msgid "dense drizzle"
+msgstr "dichter Nieselregen"
+
+msgid "light freezing drizzle"
+msgstr "leichter eisiger Nieselregen"
+
+msgid "dense freezing drizzle"
+msgstr "dichter eisiger Nieselregen"
+
+msgid "slight rain"
+msgstr "leichter Regen"
+
+msgid "moderate rain"
+msgstr "mäßiger Regen"
+
+msgid "heavy rain"
+msgstr "starker Regen"
+
+msgid "light freezing rain"
+msgstr "leichter Eisregen"
+
+msgid "heavy freezing rain"
+msgstr "starker Eisregen"
+
+msgid "slight snow fall"
+msgstr "leichter Schneefall"
+
+msgid "moderate snow fall"
+msgstr "mäßiger Schneefall"
+
+msgid "heavy snow fall"
+msgstr "starker Schneefall"
+
+msgid "snow grains"
+msgstr "Schneekörner"
+
+msgid "slight rain showers"
+msgstr "leichte Regenschauer"
+
+msgid "moderate rain showers"
+msgstr "mäßige Regenschauer"
+
+msgid "violent rain showers"
+msgstr "heftige Regenschauer"
+
+msgid "slight snow showers"
+msgstr "leichte Schneeschauer"
+
+msgid "heavy snow showers"
+msgstr "starke Schneeschauer"
+
+msgid "slight thunderstorm"
+msgstr "leichtes Gewitter"
+
+msgid "thunderstorm with slight hail"
+msgstr "Gewitter mit leichtem Hagel"
+
+msgid "thunderstorm with heavy hail"
+msgstr "Gewitter mit starkem Hagel"
