@@ -509,7 +509,7 @@ msgid "mainly clear"
 msgstr "zumeist klar"
 
 msgid "partly cloudy"
-msgstr "teilsweise bewölkt"
+msgstr "teilweise bewölkt"
 
 msgid "overcast"
 msgstr "bewölkt"
