@@ -325,6 +325,16 @@ msgstr "Hintergrund Transparenz"
 msgid "Weather ID"
 msgstr "Wetter ID"
 
+msgid "Weather ID changed"
+msgstr "Wetter Standort geändert"
+
+msgid ""
+"The 'Weather ID' was changed.\n"
+"Do you want to apply the new ID?"
+msgstr ""
+"Der Wetter Standort wurde geändert.\n"
+"Soll der neue Standort übernommen werden?"
+
 msgid "Second Infobar"
 msgstr "Zweite Infobar Auswahl"
 
