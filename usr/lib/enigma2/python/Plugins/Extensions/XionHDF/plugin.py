@@ -454,7 +454,7 @@ class XionHDF(ConfigListScreen, Screen):
 			if callback:
 				self["config"].getCurrent()[1].value = callback
 				self.searchString = str(callback)
-				self.get_weather_data()
+				self.getWeatherData()
 			else:
 				pass
 		except:
@@ -601,12 +601,12 @@ class XionHDF(ConfigListScreen, Screen):
 				if config.plugins.XionHDF.weather_cityname.value != "":
 					self.setWeather()
 				else:
-					self.session.open(MessageBox, _("Please set the 'Weather ID' to display the weather."), MessageBox.TYPE_INFO, timeout=9)
+					self.getCityByIP("empty")
 			else:
 				if config.plugins.XionHDF.weather_cityname.value != "":
 					self.save()
 				else:
-					self.session.open(MessageBox, _("Please set the 'Weather ID' to display the weather."), MessageBox.TYPE_INFO, timeout=9)
+					self.getCityByIP("empty")
 		else:
 			self.save()
 
@@ -617,7 +617,7 @@ class XionHDF(ConfigListScreen, Screen):
 	def doSetWeather(self, answer):
 		if answer is True:
 			self.searchString = str(config.plugins.XionHDF.weather_cityname.value)
-			self.get_weather_data()
+			self.getWeatherData()
 		else:
 			config.plugins.XionHDF.weather_cityname.value = self.searchString
 			config.plugins.XionHDF.weather_cityname.save()
@@ -675,9 +675,9 @@ class XionHDF(ConfigListScreen, Screen):
 		f.write('[PluginScreen]' + str(what) + '\n')
 		f.close()
 
-	def get_weather_data(self):
+	def getWeatherData(self):
 		if config.plugins.XionHDF.weather_cityname.value == "":
-			self.get_latlon_by_ip()
+			self.getCityByIP("empty")
 		else:
 			reslist = []
 			try:
@@ -702,20 +702,25 @@ class XionHDF(ConfigListScreen, Screen):
 				config.plugins.XionHDF.weather_longitude.value = str(lon)
 				config.plugins.XionHDF.weather_longitude.save()
 			else:
-				self.get_latlon_by_ip()
+				self.getCityByIP("fallback")
 
 	def LocationCallBack(self, callback):
 		if callback:
 			self.session.open(MessageBox, _("Location found:") + "\n" + str(callback[0]) + "\n\n" + _("latitude: ") + str(callback[1]) + "\n" + _("longitude: ") + str(callback[2]), MessageBox.TYPE_INFO, timeout=8)
 			city = str(callback[0]).split(",")[0]
-			config.plugins.XionHDF.weather_foundcity.value = city
+			config.plugins.XionHDF.weather_foundcity.value = str(city)
 			config.plugins.XionHDF.weather_foundcity.save()
 			config.plugins.XionHDF.weather_latitude.value = str(callback[1])
 			config.plugins.XionHDF.weather_latitude.save()
 			config.plugins.XionHDF.weather_longitude.value = str(callback[2])
 			config.plugins.XionHDF.weather_longitude.save()
 
-	def get_latlon_by_ip(self):
+	def getCityByIP(self, failed):
+		city = ""
+		self.city = ""
+		self.lat = ""
+		self.lon = ""
+
 		try:
 			res = requests.get('http://ip-api.com/json/?lang=de&fields=status,city,lat,lon,country', timeout=3)
 			data = res.json()
@@ -725,15 +730,24 @@ class XionHDF(ConfigListScreen, Screen):
 				self.city = str(city) + ' / ' + str(country)
 				self.lat = data['lat']
 				self.lon = data['lon']
-				self.session.open(MessageBox, _("Location found:") + "\n" + str(self.city) + "\n\n" + _("latitude: ") + str(self.lat) + "\n" + _("longitude: ") + str(self.lon), MessageBox.TYPE_INFO, timeout=8)
+				if failed == "empty":
+					self.session.open(MessageBox, _("You have no location entered.") + "\n" + _("Fallback to IP.") + "\n\n" + _("Location found:") + "\n" + str(self.city) + "\n\n" + _("latitude: ") + str(self.lat) + "\n" + _("longitude: ") + str(self.lon), MessageBox.TYPE_INFO, timeout=9)
+				else:
+					self.session.open(MessageBox, _("No valid location found.") + "\n" + _("Fallback to IP.") + "\n\n" + _("Location found:") + "\n" + str(self.city) + "\n\n" + _("latitude: ") + str(self.lat) + "\n" + _("longitude: ") + str(self.lon), MessageBox.TYPE_INFO, timeout=9)
 			else:
 				self.session.open(MessageBox, _("Error retrieving weather data!"), MessageBox.TYPE_ERROR)
 		except:
 			self.session.open(MessageBox, _("Error retrieving weather data!"), MessageBox.TYPE_ERROR)
 
-		config.plugins.XionHDF.weather_cityname.value = ""
+		self.searchString = city
+		config.plugins.XionHDF.weather_cityname.value = city
 		config.plugins.XionHDF.weather_cityname.save()
-		self.searchString = ""
+		config.plugins.XionHDF.weather_foundcity.value = str(self.city)
+		config.plugins.XionHDF.weather_foundcity.save()
+		config.plugins.XionHDF.weather_latitude.value = str(self.lat)
+		config.plugins.XionHDF.weather_latitude.save()
+		config.plugins.XionHDF.weather_longitude.value = str(self.lon)
+		config.plugins.XionHDF.weather_longitude.save()
 
 #############################################################
 

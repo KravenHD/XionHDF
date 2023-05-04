@@ -328,6 +328,24 @@ msgstr "Wetter ID"
 msgid "Weather ID changed"
 msgstr "Wetter Standort geändert"
 
+msgid "You have no location entered."
+msgstr "Es wurde kein Standort eingegeben."
+
+msgid "Fallback to IP."
+msgstr "Erkennung über die IP-Adresse."
+
+msgid "Location found:"
+msgstr "Standort gefunden:"
+
+msgid "latitude: "
+msgstr "Breitengrad: "
+
+msgid "longitude: "
+msgstr "Längengrad: "
+
+msgid "No valid location found."
+msgstr "Keinen Standort gefunden."
+
 msgid ""
 "The 'Weather ID' was changed.\n"
 "Do you want to apply the new ID?"
