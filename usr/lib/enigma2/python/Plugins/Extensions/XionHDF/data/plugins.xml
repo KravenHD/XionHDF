@@ -2752,6 +2752,14 @@
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text_source" />
 	</screen>
+		<!-- ShootYourScreenConfig -->
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="ShootYourScreenConfig" position="0,0" size="1280,720" title="ShootYourScreen for Enigma2 STB" >
+		<widget backgroundColor="XionBackground" font="Regular;22" enableWrapAround="1" scrollbarMode="showOnDemand" itemHeight="30" name="config" position="70,80" size="708,540" transparent="1" />
+		<widget font="Regular;20" halign="left" valign="center" source="key_red" position="64,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" source="key_green" position="264,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" source="key_yellow" position="464,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<panel name="template_menu_left_button" />
+	</screen>
 		<!-- HDF Radio -->
 	<screen name="HDFRadio" position="0,0" size="1280,720" flags="wfNoBorder" title="HDFRadio" backgroundColor="transparent">
 		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
