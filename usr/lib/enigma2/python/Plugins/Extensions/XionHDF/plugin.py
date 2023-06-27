@@ -492,6 +492,7 @@ class XionHDF(ConfigListScreen, Screen):
             os.system("cp /usr/share/enigma2/XionHDF/buttonsets/hd/infobar/*.* /usr/share/enigma2/XionHDF")
             os.system("cp /usr/share/enigma2/XionHDF/extensions/hd/*.* /usr/share/enigma2/XionHDF/extensions")
             os.system("cp /usr/share/enigma2/XionHDF/icons/hd/*.* /usr/share/enigma2/XionHDF/icons")
+            os.system("tar xf /usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/bsWindow_hd.tar.gz -C /usr/share/enigma2/XionHDF/bsWindow/")
         else:
             pass
 
@@ -501,6 +502,7 @@ class XionHDF(ConfigListScreen, Screen):
             os.system("cp /usr/share/enigma2/XionHDF/buttonsets/fhd/infobar/*.* /usr/share/enigma2/XionHDF")
             os.system("cp /usr/share/enigma2/XionHDF/extensions/fhd/*.* /usr/share/enigma2/XionHDF/extensions")
             os.system("cp /usr/share/enigma2/XionHDF/icons/fhd/*.* /usr/share/enigma2/XionHDF/icons")
+            os.system("tar xf /usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/bsWindow_fhd.tar.gz -C /usr/share/enigma2/XionHDF/bsWindow/")
         else:
             pass
 
