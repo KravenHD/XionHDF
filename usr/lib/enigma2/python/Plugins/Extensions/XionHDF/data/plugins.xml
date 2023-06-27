@@ -2760,6 +2760,13 @@
 		<widget font="Regular;20" halign="left" valign="center" source="key_yellow" position="464,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<panel name="template_menu_left_button" />
 	</screen>
+		<!-- BitrateCalculator -->
+	<screen backgroundColor="XionBackground" name="BitrateCalculator" position="center,0" size="240,80" flags="wfNoBorder" title="BitrateViewer" zPosition="11" >
+		<widget backgroundColor="XionBackground" source="video_caption" render="Label" position="10,10" size="70,27" foregroundColor="XionFont2" font="Regular2;22" transparent="1"/>
+		<widget backgroundColor="XionBackground" source="audio_caption" render="Label" position="10,44" size="105,27" foregroundColor="XionFont2" font="Regular2;22" transparent="1"/>
+		<widget backgroundColor="XionBackground" source="video" render="Label" position="80,10" size="150,27" foregroundColor="XionFont1" font="Regular;22" halign="right" transparent="1"/>
+		<widget backgroundColor="XionBackground" source="audio" render="Label" position="80,44" size="150,27" foregroundColor="XionFont1" font="Regular;22" halign="right" transparent="1"/>
+	</screen>
 		<!-- HDF Radio -->
 	<screen name="HDFRadio" position="0,0" size="1280,720" flags="wfNoBorder" title="HDFRadio" backgroundColor="transparent">
 		<eLabel backgroundColor="XionBackground" position="0,64" size="1280,2" zPosition="2" />
