@@ -93,6 +93,14 @@
 		<parameter name="HDFRadioSearchResultFont2" value="Regular;26" />
 		<parameter name="HDFRadioSongpath" value="4, 1, 1100, 25" />
 		<parameter name="HDFRadioSongname" value="4, 25, 788, 34" />
+		<parameter name="WeatherPluginEntryListFont1" value="Regular;22"/>
+		<parameter name="WeatherPluginEntryListFont2" value="Regular;20"/>
+		<parameter name="WeatherPluginCity" value="10,1,595,27"/>
+		<parameter name="WeatherPluginDegreetype" value="606,1,120,27"/>
+		<parameter name="WeatherPluginSearchResultListFont1" value="Regular;22"/>
+		<parameter name="WeatherPluginSearchResultListFont2" value="Regular;22"/>
+		<parameter name="WeatherPluginSearchlocation" value="10,1,716,27"/>
+		<parameter name="WeatherPluginSearchresult" value="10,31,716,27"/>
 		</parameters>
 	<subtitles>
 		<sub font="Regular;30" name="Subtitle_TTX" shadowColor="#shadow" shadowOffset="3,3" />
