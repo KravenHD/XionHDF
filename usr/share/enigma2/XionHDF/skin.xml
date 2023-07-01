@@ -4558,7 +4558,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 					MultiContentEntryText(pos = (235, 0), size = (260, 20), font = 0, flags = RT_HALIGN_LEFT, text = 15), # index 15 is the modification time
 					],
 					"fonts": [gFont("Regular", 18)],
-					"itemHeight": 34,
+					"itemHeight": 30,
 					"selectionEnabled": False
 				}
 			</convert>
@@ -4574,7 +4574,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 					MultiContentEntryText(pos = (235, 0), size = (260, 20), font = 0, flags = RT_HALIGN_LEFT, text = 15), # index 15 is the modification time
 					],
 					"fonts": [gFont("Regular", 18)],
-					"itemHeight": 34,
+					"itemHeight": 30,
 					"selectionEnabled": False
 				}
 			</convert>
