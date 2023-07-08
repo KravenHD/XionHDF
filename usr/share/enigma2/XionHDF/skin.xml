@@ -161,7 +161,7 @@
 	</screen>
 	<screen name="template_colorkey_text_source_2">
 		<widget font="Regular;20" halign="left" valign="center" source="key_red" position="64,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
-		<widget font="Regular;20" halign="left" valign="center" source="key_green_ext" position="264,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
+		<widget font="Regular;20" halign="left" valign="center" source="key_green" position="264,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular;20" halign="left" valign="center" source="key_yellow" position="464,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 		<widget font="Regular;20" halign="left" valign="center" source="key_blue" position="664,662" size="148,48" render="Label" backgroundColor="XionBackground" foregroundColor="XionButtonText" transparent="1" zPosition="1" />
 	</screen>
