@@ -184,7 +184,7 @@
 		<widget alphatest="blend" name="UnhandledKeyPixmap" pixmap="XionHDF/buttons/error.png" position="3,3" size="70,70" zPosition="2" />
 		<eLabel backgroundColor="XionBackground" position="0,0" size="70,70" zPosition="1" />
 	</screen>
-	<screen name="VirtualKeyBoard" position="center,center" backgroundColor="XionBackground" flags="wfNoBorder" size="715,500" zPosition="99">
+	<screen name="VirtualKeyBoard" position="center,center" backgroundColor="XionBackground" flags="wfNoBorder" size="715,383" zPosition="99">
 		<eLabel position="10,80" size="535,1" backgroundColor="XionLine" />
 		<widget name="header" position="10,10" size="500,20" font="Regular;20" transparent="1" noWrap="1" foregroundColor="XionFont1" />
 		<widget name="text" position="15,45" size="525,28" font="Regular;24" transparent="1" noWrap="1" halign="left" foregroundColor="XionFont1" />
