@@ -23,7 +23,7 @@ from Screens.Console import Console
 from Screens.Standby import TryQuitMainloop
 from Screens.VirtualKeyBoard import VirtualKeyBoard
 from Components.ActionMap import ActionMap
-from Components.AVSwitch import AVSwitch
+from Components.AVSwitch import iAVSwitch as eAVSwitch
 from Components.config import config, configfile, ConfigYesNo, ConfigSubsection, getConfigListEntry, ConfigSelection, ConfigNumber, ConfigText, ConfigInteger, ConfigSelectionNumber
 from Components.ConfigList import ConfigListScreen
 from Components.Sources.StaticText import StaticText
@@ -277,7 +277,7 @@ class XionHDF(ConfigListScreen, Screen):
 		self.dateiTMP = self.datei + ".tmp"
 		self.daten = "/usr/lib/enigma2/python/Plugins/Extensions/XionHDF/data/"
 		self.picPath = picPath
-		self.Scale = AVSwitch().getFramebufferScale()
+		self.Scale = eAVSwitch.getFramebufferScale()
 		self.PicLoad = ePicLoad()
 		self["helperimage"] = Pixmap()
 		self["help"] = StaticText()
