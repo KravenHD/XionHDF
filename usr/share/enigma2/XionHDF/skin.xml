@@ -1233,6 +1233,8 @@
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="Console" position="0,0" size="1280,720" title="Command execution...">
 		<widget backgroundColor="XionBackground" font="Console;15" name="text" position="70,120" size="808,500" transparent="1" foregroundColor="XionFont1" />
 		<panel name="template_menu_left" />
+		<panel name="template_colorkey_text_source" />
+		<panel name="template_menu_left_button" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="HdmiCECSetupScreen" position="0,0" size="1280,720" title="HDMI CEC setup">
 		<widget name="config" itemHeight="27" font="Regular;22" position="20,80" size="708,547" transparent="1" zPosition="2" foregroundColor="XionFont1" />
