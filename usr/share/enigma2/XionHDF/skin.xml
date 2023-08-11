@@ -7186,7 +7186,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="template_menu_left_right_button" />
 		<panel name="template_colorkey_text_source_2" />
 	</screen>
-	<screen name="IPTVDMNotificationWidget" position="center,30" zPosition="10" size="550,60" title="IPTVPlayer downloader" backgroundColor="XionBackground" >
+	<screen name="IPTVDMNotificationWidget" position="center,70" zPosition="10" size="550,60" title="IPTVPlayer downloader" backgroundColor="XionBackground" >
 		<widget name="message_label" font="Regular;22" position="0,0" zPosition="2" valign="center" halign="center" size="550,60" backgroundColor="XionBackground" transparent="1" />
 	</screen>
 		<!-- Quad PiP -->
