@@ -993,7 +993,7 @@
 		<eLabel backgroundColor="XionLine" position="0,64" size="1280,2" zPosition="2" />
 		<eLabel backgroundColor="XionLine" position="0,656" size="1280,2" zPosition="2" />
 		<eLabel backgroundColor="XionBackground" position="0,0" size="1280,720" transparent="0" zPosition="-9" />
-		<ePixmap pixmap="XionHDF/logo2.png" position="914,120" size="300,300" backgroundColor="XionBackground" alphatest="blend" />
+		<!--ePixmap pixmap="XionHDF/logo2.png" position="914,120" size="300,300" backgroundColor="XionBackground" alphatest="blend" /-->
 		<widget source="global.CurrentTime" render="Label" position="1154,16" size="100,28" font="Regular;26" halign="right" backgroundColor="XionBackground" transparent="1" valign="center" foregroundColor="XionFont2">
 			<convert type="XionHDFClockToText">Default</convert>
 		</widget>

@@ -10,7 +10,7 @@
 	</screen>
 	<screen name="ChoiceBox" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1280,720">
 		<widget backgroundColor="XionBackground" font="Regular;24" foregroundColor="XionFont2" position="70,12" size="1148,46" render="Label" source="Title" halign="left" valign="center" transparent="1" />
-		<widget name="list" backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;20" position="70,125" size="800,480" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="list" backgroundColor="XionBackground" enableWrapAround="1" itemHeight="30" font="Regular;20" position="70,125" size="1100,480" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="text" backgroundColor="XionBackground" font="Regular;20" halign="left" position="35,71" size="1248,145" foregroundColor="XionFont2" transparent="1" />
 		<panel name="template_choicebox" />
 	</screen>
