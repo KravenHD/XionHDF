@@ -1060,7 +1060,7 @@
 								MultiContentEntryText(pos = (550, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 8), # index 8 is reshare
 								MultiContentEntryText(pos = (0, 25), size = (700, 24), font=1, flags = RT_HALIGN_LEFT, text = 9), # index 9 is providers
 								]),
-						"HD": (30,[
+						"HD": (80,[
 								MultiContentEntryText(pos = (3, 1), size = (164, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
 								MultiContentEntryText(pos = (177, 1), size = (244, 26), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
 								MultiContentEntryText(pos = (431, 1), size = (84, 26), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
