@@ -3153,8 +3153,8 @@
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_colorkey_text" />
 	</screen>
-	<screen name="HDFRadioYTPlayer" position="0,0" size="1280,720" flags="wfNoBorder" title="InfoBar" backgroundColor="XionBackground">
-		<widget backgroundColor="XionBackground" name="cover" position="55,615" size="100,100" />
+	<screen name="HDFRadioYTPlayer" position="0,0" size="1280,720" flags="wfNoBorder" title="InfoBar" backgroundColor="transparent">
+		<widget backgroundColor="transparent" name="cover" position="55,615" size="100,100" />
 		<widget backgroundColor="XionBackground" font="HDFRadioRegular;30" foregroundColor="XionFont2" noWrap="1" position="257,620" render="Label" size="653,38" source="session.CurrentService" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -3222,6 +3222,6 @@
 			<convert type="ClockToText">Format:%e. %B</convert>
 		</widget>
 	</screen>
-	<screen name="HDFRadioPVRState" position="210,620" size="40,38" flags="wfNoBorder" backgroundColor="XionBackground" zPosition="99">
-		<widget backgroundColor="XionBackground" name="state" font="HDFRadioRegular;30" foregroundColor="XionFont2" position="0,0" size="40,38" transparent="1" />
+	<screen name="HDFRadioPVRState" position="210,620" size="40,38" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
+		<widget backgroundColor="transparent" name="state" font="HDFRadioRegular;30" foregroundColor="XionFont2" position="0,0" size="40,38" transparent="1" />
 	</screen>
