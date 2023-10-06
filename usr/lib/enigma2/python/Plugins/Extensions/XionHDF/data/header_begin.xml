@@ -76,10 +76,16 @@
 		<parameter name="PluginBrowserDownloadDescr" value="73,20,26"/>
 		<parameter name="PluginBrowserDownloadIcon" value="7,0,60,50"/>
 		<parameter name="HelpMenuListHlp" value="0,0,700,26"/>
-		<parameter name="FileListName" value="30,1,470,26"/>
-		<parameter name="FileListIcon" value="3,1,20,20"/>
-		<parameter name="FileListMultiName" value="35,1,470,26"/>
-		<parameter name="FileListMultiIcon" value="20,5,20,20"/>
+		<parameter name="FileListName" value="33,2,675,26"/>
+		<parameter name="FileListIcon" value="3,5,20,20"/>
+		<parameter name="FileListMultiName" value="63,2,672,26"/>
+		<parameter name="FileListMultiIcon" value="33,5,20,20"/>
+		<parameter name="FileListMultiLock" value="3,5,20,20" />
+		<parameter name="FcFileListName" value="33,2,1160,26" />
+		<parameter name="FcFileListIcon" value="3,5,20,20" />
+		<parameter name="FcFileListMultiName" value="63,2,1130,26" />
+		<parameter name="FcFileListMultiIcon" value="33,5,20,20" />
+		<parameter name="FcFileListMultiLock" value="3,5,20,20" />
 		<parameter name="PlayListName" value="25,1,470,22"/>
 		<parameter name="PlayListIcon" value="5,3,16,16"/>
 		<parameter name="ServiceInfo" value="0,0,300,30"/>
@@ -101,7 +107,7 @@
 		<parameter name="WeatherPluginSearchResultListFont2" value="Regular;22"/>
 		<parameter name="WeatherPluginSearchlocation" value="10,1,716,27"/>
 		<parameter name="WeatherPluginSearchresult" value="10,31,716,27"/>
-		</parameters>
+	</parameters>
 	<subtitles>
 		<sub font="Regular;30" name="Subtitle_TTX" shadowColor="#shadow" shadowOffset="3,3" />
 		<sub font="Regular;30" foregroundColor="grey" name="Subtitle_Regular" shadowColor="#shadow" shadowOffset="3,3" />
