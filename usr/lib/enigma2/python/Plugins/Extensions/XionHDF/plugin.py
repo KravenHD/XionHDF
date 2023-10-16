@@ -125,6 +125,8 @@ config.plugins.XionHDF.Font2 = ConfigSelection(default="00ffffff", choices=Color
 
 config.plugins.XionHDF.SelectionFont = ConfigSelection(default="00ffffff", choices=ColorList)
 
+config.plugins.XionHDF.NotAvailableFont = ConfigSelection(default="00999999", choices=ColorList)
+
 config.plugins.XionHDF.ButtonText = ConfigSelection(default="00ffffff", choices=ColorList)
 
 config.plugins.XionHDF.Progress = ConfigSelection(default="00C3461B", choices=ColorList)
@@ -317,6 +319,7 @@ class XionHDF(ConfigListScreen, Screen):
 		list.append(getConfigListEntry(_("Primary font"), config.plugins.XionHDF.Font1, _("Please select the color of primary font inside the skin.")))
 		list.append(getConfigListEntry(_("Secondary font"), config.plugins.XionHDF.Font2, _("Please select the color of secundary font inside the skin.")))
 		list.append(getConfigListEntry(_("Listselection font"), config.plugins.XionHDF.SelectionFont, _("Please select the color of listselection font inside the skin.")))
+		list.append(getConfigListEntry(_("'Not available' font"), config.plugins.XionHDF.NotAvailableFont, _("Please select the font color of channels that are unavailable at the moment.")))
 		list.append(getConfigListEntry(_("Button text"), config.plugins.XionHDF.ButtonText, _("Please select the color of button text inside the skin.")))
 		list.append(getConfigListEntry(_("Font normal height in %"), config.plugins.XionHDF.FontStyleHeight_1, _("This option changes the height of normal font.")))
 		list.append(getConfigListEntry(_("Font bold height in %"), config.plugins.XionHDF.FontStyleHeight_2, _("This option changes the height of bold font.")))
@@ -521,6 +524,7 @@ class XionHDF(ConfigListScreen, Screen):
 			self.skinSearchAndReplace.append(['name="XionFont1" value="#00ffffff', 'name="XionFont1" value="#' + config.plugins.XionHDF.Font1.value])
 			self.skinSearchAndReplace.append(['name="XionFont2" value="#00ffffff', 'name="XionFont2" value="#' + config.plugins.XionHDF.Font2.value])
 			self.skinSearchAndReplace.append(['name="XionSelFont" value="#00ffffff', 'name="XionSelFont" value="#' + config.plugins.XionHDF.SelectionFont.value])
+			self.skinSearchAndReplace.append(['name="XionNotAvailable" value="#00ffffff', 'name="XionNotAvailable" value="#' + config.plugins.XionHDF.NotAvailableFont.value])
 			self.skinSearchAndReplace.append(['name="XionButtonText" value="#00ffffff', 'name="XionButtonText" value="#' + config.plugins.XionHDF.ButtonText.value])
 			self.skinSearchAndReplace.append(['name="XionProgress" value="#00ffffff', 'name="XionProgress" value="#' + config.plugins.XionHDF.Progress.value])
 			self.skinSearchAndReplace.append(['name="XionLine" value="#00ffffff', 'name="XionLine" value="#' + config.plugins.XionHDF.Line.value])

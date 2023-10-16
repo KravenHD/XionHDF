@@ -24,6 +24,7 @@
 		<color name="XionSelection" value="#000050EF" />
 		<color name="XionSelFont" value="#00ffffff" />
 		<color name="XionMeteoFont" value="#00ffffff" />
+		<color name="XionNotAvailable" value="#00ffffff" />
 		<color name="orange" value="#00dc5221" />
 		<color name="rds_text_bg" value="#00003258" />
 		<color name="red" value="#00f23d21" />

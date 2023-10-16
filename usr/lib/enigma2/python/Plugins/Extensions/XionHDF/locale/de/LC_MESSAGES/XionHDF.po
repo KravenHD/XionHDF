@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 2.4.3\n"
 
 msgid "N"
 msgstr "N"
@@ -389,6 +389,9 @@ msgstr "Sekundärschrift"
 msgid "Listselection font"
 msgstr "Auswahlbalken Schriftfarbe"
 
+msgid "'Not available' font"
+msgstr "'Nicht verfügbar' Schriftfarbe"
+
 msgid "Button text"
 msgstr "Button Text"
 
@@ -499,6 +502,9 @@ msgstr "Bitte wählen Sie die Farbe der sekundären Schrift im Skin aus."
 
 msgid "Please select the color of listselection font inside the skin."
 msgstr "Bitte wählen Sie die Farbe der Listenauswahl-Schriftart im Skin aus."
+
+msgid "Please select the font color of channels that are unavailable at the moment."
+msgstr "Bitte wählen Sie die Schriftfarbe von Kanälen, die derzeit nicht verfügbar sind."
 
 msgid "Please select the color of button text inside the skin."
 msgstr "Bitte wählen Sie die Farbe des Schaltflächentextes innerhalb der Skin aus."
