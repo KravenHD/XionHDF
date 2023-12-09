@@ -4098,7 +4098,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 		<eLabel text="Feed-Status" position="28,451" size="191,29" zPosition="1" font="Regular;22" foregroundColor="XionFont1" halign="center" backgroundColor="XionBackground" transparent="1" />
 		<eLabel text="Its recommended to create a Fullbackup before update!" position="239,452" size="446,20" zPosition="1" font="Regular;16" foregroundColor="XionFont1" halign="left" backgroundColor="XionBackground" transparent="1" />
-		<eLabel text="A full backup is recommended before the update!" position="239,476" size="446,20" zPosition="1" font="Regular;16" foregroundColor="XionFont1" halign="left" backgroundColor="XionBackground" transparent="1" />
 		<eLabel text="Update recommended" position="202,585" size="396,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="green" transparent="0" />
 		<eLabel text="No Update!" position="202,509" size="396,25" zPosition="1" font="Regular;20" foregroundColor="white" halign="left" backgroundColor="red" transparent="0" />
 		<eLabel text="update at your own risk!" position="202,546" size="396,25" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="yellow" transparent="0" />
@@ -5174,10 +5173,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- ********** LCD4Linux ********** -->
 		<!-- LCDdisplayConfig -->
 	<screen name="LCDdisplayConfig" position="0,0" size="1280,720" title="LCD4linux Settings" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="LCD1" position="660,26" zPosition="3" size="550,310" transparent="1" alphatest="on" />
-		<widget name="config" position="36,80" size="560,480" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
+		<widget name="LCD1" position="660,86" zPosition="3" size="450,210" scale="1" transparent="1" alphatest="on" />
+		<widget name="config" position="36,80" size="560,480" font="Regular;22" itemHeight="30" enableWrapAround="1" backgroundColor="XionBackground" transparent="1" />
 		<widget source="introduction" render="Label" position="36,570" size="550,30" font="Regular2;20" halign="center" valign="center" foregroundColor="XionFont2" backgroundColor="XionBackground" transparent="1" />
-		<widget name="LCD2" position="660,336" zPosition="3" size="550,310" transparent="1" alphatest="on" />
+		<widget name="LCD2" position="660,356" zPosition="3" size="450,210" scale="1" transparent="1" alphatest="on" />
 		<widget source="LCD1text" render="Label" position="660,290" size="300,20" zPosition="1" font="Regular;16" foregroundColor="XionFont1" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
 		<widget source="LCD2text" render="Label" position="660,550" size="300,20" zPosition="1" font="Regular;16" foregroundColor="XionFont1" halign="center" valign="center" backgroundColor="XionBackground" transparent="1" />
 		<widget source="Version" render="Label" position="36,606" size="180,20" zPosition="1" font="Regular;16" foregroundColor="XionFont1" halign="left" valign="center" backgroundColor="XionBackground" transparent="1" />
