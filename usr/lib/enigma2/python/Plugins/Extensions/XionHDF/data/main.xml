@@ -2886,10 +2886,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		</widget>
 		<eLabel text="Feed-Status" position="28,451" size="191,29" zPosition="1" font="Regular; 22" foregroundColor="XionFont1" halign="center" backgroundColor="XionBackground" transparent="1" />
 		<eLabel text="Its recommended to create a Fullbackup before update!" position="239,452" size="446,20" zPosition="1" font="Regular; 16" foregroundColor="XionFont1" halign="left" backgroundColor="XionBackground" transparent="1" />
-		<eLabel text="A full backup is recommended before the update!" position="239,476" size="446,20" zPosition="1" font="Regular; 16" foregroundColor="XionFont1" halign="left" backgroundColor="XionBackground" transparent="1" />
 		<eLabel text="Update recommended" position="202,585" size="396,25" zPosition="1" font="Regular; 20" halign="left" foregroundColor="black" backgroundColor="green" transparent="0" />
 		<eLabel text="No Update!" position="202,509" size="396,25" zPosition="1" font="Regular; 20" foregroundColor="white" halign="left" backgroundColor="red" transparent="0" />
-		<eLabel text="update at your own risk!" position="202,546" size="396,25" zPosition="1" font="Regular; 18" halign="left" foregroundColor="black" backgroundColor="yellow" transparent="0" />
+		<eLabel text="Update at your own risk!" position="202,546" size="396,25" zPosition="1" font="Regular; 18" halign="left" foregroundColor="black" backgroundColor="yellow" transparent="0" />
 		<panel name="template_colorkey_text_source" />
 		<panel name="template_menu_left_button" />
 	</screen>
