@@ -3116,10 +3116,12 @@
 		<widget backgroundColor="XionBackground" source="songtitle" render="Label" font="Regular;26" foregroundColor="XionFont2" position="42,151" size="860,38" noWrap="1" valign="top" transparent="1" />
 		<widget backgroundColor="XionBackground" name="albumname" font="Regular;24" foregroundColor="XionFont2" position="42,200" size="134,30" noWrap="1" valign="top" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="album" font="Regular;24" foregroundColor="XionFont2" position="182,200" size="720,30" noWrap="1" valign="top" transparent="1" />
-		<widget backgroundColor="XionBackground" name="genrename" font="Regular;24" foregroundColor="XionFont2" position="42,235" size="134,30" noWrap="1" valign="top" transparent="1"/>
-		<widget backgroundColor="XionBackground" name="genre" font="Regular;24" foregroundColor="XionFont2" position="182,235" size="720,30" noWrap="1" valign="top" transparent="1" />
-		<widget backgroundColor="XionBackground" name="yearname" font="Regular;24" foregroundColor="XionFont2" position="42,270" size="134,30" noWrap="1" valign="top" transparent="1"/>
-		<widget backgroundColor="XionBackground" name="year" font="Regular;24" foregroundColor="XionFont2" position="182,270" size="720,30" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" name="genrename" font="Regular;24" foregroundColor="XionFont2" position="42,232" size="134,30" noWrap="1" valign="top" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="genre" font="Regular;24" foregroundColor="XionFont2" position="182,232" size="720,30" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" name="yearname" font="Regular;24" foregroundColor="XionFont2" position="42,264" size="134,30" noWrap="1" valign="top" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="year" font="Regular;24" foregroundColor="XionFont2" position="182,264" size="720,30" noWrap="1" valign="top" transparent="1" />
+		<widget backgroundColor="XionBackground" name="trackname" font="Regular;24" foregroundColor="XionFont2" position="42,296" size="134,30" noWrap="1" valign="top" transparent="1"/>
+		<widget backgroundColor="XionBackground" name="track" font="Regular;24" foregroundColor="XionFont2" position="182,296" size="720,30" noWrap="1" valign="top" transparent="1" />
 		<widget backgroundColor="XionBackground" name="playlistname" font="Regular;24" foregroundColor="XionFont2" position="42,190" size="622,30" valign="center" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="playlist" font="Regular;22" position="42,224" size="622,420" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget backgroundColor="XionBackground" name="cover" position="938,80" size="300,300" />
