@@ -456,15 +456,15 @@
 		<panel name="template_colorkey_text_source" />
 	</screen>
 		<!-- IMDB -->
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="IMDB" position="0,0" size="1280,720" title="IMDb Details Plugin">
-		<widget itemHeight="30" font="Regular; 22" name="menu" position="70,220" size="700,360" transparent="1" />
-		<widget font="Regular2;20" foregroundColor="XionFont1" halign="center" name="ratinglabel" position="470,134" size="310,24" transparent="1" />
-		<widget alphatest="blend" name="poster" position=" 80,170" size="110,180" />
-		<widget backgroundColor="XionBackground" font="Regular2;20" name="detailslabel" position="199,170" size="570,175" transparent="1" foregroundColor="XionFont2" />
-		<widget backgroundColor="XionBackground" font="Regular; 20" name="castlabel" position=" 70,365" size="700,220" transparent="1" />
-		<widget backgroundColor="XionBackground" font="Regular; 20" name="extralabel" position=" 70,170" size="700,350" transparent="1" />
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="IMDB" position="0,0" size="1280,720" title="IMDb Details">
+		<widget itemHeight="30" font="Regular; 22" name="menu" position="70,220" size="800,360" transparent="1" />
+		<widget font="Regular2;24" foregroundColor="XionFont1" halign="center" name="ratinglabel" position="900,84" size="310,24" transparent="1" />
+		<widget alphatest="blend" name="poster" position=" 80,70" size="160,280" />
+		<widget backgroundColor="XionBackground" font="Regular2;20" name="detailslabel" position="269,120" size="1170,275" transparent="1" foregroundColor="XionFont2" />
+		<widget backgroundColor="XionBackground" font="Regular; 20" name="castlabel" position=" 70,365" size="1170,220" transparent="1" />
+		<widget backgroundColor="XionBackground" font="Regular; 20" name="extralabel" position=" 70,170" size="1170,350" transparent="1" />
 		<widget backgroundColor="XionBackground" font="Regular2;20" foregroundColor="XionFont2" name="statusbar" position=" 70,595" size="700,28" transparent="1" />
-		<panel name="template_menu_left_button" />
+		<panel name="template_menu_left_button_logo_off" />
 		<panel name="template_colorkey_text" />
 	</screen>
 		<!-- getCover -->
