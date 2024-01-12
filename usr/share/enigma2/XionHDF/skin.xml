@@ -7123,8 +7123,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- EPGImport Config -->
 	<screen backgroundColor="transparent" name="EPGImportConfig" position="0,0" size="1280,720" title="EPG Import Configuration">
 		<widget name="config" backgroundColor="XionBackground" position="70,118" size="708,484" font="Regular;24" itemHeight="34" scrollbarMode="showOnDemand" transparent="1" />
-		<widget name="statusbar" backgroundColor="XionBackground" position="72,80" size="708,30" font="Regular2;24" itemHeight="34" halign="left" valign="center" transparent="1" />
-		<widget name="status" backgroundColor="XionBackground" position="76,530" size="708,48" enableWrapAround="1" font="Regular;20" itemHeight="30" halign="left" valign="center" transparent="1" />
+		<widget name="statusbar" backgroundColor="XionBackground" position="72,80" size="708,30" font="Regular2;24" itemHeight="36" halign="left" valign="center" transparent="1" />
+		<widget name="status" backgroundColor="XionBackground" position="76,530" size="708,72" enableWrapAround="1" font="Regular;18" itemHeight="36" halign="left" valign="center" transparent="1" />
 		<ePixmap pixmap="XionHDF/buttons/key_menu1.png" position="706,76" zPosition="1" size="32,37" alphatest="blend" />
 		<ePixmap pixmap="XionHDF/buttons/key_info1.png" position="742,76" zPosition="1" size="32,37" alphatest="blend" />
 		<panel name="template_menu_left_button" />
