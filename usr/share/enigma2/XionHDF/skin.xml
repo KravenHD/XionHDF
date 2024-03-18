@@ -3385,6 +3385,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- FlashOnline -->
 	<screen name="FlashOnline" position="0,0" size="1280,720" title="FlashOnline" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="list" position="20,80" size="708,540" font="Regular;14" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
+		<widget source="description" render="Label" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" halign="center" position="840,370" size="430,350" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+	<screen name="SelectImage" position="0,0" size="1280,720" title="FlashOnline" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="list" position="20,80" size="708,540" font="Regular;14" foregroundColor="XionFont1" backgroundColor="XionBackground" transparent="1" />
 		<panel name="template_menu_left_button" />
 		<panel name="template_colorkey_text" />
 		<panel name="template_colorkey_text_source" />
@@ -4404,6 +4411,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<!-- Multiboot Selector -->
 	<screen name="MultiBootSelector" position="0,0" size="1280,720" title="Multiboot Image Selector" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="config" position="20,80" size="708,540" transparent="1" />
+		<widget source="options" render="Label" position="40,542" size="730,65" halign="left" font="Regular;20" backgroundColor="XionBackground" />
+		<widget source="description" render="Label" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" halign="center" position="840,370" size="430,350" transparent="1" />
+		<panel name="template_menu_left_button" />
+		<panel name="template_colorkey_text" />
+		<panel name="template_colorkey_text_source" />
+	</screen>
+	<screen name="MultibootSelection" position="0,0" size="1280,720" title="Multiboot Image Selector" flags="wfNoBorder" backgroundColor="transparent">
+		<widget name="list" position="20,80" size="708,540" transparent="1" />
 		<widget source="options" render="Label" position="40,542" size="730,65" halign="left" font="Regular;20" backgroundColor="XionBackground" />
 		<widget source="description" render="Label" backgroundColor="XionBackground" font="Regular;20" foregroundColor="XionFont2" halign="center" position="840,370" size="430,350" transparent="1" />
 		<panel name="template_menu_left_button" />
